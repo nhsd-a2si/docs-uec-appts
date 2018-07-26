@@ -8,4 +8,4 @@ The following info-graphic displays the patient flow through NHS 111 into the wi
 
 {% include note.html content="“contact primary care” dispositions show % as a total of triaged patients with brackets, and % of those recommended to contact primary care without brackets." %}
 
-<image src="../../images/overview/iuc_overview.png"/>
+<image src="../images/overview/iuc_overview.png"/>
