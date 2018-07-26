@@ -1,4 +1,8 @@
-# Definition of Direct Booking
+---
+title: Definition of Direct Booking
+sidebar: overview_sidebar
+permalink: definition.html
+---
 
 ### The urgent care service arranges for the patient:
 
