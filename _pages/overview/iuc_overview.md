@@ -8,8 +8,6 @@ The following info-graphic displays the patient flow through NHS 111 into the wi
 
 {% include note.html content="“contact primary care” dispositions show % as a total of triaged patients with brackets, and % of those recommended to contact primary care without brackets." %}
 
-<image src="images/overview/iuc_overview.png"/>
-
 {: .center-image }![IUC Overview Figures](images/overview/iuc_overview.png)
 
 The 111/CAS service currently sends referrals to GP, OOH, MIU, UTC and other services using CDA ITK messages.  Development and Implementation has been done using proprietary solutions to enable booking between 111 and GP In Hours and Urgent Treatment Centre.  These solutions are point to point and take a lot of resource to implement and scale.
