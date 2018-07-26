@@ -4,44 +4,36 @@ entries:
   levels: one
   folders:
 
-  - title: Overview
+  - title: Introduction / Overview
     output: web
     folderitems:
-    - title: Introduction
-      url: /index.html
+    - title: Definition of Direct Booking
+      output: web, pdf
+      type: homepage
+    - title: IUC/111 Landscape Overview
+      output: web, pdf
+      type: homepage
+    - title: What we are doing
       output: web, pdf
       type: homepage
 
-  - title: Technical Specifications
+  - title: Scope and use cases
     output: web
-    folderitems:
-    - title: Non-functional Requirements
-      url: /tech_non_func_requirements.html
-      output: web
 
-  - title: Assurance
+  - title: Functional Requirements
     output: web
-    folderitems:
-    - title: Overview
-      url: /assurance_overview.html
-      output: web
 
+  - title: Non-Functional Requirements
+    output: web
+
+  - title: Assurance Process
+    output: web
+
+  - title: First of Type
+    output: web
+    
   - title: Getting Live
     output: web
-    folderitems:
-    - title: Overview
-      url: /getting_live_overview.html
-      output: web
-
-  - title: Help and support
+    
+  - title: Help and Support
     output: web
-    folderitems:
-    - title: Contact Details
-      url: /contact.html
-      output: web
-    - title: Frequently asked questions
-      url: /faq.html
-      output: web
-    - title: Glossary
-      url: /overview_glossary.html
-      output: web
