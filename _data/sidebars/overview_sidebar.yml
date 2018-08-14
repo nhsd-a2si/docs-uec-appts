@@ -24,8 +24,13 @@ entries:
       url: user_stories.html
       output: web, pdf
 
-  - title: Functional Requirements
+  - title: Functional Specification
     output: web
+    folderitems:
+    - title: Filtering Slots
+      url: provider_filtering_slots.html
+      output: web, pdf
+    
 
   - title: Non-Functional Requirements
     output: web
