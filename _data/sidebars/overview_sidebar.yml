@@ -14,13 +14,15 @@ entries:
     - title: IUC/111 Landscape Overview
       output: web, pdf
       url: iuc_overview.html
-      type: homepage
     - title: What we are doing
       output: web, pdf
-      type: homepage
 
-  - title: Scope and use cases
+  - title: Scope and user stories
     output: web
+    folderitems:
+    - title: User Stories
+      url: user_stories.html
+      output: web, pdf
 
   - title: Functional Requirements
     output: web
