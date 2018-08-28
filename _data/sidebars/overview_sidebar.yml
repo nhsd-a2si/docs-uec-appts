@@ -32,8 +32,10 @@ entries:
       url: provider_filtering_slots.html
       output: web, pdf
     
-
   - title: Non-Functional Requirements
+    output: web
+    folderitems: 
+    - title: Non Functional Requirements
      url: non_functional_requirements.html
      output: web, pdf
 
