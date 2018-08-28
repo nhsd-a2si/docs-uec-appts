@@ -15,7 +15,8 @@ entries:
       output: web, pdf
       url: iuc_overview.html
     - title: What we are doing
-      output: web, pdf
+      url: what_are_we_doing.html
+      output: web, pdf      
 
   - title: Scope and user stories
     output: web
