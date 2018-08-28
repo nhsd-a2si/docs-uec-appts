@@ -36,8 +36,8 @@ entries:
     output: web
     folderitems: 
     - title: Non Functional Requirements
-     url: non_functional_requirements.html
-     output: web, pdf
+      url: non_functional_requirements.html
+      output: web, pdf
 
   - title: Assurance Process
     output: web
