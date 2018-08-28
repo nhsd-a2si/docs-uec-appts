@@ -8,44 +8,44 @@ entries:
     output: web
     folderitems:
     - title: Introduction
-      url: index.html
+      url: /index.html
       output: web, pdf
       type: homepage
     - title: Using this site
-      url: using_this_site.html
+      url: /using_this_site.html
       output: web, pdf
     - title: Getting Started
-      url: getting_started.html
+      url: /getting_started.html
       output: web, pdf
     - title: Definition of Direct Booking
-      url: definition.html
+      url: /definition.html
       output: web, pdf
     - title: IUC/111 Landscape Overview
       output: web, pdf
-      url: iuc_overview.html
+      url: /iuc_overview.html
     - title: What we are doing
-      url: what_are_we_doing.html
+      url: /what_are_we_doing.html
       output: web, pdf      
 
   - title: Scope and user stories
     output: web
     folderitems:
     - title: User Stories
-      url: user_stories.html
+      url: /user_stories.html
       output: web, pdf
 
   - title: Functional Specification
     output: web
     folderitems:
     - title: Filtering Slots
-      url: provider_filtering_slots.html
+      url: /provider_filtering_slots.html
       output: web, pdf
     
   - title: Non-Functional Requirements
     output: web
     folderitems: 
     - title: Non Functional Requirements
-      url: non_functional_requirements.html
+      url: /non_functional_requirements.html
       output: web, pdf
      
   - title: Assurance Process
@@ -61,12 +61,12 @@ entries:
     output: web
     folderitems:
     - title: FAQ
-      url: HS_FAQ.html
+      url: /HS_FAQ.html
       output: web, pdf
     - title: Contact Details
       output: web, pdf
-      url: HS_contact.html  
+      url: /HS_contact.html  
     - title: Glossary
-      url: HS_glossary.html
+      url: /HS_glossary.html
       output: web, pdf   
 
