@@ -5,7 +5,7 @@ sidebar: overview_sidebar
 permalink: non_functional_requirements.html
 ---
 
-{% include note.html content="Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability."%}
+{% include callout.html content="Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability."%}
 
 ### Security 
 Provider systems SHALL resist unauthorized, accidental or unintended usage and provide access only to legitimate users. 
@@ -113,3 +113,5 @@ Provider systems SHALL be deployed with the provider APIs enabled by default.
  
 
 Provider systems MAY provide a mechanism for a data controller at an organisation to choose to globally disable/enable the provider APIs (that is, turn on/off the overall UEC Booking technical capability). 
+
+{% include developer_journey.html %}
