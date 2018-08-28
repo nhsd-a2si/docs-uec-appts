@@ -4,13 +4,22 @@ entries:
   levels: one
   folders:
 
-  - title: Introduction / Overview
+  - title: Overview
     output: web
     folderitems:
+    - title: Introduction
+      url: index.html
+      output: web, pdf
+      type: homepage
+    - title: Using this site
+      url: using_this_site.html
+      output: web, pdf
+    - title: Getting Started
+      url: getting_started.html
+      output: web, pdf
     - title: Definition of Direct Booking
       url: definition.html
       output: web, pdf
-      type: homepage
     - title: IUC/111 Landscape Overview
       output: web, pdf
       url: iuc_overview.html
@@ -38,8 +47,7 @@ entries:
     - title: Non Functional Requirements
       url: non_functional_requirements.html
       output: web, pdf
-      type: homepage
-
+     
   - title: Assurance Process
     output: web
 
@@ -55,13 +63,10 @@ entries:
     - title: FAQ
       url: HS_FAQ.html
       output: web, pdf
-      type: homepage
     - title: Contact Details
       output: web, pdf
-      url: HS_contact.html
-      type: homepage
+      url: HS_contact.html  
     - title: Glossary
       url: HS_glossary.html
-      output: web, pdf
-      type: homepage
+      output: web, pdf   
 
