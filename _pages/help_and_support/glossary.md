@@ -1,7 +1,7 @@
 ---
 title: Glossary
 sidebar: overview_sidebar
-permalink: glossary.html
+permalink: HS_glossary.html
 ---
 
 ### Consumer
