@@ -1,5 +1,5 @@
 ---
-title: Filtering Slots
+title: Non-Functional Requirements
 toc: True
 sidebar: overview_sidebar
 permalink: non_functional_requirements.html
