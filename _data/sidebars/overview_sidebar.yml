@@ -34,7 +34,8 @@ entries:
     
 
   - title: Non-Functional Requirements
-    output: web
+     url: non_functional_requirements.html
+     output: web, pdf
 
   - title: Assurance Process
     output: web
