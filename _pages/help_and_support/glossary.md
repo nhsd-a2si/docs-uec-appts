@@ -17,12 +17,3 @@ toc: false
 </dl>
 {% endfor %}
 </div>
-
-
-
-
-### Consumer
-The IT system that is searching for and placing bookings on behalf of the patient 
-
-### Provider
-The IT system that holds the appointments being searched for and booked into 
