@@ -72,7 +72,14 @@ entries:
            
   - title: Assurance Process
     output: web
-
+    folderitems:
+    - title: Assurance Overview
+      url: /assurance_overview.html
+      output: web, pdf
+    - title: Supplier Assurance Process
+      url: /assurance_supplier.html
+      output: web,pdf
+     
   - title: First of Type
     output: web
     
