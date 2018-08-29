@@ -54,7 +54,7 @@ Provider and consumer systems SHOULD follow the [ISO 13407](https://www.iso.org/
 ## Accessibility 
 Provider and consumer systems MUST maintain a compliance of minimum Double “A” of the WCAG 1.0 (or equivalent in WCAG 2.0) or, as stipulated by UK Government guidelines, for all user interfaces. Please see the [Web Accessibility Initiative](https://www.w3.org/WAI/) for more details. 
 
-Please refer to the ‘UEC Technical Standards’ for details. 
+Please refer to the [UEC Technical Standards](https://developer.nhs.uk/apis/uec-tech-standards/index.htmlhttps://developer.nhs.uk/apis/uec-tech-standards/index.html) for details. 
 
 ## Deployment 
 Provider systems SHALL release a new major version of their UEC Booking API alongside a previous major version, until such time as consumers have migrated to the new major version. 
