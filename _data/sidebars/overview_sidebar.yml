@@ -84,7 +84,7 @@ entries:
     output: web
     folderitems:
     - title: First of Type
-      url: /first_of_Type.html
+      url: /first_of_type.html
       output: web, pdf
     
   - title: Getting Live
