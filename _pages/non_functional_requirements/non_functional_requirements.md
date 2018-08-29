@@ -5,7 +5,7 @@ sidebar: overview_sidebar
 permalink: non_functional_requirements.html
 ---
 
-<div markdown="span" class="pageSummary">
+<div markdown="span" class="summary">
 Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability.
 </div>
 
