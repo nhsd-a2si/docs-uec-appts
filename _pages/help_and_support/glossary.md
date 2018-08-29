@@ -3,7 +3,7 @@ title: Glossary
 keywords: abbreviations, definitions, glossaries, terms
 tags: [getting_started]
 sidebar: overview_sidebar
-permalink: HS_glossary.html
+permalink: glossary.html
 summary: "Glossary of terms used in the UEC Appointment booking standards"
 toc: false
 ---
