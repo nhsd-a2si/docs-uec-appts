@@ -2,7 +2,7 @@
 title: Performance Guidance
 sidebar: overview_sidebar
 keywords: guidance
-permalink: Performance_guidance.html
+permalink: performance_guidance.html
 toc: false
 folder: non_functional_requirements
 ---
