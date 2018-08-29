@@ -1,9 +1,9 @@
 ---
-title: Assurance Process
+title: Overview of Assurance Process
 toc: True
 sidebar: overview_sidebar
-permalink: assurance.html
-summary: "Details of the assurance processes involved in developing and deploying a solution"
+permalink: assurance_overview.html
+summary: "Overview of the assurance processes involved in developing and deploying a solution"
 ---
 
 ## Assurance principles 
@@ -19,48 +19,3 @@ TBC - Details of POC?
 
 ## Test Environments 
 TBC - Details of POC?
-
-
- 
-
- 
-
-Consumer Testing 
-
-Details of what activities form the basis of testing for consumer applications 
-
-Table of contents 
-
-Technical accreditation 
-
-Technical conformance 
-
-Solution assurance 
-
- 
-
-Technical accreditation 
-
-Consumer systems SHALL be (or have previously been) tested and accreditated to establish baseline Spine connectivity prerequisites: 
-
-N3 connectivity / ASID / PKI Certificate 
-
-Personal Demographic Service (PDS) integration 
-
-Spine Directory Service (SDS) integration 
-
- 
-
-Technical conformance 
-
-Consumer systems SHALL be tested for technical conformance of the following before they can be listed on the product catalogue: 
-
-Spine Security Proxy (SSP) integration 
-
-Foundations 
-
- 
-
-Solution assurance 
-
-Solution assurance ensures that the correct level of safety, governance, and security has been accepted, understood and signed off by the organisation consuming the APIs. 
