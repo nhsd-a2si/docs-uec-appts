@@ -4,7 +4,7 @@ entries:
   levels: one
   folders:
 
-  - title: Overview
+  - title: Inroduction
     output: web
     folderitems:
     - title: Introduction
@@ -17,6 +17,10 @@ entries:
     - title: Getting Started
       url: /getting_started.html
       output: web, pdf
+      
+  - title: Overview
+    output: web
+    folderitems:
     - title: Definition of Direct Booking
       url: /definition.html
       output: web, pdf
