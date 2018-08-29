@@ -60,7 +60,7 @@ Where GP practices are huge joint practices or collections of federated practice
 
 When returning appt lists from some GP providers, there can be issues where the GP provider has not set up their rotas correctly and many slots are returned that should not be booked by the urgent care consumer .  An example is provided here. 
 
-GP Connect use case can be found at [https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html]
+GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html>
 
 Urgent care consumers can theoretically book an appointment at any time offered even if that goes beyond the NHS Pathways disposition time frame.  Ideally any appointment interface would warn the user that they are about to book beyond the disposition time, and show by how long.  It should then ask for them to confirm that decision.  It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient or prevent non-clinical call handlers from exceeding that timeframe.. 
 
@@ -119,7 +119,7 @@ Urgent care settings will book patient appts at GP practices where they are not 
 
 The meeting between UC and GPC (31-Aug-2017) confirmed that, for now, UC would use the same protocols as GPC.  Appts would be immediately booked and, if the caller decides not to continue, then the appt will be cancelled. 
 
-GP Connect use case can be found at [https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html]
+GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html>
 
 ### Acceptance Criteria 
 The request to confirm the appt slot must contain all the data to enable the provider to uniquely identify the slot and confirm the appt. 
@@ -169,7 +169,7 @@ It may be that the patient has already missed the booked appt.  Therefore, the
 
 Additionally, urgent care clinicians may wish to query provider systems to confirm that the patient has attended their appt.  If they have failed to attend, there are occasions when the clinician will call back to check on the patient. 
 
-GP Connect use case can be found at [https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html] 
+GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html> 
 
 ### Acceptance Criteria  
 The consumer system must be capable of querying any provider system, regardless of what relationship the provider organisation has with the consumer organisation. 
@@ -185,7 +185,7 @@ The list of appts returned must include the appt status and a unique referen
 ### Notes 
 For example, a restricted list from the FHIR base valueset for AppointmentStatus could meet the needs for Urgent Care: 
 
-[http://hl7.org/fhir/valueset-appointmentstatus.html] 
+<http://hl7.org/fhir/valueset-appointmentstatus.html> 
 
 Code 
 
@@ -245,7 +245,7 @@ As urgent care providers (definitely 111s) can receive calls for different regio
 
 It may be that the provider system cannot cancel the appt.  User systems will have to have protocols in place to handle all returned statuses. 
 
-GP Connect use case can be found at [https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html]
+GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html>
 
 ### Acceptance Criteria  
 The consumer system must be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
@@ -278,7 +278,7 @@ The provider system must not be required to inform the patient of the cancel
 **_I want_** to amend the appt reason for a previously booked appt, where the reason has changed or was erroneously provided to the service provider. 
 
 ### Commentary 
-GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go to [https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html]
+GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go to <https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html>
 
 ### Acceptance Criteria  
 The consumer system must be capable of amending slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
