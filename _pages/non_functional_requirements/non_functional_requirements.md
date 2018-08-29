@@ -3,11 +3,9 @@ title: Non-Functional Requirements
 toc: True
 sidebar: overview_sidebar
 permalink: non_functional_requirements.html
+summary: "Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability"
 ---
-
-{{ page.summary }}
-
-Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability
+## Non-functional requirements
 
 ### Security 
 Provider systems SHALL resist unauthorized, accidental or unintended usage and provide access only to legitimate users. 
@@ -15,7 +13,6 @@ Provider systems SHALL resist unauthorized, accidental or unintended usage and p
 Please refer to the [Security guidance](security_guidance.html) page for technical details. 
 
 ### Volume and performance 
-
 #### Volumetric 
  Provider systems MUST meet the agreed volumetric performance targets. 
  Please refer to the [Volumetric guidance](volumetric_guidance.html) page for technical details. 
