@@ -71,37 +71,22 @@ From a 111 provider:
 >Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. In the national API, providers will be expected to return all the slots that match the start/end times, regardless of the provider's internal diary structure._ 
 
 ### Acceptance Criteria 
-The list must contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 
-
-The list must contain details of the start/end times of the available slots. 
-
-The list must contain details of the type of appt, such as face-to-face, video, telephone call-back. 
-
-The request must include the fact that the consumer system delivers urgent care.  The provider system will then able to filter back to the consumer those slots that they have released for urgent care. 
-
-The request must have a date/time window specified by the consumer system.  It will be for the consumer system to define what window they deem to be acceptable.  It is expected that the window will be derived from the disposition of the patient, but it will be for the developers of the consumer system to define what ranges will be appropriate for each occasion. 
-
-The request must include the coded disposition of the patient.  This will enable provider systems to return the best slots that meet the requirement, whilst also maintaining a level of demand management. 
-
-The slots provided must be for a service that can respond to the current disposition of the patient. 
-
-The list may mark those appts that do/do not meet the current disposition timeframe, making it easier for urgent care staff and the patient to make an informed decision. 
-
-The list may mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
-
-The available appts must be capable of being retrieved from any provider, regardless of the relationship that the consuming user's organisation has with that provider. 
-
-The available appts must be capable of being retrieved by a consumer system from any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
-
-The method of retrieval must not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. 
-
-Where there are no available slots, the provider must send an appropriate response to indicate this. 
-
-The provider system must return available slots without requiring the potential patient to be "registered" with the provider. 
-
-This list may be capable of being quickly refreshed by the user or automatically as a timed event. 
-
-Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider must return all of those slots as part of the initial response. 
+*The list must contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 
+*The list must contain details of the start/end times of the available slots. 
+*The list must contain details of the type of appt, such as face-to-face, video, telephone call-back. 
+*The request must include the fact that the consumer system delivers urgent care.  The provider system will then able to filter back to the consumer those slots that they have released for urgent care. 
+*The request must have a date/time window specified by the consumer system.  It will be for the consumer system to define what window they deem to be acceptable.  It is expected that the window will be derived from the disposition of the patient, but it will be for the developers of the consumer system to define what ranges will be appropriate for each occasion. 
+*The request must include the coded disposition of the patient.  This will enable provider systems to return the best slots that meet the requirement, whilst also maintaining a level of demand management. 
+*The slots provided must be for a service that can respond to the current disposition of the patient. 
+*The list may mark those appts that do/do not meet the current disposition timeframe, making it easier for urgent care staff and the patient to make an informed decision. 
+*The list may mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
+*The available appts must be capable of being retrieved from any provider, regardless of the relationship that the consuming user's organisation has with that provider. 
+*The available appts must be capable of being retrieved by a consumer system from any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
+*The method of retrieval must not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. 
+*Where there are no available slots, the provider must send an appropriate response to indicate this. 
+*The provider system must return available slots without requiring the potential patient to be "registered" with the provider. 
+*This list may be capable of being quickly refreshed by the user or automatically as a timed event. 
+*Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider must return all of those slots as part of the initial response. 
 
 <br>
 
@@ -122,13 +107,10 @@ The meeting between UC and GPC (31-Aug-2017) confirmed that, for now, UC would u
 GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html>
 
 ### Acceptance Criteria 
-The request to confirm the appt slot must contain all the data to enable the provider to uniquely identify the slot and confirm the appt. 
-
-The request must contain textual details to indicate the reason for the appt. 
-
-The provider system must accept the appt booking even if the patient is not "registered" with this provider. 
-
-The provider system must confirm that the slot has been booked or must return a response to indicate that the booking confirmation has failed. 
+*The request to confirm the appt slot must contain all the data to enable the provider to uniquely identify the slot and confirm the appt. 
+*The request must contain textual details to indicate the reason for the appt. 
+*The provider system must accept the appt booking even if the patient is not "registered" with this provider. 
+*The provider system must confirm that the slot has been booked or must return a response to indicate that the booking confirmation has failed. 
 
 <br>
 
@@ -143,13 +125,10 @@ The provider system must confirm that the slot has been booked or must r
 Urgent care can theoretically book an appointment at any time offered even if that goes beyond the NHS Pathways disposition time frame.  Ideally any appointment interface should warn the user that they are about to book beyond the disposition time, and show by how long.  It should then ask for them to confirm that decision. It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient. 
 
 ### Acceptance Criteria 
-The request to confirm the appt slot must warn the user if they are about to book an appt that is outside the disposition timeframe. 
-
-The user warning should include details of by how long the appt fails to meet the disposition timeframe. 
-
-The system must ensure that the user confirms a decision to continue. 
-
-The system may include, as part of the confirmation, an assertion from the user that the patient (or their carer) has has made an informed decision to accept an appt is outside the disposition timeframe. 
+*The request to confirm the appt slot must warn the user if they are about to book an appt that is outside the disposition timeframe. 
+*The user warning should include details of by how long the appt fails to meet the disposition timeframe. 
+*The system must ensure that the user confirms a decision to continue. 
+*The system may include, as part of the confirmation, an assertion from the user that the patient (or their carer) has has made an informed decision to accept an appt is outside the disposition timeframe. 
 
 <br>
 
@@ -172,15 +151,11 @@ Additionally, urgent care clinicians may wish to query provider systems to confi
 GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html> 
 
 ### Acceptance Criteria  
-The consumer system must be capable of querying any provider system, regardless of what relationship the provider organisation has with the consumer organisation. 
-
-The patient's appts must be capable of being retrieved by a consumer system from any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
-
-The request must have a date/time window specified by the consumer system.  It is expected that the window will be based on the conversation with the patient and may include a start date/time that is in the past.  It will be for the developers and users of the consumer system to define what ranges will be appropriate for each occasion. 
-
-The provider system must return a list of appts booked for this patient (within the time window provided) or must return a response to indicate that there are no matching appts. 
-
-The list of appts returned must include the appt status and a unique reference for the appt. 
+*The consumer system must be capable of querying any provider system, regardless of what relationship the provider organisation has with the consumer organisation. 
+*The patient's appts must be capable of being retrieved by a consumer system from any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
+*The request must have a date/time window specified by the consumer system.  It is expected that the window will be based on the conversation with the patient and may include a start date/time that is in the past.  It will be for the developers and users of the consumer system to define what ranges will be appropriate for each occasion. 
+*The provider system must return a list of appts booked for this patient (within the time window provided) or must return a response to indicate that there are no matching appts. 
+*The list of appts returned must include the appt status and a unique reference for the appt. 
 
 ### Notes 
 For example, a restricted list from the FHIR base valueset for AppointmentStatus could meet the needs for Urgent Care: 
@@ -248,25 +223,16 @@ It may be that the provider system cannot cancel the appt.  User systems will 
 GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html>
 
 ### Acceptance Criteria  
-The consumer system must be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
-
-The patient's appts must be capable of being cancelled by a consumer system at any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
-
-The consumer system must provide visible confirmation to the user of the status returned by the provider system  ie. whether the requested appt was successfully cancelled or not.  Example returned statuses could be: 
-
-Appt successfully cancelled 
-
-Not cancelled - system failure 
-
-Not cancelled - appt requested was not found 
-
-Not cancelled - appt was not for this patient 
-
-Not cancelled - appt was already in the past 
-
-Not cancelled - appt was already cancelled 
-
-The provider system must not be required to inform the patient of the cancellation of the appt.  Business/clinical responsibility for informing the patient must remain with the consumer organisation. 
+*The consumer system must be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
+*The patient's appts must be capable of being cancelled by a consumer system at any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
+*The consumer system must provide visible confirmation to the user of the status returned by the provider system  ie. whether the requested appt was successfully cancelled or not.  Example returned statuses could be: 
+*Appt successfully cancelled 
+*Not cancelled - system failure 
+*Not cancelled - appt requested was not found 
+*Not cancelled - appt was not for this patient 
+*Not cancelled - appt was already in the past 
+*Not cancelled - appt was already cancelled 
+*The provider system must not be required to inform the patient of the cancellation of the appt.  Business/clinical responsibility for informing the patient must remain with the consumer organisation. 
 
 <br> 
 
@@ -281,18 +247,11 @@ The provider system must not be required to inform the patient of the cancel
 GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go to <https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html>
 
 ### Acceptance Criteria  
-The consumer system must be capable of amending slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
-
-The patient's appts must be capable of being amended by a consumer system at any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
-
-The user's system must provide visible confirmation to the user of the status returned by the provider system  ie. whether the requested appt reason was successfully amended or not.  Example returned statuses could be: 
-
-Appt successfully amended 
-
-Not amended - system failure 
-
-Not amended - appt requested was not found 
-
-Not amended - appt was not for this patient 
-
-Not amended - appt was already in the past 
+*The consumer system must be capable of amending slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
+*The patient's appts must be capable of being amended by a consumer system at any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
+*The user's system must provide visible confirmation to the user of the status returned by the provider system  ie. whether the requested appt reason was successfully amended or not.  Example returned statuses could be: 
+*Appt successfully amended 
+*Not amended - system failure 
+*Not amended - appt requested was not found 
+*Not amended - appt was not for this patient 
+*Not amended - appt was already in the past 
