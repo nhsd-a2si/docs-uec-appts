@@ -162,47 +162,14 @@ For example, a restricted list from the FHIR base valueset for AppointmentStatus
 
 <http://hl7.org/fhir/valueset-appointmentstatus.html> 
 
-Code 
-
-Display 
-
-Definition 
-
-pending 
-
-Pending 
-
-Some or all of the participant(s) have not finalized their acceptance of the appointment request. 
-
-booked 
-
-Booked 
-
-All participant(s) have been considered and the appointment is confirmed to go ahead at the date/times specified. 
-
-arrived 
-
-Arrived 
-
-Some of the patients have arrived. 
-
-fulfilled 
-
-Fulfilled 
-
-This appointment has completed and may have resulted in an encounter. 
-
-cancelled 
-
-Cancelled 
-
-The appointment has been cancelled. 
-
-noshow 
-
-No Show 
-
-Some or all of the participant(s) have not/did not appear for the appointment (usually the patient). 
+|    Code   |  Display  | Definition |
+|:---------:|:---------:|------------|
+|  pending  | Pending   |Some or all of the participant(s) have not finalized their acceptance of the appointment request. |
+|   booked  |  Booked   | All participant(s) have been considered and the appointment is confirmed to go ahead at the date/times specified.  |
+|  arrived  |  Arrived  | Some of the patients have arrived. |
+| fulfilled | Fulfilled | This appointment has completed and may have resulted in an encounter. |
+| cancelled | Cancelled | The appointment has been cancelled. |
+|   noshow  |  No Show  | Some or all of the participant(s) have not/did not appear for the appointment (usually the patient). |
 
 <br> 
 
