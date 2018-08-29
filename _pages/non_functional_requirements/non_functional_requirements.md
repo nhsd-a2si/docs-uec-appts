@@ -5,9 +5,11 @@ sidebar: overview_sidebar
 permalink: non_functional_requirements.html
 ---
 
-<div markdown="span" class="summary">
-Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability.
-</div>
+// <div markdown="span" class="summary">
+// Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability.
+//</div>
+
+<summary>hello </summary>
 
 ### Security 
 Provider systems SHALL resist unauthorized, accidental or unintended usage and provide access only to legitimate users. 
