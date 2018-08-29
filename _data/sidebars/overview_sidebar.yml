@@ -24,7 +24,7 @@ entries:
     - title: Definition of Direct Booking
       url: /definition.html
       output: web, pdf
-    - title: IUC/111 Landscape Overview
+    - title: IUC/111 Landscape
       output: web, pdf
       url: /iuc_overview.html
     - title: What we are doing
