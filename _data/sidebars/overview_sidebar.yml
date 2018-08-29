@@ -85,12 +85,14 @@ entries:
     folderitems:
     - title: First of Type
       url: /first_of_Type.html
+      output: web, pdf
     
   - title: Getting Live
     output: web
     folderitems:
     - title: Getting Live
       url: /getting_live.html
+      output: web, pdf
         
   - title: Help and Support
     output: web
