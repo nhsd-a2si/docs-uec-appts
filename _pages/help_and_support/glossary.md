@@ -8,12 +8,8 @@ summary: "Glossary of terms used in the UEC Appointment booking standards"
 toc: false
 ---
 
-<div>
-{% assign gs = site.data.glossary | sort:[0] %}
-{% for kv in gs %}
-<dl>
-  <dt>{{ kv[0] }}</dt>
-  <dd>{{ kv[1] }}</dd>
-</dl>
-{% endfor %}
-</div>
+### Consumer
+The IT system that is searching for and placing bookings on behalf of the patient 
+
+### Provider
+The IT system that holds the appointments being searched for and booked into 
