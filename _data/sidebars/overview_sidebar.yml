@@ -82,20 +82,26 @@ entries:
      
   - title: First of Type
     output: web
+    folderitems:
+    - title: First of Type
+      url: /first_of_Type.html
     
   - title: Getting Live
     output: web
-    
+    folderitems:
+    - title: Getting Live
+      url: /getting_live.html
+        
   - title: Help and Support
     output: web
     folderitems:
     - title: FAQ
-      url: /HS_FAQ.html
+      url: /faq.html
       output: web, pdf
     - title: Contact Details
       output: web, pdf
-      url: /HS_contact.html  
+      url: /contact.html  
     - title: Glossary
-      url: /HS_glossary.html
+      url: /glossary.html
       output: web, pdf   
 
