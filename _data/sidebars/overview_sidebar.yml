@@ -54,7 +54,19 @@ entries:
     - title: Security Guidance
       url: /security_guidance.html
       output: web, pdf
-     
+    - title: Volumetric Guidance
+      url: /volumetric_guidance.html
+      output: web, pdf
+    - title: Performance Guidance
+      url: /performance_guidance.html
+      output: web, pdf
+    - title: Operational Level Agreement
+      url: /ola.html
+      output: web, pdf
+    - title: Audit
+      url: /audit.html
+      output: web, pdf
+           
   - title: Assurance Process
     output: web
 
