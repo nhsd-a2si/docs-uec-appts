@@ -2,6 +2,7 @@
 title: Definition of Direct Booking
 sidebar: overview_sidebar
 permalink: definition.html
+toc: false
 ---
 
 ### The urgent care service arranges for the patient:
