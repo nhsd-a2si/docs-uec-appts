@@ -45,6 +45,8 @@ Suppliers (and users) should be mindful that some scenarios for returning appoin
 * The list **may** include the earliest appt time available at each location, within the current disposition timeframe.
 * This list **may** be capable of being quickly refreshed by the user or automatically as a timed event.
 
+<br>
+
 ## ABUS.10 Display Available Slots From a Specific Provider by Geographic Location 
 
 **_In order_** to book a patient into their most convenient EC, UC or GP location and time for their current disposition 
@@ -53,21 +55,22 @@ Suppliers (and users) should be mindful that some scenarios for returning appoin
 
 **_I want_** to view the available slots by geographic location and time from the provider service for a specified timeframe. 
 
-Commentary 
+### Commentary 
 
 Where GP practices are huge joint practices or collections of federated practices, there must be a way of splitting them into locations that can then be selected.  This may also be true for other urgent care providers either now or in the future.  Ideally the list returned would be limited to those locations that fulfil the location requirement of the patient, however, if the returned list contains enough data for the user to make an informed decision with the patient/caller then this is at least a start. 
 
 When returning appt lists from some GP providers, there can be issues where the GP provider has not set up their rotas correctly and many slots are returned that should not be booked by the urgent care consumer .  An example is provided here. 
 
-GP Connect use case can be found at https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html 
+GP Connect use case can be found at (https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html) 
 
 Urgent care consumers can theoretically book an appointment at any time offered even if that goes beyond the NHS Pathways disposition time frame.  Ideally any appointment interface would warn the user that they are about to book beyond the disposition time, and show by how long.  It should then ask for them to confirm that decision.  It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient or prevent non-clinical call handlers from exceeding that timeframe.. 
 
 Providers may wish to demand-manage their slot collections.  GP practices may wish to have some appts available for urgent cases, and urgent care providers. 
 
-From Andrew Cooke (YAS) - Some providers may have multiple diaries set up where clinics are being delivered by more than one clinician.  Current proprietary solutions using TPP can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot.  In the national API, providers will be expected to return all the slots that match the start/end times, regardless of the provider's internal diary structure. 
+>From a 111 provider: _Some providers may have multiple diaries set up where clinics are being delivered by more than one clinician.
+>Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. In the national API, providers will be expected to return all the slots that match the start/end times, regardless of the provider's internal diary structure._ 
 
-Acceptance Criteria 
+### Acceptance Criteria 
 
 The list must contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 
 
@@ -101,6 +104,8 @@ This list may be capable of being quickly refreshed by the user or automatic
 
 Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider must return all of those slots as part of the initial response. 
 
+<br>
+
 ## ABUS.12 Confirm/Book an Appointment Slot 
 
 **_In order_** that the patient can be assured that the provider will see them on or around the allotted time at the selected location 
@@ -109,7 +114,7 @@ Where the provider has a number of diaries available to fulfil a request (say,
 
 **_I want_** to confirm/book an offered appointment slot with the provider. 
 
-Commentary 
+### Commentary 
 
 Current proprietary solutions seem to have a two-step booking process where the slot is reserved and then confirmed/booked by the process of sending the ITK message with clinical details.  GP Connect does not have this method.  The appt is just booked in a single message exchange. 
 
@@ -117,9 +122,9 @@ Urgent care settings will book patient appts at GP practices where they are not 
 
 The meeting between UC and GPC (31-Aug-2017) confirmed that, for now, UC would use the same protocols as GPC.  Appts would be immediately booked and, if the caller decides not to continue, then the appt will be cancelled. 
 
-GP Connect use case can be found at https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html 
+GP Connect use case can be found at (https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html)
 
-Acceptance Criteria 
+### Acceptance Criteria 
 
 The request to confirm the appt slot must contain all the data to enable the provider to uniquely identify the slot and confirm the appt. 
 
@@ -129,7 +134,7 @@ The provider system must accept the appt booking even if the patient is not 
 
 The provider system must confirm that the slot has been booked or must return a response to indicate that the booking confirmation has failed. 
 
- 
+<br>
 
 ## ABUS.13 Warn Users Where Appts are Outside Disposition Timeframe 
 
@@ -139,11 +144,11 @@ The provider system must confirm that the slot has been booked or must r
 
 **_I want_** to be warned if the appt slot I am about to book falls outside of the disposition timeframe for this patient. 
 
-Commentary 
+### Commentary 
 
 Urgent care can theoretically book an appointment at any time offered even if that goes beyond the NHS Pathways disposition time frame.  Ideally any appointment interface should warn the user that they are about to book beyond the disposition time, and show by how long.  It should then ask for them to confirm that decision. It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient. 
 
-Acceptance Criteria 
+### Acceptance Criteria 
 
 The request to confirm the appt slot must warn the user if they are about to book an appt that is outside the disposition timeframe. 
 
@@ -153,9 +158,9 @@ The system must ensure that the user confirms a decision to continue.
 
 The system may include, as part of the confirmation, an assertion from the user that the patient (or their carer) has has made an informed decision to accept an appt is outside the disposition timeframe. 
 
- 
+<br>
 
-ABUS.20 Display any Booked Appointments for a specific Patient/Service Provider 
+## ABUS.20 Display any Booked Appointments for a specific Patient/Service Provider 
 
 **_In order_** that the patient can confirm what appts are already booked for them at a provider or an urgent care clinician can check the attendance status of a patient's appt 
 
@@ -163,7 +168,7 @@ ABUS.20 Display any Booked Appointments for a specific Patient/Service Provide
 
 **_I want_** to retrieve the details of appts booked for a patient with a specific service provider. 
 
-Commentary 
+### Commentary 
 
 Patients (or their representatives) may contact an urgent care provider (such as 111) to confirm details of an appt that has already been made.  This may be just to be reminded of the details or so that they can amend/delete that appt.  Regardless of the reason, the urgent care service provider taking the call will have a requirement to make a request to another provider to retrieve the details of this appt.  
 
@@ -173,9 +178,9 @@ It may be that the patient has already missed the booked appt.  Therefore, the
 
 Additionally, urgent care clinicians may wish to query provider systems to confirm that the patient has attended their appt.  If they have failed to attend, there are occasions when the clinician will call back to check on the patient. 
 
-GP Connect use case can be found at https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html 
+GP Connect use case can be found at (https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html) 
 
-Acceptance Criteria  
+### Acceptance Criteria  
 
 The consumer system must be capable of querying any provider system, regardless of what relationship the provider organisation has with the consumer organisation. 
 
@@ -187,11 +192,11 @@ The provider system must return a list of appts booked for this patient (wit
 
 The list of appts returned must include the appt status and a unique reference for the appt. 
 
-Notes 
+### Notes 
 
 For example, a restricted list from the FHIR base valueset for AppointmentStatus could meet the needs for Urgent Care: 
 
-http://hl7.org/fhir/valueset-appointmentstatus.html 
+(http://hl7.org/fhir/valueset-appointmentstatus.html) 
 
 Code 
 
@@ -235,9 +240,7 @@ No Show
 
 Some or all of the participant(s) have not/did not appear for the appointment (usually the patient). 
 
- 
-
- 
+<br> 
 
 ## ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider 
 
@@ -247,19 +250,17 @@ Some or all of the participant(s) have not/did not appear for the appointment (u
 
 **_I want_** to cancel appts booked for a patient with a specific service provider. 
 
-Commentary 
+### Commentary 
 
 The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a cancel followed by a re-book.  There is still a user story to cover the amendment of an appt, but this will not cover amending details such as date/time/location. 
 
 As urgent care providers (definitely 111s) can receive calls for different regions they must have the ability to cancel appts that they did not actually raise.   
 
- 
-
 It may be that the provider system cannot cancel the appt.  User systems will have to have protocols in place to handle all returned statuses. 
 
-GP Connect use case can be found at https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html 
+GP Connect use case can be found at (https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html) 
 
-Acceptance Criteria  
+### Acceptance Criteria  
 
 The consumer system must be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
 
@@ -281,7 +282,7 @@ Not cancelled - appt was already cancelled
 
 The provider system must not be required to inform the patient of the cancellation of the appt.  Business/clinical responsibility for informing the patient must remain with the consumer organisation. 
 
- 
+<br> 
 
 ## ABUS.22 Amend a Booked Appointment Reason for a specific Patient/Service Provider 
 
@@ -291,13 +292,11 @@ The provider system must not be required to inform the patient of the cancel
 
 **_I want_** to amend the appt reason for a previously booked appt, where the reason has changed or was erroneously provided to the service provider. 
 
-Commentary 
+### Commentary 
 
-GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go to https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html 
+GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go to (https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html)
 
- 
-
-Acceptance Criteria  
+### Acceptance Criteria  
 
 The consumer system must be capable of amending slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
 
