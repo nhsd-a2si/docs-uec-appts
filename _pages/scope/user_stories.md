@@ -6,9 +6,9 @@ permalink: user_stories.html
 
 ## ABUS.01 Display Possible Provider Services
 
-*In order* that the patient can choose their most convenient provider or the provider that they think most closely serves their need
-*As a* 111 Call Handler or urgent care service provider
-*I want* to view the all the provider services that could currently assist the patient with a certain disposition.
+**_In order_** that the patient can choose their most convenient provider or the provider that they think most closely serves their need
+**_As a_** 111 Call Handler or urgent care service provider
+**_I want_** to view the all the provider services that could currently assist the patient with a certain disposition.
 
 ### Commentary
 Whilst not strictly concerning the new messaging/API for appt booking, searching DoS (directory of services) for a provider is a key precursor to appt booking.
@@ -25,9 +25,9 @@ Whilst not strictly concerning the new messaging/API for appt booking, searching
 <br>
 
 ## ABUS.02 Display Appt Availability Status of Providers
-*In order* that the patient can quickly be informed of what services have free appts and the call can be completed more quickly
-*As a* 111 Call Handler or urgent care service provider
-*I want* to view the appt availability of all the provider services that could currently assist the patient with a certain disposition when, or shortly after, that list is returned from the DoS.
+**_In order_** that the patient can quickly be informed of what services have free appts and the call can be completed more quickly
+**_As a_** 111 Call Handler or urgent care service provider
+**_I want_** to view the appt availability of all the provider services that could currently assist the patient with a certain disposition when, or shortly after, that list is returned from the DoS.
 
 ### Commentary
 
@@ -47,11 +47,11 @@ Suppliers (and users) should be mindful that some scenarios for returning appoin
 
 ## ABUS.10 Display Available Slots From a Specific Provider by Geographic Location 
 
-In order to book a patient into their most convenient EC, UC or GP location and time for their current disposition 
+**_In order_** to book a patient into their most convenient EC, UC or GP location and time for their current disposition 
 
-As a 111 Call Handler or urgent care service provider 
+**_As a_** 111 Call Handler or urgent care service provider 
 
-I want to view the available slots by geographic location and time from the provider service for a specified timeframe. 
+**_I want_** to view the available slots by geographic location and time from the provider service for a specified timeframe. 
 
 Commentary 
 
@@ -103,11 +103,11 @@ Where the provider has a number of diaries available to fulfil a request (say,
 
 ## ABUS.12 Confirm/Book an Appointment Slot 
 
-In order that the patient can be assured that the provider will see them on or around the allotted time at the selected location 
+**_In order_** that the patient can be assured that the provider will see them on or around the allotted time at the selected location 
 
-As a 111 Call Hander or urgent care service provider 
+**_As a_** 111 Call Hander or urgent care service provider 
 
-I want to confirm/book an offered appointment slot with the provider. 
+**_I want_** to confirm/book an offered appointment slot with the provider. 
 
 Commentary 
 
@@ -133,11 +133,11 @@ The provider system must confirm that the slot has been booked or must r
 
 ## ABUS.13 Warn Users Where Appts are Outside Disposition Timeframe 
 
-In order that the patient and their call handler or clinician can make an informed decision of the appropriate timescale and location of service that best meets the patient's needs and situation 
+**_In order_** that the patient and their call handler or clinician can make an informed decision of the appropriate timescale and location of service that best meets the patient's needs and situation 
 
-As a 111 Call Hander or urgent care service provider 
+**_As a_** 111 Call Hander or urgent care service provider 
 
-I want to be warned if the appt slot I am about to book falls outside of the disposition timeframe for this patient. 
+**_I want_** to be warned if the appt slot I am about to book falls outside of the disposition timeframe for this patient. 
 
 Commentary 
 
@@ -157,11 +157,11 @@ The system may include, as part of the confirmation, an assertion from the u
 
 ABUS.20 Display any Booked Appointments for a specific Patient/Service Provider 
 
-In order that the patient can confirm what appts are already booked for them at a provider or an urgent care clinician can check the attendance status of a patient's appt 
+**_In order_** that the patient can confirm what appts are already booked for them at a provider or an urgent care clinician can check the attendance status of a patient's appt 
 
-As a 111 Call Handler or urgent care service provider 
+**_As a_** 111 Call Handler or urgent care service provider 
 
-I want to retrieve the details of appts booked for a patient with a specific service provider. 
+**_I want_** to retrieve the details of appts booked for a patient with a specific service provider. 
 
 Commentary 
 
@@ -241,11 +241,11 @@ Some or all of the participant(s) have not/did not appear for the appointment (u
 
 ## ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider 
 
-In order that the patient or their carer can cancel or rearrange an already-booked appointment at a specific provider 
+**_In order_** that the patient or their carer can cancel or rearrange an already-booked appointment at a specific provider 
 
-As a 111 Call Handler or urgent care service provider 
+**_As a 111_** Call Handler or urgent care service provider 
 
-I want to cancel appts booked for a patient with a specific service provider. 
+**_I want_** to cancel appts booked for a patient with a specific service provider. 
 
 Commentary 
 
@@ -285,11 +285,11 @@ The provider system must not be required to inform the patient of the cancel
 
 ## ABUS.22 Amend a Booked Appointment Reason for a specific Patient/Service Provider 
 
-In order that the service provider has the correct reason for the appt displayed on their system 
+**_In order_** that the service provider has the correct reason for the appt displayed on their system 
 
-As a 111 Call Handler or urgent care service provider 
+**_As a_** 111 Call Handler or urgent care service provider 
 
-I want to amend the appt reason for a previously booked appt, where the reason has changed or was erroneously provided to the service provider. 
+**_I want_** to amend the appt reason for a previously booked appt, where the reason has changed or was erroneously provided to the service provider. 
 
 Commentary 
 
