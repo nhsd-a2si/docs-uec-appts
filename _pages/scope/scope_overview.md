@@ -2,7 +2,7 @@
 title: Scope of standards
 toc: True
 sidebar: overview_sidebar
-permalink: overview.html
+permalink: scope_overview.html
 summary: "This page provides an overview of the currently envisiged scope for the national standards"
 ---
 ## Introduction
