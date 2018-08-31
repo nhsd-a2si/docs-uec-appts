@@ -100,13 +100,12 @@ entries:
   - title: Help and Support
     output: web
     folderitems:
-    - title: FAQ
-      url: /faq.html
-      output: web, pdf
     - title: Contact Details
       output: web, pdf
       url: /contact.html  
+    - title: FAQ
+      url: /faq.html
+      output: web, pdf
     - title: Glossary
       url: /glossary.html
-      output: web, pdf   
-
+      output: web, pdf
