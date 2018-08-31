@@ -9,7 +9,7 @@ summary: "This page provides an overview of the currently envisiged scope for th
 
 
 ## High Level Booking Scenarios
-|Priority Scope | Potential Future Scope |
+| Priority Scope | Potential Future Scope |
 | --------------- | ------------------------ |
 | Unscheduled Care Services → General Practice | General Practice → Unscheduled Care services |
 | Unscheduled Care Services → Unscheduled Care Services	| Emergency Departments → Unscheduled Care |
