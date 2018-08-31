@@ -34,7 +34,10 @@ entries:
   - title: Scope and user stories
     output: web
     folderitems:
-    - title: Scope
+    - title: Scope Overview
+      url: /scope_overview.html
+      output: web, pdf
+    - title: Functional Scope
       url: /scope.html
       output: web, pdf
     - title: User Stories
