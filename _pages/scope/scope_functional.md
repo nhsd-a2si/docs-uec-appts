@@ -1,9 +1,9 @@
 ---
-title: Scope
+title: Functional Scope
 toc: True
 sidebar: overview_sidebar
-permalink: scope.html
-summary: "This page defines the currently envisaged limit of scope for the direct booking standards"
+permalink: scope_functional.html
+summary: "This page defines the currently envisaged limit of functional scope for the direct booking standards"
 ---
 
 ## Appointment Types 
