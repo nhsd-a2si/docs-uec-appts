@@ -5,6 +5,9 @@ sidebar: overview_sidebar
 permalink: index.html
 ---
 
+
+
+
 Previously, there has been **no national standard** that sets out what appointment booking solutions should and should not be able to do. 
 
 Historically UEC was provided locally & things like booking appointments & transferring care were dealt with locally/internally. This meant they were usually done using the same IT system, and local evolution gave rise to a largely heterogeneous IT infrastructure across the country. 
