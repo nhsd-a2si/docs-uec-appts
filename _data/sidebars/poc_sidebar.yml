@@ -1,7 +1,6 @@
 entries:
 - title: Urgent & Emergency Care Appointment Booking Standards - Proof of Concept
-  version: 0.1
-  levels: one
+  product: Proof of Concept
   folders:
 
   - title: Overview
