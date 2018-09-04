@@ -72,7 +72,20 @@ entries:
     - title: Audit
       url: /audit.html
       output: web, pdf
-           
+   
+   - title: Implementing the Standard
+    output: web
+    folderitems:
+    - title: Implementation Overview
+      url: /implementation_overview.html
+      output: web, pdf
+    - title: fHIR Resources
+      url: /implementation_FHIR.html
+      output: web,pdf    
+     - title: Proof of Concept / Demonstrator
+       url: /implementation_POC.html
+       output: web,pdf  
+  
   - title: Assurance Process
     output: web
     folderitems:
