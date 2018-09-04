@@ -81,10 +81,10 @@ entries:
       output: web, pdf
     - title: fHIR Resources
       url: /implementation_FHIR.html
-      output: web,pdf    
+      output: web, pdf    
     - title: Proof of Concept Demonstrator
        url: /implementation_POC.html
-       output: web,pdf  
+       output: web, pdf  
   
   - title: Assurance Process
     output: web
@@ -94,7 +94,7 @@ entries:
       output: web, pdf
     - title: Supplier Assurance Process
       url: /assurance_supplier.html
-      output: web,pdf
+      output: web, pdf
      
   - title: First of Type
     output: web
