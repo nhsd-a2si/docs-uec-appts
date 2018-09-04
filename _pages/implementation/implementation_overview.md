@@ -4,7 +4,7 @@ sidebar: overview_sidebar
 keywords: guidance
 permalink: implementation_overview.html
 toc: false
-folder: getting_started
+folder: implementation
 ---
 
 {% include note-notpublished.html %}
