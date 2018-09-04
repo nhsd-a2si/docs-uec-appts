@@ -7,8 +7,11 @@ entries:
   - title: Overview
     output: web
     folderitems:
-    - title: Introduction
-      url: /implementation_poc.html
+    - title: back to standards
+      url: /implementation_overview.html
       output: web, pdf
       type: homepage
+    - title: Overview
+      url: /implementation_poc.html
+      output: web, pdf
     
