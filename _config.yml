@@ -93,6 +93,7 @@ defaults:
 
 sidebars:
 - overview_sidebar
+- poc_sidebar
 
 description: "Urgent & Emergency Care Appointment Booking Standards"
 # the description is used in the feed.xml file
