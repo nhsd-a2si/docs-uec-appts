@@ -9,12 +9,15 @@ summary: "This page provides an overview of the currently envisiged scope for th
 
 
 ## High Level Booking Scenarios
-|                    Priority Scope                      |              Potential Future Scope               |
-|:-------------------------------------------------------|:--------------------------------------------------|
-|      Unscheduled Care Services -> General Practice     |   General Practice -> Unscheduled Care services   |
-| Unscheduled Care Services -> Unscheduled Care Services	|     Emergency Departments -> Unscheduled Care     |
-| Unscheduled Care Services -> Specialist Clinical Services (e.g. emergency dentists, community pharmacists)	| General Practice -> Ambulatory Care Centres |
-|                                                        | Emergency Departments -> General Practice         |
+| Consumer | Provider | Scope |
+|:---------|:---------|:------|
+| Unscheduled Care Services | General Practice | Priority |
+| Unscheduled Care Services | Unscheduled Care Services | Priority |
+| Unscheduled Care Services | Specialis Clinical Services (e.g. emergency dentists, community pharmacists) | Priority |
+| General Practice | Unscheduled Care Services | Potential future |
+| Emergency Departments | Unscheduled Care | Potential future |
+| General Practice | Ambulatory Care Centres | Potential future |
+| Emegency Departments | General Practice | Potential future |
 
 ## Care Settings
 ### In Scope (Priority) 
