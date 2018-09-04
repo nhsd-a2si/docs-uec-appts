@@ -1,6 +1,6 @@
 ---
 title: Proof of Concept / Demonstrator
-sidebar: overview_sidebar
+sidebar: poc_sidebar
 keywords: guidance
 permalink: implementation_poc.html
 toc: false
