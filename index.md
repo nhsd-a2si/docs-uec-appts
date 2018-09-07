@@ -5,7 +5,7 @@ sidebar: overview_sidebar
 permalink: index.html
 ---
 
-##Introduction
+## Introduction
 
 Previously, there has been **no national standard** that sets out what appointment booking solutions should and should not be able to do. 
 
