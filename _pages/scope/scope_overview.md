@@ -11,7 +11,7 @@ summary: "This page provides an overview of the currently envisiged scope for th
 ## High Level Booking Scenarios
 
 Consumer | Provider | Scope
-:---------|:---------|:------
+---------:|:---------|:------
 Unscheduled Care Servics → | General Practice | Priority
 Unscheduled Care Service → | Urgent Treatment Centre | Priority
 Unscheduled Care Service → | Specialist Clinical Service*| Priority
