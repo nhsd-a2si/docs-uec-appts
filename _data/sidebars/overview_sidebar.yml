@@ -79,7 +79,7 @@ entries:
     - title: Implementation Overview
       url: /implementation_overview.html
       output: web, pdf
-    - title: Implementing FHIR Resources
+    - title: Implementing FHIR&reg Resources
       url: /implementation_FHIR.html
       output: web, pdf
     - title: Prrof of Concept Demonstrator
