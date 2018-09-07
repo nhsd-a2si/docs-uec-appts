@@ -6,6 +6,8 @@ permalink: assurance_supplier.html
 summary: "Details of what activities form the basis of assurance for a supplier involved in developing and deploying a solution"
 ---
 
+{% include note-notpublished.html %}
+
 ## Technical accreditation 
 Supplier systems **SHALL** be (or have previously been) tested and accredited to establish baseline Spine connectivity prerequisites: 
 * N3 connectivity / ASID / PKI Certificate 
