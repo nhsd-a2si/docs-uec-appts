@@ -80,7 +80,7 @@ entries:
       url: /implementation_overview.html
       output: web, pdf
     - title: Implementing FHIR Resources
-      url: /implementation_fhir.html
+      url: /implementation_FHIR.html
       output: web, pdf
     - title: Prrof of Concept Demonstrator
       url: /implementation_poc.html
