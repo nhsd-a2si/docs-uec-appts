@@ -80,7 +80,7 @@ entries:
       url: /implementation_overview.html
       output: web, pdf
     - title: Implementing FHIR Resources
-      url: /implementation_FHIR.html
+      url: https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/explore.html
       output: web, pdf
     - title: Prrof of Concept Demonstrator
       url: /implementation_poc.html
