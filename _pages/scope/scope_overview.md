@@ -13,7 +13,7 @@ summary: "This page provides an overview of the currently envisiged scope for th
 Consumer | Provider | Scope
 :---------|:---------|:------
 Unscheduled Care Servics | General Practice | Priority
-Unscheduled Care Service | Unscheduled Care Service | Priority
+Unscheduled Care Service | Urgent Treatment Centre | Priority
 Unscheduled Care Service | Specialist Clinical Service*| Priority
 General Practice | Unscheduled Care Service | Potential future
 Emergency Department | Unscheduled Care | Potential future
