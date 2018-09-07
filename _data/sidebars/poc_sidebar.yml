@@ -1,6 +1,7 @@
 entries:
 - title: Urgent & Emergency Care Appointment Booking Standards - Proof of Concept
-  product: poc
+  product: UEC Appointment booking POC
+  version: 0.1
   folders:
   
    - title:
