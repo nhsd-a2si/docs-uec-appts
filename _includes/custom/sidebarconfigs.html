@@ -1,21 +1,29 @@
+
+{% assign showbackbutton = true %}
+{% assign backbuttontext = "Back to UEC Appointment booking" %}
+ 
 {% if page.sidebar == "overview_sidebar" %}
 {% assign sidebar = site.data.sidebars.overview_sidebar.entries %}
+{% assign showbackbutton = false %}
 
-{% if page.sidebar == "poc_sidebar" %}
+{% elsif page.sidebar == "capability_one_sidebar" %}
+{% assign sidebar = site.data.sidebars.capability_one_sidebar.entries %}
+
+{% elsif page.sidebar == "poc_sidebar" %}
 {% assign sidebar = site.data.sidebars.poc_sidebar.entries %}
 
 {% else %}
 {% assign sidebar = site.data.sidebars.overview_sidebar.entries %}
 {% endif %}
-
+ 
 {% comment %}
 sidebar configuration for print files
 {% endcomment %}
-
+ 
 {% if site.product == "overview" %}
 {% assign sidebar_pdf = site.data.sidebars.overview_sidebar.entries %}
 {% endif %}
 
-{% if site.product == "poc" %}
-{% assign sidebar_pdf = site.data.sidebars.poc_sidebar.entries %}
+{% if site.product == "capability_one" %}
+{% assign sidebar_pdf = site.data.sidebars.capability_one_sidebar.entries %}
 {% endif %}
