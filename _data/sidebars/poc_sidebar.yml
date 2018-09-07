@@ -2,26 +2,9 @@ entries:
 - title: Urgent & Emergency Care Appointment Booking Standards - Proof of Concept
   folders:
   
-   - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage
-      output: pdf
-      type: frontmatter
-  
   - title: Overview
     output: web
     folderitems:
-    - title: back to standards
-      url: /implementation_overview.html
-      output: web, pdf
-      type: homepage
     - title: Overview
       url: /implementation_poc.html
       output: web, pdf
