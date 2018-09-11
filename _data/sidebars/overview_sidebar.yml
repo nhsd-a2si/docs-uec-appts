@@ -82,7 +82,7 @@ entries:
     - title: Implementing FHIR&reg Resources
       url: /implementation_FHIR.html
       output: web, pdf
-    - title: Prrof of Concept Demonstrator
+    - title: Proof of Concept Demonstrator
       url: /implementation_poc.html
       output: web, pdf    
   
