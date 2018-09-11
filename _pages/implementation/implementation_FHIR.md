@@ -9,4 +9,4 @@ folder: implementation
 
 {% include note-notpublished.html %}
 
-The FHIR Profiles that have been developed can be found here: [UEC Appointments FHIR Profiles](https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/index.html)
+The FHIR Profiles that have been developed can be found here: <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/index.html" target="_blank"> UEC Appointments FHIR Profiles </a>
