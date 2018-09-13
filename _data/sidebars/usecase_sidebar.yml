@@ -1,0 +1,43 @@
+entries:
+- title: Urgent & Emergency Care Appointment Booking Standards - User Stories
+  folders:
+  
+  - title: Priority Capabilites
+    output: web
+    folderitems:
+    - title: Overview
+      url: /overview_usep.html
+      output: web, pdf
+      
+    - title: Overview
+      url: /overview_usep.html
+      output: web, pdf
+    - title: ABUS.01 - Display possible provider services
+      url: /ABUS01_usep.html
+      output: web, pdf
+    - title: ABUS.10 - Display available slots from a selected service
+      url: /ABUS10_usep.html
+      output: web, pdf
+    - title: ABUS.12 Confirm/book an appointment slot
+      url: /ABUS12_usep.html
+      output: web, pdf
+    - title: ABUS.13 Warn users where appointments are outside assessment timeframe
+      url: /abus13_usep.html
+      output: web, pdf
+      
+  - title: Emerging Capabilites
+    output: web
+    folderitems:
+    - title: Overview
+      url: /overview_usee.html
+      output: web, pdf
+     - title: ABUS.02 Display Appt Availability Status of Providers
+      url: /abus02_usee.html
+      output: web, pdf
+     - title: ABUS.20 Display any booked appointments
+       url: /abus20_usee.html
+       output: web, pdf
+     - title: ABUS.21 Cancel a booked appointment
+       url: /abus21_usee.html
+     - title: ABUS22 Amend a booked appoimtment
+       url: /abus22_usee.html    
