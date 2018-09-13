@@ -1,7 +1,7 @@
 ---
 title: ABUS.02 Display Appt Availability Status of Providers
 sidebar: usecase_sidebar
-permalink: usep_abus02.html
+permalink: usee_abus02.html
 ---
 
 ## ABUS.02 Display Appt Availability Status of Providers
