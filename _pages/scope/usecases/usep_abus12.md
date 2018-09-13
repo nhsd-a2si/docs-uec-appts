@@ -1,7 +1,7 @@
 ---
 title: ABUS.12 Confirm/Book an Appointment Slot 
 sidebar: usecase_sidebar
-permalink: usee_abus12.html
+permalink: usep_abus12.html
 ---
 
 ## ABUS.12 Confirm/Book an Appointment Slot 
