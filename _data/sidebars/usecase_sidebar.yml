@@ -39,5 +39,6 @@ entries:
        output: web, pdf
     - title: ABUS.21 Cancel a booked appointment
        url: /usee_abus21.html
+       output: web, pdf
     - title: ABUS22 Amend a booked appoimtment
        url: /usee_abus22.html    
