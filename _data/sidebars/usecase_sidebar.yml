@@ -7,8 +7,7 @@ entries:
     folderitems:
     - title: Overview
       url: /overview_usep.html
-      output: web, pdf
-      
+      output: web, pdf      
     - title: Overview
       url: /overview_usep.html
       output: web, pdf
@@ -35,11 +34,11 @@ entries:
       url: /usee_abus02.html
       output: web, pdf
     - title: ABUS.20 Display any booked appointments
-       url: /usee_abus20.html
-       output: web, pdf
+      url: /usee_abus20.html
+      output: web, pdf
     - title: ABUS.21 Cancel a booked appointment
-       url: /usee_abus21.html
-       output: web, pdf
-    - title: ABUS22 Amend a booked appoimtment
-       url: /usee_abus22.html 
-       output: web, pdf
+      url: /usee_abus21.html
+      output: web, pdf
+    - title: ABUS.22 Amend a booked appoimtment
+      url: /usee_abus22.html 
+      output: web, pdf
