@@ -41,7 +41,7 @@ entries:
       url: /scope_functional.html
       output: web, pdf
     - title: User Stories
-      url: /user_stories.html
+      url: /usee_overview.html
       output: web, pdf
 
   - title: Functional Specification
