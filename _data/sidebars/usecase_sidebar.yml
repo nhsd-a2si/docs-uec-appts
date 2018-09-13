@@ -31,13 +31,13 @@ entries:
     - title: Overview
       url: /overview_usee.html
       output: web, pdf
-     - title: ABUS.02 Display Appt Availability Status of Providers
+    - title: ABUS.02 Display Appt Availability Status of Providers
       url: /usee_abus02.html
       output: web, pdf
-     - title: ABUS.20 Display any booked appointments
+    - title: ABUS.20 Display any booked appointments
        url: /usee_abus20.html
        output: web, pdf
-     - title: ABUS.21 Cancel a booked appointment
+    - title: ABUS.21 Cancel a booked appointment
        url: /usee_abus21.html
-     - title: ABUS22 Amend a booked appoimtment
+    - title: ABUS22 Amend a booked appoimtment
        url: /usee_abus22.html    
