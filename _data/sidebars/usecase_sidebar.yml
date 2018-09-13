@@ -1,16 +1,13 @@
 entries:
 - title: Urgent & Emergency Care Appointment Booking Standards - User Stories
-  folders:
+  - title: Overview
+    url: /use_overview.html
+    output: web, pdf      
   
+  folders:
   - title: Priority Capabilites
     output: web
     folderitems:
-    - title: Overview
-      url: /overview_usep.html
-      output: web, pdf      
-    - title: Overview
-      url: /overview_usep.html
-      output: web, pdf
     - title: ABUS.01 - Display possible provider services
       url: /usep_abus01.html
       output: web, pdf
@@ -27,9 +24,6 @@ entries:
   - title: Emerging Capabilites
     output: web
     folderitems:
-    - title: Overview
-      url: /overview_usee.html
-      output: web, pdf
     - title: ABUS.02 Display Appt Availability Status of Providers
       url: /usee_abus02.html
       output: web, pdf
