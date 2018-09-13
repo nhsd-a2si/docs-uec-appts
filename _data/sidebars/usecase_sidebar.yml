@@ -41,4 +41,5 @@ entries:
        url: /usee_abus21.html
        output: web, pdf
     - title: ABUS22 Amend a booked appoimtment
-       url: /usee_abus22.html    
+       url: /usee_abus22.html 
+       output: web, pdf
