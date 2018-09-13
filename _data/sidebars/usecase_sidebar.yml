@@ -1,10 +1,9 @@
 entries:
 - title: Urgent & Emergency Care Appointment Booking Standards - User Stories
-  - title: Overview
-    url: /use_overview.html
-    output: web, pdf      
-  
   folders:
+   - title: Overview
+    url: /use_overview.html
+    output: web, pdf  
   - title: Priority Capabilites
     output: web
     folderitems:
