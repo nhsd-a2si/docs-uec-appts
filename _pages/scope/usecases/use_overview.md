@@ -1,9 +1,9 @@
 ---
-title: Use Cases
+title: User Stories
 sidebar: usecase_sidebar
 keywords: guidance
 permalink: use_overview.html
 toc: false
-Summary: "Summary of use Cases goes here"
-folder: use cases
+Summary: "Summary of user stories goes here"
+folder: usecases
 ---
