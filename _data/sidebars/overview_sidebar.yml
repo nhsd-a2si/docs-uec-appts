@@ -86,6 +86,13 @@ entries:
       url: /implementation_poc.html
       output: web, pdf    
   
+   - title: First of Type
+    output: web
+    folderitems:
+    - title: First of Type
+      url: /first_of_type.html
+      output: web, pdf
+  
   - title: Assurance Process
     output: web
     folderitems:
@@ -95,14 +102,7 @@ entries:
     - title: Supplier Assurance Process
       url: /assurance_supplier.html
       output: web, pdf
-     
-  - title: First of Type
-    output: web
-    folderitems:
-    - title: First of Type
-      url: /first_of_type.html
-      output: web, pdf
-    
+         
   - title: Getting Live
     output: web
     folderitems:
