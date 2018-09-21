@@ -5,6 +5,8 @@ sidebar: overview_sidebar
 permalink: scope_overview.html
 summary: "This page provides an overview of the currently envisiged scope for the national standards"
 ---
+{% include note-notpublished.html %}
+
 ## Introduction
 
 
