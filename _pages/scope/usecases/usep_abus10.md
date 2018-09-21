@@ -3,6 +3,7 @@ title: ABUS.10 Display Available Slots From a Specific Provider by Geographic Lo
 sidebar: usecase_sidebar
 permalink: usep_abus10.html
 ---
+{% include note-notpublished.html %}
 
 ## ABUS.10 Display Available Slots From a Specific Provider by Geographic Location 
 **_In order_** to book a patient into their most convenient EC, UC or GP location and time for their current disposition 
