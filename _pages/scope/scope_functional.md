@@ -5,6 +5,7 @@ sidebar: overview_sidebar
 permalink: scope_functional.html
 summary: "This page defines the currently envisaged limit of functional scope for the direct booking standards"
 ---
+{% include note-notpublished.html %}
 
 ## Appointment Types 
 * Appointments are specific time-based slots, 1 patient per slot. 
