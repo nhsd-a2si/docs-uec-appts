@@ -5,6 +5,7 @@ sidebar: overview_sidebar
 permalink: assurance_overview.html
 summary: "Overview of the assurance processes involved in developing and deploying a solution"
 ---
+{% include note-notpublished.html %}
 
 ## Assurance principles 
 High-level design principles related to the assurance processes 
