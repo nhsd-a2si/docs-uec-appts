@@ -8,6 +8,7 @@ permalink: index.html
 
 {% include warning.html content="This site is provided for information only and is intended for those engaged with NHS Digital in First of Type activities. If you wish to develop against this standard, please contact the team" %}
 
+<p>
 
 ## Introduction
 
