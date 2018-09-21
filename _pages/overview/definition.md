@@ -4,6 +4,7 @@ sidebar: overview_sidebar
 permalink: definition.html
 toc: false
 ---
+{% include note-notpublished.html %}
 
 ### The urgent care service arranges for the patient:
 
