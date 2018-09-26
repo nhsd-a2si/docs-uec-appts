@@ -35,17 +35,17 @@ entries:
     output: web
     folderitems:
     - title: GP Practice
-      output: web, pdf
       url: /caresetting_gppractice.html
+      output: web, pdf      
     - title: UTC
-      output: web, pdf
       url: /caresetting_utc.html
+      output: web, pdf
     - title: Dental
-      output: web, pdf
       url: /caresetting_dental.html
+      output: web, pdf      
     - title: Pharmacy
-      output: web, pdf
       url: /caresetting_pharmacy.html
+      output: web, pdf
       
   - title: Scope and user stories
     output: web
