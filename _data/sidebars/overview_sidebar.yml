@@ -77,6 +77,14 @@ entries:
             output: "web, pdf"
             title: "Filtering Slots"
             url: /provider_filtering_slots.html
+          -
+            output: "web, pdf"
+            title: "Differences from GP Connect"
+            url: /fs_gpcdiff.html
+          -
+            output: "web, pdf"
+            title: "Implecations for the DoS"
+            url: /fs_dos.html
         output: web
         title: "Functional Specification"
       - 
