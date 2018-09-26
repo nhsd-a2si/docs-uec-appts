@@ -29,9 +29,9 @@ entries:
       url: /iuc_overview.html
     - title: What we are doing
       url: /what_are_we_doing.html
-      output: web, pdf      
- 
- - title: Care Settings
+      output: web, pdf
+      
+  - title: Care Settings
    output: web
    folderitems:
    - title: GP Practice
@@ -46,7 +46,7 @@ entries:
    - title: Pharmacy
      url: /caresetting_pharmacy.html
      output: web, pdf
-      
+  
   - title: Scope and user stories
     output: web
     folderitems:
