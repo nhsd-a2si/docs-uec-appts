@@ -32,20 +32,20 @@ entries:
       output: web, pdf      
  
  - title: Care Settings
-    output: web
-    folderitems:
-    - title: GP Practice
-      url: /caresetting_gppractice.html
-      output: web, pdf      
-    - title: UTC
-      url: /caresetting_utc.html
-      output: web, pdf
-    - title: Dental
-      url: /caresetting_dental.html
-      output: web, pdf      
-    - title: Pharmacy
-      url: /caresetting_pharmacy.html
-      output: web, pdf
+   output: web
+   folderitems:
+   - title: GP Practice
+     url: /caresetting_gppractice.html
+     output: web, pdf      
+   - title: UTC
+     url: /caresetting_utc.html
+     output: web, pdf
+   - title: Dental
+     url: /caresetting_dental.html
+     output: web, pdf
+   - title: Pharmacy
+     url: /caresetting_pharmacy.html
+     output: web, pdf
       
   - title: Scope and user stories
     output: web
