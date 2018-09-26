@@ -30,7 +30,23 @@ entries:
     - title: What we are doing
       url: /what_are_we_doing.html
       output: web, pdf      
-
+ 
+ - title: Care Settings
+    output: web
+    folderitems:
+    - title: GP Practice
+      output: web, pdf
+      url: /caresetting_gppractice.html
+    - title: UTC
+      output: web, pdf
+      url: /caresetting_utc.html
+    - title: Dental
+      output: web, pdf
+      url: /caresetting_dental.html
+    - title: Pharmacy
+      output: web, pdf
+      url: /caresetting_pharmacy.html
+      
   - title: Scope and user stories
     output: web
     folderitems:
