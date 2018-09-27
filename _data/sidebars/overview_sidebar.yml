@@ -141,6 +141,14 @@ entries:
             output: "web, pdf"            
             url: /first_of_type.html
         output: web        
+      -
+        title: "Information Governance"
+        folderitems:
+          - 
+            title: "Information Governance Overview"
+            output: "web, pdf"
+            url: /ig_overview.html
+        output: web
       - 
         title: "Assurance Process"
         folderitems: 
