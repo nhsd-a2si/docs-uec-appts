@@ -99,7 +99,7 @@ entries:
           -
             title: "User Privileges"
             output: "web, pdf"
-            url: /fs_userprivileges
+            url: /fs_userprivileges.html
           -
             title: "Slot Mapping/Semantics"
             output: "web, pdf"
