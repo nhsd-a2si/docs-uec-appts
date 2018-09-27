@@ -83,7 +83,7 @@ entries:
             url: /fs_gpcdiff.html
           -
             output: "web, pdf"
-            title: "Implecations for the DoS"
+            title: "Interactions with the DoS"
             url: /fs_dos.html
         output: web
         title: "Functional Specification"
