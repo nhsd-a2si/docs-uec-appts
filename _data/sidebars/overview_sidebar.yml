@@ -20,6 +20,10 @@ entries:
             title: "Getting Started"
             output: "web, pdf"            
             url: /getting_started.html
+          -
+            title: "Release Notes"
+            output: "web, pdf"
+            url: /release_notes.html
         output: web        
       - 
         title: Overview
