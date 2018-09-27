@@ -9,9 +9,9 @@ folder: introduction
 
 {% include note-notpublished.html %}
 
-Version | Handle | Stability | Release Date | State
---------|--------|-------|-------------|--------
-0.1.1  |  PREVIEW  | volatile | 28/09/2018 | Current Version
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.1   | PREVIEW | Alpha | Current Version | 28/09/2018   | Volatile
 
 ## 0.1.1 PREVIEW
 
