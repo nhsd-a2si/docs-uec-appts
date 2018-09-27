@@ -1,8 +1,8 @@
 ---
-title: Filtering Slots
+title: Slot Management
 toc: True
 sidebar: overview_sidebar
-permalink: provider_filtering_slots.html
+permalink: fs_slotmanagement.html
 ---
 {% include note-notpublished.html %}
 
