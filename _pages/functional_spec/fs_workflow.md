@@ -8,3 +8,8 @@ folder: functional_spec
 ---
 
 {% include note-notpublished.html %}
+
+
+## Primary Data Model
+
+<img src="_pages/functional_spec/img/.jpg">
