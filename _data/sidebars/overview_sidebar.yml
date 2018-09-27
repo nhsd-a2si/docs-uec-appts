@@ -22,8 +22,8 @@ entries:
             url: /getting_started.html
         output: web        
       - 
-         title: Overview
-         folderitems: 
+        title: Overview
+        folderitems: 
           - 
             title: "Definition of Direct Booking"
             output: "web, pdf"            
@@ -90,8 +90,8 @@ entries:
             url: /fs_dos.html
         output: web        
       - 
-         title: "Non-Functional Requirements"
-         folderitems: 
+        title: "Non-Functional Requirements"
+        folderitems: 
           - 
             title: "Non Functional Requirements"
             output: "web, pdf"            
