@@ -12,4 +12,4 @@ folder: functional_spec
 
 ## Primary Data Model
 
-<img src="_pages/functional_spec/img/.jpg">
+<img src="_pages/functional_spec/img/UEC_Appointments_Flow.png">
