@@ -25,9 +25,23 @@ The sections below will step through the process.
 
 ## Service Discovery
 
+<img src="_pages/functional_spec/img/BookAppointment1.png">
+<img src="_pages/functional_spec/img/BookAppointment2.png">
+
 ## Endpoint Discovery
+
+<img src="_pages/functional_spec/img/EndpointDiscovery1.png">
+<img src="_pages/functional_spec/img/EndpointDiscovery2.png">
+<img src="_pages/functional_spec/img/EndpointDiscovery3.png">
+<img src="_pages/functional_spec/img/EndpointDiscovery4.png">
 
 ## Get Slots
 
+<img src="_pages/functional_spec/img/GetSlots1.png">
+<img src="_pages/functional_spec/img/GetSlots2.png">
+
 ## Book Appointment
 
+<img src="_pages/functional_spec/img/BookAppointment1.png">
+<img src="_pages/functional_spec/img/BookAppointment2.png">
+<img src="_pages/functional_spec/img/BookAppointment3.png">
