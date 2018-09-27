@@ -105,7 +105,7 @@ entries:
             output: "web, pdf"
             url: /fs_slotmap.html
           -
-            title: "Appointment Management
+            title: "Appointment Management"
             output: "web, pdf"
             url: /fs_apptman.html
           -
