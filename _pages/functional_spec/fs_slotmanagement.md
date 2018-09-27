@@ -1,9 +1,12 @@
 ---
 title: Slot Management
-toc: True
 sidebar: overview_sidebar
+keywords: specification
 permalink: fs_slotmanagement.html
+toc: false
+folder: functional_spec
 ---
+
 {% include note-notpublished.html %}
 
 ## Background
