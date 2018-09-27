@@ -1,180 +1,180 @@
 --- 
-entries: 
+entries:
+  title: "Urgent & Emergency Care Appointment Booking Standards"
+  version: "v0.1 PREVIEW"
   - 
     folders: 
       - 
+        title: Inroduction
         folderitems: 
           - 
-            output: "web, pdf"
             title: Introduction
+            output: "web, pdf"
             type: homepage
             url: /index.html
           - 
-            output: "web, pdf"
             title: "Using this site"
+            output: "web, pdf"
             url: /using_this_site.html
           - 
-            output: "web, pdf"
             title: "Getting Started"
+            output: "web, pdf"            
             url: /getting_started.html
-        output: web
-        title: Inroduction
+        output: web        
       - 
-        folderitems: 
+         title: Overview
+         folderitems: 
           - 
-            output: "web, pdf"
             title: "Definition of Direct Booking"
+            output: "web, pdf"            
             url: /definition.html
           - 
-            output: "web, pdf"
             title: "IUC/111 Landscape"
+            output: "web, pdf"            
             url: /iuc_overview.html
           - 
-            output: "web, pdf"
             title: "What we are doing"
+            output: "web, pdf"            
             url: /what_are_we_doing.html
-        output: web
-        title: Overview
+        output: web       
       - 
         folderitems: 
           - 
-            output: "web, pdf"
             title: "GP Practice"
+            output: "web, pdf"            
             url: /caresetting_gppractice.html
           - 
-            output: "web, pdf"
             title: UTC
+            output: "web, pdf"           
             url: /caresetting_utc.html
           - 
-            output: "web, pdf"
             title: Dental
+            output: "web, pdf"            
             url: /caresetting_dental.html
           - 
-            output: "web, pdf"
             title: Pharmacy
+            output: "web, pdf"            
             url: /caresetting_pharmacy.html
         output: web
         title: "Care Settings"
       - 
+        title: "Scope and user stories"
         folderitems: 
           - 
-            output: "web, pdf"
             title: "Scope Overview"
+            output: "web, pdf"            
             url: /scope_overview.html
           - 
-            output: "web, pdf"
             title: "Functional Scope"
+            output: "web, pdf"            
             url: /scope_functional.html
           - 
-            output: "web, pdf"
             title: "User Stories"
+            output: "web, pdf"            
             url: /use_overview.html
-        output: web
-        title: "Scope and user stories"
+        output: web        
       - 
+        title: "Functional Specification"
         folderitems: 
           - 
-            output: "web, pdf"
             title: "Filtering Slots"
+            output: "web, pdf"            
             url: /provider_filtering_slots.html
           -
-            output: "web, pdf"
             title: "Differences from GP Connect"
+            output: "web, pdf"            
             url: /fs_gpcdiff.html
           -
-            output: "web, pdf"
             title: "Interactions with the DoS"
+            output: "web, pdf"            
             url: /fs_dos.html
-        output: web
-        title: "Functional Specification"
+        output: web        
       - 
-        folderitems: 
+         title: "Non-Functional Requirements"
+         folderitems: 
           - 
-            output: "web, pdf"
             title: "Non Functional Requirements"
+            output: "web, pdf"            
             url: /non_functional_requirements.html
           - 
-            output: "web, pdf"
             title: "Security Guidance"
+            output: "web, pdf"            
             url: /security_guidance.html
           - 
-            output: "web, pdf"
             title: "Volumetric Guidance"
+            output: "web, pdf"            
             url: /volumetric_guidance.html
           - 
-            output: "web, pdf"
             title: "Performance Guidance"
+            output: "web, pdf"            
             url: /performance_guidance.html
           - 
-            output: "web, pdf"
             title: "Operational Level Agreement"
+            output: "web, pdf"            
             url: /ola.html
           - 
-            output: "web, pdf"
             title: Audit
+            output: "web, pdf"            
             url: /audit.html
-        output: web
-        title: "Non-Functional Requirements"
+        output: web       
       - 
+        title: "Implementing the standard"
         folderitems: 
           - 
-            output: "web, pdf"
             title: "Implementation Overview"
+            output: "web, pdf"            
             url: /implementation_overview.html
           - 
-            output: "web, pdf"
             title: "Implementing FHIR® Resources"
+            output: "web, pdf"            
             url: /implementation_FHIR.html
           - 
-            output: "web, pdf"
             title: "Proof of Concept Demonstrator"
+            output: "web, pdf"            
             url: /implementation_poc.html
-        output: web
-        title: "Implementing the standard"
+        output: web        
       - 
-        folderitems: 
-          - 
-            output: "web, pdf"
-            title: "First of Type"
-            url: /first_of_type.html
-        output: web
         title: "First of Type"
-      - 
         folderitems: 
           - 
-            output: "web, pdf"
+            title: "First of Type"
+            output: "web, pdf"            
+            url: /first_of_type.html
+        output: web        
+      - 
+        title: "Assurance Process"
+        folderitems: 
+          - 
             title: "Assurance Overview"
+            output: "web, pdf"            
             url: /assurance_overview.html
           - 
-            output: "web, pdf"
             title: "Supplier Assurance Process"
+            output: "web, pdf"            
             url: /assurance_supplier.html
-        output: web
-        title: "Assurance Process"
+        output: web        
       - 
-        folderitems: 
-          - 
-            output: "web, pdf"
-            title: "Getting Live"
-            url: /getting_live.html
-        output: web
         title: "Getting Live"
-      - 
         folderitems: 
           - 
-            output: "web, pdf"
+            title: "Getting Live"
+            output: "web, pdf"            
+            url: /getting_live.html
+        output: web        
+      - 
+        title: "Help and Support"
+        folderitems: 
+          - 
             title: "Contact Details"
+            output: "web, pdf"            
             url: /contact.html
           - 
-            output: "web, pdf"
             title: FAQ
+            output: "web, pdf"            
             url: /faq.html
           - 
-            output: "web, pdf"
             title: Glossary
+            output: "web, pdf"            
             url: /glossary.html
-        output: web
-        title: "Help and Support"
-    levels: one
-    title: "Urgent & Emergency Care Appointment Booking Standards"
-    version: "v0.1 PREVIEW"
+        output: web        
+    levels: one 
