@@ -21,6 +21,7 @@ Below is the primary data model that describes the key data items that are requi
 The sections below will step through the process.
 
 ## The Actors
+<img src="_pages/functional_spec/img/Actors.png">
 
 ## Service Discovery
 
