@@ -21,7 +21,34 @@ Below is the primary data model that describes the key data items that are requi
 The sections below will step through the process.
 
 ## The Actors
+
+There are a number of different systems involved in the end to end booking process. These fall into the following catagories:
+
+* Consumer System
+* National Infrastructure
+* Provider System
+
 <img src="_pages/functional_spec/img/Actors.png">
+
+### Consumers
+
+The consuming system belongs to the service that is searching for an appropriate appointment for the patient. The system will participate in discovery of the appropriate service, discovery of its booking endpoint, searching the providing system for appropriate slots and then booking one of those slots for the patient. There are many examples of services that could be fullfilling this role for example NHS111, IUC Clinical Hub, A&E or even a GP Service.
+
+### National Infrastructure
+
+During the booking system a number of systems that are hosted by NHS Digital as national infrastructure need to be interacted with. These are as follows:
+
+####  National DoS
+  * This is used for Service Discovery
+
+#### Spine Directory Service (SDS)
+  * This performs the role of the booking endpoint repository
+
+#### Spine Secure Proxy (SSP)
+  * Brokers and routes connections to endpoints
+
+### Provider Systems
+
 
 ## Service Discovery
 
