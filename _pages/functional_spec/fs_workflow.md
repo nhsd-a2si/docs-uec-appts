@@ -52,8 +52,8 @@ The provider system is the system that is offering appointments to be booked int
 
 ## Service Discovery
 
-<img src="_pages/functional_spec/img/BookAppointment1.png">
-<img src="_pages/functional_spec/img/BookAppointment2.png">
+<img src="_pages/functional_spec/img/ServiceDiscovery1.png">
+<img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
 ## Endpoint Discovery
 
