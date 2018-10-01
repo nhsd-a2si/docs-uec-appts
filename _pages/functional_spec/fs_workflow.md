@@ -36,16 +36,16 @@ The consuming system belongs to the service that is searching for an appropriate
 
 ### National Infrastructure
 
-During the booking system a number of systems that are hosted by NHS Digital as national infrastructure need to be interacted with. These are as follows:
+During the booking provess a number of systems that are hosted by NHS Digital as national infrastructure need to be interacted with. These are as follows:
 
 ####  National DoS
 The national DoS can be used to discover the most appropriate service for the patient. If that service offers appointments the necessary information required to query SDS for the endpoint will be provided. 
 
 #### Spine Directory Service (SDS)
-The SDS performs the role of the booking endpoint repository. Endpoints for the booking API of target provider systems will be regfistered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html">assurance</a>.
+The SDS performs the role of the booking endpoint repository. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html">assurance</a>.
 
 #### Spine Secure Proxy (SSP)
-  * Brokers and routes connections to endpoints
+The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html">assurance</a>
 
 ### Provider Systems
 
