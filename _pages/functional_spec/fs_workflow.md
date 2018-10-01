@@ -54,10 +54,10 @@ The provider system is the system that is offering appointments to be booked int
 
 The first step of the booking process involves some form of service discovery. Typically this will use the DoS to identify the most appropriate service to meet the patients needs. 
 
-In the situation the DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services ('CheckCapacitySummary'). 
+In the situation the DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services (`CheckCapacitySummary`). 
 <img src="_pages/functional_spec/img/ServiceDiscovery1.png">
 
-Once the chosen service has been selected the next call to the DoS API is made ('ServiceDetailsByID') and this will return the specific details of the selected service including something called an "ASID".
+Once the chosen service has been selected the next call to the DoS API is made (`ServiceDetailsByID`) and this will return the specific details of the selected service including something called an "ASID".
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
 An ASID (Accredited System Identifier) is used to obtain the endpoint for booking into the Provider system.
