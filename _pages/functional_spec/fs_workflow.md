@@ -52,10 +52,21 @@ The provider system is the system that is offering appointments to be booked int
 
 ## Service Discovery
 
+The first step of the booking process involves some form of service discovery. Typically this will use the DoS to identify the most appropriate service to meet the patients needs. 
+
+In the situation the DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services ('CheckCapacitySummary'). 
 <img src="_pages/functional_spec/img/ServiceDiscovery1.png">
+
+Once the chosen service has been selected the next call to the DoS API is made ('ServiceDetailsByID') and this will return the specific details of the selected service including something called an "ASID".
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
+An ASID (Accredited System Identifier) is used to obtain the endpoint for booking into the Provider system.
+
 ## Endpoint Discovery
+
+The consuming system needs to interact with SDS in order to resolve the FHIR Endpoint Server Root URL to be used when constructing the request to be made to the Spine Security Proxy.
+
+In order for the Consuming system to make a request to the SSP it needs to resolve the FHIR endpoints root URL. In order to do this the information that is needed to build the request is stored on the SDS. The SDS can be queried using the ASID
 
 <img src="_pages/functional_spec/img/EndpointDiscovery1.png">
 <img src="_pages/functional_spec/img/EndpointDiscovery2.png">
