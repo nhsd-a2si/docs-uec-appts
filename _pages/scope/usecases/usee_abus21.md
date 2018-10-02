@@ -19,7 +19,7 @@ As urgent care providers (definitely 111s) can receive calls for different regio
 
 It may be that the provider system cannot cancel the appt.  User systems will have to have protocols in place to handle all returned statuses. 
 
-GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html>
+GP Connect use case can be found <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html" target="_blank">here</a>
 
 ### Acceptance Criteria  
 * The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
