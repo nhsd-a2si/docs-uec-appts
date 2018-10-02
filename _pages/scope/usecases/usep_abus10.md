@@ -17,7 +17,7 @@ Where GP practices are huge joint practices or collections of federated practice
 
 When returning appt lists from some GP providers, there can be issues where the GP provider has not set up their rotas correctly and many slots are returned that should not be booked by the urgent care consumer .  An example is provided here. 
 
-GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html>
+GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html" target=_blank></a>
 
 Urgent care consumers can theoretically book an appointment at any time offered even if that goes beyond the NHS Pathways disposition time frame.  Ideally any appointment interface would warn the user that they are about to book beyond the disposition time, and show by how long.  It should then ask for them to confirm that decision.  It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient or prevent non-clinical call handlers from exceeding that timeframe.. 
 
