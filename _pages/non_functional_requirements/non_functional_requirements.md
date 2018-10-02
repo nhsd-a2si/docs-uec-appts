@@ -50,12 +50,12 @@ Provider and consumer systems SHALL comply with NHS Digital <a href="https://dig
 Provider systems SHALL retain data in line with existing relevant Informational Governance and data protection regulation. 
 
 ## Usability 
-Provider and consumer systems SHOULD follow the [ISO 13407](https://www.iso.org/standard/21197.html) / [ISO 9241-210](https://www.iso.org/standard/52075.html) to explain a user-centred design process. 
+Provider and consumer systems SHOULD follow the <a href="https://www.iso.org/standard/21197.html" target="_blank">ISO 13407</a> / <a href="https://www.iso.org/standard/52075.html" target="_blank">ISO 9241-210</a> 
 
 ## Accessibility 
-Provider and consumer systems MUST maintain a compliance of minimum Double “A” of the WCAG 1.0 (or equivalent in WCAG 2.0) or, as stipulated by UK Government guidelines, for all user interfaces. Please see the [Web Accessibility Initiative](https://www.w3.org/WAI/) for more details. 
+Provider and consumer systems MUST maintain a compliance of minimum Double “A” of the WCAG 1.0 (or equivalent in WCAG 2.0) or, as stipulated by UK Government guidelines, for all user interfaces. Please see the ,<a href="https://www.w3.org/WAI/" target="_blank">Web Accessibility Initiative</a> for more details. 
 
-Please refer to the [UEC Technical Standards](https://developer.nhs.uk/apis/uec-tech-standards/index.htmlhttps://developer.nhs.uk/apis/uec-tech-standards/index.html) for details. 
+Please refer to the <a href="https://developer.nhs.uk/apis/uec-tech-standards/index.html" target="_blank">UEC Technical Standards</a> for details. 
 
 ## Deployment 
 Provider systems SHALL release a new major version of their UEC Booking API alongside a previous major version, until such time as consumers have migrated to the new major version. 
