@@ -21,7 +21,7 @@ It may be that the patient has already missed the booked appt.  Therefore, the
 
 Additionally, urgent care clinicians may wish to query provider systems to confirm that the patient has attended their appt.  If they have failed to attend, there are occasions when the clinician will call back to check on the patient. 
 
-GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html> 
+GP Connect use case can be found <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html" target="_blank">here</a>
 
 ### Acceptance Criteria  
 * The consumer system **must** be capable of querying any provider system, regardless of what relationship the provider organisation has with the consumer organisation. 
@@ -33,7 +33,7 @@ GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/ap
 ### Notes 
 For example, a restricted list from the FHIR base valueset for AppointmentStatus could meet the needs for Urgent Care: 
 
-<http://hl7.org/fhir/valueset-appointmentstatus.html> 
+<a href="http://hl7.org/fhir/valueset-appointmentstatus.html">http://hl7.org/fhir/valueset-appointmentstatus.html</a> 
 
 |    Code   |  Display  | Definition |
 |:---------:|:---------:|------------|
