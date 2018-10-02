@@ -42,10 +42,10 @@ During the booking provess a number of systems that are hosted by NHS Digital as
 The national DoS can be used to discover the most appropriate service for the patient. If that service offers appointments the necessary information required to query SDS for the endpoint will be provided. 
 
 #### Spine Directory Service (SDS)
-The SDS performs the role of the booking endpoint repository. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html">assurance</a>.
+The SDS performs the role of the booking endpoint repository. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
 
 #### Spine Secure Proxy (SSP)
-The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html">assurance</a>
+The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
 
 ### Provider Systems
 The provider system is the system that is offering appointments to be booked into. This system will be configured to accept connections from the SSP and will offer the defined capabilities in this standard via its FHIR Interface. There are many different service types that could be a booking provider including UTC's, OOH GP's, Emergency Dental services etc.. 
@@ -55,9 +55,11 @@ The provider system is the system that is offering appointments to be booked int
 The first step of the booking process involves some form of service discovery. Typically this will use the DoS to identify the most appropriate service to meet the patients needs. 
 
 In the situation the DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services (`CheckCapacitySummary`). 
+
 <img src="_pages/functional_spec/img/ServiceDiscovery1.png">
 
 Once the chosen service has been selected the next call to the DoS API is made (`ServiceDetailsByID`) and this will return the specific details of the selected service including something called an "ASID".
+
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
 An ASID (Accredited System Identifier) is used to obtain the endpoint for booking into the Provider system.
@@ -76,15 +78,19 @@ This is a two step process:
 Step 1:
 
 a query can be made to obtain the nhsAS object:
+
 <img src="_pages/functional_spec/img/EndpointDiscovery1.png">
 
-The object when returned will contain the information needed for step 2
+The object when returned will contain the information needed for step 2:
+
 <img src="_pages/functional_spec/img/EndpointDiscovery2.png">
 
 A request for the nhsMHS object can then be made using the interaction and Party Key:
+
 <img src="_pages/functional_spec/img/EndpointDiscovery3.png">
 
 This will return the endpoint required to build an SSP request:
+
 <img src="_pages/functional_spec/img/EndpointDiscovery4.png">
 
 ## Get Slots
@@ -276,8 +282,13 @@ This will return a FHIR slot resource bundle for example:
 ## Book Appointment
 
 The booking is made following the same process as getting available slots. However this tie a post is made to the SSP with a serialised <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/book_an_appointment.html" target="_blank">FHIR booking request</a> as the payload.
+
 <img src="_pages/functional_spec/img/BookAppointment1.png">
+
 This will be passed through to the provider FHIR endpoint
+
 <img src="_pages/functional_spec/img/BookAppointment2.png">
+
 If a booking is successfully created a  `201: Created` HTTP status code will be returned.
+
 <img src="_pages/functional_spec/img/BookAppointment3.png">
