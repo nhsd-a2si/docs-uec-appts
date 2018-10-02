@@ -19,7 +19,7 @@ Urgent care settings will book patient appts at GP practices where they are not 
 
 The meeting between UC and GPC (31-Aug-2017) confirmed that, for now, UC would use the same protocols as GPC.  Appts would be immediately booked and, if the caller decides not to continue, then the appt will be cancelled. 
 
-GP Connect use case can be found at <https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html>
+GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html" target="_blank">GP Connect book and appoointment use case</a>
 
 ### Acceptance Criteria 
 * The request to confirm the appt slot **must** contain all the data to enable the provider to uniquely identify the slot and confirm the appt. 
