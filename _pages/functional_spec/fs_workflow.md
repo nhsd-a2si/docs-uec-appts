@@ -275,6 +275,9 @@ This will return a FHIR slot resource bundle for example:
 
 ## Book Appointment
 
+The booking is made following the same process as getting available slots. However this tie a post is made to the SSP with a serialised <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/book_an_appointment.html" target="_blank">FHIR booking request</a> as the payload.
 <img src="_pages/functional_spec/img/BookAppointment1.png">
+This will be passed through to the provider FHIR endpoint
 <img src="_pages/functional_spec/img/BookAppointment2.png">
+If a booking is successfully created a  `201: Created` HTTP status code will be returned.
 <img src="_pages/functional_spec/img/BookAppointment3.png">
