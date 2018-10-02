@@ -9,11 +9,12 @@ folder: introduction
 
 {% include note-notpublished.html %}
 
+
+## 0.1.1 PREVIEW
+
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.1   | PREVIEW | Alpha | Current Version | 02/10/2018   | Volatile
-
-## 0.1.1 PREVIEW
 
 The 0.1.1 PREVIEW release is the first release version of the UEC appointment booking standards. This version has the following highlights:
 
@@ -23,3 +24,10 @@ The 0.1.1 PREVIEW release is the first release version of the UEC appointment bo
 * Workflow and filtering slots content in the functional specification section
 * non-functional requirements
 * a link to the FHIR API specification
+
+## 0.1.2 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.2   | PREVIEW | Alpha | Unreleased      | 12/10/2018   | Volatile
+
