@@ -13,7 +13,7 @@ permalink: usee_abus22.html
 **_I want_** to amend the appt reason for a previously booked appt, where the reason has changed or was erroneously provided to the service provider. 
 
 ### Commentary 
-GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go to <https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html>
+GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html" target="_blank">here</a>
 
 ### Acceptance Criteria  
 * The consumer system *must* be capable of amending slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
