@@ -13,10 +13,6 @@ entries:
             type: homepage
             url: /index.html
           - 
-            title: "Using this site"
-            output: "web, pdf"
-            url: /using_this_site.html
-          - 
             title: "Getting Started"
             output: "web, pdf"            
             url: /getting_started.html
