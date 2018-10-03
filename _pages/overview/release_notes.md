@@ -27,10 +27,12 @@ The 0.1.1 PREVIEW release is the first release version of the UEC appointment bo
 
 ## Future releases
 
-### 0.1.2 PREVIEW
+#### 0.1.2 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.2   | PREVIEW | Alpha | Unreleased      | 12/10/2018   | Volatile
 
 ## Previous releases
+
+There are no previous releases
