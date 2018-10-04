@@ -1,5 +1,5 @@
 ---
-title: Sppointment Management
+title: Appointment Management
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_apptman.html
