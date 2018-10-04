@@ -19,12 +19,8 @@ Select Service | Get Registered GP Practice from PDS record | Use DoS to select 
 Stage       | GP Connect           | Care Connect            | Difference         | Rational for change
 ------------|----------------------|-------------------------|--------------------|-------------------
  | Identify Patient | Use PDS to get a verified NHS Number DBS? | Use PDS to get a verified NHS Number | None | N/A
- | Select service | "Get Registered GP Practice from PDS record
-
-Federations something else..." | Use DOS to select a DOS profile | "In GP Connect |  this is done as part of the PDS lookup |  in Care Connect |  it's a separate call to the DOS |  but one which is MOSTLY already taking place. Some change needed to the DOS to return the ASID." | "GP Connect is all about booking appointments with a GP Practice |  which is a known ODS code. We're looking beyond this to services as identified from the DOS |  or by ASID. These can also be found from SDS using ODS code."
- | Calls via SSP | Target URL is concatenated onto SSP URL | Target URL is concatenated onto SSP URL | No change | "The Interaction IDs are different to allow them to be individually authorised |  and to permit different endpoints to be offered per interaction. If there were no differences elsewhere they COULD be the same.
-
-SSP Could inspect the Authorization header and make decisions based on that (not currently in scope)."
+ | Select service | Get Registered GP Practice from PDS record | Use DOS to select a DOS profile | "In GP Connect |  this is done as part of the PDS lookup |  in Care Connect |  it's a separate call to the DOS |  but one which is MOSTLY already taking place. Some change needed to the DOS to return the ASID." | "GP Connect is all about booking appointments with a GP Practice |  which is a known ODS code. We're looking beyond this to services as identified from the DOS |  or by ASID. These can also be found from SDS using ODS code."
+ | Calls via SSP | Target URL is concatenated onto SSP URL | Target URL is concatenated onto SSP URL | No change | "The Interaction IDs are different to allow them to be individually authorised |  and to permit different endpoints to be offered per interaction. If there were no differences elsewhere they COULD be the same. SSP Could inspect the Authorization header and make decisions based on that (not currently in scope)."
  |  | http headers are as follows | http headers are as follows | Interaction IDs are different | 
  |  | Ssp-TraceID | Ssp-TraceID = a UUID | No change | 
  |  | Ssp-From | Ssp-From = Client system ASID | No change | 
@@ -33,9 +29,7 @@ SSP Could inspect the Authorization header and make decisions based on that (not
  |  | N/A | Authorization | Uses a JWT token in an Authorization http header (not used by SSP) | 
  | TLS/MA | "Spine issued digital certificate required to talk to PDS |  SDS and SSP" | "Spine issued digital certificate required to talk to PDS |  SDS and SSP" | No change | N/A
  |  |  |  | "If client is only assured for appointment booking |  a certificate with a specific prefix will be issued |  to prevent it being used to do anything else." | 
- | SSP authorisation | Uses the following | Uses the following | No Data Sharing Agreement required | "For MVP we're not requesting Patient info |  hence lower IG concerns. The DSA approach doesn't scale for ""any to any"" as the scope expands.
-
-Could be implemented in Authorization headers rather than config file."
+ | SSP authorisation | Uses the following | Uses the following | No Data Sharing Agreement required | "For MVP we're not requesting Patient info |  hence lower IG concerns. The DSA approach doesn't scale for ""any to any"" as the scope expands.Could be implemented in Authorization headers rather than config file."
  |  | SDS lookup for ASIDs | SDS lookup for ASIDs | No change | 
  |  | Data Sharing agreement between Client and Server | N/A | Not required | 
  | Find Patient | FHIR Search operation on the endpoint via SSP | N/A | Patient find is not used in Care Connect | GP Connect works on the GP concept of patients being registered in a practice. Many other services will not have this concept.
