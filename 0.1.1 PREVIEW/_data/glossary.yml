@@ -1,0 +1,9 @@
+- keyword: ITK
+  expansion: Interoperability Tool Kit
+  definition: A collection of interoperability standards and tools produced by NHS Digital to support interoperability in healthcare. For more information see [What is ITK?](what_is_itk.html)
+- keyword: HL7
+  expansion: Health Level 7
+  definition: HL7.org is an international organisation responsible for the creation and maintenance of information and interoperability standards for healthcare.
+- keyword: CDA
+  expansion: Clinical Document Architecture
+  definition: CDA is an information and messaging standard by HL7.
