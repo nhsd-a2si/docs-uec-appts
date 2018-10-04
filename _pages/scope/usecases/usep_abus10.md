@@ -33,12 +33,10 @@ From a 111 provider:
 * The list **must** contain details of the type of appt, such as face-to-face, video, telephone call-back. 
 * The request **must** include the fact that the consumer system delivers urgent care.  The provider system will then able to filter back to the consumer those slots that they have released for urgent care. 
 * The request **must** have a date/time window specified by the consumer system.  It will be for the consumer system to define what window they deem to be acceptable.  It is expected that the window will be derived from the disposition of the patient, but it will be for the developers of the consumer system to define what ranges will be appropriate for each occasion. 
-* The request **must** include the coded disposition of the patient.  This will enable provider systems to return the best slots that meet the requirement, whilst also maintaining a level of demand management. 
 * The slots provided **must** be for a service that can respond to the current disposition of the patient. 
 * The list **may** mark those appts that do/do not meet the current disposition timeframe, making it easier for urgent care staff and the patient to make an informed decision. 
 * The list **may** mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
 * The available appts **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user's organisation has with that provider. 
-* The available appts **must** be capable of being retrieved by a consumer system from any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
 * The method of retrieval **must** not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. 
 * Where there are no available slots, the provider **must** send an appropriate response to indicate this. 
 * The provider system **must** return available slots without requiring the potential patient to be "registered" with the provider. 
