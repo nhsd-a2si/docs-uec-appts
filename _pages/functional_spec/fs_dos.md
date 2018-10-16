@@ -11,7 +11,7 @@ folder: functional_spec
 
 ## Introduction
 
-The NHS Digital A2SI Directory of Services (known as the "DoS") is the primary service discovery and information tool available to the NHS. Although this standard does support booking workflows that do not need to use the DoS it is envisaged that it will provide the service discovery element in the majority of booking workflows that use this standard.
+The NHS Digital Directory of Services (known as the "DoS") is the primary service discovery and information tool available to the NHS. Although this standard does support booking workflows that do not need to use the DoS it is envisaged that it will provide the service discovery element in the majority of booking workflows that use this standard.
 
 Therefore it is important to understand how the DoS will interact with these booking workflows. At a very high level there are four key elements in the booking sequence. These are:
 
