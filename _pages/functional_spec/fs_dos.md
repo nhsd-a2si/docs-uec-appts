@@ -24,4 +24,7 @@ Understanding how these steps interact with each other is essential, especially 
 
 ## Example workflow
 
-
+Service Type | DoS ID | Service Name             | Service ODS Code | Provider Name      | Provider ODS Code | HealthcareServiceID (SDS)
+-------------|--------|--------------------------|------------------|--------------------|-------------------|--------------------------
+GP Federation|123456  | GP Hub - Main location   | AB1234           | GP Federations Ltd.| AB1234            | 87654321
+GP Federation|123457  | GP Hub - the High Street | 123457           | GP Federations Ltd.| AB1234            | 97654322
