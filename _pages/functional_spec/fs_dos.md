@@ -18,7 +18,7 @@ Therefore it is important to understand how the DoS will interact with these boo
 * Service discovery
 * End point discovery
 * Slot discovery
-* Booking
+* Booking a slot
 
 Understanding how these steps interact with each other is essential, especially when booking into more complex services. For exmaple the way the profiling of the DoS service is tied to a provider systems schedules. In order to understand these interactions better lets walk through an example.
 
