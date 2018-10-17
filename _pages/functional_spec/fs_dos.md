@@ -72,15 +72,16 @@ The table below (figure 3) shows key information about the associated DoS servic
 Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
 -------------|---------|------------------------------|------------------|---------------------------
 GP Federation| 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
-GP Federation| 654321  | GP Hub - Main location Nurse |      |654321     | 101234567890
+GP Federation| 654321  | GP Hub - Main location Nurse |      654321      | 101234567890
 GP Federation| 123457  | GP Hub - the High Street     |      123457      | 987654321001
 GP Federation| 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
 
 ###### _figure 3_
 
+From this information we can see that 
 
 
-The following digram shows the relationship
+The following digram shows the relationship and cardinality of DoS services to appointment schedules.
 
 
 
