@@ -56,22 +56,23 @@ Each of the three locations has its own appointment diary represented as a sched
 
 The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system:
 
-ID | Location Name | ODS Code | Schedule | Appointment Type | HealthcareServiceID
----|---------------|----------|----------|------------------|---------------------
-1  | Main Location
-2  | The High Street
-3  | Other Town GP
-3  | 
+ID |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
+---|-----------------|----------|----------|------------------|---------------------
+1  | Main Location   | AB1234   | 1        | GP               | 101234567890
+1  | Main Location   | AB1234   | 2        | Nurse            |
+2  | The High Street | AB1234   | 3        | GP               |
+3  | Other Town GP   | AB1234   | 4        | GP               |
 
 
 
 The table below (figure 3) shows key information about the associated DoS services and the HealthcareServicesID defined against each service:
 
-Service Type | DoS ID | Service Name             | Service ODS Code | HealthcareServiceID
--------------|--------|--------------------------|------------------|---------------------------
-GP Federation|123456  | GP Hub - Main location   |      AB1234      |101234567890
-GP Federation|123457  | GP Hub - the High Street |      123457      |987654321001
-GP Federation|123458  | GP Hub - Other Town GP   |      123458      |123456789001
+Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
+-------------|---------|------------------------------|------------------|---------------------------
+GP Federation| 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
+GP Federation| 654321  | GP Hub - Main location Nurse |      |654321     | 101234567890
+GP Federation| 123457  | GP Hub - the High Street     |      123457      | 987654321001
+GP Federation| 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
 ###### _figure 3_
 
 
