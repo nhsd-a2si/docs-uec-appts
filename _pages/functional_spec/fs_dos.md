@@ -26,6 +26,7 @@ Understanding how these steps interact with each other is essential, especially 
 
 Services on the DoS are profiled with a range of data that is used to determine the ranking for services. There are also additional data items that are used for other purposes, for example interoperability. Examples of these data items are as follows:
 
+
 * Geographical information such as address and search etc..
 * Demographic profile of patients the service is available to
 * The comissioning footprint of the service, for example 
@@ -38,6 +39,8 @@ Services on the DoS are profiled with a range of data that is used to determine 
   * Document format
 
 The aspect of this that is key for direct booking is how a specific service will relate to a CareConect Schedule resource on a particular system.
+
+Please note that in the example below, many irrelevent details are simplefied or skipped. Also the technical details of the API messaging interactions are omitted. This is explained in detail <a href="https://queticodigital.github.io/docs-uec-appts-dev/fs_workflow.html" target="_blank">here</a>.
 
 For this example, consider a GP Federataion provider called "GP Federations Ltd.". This provider has been comissioned by the GP Practices in a comissioning area to deliver the extended access GP services on behalf of these GP Practices. GP Federations Ltd. operates this service from three different locations, these are consulting rooms in three of the GP Practices they are covering.
 
@@ -89,13 +92,29 @@ The following digram illustrates the relationship of DoS services to appointment
 
 Once all the above is understood we can walk through a typical booking scenario using this example service.
 
-### Booking scneario walk-though
+### Booking scenario walk-though
 
 1. a Patient dials 111 on their phone and gets through to their local 111 service. 
 2. The health advisor takes them through a Pathways assessment and they get referred to the Clinical Assessment Service in the 111 to speak to a clinician.
 3. The clinician assesses them and determines that they require an urgent appointment with a GP.
-4. 
+4. The 111 IT system searches the DoS with the details of the patient and the assessment
+5. The DoS returns a ranked list of services. The top service is the service named "GP Hub - Main location GP"
+6. This service is selected and information on the referral and booking endpoints is returned including the HealthcareServiceID
+7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry
+8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "GP Hub - Main location GP"
 
+For the three key actors in this process there are the following key requirments:
+
+* The appointment consumer (111 system in the example above)
+  * MUST be able to retreive the HealthcareServiceID from the DoS endpoint details
+  * MUST ensure that the booking functionality invoked is compliant with the national standards if a booking endpoint (HealthcareServiceID) is returned by the DoS GetServiceDetailsByID API call
+  * MUST ensure that if no booking endpoint is returned by the GetServiceDetailsByID API call that any proprietary booking mechanisms are then tried and still work
+* The DoS
+  * MUST be able to store the HealthcareServiceID
+  * MUST return a booking endpoint (HealthcareServiceID) in response to a GetServiceDetailsByID API call
+* The appointment provider (GP Federation system in the example above)
+  * MUST allow association of a booking diary with a HealthcareServiceID
+  * MUST ensure that two different diaries cannot be associated with the same HealthcareServiceID UNLESS there is a clear use case for slots from multiple schedules to be returned in one schedule bundle and therefore be considered by a booking consumer as one diary.
 
 
 
