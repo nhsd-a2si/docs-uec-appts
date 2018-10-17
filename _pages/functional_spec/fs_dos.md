@@ -37,6 +37,12 @@ Services on the DoS are profiled with a rage of data that is used to determine t
   * URL's
   * Document format
 
+The aspect of this that is key for direct booking is how a specific service will relate to a CareConect Schedule resource on a particular system.
+
+For this example, consider a GP Federataion provider called "GP Federations Ltd.". This provider has been comissioned by the GP Practices in a comissioning area to deliver the extended access GP services on behalf of these GP Practices. GP Federations Ltd. operates this service from three different locations, these are consulting rooms in three of the GP Practices they are covering.
+
+GP Federation Ltd. deliver their services from a single IT Platform
+
 Service Type | DoS ID | Service Name             | Service ODS Code 
 -------------|--------|--------------------------|------------------
 GP Federation|123456  | GP Hub - Main location   | AB1234            
@@ -44,10 +50,10 @@ GP Federation|123457  | GP Hub - the High Street | 123457
 
 
 
-Provider Name      | Provider ODS Code | HealthcareServiceID (SDS)
-|--------------------|-------------------|--------------------------
-GP Federations Ltd.| AB1234            | 87654321
-GP Federations Ltd.| AB1234            | 97654322
+Provider Name      | Provider ODS Code | IT System
+-------------------|-------------------|--------------
+GP Federations Ltd.| AB1234            | ANotherGPSystem (ANGPS)
+
 
 
 
