@@ -46,23 +46,42 @@ GP Federation Ltd. deliver their services from a single IT Platform, known as "A
 Provider Name      | Provider ODS Code | IT System
 -------------------|-------------------|--------------
 GP Federations Ltd.| AB1234            | ANGPS
-
-_figure 1_
+###### _figure 1_
 
 Each of the three locations has its own appointment diary represented as a schedule in AGPCS. Location 3 has two diaries, a GP diary like the other two and a Nurse diary also (see figure 2):
 
-<div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/8.8.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36\&quot; version=\&quot;9.2.7\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;a9224995-d5d3-854d-5d66-375058506576\&quot; name=\&quot;Page-1\&quot;&gt;7VdRb5swEP41PCYCm7DwmKRNNymTKqXSnl1wwJqxmXEW6K/fGewElDSttmTdpPAA9ne2z3fffSfh4UVRPyhS5l9lSrmH/LT28J2HUBCjCXwM0jjEt0imWGqxA7BmL9SCvkW3LKXVYKGWkmtWDsFECkETPcCIUnI3XLaRfOi1JBk9AtYJ4cfoN5bqvEMx9v2D4TNlWW5dgynuLM8k+Z4puRXWoYfwpn06c0HcYfakKiep3PUgfO/hhZJSd6OiXlBusuvy1u1bvmLdX1xRod+zAXcbfhK+tbGvZEI0kwJQe1qlG5eYascKTgTM5hsptGUumMLcHkSVpvWrlwn2IULxUFlQrRpY4jaENou2bpDL9+5AAootlg/yb0Fiic/2Zx9ih4EN/3Qq0FEqjsPPSWmGrGgLaJ7rgpv4YWgCZ1BBM84yAZiWZQ9dkWfKH2XF2sziu2eptSxgATeG+b5oFpJL1fpyZYPnrbNZVXaF7gNC3GTDapq6JTDPtTYKmZmY0TJJBRoz0MiGiZSqcQIe0TIlmsDH4BV8Bd2NGkrUSNFK8q25n4GjEF49aOSHowBNx6XI3kU0Pkv0NBjwPAnGfu9xRdljHVwfs74H/4T18JwATlTAVQUwcXX8IQKY3ARwOQGE/4sAonMCwOcEUGminALgyldRROy/rYgwuJYiPt0UcTlFROdb35Dn6AMVEd9Y/1uso+jfoX16gvaIa9vXBvxHP7bSGUZV2/Eg1X44LeuDEUaZ+T48gmlJIfHEJtVfsYJpIAz5X57gtW4qTQvnDe7ZOey2n+vAvbLrN+MoNjap2AucQ9yKxEyYoOqpaWtXK0ov06TDIYnhcYsO8KkePfmNHm2qcf931Np6P6H4/hc=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/8.8.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36\&quot; version=\&quot;9.2.7\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;a9224995-d5d3-854d-5d66-375058506576\&quot; name=\&quot;Page-1\&quot;&gt;7VfBbqMwFPwajonABpYck7TprpSVKqXSnl1wwFqDWeM00K/fZzAEkhRFalrlEA5gz7P9zMwbCyy8TMsnSfLkt4got5AdlRZ+sBByZsiDh0aqFrENEksWGewAbNg7NaBt0B2LaDEYqITgiuVDMBRZRkM1wIiUYj8cthV8mDUnMT0BNiHhp+gfFqmkQTG27UPgJ2VxYlJDaNZEXkn4N5Zil5mEFsLb+mrCKWkXMysVCYnEvgfhRwsvpRCqaaXlknLNbstbM2/1QbTbuKSZumRC0Ex4I3xH2x37HKYutgJWgA2qyrDi/9uJNjApas3mMMAN8vIQhFasn0/PEFrRiEqimMgK6K1ZyhSNoPXrBW6bqlA0bbPBDpuEzXRDTpcbFXuWcpJBb5GolAPoQLNQRCpTPv5Mx4Rk77AOaUeEusMyKl+qXI9SktJu/TcqFS0/ZM7p9IBKpyKlSlYwxExwjYLVsLs/1IuD23pOerXiYQMSU6Rxt/RBJ2gYqc7Lhk9kW4uwZhpQPMaeZtkw5gSXMhGMMjHzhlQ4vj21e1dbZD1q0OwMM+gazKAzBX3MRkLqWmBpfQz0C0rzwOAcmHMWZ7pcRN5D1+SV8mdRsJpo/PAqlBIpDOA6sOisvxRcyDpXa368qJPNi7w5rmxASNvZshJsYYZAP1FKn3Nz/c5oFUYZmjKo4y3LwE7TEDKiVUQUgYfGwVurjO4nFSVyImkh+M5YbuW7cOtBE9udOCiY5ll8ke54VPfAGcjuOUPV8akh2kroq96Bn1HdH/ODM+aH/hECW/4Sg+ATf5xQ4547Kq5iiB93Q1zPEP6ozkfnoH9kiMD9RkfM7rJ/l+zIvyHd3bGT8EwNfOmXgee5t/Nl4N0dcT1HuDf6ZaDfqvt5qmO9f1T8+B8=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
-_figure 2 - the configuration of the three locations in the IT system_
+###### _figure 2 - the configuration of the three locations in the IT system_
+
+The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system:
+
+ID | Location Name | ODS Code | Schedule | Appointment Type | HealthcareServiceID
+---|---------------|----------|----------|------------------|---------------------
+1  | Main Location
+2  | The High Street
+3  | Other Town GP
+3  | 
 
 
 
+The table below (figure 3) shows key information about the associated DoS services and the HealthcareServicesID defined against each service:
 
-Service Type | DoS ID | Service Name             | Service ODS Code | Healthcare service ID
+Service Type | DoS ID | Service Name             | Service ODS Code | HealthcareServiceID
 -------------|--------|--------------------------|------------------|---------------------------
 GP Federation|123456  | GP Hub - Main location   |      AB1234      |101234567890
 GP Federation|123457  | GP Hub - the High Street |      123457      |987654321001
 GP Federation|123458  | GP Hub - Other Town GP   |      123458      |123456789001
+###### _figure 3_
+
+
+
+
+The following digram shows the relationship
+
+
+
+
 
 
 
