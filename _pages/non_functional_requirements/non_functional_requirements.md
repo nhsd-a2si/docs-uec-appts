@@ -41,7 +41,7 @@ Please refer to the [cross organization audit and provenance](audit.html) page f
 Provider systems SHALL be designed to optimise the ability of maintenance personnel to revise or enhance it. 
 
 ## Serviceability 
-Provider systems SHALL be designed so that technical support personnel are able to monitor and manage it in operation. 
+Provider systems SHALL be designed so that technical support personnel are able to monitor and manage it in operation. In particular error messages presented to the end user MUST be clear, understandable and helpful.
 
 ## Clinical Risk Management
 Provider and consumer systems SHALL comply with NHS Digital <a href="https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-risk-management-standards" target="_blank">Clinical Risk Management Standards</a>, in particular DCB0160.
