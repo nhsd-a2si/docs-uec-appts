@@ -24,7 +24,7 @@ Understanding how these steps interact with each other is essential, especially 
 
 ## Example workflow
 
-Services on the DoS are profiled with a rage of data that is used to determine the ranking for services that are returned for a specific search. There is also additional data items that are used for other purposes, for example interoperability. Examples of these data items are as follows:
+Services on the DoS are profiled with a range of data that is used to determine the ranking for services. There are also additional data items that are used for other purposes, for example interoperability. Examples of these data items are as follows:
 
 * Geographical information such as address and search etc..
 * Demographic profile of patients the service is available to
@@ -41,7 +41,7 @@ The aspect of this that is key for direct booking is how a specific service will
 
 For this example, consider a GP Federataion provider called "GP Federations Ltd.". This provider has been comissioned by the GP Practices in a comissioning area to deliver the extended access GP services on behalf of these GP Practices. GP Federations Ltd. operates this service from three different locations, these are consulting rooms in three of the GP Practices they are covering.
 
-GP Federation Ltd. deliver their services from a single IT Platform, known as "Another GP Clinical System (AGPCS)". 
+GP Federation Ltd. deliver their services from a single IT Platform, known as "Another GP System (ANGPS)". 
 
 Provider Name      | Provider ODS Code | IT System
 -------------------|-------------------|--------------
