@@ -9,12 +9,33 @@ folder: introduction
 
 {% include note-notpublished.html %}
 
-
-## 0.1.1 PREVIEW
+## 0.1.2 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.1   | PREVIEW | Alpha | Current Version | 02/10/2018   | Volatile
+0.1.2   | PREVIEW | Alpha | Current Version      | 01/11/2018   | Volatile
+
+The 0.1.2 PREVIEW release has the following highlights:
+
+* some of the user story text has been updated
+* The wording in "Serviceability" section of Non-Functional Requirements has been updated
+* Content in the "Interactions with the DoS" page in Functional Specification section has been created
+
+## Future releases
+
+#### 0.1.1 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.3   | PREVIEW | Alpha | Unreleased | 16/02/2018   | Volatile
+
+## Previous releases
+
+#### 0.1.1 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.1   | PREVIEW | Alpha | Released | 18/10/2018   | Volatile
 
 The 0.1.1 PREVIEW release is the first release version of the UEC appointment booking standards. This version has the following highlights:
 
@@ -24,15 +45,3 @@ The 0.1.1 PREVIEW release is the first release version of the UEC appointment bo
 * Workflow and filtering slots content in the functional specification section
 * non-functional requirements
 * a link to the FHIR API specification
-
-## Future releases
-
-#### 0.1.2 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.2   | PREVIEW | Alpha | Unreleased      | 12/10/2018   | Volatile
-
-## Previous releases
-
-There are no previous releases
