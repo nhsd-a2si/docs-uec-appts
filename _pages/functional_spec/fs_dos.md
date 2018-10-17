@@ -46,6 +46,7 @@ GP Federation Ltd. deliver their services from a single IT Platform, known as "A
 Provider Name      | Provider ODS Code | IT System
 -------------------|-------------------|--------------
 GP Federations Ltd.| AB1234            | ANGPS
+
 *figure 1 
 
 Each of the three locations has its own appointment diary represented as a schedule in AGPCS. Location 3 has two diaries, a GP diary like the other two and a Nurse diary also (see figure 2):
