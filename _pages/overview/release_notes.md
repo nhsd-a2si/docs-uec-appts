@@ -23,7 +23,7 @@ The 0.1.2 PREVIEW release has the following highlights:
 
 ## Future releases
 
-#### 0.1.1 PREVIEW
+#### 0.1.3 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
