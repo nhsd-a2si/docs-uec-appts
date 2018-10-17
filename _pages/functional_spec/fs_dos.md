@@ -41,7 +41,14 @@ The aspect of this that is key for direct booking is how a specific service will
 
 For this example, consider a GP Federataion provider called "GP Federations Ltd.". This provider has been comissioned by the GP Practices in a comissioning area to deliver the extended access GP services on behalf of these GP Practices. GP Federations Ltd. operates this service from three different locations, these are consulting rooms in three of the GP Practices they are covering.
 
-GP Federation Ltd. deliver their services from a single IT Platform
+GP Federation Ltd. deliver their services from a single IT Platform, known as "Another GP Clinical System (AGPCS)".
+
+Provider Name      | Provider ODS Code | IT System
+-------------------|-------------------|--------------
+GP Federations Ltd.| AB1234            | ANGPS
+
+
+
 
 Service Type | DoS ID | Service Name             | Service ODS Code 
 -------------|--------|--------------------------|------------------
@@ -50,9 +57,7 @@ GP Federation|123457  | GP Hub - the High Street | 123457
 
 
 
-Provider Name      | Provider ODS Code | IT System
--------------------|-------------------|--------------
-GP Federations Ltd.| AB1234            | ANotherGPSystem (ANGPS)
+
 
 
 
