@@ -38,11 +38,19 @@ The consuming system belongs to the service that is searching for an appropriate
 
 During the booking provess a number of systems that are hosted by NHS Digital as national infrastructure need to be interacted with. These are as follows:
 
+#### Patient Demographic Service (PDS)
+The Patient Demographic Service is a Spine service that enables matching captured demographics against a national demographic  repository. PDS verified demographics, in particular NHS number is required by a lot of interoperability in the NHS. **A spine verified NHS number, either by direct verification on PDS or through a Spine Mini Service Provider (SMSP) is required for booking using this standard**.
+
 ####  National DoS
 The national DoS can be used to discover the most appropriate service for the patient. If that service offers appointments the necessary information required to query SDS for the endpoint will be provided. 
 
 #### Spine Directory Service (SDS)
-The SDS performs the role of the booking endpoint repository. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
+The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
+
+#### NHS Identity (**Strat**egic **Auth**entication)
+The NHS Identity service provides a digital identity that consumed many times from a single logon. It can also be linked with every day devices to provide extra contextual information about that user (e.g. location, nearby services) and it can profile the characteristics of the owner(usual times of sign-on, services normally used, location, devices linked to the user).
+
+For this booking standard, NHS Identity validates credentials passed by the consuming system, and subject to this check, issues a short lived (1 hour) access token which the consuming system must include in a http Authorization header in all requests to the provider system.
 
 #### Spine Secure Proxy (SSP)
 The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
@@ -52,23 +60,21 @@ The provider system is the system that is offering appointments to be booked int
 
 ## Service Discovery
 
-The first step of the booking process involves some form of service discovery. Typically this will use the DoS to identify the most appropriate service to meet the patients needs. 
+The first step of the booking process involves some form of service discovery. Typically this will use the <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Urgent Care Directory of Services (known as the "DoS")</a> to identify the most appropriate service to meet the patients needs. 
 
 In the situation the DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services (`CheckCapacitySummary`). 
 
 <img src="_pages/functional_spec/img/ServiceDiscovery1.png">
 
-Once the chosen service has been selected the next call to the DoS API is made (`ServiceDetailsByID`) and this will return the specific details of the selected service including something called an "ASID".
+Once the chosen service has been selected the next call to the DoS API is made (`ServiceDetailsByID`) and this will return the specific details of the selected service including something called an Accredited System Identifier (ASID).
 
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
-An ASID (Accredited System Identifier) is used to obtain the endpoint for booking into the Provider system.
+An ASID is used to obtain the endpoint for booking into the Provider system.
 
 ## Endpoint Discovery
 
-The consuming system needs to interact with SDS in order to resolve the FHIR Endpoint Server Root URL to be used when constructing the request to be made to the Spine Security Proxy.
-
-In order for the Consuming system to make a request to the SSP it needs to resolve the FHIR endpoints root URL. In order to do this the information that is needed to build the request is stored on the SDS. The SDS can be queried using the ASID obtained from the previous step. 
+The consuming system uses SDS to resolve the FHIR Endpoint Server Root URL. SDS is queried using the ASID obtained from the previous step.
 
 This is a two step process:
 
@@ -92,6 +98,60 @@ A request for the nhsMHS object can then be made using the interaction and Party
 This will return the endpoint required to build an SSP request:
 
 <img src="_pages/functional_spec/img/EndpointDiscovery4.png">
+
+####
+This is a two step process:
+
+1. Obtaining the nhsAS object that contains an MHS Party Key.
+2. Obtaining the nhsMHS object that contains an nhsMHSEndPoint.
+
+Step 1:
+
+<img src="_pages/functional_spec/img/EndpointDiscovery1.png">
+
+Given an ASID of 123456789012 a query can be made to obtain the nhsMHSPartyKey of the nhsAS object, for example:
+
+```json
+ldapsearch -b uniqueIdentifier=123456789012,ou=Services,o=nhs nhsMHSPartyKey
+Response:
+nhsMHSPartyKey: A12345-1234567
+```
+The value returned is needed for step 2:
+<img src="_pages/functional_spec/img/EndpointDiscovery2.png">
+
+Step 2:
+A request for the nhsMHS object can then be made using the interaction and Party Key:
+
+<img src="_pages/functional_spec/img/EndpointDiscovery3.png">
+```json
+ldapsearch -b ou=Services,o=nhs "(&(nhsMHSPartyKey= A12345-1234567)(nhsMhsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:create:appointment))" nhsMHSEndPoint
+Response:
+nhsMHSEndPoint: https://server.domain.nhs.uk/fhir_base
+```
+The value returned is the endpoint required to build an SSP request.
+
+<img src="_pages/functional_spec/img/EndpointDiscovery4.png">
+
+Before making a call to the FHIR endpoint, the consuming system needs to obtain an access token from NHS identity. This uses an OAuth Client Credentials grant making a call to the token endpoint of NHS Identity, including the following values:
+```json
+grant_type=client_credentials
+client_id=[issued during assurance].
+client_secret=[issued during assurance].
+scope=[Not yet finalised, see below]
+```
+We’ve yet to finalise the set of scopes that the client is asking for, but it’ll be as a minimum:
+
+* appointment/*.write
+* slot/*.read
+* schedule/*.read
+* location/*.read
+* organization/*.read
+* healthcareservice/*.read
+
+Assuming the credentials match, and the consuming system is authorised to search for slots and book appointments (i.e. it’s allowed the scopes it’s asking for), then NHS Identity returns an access token encoded as a JWT (see <a href="https://developer.nhs.uk/apis/spine-core/security_jwt.html" target="_blank">https://developer.nhs.uk/apis/spine-core/security_jwt.html</a>).
+
+This access token is then passed in the Authorization http header in all calls to a provider system.
+
 
 ## Get Slots
 
