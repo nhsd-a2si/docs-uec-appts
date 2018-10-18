@@ -144,62 +144,10 @@ Once the request is made at the SSP, it is passed through to the FHIR endpoint a
 
 This will return a FHIR slot resource bundle for example:
 ```json
-
 {
   "resourceType": "Bundle",
   "type": "searchset",
   "entry": [
-    {
-      "fullUrl": "Organisation/23",
-      "resource": {
-        "fullUrl": "http://uecb.aprovider.nhs.net/GP001/STU3/1/Organization/23",
-        "resource": {
-          "resourceType": "Organization",
-          "id": "23",
-          "meta": {
-            "versionId": "636064088098730113",
-            "profile": [
-              "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Organization-1"
-            ]
-          },
-          "identifier": [
-            {
-              "system": "https://fhir.nhs.uk/Id/ods-organization-code",
-              "value": "O001"
-            }
-          ],
-          "name": "Honley GP Practice"
-        }
-      }
-    },
-    {
-      "fullUrl": "Location/17",
-      "resource": {
-        "resourceType": "Location",
-        "id": "17",
-        "meta": {
-          "versionId": "636064088100870233",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Location-1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.nhs.uk/Id/ods-site-code",
-            "value": "L001"
-          }
-        ],
-        "name": "Honley Highstreet",
-        "address": {
-          "line": [
-            "Trevelyan Square",
-            "Boar Ln",
-            "Leeds"
-          ],
-          "postalCode": "LS1 6AE"
-        }
-      }
-    },
     {
       "fullUrl": "Schedule/14",
       "resource": {
@@ -208,23 +156,9 @@ This will return a FHIR slot resource bundle for example:
         "meta": {
           "versionId": "1469444400000",
           "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Schedule-1"
+            "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Schedule-1"
           ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-PractitionerRole-1",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
-                  "code": "R0260",
-                  "display": "General Medical Practitioner"
-                }
-              ]
-            }
-          }
-        ],
+        },        
         "actor": [
           {
             "reference": "Location/17"
@@ -244,7 +178,7 @@ This will return a FHIR slot resource bundle for example:
         "meta": {
           "versionId": "636064088099800115",
           "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-GPC-Practitioner-1"
+            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
           ]
         },
         "identifier": [
@@ -269,15 +203,9 @@ This will return a FHIR slot resource bundle for example:
         "meta": {
           "versionId": "1471219260000",
           "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Slot-1"
+            "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Slot-1"
           ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-DeliveryChannel-2",
-            "valueCode": "In-person"
-          }
-        ],
+        },        
         "schedule": {
           "reference": "Schedule/14"
         },
@@ -294,15 +222,9 @@ This will return a FHIR slot resource bundle for example:
         "meta": {
           "versionId": "1471219260112",
           "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Slot-1"
+            "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Slot-1"
           ]
-        },
-        "extension": [
-          {
-            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-GPConnect-DeliveryChannel-2",
-            "valueCode": "In-person"
-          }
-        ],
+        },        
         "schedule": {
           "reference": "Schedule/14"
         },
@@ -317,7 +239,13 @@ This will return a FHIR slot resource bundle for example:
 
 ## Book Appointment
 
-The booking is made following the same process as getting available slots. However this tie a post is made to the SSP with a serialised <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/book_an_appointment.html" target="_blank">FHIR booking request</a> as the payload.
+The booking is made following the same process as getting available slots. However this tie a post is made to the SSP with a serialised <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/book_an_appointment.html" target="_blank">FHIR appointment resource</a> as the payload.
+
+Using the access token the provider system can:
+*	Determine the identity of the consuming system.
+*	Be reassured that the consuming system has gone through the appropriate assurance to request slots and/or book appointments.
+*	Determine that the consuming system is involved in the provision of direct patient care (rather than for administrative purposes).
+*	Determine the care setting (e.g. urgent care, routine care Etc) for which the consuming system is requesting slots or booking an appointment.
 
 <img src="_pages/functional_spec/img/BookAppointment1.png">
 
