@@ -2,6 +2,7 @@
 title: What are we doing?
 sidebar: overview_sidebar
 permalink: what_are_we_doing.html
+toc: false
 ---
 {% include note-notpublished.html %}
 
