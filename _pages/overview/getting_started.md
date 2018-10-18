@@ -18,7 +18,7 @@ There are details on the <a href="https://nhsd-a2si.github.io/docs-uec-appts/sco
 There is also a section dedicated to the <a href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_overview.html">assurance process</a>.
 
 #### For Providers and Commissioners
-For providers and comissioners you can review the Care settings section as well as the getting started section. There are also sections on IG and the first of type programs that might be of interest.
+For providers and comissioners you can review the <a href="/caresetting_gppractice.html" target=_blank">Care settings</a> section as well as the <a href="" target=_blank">getting started</a> section. There are also sections on <a href="" target=_blank">IG</a> and the <a href="" target=_blank">first of type</a> programs that might be of interest.
 
 If you have any questions please contact the UEC appointment booking team at:
 
