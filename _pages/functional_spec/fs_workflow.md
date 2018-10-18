@@ -78,30 +78,6 @@ The consuming system uses SDS to resolve the FHIR Endpoint Server Root URL. SDS 
 
 This is a two step process:
 
-1. Obtaining an nhsAS object that contains the interaction type and MHS Party Key.
-2. Obtain an nhsMHS object to obtain the FHIR endpoint server root URL.
-
-Step 1:
-
-a query can be made to obtain the nhsAS object:
-
-<img src="_pages/functional_spec/img/EndpointDiscovery1.png">
-
-The object when returned will contain the information needed for step 2:
-
-<img src="_pages/functional_spec/img/EndpointDiscovery2.png">
-
-A request for the nhsMHS object can then be made using the interaction and Party Key:
-
-<img src="_pages/functional_spec/img/EndpointDiscovery3.png">
-
-This will return the endpoint required to build an SSP request:
-
-<img src="_pages/functional_spec/img/EndpointDiscovery4.png">
-
-####
-This is a two step process:
-
 1. Obtaining the nhsAS object that contains an MHS Party Key.
 2. Obtaining the nhsMHS object that contains an nhsMHSEndPoint.
 
