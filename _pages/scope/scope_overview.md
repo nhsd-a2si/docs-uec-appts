@@ -1,6 +1,6 @@
 ---
 title: Scope of standards
-toc: True
+toc: false
 sidebar: overview_sidebar
 permalink: scope_overview.html
 summary: "This page provides an overview of the currently envisiged scope for the national standards"
@@ -9,35 +9,28 @@ summary: "This page provides an overview of the currently envisiged scope for th
 
 ## Introduction
 
-
-## High Level Booking Scenarios
-
-Consumer | Provider | Scope
----------:|:---------|:------
-Unscheduled Care Servics → | General Practice | Priority
-Unscheduled Care Service → | Urgent Treatment Centre | Priority
-Unscheduled Care Service → | Specialist Clinical Service*| Priority
-General Practice → | Unscheduled Care Service | Potential future
-Emergency Department → | Unscheduled Care | Potential future
-General Practice → | Ambulatory Care Centre | Potential future
-Emegency Departments → | General Practice | Potential future
-
-* _(e.g. emergency dentists, community pharmacists)_
+The intention of this standard is to support booking from any to any accross care settings. However, initially the scope will be limited to specific care setting combinations. These priority scenarios will be targeted for the initial first of type program.
 
 ## Care Settings
-### In Scope (Priority) 
+### In Scope (Priority)
+#### Appointment Consumers (making a booking)
 * Integrated Urgent Care NHS 111 Call Centres
   * Clinical Assessment Services
   * Urgent Treatment Centres (and similar)
   * Other Urgent Care Services
-*  GPs	Emergency Care Practitioner (ECP)
 * 111 Online
+
+#### Appointment Providers (being booked into)
+*  GPs	Emergency Care Practitioner (ECP)
 * Emergency Dentists	
 * Community Pharmacists
 
 ### Currently Out of Scope
+#### Appointment Consumers (making a booking)
 * Emergency Departments (ED)
-* EmergencyCare PRactitioners (ECP)
+* EmergencyCare Practitioners (ECP)
+
+#### Appointment Providers (being booked into)
 * Patient Transport Servces (PTS)
 * Dental
 * Social Care

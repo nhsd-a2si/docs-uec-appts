@@ -19,5 +19,3 @@ Urgent care can theoretically book an appointment at any time offered even if th
 * The request to confirm the appt slot **must** warn the user if they are about to book an appt that is outside the disposition timeframe. 
 * The user warning **should** include details of by how long the appt fails to meet the disposition timeframe. 
 * The system **must** ensure that the user confirms a decision to continue. 
-* The system **may** include, as part of the confirmation, an assertion from the user that the patient (or their carer) has has made an informed decision to accept an appt is outside the disposition timeframe. 
-* This should be a configurable option based on provider requirements and by role
