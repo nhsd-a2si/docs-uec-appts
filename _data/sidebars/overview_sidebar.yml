@@ -29,7 +29,7 @@ entries:
             output: "web, pdf"            
             url: /definition.html
           - 
-            title: "IUC/111 Landscape"
+            title: "UEC Landscape"
             output: "web, pdf"            
             url: /iuc_overview.html
           - 
