@@ -22,4 +22,4 @@ For providers and comissioners you can review the <a href="/caresetting_gppracti
 
 If you have any questions please contact the UEC appointment booking team at:
 
-<a href="uecintegration@nhs.net">uecintegration@nhs.net</a>
+<a href="uec.appointmentbooking@nhs.net">uec.appointmentbooking@nhs.net</a>
