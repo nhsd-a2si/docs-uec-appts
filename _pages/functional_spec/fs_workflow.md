@@ -143,7 +143,7 @@ Once the request is made at the SSP, it is passed through to the FHIR endpoint a
 <img src="_pages/functional_spec/img/GetSlots2.png">
 
 This will return a FHIR slot resource bundle for example:
-```json
+<div markdown="span" class="bs-callout bs-callout-code">
 {
   "resourceType": "Bundle",
   "type": "searchset",
@@ -235,7 +235,7 @@ This will return a FHIR slot resource bundle for example:
     }
   ]
 }
-```
+</div>
 
 ## Book Appointment
 
