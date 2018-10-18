@@ -14,3 +14,36 @@ The IT system that is searching for and placing bookings on behalf of the patien
 
 ### Provider
 The IT system that holds the appointments being searched for and booked into 
+
+### SDS
+This stands for "Spine Directory Service"
+
+### SSP
+This stands for "Spine Secure Proxy"
+
+### PDS
+This stands for "Patient Demographic Service"
+
+### SMSP
+This stands for "Spine Mini Service Provider"
+
+### FHIR
+This stands for "Fast Health Information Resources"
+
+### DoS
+This stands for "Directory of Services"
+
+### JWT
+This stands for "Java Web Tokens"
+
+### OAuth
+This is an Open Authentication Standard
+
+### SA
+
+### GP Connect
+
+### RESTful
+
+### NHS Identity (Strat Auth)
+
