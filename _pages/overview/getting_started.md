@@ -13,7 +13,7 @@ folder: getting_started
 Welcome to the UEC appointment booking national standards website. On this site you will find guidance, specifications and background information for suppliers who are implementing these standards as well as providers and comissioners who are looking to procure and implement solutions that comply with these standards.
 
 #### For Suppliers
-There are details on the <a href="scope_overview.html">scope of the standards</a>, <a href="fs_workflow.html">functional specification</a>, <a href="non_functional_requirements.html">non-functional requirements</a> as well as <a href="implementation_overview.html">technical specifications as well as information on the proof of concept demonstrator</a>.
+There are details on the <a href="scope_overview.html" target="_blank">scope of the standards</a>, <a href="fs_workflow.html" target="_blank">functional specification</a>, <a href="non_functional_requirements.html" target="_blank">non-functional requirements</a> as well as <a href="implementation_overview.html" target="_blank">technical specifications as well as information on the proof of concept demonstrator</a>.
 
 There is also a section dedicated to the <a href="assurance_overview.html">assurance process</a>.
 
