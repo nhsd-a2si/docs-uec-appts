@@ -1,7 +1,7 @@
 ---
-title: NHS 111 / Integrated Urgent Care Overview
+title: Uregent Emergency Care Landscape
 sidebar: overview_sidebar
-permalink: iuc_overview.html
+permalink: uec_overview.html
 ---
 {% include note-notpublished.html %}
 
