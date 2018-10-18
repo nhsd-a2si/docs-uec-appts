@@ -1,6 +1,6 @@
 ---
 title: Scope of standards
-toc: True
+toc: false
 sidebar: overview_sidebar
 permalink: scope_overview.html
 summary: "This page provides an overview of the currently envisiged scope for the national standards"
@@ -12,7 +12,7 @@ summary: "This page provides an overview of the currently envisiged scope for th
 
 ## High Level Booking Scenarios
 
-Consumer | Provider | Scope
+Appointment Consumer | Appointment Provider | Scope
 ---------:|:---------|:------
 Unscheduled Care Servics → | General Practice | Priority
 Unscheduled Care Service → | Urgent Treatment Centre | Priority
@@ -25,19 +25,25 @@ Emegency Departments → | General Practice | Potential future
 * _(e.g. emergency dentists, community pharmacists)_
 
 ## Care Settings
-### In Scope (Priority) 
+### In Scope (Priority)
+#### Consumers
 * Integrated Urgent Care NHS 111 Call Centres
   * Clinical Assessment Services
   * Urgent Treatment Centres (and similar)
   * Other Urgent Care Services
-*  GPs	Emergency Care Practitioner (ECP)
 * 111 Online
+
+#### Providers
+*  GPs	Emergency Care Practitioner (ECP)
 * Emergency Dentists	
 * Community Pharmacists
 
 ### Currently Out of Scope
+#### Appointment Consumers
 * Emergency Departments (ED)
-* EmergencyCare PRactitioners (ECP)
+* EmergencyCare Practitioners (ECP)
+
+#### Appointment Providers
 * Patient Transport Servces (PTS)
 * Dental
 * Social Care
