@@ -24,4 +24,4 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
 ## Calls via SSP
 
 
-{% include infocard.html %}
+{% include infocard.html content1="This is the first piece of content" content2="this is the second piece of content" %}
