@@ -1154,3 +1154,11 @@ div.box.box1 {
         width: 100%;
     }
 }
+
+.infocard {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
