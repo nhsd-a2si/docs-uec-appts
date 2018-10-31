@@ -1155,7 +1155,7 @@ div.box.box1 {
     }
 }
 
-.infocard-parent {
+.infocard-parent #infocard-parent ul {
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -1171,7 +1171,7 @@ div.box.box1 {
 }
 
 
-.infocard-child {
+.infocard-child #infocard-child li {
   background: tomato;
   padding: 5px;
   width: 200px;
