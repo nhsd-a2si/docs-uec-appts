@@ -1173,7 +1173,6 @@ div.box.box1 {
 
 .infocard-child #infocard-child li {
   background: tomato;
-  /* background: rgba(0, 0, 255, 0.3); */
   padding: 5px;
   width: 200px;
   height: 150px;
