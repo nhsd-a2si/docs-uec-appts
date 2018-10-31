@@ -1157,20 +1157,31 @@ div.box.box1 {
 
 .infocard-parent {
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    list-style: none;
     flex-direction: row;
     height: 300px;
-   /* padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #eee;
-    border-left-width: 5px;
-    border-radius: 3px;
-    color: #777;*/
+    padding: 0;
+    margin: 0;  
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 
 .infocard-child {
-    width: 200px;
-    height: 200px;
-    margin: auto;
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
 }
     
