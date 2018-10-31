@@ -1172,7 +1172,8 @@ div.box.box1 {
 
 
 .infocard-child #infocard-child li {
-  background: tomato;
+  /* background: tomato; */
+  background-color: rgba(0, 0, 255, 0.3);
   padding: 5px;
   width: 200px;
   height: 150px;
@@ -1181,7 +1182,7 @@ div.box.box1 {
   line-height: 150px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+  font-size: 1em;
+  text-align: left;
 }
     
