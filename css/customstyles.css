@@ -1155,16 +1155,22 @@ div.box.box1 {
     }
 }
 
-.infocard {
-    padding: 20px;
+.infocard-parent {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+   /* padding: 20px;
     margin: 20px 0;
     border: 1px solid #eee;
     border-left-width: 5px;
     border-radius: 3px;
-    color: #777;
+    color: #777;*/
 }
 
-.infocard #left {
-    float: left;
+
+.infocard-child {
+    width: 200px;
+    height: 200px;
+    margin: auto;
 }
     
