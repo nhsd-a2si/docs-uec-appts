@@ -1,9 +1,40 @@
-<ul class="infocard-parent" id="infocard-parent">
- <li class="infocard-child" id="infocard-child">
+<ul class="infocard-parent" id="infocard-parent" style="display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    list-style: none;
+    flex-direction: row;
+    height: 300px;
+    padding: 0;
+    margin: 0;  
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;">
+ <li class="infocard-child" id="infocard-child" style=" background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;">
     {{include.title1}}
     {{include.content1}}
  </li>
- <li class="infocard-child" id="infocard-child">
+ <li class="infocard-child" id="infocard-child" style=" background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;">
     {{include.title2}}
     {{include.content2}}
  </li>  
