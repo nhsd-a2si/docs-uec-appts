@@ -23,24 +23,4 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
 
 ## Calls via SSP
 
-
-{% include infocard.html 
-  title1="GP Connect"
-  content1="
-  Target URL is concatenated onto SSP URL.
-  http headers are as follows:
-  Ssp-TraceID
-  Ssp-From
-  Ssp-To
-  Ssp-InteractionID
-  "
-  title2="CareConnect"
-  content2="
-  Target URL is concatenated onto SSP URL
-  http headers are as follows:
-  Ssp-TraceID = a UUID
-  Ssp-From = Client system ASID
-  Ssp-To = Server ASID
-  Ssp-InteractionID = Interaction ID from SDS specific to the call being made.
-  Authorization
-  " %}
+{% include infocard.html title1="GP Connect" content1="" title2="CareConnect" content2="" %}
