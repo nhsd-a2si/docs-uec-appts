@@ -34,5 +34,11 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
   content1_line7="N/A" 
   
   title2="CareConnect" 
-  content2="http headers are as follows" 
+  content2_line1="Target URL is concatenated onto SSP URL" 
+  content2_line2="http headers are as follows:" 
+  content2_line3="Ssp-TraceID = a UUID"  
+  content2_line4="Ssp-From = Client system ASID" 
+  content2_line5="Ssp-To = Server ASID" 
+  content2_line6="Ssp-InteractionID = Interaction ID from SDS specific to the call being made." 
+  content2_line7="Authorization" 
 %}
