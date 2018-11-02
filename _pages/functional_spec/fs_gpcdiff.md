@@ -23,4 +23,4 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
 
 ## Calls via SSP
 
-{% include infocard.html title1="GP Connect" content1="http headers are as follows:" title2="CareConnect" content2="" %}
+{% include infocard.html title1="GP Connect" content1="http headers are as follows:" title2="CareConnect" content2="http headers are as follows" %}
