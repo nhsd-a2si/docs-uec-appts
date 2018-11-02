@@ -41,4 +41,22 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
   content2_line5="Ssp-To = Server ASID" 
   content2_line6="Ssp-InteractionID = Interaction ID from SDS specific to the call being made." 
   content2_line7="Authorization" 
+  
+  title3="Difference" 
+  content3_line1="Calls via SSP: No change" 
+  content3_line2="Interaction ID's are different in http headers" 
+  content3_line3="Ssp-TraceID: no change"  
+  content3_line4="Ssp-From: no change" 
+  content3_line5="Ssp-To: no change" 
+  content3_line6="Ssp-InteractionID: specific set for GP Connect and another for CareConnect" 
+  content3_line7="Authorization: Uses JWT token in an Authorisation http header (not used by SSP)" 
+  
+  title4="Rationale for change" 
+  content4_line1="Target URL is concatenated onto SSP URL" 
+  content4_line2="The Interaction IDs are different to allow them to be individually authorised, and to permit different endpoints to be offered per interaction. If there were no differences elsewhere they COULD be the same." 
+  content4_line3=""  
+  content4_line4="" 
+  content4_line5="SSP Could inspect the Authorization header and make decisions based on that (not currently in scope)." 
+  content4_line6="" 
+  content4_line7="" 
 %}
