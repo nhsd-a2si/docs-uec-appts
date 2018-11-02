@@ -23,4 +23,16 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
 
 ## Calls via SSP
 
-{% include infocard.html title1="GP Connect" content1_line1="Target URL is concatenated onto SSP URL" content1_line2="http headers are as follows:" content1_line3="Ssp-TraceID"  content1_line4="Ssp-From" content1_line5="Ssp-To" content1_line6="Ssp-InteractionID" content1_line7="N/A" title2="CareConnect" content2="http headers are as follows" %}
+{% include infocard.html 
+  title1="GP Connect" 
+  content1_line1="Target URL is concatenated onto SSP URL" 
+  content1_line2="http headers are as follows:" 
+  content1_line3="Ssp-TraceID"  
+  content1_line4="Ssp-From" 
+  content1_line5="Ssp-To" 
+  content1_line6="Ssp-InteractionID" 
+  content1_line7="N/A" 
+  
+  title2="CareConnect" 
+  content2="http headers are as follows" 
+%}
