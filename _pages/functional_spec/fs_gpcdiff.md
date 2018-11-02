@@ -191,7 +191,7 @@ folder: functional_spec
   content2_line7="" 
   
   title3="Difference" 
-  content3_line1="No Data Sharing Agreement required" 
+  content3_line1="No Data Sharing Agreement required for CareConnect" 
   content3_line2="" 
   content3_line3=""  
   content3_line4="" 
