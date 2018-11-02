@@ -9,17 +9,17 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
-## Calls via SSP
+## Identify Patient
 
 {% include infocard.html 
   title1="GP Connect" 
-  content1_line1="Target URL is concatenated onto SSP URL" 
-  content1_line2="http headers are as follows:" 
-  content1_line3="<i>Ssp-TraceID</i>"  
-  content1_line4="<i>Ssp-From</i>" 
-  content1_line5="<i>Ssp-To</i>" 
-  content1_line6="<i>Ssp-InteractionID</i>" 
-  content1_line7="<i>N/A</i>" 
+  content1_line1="Use PDS to get a verified NHS Number" 
+  content1_line2="" 
+  content1_line3=""  
+  content1_line4="" 
+  content1_line5="" 
+  content1_line6="" 
+  content1_line7="" 
   
   title2="CareConnect" 
   content2_line1="Target URL is concatenated onto SSP URL" 
