@@ -60,3 +60,43 @@ Get Registered GP Practice from PDS record | Use DoS to select a service | n GP 
   content4_line6="" 
   content4_line7="" 
 %}
+
+## NextOne
+
+{% include infocard.html 
+  title1="GP Connect" 
+  content1_line1="" 
+  content1_line2="" 
+  content1_line3="<i></i>"  
+  content1_line4="<i></i>" 
+  content1_line5="<i></i>" 
+  content1_line6="<i></i>" 
+  content1_line7="<i></i>" 
+  
+  title2="CareConnect" 
+  content2_line1="L" 
+  content2_line2="" 
+  content2_line3="<i></i>"  
+  content2_line4="<i></i>" 
+  content2_line5="<i></i>" 
+  content2_line6="<i></i>" 
+  content2_line7="<i></i>" 
+  
+  title3="Difference" 
+  content3_line1="" 
+  content3_line2="" 
+  content3_line3="<i></i>"  
+  content3_line4="<i></i>" 
+  content3_line5="<i></i>" 
+  content3_line6="<i></i>" 
+  content3_line7="<i></i>" 
+  
+  title4="Rationale for change" 
+  content4_line1="" 
+  content4_line2="" 
+  content4_line3=""  
+  content4_line4="" 
+  content4_line5="" 
+  content4_line6="" 
+  content4_line7="" 
+%}
