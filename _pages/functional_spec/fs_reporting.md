@@ -8,3 +8,5 @@ folder: functional_spec
 ---
 
 {% include note-notpublished.html %}
+
+{% include note-notpublished.html %}
