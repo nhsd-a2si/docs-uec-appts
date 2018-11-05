@@ -296,19 +296,19 @@ folder: functional_spec
 {% include infocard.html 
   title1="GP Connect" 
   content1_line1="Use SDS to get endpoint from nhsMHS object" 
-  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quotou=services, o=nhs&quot &quot(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot uniqueIdentifier nhsMhsPartyKey</i>" 
+  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
   content1_line3="<i>T99999 = ODS Code of the GP Practice</i>"  
   content1_line4="<i>gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
-  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quotou=services, o=nhs&quot &quot(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
   content1_line6="<i>T99999-9999999 is the partyKey from previous step</i>" 
   content1_line7="<i>…:gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
   
   title2="CareConnect" 
   content2_line1="Use SDS to get endpoint from nhsMHS object" 
-  content2_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quotou=services, o=nhs&quot &quot(&(uniqueIdentifier=ABC123) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot nhsMhsPartyKey</i>" 
+  content2_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(uniqueIdentifier=ABC123) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot; nhsMhsPartyKey</i>" 
   content2_line3="<i>ABC123 = ASID of the service as returned from DOS</i>"  
   content2_line4="<i>a2si:fhir:rest:search:slot is the Interaction being performed</i>" 
-  content2_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quotou=services, o=nhs&quot &quot(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content2_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
   content2_line6="<i>T99999-9999999 is the partyKey from previous step</i>" 
   content2_line7="<i>…:a2si:fhir:rest:search:slot is the Interaction being performed</i>" 
   
