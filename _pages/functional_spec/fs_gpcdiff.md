@@ -9,6 +9,8 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
+## Introduction
+
 ## Identify Patient
 
 {% include infocard.html 
@@ -281,6 +283,47 @@ folder: functional_spec
   
   title4="Rationale for change" 
   content4_line1="If the service requires a patient to be registered, it can perform this within the atomic booking process, rather than have a separate routine." 
+  content4_line2="" 
+  content4_line3=""  
+  content4_line4="" 
+  content4_line5="" 
+  content4_line6="" 
+  content4_line7="" 
+%}
+
+## Find Endpoint
+
+{% include infocard.html 
+  title1="GP Connect" 
+  content1_line1="Use SDS to get endpoint from nhsMHS object" 
+  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quotou=services, o=nhs&quot &quot(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot uniqueIdentifier nhsMhsPartyKey</i>" 
+  content1_line3="<i>T99999 = ODS Code of the GP Practice</i>"  
+  content1_line4="<i>gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
+  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quotou=services, o=nhs&quot &quot(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content1_line6="<i>T99999-9999999 is the partyKey from previous step</i>" 
+  content1_line7="<i>…:gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
+  
+  title2="CareConnect" 
+  content2_line1="Use SDS to get endpoint from nhsMHS object" 
+  content2_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quotou=services, o=nhs&quot &quot(&(uniqueIdentifier=ABC123) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot nhsMhsPartyKey</i>" 
+  content2_line3="<i>ABC123 = ASID of the service as returned from DOS</i>"  
+  content2_line4="<i>a2si:fhir:rest:search:slot is the Interaction being performed</i>" 
+  content2_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quotou=services, o=nhs&quot &quot(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content2_line6="<i>T99999-9999999 is the partyKey from previous step</i>" 
+  content2_line7="<i>…:a2si:fhir:rest:search:slot is the Interaction being performed</i>" 
+  
+  title3="Difference" 
+  content3_line1="Different LDAP searches" 
+  content3_line2="" 
+  content3_line3="LDAP search is based on ODS code for GP Connect, ASID for Care Connect.
+Interaction name is different."  
+  content3_line4="The search is identical apart from the Interaction ID being specific." 
+  content3_line5="" 
+  content3_line6="" 
+  content3_line7="" 
+  
+  title4="Rationale for change" 
+  content4_line1="Knowing the ASID allows a simpler and faster / more efficient LDAP query, it also supports a more granular approach than ODS codes alone, including one server endpoint for multiple DOS profiles." 
   content4_line2="" 
   content4_line3=""  
   content4_line4="" 
