@@ -13,7 +13,7 @@ folder: functional_spec
 
 ## Identify Patient
 
-{% include infocard.html 
+{% include infocard-small.html 
   title1="GP Connect" 
   content1_line1="Use PDS to get a verified NHS Number" 
   content1_line2="" 
@@ -53,7 +53,7 @@ folder: functional_spec
 
 ## Select Service
 
-{% include infocard.html 
+{% include infocard-medium.html 
   title1="GP Connect" 
   content1_line1="Get Registered GP Practice from PDS record" 
   content1_line2="" 
@@ -93,7 +93,7 @@ folder: functional_spec
 
 ## Calls via SSP
 
-{% include infocard.html 
+{% include infocard-medium.html 
   title1="GP Connect" 
   content1_line1="Target URL is concatenated onto SSP URL" 
   content1_line2="http headers are as follows:" 
@@ -133,7 +133,7 @@ folder: functional_spec
 
 ## TLS/MA
 
-{% include infocard.html 
+{% include infocard-small.html 
   title1="GP Connect" 
   content1_line1="Spine issued digital certificate required to talk to PDS, SDS and SSP" 
   content1_line2="" 
@@ -173,7 +173,7 @@ folder: functional_spec
 
 ## SSP authorisation
 
-{% include infocard.html 
+{% include infocard-medium.html 
   title1="GP Connect" 
   content1_line1="Uses the following:" 
   content1_line2="" 
@@ -213,7 +213,7 @@ folder: functional_spec
 
 ## Find Patient
 
-{% include infocard.html 
+{% include infocard-medium.html 
   title1="GP Connect" 
   content1_line1="FHIR Search operation on the endpoint via SSP" 
   content1_line2="" 
@@ -253,7 +253,7 @@ folder: functional_spec
 
 ## Register Patient
 
-{% include infocard.html 
+{% include infocard-small.html 
   title1="GP Connect" 
   content1_line1="Patient is registered if not found." 
   content1_line2="" 
@@ -293,7 +293,7 @@ folder: functional_spec
 
 ## Find Endpoint
 
-{% include infocard.html 
+{% include infocard-large.html 
   title1="GP Connect" 
   content1_line1="Use SDS to get endpoint from nhsMHS object" 
   content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
