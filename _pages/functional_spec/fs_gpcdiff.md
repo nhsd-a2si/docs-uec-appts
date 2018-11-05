@@ -296,7 +296,7 @@ folder: functional_spec
 {% include infocard.html 
   title1="GP Connect" 
   content1_line1="Use SDS to get endpoint from nhsMHS object" 
-  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
+  content1_line2="<i style="font-size: 50%;">ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
   content1_line3="<i>T99999 = ODS Code of the GP Practice</i>"  
   content1_line4="<i>gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
   content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
