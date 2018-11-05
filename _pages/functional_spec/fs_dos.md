@@ -20,7 +20,7 @@ Therefore it is important to understand how the DoS will interact with these boo
 * Slot discovery
 * Booking a slot
 
-Understanding how these steps interact with each other is essential, especially when booking into more complex services. For exmaple the way the profiling of the DoS service is tied to the schedules on a provider system. In order to understand these interactions better lets walk through an example.
+Understanding how these steps interact with each other is essential, especially when booking into more complex services. For exmaple the way the profiling of the DoS service is tied to the schedules on a provider system. In order to understand these interactions better we shall walk through an example.
 
 ## Example scenario
 
@@ -28,17 +28,17 @@ Services on the DoS are profiled with a range of data that is used to determine 
 
 
 * Geographical information such as address and search etc..
-* Demographic profile of patients the service is available to
+* Demographic profile of patients the service is available for
 * The comissioning footprint of the service, for example 
   * GP Practices that patients have to be registered to in order to use the service
-* The clinical needs that the servie will meet, for exampled
+* The clinical needs that the servie will meet, for example:
   * symptoms
   * timeframes
-* Referal endpoint information for example:
+* Referal endpoint information, for example:
   * URL's
   * Document format
 
-The aspect of this that is key for direct booking is how a specific service will relate to a CareConect Schedule resource on a particular system.
+The aspect of that is key for direct booking is how a specific service will relate to a CareConect Schedule resource on a particular system.
 
 Please note that in the example below, many irrelevent details are simplefied or skipped. Also the technical details of the API messaging interactions are omitted. This is explained in detail <a href="https://queticodigital.github.io/docs-uec-appts-dev/fs_workflow.html" target="_blank">here</a>.
 
@@ -52,7 +52,7 @@ Provider Name      | Provider ODS Code | IT System
 GP Federations Ltd.| AB1234            | ANGPS
  
  
-Each of the three locations has its own appointment diary represented as a schedule in ANGPS. Location 3 has two diaries, a GP diary like the other two and a Nurse diary also:
+Each of the three locations has its own appointment diary represented as a schedule in ANGPS. Location 1 has two diaries, a GP diary like the other two and a Nurse diary also:
 
 
 <div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/8.8.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36\&quot; version=\&quot;9.2.7\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;a9224995-d5d3-854d-5d66-375058506576\&quot; name=\&quot;Page-1\&quot;&gt;7VfBbqMwFPwajonABpYck7TprpSVKqXSnl1wwFqDWeM00K/fZzAEkhRFalrlEA5gz7P9zMwbCyy8TMsnSfLkt4got5AdlRZ+sBByZsiDh0aqFrENEksWGewAbNg7NaBt0B2LaDEYqITgiuVDMBRZRkM1wIiUYj8cthV8mDUnMT0BNiHhp+gfFqmkQTG27UPgJ2VxYlJDaNZEXkn4N5Zil5mEFsLb+mrCKWkXMysVCYnEvgfhRwsvpRCqaaXlknLNbstbM2/1QbTbuKSZumRC0Ex4I3xH2x37HKYutgJWgA2qyrDi/9uJNjApas3mMMAN8vIQhFasn0/PEFrRiEqimMgK6K1ZyhSNoPXrBW6bqlA0bbPBDpuEzXRDTpcbFXuWcpJBb5GolAPoQLNQRCpTPv5Mx4Rk77AOaUeEusMyKl+qXI9SktJu/TcqFS0/ZM7p9IBKpyKlSlYwxExwjYLVsLs/1IuD23pOerXiYQMSU6Rxt/RBJ2gYqc7Lhk9kW4uwZhpQPMaeZtkw5gSXMhGMMjHzhlQ4vj21e1dbZD1q0OwMM+gazKAzBX3MRkLqWmBpfQz0C0rzwOAcmHMWZ7pcRN5D1+SV8mdRsJpo/PAqlBIpDOA6sOisvxRcyDpXa368qJPNi7w5rmxASNvZshJsYYZAP1FKn3Nz/c5oFUYZmjKo4y3LwE7TEDKiVUQUgYfGwVurjO4nFSVyImkh+M5YbuW7cOtBE9udOCiY5ll8ke54VPfAGcjuOUPV8akh2kroq96Bn1HdH/ODM+aH/hECW/4Sg+ATf5xQ4547Kq5iiB93Q1zPEP6ozkfnoH9kiMD9RkfM7rJ/l+zIvyHd3bGT8EwNfOmXgee5t/Nl4N0dcT1HuDf6ZaDfqvt5qmO9f1T8+B8=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
@@ -94,8 +94,8 @@ Once all the above is understood we can walk through a typical booking scenario 
 
 ### Booking scenario walk-though
 
-1. a Patient dials 111 on their phone and gets through to their local 111 service. 
-2. The health advisor takes them through a Pathways assessment and they get referred to the Clinical Assessment Service in the 111 to speak to a clinician.
+1. a patient dials 111 on their phone and gets through to their local 111 service. 
+2. The health advisor takes them through an NHS Pathways assessment and they get referred to the Clinical Assessment Service (CAS) in the 111 to speak to a clinician.
 3. The clinician assesses them and determines that they require an urgent appointment with a GP.
 4. The 111 IT system searches the DoS with the details of the patient and the assessment
 5. The DoS returns a ranked list of services. The top service is the service named "GP Hub - Main location GP"
@@ -107,17 +107,13 @@ Once all the above is understood we can walk through a typical booking scenario 
 
 For the three key actors in this process there are the following key requirments:
 
-* The appointment consumer (111 system in the example above)
+* The appointment consumer (111 system in the example above):
   * MUST be able to retreive the HealthcareServiceID from the DoS endpoint details
-  * MUST ensure that the booking functionality invoked is compliant with the national standards if a booking endpoint (HealthcareServiceID) is returned by the DoS GetServiceDetailsByID API call
+  * MUST ensure that the booking functionality invoked is compliant with the national standards when a booking endpoint (HealthcareServiceID) is returned by the DoS GetServiceDetailsByID API call
   * MUST ensure that if no booking endpoint is returned by the GetServiceDetailsByID API call that any proprietary booking mechanisms are then tried and still work
-* The DoS
+* The DoS:
   * MUST be able to store the HealthcareServiceID
   * MUST return a booking endpoint (HealthcareServiceID) in response to a GetServiceDetailsByID API call
-* The appointment provider (GP Federation system in the example above)
+* The appointment provider (GP Federation system in the example above):
   * MUST allow association of a booking diary with a HealthcareServiceID
   * MUST ensure that two different diaries cannot be associated with the same HealthcareServiceID UNLESS there is a clear use case for slots from multiple schedules to be returned in one schedule bundle and therefore be considered by a booking consumer as one diary.
-
-
-
-
