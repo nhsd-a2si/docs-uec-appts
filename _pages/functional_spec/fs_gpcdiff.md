@@ -208,3 +208,83 @@ folder: functional_spec
   content4_line6="" 
   content4_line7="" 
 %}
+
+## Find Patient
+
+{% include infocard.html 
+  title1="GP Connect" 
+  content1_line1="FHIR Search operation on the endpoint via SSP" 
+  content1_line2="" 
+  content1_line3="<i>GET https://[proxy_server]/https://[provider_server]/[fhir_base]/Patient?identifier=[system]|[value]</i>"  
+  content1_line4="<i>NB: in the above [system] will always be https://fhir.nhs.uk/Id/nhs-number and [value] will always be the NHS Number</i>" 
+  content1_line5="" 
+  content1_line6="" 
+  content1_line7="" 
+  
+  title2="CareConnect" 
+  content2_line1="Not used" 
+  content2_line2="" 
+  content2_line3=""  
+  content2_line4="" 
+  content2_line5="" 
+  content2_line6="" 
+  content2_line7="" 
+  
+  title3="Difference" 
+  content3_line1="Patient find is not used in Care Connect" 
+  content3_line2="" 
+  content3_line3=""  
+  content3_line4="" 
+  content3_line5="" 
+  content3_line6="" 
+  content3_line7="" 
+  
+  title4="Rationale for change" 
+  content4_line1="GP Connect works on the GP concept of patients being registered in a practice. Many other services will not have this concept." 
+  content4_line2="" 
+  content4_line3=""  
+  content4_line4="" 
+  content4_line5="" 
+  content4_line6="" 
+  content4_line7="" 
+%}
+
+## Register Patient
+
+{% include infocard.html 
+  title1="GP Connect" 
+  content1_line1="Patient is registered if not found." 
+  content1_line2="" 
+  content1_line3=""  
+  content1_line4="" 
+  content1_line5="" 
+  content1_line6="" 
+  content1_line7="" 
+  
+  title2="CareConnect" 
+  content2_line1="Not used" 
+  content2_line2="" 
+  content2_line3=""  
+  content2_line4="" 
+  content2_line5="" 
+  content2_line6="" 
+  content2_line7="" 
+  
+  title3="Difference" 
+  content3_line1="Register Patient is not done in Care Connect" 
+  content3_line2="" 
+  content3_line3=""  
+  content3_line4="" 
+  content3_line5="" 
+  content3_line6="" 
+  content3_line7="" 
+  
+  title4="Rationale for change" 
+  content4_line1="If the service requires a patient to be registered, it can perform this within the atomic booking process, rather than have a separate routine." 
+  content4_line2="" 
+  content4_line3=""  
+  content4_line4="" 
+  content4_line5="" 
+  content4_line6="" 
+  content4_line7="" 
+%}
