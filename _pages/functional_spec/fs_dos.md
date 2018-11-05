@@ -92,7 +92,7 @@ The following digram illustrates the relationship of DoS services to appointment
 
 Once all the above is understood we can walk through a typical booking scenario using this example service.
 
-#### Booking scenario walk-though
+### Booking scenario walk-though
 
 1. a Patient dials 111 on their phone and gets through to their local 111 service. 
 2. The health advisor takes them through a Pathways assessment and they get referred to the Clinical Assessment Service in the 111 to speak to a clinician.
