@@ -117,3 +117,4 @@ For the three key actors in this process there are the following key requirments
 * The appointment provider (GP Federation system in the example above):
   * MUST allow association of a booking diary with a HealthcareServiceID
   * MUST ensure that two different diaries cannot be associated with the same HealthcareServiceID UNLESS there is a clear use case for slots from multiple schedules to be returned in one schedule bundle and therefore be considered by a booking consumer as one diary.
+  
