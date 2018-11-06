@@ -371,3 +371,44 @@ Interaction name is different."
   content4_line6="" 
   content4_line7="" 
 %}
+
+## Identify Requestor
+
+{% include infocard-medium.html 
+  title1="GP Connect" 
+  content1_line1="searchFilter parameter" 
+  content1_line2="<i>GET https://[proxy_server]/https://[provider_server]/[fhir_base]/Slot?[start={search_prefix}start_date][&end=[{search_prefix}end_date][&status=free][&_include=Slot:schedule]{&_include:recurse=Schedule:actor:Practitioner}{&_include:recurse=Schedule:actor:Location}<mark>{&searchFilter={OrgTypeSystem}|{OrgTypeValue}}{&searchFilter={OrgODSCodeSystem}|{OrgODSCode}}</mark></i>" 
+  content1_line3=""  
+  content1_line4="" 
+  content1_line5="" 
+  content1_line6="" 
+  content1_line7="" 
+  
+  title2="CareConnect" 
+  content2_line1="JWT" 
+  content2_line2="See: https://developer.nhs.uk/apis/spine-core/security_jwt.html" 
+  content2_line3=""  
+  content2_line4="" 
+  content2_line5="" 
+  content2_line6="" 
+  content2_line7="" 
+  
+  title3="Difference" 
+  content3_line1="GP Connect expects an assertion of the type of organisation making the request and their ODS Code in a searchFilter querystring parameter." 
+  content3_line2="Care Connect expects to get this information from a signed JWT issued by Strat Auth." 
+  content3_line3=""  
+  content3_line4="JWT can be verified by checking signature." 
+  content3_line5="" 
+  content3_line6="" 
+  content3_line7="" 
+  
+  title4="Rationale for change" 
+  content4_line1="This is a combination of authentication (who is the client) and authorisation (what can they do) and therefore should be handled as such. Implementing this removes the need for searchFilter." 
+  content4_line2="" 
+  content4_line3="Using a signed JWT gives the server significant confidence in the identity of the client, which should help to reduce IG challenges."  
+  content4_line4="" 
+  content4_line5="" 
+  content4_line6="" 
+  content4_line7="" 
+%}
+
