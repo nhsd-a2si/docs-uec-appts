@@ -1,5 +1,5 @@
 ---
-title: Uregent Emergency Care Landscape
+title: Urgent Emergency Care Landscape
 sidebar: overview_sidebar
 permalink: uec_overview.html
 ---
