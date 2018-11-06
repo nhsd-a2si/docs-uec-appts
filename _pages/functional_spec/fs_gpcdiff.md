@@ -296,12 +296,12 @@ folder: functional_spec
 {% include infocard-large.html 
   title1="GP Connect" 
   content1_line1="Use SDS to get endpoint from nhsMHS object" 
-  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=T99999) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
-  content1_line3="<i>T99999 = ODS Code of the GP Practice</i>"  
-  content1_line4="<i>gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
-  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
-  content1_line6="<i>T99999-9999999 is the partyKey from previous step</i>" 
-  content1_line7="<i>…:gpconnect:fhir:rest:search:slot-1 is the Interaction being performed</i>" 
+  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=<font color="red">T99999</font>) (objectClass=nhsAS)(nhsAsSvcIA=<font color="red">urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1</font>))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
+  content1_line3="<i><font color="red">T99999</font> = ODS Code of the GP Practice</i>"  
+  content1_line4="<i><font color="red">gpconnect:fhir:rest:search:slot-1</font> is the Interaction being performed</i>" 
+  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=<font color="red">T99999-9999999</font>) (objectClass=nhsMhs) (nhsMhsSvcIA=<font color="red">urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1</font>))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content1_line6="<i><font color="red">T99999-9999999</font> is the partyKey from previous step</i>" 
+  content1_line7="<i><font color="red">…:gpconnect:fhir:rest:search:slot-1</font> is the Interaction being performed</i>" 
   
   title2="CareConnect" 
   content2_line1="Use SDS to get endpoint from nhsMHS object" 
