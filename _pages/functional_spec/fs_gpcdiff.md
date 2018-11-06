@@ -305,12 +305,12 @@ folder: functional_spec
   
   title2="CareConnect" 
   content2_line1="Use SDS to get endpoint from nhsMHS object" 
-  content2_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(uniqueIdentifier=ABC123) (objectClass=nhsAS)(nhsAsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot; nhsMhsPartyKey</i>" 
-  content2_line3="<i>ABC123 = ASID of the service as returned from DOS</i>"  
-  content2_line4="<i>a2si:fhir:rest:search:slot is the Interaction being performed</i>" 
-  content2_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=T99999-9999999) (objectClass=nhsMhs) (nhsMhsSvcIA=urn:nhs:names:services:a2si:fhir:rest:search:slot))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
-  content2_line6="<i>T99999-9999999 is the partyKey from previous step</i>" 
-  content2_line7="<i>…:a2si:fhir:rest:search:slot is the Interaction being performed</i>" 
+  content2_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(uniqueIdentifier=<mark>ABC123</mark>) (objectClass=nhsAS)(nhsAsSvcIA=<mark>urn:nhs:names:services:a2si:fhir:rest:search:slot</mark>))&quot; nhsMhsPartyKey</i>" 
+  content2_line3="<i><mark>ABC123</mark> = ASID of the service as returned from DOS</i>"  
+  content2_line4="<i><mark>a2si:fhir:rest:search:slot</mark> is the Interaction being performed</i>" 
+  content2_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=<mark>T99999-9999999</mark>) (objectClass=nhsMhs) (nhsMhsSvcIA=<mark>urn:nhs:names:services:a2si:fhir:rest:search:slot</mark>))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content2_line6="<i><mark>T99999-9999999</mark> is the partyKey from previous step</i>" 
+  content2_line7="<i><mark>…:a2si:fhir:rest:search:slot</mark> is the Interaction being performed</i>" 
   
   title3="Difference" 
   content3_line1="Different LDAP searches" 
