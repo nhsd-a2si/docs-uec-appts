@@ -296,12 +296,12 @@ folder: functional_spec
 {% include infocard-large.html 
   title1="GP Connect" 
   content1_line1="Use SDS to get endpoint from nhsMHS object" 
-  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=<font color=&quot;red&quot;>T99999</font>) (objectClass=nhsAS)(nhsAsSvcIA=<font color=&quot;red&quot;>urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1</font>))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
-  content1_line3="<i><font color=&quot;red&quot;>T99999</font> = ODS Code of the GP Practice</i>"  
-  content1_line4="<i><font color=&quot;red&quot;>gpconnect:fhir:rest:search:slot-1</font> is the Interaction being performed</i>" 
-  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=<font color=&quot;red&quot;>T99999-9999999</font>) (objectClass=nhsMhs) (nhsMhsSvcIA=<font color=&quot;red&quot;>urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1</font>))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
-  content1_line6="<i><font color=&quot;red&quot;>T99999-9999999</font> is the partyKey from previous step</i>" 
-  content1_line7="<i><font color=&quot;red&quot;>…:gpconnect:fhir:rest:search:slot-1</font> is the Interaction being performed</i>" 
+  content1_line2="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk –b &quot;ou=services, o=nhs&quot; &quot;(&(nhsIDCode=<mark>T99999</mark>) (objectClass=nhsAS)(nhsAsSvcIA=<mark>urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1</mark>))&quot; uniqueIdentifier nhsMhsPartyKey</i>" 
+  content1_line3="<i><mark>T99999</mark> = ODS Code of the GP Practice</i>"  
+  content1_line4="<i><mark>gpconnect:fhir:rest:search:slot-1</mark> is the Interaction being performed</i>" 
+  content1_line5="<i>ldapsearch -x -H ldaps://ldap.vn03.national.ncrs.nhs.uk -b &quot;ou=services, o=nhs&quot; &quot;(&(nhsMhsPartyKey=<mark>T99999-9999999</mark>) (objectClass=nhsMhs) (nhsMhsSvcIA=<mark>urn:nhs:names:services:gpconnect:fhir:rest:search:slot-1</mark>))&quot; nhsMhsEndPoint nhsMHSFQDN</i>" 
+  content1_line6="<i><mark>T99999-9999999</mark> is the partyKey from previous step</i>" 
+  content1_line7="<i><mark>…:gpconnect:fhir:rest:search:slot-1</mark> is the Interaction being performed</i>" 
   
   title2="CareConnect" 
   content2_line1="Use SDS to get endpoint from nhsMHS object" 
