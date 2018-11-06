@@ -501,7 +501,7 @@ Interaction name is different."
 {% include infocard-small.html 
   title1="GP Connect" 
   content1_line1="Described" 
-  content1_line2="<i>https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html</i>" 
+  content1_line2="<i><small>https://nhsconnect.github.io/gpconnect/appointments_use_case_retrieve_a_patients_appointments.html</small></i>" 
   content1_line3=""  
   content1_line4="" 
   content1_line5="" 
