@@ -454,7 +454,7 @@ Interaction name is different."
 
 ## FHIR Resource Profiles
 
-{% include infocard-small.html 
+{% include infocard-large.html 
   title1="GP Connect" 
   content1_line1="GP Connect has specific profiles" 
   content1_line2="Slot Profile: <i>https://fhir.nhs.uk/STU3/StructureDefinition/GPConnect-Slot-1</i>" 
