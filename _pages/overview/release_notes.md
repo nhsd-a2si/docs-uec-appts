@@ -9,11 +9,16 @@ folder: introduction
 
 {% include note-notpublished.html %}
 
-## 0.1.3 PREVIEW
+## Current Release
+
+### 0.1.3 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.3   | PREVIEW | Alpha | Current Version | 16/11/2018   | Volatile
+
+
+
 
 ## Future releases
 
