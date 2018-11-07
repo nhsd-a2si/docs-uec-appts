@@ -10,6 +10,7 @@ folder: functional_spec
 {% include note-notpublished.html %}
 
 ## Introduction
+This page Identifies the key differences between the CareConnect API specification and the GP Connect API specification. It is imprtant to note that the CareConnect standard is under development and some of these items may change so please keep reviewing this page. It is also not comprehensive and only covers the significant changes, there may be some small detail differences that are not documented here.
 
 ## Identify Patient
 
