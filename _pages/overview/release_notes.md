@@ -13,7 +13,7 @@ folder: introduction
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.2   | PREVIEW | Alpha | Current Version      | 01/11/2018   | Volatile
+0.1.2   | PREVIEW | Alpha | Current Version      | 06/11/2018   | Volatile
 
 The 0.1.2 PREVIEW release has the following highlights:
 
@@ -27,7 +27,7 @@ The 0.1.2 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.3   | PREVIEW | Alpha | Unreleased | 16/02/2018   | Volatile
+0.1.3   | PREVIEW | Alpha | Unreleased | 16/11/2018   | Volatile
 
 ## Previous releases
 
