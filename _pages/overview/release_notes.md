@@ -17,9 +17,6 @@ Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.3   | PREVIEW | Alpha | Current Version | 16/11/2018   | Volatile
 
-<br>
-<br>
-
 ## Future releases
 
 ### 0.1.4 PREVIEW
@@ -27,9 +24,6 @@ Version | Handle  | Phase | State           | Release Date | Stability
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.4   | PREVIEW | Alpha | Unreleased | 30/11/2018   | Volatile
-
-<br>
-<br>
 
 ## Previous releases
 
