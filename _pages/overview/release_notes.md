@@ -9,11 +9,35 @@ folder: introduction
 
 {% include note-notpublished.html %}
 
-## 0.1.2 PREVIEW
+## Current Release
+
+### 0.1.3 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.2   | PREVIEW | Alpha | Current Version      | 01/11/2018   | Volatile
+0.1.3   | PREVIEW | Alpha | Current Version | 16/11/2018   | Volatile
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.4 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.4   | PREVIEW | Alpha | Unreleased | 30/11/2018   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
+### 0.1.2 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.2   | PREVIEW | Alpha | Released    | 06/11/2018   | Volatile
 
 The 0.1.2 PREVIEW release has the following highlights:
 
@@ -21,17 +45,7 @@ The 0.1.2 PREVIEW release has the following highlights:
 * The wording in "Serviceability" section of Non-Functional Requirements has been updated
 * Content in the "Interactions with the DoS" page in Functional Specification section has been created
 
-## Future releases
-
-#### 0.1.3 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.3   | PREVIEW | Alpha | Unreleased | 16/02/2018   | Volatile
-
-## Previous releases
-
-#### 0.1.1 PREVIEW
+### 0.1.1 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
