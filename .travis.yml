@@ -1,0 +1,17 @@
+language: ruby
+cache: bundler
+
+install:
+  - bundle install
+script: jekyll build
+after_success:
+  - npm install --global surge
+  - chmod ugo+x ./_scripts/deploy.sh
+  - ./_scripts/deploy.sh
+
+sudo: false
+notifications:
+  email: false
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
