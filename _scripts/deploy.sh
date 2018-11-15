@@ -2,7 +2,7 @@
 # Split on "/", ref: http://stackoverflow.com/a/5257398/689223
 REPO_SLUG_ARRAY=(${TRAVIS_REPO_SLUG//\// })
 REPO_OWNER=${REPO_SLUG_ARRAY[0]}
-# replaces "/" or "." with "-"
+# Replaces "/" or "." with "-"
 # sed -r is only supported in linux, ref http://stackoverflow.com/a/2871217/689223
 # Domain names follow the RFC1123 spec [a-Z] [0-9] [-]
 # The length is limited to 253 characters
