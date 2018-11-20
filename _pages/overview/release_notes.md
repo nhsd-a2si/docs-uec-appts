@@ -17,6 +17,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.3   | PREVIEW | Alpha | Current Version | 16/11/2018   | Volatile
 
+The 0.1.3 PREVIEW release has the following highlights:
 * Created content for "Differences from GP Connect" in the Functional Specification secion.
 * Fixed the TOC and some formatting for the release notes page
 
