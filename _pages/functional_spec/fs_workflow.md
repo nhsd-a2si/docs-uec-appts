@@ -47,10 +47,10 @@ The national DoS can be used to discover the most appropriate service for the pa
 #### Spine Directory Service (SDS)
 The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
 
-#### NHS Identity (**Strat**egic **Auth**entication)
-The NHS Identity service provides a digital identity that consumed many times from a single logon. It can also be linked with every day devices to provide extra contextual information about that user (e.g. location, nearby services) and it can profile the characteristics of the owner(usual times of sign-on, services normally used, location, devices linked to the user).
+#### NHS Authentication service
+An NHS authentication service will be used to provide a digital identity to ensure that the consuming service has authorisation to make a booking.
 
-For this booking standard, NHS Identity validates credentials passed by the consuming system, and subject to this check, issues a short lived (1 hour) access token which the consuming system must include in a http Authorization header in all requests to the provider system.
+For this booking standard, such an authentication service could validate credentials passed by the consuming system and subject to this check, issue a short lived (1 hour) access token which the consuming system must include in a http Authorization header in all requests to the provider system.
 
 #### Spine Secure Proxy (SSP)
 The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
