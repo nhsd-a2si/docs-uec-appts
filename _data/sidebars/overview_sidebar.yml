@@ -74,6 +74,34 @@ entries:
             url: /use_overview.html
         output: web        
       - 
+        title: "Non-Functional Requirements"
+        folderitems: 
+          - 
+            title: "Non Functional Requirements"
+            output: "web, pdf"            
+            url: /non_functional_requirements.html
+          - 
+            title: "Security Guidance"
+            output: "web, pdf"            
+            url: /security_guidance.html
+          - 
+            title: "Volumetric Guidance"
+            output: "web, pdf"            
+            url: /volumetric_guidance.html
+          - 
+            title: "Performance Guidance"
+            output: "web, pdf"            
+            url: /performance_guidance.html
+          - 
+            title: "Operational Level Agreement"
+            output: "web, pdf"            
+            url: /ola.html
+          - 
+            title: Audit
+            output: "web, pdf"            
+            url: /audit.html
+        output: web       
+      - 
         title: "Functional Specification"
         folderitems: 
           -
@@ -114,34 +142,6 @@ entries:
             url: /fs_reporting.html
         output: web        
       - 
-        title: "Non-Functional Requirements"
-        folderitems: 
-          - 
-            title: "Non Functional Requirements"
-            output: "web, pdf"            
-            url: /non_functional_requirements.html
-          - 
-            title: "Security Guidance"
-            output: "web, pdf"            
-            url: /security_guidance.html
-          - 
-            title: "Volumetric Guidance"
-            output: "web, pdf"            
-            url: /volumetric_guidance.html
-          - 
-            title: "Performance Guidance"
-            output: "web, pdf"            
-            url: /performance_guidance.html
-          - 
-            title: "Operational Level Agreement"
-            output: "web, pdf"            
-            url: /ola.html
-          - 
-            title: Audit
-            output: "web, pdf"            
-            url: /audit.html
-        output: web       
-      - 
         title: "Implementing the standard"
         folderitems: 
           - 
@@ -152,6 +152,10 @@ entries:
             title: "Implementing FHIR® Resources"
             output: "web, pdf"            
             url: /implementation_FHIR.html
+          - 
+            title: "FHIR® NHS Scheduling API Standard"
+            output: "web, pdf"            
+            url: https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/index.html
           - 
             title: "Proof of Concept Demonstrator"
             output: "web, pdf"            
