@@ -153,10 +153,6 @@ entries:
             output: "web, pdf"            
             url: /implementation_FHIR.html
           - 
-            title: "FHIR® NHS Scheduling API Standard"
-            output: "web, pdf"            
-            url: https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/index.html
-          - 
             title: "Proof of Concept Demonstrator"
             output: "web, pdf"            
             url: /implementation_poc.html
