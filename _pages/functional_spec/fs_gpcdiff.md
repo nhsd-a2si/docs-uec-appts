@@ -396,7 +396,7 @@ Interaction name is different."
   
   title3="Difference" 
   content3_line1="GP Connect expects an assertion of the type of organisation making the request and their ODS Code in a searchFilter querystring parameter." 
-  content3_line2="Care Connect expects to get this information from a signed JWT issued by Strat Auth." 
+  content3_line2="Care Connect expects to get this information from a signed JWT issued by an authentication service." 
   content3_line3=""  
   content3_line4="JWT can be verified by checking signature." 
   content3_line5="" 
