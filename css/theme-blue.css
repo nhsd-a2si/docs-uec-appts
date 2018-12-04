@@ -107,6 +107,9 @@ a.sidebarSubTitle {
     font-size:75% !important;
     color: #ED1951 !important;
     margin-bottom:10px !important;
-    margin-left: -5px !important;
+    margin-left: 0px !important;
     background: none !important;
+}
+a.sidebarSubTitle:hover {
+    background-color: #005EB8 !important;
 }
