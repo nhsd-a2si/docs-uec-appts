@@ -107,6 +107,6 @@ a.sidebarSubTitle {
     font-size:75% !important;
     color: #ED1951 !important;
     margin-bottom:10px !important;
-    margin-left: 0px !important;
+    margin-left: -5px !important;
     background: none !important;
 }
