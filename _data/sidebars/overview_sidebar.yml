@@ -2,6 +2,7 @@
 entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
+    product: "test"
     version: "v0.1.4 PREVIEW"
     folders: 
       - 
