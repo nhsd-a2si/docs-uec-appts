@@ -112,4 +112,5 @@ a.sidebarSubTitle {
 }
 a.sidebarSubTitle:hover {
     background-color: #005EB8 !important;
+    color: #ffffff !important;
 }
