@@ -102,11 +102,11 @@ li.sidebarTitle {
 
 }
 a.sidebarSubTitle {
-    margin-top:0px;
-    font-weight:normal;
-    font-size:25%;
-    color: #ED1951;
-    margin-bottom:10px;
-    margin-left: 0px;
-    background: none;
+    margin-top:0px !important;
+    font-weight:normal !important;
+    font-size:25% !important;
+    color: #ED1951 !important;
+    margin-bottom:10px !important;
+    margin-left: 0px !important;
+    background: none !important;
 }
