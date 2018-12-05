@@ -7,8 +7,6 @@ toc: true
 folder: introduction
 ---
 
-{% include note-notpublished.html %}
-
 ## Current Release
 
 ### 0.1.4 PREVIEW
