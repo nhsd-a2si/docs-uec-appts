@@ -3,6 +3,8 @@
 <ul id="mysidebar" class="nav">
 	<img src="{{ "images/logo.png" }}" alt="NHS Digital Logo"/>
     <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
+    <!-- <li class="sidebarTitle">{{sidebar[0].spec}}</li> -->
+    <li class="sidebarTitle"><a class="sidebarSubTitle" href="{{sidebar[0].speclink}}" target="_blank">{{sidebar[0].spec}}</a></li>
 		{% for entry in sidebar %}
    {% if showbackbutton == true %}
     <li id="gpcnavlink">

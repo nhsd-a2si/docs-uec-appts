@@ -45,5 +45,7 @@ This is an Open Authentication Standard
 
 ### RESTful
 
-### NHS Identity (Strat Auth)
+### NHS Identity (**Strat**egic **Auth**entication)
+The NHS Identity service provides a digital identity that can be consumed many times from a single logon. It can also be linked with every day devices to provide extra contextual information about that user (e.g. location, nearby services) and it can profile the characteristics of the owner(usual times of sign-on, services normally used, location, devices linked to the user).
 
+For this booking standard, NHS Identity could validate credentials passed by the consuming system, and subject to this check, issue a short lived (1 hour) access token which the consuming system must include in an http Authorization header in all requests to the provider system.

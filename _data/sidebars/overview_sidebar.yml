@@ -2,7 +2,10 @@
 entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
-    version: "v0.1.3 PREVIEW"
+    product: ""
+    version: "v0.1.4 PREVIEW"
+    spec: "STU3 | FHIR NHS Scheduling | 1.0.2-alpha"
+    speclink: "https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/index.html"
     folders: 
       - 
         title: Introduction
@@ -74,6 +77,34 @@ entries:
             url: /use_overview.html
         output: web        
       - 
+        title: "Non-Functional Requirements"
+        folderitems: 
+          - 
+            title: "Non Functional Requirements"
+            output: "web, pdf"            
+            url: /non_functional_requirements.html
+          - 
+            title: "Security Guidance"
+            output: "web, pdf"            
+            url: /security_guidance.html
+          - 
+            title: "Volumetric Guidance"
+            output: "web, pdf"            
+            url: /volumetric_guidance.html
+          - 
+            title: "Performance Guidance"
+            output: "web, pdf"            
+            url: /performance_guidance.html
+          - 
+            title: "Operational Level Agreement"
+            output: "web, pdf"            
+            url: /ola.html
+          - 
+            title: Audit
+            output: "web, pdf"            
+            url: /audit.html
+        output: web       
+      - 
         title: "Functional Specification"
         folderitems: 
           -
@@ -113,34 +144,6 @@ entries:
             output: "web, pdf"
             url: /fs_reporting.html
         output: web        
-      - 
-        title: "Non-Functional Requirements"
-        folderitems: 
-          - 
-            title: "Non Functional Requirements"
-            output: "web, pdf"            
-            url: /non_functional_requirements.html
-          - 
-            title: "Security Guidance"
-            output: "web, pdf"            
-            url: /security_guidance.html
-          - 
-            title: "Volumetric Guidance"
-            output: "web, pdf"            
-            url: /volumetric_guidance.html
-          - 
-            title: "Performance Guidance"
-            output: "web, pdf"            
-            url: /performance_guidance.html
-          - 
-            title: "Operational Level Agreement"
-            output: "web, pdf"            
-            url: /ola.html
-          - 
-            title: Audit
-            output: "web, pdf"            
-            url: /audit.html
-        output: web       
       - 
         title: "Implementing the standard"
         folderitems: 
