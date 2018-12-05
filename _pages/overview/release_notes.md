@@ -30,11 +30,11 @@ The 0.1.4 PREVIEW release has the following highlights:
 
 ## Future releases
 
-### 0.1.4 PREVIEW
+### 0.1.5 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.4   | PREVIEW | Alpha | Unreleased | 30/11/2018   | Volatile
+0.1.5   | PREVIEW | Alpha | Unreleased | 21/12/2018   | Volatile
 
 <br>
 <br>
