@@ -15,7 +15,7 @@ folder: introduction
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.4   | PREVIEW | Alpha | Unreleased | 30/11/2018   | Volatile
+0.1.4   | PREVIEW | Alpha | Current Version | 07/12/2018   | Volatile
 
 The 0.1.4 PREVIEW release has the following highlights:
 * Small update to the glossary
@@ -45,7 +45,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.3   | PREVIEW | Alpha | Current Version | 16/11/2018   | Volatile
+0.1.3   | PREVIEW | Alpha | Released | 16/11/2018   | Volatile
 
 The 0.1.3 PREVIEW release has the following highlights:
 * Created content for "Differences from GP Connect" in the Functional Specification secion.
