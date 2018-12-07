@@ -21,7 +21,7 @@ Providers may wish to demand-manage their slot collections.  GP practices may 
 
 From a 111 provider:
 >_Some providers may have multiple diaries set up where clinics are being delivered by more than one clinician.
->Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. In the national API, providers will be expected to return all the slots that match the start/end times, regardless of the provider's internal diary structure._ 
+>Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. Providers should simply return all appropriate slots for the selected service in one set_
 
 ### Acceptance Criteria 
 * The list **must** contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 
