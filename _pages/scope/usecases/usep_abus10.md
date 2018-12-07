@@ -15,13 +15,13 @@ permalink: usep_abus10.html
 ### Commentary 
 Where GP practices are huge joint practices or collections of federated practices, the list returned must be limited to only appointment slots at locations that fulfill the location requirement of the patient. This will nearly always be one location only. This may also be true for other urgent care providers either now or in the future.
 
-GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html" target=_blank>GP Connect search for free slots use case</a>
+GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html" target="_blank">GP Connect search for free slots use case</a>
 
 Providers may wish to demand-manage their slot collections.  GP practices may wish to have some appts available for urgent cases, and urgent care providers. 
 
 From a 111 provider:
 >_Some providers may have multiple diaries set up where clinics are being delivered by more than one clinician.
->Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. In the national API, providers will be expected to return all the slots that match the start/end times, regardless of the provider's internal diary structure._ 
+>Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. Providers should simply return all appropriate slots for the selected service in one set_
 
 ### Acceptance Criteria 
 * The list **must** contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 

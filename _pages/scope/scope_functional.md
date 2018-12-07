@@ -7,7 +7,7 @@ summary: "This page defines the currently envisaged limit of functional scope fo
 ---
 {% include note-notpublished.html %}
 
-## Appointment Types 
+## Types of Appointment
 * Appointments are specific time-based slots 
 * Urgency tends to be denoted by the 'disposition' which represents a timeframe within which the patient needs to be seen (e.g. within 6 hours) - this is basically a short-term representation of clinical urgency but it differs from planned care in as much as it works on the basis that the 'clock is ticking from the moment the patient first calls'. 
 * Appointments can be offered which are delivered by different roles
@@ -17,8 +17,7 @@ summary: "This page defines the currently envisaged limit of functional scope fo
 * Ultimately the services providing the slots have ownership over what they do and don't make available
 * Services will sometimes make slots available for certain types of patient and have to manage their slot allocation carefully so as to avoid using all slots within the first hour of opening 
   * This can be done by restricting certain slots for patients with certain clinical urgency, and spreading these through the schedule (e.g. reserve a % of slots every hour that can only be booked into for patients with a urgency of < 1 hour). 
-  * Another method of controlling demand is to use the disposition timeframe to filter the time range for appointments e.g. if a patient needs to be seen within 6 hours, don't show slots sooner than 2 hours away. 
-
+  
 ## User Privileges 
 * Appointment booking privileges should not need to be restricted at user level, it is more about inter-organisational agreements i.e. can X NHS 111 service book appointments into Y OOH GP service. 
 * API auth is done at system level. 
@@ -32,8 +31,7 @@ summary: "This page defines the currently envisaged limit of functional scope fo
 A national solution should support the full range of workflow actions expected from an appointment booking system.
 
 ## Access to the booking system(s) 
-* No direct access to the booking capability by the patient is currently envisaged.  
-* Access will be via API integrations only 
+* No direct access to the booking capability by the patient is currently envisaged but might be required in the future  
 
 ## Monitoring, Analytics and Reporting 
 * It is expected that this will be handled locally by each system. 

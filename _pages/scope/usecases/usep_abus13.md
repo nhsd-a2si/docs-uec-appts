@@ -10,12 +10,12 @@ permalink: usep_abus13.html
 
 **_As a_** 111 Call Hander or urgent care service provider 
 
-**_I want_** to be warned if the appt slot I am about to book falls outside of the disposition timeframe for this patient. 
+**_I want_** to be warned if the appt slot I am about to book falls outside of the clinically appropriate timeframe for this patient. 
 
 ### Commentary 
-Urgent care can theoretically book an appointment at any time offered even if that goes beyond the NHS Pathways disposition time frame.  Ideally any appointment interface should warn the user that they are about to book beyond the disposition time, and show by how long.  It should then ask for them to confirm that decision. It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient. 
+Urgent care can theoretically book an appointment at any time offered even if that goes beyond the clinical assessment time frame.  Ideally any appointment interface should warn the user that they are about to book beyond the clinical assessment timeframe and show by how long.  It should then ask for them to confirm that decision. It may be that it should be possible to prevent appointments from being booked past the disposition timeframe unless requested by the patient. 
 
 ### Acceptance Criteria 
-* The request to confirm the appt slot **must** warn the user if they are about to book an appt that is outside the disposition timeframe. 
-* The user warning **should** include details of by how long the appt fails to meet the disposition timeframe. 
+* The request to confirm the appt slot **must** warn the user if they are about to book an appt that is outside the clinical assessment timeframe. 
+* The user warning **should** include details of by how long the appt fails to meet the clinical assessment timeframe. 
 * The system **must** ensure that the user confirms a decision to continue. 
