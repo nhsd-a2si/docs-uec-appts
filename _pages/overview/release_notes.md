@@ -26,6 +26,13 @@ The 0.1.4 PREVIEW release has the following highlights:
 <br>
 <br>
 
+The 0.1.3 PREVIEW release has the following highlights:
+* Created content for "Differences from GP Connect" in the Functional Specification secion.
+* Fixed the TOC and some formatting for the release notes page
+
+<br>
+<br>
+
 ## Future releases
 
 ### 0.1.5 PREVIEW
@@ -33,6 +40,9 @@ The 0.1.4 PREVIEW release has the following highlights:
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.5   | PREVIEW | Alpha | Unreleased | 21/12/2018   | Volatile
+
+<br>
+<br>
 
 <br>
 <br>
