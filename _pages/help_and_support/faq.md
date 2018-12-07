@@ -13,7 +13,7 @@ folder: help_and_support
 >Yes 
 
 #### Any plans to include booking into Emergency Department?
->One we have the standards development for any to any booking, they could be used to book into ED.  The ED and the IT system would need >to support this change.  
+>One we have the standards development for any to any booking, they could be used to book into ED. The ED and the IT system would need to support this change.  
 
 #### Any plans to build on the standards used for the booking service developed for eRS?
 >No
@@ -31,7 +31,7 @@ folder: help_and_support
 >Yes, please contact Adnan for more information 
 
 #### If you have patients DNA is there any means of assessing if they actually went to ED instead? Any feedback mechanism for patients once appointment booked?
->There is after the event using the data collected by NHSE 
+>There is after the event using the data collected for NHSE 
 
 #### Will dental suppliers be involved in developing the standards ?
 >Yes, they will be
