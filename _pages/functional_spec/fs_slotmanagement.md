@@ -14,12 +14,12 @@ It is common for system suppliers to present a single API endpoint that is share
 
 The Directory of Services (DoS) lists services at the granular healthcare service level i.e. for each of the above example healthcare services, the DoS will have 1 or more service records defined. It is these individual service records that are presented to users when searching the DoS.
 
-*Example: An NHS provider organisation, 'Trumpton Urgent Care Services', which provides several healthcare services including an NHS 111 call centre, an Out of Hours (OOH) GP service, and an Urgent Treatment Centre (UTC). The OOH GP service may offer two sub-services on DoS: OOH GP Telephone Consultations, and OOH GP Face to face Consultations.*
+*Example: An NHS provider organisation, 'Trumpton Urgent Care Services', which provides several healthcare services including an NHS 111 call centre, an Out of Hours (OOH) GP service, and an Urgent Treatment Centre (UTC). The OOH GP service may offer two sub-services on DoS: OOH GP Telephone Consultations, and OOH GP Face to face Consultations.* Each of these would be represented in the DoS as discreet services.
 
 When an appointments consumer (e.g. NHS 111) requests available slots from a healthcare service, it needs to identify exactly which healthcare service it is targeting. This will allow provider systems to correctly route requests and filter the responses to be relevant to the specific request.
 
 ## Use HealthcareServiceID to filter slot requests to specific healthcare services
-To identify the requesting organisation so that the provider can tailor their response and the consumer can’t just ‘claim’ to be delivering urgent care, JWT will be used. This comes from the Auth Server, which gets configured following assurance. A search parameter of the HealthcareService (an intrinsic part of FHIR RESTful search) will be sent.
+A search parameter of the HealthcareService (an intrinsic part of FHIR RESTful search) will be sent.
 
 ### As a consumer, include the ASID of the healthcare service as a parameter
 As a consumer, you should include a search parameter specifying the ASID of the healthcare service to which you are directing the query.
@@ -31,7 +31,8 @@ You would include a HealthcareServiceID parameter in your Slot request.
 
 ### As a provider, use the healthcare service ASID to filter the slots returned in your response
 As a provider of slots, you will likely want to ensure that you only return slots in your response for which you would be happy receiving a booking.
-Filtering is based on the JWT received in the http Authorization header
+
+Filtering is based both on the JWT received in the http Authorization header (to filter slots appropriate to be released to that specific Consumer) and on the healthcareservice specified in the query (to filter slots provided by that specific service)
 
 #### Example
 You run three healthcare services from the same system:
