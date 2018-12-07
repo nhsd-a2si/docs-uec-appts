@@ -13,9 +13,13 @@ permalink: usep_abus12.html
 **_I want_** to confirm/book an offered appointment slot with the provider. 
 
 ### Commentary 
-Current proprietary solutions seem to have a two-step booking process where the slot is reserved and then confirmed/booked by the process of sending the ITK message with clinical details.  As a contrast, GP Connect does not have this method.  The appointment is just booked in a single message exchange. 
+Current proprietary solutions seem to have a two-step booking process where the slot is reserved and then confirmed/booked by the process of sending the CDA Integrated Urgent Care Report with clinical details.  As a contrast, GP Connect does not have this method.  The appointment is just booked in a single message exchange. 
 
-For UEC booking, appointments will be immediately booked.
+For UEC booking, appointments will be immediately booked with the following steps:
+*	Send an Appointment requesting that it be booked into one of the available Slots.
+*	Receive confirmation (including an identifier) that the Appointment has been booked.
+OR
+*	Receive an error describing why the Appointment couldn’t be booked.
 
 GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html" target="_blank">GP Connect book and appointment use case</a>
 

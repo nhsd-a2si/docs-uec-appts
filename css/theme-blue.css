@@ -97,7 +97,20 @@ li.sidebarTitle {
     font-weight:bold;
     font-size:100%;
     color: #ED1951;
-    margin-bottom:10px;
+    margin-bottom:5px;
     margin-left: 5px;
 
+}
+a.sidebarSubTitle {
+    margin-top:0px !important;
+    font-weight:normal !important;
+    font-size:75% !important;
+    color: #ED1951 !important;
+    margin-bottom:10px !important;
+    margin-left: 0px !important;
+    background: none !important;
+}
+a.sidebarSubTitle:hover {
+    background-color: #005EB8 !important;
+    color: #ffffff !important;
 }

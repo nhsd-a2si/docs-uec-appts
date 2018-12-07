@@ -8,6 +8,5 @@ folder: functional_spec
 ---
 
 {% include note-notpublished.html %}
-{% include note-notpublished.html %}
 
-TEST2
+It is expected that there should be a capability to report against expected national metrics for appointment booking and a clear mechanism to share these data with commissioners and other key stakeholders

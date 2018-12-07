@@ -65,7 +65,7 @@ This page Identifies the key differences between the CareConnect API specificati
   content1_line7="" 
   
   title2="CareConnect" 
-  content2_line1="Use DOS to select a DOS profile" 
+  content2_line1="Use DoS to select a DoS profile" 
   content2_line2="" 
   content2_line3=""  
   content2_line4="" 
@@ -74,9 +74,9 @@ This page Identifies the key differences between the CareConnect API specificati
   content2_line7="" 
   
   title3="Difference" 
-  content3_line1="In GP Connect, this is done as part of the PDS lookup, in Care Connect, it is a separate call to the DOS, but one which is MOSTLY already taking place." 
+  content3_line1="In GP Connect, this is done as part of the PDS lookup, in Care Connect, it is a separate call to the DoS, but one which is MOSTLY already taking place." 
   content3_line2="" 
-  content3_line3="Some change needed to the DOS to return the ASID."  
+  content3_line3="Some change needed to the DoS to return the ASID."  
   content3_line4="" 
   content3_line5="" 
   content3_line6="" 
@@ -85,7 +85,7 @@ This page Identifies the key differences between the CareConnect API specificati
   title4="Rationale for change" 
   content4_line1="GP Connect is all about booking appointments with a GP Practice, which is a known ODS code." 
   content4_line2="" 
-  content4_line3="CareConnect is looking beyond this to services as identified from the DOS, or by ASID."  
+  content4_line3="CareConnect is looking beyond this to services as identified from the DoS, or by ASID."  
   content4_line4="These can also be found from SDS using ODS code." 
   content4_line5="" 
   content4_line6="" 
@@ -94,7 +94,7 @@ This page Identifies the key differences between the CareConnect API specificati
 
 ## Calls via SSP
 
-{% include infocard-medium.html 
+{% include infocard-large.html 
   title1="GP Connect" 
   content1_line1="Target URL is concatenated onto SSP URL" 
   content1_line2="http headers are as follows:" 
@@ -102,7 +102,7 @@ This page Identifies the key differences between the CareConnect API specificati
   content1_line4="<i>Ssp-From</i>" 
   content1_line5="<i>Ssp-To</i>" 
   content1_line6="<i>Ssp-InteractionID</i>" 
-  content1_line7="<i>N/A</i>" 
+  content1_line7="<i><i>Authorization</i></i>" 
   
   title2="CareConnect" 
   content2_line1="Target URL is concatenated onto SSP URL" 
@@ -120,7 +120,7 @@ This page Identifies the key differences between the CareConnect API specificati
   content3_line4="<i>Ssp-From: no change</i>" 
   content3_line5="<i>Ssp-To: no change</i>" 
   content3_line6="<i>Ssp-InteractionID: specific set for GP Connect and another for CareConnect</i>" 
-  content3_line7="<i>Authorization: Uses JWT token in an Authorisation http header (not used by SSP)</i>" 
+  content3_line7="<i>Authorization</i>: Both uses JWT token in an Authorisation http header (not used by SSP) however CareConnect token is signed and is issued by an auth server. GPC is unsigned and created by the consumer system. Care connect includes Group values which represent groups. GPC has a set of claims." 
   
   title4="Rationale for change" 
   content4_line1="Target URL is concatenated onto SSP URL" 
@@ -347,7 +347,7 @@ Interaction name is different."
   
   title2="CareConnect" 
   content2_line1="FHIR Search operation on the endpoint via SSP" 
-  content2_line2="<i>GET https://[proxy_server]/https://[provider_server]/[fhir_base]/Slot?[start={search_prefix}start_date][&end=[{search_prefix}end_date][&status=free][&_include=Slot:schedule]{&_include:recurse=Schedule:actor:Practitioner}{&_include:recurse=Schedule:actor:Location}</i>" 
+  content2_line2="<i>GET https://[proxy_server]/https://[provider_server]/[fhir_base]/Slot?[start={search_prefix}start_date][&end=[{search_prefix}end_date][&status=free][&_schedule.actor:healthcareservice=xxxxx][&_include=Slot:schedule]{&_include:recurse=Schedule:actor:Practitioner}{&_include:recurse=Schedule:actor:Location}</i>" 
   content2_line3=""  
   content2_line4="" 
   content2_line5="" 
@@ -387,7 +387,7 @@ Interaction name is different."
   
   title2="CareConnect" 
   content2_line1="JWT" 
-  content2_line2="See: https://developer.nhs.uk/apis/spine-core/security_jwt.html" 
+  content2_line2="See: https://developer.nhs.uk/apis/spine-core/security_jwt.html for example specification (although this is not currently implemented in a complete way and a CareConnect authorisation service is likely to deviate to some extent." 
   content2_line3=""  
   content2_line4="" 
   content2_line5="" 
@@ -396,7 +396,7 @@ Interaction name is different."
   
   title3="Difference" 
   content3_line1="GP Connect expects an assertion of the type of organisation making the request and their ODS Code in a searchFilter querystring parameter." 
-  content3_line2="Care Connect expects to get this information from a signed JWT issued by Strat Auth." 
+  content3_line2="Care Connect expects to get this information from a signed JWT issued by an authentication service." 
   content3_line3=""  
   content3_line4="JWT can be verified by checking signature." 
   content3_line5="" 
