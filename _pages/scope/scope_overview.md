@@ -21,7 +21,9 @@ The intention of this standard is to support booking from any to any accross car
 * 111 Online
 
 #### Appointment Providers (being booked into)
-*  GPs	Emergency Care Practitioner (ECP)
+* Urgent Treatment Centres (and similar) 
+* GP Practices	
+* Emergency Care Practitioner (ECP)
 * Emergency Dentists	
 * Community Pharmacists
 
