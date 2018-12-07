@@ -94,7 +94,7 @@ This page Identifies the key differences between the CareConnect API specificati
 
 ## Calls via SSP
 
-{% include infocard-medium.html 
+{% include infocard-large.html 
   title1="GP Connect" 
   content1_line1="Target URL is concatenated onto SSP URL" 
   content1_line2="http headers are as follows:" 
@@ -102,7 +102,7 @@ This page Identifies the key differences between the CareConnect API specificati
   content1_line4="<i>Ssp-From</i>" 
   content1_line5="<i>Ssp-To</i>" 
   content1_line6="<i>Ssp-InteractionID</i>" 
-  content1_line7="<i>N/A</i>" 
+  content1_line7="<i><i>Authorization</i></i>" 
   
   title2="CareConnect" 
   content2_line1="Target URL is concatenated onto SSP URL" 
@@ -120,7 +120,7 @@ This page Identifies the key differences between the CareConnect API specificati
   content3_line4="<i>Ssp-From: no change</i>" 
   content3_line5="<i>Ssp-To: no change</i>" 
   content3_line6="<i>Ssp-InteractionID: specific set for GP Connect and another for CareConnect</i>" 
-  content3_line7="<i>Authorization: Uses JWT token in an Authorisation http header (not used by SSP)</i>" 
+  content3_line7="<i>Authorization</i>: Both uses JWT token in an Authorisation http header (not used by SSP) however CareConnect token is signed and is issued by an auth server. GPC is unsigned and created by the consumer system. Care connect includes Group values which represent groups. GPC has a set of claims." 
   
   title4="Rationale for change" 
   content4_line1="Target URL is concatenated onto SSP URL" 
