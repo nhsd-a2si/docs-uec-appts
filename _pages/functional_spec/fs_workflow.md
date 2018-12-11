@@ -246,7 +246,7 @@ This will return a FHIR slot resource bundle for example:
 
 ## Book Appointment
 
-The booking is made following a similar process as getting available slots. However this time a post is made to the SSP with a serialised {% include FHIRSpecificationLink.html include_word="FHIR appointment resource" %} as the payload.
+The booking is made following a similar process as getting available slots. However this time a post is made to the SSP with a serialised <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/book_an_appointment.html" target="_blank">FHIR appointment resource</a> as the payload.
 
 <img src="_pages/functional_spec/img/BookAppointment1.png">
 
