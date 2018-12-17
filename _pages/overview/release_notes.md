@@ -37,12 +37,6 @@ Version | Handle  | Phase | State           | Release Date | Stability
 <br>
 <br>
 
-<br>
-<br>
-
-<br>
-<br>
-
 ## Previous releases
 
 ### 0.1.3 PREVIEW
