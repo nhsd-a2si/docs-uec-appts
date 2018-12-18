@@ -7,6 +7,9 @@ entries:
     - title: Overview
       url: /dos_overview.html
       output: web, pdf
+    - title: Key requirements
+      url: /dos_requirements.html
+      output: web, pdf
   - title: Workflow
     output: web
     folderitems:
