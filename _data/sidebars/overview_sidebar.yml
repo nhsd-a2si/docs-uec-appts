@@ -118,7 +118,7 @@ entries:
           -
             title: "Interactions with the DoS"
             output: "web, pdf"            
-            url: /fs_dos.html
+            url: /dos_overview.html
           -
             title: "Appointment Types"
             output: "web, pdf"
