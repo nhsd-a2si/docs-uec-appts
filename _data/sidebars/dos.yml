@@ -1,0 +1,21 @@
+entries:
+ - title: Urgent & Emergency Care Appointment Booking Standards - DoS Interactions
+ folders:  
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Overview
+      url: /dos_overview.html
+      output: web, pdf
+  - title: Workflow
+    output: web
+    folderitems:
+    - title: Workflow example
+      url: /dos_wfexample.html
+      output: web, pdf
+  - title: Endpoints
+    output: web
+    folderitems:
+    - title: Endpoint structure
+      url: /dos_endpoints.html
+      output: web, pdf
