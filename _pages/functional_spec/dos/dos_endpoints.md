@@ -9,21 +9,33 @@ folder: dos
 
 {% include note-notpublished.html %}
 
-# Current Endpoint Configuration in the DoS
+## Current Endpoint Configuration in the DoS
 
+<img src="_pages/functional_spec/dos/img/Current_endpoint_stucture.png">
 
+### Transports
 
-## Business Scenarios
+<img src="_pages/functional_spec/dos/img/transports.png">
+
+### Interactions
+
+<img src="_pages/functional_spec/dos/img/interactions.png">
+
+### Formats
+
+<img src="_pages/functional_spec/dos/img/formats.png">
+
+### Business Scenarios
 
 * Primary
 * Copy
 
 
-## Endpoints Address
+### Endpoints Address
 
 Free text field - think of this as 'uri'
 
-## Current XML Response
+### Current XML Response
 
 The majority of the above fields are combined into a single \| delimited string.
 
