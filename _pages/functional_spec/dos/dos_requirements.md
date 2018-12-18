@@ -1,4 +1,3 @@
-
 ---
 title: Interactions with the DoS
 sidebar: dos_sidebar
