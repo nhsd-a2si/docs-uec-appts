@@ -11,29 +11,40 @@ folder: dos
 
 ## Current Endpoint Configuration in the DoS
 
+The DoS currently has several different types of endpoints to support existing onward distribution of information for varios different types of interction scenarios. There s a UI to allow DoS administration users to create and manage these endpoints:
+
 <img src="_pages/functional_spec/dos/img/Current_endpoint_stucture.png">
+
+The endpoint data is currently shared with systems that are looking up the DoS through the look up API. This information gets returned as part of the response to a "GetServiceDetailsByID" API call. It is returned in the form of a long string with the endpoint data delimited into key/value pairs.
+
+The DoS is being updated to change this response structure and incorporate a new set of endpoint data to support appointment booking.
+
+There are five key data items that define an endpoint:
 
 ### Transports
 
+The DoS currently supports the following transports:
 <img src="_pages/functional_spec/dos/img/transports.png">
 
 ### Interactions
 
+The DoS currently supports the following interactions
 <img src="_pages/functional_spec/dos/img/interactions.png">
 
 ### Formats
 
+The DoS currently supports the following formats
 <img src="_pages/functional_spec/dos/img/formats.png">
 
 ### Business Scenarios
 
+The DoS currently supports the following business scenarios:
 * Primary
 * Copy
 
 
 ### Endpoints Address
-
-Free text field - think of this as 'uri'
+The endpoint address is a free text field synonomous to a "URI".
 
 ### Current XML Response
 
