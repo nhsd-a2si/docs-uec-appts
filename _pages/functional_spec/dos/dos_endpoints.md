@@ -42,13 +42,13 @@ The DoS currently supports the following business scenarios:
 * Primary
 * Copy
 
-
 ### Endpoints Address
+
 The endpoint address is a free text field synonomous to a "URI".
 
 ### Current XML Response
 
-The majority of the above fields are combined into a single \| delimited string.
+The majority of the above fields are combined into a single "\|" delimited string.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,9 +74,10 @@ The majority of the above fields are combined into a single \| delimited string.
 </env:Envelope>
 ```
 
-## New XML Response
+## Proposed changes to the way endpoints are stored in and returned by the DoS
 
-This is the proposed (still to be finalised) format for the endpoint responses going forward. Target release date for this is Jan
+It is proposed that the endpoint format that is returned by the DoS API will change. The target release date for this is January 2019.
+An example of the XML in the new format returned by the API is below:
 
 ```xml
 <ns1:serviceEndPoints>
