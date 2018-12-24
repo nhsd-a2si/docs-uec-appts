@@ -3,7 +3,7 @@ title: Endpoint Structure - Existing approach
 sidebar: dos_sidebar
 keywords: specification
 permalink: dos_endpoints_existing.html
-toc: true
+toc: false
 folder: dos
 ---
 
