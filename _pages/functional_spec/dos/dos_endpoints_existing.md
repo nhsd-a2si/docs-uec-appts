@@ -2,7 +2,7 @@
 title: Endpoint Structure
 sidebar: dos_sidebar
 keywords: specification
-permalink: dos_endpoints.html
+permalink: dos_endpoints_existing.html
 toc: true
 folder: dos
 ---
