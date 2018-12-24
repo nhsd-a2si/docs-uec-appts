@@ -1,5 +1,5 @@
 ---
-title: Endpoint Structure
+title: Endpoint Structure - new approach
 sidebar: dos_sidebar
 keywords: specification
 permalink: dos_endpoints_new.html
