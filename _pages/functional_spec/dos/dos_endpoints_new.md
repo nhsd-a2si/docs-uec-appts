@@ -12,6 +12,9 @@ folder: dos
 ## Proposed changes to the way endpoints are stored in and returned by the DoS
 
 It is proposed that the endpoint format that is returned by the DoS API will change. The target release date for this is January 2019.
+
+The main change is to move away from a single string value with endpoint items delimited into key/value pairs and to have explicit separate entries in the XML structure for each of the endpoint values.
+
 An example of the XML in the new format returned by the API is below:
 
 ```xml
@@ -28,3 +31,5 @@ An example of the XML in the new format returned by the API is below:
   </ns1:EndPoint>
 <ns1:serviceEndPoints/>
 ```
+
+As can be seen above each value has its own entry in the XML structure.
