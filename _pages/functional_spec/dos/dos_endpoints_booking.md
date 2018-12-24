@@ -11,6 +11,18 @@ folder: dos
 
 ## Proposed Changes to support Appointment Booking
 
+For appointment booking it is proposed that there will be a new transport type, format and interaction with an entirely new enpoint item (ASID). 
+
+The new items are listed below:
+
+* Transport: http
+* Format: FHIR
+* Interaction: Scheduling
+* ASID: ASID referencing the AS Oject in ODS for the booking endpoint for this service
+
+An example of how this might look in XML is below:
+
+
 ```xml
 <ns1:serviceEndPoints>
   <ns1:EndPoint>
@@ -24,7 +36,7 @@ folder: dos
      <ns1:comment>a comment</ns1:comment>
   </ns1:EndPoint>
   <ns1:EndPoint>
-     <ns1:endpointOrder>1</ns1:endpointOrder>
+     <ns1:endpointOrder>2</ns1:endpointOrder>
      <ns1:transport>http</ns1:transport>
      <ns1:format>FHIR</ns1:format>
      <ns1:interaction>Scheduling</ns1:interaction>
