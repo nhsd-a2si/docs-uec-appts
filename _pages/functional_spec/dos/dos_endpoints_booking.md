@@ -3,7 +3,7 @@ title: Endpoint Structure - booking changes
 sidebar: dos_sidebar
 keywords: specification
 permalink: dos_endpoints_booking.html
-toc: true
+toc: false
 folder: dos
 ---
 
