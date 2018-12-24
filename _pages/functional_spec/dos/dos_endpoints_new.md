@@ -3,7 +3,7 @@ title: Endpoint Structure - new approach
 sidebar: dos_sidebar
 keywords: specification
 permalink: dos_endpoints_new.html
-toc: true
+toc: false
 folder: dos
 ---
 
