@@ -17,6 +17,10 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
+            title: "Workflow Overview"
+            url: /dos_wfoverview.html
+          - 
+            output: "web, pdf"
             title: "Workflow example"
             url: /dos_wfexample.html
         output: web
