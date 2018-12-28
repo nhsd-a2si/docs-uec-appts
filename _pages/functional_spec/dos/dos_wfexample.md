@@ -57,7 +57,7 @@ ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServi
 
 
 
-The table below shows key information about the associated DoS services and the HealthcareServicesID defined against each service, Note that each service has its own unique HealthcareServiceID:
+The table below shows key information about the associated DoS services and the HealthcareServiceID defined against each service, Note that each service has its own unique HealthcareServiceID:
 
 
 
