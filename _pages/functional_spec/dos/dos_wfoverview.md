@@ -28,12 +28,12 @@ As a provider system, it is therefore expected that there will be a mechanism in
 
 * What if a service is profiled for both triage outcomes that are appropriate for an appointment and other outcomes that are not appropriate?
 
-*The reccomendation is that where two different clinical profiles are required (e.g. booking and not booking tiage outcomes), two DoS services are used. Only one would have a booking endpoint configured.
+*The reccomendation is that where two different clinical profiles are required (e.g. booking and not booking tiage outcomes), two DoS services are used. Only one would have a booking endpoint configured.*
 
 * How do you know what type of booking interaction is required by the provider system? Is it stored on the DoS?
 
-*When a call to SDS is made, the response will have an intereaction id. This will be different depending on whether it is GP Connect or CareConnect that is to be used for that endpoint. 
+*When a call to SDS is made, the response will have an intereaction id. This will be different depending on whether it is GP Connect or CareConnect that is to be used for that endpoint.*
 
 * If a provider system is compliant  GP Connect and Care Connect could you get two endpoints on SDS for the same DoS service?
 
-*The assurance process will ensure that this should never happen. If two booking endpoints are returned by the call to SDS then this is a fault mode and the booking process should be terminated and an error displayed to the user.
+*The assurance process will ensure that this should never happen. If two booking endpoints are returned by the call to SDS then this is a fault mode and the booking process should be terminated and an error displayed to the user.*
