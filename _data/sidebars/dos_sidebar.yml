@@ -39,6 +39,10 @@ entries:
             output: "web, pdf"
             title: "Changes for Booking"
             url: /dos_endpoints_booking.html
+          - 
+            output: "web, pdf"
+            title: "Booking and referral messages"
+            url: /dos_itk.html.html
         output: web
         title: Endpoints
     title: "Urgent & Emergency Care Appointment Booking Standards - DoS Interactions"
