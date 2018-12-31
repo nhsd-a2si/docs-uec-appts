@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-## Workflow Overview
-
 The overall workflow for the booking process is as follows:
 
 1. Patient triage/assessment
