@@ -142,13 +142,14 @@ The first request to the SSP will be to get available slots. The request returns
 2. FHIR endpoint server root URL
 3. FHIR resource location and request parameters
 
-<img src="_pages/functional_spec/img/GetSlots1.png">
+<img src="_pages/functional_spec/img/GetSlots1(new).png">
 
 Once the request is made at the SSP, it is passed through to the FHIR endpoint at the provider service.
 <img src="_pages/functional_spec/img/GetSlots2.png">
 
 This will return a FHIR slot resource bundle for example:
-<div markdown="span" class="bs-callout bs-callout-code">
+
+<!-- div markdown="span" class="bs-callout bs-callout-code" -->
 ```json
 {
   "resourceType": "Bundle",
@@ -242,11 +243,11 @@ This will return a FHIR slot resource bundle for example:
   ]
 }
 ```
-</div>
+<!--/div -->
 
 ## Book Appointment
 
-The booking is made following a similar process as getting available slots. However this time a post is made to the SSP with a serialised <a href="https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/book_an_appointment.html" target="_blank">FHIR appointment resource</a> as the payload.
+The booking is made following a similar process as getting available slots. However this time a post is made to the SSP with a serialised {% include FHIRSpecificationLink.html text="FHIR appointment resource" %} as the payload.
 
 <img src="_pages/functional_spec/img/BookAppointment1.png">
 

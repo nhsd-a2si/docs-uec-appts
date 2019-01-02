@@ -3,9 +3,9 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.4 PREVIEW"
-    spec: "STU3 | FHIR NHS Scheduling | 1.0.2-alpha"
-    speclink: "https://nhsconnect.github.io/FHIR-A2SI-APPOINTMENTS-API/index.html"
+    version: "v0.1.5 PREVIEW"
+    spec: "STU3 | FHIR NHS Scheduling | 1.0.3-alpha"
+    speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.3-alpha/"
     folders: 
       - 
         title: Introduction
@@ -118,7 +118,7 @@ entries:
           -
             title: "Interactions with the DoS"
             output: "web, pdf"            
-            url: /fs_dos.html
+            url: /dos_overview.html
           -
             title: "Appointment Types"
             output: "web, pdf"

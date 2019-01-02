@@ -15,6 +15,9 @@
 {% elsif page.sidebar == "usecase_sidebar" %}
 {% assign sidebar = site.data.sidebars.usecase_sidebar.entries %}
 
+{% elsif page.sidebar == "dos_sidebar" %}
+{% assign sidebar = site.data.sidebars.dos_sidebar.entries %}
+
 {% else %}
 {% assign sidebar = site.data.sidebars.overview_sidebar.entries %}
 {% endif %}
