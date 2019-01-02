@@ -9,7 +9,7 @@ folder: introduction
 
 ## Current Release
 
-### 0.1.4 PREVIEW
+### 0.1.5 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
