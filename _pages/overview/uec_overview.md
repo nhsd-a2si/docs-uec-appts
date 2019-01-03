@@ -5,7 +5,7 @@ permalink: uec_overview.html
 ---
 {% include note-notpublished.html %}
 
-The following info-graphic displays the patient flow through NHS 111 into the wider UEC system. The data shows NHS 111 call volumetrics of those patients triaged by NHS 111 and given recommendation to attend/speak to onward UEC care setting. The data are taken from the NHS111 MDS (Minimum Data Set) https://www.england.nhs.uk/statistics/statistical-work-areas/nhs-111-minimum-data-set/ published by NHS England (available here) and data supplied internally by the NHS Pathways >Intelligent Data Tool (IDT) team at NHS Digital (information can be found here).https://digital.nhs.uk/services/directory-of-services-dos
+The following info-graphic displays the patient flow through NHS 111 into the wider UEC system. The data shows NHS 111 call volumetrics of those patients triaged by NHS 111 and given recommendation to attend/speak to onward UEC care setting. The data are taken from the NHS111 MDS (Minimum Data Set) <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/nhs-111-minimum-data-set/ target="_blank"> published by NHS England (available here) and data supplied internally by the NHS Pathways >Intelligent Data Tool (IDT) team at NHS Digital (information can be found here).<a href="https://digital.nhs.uk/services/directory-of-services-dos target="_blank">
 
 <image src="images/overview/iuc_overview.png"/>  
 
