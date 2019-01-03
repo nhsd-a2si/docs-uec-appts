@@ -15,10 +15,9 @@ The intention of this standard is to support booking from any to any accross car
 ### In Scope (Priority)
 #### Appointment Consumers (making a booking)
 * Integrated Urgent Care NHS 111 Call Centres
-  * Clinical Assessment Services
-  * Urgent Treatment Centres (and similar)
-  * Other Urgent Care Services
-* 111 Online
+* Clinical Assessment Services
+* Urgent Treatment Centres (and similar)
+* Other Urgent Care Services
 
 #### Appointment Providers (being booked into)
 * Urgent Treatment Centres (and similar) 
