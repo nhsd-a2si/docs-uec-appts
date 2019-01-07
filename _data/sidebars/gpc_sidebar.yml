@@ -13,7 +13,7 @@ entries:
             url: /gpc_requirements.html
           - 
             output: "web, pdf"
-            title: "Differences with GP Connect"
+            title: "Differences between GP Connect and CareConnect"
             url: /fs_gpcdiff.html
         output: web
         title: Overview
