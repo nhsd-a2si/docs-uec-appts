@@ -1,5 +1,5 @@
 ---
-title: Differences from GP Connect
+title: Differences between GP Connect and CareConnect
 sidebar: gpc_sidebar
 keywords: specification
 permalink: fs_gpcdiff.html
