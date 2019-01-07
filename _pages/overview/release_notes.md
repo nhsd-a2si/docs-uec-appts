@@ -9,6 +9,44 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.5 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.5   | PREVIEW | Alpha | Current Version | 04/01/2019   | Volatile
+
+The 0.1.5 PREVIEW release has the following highlights:
+* New DoS subsite in functional specification was created
+  * New content for "DoS overview" page
+  * New page "Key requirements" was added
+  * New page "Workflow overview" was added
+  * "DoS workflow example" page was tidied up
+  * New "DoS endpoints" pages were created
+    * A page describing the existing approach to endpoints was created
+    * a page describing the new approach to endpoints was created
+    * a page explaining the new booking changes was created
+    * Added a page with guidance on transfer of care and ITK messaging
+* One of the examples in the "Get Slots" section of the "Workflow and Interactions" page was updated to reflect an evolution of the messaging spec
+* Resolved issue with the large codeblock on the "Workflow and Interactions" page
+* Some content was added to the "Appointment Management" page
+* The FHIR messaging spec link was updated to the latest version (1.0.3-alpha)
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.6 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.6   | PREVIEW | Alpha | Unreleased | 11/01/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.4 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -22,22 +60,8 @@ The 0.1.4 PREVIEW release has the following highlights:
 * Added reference to the IUC service specification in the UEC Landscape overview page
 * Added content to the user stories overview page
 * made the link to the FHIR profile website much more prominent by adding a clickable "specification version" to the sidebar. On clicking it links to the FHIR profile website
-
 <br>
 <br>
-
-## Future releases
-
-### 0.1.5 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.5   | PREVIEW | Alpha | Unreleased | 21/12/2018   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.3 PREVIEW
 
@@ -50,6 +74,7 @@ The 0.1.3 PREVIEW release has the following highlights:
 * Fixed the TOC and some formatting for the release notes page
 <br>
 <br>
+
 ### 0.1.2 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -63,6 +88,7 @@ The 0.1.2 PREVIEW release has the following highlights:
 * Content in the "Interactions with the DoS" page in Functional Specification section has been created
 <br>
 <br>
+
 ### 0.1.1 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability

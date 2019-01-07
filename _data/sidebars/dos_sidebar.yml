@@ -1,0 +1,48 @@
+entries: 
+  - 
+    folders: 
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: Overview
+            url: /dos_overview.html
+          - 
+            output: "web, pdf"
+            title: "Key requirements"
+            url: /dos_requirements.html
+        output: web
+        title: Overview
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Workflow Overview"
+            url: /dos_wfoverview.html
+          - 
+            output: "web, pdf"
+            title: "Workflow example"
+            url: /dos_wfexample.html
+        output: web
+        title: Workflow
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Existing Approach"
+            url: /dos_endpoints_existing.html
+          - 
+            output: "web, pdf"
+            title: "New Approach"
+            url: /dos_endpoints_new.html
+          - 
+            output: "web, pdf"
+            title: "Changes for Booking"
+            url: /dos_endpoints_booking.html
+          - 
+            output: "web, pdf"
+            title: "Booking and referral messages"
+            url: /dos_itk.html.html
+        output: web
+        title: Endpoints
+    title: "Urgent & Emergency Care Appointment Booking Standards - DoS Interactions"
