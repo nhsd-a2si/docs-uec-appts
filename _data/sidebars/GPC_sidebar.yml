@@ -1,0 +1,32 @@
+entries: 
+  - 
+    folders: 
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: Overview
+            url: /gpc_overview.html
+          - 
+            output: "web, pdf"
+            title: "Key requirements"
+            url: /gpc_requirements.html
+          - 
+            output: "web, pdf"
+            title: "Differences with GP Connect"
+            url: /fs_gpcdiff.html
+        output: web
+        title: Overview
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Workflow Overview"
+            url: /GPC_wfoverview.html
+          - 
+            output: "web, pdf"
+            title: "Workflow example"
+            url: /GPC_wfexample.html
+        output: web
+        title: Workflow
+       title: "Urgent & Emergency Care Appointment Booking Standards - Implementing GP Connect"
