@@ -22,11 +22,11 @@ entries:
           - 
             output: "web, pdf"
             title: "Workflow Overview"
-            url: /GPC_wfoverview.html
+            url: /gpc_wfoverview.html
           - 
             output: "web, pdf"
             title: "Workflow example"
-            url: /GPC_wfexample.html
+            url: /gpc_wfexample.html
         output: web
         title: Workflow
        title: "Urgent & Emergency Care Appointment Booking Standards - Implementing GP Connect"
