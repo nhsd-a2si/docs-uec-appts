@@ -112,9 +112,9 @@ entries:
             output: web, pdf"
             url: /fs_workflow.html
           -
-            title: "Differences from GP Connect"
+            title: "GP Connect"
             output: "web, pdf"            
-            url: /fs_gpcdiff.html
+            url: /gpc_overview.html
           -
             title: "Interactions with the DoS"
             output: "web, pdf"            
