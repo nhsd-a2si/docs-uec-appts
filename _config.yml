@@ -1,4 +1,3 @@
-
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
@@ -43,7 +42,7 @@ exclude:
   - Gemfile.lock
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: m.stibbs@nhs.net
+feedback_email: uec.appointmentbooking@nhs.net
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
@@ -94,6 +93,7 @@ defaults:
 sidebars:
 - overview_sidebar
 - poc_sidebar
+- dos_sidebar
 
 description: "Urgent & Emergency Care Appointment Booking Standards"
 # the description is used in the feed.xml file

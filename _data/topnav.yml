@@ -1,8 +1,8 @@
 topnav:
 - title: Topnav
   items:
-    - title: News
-      url: news.html
+    - title: Release Notes
+      url: release_notes.html
 
 topnav_dropdowns:
 - title: Topnav dropdowns
