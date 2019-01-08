@@ -78,7 +78,7 @@ The following digram illustrates with a typical return from the DoS, the relatio
 
 Once all the above is understood we can walk through a typical booking scenario using this example service.
 
-### Booking scenario walk-though
+### Booking scenario walk-through
 
 1. A patient dials 111 on their phone and gets through to their local 111 service. 
 2. The health advisor takes them through an NHS Pathways assessment and they get referred to the Clinical Assessment Service (CAS) to speak to a clinician.
