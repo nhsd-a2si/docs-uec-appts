@@ -78,7 +78,7 @@ The following digram illustrates with a typical return from the DoS, the relatio
 
 Once all the above is understood we can walk through a typical booking scenario using this example service.
 
-### Booking scenario walk-though
+### Booking scenario walk-through
 
 1. A patient dials 111 on their phone and gets through to their local 111 service. 
 2. The health advisor takes them through an NHS Pathways assessment and they get referred to the Clinical Assessment Service (CAS) to speak to a clinician.
@@ -86,5 +86,6 @@ Once all the above is understood we can walk through a typical booking scenario 
 4. The 111 IT system searches the DoS with the details of the patient and the assessment
 5. The DoS returns a ranked list of services. The top service is the service named "GP Hub - Main location GP"
 6. This service is selected and information on the referral and booking endpoints is returned including the HealthcareServiceID
-7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry
+7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry.
+In this scenario, since the target system is all the same, the returned URL's will all be the same. However since the HealthcareServiceID (ASID) gets included in the query parameters, ANGPS can filter the slots returned appropriately.
 8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "GP Hub - Main location GP"
