@@ -2,7 +2,7 @@
 title: User Privileges
 sidebar: overview_sidebar
 keywords: specification
-permalink: fs_userprivileges.html
+permalink: fs_authentication.html
 toc: false
 folder: functional_spec
 ---
