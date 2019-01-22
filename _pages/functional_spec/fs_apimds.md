@@ -17,7 +17,7 @@ Below is a list of the key mandarory elements for the appointment and associated
   * Created (Timestamp)
   * Slot Reference
   * Profile (URL)
-  * Resource Language Setting (en or en-gb)
+  * Resource Language Setting (en or en-GB)
   * Status (e.g. Booked)
   * Participant (container)
   * SupportingInformation (element that points to the contained DocumentReference)
