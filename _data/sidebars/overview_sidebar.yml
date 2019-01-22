@@ -119,7 +119,7 @@ entries:
             title: "Interactions with the DoS"
             output: "web, pdf"            
             url: /dos_overview.html
-           -
+          -
             title: "Minimum Data Set for API"
             output: "web, pdf"
             url: /fs_apimds.html
