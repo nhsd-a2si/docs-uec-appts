@@ -9,6 +9,8 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
+Below is a list of the key mandarory elements for the appointment and associated resources:
+
 * Appointment
   * DocumentReference (ID - e.g. 111CDA document)
   * PatientObject (ID - see below)
