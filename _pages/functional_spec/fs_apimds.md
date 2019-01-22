@@ -25,9 +25,9 @@ Below is a list of the key mandarory elements for the appointment and associated
   * Identifier
   * Verification Status
   * Name (given and family)
-  * > ContactPoint (email or phone)
+  * ~~ContactPoint (email or phone)~~
   * Gender
   * Birthdate
-  * > Address
-   * > Use
-   * > Postcode  
+  * Address
+   * Use
+   * Postcode  
