@@ -23,9 +23,9 @@ folder: functional_spec
   * Identifier
   * Verification Status
   * Name (given and family)
-  * ContactPoint (email or phone)
+  * > ContactPoint (email or phone)
   * Gender
   * Birthdate
-  * Address
-    * Use
-    * Postcode  
+> * Address
+ > * Use
+ > * Postcode  
