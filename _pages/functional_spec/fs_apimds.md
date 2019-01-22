@@ -26,6 +26,6 @@ folder: functional_spec
   * > ContactPoint (email or phone)
   * Gender
   * Birthdate
-> * Address
- > * Use
- > * Postcode  
+  * > Address
+   * > Use
+   * > Postcode  
