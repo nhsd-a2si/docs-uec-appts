@@ -10,8 +10,8 @@ folder: functional_spec
 {% include note-notpublished.html %}
 
 * Appointment
-  * DocumentReference (ID)
-  * PatientObject (ID)
+  * DocumentReference (ID - e.g. 111CDA document)
+  * PatientObject (ID - see below)
   * Created (Timestamp)
   * Slot Reference
   * Profile (URL)
@@ -27,5 +27,5 @@ folder: functional_spec
   * Gender
   * Birthdate
   * Address
-    * Use
+    * Uvbvvse
     * Postcode  
