@@ -8,3 +8,24 @@ folder: functional_spec
 ---
 
 {% include note-notpublished.html %}
+
+* Appointment
+  * DocumentReference (ID)
+  * PatientObject (ID)
+  * Created (Timestamp)
+  * Slot Reference
+  * Profile (URL)
+  * Resource Language Setting (en or en-gb)
+  * Status (e.g. Booked)
+  * Participant (container)
+  * SupportingInformation (element that points to the contained DocumentReference)
+* Patient
+  * Identifier
+  * Verification Status
+  * Name (given and family)
+  * ContactPoint (email or phone)
+  * Gender
+  * Birthdate
+  * Address
+    * Use
+    * Postcode  
