@@ -27,5 +27,5 @@ folder: functional_spec
   * Gender
   * Birthdate
   * Address
-    * Uvbvvse
+    * Use
     * Postcode  
