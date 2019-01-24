@@ -11,7 +11,7 @@ folder: functional_spec
 
 It is expected that there should be a capability to report against expected national metrics for appointment booking and a clear mechanism to share these data with commissioners and other key stakeholders.
 
-The below table identifies the key metrics required to meet the national commissioning reporting requirements as well the most common local operational reporting and performance metrics. This specification is still in draft and is developing developing and evolving.
+The below table identifies the key metrics required to meet the national commissioning reporting requirements as well the most common local operational reporting and performance metrics. This specification is still in draft and is developing and evolving.
 
 | *Requirement*                                                                                                                                                                   | *Which will provide the following information...*                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
