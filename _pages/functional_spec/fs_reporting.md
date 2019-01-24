@@ -29,3 +29,6 @@ The below table identifies the key metrics required to meet the national commiss
 | Number of times that a user tried to book an appointment and got an error message over a date range                                                                            | In December there were 2 times where the appointment booking button was clicked and an error occurred                                             |
 | Number of times that a user books an appointment and the subsequently cancelled the appointment over a date range                                                              | In December there were 7 times a user booked an appointment and then cancelled it whilst the patient was on the phone                             |
 | Number of times that a user books an appointment and the subsequently re-books the appointment over a date range                                                               | In December there were 8 times a user booked an appointment and then re-books it whilst the patient was on the phone                              |
+
+
+Regarding what the mechanism for sharing is, we are expecting that existing arrangements for sharing these metrics are utilised. There may be a possiblity that an API standard for data sharing will be published in the future.
