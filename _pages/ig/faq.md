@@ -11,8 +11,8 @@ folder: ig
 
 Do I need a Data Sharing Agreement (DSA) between two organisations to allow booking?
 
-For GP Connect - Yes
-For Care Connect - No
+* For GP Connect - Yes
+* For Care Connect - No
 
 There are two aspects to this. Firstly does a pre-ecisting agreement between two specific organisations need to be put in place? Secondly what access controls are in place to resrict access to appointments between organisations.
 
