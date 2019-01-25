@@ -25,4 +25,4 @@ For UEC bookings using Care Connect the only operations relate to appointments. 
 
 Therefore a specific pre-established DSA is not required allowing for on-the-fly establishment of booking relationships. The access control is applied during the service discovery. If a service advertises its appointments on the service directory being used for service discovery (such as the Urgent Care DoS) then the service looking up on the directory will be able to book.
 
-The authentication that happens for Care Connect on the SSP establishes trust that the service perfo
+The authentication that happens for Care Connect on the SSP establishes trust that the service performing the booking operations is a valid service and system accredited and allowed to do so.
