@@ -179,7 +179,11 @@ entries:
             title: "Information Governance Overview"
             output: "web, pdf"
             url: /ig_overview.html
-        output: web
+          -
+            title: "Information Governance FAQ"
+            output: "web, pdf"
+            url: /ig_faq.html
+        output: web        
       - 
         title: "Assurance Process"
         folderitems: 
