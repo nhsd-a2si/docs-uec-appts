@@ -1,5 +1,5 @@
 ---
-title: Information Governance - FAQ
+title: Information Governance - Frequently Asked Questions
 sidebar: overview_sidebar
 keywords: guidance
 permalink: ig_faq.html
