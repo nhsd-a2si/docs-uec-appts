@@ -21,5 +21,5 @@ The presence of a DSA is enforced by the Spine Secure Proxy (SSP) when any GP Co
 
 For UEC bookings using Care Connect the only operations relate to appointments. The information being transmitted and accessed for appointment booking is minimal. Most of the important information is (e.g. patient demographics) is obtained from the PDS (Spine) and obtained/requested prior to the booking operations.
 
-Therefore a specific pre-established data 
+Therefore a specific pre-established data  
 
