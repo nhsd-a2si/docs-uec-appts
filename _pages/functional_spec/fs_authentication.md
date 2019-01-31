@@ -13,20 +13,16 @@ folder: functional_spec
 
 The main principle in the approach to authentication is to authorise the consumer **system** rather than the user. Therefore there is no dependency on passing through a users strongly authenticated identity and role (such as via a smartcard) to authorise the transaction. This approach will always be the case for viewing and booking slots. There may be a future requirement for more granular authorisation when doing modification and retrieval operations such as third party cancelling and rebooking.
 
-----
+In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA Strat Auth).
 
-In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA Strat Auth), however in order to remove a dependency on that programme's delivery timescales, for Beta rollout we will use the Health and Social Care Directory (HSCD) which is already live and supporting NHS Mail identities. In the very early days we are using a temporary Azure AD (which is the what HSCD is based on) account.
--
+For initial rollout the Health and Social Care Directory (HSCD) will be used. This is a mature service and supporting NHS Mail identities.
 
+This uses the standard OAuth 2 client_credentials flow (see: <a href="https://oauth.net/2/grant-types/client-credentials/" target="_blank">OAuth Client Credentoals Flow</a>) and has the following key features:
 
-----
-
-
-
-
-
-
-This uses the standard OAuth 2 client_credentials flow (see: https://oauth.net/2/grant-types/client-credentials/ ) , and allows new Consumer and Provider systems to be implemented and removed, with NO effect on other services. It allows central control over authorisation at a capability level (which we can control based on the outcome of Solution Assurance processes). All configuration is controlled centrally in HSCD, and those details are passed to the Provider to allow them to make the required authorisation decisions. In addition to the provider system checking the tokens, the SSP can also validate requests and could potentially block unauthorised requests.
+* New Consumer and Provider systems can be implemented and removed with NO effect on other services. 
+* It allows central control over authorisation at a capability level 
+* All configuration is controlled centrally in HSCD/Strat Auth and those details are passed to the Provider to allow them to make the required authorisation decisions. 
+* In addition to the provider system checking the tokens, the SSP can also validate requests and could potentially block unauthorised requests
 
 The approach we are taking is as follows:
 
