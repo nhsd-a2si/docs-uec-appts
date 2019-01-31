@@ -31,32 +31,33 @@ When a new consumer or provider system is assured for booking using the Care Con
 1. Each Consumer and Provider system created as an App Registration in Azure AD. 
   - This is done at a fine grained detailed level, so if many Provider or Consumer services are being run on one instance of a system, of which many instances have been deployed, the App registration is done at the 'Service' level.
 
-2. Two new groups in the HSCD directory are created
-  * for ease of management, the names of these groups are the same as the SDS Interaction names
-  a. urn:nhs:names:services:careconnect:fhir:rest:read:slot
+2. Two new groups in the HSCD directory are created (for ease of management, the names of these groups are the same as the SDS Interaction names):
+  * urn:nhs:names:services:careconnect:fhir:rest:read:slot
     * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to view slots:
         * the Service
         * the Organisation delivering the service
         * the system being used
         * and the supplier of that system 
        
-urn:nhs:names:services:careconnect:fhir:rest:create:appointment
-Membership of this group indicates that the Service, and the Organisation delivering it, and the system being used, and the supplier of that system represented by this App Registration have all been assured (to whatever level is deemed necessary) to be allowed to book appointments.
+  * urn:nhs:names:services:careconnect:fhir:rest:create:appointment
+      * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to book appointments:
+        * the Service
+        * the Organisation delivering the service
+        * the system being used
+        * and the supplier of that system 
 Separating these two groups means we have the ability to allow an application to view available slots, but not have the ability to book appointments, for example this might be a dashboard or monitoring application.
 
-We will later have new Groups defined for example: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
+In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
+These new groups will be documented here.
 
+3. Edit the Manifest of each Provider application to have the value: "groupMembershipClaims": "All"
+  * this means that the provider will receive (in any access_tokens intended for it, issued by HSCD) a list of the groups that a consumer system is a member of.
 
+4. Assign the Consumer applications to the groups as created above (NB: it's unlikely but possible that a system would ever only be allowed to view Slots) as they progress through solution assurance / onboarding processes.
 
-Edit the Manifest of each Provider application to have the value: "groupMembershipClaims": "All"  this means that the provider will receive (in any access_tokens intended for it, issued by HSCD) a list of the groups that a consumer system is a member of.
-
-Assign the Consumer applications to the groups as created above (NB: it's unlikely but possible that a system would ever only be allowed to view Slots) as they progress through solution assurance / onboarding processes.
-
-
-
-Create a 'secret' in HSCD for each Consumer system. The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system, we MIGHT want to define a set of practices that we expect of them.  We can create a number of secrets (any current one can be used), and should put in place a rotation policy, for example we might rotate secrets each month, having 5 secrets in place at any one time. We might therefore (based on today being January) have secrets named 201811, 201812, 201901, 201902, 201903 to reflect current month plus 2 and minus 2. Rotation of secrets protects us (eventually) against a secret becoming known by someone other than the Consuming system.
-
-OUTSTANDING QUESTION: We need to come up with a rotation policy, a process to automate the generation and rotation of keys and a secure way to distribute those new keys to each Consuming system.
+5. Create a 'secret' in HSCD for each Consumer system. 
+  * The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system
+  * there is likely to be a security policy and attached process on the protection of these secrets published in due course
 
 ## Authentication workflow
 
