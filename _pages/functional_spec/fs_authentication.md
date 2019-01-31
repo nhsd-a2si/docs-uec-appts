@@ -17,21 +17,29 @@ In order to allow the Provider to trust requests from Consumer systems, we need 
 
 For initial rollout the Health and Social Care Directory (HSCD) will be used. This is a mature service and supporting NHS Mail identities.
 
-This uses the standard OAuth 2 client_credentials flow (see: <a href="https://oauth.net/2/grant-types/client-credentials/" target="_blank">OAuth Client Credentoals Flow</a>) and has the following key features:
+This uses the standard OAuth 2 client_credentials flow (see: <a href="https://oauth.net/2/grant-types/client-credentials/" target="_blank">OAuth Client Credentials Flow</a>) and has the following key features:
 
 * New Consumer and Provider systems can be implemented and removed with NO effect on other services. 
 * It allows central control over authorisation at a capability level 
 * All configuration is controlled centrally in HSCD/Strat Auth and those details are passed to the Provider to allow them to make the required authorisation decisions. 
 * In addition to the provider system checking the tokens, the SSP can also validate requests and could potentially block unauthorised requests
 
-The approach we are taking is as follows:
+## Configuring a new consumer service
 
-Create each Consumer and Provider system as an App Registration in Azure AD. This is done at a fine grained detailed level, so if many Provider or Consumer services are being run on one instance of a system, of which many instances have been deployed, the App registration is done at the 'Service' level.
+When a new consumer or provider system is assured for booking using the Care Connect standard the following steps are taken:
 
-Create two new groups in the HSCD directory (for ease of management, the names of these groups are the same as the SDS Interaction names).
+1. Each Consumer and Provider system created as an App Registration in Azure AD. 
+  - This is done at a fine grained detailed level, so if many Provider or Consumer services are being run on one instance of a system, of which many instances have been deployed, the App registration is done at the 'Service' level.
 
-urn:nhs:names:services:careconnect:fhir:rest:read:slot
-Membership of this group indicates that the Service, and the Organisation delivering it, and the system being used, and the supplier of that system represented by this App Registration have all been assured (to whatever level is deemed necessary) to be allowed to view slots.
+2. Two new groups in the HSCD directory are created
+  * for ease of management, the names of these groups are the same as the SDS Interaction names
+  a. urn:nhs:names:services:careconnect:fhir:rest:read:slot
+    * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to view slots:
+        * the Service
+        * the Organisation delivering the service
+        * the system being used
+        * and the supplier of that system 
+       
 urn:nhs:names:services:careconnect:fhir:rest:create:appointment
 Membership of this group indicates that the Service, and the Organisation delivering it, and the system being used, and the supplier of that system represented by this App Registration have all been assured (to whatever level is deemed necessary) to be allowed to book appointments.
 Separating these two groups means we have the ability to allow an application to view available slots, but not have the ability to book appointments, for example this might be a dashboard or monitoring application.
@@ -49,6 +57,8 @@ Assign the Consumer applications to the groups as created above (NB: it's unlike
 Create a 'secret' in HSCD for each Consumer system. The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system, we MIGHT want to define a set of practices that we expect of them.  We can create a number of secrets (any current one can be used), and should put in place a rotation policy, for example we might rotate secrets each month, having 5 secrets in place at any one time. We might therefore (based on today being January) have secrets named 201811, 201812, 201901, 201902, 201903 to reflect current month plus 2 and minus 2. Rotation of secrets protects us (eventually) against a secret becoming known by someone other than the Consuming system.
 
 OUTSTANDING QUESTION: We need to come up with a rotation policy, a process to automate the generation and rotation of keys and a secure way to distribute those new keys to each Consuming system.
+
+## Authentication workflow
 
 When a Consumer system wants to request Slots or to book an Appointment at a Provider system, it then makes a request to HSCD (or for now to the temporary Azure AD account), for an access token. It includes the secret and the details of the Provider system it's accessing, e.g:
 
