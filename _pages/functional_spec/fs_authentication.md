@@ -45,15 +45,15 @@ When a new consumer or provider system is assured for booking using the Care Con
         * the system being used
         * and the supplier of that system 
 
-Separating these two groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
+  Separating these two groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
 
-In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
-These new groups will be documented here.
+  In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
+  These new groups will be documented here.
 
 3. Edit the Manifest of each Provider application to have the value: "groupMembershipClaims": "All"
-  * this means that the provider will receive (in any access_tokens intended for it, issued by HSCD) a list of the groups that a consumer system is a member of.
+  This means that the provider will receive (in any access_tokens intended for it, issued by HSCD) a list of the groups that a consumer system is a member of.
 
-4. Assign the Consumer applications to the groups as created above (NB: it's unlikely but possible that a system would ever only be allowed to view Slots) as they progress through solution assurance / onboarding processes.
+4. Assign the Consumer applications to the groups as created above 
 
 5. Create a 'secret' in HSCD for each Consumer system. 
   * The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system
@@ -89,7 +89,7 @@ HSCD will then issue a signed access token containing the groups that the Consum
 
 The access_token field in that response contains the actual JWT to be used when making requests to the Provider system specified in the request as 'scope'.
 
-This access_token can then be decoded (for example the following sites: <a href="https://jwt.ms" target="_blank">jwt.ms</a>  or <a href="https://jwt.io" target="_blank">jwt.io</a>.
+This access_token can then be decoded (for example the following sites: <a href="https://jwt.ms" target="_blank">jwt.ms</a>  or <a href="https://jwt.io" target="_blank">jwt.io</a>).
 
 When decoded the token will look something like the following:
 ```json
