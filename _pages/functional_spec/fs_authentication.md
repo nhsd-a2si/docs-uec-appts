@@ -30,7 +30,6 @@ When a new consumer or provider system is assured for booking using the Care Con
 
 1. Each Consumer and Provider system created as an App Registration in Azure AD. 
   - This is done at a fine grained detailed level, so if many Provider or Consumer services are being run on one instance of a system, of which many instances have been deployed, the App registration is done at the 'Service' level.
-
 2. Two new groups in the HSCD directory are created (for ease of management, the names of these groups are the same as the SDS Interaction names):
   * urn:nhs:names:services:careconnect:fhir:rest:read:slot
     * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to view slots:
@@ -44,17 +43,12 @@ When a new consumer or provider system is assured for booking using the Care Con
         * the Organisation delivering the service
         * the system being used
         * and the supplier of that system 
-
   Separating these two groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
-
   In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
   These new groups will be documented here.
-
 3. Edit the Manifest of each Provider application to have the value: "groupMembershipClaims": "All"
   This means that the provider will receive (in any access_tokens intended for it, issued by HSCD) a list of the groups that a consumer system is a member of.
-
 4. Assign the Consumer applications to the groups as created above 
-
 5. Create a 'secret' in HSCD for each Consumer system. 
   * The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system
   * there is likely to be a security policy and attached process on the protection of these secrets published in due course
