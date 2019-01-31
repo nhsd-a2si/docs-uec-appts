@@ -38,14 +38,14 @@ When a new consumer or provider system is assured for booking using the Care Con
         * the Organisation delivering the service
         * the system being used
         * and the supplier of that system 
-       
-  * urn:nhs:names:services:careconnect:fhir:rest:create:appointment
-      * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to book appointments:
+    * urn:nhs:names:services:careconnect:fhir:rest:create:appointment
+     * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to book appointments:
         * the Service
         * the Organisation delivering the service
         * the system being used
         * and the supplier of that system 
-Separating these two groups means we have the ability to allow an application to view available slots, but not have the ability to book appointments, for example this might be a dashboard or monitoring application.
+
+Separating these two groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
 
 In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
 These new groups will be documented here.
