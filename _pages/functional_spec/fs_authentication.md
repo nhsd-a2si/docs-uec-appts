@@ -121,8 +121,7 @@ When decoded the token will look something like the following:
 [Signature]
 }
 ```
-
-See: https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens for more details on the fields in the above.
+See: <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens" target="_blank">"Azure Active Directory access tokens" at Microsoft Azure</a> for more details on the fields in the above.
 
 Because this token is signed, the Provider system can trust that the Consumer really is a member of the specified groups. It can also retrieve the public key from Azure AD and validate that the token hasn't been tampered with. There are standard ways of doing this.
 
