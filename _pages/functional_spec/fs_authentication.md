@@ -61,32 +61,38 @@ These new groups will be documented here.
 
 ## Authentication workflow
 
-When a Consumer system wants to request Slots or to book an Appointment at a Provider system, it then makes a request to HSCD (or for now to the temporary Azure AD account), for an access token. It includes the secret and the details of the Provider system it's accessing, e.g:
+When a Consumer system wants to request Slots or to book an Appointment at a Provider system, a request is made to HSCD for an access token. It includes the secret and the details of the Provider system it's accessing, e.g:
 
-
+```json
 client_id: "id Goes here",
 client_secret: "secret goes here",
 scope:  [base url of the provider system] + "/.default",
 grant_type: "client_credentials"
+```
 
-For example (a form on the Demonstrator allows this to be submitted) these values can be used:
-
+For example these values might be used:
+```json
 client_id=92d85f9d-0666-49bc-a31c-12b45b04a7de
 client_secret=y7rCysA8anvYshLckwwFNs8qnC6JPyCerE7CUAAnGgo=
+```
 
-HSCD will then issue a signed access_ token, containing the groups that the Consumer is a member of, this token is valid (default) for one hour. The response will look similar to this:
+HSCD will then issue a signed access token containing the groups that the Consumer is a member of. This token is valid for one hour. The response will look similar to this:
 
+```json
 {
 "token_type": "Bearer",
 "expires_in": 3600,
 "ext_expires_in": 3600,
 "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwOi8vYXBwb2ludG1lbnRzLmRpcmVjdG9yeW9mc2VydmljZXMubmhzLnVrOjQ0My9wb2MiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lNTIxMTFjNy00MDQ4LTRmMzQtYWVhOS02MzI2YWZhNDRhOGQvIiwiaWF0IjoxNTQ3MDMyNDU1LCJuYmYiOjE1NDcwMzI0NTUsImV4cCI6MTU0NzAzNjM1NSwiYWlvIjoiNDJSZ1lNZ0tEbFZYMnBIMnE5cFhlamJ6MzVtWkFBPT0iLCJhcHBpZCI6IjkyZDg1ZjlkLTA2NjYtNDliYy1hMzFjLTEyYjQ1YjA0YTdkZSIsImFwcGlkYWNyIjoiMSIsImdyb3VwcyI6WyJhYjQxMmZlOS0zZjY4LTQzNjgtOTgxMC05ZGMyNGQxNjU5YjEiLCJkYWNiODJjNS1hZWE4LTQ1MDktODg3Zi0yODEzMjQwNjJkZmQiLCI1NWRhMWM5YS0yY2ViLTQxYTctOWI3Yy0xYzcwMTVlZDFmZGUiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTUyMTExYzctNDA0OC00ZjM0LWFlYTktNjMyNmFmYTQ0YThkLyIsIm9pZCI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInN1YiI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInRpZCI6ImU1MjExMWM3LTQwNDgtNGYzNC1hZWE5LTYzMjZhZmE0NGE4ZCIsInV0aSI6IlI1S2FEa21Rc0VlTk96d1c3WElUQUEiLCJ2ZXIiOiIxLjAifQ.eVSncRYT138bByvEHa00uQpfuZrLvW0b9NPF9tDsxIckjaxEiOWJz1pYpaEJoZPnSxmJjKZ_v7h-0ea21ApB-9dYRE6OZ9Y12CGbDr4IKIbO2Oh0QulU06BzvDrA9hMbLXV2vG06mIcLBE8BAJbJp8ktF4PZ1vmRXd0jxy1YonEFqO9e5QsUoekw7eL_LPBBUlNrUsFedP7eKPdW1uGRrd6i_UmQTDx0tq0cV8NOV-vvQLgKY7GROPjZ1qOx6-3s_oEDL_T65ERFJH4CMcMBOH1HsDf2Ee47pM3-lGlBh7SSLpCVbxpOxAc1O6cULbbbSRuAEyUXuQZroagtqoiiwQ"
 }
+```
 
 The access_token field in that response contains the actual JWT to be used when making requests to the Provider system specified in the request as 'scope'.
 
-This access_token can be decoded using a site such as https://jwt.ms  or https://jwt.io eg to something like:
+This access_token can then be decoded (for example the following sites: <a href="https://jwt.ms" target="_blank">jwt.ms</a>  or <a href="https://jwt.io" target="_blank">jwt.io</a>.
 
+When decoded the token will look something like the following:
+```json
 { // Header section
 "typ": "JWT",
 "alg": "RS256",
@@ -114,6 +120,7 @@ This access_token can be decoded using a site such as https://jwt.ms  or https:/
 }.{ // Signature section
 [Signature]
 }
+```
 
 See: https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens for more details on the fields in the above.
 
