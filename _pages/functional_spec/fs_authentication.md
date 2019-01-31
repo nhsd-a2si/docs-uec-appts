@@ -125,34 +125,14 @@ See: <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/ac
 
 Because this token is signed, the Provider system can trust that the Consumer really is a member of the specified groups. It can also retrieve the public key from Azure AD and validate that the token hasn't been tampered with. There are standard ways of doing this.
 
-
-
 When requests are made to a Provider system, they must include an Authorization http header which takes the form:
 
+```
 Authorization	Bearer +  space +  [access_token value from above ]
+```
+
 For example using the token shown above:
 
+```
 Authorization	Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwOi8vYXBwb2ludG1lbnRzLmRpcmVjdG9yeW9mc2VydmljZXMubmhzLnVrOjQ0My9wb2MiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lNTIxMTFjNy00MDQ4LTRmMzQtYWVhOS02MzI2YWZhNDRhOGQvIiwiaWF0IjoxNTQ3MDMyNDU1LCJuYmYiOjE1NDcwMzI0NTUsImV4cCI6MTU0NzAzNjM1NSwiYWlvIjoiNDJSZ1lNZ0tEbFZYMnBIMnE5cFhlamJ6MzVtWkFBPT0iLCJhcHBpZCI6IjkyZDg1ZjlkLTA2NjYtNDliYy1hMzFjLTEyYjQ1YjA0YTdkZSIsImFwcGlkYWNyIjoiMSIsImdyb3VwcyI6WyJhYjQxMmZlOS0zZjY4LTQzNjgtOTgxMC05ZGMyNGQxNjU5YjEiLCJkYWNiODJjNS1hZWE4LTQ1MDktODg3Zi0yODEzMjQwNjJkZmQiLCI1NWRhMWM5YS0yY2ViLTQxYTctOWI3Yy0xYzcwMTVlZDFmZGUiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTUyMTExYzctNDA0OC00ZjM0LWFlYTktNjMyNmFmYTQ0YThkLyIsIm9pZCI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInN1YiI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInRpZCI6ImU1MjExMWM3LTQwNDgtNGYzNC1hZWE5LTYzMjZhZmE0NGE4ZCIsInV0aSI6IlI1S2FEa21Rc0VlTk96d1c3WElUQUEiLCJ2ZXIiOiIxLjAifQ.eVSncRYT138bByvEHa00uQpfuZrLvW0b9NPF9tDsxIckjaxEiOWJz1pYpaEJoZPnSxmJjKZ_v7h-0ea21ApB-9dYRE6OZ9Y12CGbDr4IKIbO2Oh0QulU06BzvDrA9hMbLXV2vG06mIcLBE8BAJbJp8ktF4PZ1vmRXd0jxy1YonEFqO9e5QsUoekw7eL_LPBBUlNrUsFedP7eKPdW1uGRrd6i_UmQTDx0tq0cV8NOV-vvQLgKY7GROPjZ1qOx6-3s_oEDL_T65ERFJH4CMcMBOH1HsDf2Ee47pM3-lGlBh7SSLpCVbxpOxAc1O6cULbbbSRuAEyUXuQZroagtqoiiwQ
-It is possible for the Provider or SSP to lookup App Registrations and Groups in Azure AD (for example to translate the appid above to a Service name, and the groups to Group names), however this adds some complexity, and is not currently thought to be necessary. The provider would still need to know the name urn:nhs:names:services:careconnect:fhir:rest:create:appointment in advance, it may as well know the ID instead.
-
-
-
-It is absolutely possible for the SSP to perform Provider system endpoint lookups in HSCD, however it's almost certain that SDS will continue for the foreseeable future to allow / block the flow of traffic based on Interactions registered against entries in SDS. We may be able to get SSP to inspect the JWT and block unauthorised traffic, but it is highly unlikely that we could get it to ignore SDS and allow traffic based only on the contents of the JWT.
-
-Migration
-In order to switch over from our temporary identity provider to HSCD, the expected changes required centrally are:
-
-New App Registration required for each Provider and Consumer.
-Issue new client_id to each Consumer and Provider.
-Generate new keys for each Consumer.
-Issue new keys.
-Manage transition, and switch off of old identity provider.
-The changes for a Consumer are as follows:
-
-New client_id and client_secret issued and set in application.
-The changes for a Provider are:
-
-New Group identifiers to check for in the tokens.
-
-
-In order to switch over to NHS Identity, the expected changes are similar, unless we converge on the intended approach for authorisation defined at: https://nhsconnect.github.io/FHIR-SpineCore/security_jwt.html   If we do adopt this, then while we're still using the same standards (OAuth and JWT), there would need to be significant changes, for example the permissions would be represented in a token as a Scope, rather than by Group membership.
+```
