@@ -7,6 +7,8 @@ toc: false
 folder: functional_spec
 ---
 
+# Comparison beteen GP Connect booking and Proprietary Booking
+
 ## Branch Surgeries
 
 *	GP IT systems do not have the concept of ‘main’ and ‘branch’ surgeries.  
@@ -21,7 +23,8 @@ folder: functional_spec
 *	When using GP Connect you are also performing a patient check at the same time, with this the 111 system will receive information on the patient’s preferred surgery 
 *	The preferred surgery can then be list as the top surgery to book into 
 
-Booking into GP surgeries main/branch surgeries using Proprietary standards 
+## Booking into GP surgeries main/branch surgeries using Proprietary standards
+
 *	The user will search for a GP surgery using PDS
 *	They will retrieve the surgery (i.e. main surgery) 
 *	When searching the DOS they will retrieve the patient’s home (i.e. main surgery) based on the ODS code retrieved using PDS and the ODS code on DOS
