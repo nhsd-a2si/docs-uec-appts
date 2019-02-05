@@ -13,6 +13,10 @@ entries:
             url: /gpc_requirement.html
           - 
             output: "web, pdf"
+            title: "Comparison with proprietary booking"
+            url: /gpc_propcon.html
+          - 
+            output: "web, pdf"
             title: "Differences between GP Connect and CareConnect"
             url: /fs_gpcdiff.html
         output: web
