@@ -7,14 +7,14 @@ toc: false
 folder: functional_spec
 ---
 
-# Comparison beteen GP Connect booking and Proprietary Booking
+## Comparison beteen GP Connect booking and Proprietary Booking
 
-## Branch Surgeries
+### Branch Surgeries
 
 *	GP IT systems do not have the concept of ‘main’ and ‘branch’ surgeries.  
 *	The SPINE does not have the concept of ‘branch’ surgeries and therefore ‘branch’ surgery ODS codes
 
-## Booking into GP surgeries main/branch surgeries using GP Connect standards
+### Booking into GP surgeries main/branch surgeries using GP Connect standards
 
 * The user will search for a GP surgery using PDS
 *	They will retrieve the surgery (i.e. main surgery) 
@@ -23,7 +23,7 @@ folder: functional_spec
 *	When using GP Connect you are also performing a patient check at the same time, with this the 111 system will receive information on the patient’s preferred surgery 
 *	The preferred surgery can then be list as the top surgery to book into 
 
-## Booking into GP surgeries main/branch surgeries using Proprietary standards
+### Booking into GP surgeries main/branch surgeries using Proprietary standards
 
 *	The user will search for a GP surgery using PDS
 *	They will retrieve the surgery (i.e. main surgery) 
