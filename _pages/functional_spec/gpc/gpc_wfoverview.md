@@ -30,16 +30,16 @@ folder: functional_spec
 *	When searching the DOS they will retrieve the patient’s home (i.e. main surgery) based on the ODS code retrieved using PDS and the ODS code on DOS
 *	When they search for appointments they will be displayed with a list of appointments by location
 *	Booking into EMIS surgeries
- *	From Adastra, 
-  *	you will receive a list of locations that you can book into
-  *	the user will then need to book the patient into the correct / appropriate surgery 
- *	From Cleric
-  * you will receive a list of locations that you can book into
- * the user will then need to book the patient into the correct / appropriate surgery
+  *	From Adastra, 
+    *	you will receive a list of locations that you can book into
+    *	the user will then need to book the patient into the correct / appropriate surgery 
+  *	From Cleric
+    * you will receive a list of locations that you can book into
+  * the user will then need to book the patient into the correct / appropriate surgery
 *	Booking into TPP surgeries
- * From Adastra, 
- * you will receive a list of locations that you can book into.  NOTE: the list of locations will only appear if you have v3.28 of Adastra
- *	the user will then need to book the patient into the correct / appropriate surgery 
- *	From Cleric
- *	you will receive a list of locations that you can book into
- *	the user will then need to book the patient into the correct / appropriate surgery
+  * From Adastra, 
+  * you will receive a list of locations that you can book into.  NOTE: the list of locations will only appear if you have v3.28 of Adastra
+  *	the user will then need to book the patient into the correct / appropriate surgery 
+  *	From Cleric
+  *	you will receive a list of locations that you can book into
+  *	the user will then need to book the patient into the correct / appropriate surgery
