@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-## Comparison beteen GP Connect booking and Proprietary Booking
-
 ### Branch Surgeries
 
 *	GP IT systems do not have the concept of ‘main’ and ‘branch’ surgeries.  
