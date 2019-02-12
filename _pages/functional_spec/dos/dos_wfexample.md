@@ -37,7 +37,7 @@ Provider Name      | Provider ODS Code | IT System
 -------------------|-------------------|--------------
 UTC Service Ltd.   | AB1234            | ANEDS
  
-The UTC offers three different clinics. Each of the three clinics has its own appointment diary represented as a schedule in ANEDS. Clinic 1 is a GP diary and the other two are a Nurse diary:
+The UTC offers three different clinics. Each of the three clinics has its own appointment diary represented as a schedule in ANEDS. Clinic 1 is a GP diary, Clinica 2 offers GP and Nurse appointments and Clinic 3 has just a Nurse diary:
 
 
 <div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile userAgent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/8.8.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36\&quot; version=\&quot;9.2.7\&quot; editor=\&quot;www.draw.io\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;a9224995-d5d3-854d-5d66-375058506576\&quot; name=\&quot;Page-1\&quot;&gt;7VfBbqMwFPwajonABpYck7TprpSVKqXSnl1wwFqDWeM00K/fZzAEkhRFalrlEA5gz7P9zMwbCyy8TMsnSfLkt4got5AdlRZ+sBByZsiDh0aqFrENEksWGewAbNg7NaBt0B2LaDEYqITgiuVDMBRZRkM1wIiUYj8cthV8mDUnMT0BNiHhp+gfFqmkQTG27UPgJ2VxYlJDaNZEXkn4N5Zil5mEFsLb+mrCKWkXMysVCYnEvgfhRwsvpRCqaaXlknLNbstbM2/1QbTbuKSZumRC0Ex4I3xH2x37HKYutgJWgA2qyrDi/9uJNjApas3mMMAN8vIQhFasn0/PEFrRiEqimMgK6K1ZyhSNoPXrBW6bqlA0bbPBDpuEzXRDTpcbFXuWcpJBb5GolAPoQLNQRCpTPv5Mx4Rk77AOaUeEusMyKl+qXI9SktJu/TcqFS0/ZM7p9IBKpyKlSlYwxExwjYLVsLs/1IuD23pOerXiYQMSU6Rxt/RBJ2gYqc7Lhk9kW4uwZhpQPMaeZtkw5gSXMhGMMjHzhlQ4vj21e1dbZD1q0OwMM+gazKAzBX3MRkLqWmBpfQz0C0rzwOAcmHMWZ7pcRN5D1+SV8mdRsJpo/PAqlBIpDOA6sOisvxRcyDpXa368qJPNi7w5rmxASNvZshJsYYZAP1FKn3Nz/c5oFUYZmjKo4y3LwE7TEDKiVUQUgYfGwVurjO4nFSVyImkh+M5YbuW7cOtBE9udOCiY5ll8ke54VPfAGcjuOUPV8akh2kroq96Bn1HdH/ODM+aH/hECW/4Sg+ATf5xQ4547Kq5iiB93Q1zPEP6ozkfnoH9kiMD9RkfM7rJ/l+zIvyHd3bGT8EwNfOmXgee5t/Nl4N0dcT1HuDf6ZaDfqvt5qmO9f1T8+B8=&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
@@ -49,10 +49,10 @@ The important thing here is how the DoS services link through the the appointmen
 
 ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
 ----|-----------------|----------|----------|------------------|---------------------
-1   | Main Location   | AB1234   | 1        | GP               | 109876543210
-1   | Main Location   | AB1234   | 2        | Nurse            | 101234567890
-2   | The High Street | AB1234   | 3        | GP               | 987654321001
-3   | Other Town GP   | AB1234   | 4        | GP               | 123456789001
+1   | Clinic 1   | AB1234   | 1        | GP               | 109876543210
+1   | Clinic 1   | AB1234   | 2        | Nurse            | 101234567890
+2   | Clinic 2 | AB1234   | 3        | Nurse               | 987654321001
+3   | Clinic 3  | AB1234   | 4        | Nurse             | 123456789001
 
 
 
@@ -62,10 +62,10 @@ The table below shows key information about the associated DoS services and the 
 
 Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
 -------------|---------|------------------------------|------------------|---------------------------
-GP Federation| 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
-GP Federation| 654321  | GP Hub - Main location Nurse |      654321      | 101234567890
-GP Federation| 123457  | GP Hub - the High Street     |      123457      | 987654321001
-GP Federation| 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
+UTC | 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
+UTC | 654321  | GP Hub - Main location Nurse |      654321      | 101234567890
+UTC | 123457  | GP Hub - the High Street     |      123457      | 987654321001
+UTC | 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
 
  
 From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This identifier needs to be specificied on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
@@ -83,8 +83,8 @@ Once all the above is understood we can walk through a typical booking scenario 
 2. The health advisor takes them through an NHS Pathways assessment and they get referred to the Clinical Assessment Service (CAS) to speak to a clinician.
 3. The clinician assesses the patient and determines that the patient requires an urgent appointment with a GP.
 4. The 111 IT system searches the DoS with the details of the patient and the assessment
-5. The DoS returns a ranked list of services. The top service is the service named "GP Hub - Main location GP"
+5. The DoS returns a ranked list of services. The top service is the service named "The UTC - GP Clinic"
 6. This service is selected and information on the referral and booking endpoints is returned including the HealthcareServiceID
 7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry.
-In this scenario, since the target system is all the same, the returned URL's will all be the same. However since the HealthcareServiceID (ASID) gets included in the query parameters, ANGPS can filter the slots returned appropriately.
-8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "GP Hub - Main location GP"
+In this scenario, since the target system is all the same, the returned URL's will all be the same. However since the HealthcareServiceID (ASID) gets included in the query parameters, ANEDS can filter the slots returned appropriately.
+8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "UTC - Clinic 1"
