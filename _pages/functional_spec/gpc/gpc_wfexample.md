@@ -25,9 +25,9 @@ Services on the DoS are profiled with a range of data that is used to determine 
   * URLs
   * Document format
 
-The key aspect for direct booking is how a specific service will relate to a CareConnect Schedule resource on a particular system.
+The key aspect for direct booking is how a specific service will relate to a GP Connect Schedule resource on a particular system.
 
-Please note that in the example below, many irrelevent details are simplified or skipped. Also the technical details of the API messaging interactions are omitted. This is explained in detail <a href="fs_workflow.html" target="_blank">here</a>.
+Please note that in the example below, many irrelevent details are simplified or skipped. Also the technical details of the API messaging interactions are omitted. This is explained in detail <a href="https://nhsconnect.github.io/gpconnect/" target="_blank">here</a>.
 
 For this example, consider a GP Federataion provider called "GP Federations Ltd.". This provider has been comissioned by the GP Practices in a comissioning area to deliver the extended access GP services on behalf of these GP Practices. GP Federations Ltd. operates this service from three different locations, these are consulting rooms in three of the GP Practices they are covering.
 
@@ -46,31 +46,26 @@ Each of the three locations has its own appointment diary represented as a sched
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 
 
-The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule has a unique HealthcareServiceID, this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
+The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule is on this system will be represented on SDS by the same end point. This endpoint will have an ASID (HealthcareServiceID), this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
 
 
 ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
 ----|-----------------|----------|----------|------------------|---------------------
 1   | Main Location   | AB1234   | 1        | GP               | 109876543210
-1   | Main Location   | AB1234   | 2        | Nurse            | 101234567890
-2   | The High Street | AB1234   | 3        | GP               | 987654321001
-3   | Other Town GP   | AB1234   | 4        | GP               | 123456789001
+1   | Main Location   | AB1234   | 2        | Nurse            | 109876543210
+2   | The High Street | AB1234   | 3        | GP               | 109876543210
+3   | Other Town GP   | AB1234   | 4        | GP               | 109876543210
 
 
-
-The table below shows key information about the associated DoS services and the HealthcareServiceID defined against each service, Note that each service has its own unique HealthcareServiceID:
-
+This service will most likely be represented on the DoS as a single service, the table below shows key information about the associated DoS service and the HealthcareServiceID defined against this service, Note that each service has its own unique HealthcareServiceID:
 
 
 Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
 -------------|---------|------------------------------|------------------|---------------------------
-GP Federation| 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
-GP Federation| 654321  | GP Hub - Main location Nurse |      654321      | 101234567890
-GP Federation| 123457  | GP Hub - the High Street     |      123457      | 987654321001
-GP Federation| 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
-
+GP Federation| 123456  | GP Hub - GP Federations Ltd. |      AB1234      | 109876543210
  
-From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This identifier needs to be specificied on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
+ 
+From this information we can see that this DoS service will have 1 to many appointment schedules. At this stage ODS code is not relevent to the booking process which means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
 
 The following digram illustrates with a typical return from the DoS, the relationship of DoS services to appointment schedules.
 
