@@ -62,13 +62,13 @@ The table below shows key information about the associated DoS services and the 
 
 Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
 -------------|---------|------------------------------|------------------|---------------------------
-UTC | 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
-UTC | 654321  | GP Hub - Main location Nurse |      654321      | 101234567890
-UTC | 123457  | GP Hub - the High Street     |      123457      | 987654321001
-UTC | 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
+UTC | 123456  | The UTC - GP Clinic      |      AB1234      | 109876543210
+UTC | 654321  | The UTC - Nurse Clinic 1 |      654321      | 101234567890
+UTC | 123457  | The UTC - Nurse Clinic 2 |      123457      | 987654321001
+UTC | 123458  | The UTC - Nurse Clinic 3 |      123458      | 123456789001
 
  
-From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This identifier needs to be specificied on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
+From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This idenThe UTC - Nurse Clinic 1tifier needs to be specificied on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
 
 The following digram illustrates with a typical return from the DoS, the relationship of DoS services to appointment schedules.
 
