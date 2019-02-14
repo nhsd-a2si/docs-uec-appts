@@ -85,4 +85,4 @@ Once all the above is understood we can walk through a typical booking scenario 
 7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry.
 In this scenario, since the target system is the same, the returned URL's from all services that it has profiled will all be the same. 
 8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots that have been shared with this type of consuming service (111).
-9. The consuming system will then filter the returned slots for the "Main location GP Clinic" and display them to the user/
+9. The consuming system will then filter the returned slots for the "Main location GP Clinic" and identify them to the user/
