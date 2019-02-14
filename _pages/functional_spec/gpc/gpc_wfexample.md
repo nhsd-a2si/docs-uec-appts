@@ -10,6 +10,8 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
+The scenario on this page describes one way that booking to a GP Federation might be solved. It is important to note that currently this is one of several possible solutions being considered. This approach closely follows the pattern for service and endpoint discovery adopted for Care Connect booking.
+
 # Example scenario
 
 Services on the DoS are profiled with a range of data that is used to determine the ranking for services. There are also additional data items that are used for other purposes, for example interoperability. Examples of these data items are as follows:
