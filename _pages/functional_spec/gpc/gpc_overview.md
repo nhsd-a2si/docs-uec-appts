@@ -14,3 +14,5 @@ GP Connect is a program and associated interoperability standard being developed
 This section of the UEC booking standard is concerned with guidance to Urgent and Emergency care services and systems that are looking to utilise GP Connect for booking into GP Practice systems. Please refer to the main GP Connect documentation for technical guidance and information on engagement and assurance for GP Connect.
 
 Documentation for the GP Connect Standard can be found <a href="https://nhsconnect.github.io/gpconnect/" target="_blank">here</a>.
+
+Within this section you will find guidance on workflows as well as a comparison with existing GP booking solutions. There is also a section identifying the key requirements for a UEC system that is consuming appointments using GP Connect.
