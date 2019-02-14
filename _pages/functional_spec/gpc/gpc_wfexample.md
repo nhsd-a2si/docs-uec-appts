@@ -83,5 +83,6 @@ Once all the above is understood we can walk through a typical booking scenario 
 5. The DoS returns a ranked list of services. The top service is the service named "GP Hub - Main location GP"
 6. This service is selected and information on the referral and booking endpoints is returned including the HealthcareServiceID
 7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry.
-In this scenario, since the target system is all the same, the returned URL's will all be the same. However since the HealthcareServiceID (ASID) gets included in the query parameters, ANGPS can filter the slots returned appropriately.
-8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "GP Hub - Main location GP"
+In this scenario, since the target system is the same, the returned URL's from all services that it has profiled will all be the same. 
+8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots that have been shared with this type of consuming service (111).
+9. The consuming system will then filter the returned slots for the "Main location GP Clinic" and display them to the user/
