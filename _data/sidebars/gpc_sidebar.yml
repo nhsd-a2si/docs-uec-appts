@@ -9,6 +9,10 @@ entries:
             url: /gpc_overview.html
           - 
             output: "web, pdf"
+            title: "Key requirements"
+            url: /gpc_requirements.html
+          - 
+            output: "web, pdf"
             title: "Comparison with proprietary booking"
             url: /gpc_propcon.html
           - 
