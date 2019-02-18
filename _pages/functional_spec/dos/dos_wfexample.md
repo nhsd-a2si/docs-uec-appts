@@ -49,10 +49,10 @@ The important thing here is how the DoS services link through the the appointmen
 
 ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
 ----|-----------------|----------|----------|------------------|---------------------
-1   | Clinic 1   | AB1234   | 1        | GP               | 109876543210
-1   | Clinic 1   | AB1234   | 2        | Nurse            | 101234567890
-2   | Clinic 2 | AB1234   | 3        | Nurse               | 987654321001
-3   | Clinic 3  | AB1234   | 4        | Nurse             | 123456789001
+1   | Clinic 1   | AB1234   | 1        | GP               | ASID:109876543210
+1   | Clinic 1   | AB1234   | 2        | Nurse            | ASID:101234567890
+2   | Clinic 2 | AB1234   | 3        | Nurse               | ASID:987654321001
+3   | Clinic 3  | AB1234   | 4        | Nurse             | ASID:123456789001
 
 
 
@@ -62,10 +62,10 @@ The table below shows key information about the associated DoS services and the 
 
 Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
 -------------|---------|------------------------------|------------------|---------------------------
-UTC | 123456  | The UTC - GP Clinic      |      AB1234      | 109876543210
-UTC | 654321  | The UTC - Nurse Clinic 1 |      654321      | 101234567890
-UTC | 123457  | The UTC - Nurse Clinic 2 |      123457      | 987654321001
-UTC | 123458  | The UTC - Nurse Clinic 3 |      123458      | 123456789001
+UTC | 123456  | The UTC - GP Clinic      |      AB1234      | ASID:109876543210
+UTC | 654321  | The UTC - Nurse Clinic 1 |      654321      | ASID:101234567890
+UTC | 123457  | The UTC - Nurse Clinic 2 |      123457      | ASID:987654321001
+UTC | 123458  | The UTC - Nurse Clinic 3 |      123458      | ASID:123456789001
 
  
 From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This identifier needs to be specified on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
