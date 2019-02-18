@@ -18,12 +18,14 @@ Version | Handle  | Phase | State           | Release Date | Stability
 The 0.1.6 PREVIEW release has the following highlights:
 
 * A new section in functional spec was created for GP Connect specific content
+  * A page otlining the key requirements for UEC Consuming systems was created
   * A new page comparing GP connect to proprietary booking was added
   * A workflow example for GP Federations was added
 * New content for the "Monitoring, Analytics and Reporting" was created
+  * Including a key metrics specification
 * Added a FAQ page into IG section
 * Added a page on Authentication in Functional Spec section
-* Updated DoS example from GP Fed to UTC
+* Updated DoS workflow example from GP Fed to UTC
 
 <br>
 <br>
