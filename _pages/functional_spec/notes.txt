@@ -1,0 +1,42 @@
+Here's what the Demonstrator checks for:
+Appointment has no ID value.
+It has two contained resources, one a DocumentReference, one a Patient and no others.
+They both have 'contained' type ids.
+The DocumentReference object id is pointed to by a supportingInformation element in the Appointment, prefixed by a #.
+The Patient object id is pointed to by a participant.actor element in the Appointment, prefixed by a #.
+Th Appointment has a 'created' timestamp, which is after 9/11/2018.
+The appointment references only one Slot, which starts with "Slot/".
+The Appointment has a profile of "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1".
+The appointment resource has a language of "en" or "en-GB".
+The appointment has a status of "booked".
+The appointment has a participant with a reference to the contained patient, and an identifier of type 'official' with a system of 'https://fhir.nhs.uk/Id/nhs-number' that looks like an nhs number.
+The appointment has a supportingInformation element that points to the contained DocumentReference resource.
+The appointment has only one supportingInformation element.
+The contained DocumentReference resource has only one identifier.
+The contained DocumentReference's identifier is not null.
+The contained DocumentReference's identifier is >5 and < 37 characters.
+The 'system' of the identifier of the DocumentReference resource is correct for type uuid.
+The contained Patient record has a profile of: https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1
+The contained Patient has no other profiles (perfectly legitimate, but could cause confusion).
+The contained Patient resource has a contained ID, i.e. it does not contain a "/" character.
+The ID is not set to "".
+The Patient has only one Identifier element (minor fault, it could lead to confusion).
+The use of the identifier is not set to null
+The patient has an Identifier with use set to 'official'
+That identifier has a 'system' of https://fhir.nhs.uk/Id/nhs-number
+The identifier is 10 digits long.
+The identifier has the extension which allows it to have a verification status.
+The verification status is "Present and Verified".
+Patient has only one Name
+Patient name is set to a use of 'official'.
+Name has a 'family' component not null, not "", > 2 characters long < 13 characters long.
+Name has a 'given' component not null, not "", > 2 characters long < 13 characters long.
+Patient has a contactPoint set, which is either email or phone.
+Phone contact looks like a UK phone number.
+Email contact looks like an email address.
+Patient has a gender of male or female (other values are permissible, but 'unlikely'.
+Patient has a birthdate in the past, but after 1900.
+Patient has one address.
+Address 'use' is one of expected values.
+Address has a postcode.
+Postcode looks like a valid one.

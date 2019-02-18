@@ -3,7 +3,7 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.5 PREVIEW"
+    version: "v0.1.6 PREVIEW"
     spec: "STU3 | FHIR NHS Scheduling | 1.0.3-alpha"
     speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.3-alpha/"
     folders: 
@@ -112,9 +112,9 @@ entries:
             output: web, pdf"
             url: /fs_workflow.html
           -
-            title: "Differences from GP Connect"
+            title: "GP Connect"
             output: "web, pdf"            
-            url: /fs_gpcdiff.html
+            url: /gpc_overview.html
           -
             title: "Interactions with the DoS"
             output: "web, pdf"            
@@ -128,9 +128,9 @@ entries:
             output: "web, pdf"            
             url: /fs_slotmanagement.html
           -
-            title: "User Privileges"
+            title: "Authentication"
             output: "web, pdf"
-            url: /fs_userprivileges.html
+            url: /fs_authentication.html
           -
             title: "Slot Mapping/Semantics"
             output: "web, pdf"
@@ -175,7 +175,11 @@ entries:
             title: "Information Governance Overview"
             output: "web, pdf"
             url: /ig_overview.html
-        output: web
+          -
+            title: "Information Governance FAQ"
+            output: "web, pdf"
+            url: /ig_faq.html
+        output: web        
       - 
         title: "Assurance Process"
         folderitems: 
