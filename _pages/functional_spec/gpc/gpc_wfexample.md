@@ -66,7 +66,7 @@ Service Type | DoS ID  | Service Name                 | Service ODS Code | Healt
 GP Federation| 123456  | GP Hub - GP Federations Ltd. |      AB1234      | ODS:AB1234
  
  
-From this information we can see that this DoS service will have 1 to many appointment schedules. At this stage ODS code is not relevent to the booking process which means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
+From this information we can see that this DoS service will have 1 to many appointment schedules. The HealthcareServiceID will in this case take the form of an ODS code (prefixed by the "ODS:" identifier). This indicates that the GP Connect SDS query pattern is to be used (rather than Care Connect which will use the "ASID:" Identifier).
 
 The following digram illustrates with a typical return from the DoS, the relationship of DoS services to appointment schedules.
 
@@ -86,4 +86,4 @@ Once all the above is understood we can walk through a typical booking scenario 
 7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry.
 In this scenario, since the target system is the same, the returned URL's from all services that it has profiled will all be the same. 
 8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots that have been shared with this type of consuming service (111).
-9. The consuming system will then filter the returned slots for the "Main location GP Clinic" and identify them to the user/
+9. The consuming system will then filter the returned slots for the "Main location GP Clinic" and identify them to the user
