@@ -10,7 +10,7 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
-The scenario on this page describes one way that booking to a GP Federation might be solved. It is important to note that currently this is one of several possible solutions being considered. This approach closely follows the pattern for service and endpoint discovery adopted for Care Connect booking.
+The scenario on this page describes one way that booking to a GP Federation might be solved. It is important to note that currently this is one of several possible solutions being considered. This approach differs from the pattern for service and endpoint discovery adopted for Care Connect booking.
 
 # Example scenario
 
@@ -48,10 +48,10 @@ Each of the three locations has its own appointment diary represented as a sched
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 
 
-The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule is on this system will be represented on SDS by the same end point. This endpoint will have an ASID (HealthcareServiceID), this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
+The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule is on this system will be represented on SDS by the same end point. This endpoint will have an ASID, this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS). The endpoint will also be linked to an ODS code too.
 
 
-ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
+ID  |  Location Name  | ODS Code | Schedule | Appointment Type | ASID
 ----|-----------------|----------|----------|------------------|---------------------
 1   | Main Location   | AB1234   | 1        | GP               | 109876543210
 1   | Main Location   | AB1234   | 2        | Nurse            | 109876543210
@@ -59,12 +59,11 @@ ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServi
 3   | Other Town GP   | AB1234   | 4        | GP               | 109876543210
 
 
-This service will most likely be represented on the DoS as a single service, the table below shows key information about the associated DoS service and the HealthcareServiceID defined against this service, Note that each service has its own unique HealthcareServiceID:
-
+This service will most likely be represented on the DoS as a single service, the table below shows key information about the associated DoS service and the HealthcareServiceID defined against this service (in the endpoint details), 
 
 Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
 -------------|---------|------------------------------|------------------|---------------------------
-GP Federation| 123456  | GP Hub - GP Federations Ltd. |      AB1234      | 109876543210
+GP Federation| 123456  | GP Hub - GP Federations Ltd. |      AB1234      | ODS:AB1234
  
  
 From this information we can see that this DoS service will have 1 to many appointment schedules. At this stage ODS code is not relevent to the booking process which means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
