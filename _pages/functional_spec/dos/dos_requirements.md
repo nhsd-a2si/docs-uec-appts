@@ -16,7 +16,7 @@ For the three key actors in this process there are the following key requirments
 * The appointment consumer (111 system in the example above):
   * MUST be able to retreive the HealthcareServiceID from the endpoint details returned from the DoS
   * MUST ensure that the booking functionality invoked is compliant with the national standards when a booking endpoint (HealthcareServiceID) is returned
-  * MUST ensure that if no booking endpoint is returned by the GetServiceDetailsByID API call that any proprietary booking mechanisms are then tried and still work
+  * MUST ensure that if no booking endpoint is returned by the GetServiceDetailsByID API call that no other proprietary booking mechanisms are then subsequently tried
 * The DoS:
   * MUST be able to store the HealthcareServiceID
   * MUST return a booking ASID (HealthcareServiceID) as part of its endpoint data
