@@ -9,6 +9,39 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.6 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.6   | PREVIEW | Alpha | Current Version | 20/02/2019   | Volatile
+
+The 0.1.6 PREVIEW release has the following highlights:
+
+* A new section in functional spec was created for GP Connect specific content
+  * A page otlining the key requirements for UEC Consuming systems was created
+  * A new page comparing GP connect to proprietary booking was added
+* New content for the "Monitoring, Analytics and Reporting" was created
+  * Including a key metrics specification
+* Added a FAQ page into IG section
+* Added a page on Authentication in Functional Spec section
+* Updated DoS workflow example from GP Fed to UTC
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.7 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.7   | PREVIEW | Alpha | Unreleased | 01/03/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.5 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -30,22 +63,8 @@ The 0.1.5 PREVIEW release has the following highlights:
 * Resolved issue with the large codeblock on the "Workflow and Interactions" page
 * Some content was added to the "Appointment Management" page
 * The FHIR messaging spec link was updated to the latest version (1.0.3-alpha)
-
 <br>
 <br>
-
-## Future releases
-
-### 0.1.6 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.6   | PREVIEW | Alpha | Unreleased | 11/01/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.4 PREVIEW
 

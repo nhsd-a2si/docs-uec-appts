@@ -1,10 +1,11 @@
 ---
-title: User Privileges
-sidebar: overview_sidebar
+title: GP Connect - Workflow Example
+sidebar: gpc_sidebar
 keywords: specification
-permalink: fs_userprivileges.html
+permalink: gpc_wfexample.html
 toc: false
 folder: functional_spec
 ---
+
 
 {% include note-notpublished.html %}
