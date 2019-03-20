@@ -2,7 +2,7 @@
 title: GP Connect - Workflow Example
 sidebar: gpc_sidebar
 keywords: specification
-permalink: gpc_wfexample.html
+permalink: gpc_wfexample_backup.html
 toc: false
 folder: functional_spec
 ---
