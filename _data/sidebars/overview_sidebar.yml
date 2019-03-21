@@ -1,4 +1,4 @@
---- 
+on--- 
 entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
@@ -156,7 +156,7 @@ entries:
             output: "web, pdf"            
             url: /implementation_FHIR.html
           - 
-            title: "Proof of Concept Demonstrator"
+            title: "Provider and Consumer Demonstrator"
             output: "web, pdf"            
             url: /implementation_poc.html
         output: web        
