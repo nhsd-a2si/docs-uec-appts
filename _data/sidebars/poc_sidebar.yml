@@ -1,11 +1,11 @@
 entries:
-- title: Urgent & Emergency Care Appointment Booking Standards - Proof of Concept
+- title: Urgent & Emergency Care Appointment Booking Standards - Provider and Consumer Demonstrator
   folders:
   
   - title: Overview
     output: web
     folderitems:
     - title: Overview
-      url: /implementation_poc.html
+      url: /demo_overview.html
       output: web, pdf
     
