@@ -158,7 +158,7 @@ entries:
           - 
             title: "Provider and Consumer Demonstrator"
             output: "web, pdf"            
-            url: /implementation_poc.html
+            url: /demo_overview.html
         output: web        
       - 
         title: "First of Type"
