@@ -1,5 +1,5 @@
 ---
-title: Appointment Management
+title: Appointment Management (Cancel and Rebook)
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_apptman.html
