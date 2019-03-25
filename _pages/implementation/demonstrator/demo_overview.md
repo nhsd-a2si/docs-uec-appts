@@ -29,4 +29,5 @@ N.B. in the list above text in <span style="background-color: green;color:white"
 
 This platform will allow experimentation by development teams as well as assisting with some testing for assurance.
 
-The demonstrator can be found here
+The demonstrator webpage can be found <a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">here</a>
+The source and instructions for the demonstrator to be run locally can be found here: <a href="https://github.com/nhsd-a2si/bookingprovider" target="_blank">here</a>
