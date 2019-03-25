@@ -12,17 +12,18 @@ folder: implementation
 
 In order to facilitate development both consiming and providing systems a demonstrator platform will be provided. Ultimatly this will offer the following capabilities:
 
-* Example of a consuming system
-* a directory server that replicates SDS
-* a proxy service that replocates SPS
-* an authorisation service for generating and authenticating JWT tokens
-* a provider service, loaded with synthetic data
-* a website to: 
-    * trigger certain calls
-    * links to useful information
-    * links to reset synthetic data
-    * a JWT token generator utility
-    * Links to annotated sample requests
-    * Build version information
+* <span style="color:red">Example of a consuming system</span>
+* <span style="color:green">a directory server that replicates SDS</span>
+* <span style="color:green">a proxy service that replicates SPS</span>
+* <span style="color:green">an authorisation service for generating and authenticating JWT tokens</span>
+* <span style="color:green">a provider service, loaded with synthetic data</span>
+* <span style="color:green">a website to: </span>
+    * <span style="color:green">trigger certain calls</span>
+    * <span style="color:green">links to useful information</span>
+    * <span style="color:green">links to reset synthetic data</span>
+    * <span style="color:green">a JWT token generator utility</span>
+    * <span style="color:green">Links to annotated sample requests</span>
+    * <span style="color:green">Build version information</span>
+N.B. in the list above text in <span style="background-color: green">green</span> indicates capabilities that are available now and text in <span style="background-color: red>red</span> indicates capabilities that are not currently available.
 
 This platform will allow experimentation by development teams as well as assisting with some testing for assurance.
