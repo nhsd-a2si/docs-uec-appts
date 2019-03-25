@@ -138,7 +138,7 @@ entries:
           -
             title: "Appointment Management"
             output: "web, pdf"
-            url: /fs_apptman.html
+            url: /cr_overview.html
           -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"
