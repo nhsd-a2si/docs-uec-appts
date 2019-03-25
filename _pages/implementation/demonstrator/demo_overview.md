@@ -28,3 +28,5 @@ In order to facilitate development both consiming and providing systems a demons
 N.B. in the list above text in <span style="background-color: green;color:white">green</span> indicates capabilities that are available now and text in <span style="background-color: red;color:white">red</span> indicates capabilities that are not currently available.
 
 This platform will allow experimentation by development teams as well as assisting with some testing for assurance.
+
+The demonstrator can be found here
