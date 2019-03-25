@@ -24,6 +24,6 @@ In order to facilitate development both consiming and providing systems a demons
     * <span style="color:green">a JWT token generator utility</span>
     * <span style="color:green">Links to annotated sample requests</span>
     * <span style="color:green">Build version information</span>
-N.B. in the list above text in <span style="background-color: green">green</span> indicates capabilities that are available now and text in <span style="background-color: red>red</span> indicates capabilities that are not currently available.
+N.B. in the list above text in <span style="background-color: green">green</span> indicates capabilities that are available now and text in <span style="background-color: red">red</span> indicates capabilities that are not currently available.
 
 This platform will allow experimentation by development teams as well as assisting with some testing for assurance.
