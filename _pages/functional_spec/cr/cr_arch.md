@@ -6,3 +6,5 @@ permalink: cr_arch.html
 toc: false
 folder: functional_spec
 ---
+
+{% include note-notpublished.html %}
