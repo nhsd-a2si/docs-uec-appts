@@ -31,3 +31,7 @@ The resource only needs to hold five details:
 * start - The date/time of the Appointment.
 
 The remainder of the Appointment resource is 'boilerplate' content:
+
+{% include codebox.html %}
+
+
