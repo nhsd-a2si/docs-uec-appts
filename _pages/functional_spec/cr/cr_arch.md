@@ -32,6 +32,6 @@ The resource only needs to hold five details:
 
 The remainder of the Appointment resource is 'boilerplate' content:
 
-{% include codebox.html %}
+
 
 
