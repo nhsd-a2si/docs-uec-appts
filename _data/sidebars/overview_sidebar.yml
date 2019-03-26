@@ -136,7 +136,7 @@ entries:
             output: "web, pdf"
             url: /fs_slotmap.html
           -
-            title: "Appointment Management"
+            title: "Appointment Management (Cancel and Rebook)"
             output: "web, pdf"
             url: /cr_overview.html
           -
