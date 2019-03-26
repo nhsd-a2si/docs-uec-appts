@@ -5,3 +5,7 @@ keywords: test
 permalink: test.html
 toc: false
 ---
+
+{% include note-notpublished.html %}
+
+{% codeblock.html %}
