@@ -8,4 +8,4 @@ toc: false
 
 {% include note-notpublished.html %}
 
-{% codeblock.html %}
+{% include codeblock.html %}
