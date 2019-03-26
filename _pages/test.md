@@ -14,7 +14,7 @@ code="
     ""resourceType"": ""Appointment"",
     ""id"": ""0c55f3f6-6e7c-4a3e-b891-286b6a97f0ca"",
     ""meta"": {
-        ""profile"": "https://fhir.hl7.org.uk/STU3/StructureDefinition/[New Profile Name Goes Here]""
+        ""profile"": ""https://fhir.hl7.org.uk/STU3/StructureDefinition/[New Profile Name Goes Here]""
     },
     
 "
