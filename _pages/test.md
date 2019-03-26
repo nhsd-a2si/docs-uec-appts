@@ -9,7 +9,7 @@ toc: false
 {% include note-notpublished.html %}
 
 {% include codebox.html title="Sample Proposed Appointment Pointer"
-contnent="
+content="
 {
     "resourceType": "Appointment",
     "id": "0c55f3f6-6e7c-4a3e-b891-286b6a97f0ca",
