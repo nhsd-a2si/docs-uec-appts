@@ -120,11 +120,11 @@ Using the above the example, services could be configured in DOS as follows:
 
 ## Appointment slot configuration in provider systems
 
-There follows how the slots might be congi
+Generally slots will be configured for a partiucular "clinic" at a specific location. This will have types associated with the clinician (e.g. GP, Nurse etc..) or the type of service (minor injury or illness etc..).
 
 ### DoS Service Search
 
-Services are searched by the 111 System using the DoS Search SOAP API - SOAP API Overview.
+Services are searched by the 111 System using the DoS Search SOAP API.
 
 ### DoS Service Search Results
 
@@ -132,20 +132,29 @@ The response returned from DoS ranks the services in the order in which they sho
 
 ### Scenarios:
 
-* A Patient registered at GP-A, their preferred location GP-A1, during the day, need GP - should return 1, 2, 9.   Because patient is registered with GP Practice A.
-1 and 2 give you ODS code and 9 the ASID.  So system knows how to find the service in SDS
-1 and 2 will return a GP Connect interaction type and 9 will return a CareConnect interaction type
-1 and 2 actually return the same GP Connect endpoint and will return the same slots at both locations - so need to discuss if we bother with two services!  If 1 and 2 are open at different times then HAVE to be in the DOS so as not be returned?
-111 system has to use the GP Connect spec to check patient registration and preferred location and so display appointments in order of preference.
-Patient registered at GP-A, 9pm Thursday, need GP - should return 7,9
-Service 7 is a CareConnect service (indicated by the ASID: prefix on address).
-Service 9 is a CareConnect service (indicated by the ASID: prefix on address).
-Patient registered at GP-A, 10am Saturday, need GP - should return 8,7,9
-Service 8 is a CareConnect service (indicated by the ASID: prefix on address).
-Service 7 is a CareConnect service (indicated by the ASID: prefix on address).
-Service 9 is a CareConnect service (indicated by the ASID: prefix on address).
-Patient registered at GP-A, 7pm Tues, need GP - should return 6,9.  Note 10 is NOT returned -as Dx code does not match and nor does the commissioned ODS codes.  But when you do the query appts for that clinic may be returned???
-Service 6 is GP Connect service (indicated by the ODS: prefix).
-Service 9 is a CareConnect service (indicated by the ASID: prefix on address).
-Patient registered at GP-B, 7pm Tues, needs maternity nurse check - should return 10. But when you do the query appts for the extended hours GP may be returned???
-Service 10 is a GP Connect service (indicated by the ODS: prefix on address).
+* A patient registered at GP-A, with their preferred location branch location: GP-A1
+* During the day, an assessment by an urgent care service that determines the patient needs a GP should return services 1, 2 or 9.   
+  * This is because the patient is registered with GP Practice A.
+  * 1 and 2 give you ODS code and 9 the ASID.  So system knows how to find the service in SDS
+  * 1 and 2 will return a GP Connect interaction type and 9 will return a CareConnect interaction type
+  * 1 and 2 actually return the same GP Connect endpoint and will return the same slots at both locations 
+  
+A 111 system has to use the GP Connect specification to check patient registration and preferred location. It will therefore display appointments in order of preference (so for the example patient here, GP-A will be returned first)
+Patient registered at GP-A, 9pm Thursday, need GP - should return services 7 and 9
+
+* Service 7 is a CareConnect service (indicated by the ASID: prefix on address).
+* Service 9 is a CareConnect service (indicated by the ASID: prefix on address).
+
+* A patient registered at GP-A, presenting at 10am on a Saturday, with a need GP outcome - should return services 8,7 and 9
+  * Service 8 is a CareConnect service (indicated by the ASID: prefix on address).
+  * Service 7 is a CareConnect service (indicated by the ASID: prefix on address).
+  * Service 9 is a CareConnect service (indicated by the ASID: prefix on address).
+
+* A patient registered at GP-A, presenting at 7pm Tues, with a need GP outcome - should return services 6 and 9.  
+  (*Note: 10 is NOT returned - as the assessment outcome does not match and nor does the commissioned ODS codes.*)
+  * Service 6 is GP Connect service (indicated by the ODS: prefix).
+  * Service 9 is a CareConnect service (indicated by the ASID: prefix on address).
+
+* A patient registered at GP-B, presenting at 7pm on a Tuesday, needs a maternity nurse check. 
+  * This should return service 10. But when you do the query appts for the extended hours GP slots may be returned
+  * Service 10 is a GP Connect service (indicated by the ODS: prefix on address).
