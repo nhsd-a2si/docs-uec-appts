@@ -33,8 +33,6 @@ This guidance shows how areas highlighted in bold above are used in combination 
 
 The methods used for GP Connect appointment booking are different from CareConnect in terms of the SDS Endpoint Search and the appointment FHIR APIs. The guidance will discuss those differences in the context of why this means DOS services for each type will be configured differently.  Also the behaviour of GP Connect provider systems slot return will need some consideration for the consuming 111 IT System functionality.
 
-And then some examples to show how this could work in practice in terms of how services in DOS can link through to appointment schedules / rotas in provider systems.
-
 ## Example services used in the guidance below
 
 This guidance uses example services to illustrate how they are configured in DoS and in local provider systems in order to show the flow of 111 search for services in DoS and the use of the two different appointment standards.
@@ -42,24 +40,24 @@ This guidance uses example services to illustrate how they are configured in DoS
 <div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;xml&quot;:&quot;&lt;mxfile modified=\&quot;2019-03-20T12:13:33.456Z\&quot; host=\&quot;www.draw.io\&quot; agent=\&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/8.8.0 Chrome/61.0.3163.100 Electron/2.0.2 Safari/537.36\&quot; etag=\&quot;iAuZzs-lfe-xT1Sf9P38\&quot; version=\&quot;10.5.2\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;pCvT3Y6hV7biSGgpgEUX\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 
-* Federation 1 - GP Practice A is in a federation with GP Practice B
-  * GP Practice A:
+* **Federation 1** - GP Practice A is in a federation with GP Practice B
+  * **GP Practice A**:
     * Has GP Connect enabled.
     * It has two locations - GP-A (main location) and GP-A1 (branch location).
     * GP Practice A is only open to its own registered patients.  
-  * GP Practice B
+  * **GP Practice B**
     * Has GP Connect enabled.
     * Has three locations - GP-B (main location) and GP-B1 (branch) and GP-B2 (branch)
     * Offers appointments to its own registered patients at any time. 
     * In addition GP-B provides an extended hours service from 6pm-8pm Monday-Friday to patients from GP Practice A and GP Practice B. 
-* Federation 2 - GP Practice M is in a federation with GP Practice N
+* **Federation 2** - GP Practice M is in a federation with GP Practice N
 * In addition, all these GP Practices are in one CCG - called CCG1
   * And this CCG has commissioned an extended hours service from Hub X for all their registered patients open on Saturday mornings 9-12am. 
   * Hub X also operates a wider OOHs service for the CCG that supports telephone appointments and home visits. 
   * This service uses an IT system that is CareConnect enabled. 
-* A UTC service called Hub Y using a system that has CareConnect messaging enabled which is open to any patients
-* An ED service called Hub Z using a system that has CareConnect messaging enabled which is open to any patients
-* A UTC and OOH service called Hub G using a system that has GP Connect messaging:
+* A UTC service called **Hub Y** using a system that has CareConnect messaging enabled which is open to any patients
+* An ED service called **Hub Z** using a system that has CareConnect messaging enabled which is open to any patients
+* A UTC and OOH service called **Hub G** using a system that has GP Connect messaging:
   * And extended hours clinic open to Fed 2 patients only
   * A UTC open to all
 
@@ -78,9 +76,9 @@ Examples of these data items are as follows  - full list of items are included h
 
 ## DOS Services - how are they configured?
 
-Note the DoS has a system limitation preventing duplicate ODS codes in the DoS entries.  This means that DoS Leads follow a procedure for adding the correct ODS code for a main GP Practice and use "dummy" ODS codes for services that may be in the DoS separately from the core practice, even though they are run and managed by that practice.  So for example, a main GP Practice will be included in the DOS with it's correctly assigned ODS code but may include another entry for a specific extended hours clinic available to a wider set of patients with a dummy ODS code.
+The DoS has a system limitation preventing duplicate ODS codes in the DoS entries.  This means that DoS Leads follow a procedure for adding the correct ODS code for a main GP Practice and use "dummy" ODS codes for services that may be in the DoS separately from the core practice, even though they are run and managed by that practice. For example, a main GP Practice will be included in the DOS with it's correctly assigned ODS code but may include another entry for a specific extended hours clinic available to a wider set of patients with a dummy ODS code.
 
-Endpoints hold these details:
+**Endpoints hold these details:**
 
 | Field Name       | Type   | Description                                                                  |
 |------------------|--------|------------------------------------------------------------------------------|
@@ -93,7 +91,7 @@ Endpoints hold these details:
 | order            | int    | the order in which the endpoint should be used, if more than one is provided |
 | transport        | string | type of address - ITK, email, phone                                          |
 
-For appointment endpoints the here are the settings:
+For settings for the appointment endpoints:
 
 | Field                  | Description / example                              |
 |------------------------|----------------------------------------------------|
@@ -105,7 +103,7 @@ For appointment endpoints the here are the settings:
 | Address (GP Connect)   | ODS:[Correct ODS code for the service]             |
 | Address (Care Connect) | ASID:[Spine ASID for the service]                  |
 
-Using the above the example services could be configured in DOS as follows:
+Using the above the example, services could be configured in DOS as follows:
 
 | Example service | Service Name                      | ODS Code  | DoS Service ID | Dispositions                    | Opening hours                        | Location | ODS commissioned | Appointment Endpoint address |
 |-----------------|-----------------------------------|-----------|----------------|---------------------------------|--------------------------------------|----------|------------------|------------------------------|
@@ -122,7 +120,7 @@ Using the above the example services could be configured in DOS as follows:
 
 ## Appointment slot configuration in provider systems
 
-Think we need to show:
+There follows how the slots might be congi
 
 ### DoS Service Search
 
@@ -130,11 +128,11 @@ Services are searched by the 111 System using the DoS Search SOAP API - SOAP API
 
 ### DoS Service Search Results
 
-The response returned from DoS ranks the services in the order in which they should be used for transfers of care.  The details returned include all the information required to support the ongoing transfer of care process including technical integration methods.  The full list of fields returned for each service are listed here.
+The response returned from DoS ranks the services in the order in which they should be used for transfers of care.  The details returned include all the information required to support the ongoing transfer of care process including technical integration methods.  
 
 ### Scenarios:
 
-Patient registered at GP-A, preferred location GP-A1, during the day, need GP - should return 1, 2, 9.   Because patient is registered with GP Practice A.
+* A Patient registered at GP-A, their preferred location GP-A1, during the day, need GP - should return 1, 2, 9.   Because patient is registered with GP Practice A.
 1 and 2 give you ODS code and 9 the ASID.  So system knows how to find the service in SDS
 1 and 2 will return a GP Connect interaction type and 9 will return a CareConnect interaction type
 1 and 2 actually return the same GP Connect endpoint and will return the same slots at both locations - so need to discuss if we bother with two services!  If 1 and 2 are open at different times then HAVE to be in the DOS so as not be returned?
