@@ -13,21 +13,22 @@ folder: functional_spec
 
 ## Overview
 
-This guidance is to detail how the DoS is used in combination with a 111 IT system and service provider systems to join up finding a service for a patient and booking an appointment direct for them into the service provider system.
+This guidance is to detail how the DoS is used in combination with a 111 IT system and service provider systems to join up finding a service for a patient and booking an appointment directly for them into the service provider system.
 
-The scenario is as follows:
+**The scenario is as follows:**
 
-DOS Leads will set-up services in the DoS that match specific patient needs returned from an NHS Pathways assessment - DOS Service Configuration
-Administrators of the local Service Provider IT Systems will configure the schedules / rotas to open up appointments to the GP Connect or Care Connect APIs - Service Provider IT System Configuration
-A patient calls 111 on their phone and gets through to a 111 service health advisor
-The health advisor takes them through an NHS Pathways assessment using their 111 IT System and determines what the patient need is, for example an urgent appointment with a GP
-The 111 IT System searches the DoS with the details of the patient and the assessment outcome - DoS Service Search
-The DoS returns a ranked list of services that includes the metadata about those services, information on the referral and booking endpoints is also returned including the type of end point for appointment booking - DoS Service Search Results
-The 111 IT System displays the returned services to the user, who selects one (note the logic for display and user interaction is not discussed here)
-If an endpoint exists in the metadata for appointments, the 111 IT System will display to the user that appointments are bookable at this service, and so the user can choose to book the patient in
-The 111 IT System will use the endpoint information to retrieve the booking API endpoint from SDS - SDS Endpoint Search
-A request will be made for appointment slots from the 111 IT System to the chosen Service Provider IT system, using the retrieved API endpoint to retrieve all available and appropriate slots from the appointment schedules at the chosen service - GP Connect or CareConnect Appointment Slot Search
-The Service Provider IT system will return available slots and the user will choose one and then follow the process to book in - note this is not in these notes as that is detailed in the appropriate API specification
+* DOS Leads will set-up services in the DoS that match specific patient needs returned from an NHS Pathways assessment - **DOS Service Configuration**
+* Administrators of the local Service Provider IT Systems will configure the schedules / rotas to open up appointments to the GP Connect or Care Connect APIs - **Service Provider IT System Configuration**
+* A patient calls 111 on their phone and gets through to a 111 service health advisor
+* The health advisor takes them through an NHS Pathways assessment using their 111 IT System and determines what the patient need is, for example an urgent appointment with a GP
+* The 111 IT System searches the DoS with the details of the patient and the assessment outcome - **DoS Service Search**
+* The DoS returns a ranked list of services that includes the metadata about those services, information on the referral and booking endpoints is also returned including the type of end point for appointment booking - **DoS Service Search Results**
+* The 111 IT System displays the returned services to the user, who selects one (*note: the logic for display and user interaction is not discussed here*)
+* If an endpoint exists in the metadata for appointments, the 111 IT System will display to the user that appointments are bookable at this service, and so the user can choose to book the patient in
+* The 111 IT System will use the endpoint information to retrieve the booking API endpoint from SDS - **SDS Endpoint Search**
+* A request will be made for appointment slots from the 111 IT System to the chosen Service Provider IT system, using the retrieved API endpoint to retrieve all available and appropriate slots from the appointment schedules at the chosen service - **GP Connect or CareConnect Appointment Slot Search**
+* The Service Provider IT system will return available slots and the user will choose one and then follow the process to book in (*note: this is not in these notes as that is detailed in the appropriate API specification*)
+
 This guidance shows how areas highlighted in bold above are used in combination to return the appointment capability for services.
 
 The methods used for GP Connect appointment booking are different from CareConnect in terms of the SDS Endpoint Search and the appointment FHIR APIs. The guidance will discuss those differences in the context of why this means DOS services for each type will be configured differently.  Also the behaviour of GP Connect provider systems slot return will need some consideration for the consuming 111 IT System functionality.
