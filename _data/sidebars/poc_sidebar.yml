@@ -1,7 +1,6 @@
 tentries:
 - title: Urgent & Emergency Care Appointment Booking Standards - Provider and Consumer Demonstrator
-  folders:
-  
+  folders:  
   - title: Demonstrator
     output: web
     folderitems:
