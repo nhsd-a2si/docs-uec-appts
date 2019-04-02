@@ -9,6 +9,34 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.7 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.7   | PREVIEW | Alpha | Current Version | 05/04/2019   | Volatile
+
+The 0.1.7 PREVIEW release has the following highlights:
+
+* A Detailed work through of a complex workflow was added to the GP Connect section
+* A new section for appointment management (Cancel and Rebook) was created
+  * This includes a section on technical architecture and workflow
+* New content for the demonstrator guidance was added
+<br>
+<br>
+
+## Future releases
+
+### 0.1.8 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.8   | PREVIEW | Alpha | Unreleased | 18/4/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.6 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -25,22 +53,6 @@ The 0.1.6 PREVIEW release has the following highlights:
 * Added a FAQ page into IG section
 * Added a page on Authentication in Functional Spec section
 * Updated DoS workflow example from GP Fed to UTC
-
-<br>
-<br>
-
-## Future releases
-
-### 0.1.7 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.7   | PREVIEW | Alpha | Unreleased | 01/03/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.5 PREVIEW
 
