@@ -1,0 +1,20 @@
+entries: 
+  - 
+    folders: 
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: Overview
+            url: /cr_overview.html
+          - 
+            output: "web, pdf"
+            title: Architecture
+            url: /cr_arch.html    
+          - 
+            output: "web, pdf"
+            title: Workflow
+            url: /cr_workflow.html    
+        output: web
+        title: Cancel and Rebook
+    title: "Urgent & Emergency Care Appointment Booking Standards - Cancel and Rebook"
