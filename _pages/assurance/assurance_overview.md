@@ -25,49 +25,50 @@ The assurance process is illustrated in the following interactive diagram. For d
 
 ## Supplier
 
-  ### Explore requirements and standards
+### Explore requirements and standards
+
+  Explore published documentation covering detailed technical and business requirements available on NHS Developer portal
+
+### Design, build and self test
+
+  Using published documentation, gaining access to NHS Digital integration test environments design, build and self test solution
+
+### Integration testing
+
+  Technical confirmance with Solutions ASsurance (SA) team. Undertaking testing and validation activities against a services requirements. 
+  Providing evidence where applicable. Completing the <a href="assurance_scal.html" target="_blank">Supplier Conformance Assessment List</a>
+
+### Completion of SCAL
 
   qwerty
 
-  ### Design, build and self test
+### Technical conformance certificate
 
   qwerty
 
-  ### Integration testing
-
-  qwerty
-
-  ### Completion of SCAL
-
-  qwerty
-
-  ### Technical conformance certificate
-
-  qwerty
-
-  ### Connection agreement
+### Connection agreement
 
   qwerty
 
 ## Service provider/comissioner
 
-  ### Elegibility and prerequisites
+### Elegibility and prerequisites
 
   qwerty
   
-  ### End user NHS Digital service pack
+### End user NHS Digital service pack
 
   qwerty
 
-  ### Local Assurance
-
-  qwerty
-  
-  ### End user preparation
+### Local Assurance
 
   qwerty
   
-  ### On-line end user agreement
+### End user preparation
+
+  qwerty
+  
+### On-line end user agreement
 
   qwerty
   
