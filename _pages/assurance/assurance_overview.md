@@ -67,21 +67,23 @@ Ensure adherance to NHS Digital service specific requirements
 
 ### Local Assurance
 
-qwerty
+Undertake local risk assessments for implementation incluiding assessment of changes to or nwe business processes, technology and non-functional requirements.
+
+Undertake user acceptance testing
   
 ### End user preparation
 
-qwerty
+Training completed for end users and any local configuration/RBAC changes in place.
   
 ### On-line end user agreement
 
-qwerty
+End points can be created once EUD for sites completed and approved.
   
 ## Service provider and supplier
 
 ### Technical Prep
 
-qwerty
+Technical checks to live 
 
 ### Business Prep
 
