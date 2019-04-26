@@ -23,6 +23,55 @@ The assurance process is illustrated in the following interactive diagram. For d
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 
 
+## Supplier
+
+  ### Explore requirements and standards
+
+  qwerty
+
+  ### Design, build and self test
+
+  qwerty
+
+  ### Integration testing
+
+  qwerty
+
+  ### Completion of SCAL
+
+  qwerty
+
+  ### Technical conformance certificate
+
+  qwerty
+
+  ### Connection agreement
+
+  qwerty
+
+## Service provider/comissioner
+
+  ### Elegibility and prerequisites
+
+  qwerty
+  
+  ### End user NHS Digital service pack
+
+  qwerty
+
+  ### Local Assurance
+
+  qwerty
+  
+  ### End user preparation
+
+  qwerty
+  
+  ### On-line end user agreement
+
+  qwerty
+  
+## Service provider and supplier
 
 ## Testing Assets 
 TBC - Details of POC? 
