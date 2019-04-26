@@ -29,6 +29,7 @@ The assurance process is illustrated in the following interactive diagram. For d
 ### Explore requirements and standards
 
 Explore published documentation covering detailed technical and business requirements available on NHS Developer portal
+<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Design, build and self test
 
