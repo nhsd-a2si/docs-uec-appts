@@ -29,25 +29,25 @@ The assurance process is illustrated in the following interactive diagram. For d
 ### Explore requirements and standards
 
 Explore published documentation covering detailed technical and business requirements available on NHS Developer portal
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Design, build and self test
 
 Using published documentation, gaining access to NHS Digital integration test environments design, build and self test solution
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Integration testing
 
 Technical conformance with Solutions ASsurance (SA) team. Undertaking testing and validation activities against a services requirements. 
 Providing evidence where applicable. 
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Completion of SCAL
 
 Completing the <a href="assurance_scal.html" target="_blank">Supplier Conformance Assessment List</a> (SCAL).
  
 N.B. If the supplier is new to NHS Digital a completely new SCAL will be required. If the supplier has previously been onboarded by NHS Digital then only an uplift of the current SCAL (by completing service specific tab) is required.  
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Technical conformance certificate
 
@@ -56,7 +56,7 @@ On successful completion of technical conformance  NHS Digital solutions assuran
 ### Connection agreement
 
 With completed SCAL and Technical Conformance Certificate in place NHS Digital live services arrange for a Connection Agreement to be signed and enable product creation/uplift on the EPR tool.
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ## Service provider/comissioner
 
@@ -66,36 +66,36 @@ Establish the required pre-requisites are in place:
 e.g.
 * Clinical Safety
 * Data Securty 
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### End user NHS Digital service pack
 
 Ensure adherance to NHS Digital service specific requirements
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Local Assurance
 
 Undertake local risk assessments for implementation incluiding assessment of changes to or nwe business processes, technology and non-functional requirements.
 
 Undertake user acceptance testing
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### End user preparation
 
 Training completed for end users and any local configuration/RBAC changes in place.
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### On-line end user agreement
 
 End points can be created once EUD for sites completed and approved.
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ## Service provider and supplier
 
 ### Technical Prep
 
 Technical checks to live spine URL, checking live config of endpoints etc.. confirming all necessary certificates are in place.
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Business Prep
 
@@ -105,4 +105,4 @@ Business processes and resources ready
 ### Go-Live
 
 Technical and Business go-lives
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
