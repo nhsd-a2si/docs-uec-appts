@@ -1,6 +1,6 @@
 ---
 title: Overview of Assurance Process
-toc: True
+toc: False
 sidebar: overview_sidebar
 permalink: assurance_overview.html
 summary: "Overview of the assurance processes involved in developing and deploying a solution"
