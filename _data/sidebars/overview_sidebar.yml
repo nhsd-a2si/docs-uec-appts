@@ -188,6 +188,11 @@ entries:
             output: "web, pdf"            
             url: /assurance_overview.html
           - 
+            title: "Supplier Conformance Assessment List (SCAL)"
+            output: "web, pdf"            
+            url: /assurance_scal.html
+            output: web  
+          - 
             title: "Supplier Assurance Process"
             output: "web, pdf"            
             url: /assurance_supplier.html
