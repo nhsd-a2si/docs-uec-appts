@@ -83,20 +83,12 @@ End points can be created once EUD for sites completed and approved.
 
 ### Technical Prep
 
-Technical checks to live 
+Technical checks to live spine URL, checking live config of endpoints etc.. confirming all necessary certificates are in place.
 
 ### Business Prep
 
-qwerty
+Business processes and resources ready
 
 ### Go-Live
 
-qwerty
-
-
-
-## Testing Assets 
-TBC - Details of POC? 
-
-## Test Environments 
-TBC - Details of POC?
+Technical and Business go-lives
