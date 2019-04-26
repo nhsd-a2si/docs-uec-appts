@@ -56,11 +56,14 @@ With completed SCAL and Technical Conformance Certificate in place NHS Digital l
 
 ### Elegibility and prerequisites
 
-qwerty
+Establish the required pre-requisites are in place:
+e.g.
+* Clinical Safety
+* Data Securty 
   
 ### End user NHS Digital service pack
 
-qwerty
+Ensure adherance to NHS Digital service specific requirements
 
 ### Local Assurance
 
