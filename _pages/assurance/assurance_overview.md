@@ -36,13 +36,13 @@ Using published documentation, gaining access to NHS Digital integration test en
 ### Integration testing
 
 Technical conformance with Solutions ASsurance (SA) team. Undertaking testing and validation activities against a services requirements. 
-Providing evidence where applicable. Completing the <a href="assurance_scal.html" target="_blank">Supplier Conformance Assessment List</a> (SCAL).
- 
-N.B. If the supplier is new to NHS Digital a completely new SCAL will be required. If the supplier has previously been onboarded by NHS Digital then only an uplift of the current SCAL (by completing service specific tab) is required.
+Providing evidence where applicable. 
 
 ### Completion of SCAL
 
-  
+Completing the <a href="assurance_scal.html" target="_blank">Supplier Conformance Assessment List</a> (SCAL).
+ 
+N.B. If the supplier is new to NHS Digital a completely new SCAL will be required. If the supplier has previously been onboarded by NHS Digital then only an uplift of the current SCAL (by completing service specific tab) is required.  
 
 ### Technical conformance certificate
 
@@ -50,7 +50,7 @@ On successful completion of technical conformance  NHS Digital solutions assuran
 
 ### Connection agreement
 
-qwerty
+With completed SCAL and Technical Conformance Certificate in place NHS Digital live services arrange for a Connection Agreement to be signed and enable product creation/uplift on the EPR tool.
 
 ## Service provider/comissioner
 
