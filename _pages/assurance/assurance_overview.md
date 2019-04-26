@@ -27,50 +27,52 @@ The assurance process is illustrated in the following interactive diagram. For d
 
 ### Explore requirements and standards
 
-  Explore published documentation covering detailed technical and business requirements available on NHS Developer portal
+Explore published documentation covering detailed technical and business requirements available on NHS Developer portal
 
 ### Design, build and self test
 
-  Using published documentation, gaining access to NHS Digital integration test environments design, build and self test solution
+Using published documentation, gaining access to NHS Digital integration test environments design, build and self test solution
 
 ### Integration testing
 
-  Technical confirmance with Solutions ASsurance (SA) team. Undertaking testing and validation activities against a services requirements. 
-  Providing evidence where applicable. Completing the <a href="assurance_scal.html" target="_blank">Supplier Conformance Assessment List</a>
+Technical conformance with Solutions ASsurance (SA) team. Undertaking testing and validation activities against a services requirements. 
+Providing evidence where applicable. Completing the <a href="assurance_scal.html" target="_blank">Supplier Conformance Assessment List</a> (SCAL).
+ 
+N.B. If the supplier is new to NHS Digital a completely new SCAL will be required. If the supplier has previously been onboarded by NHS Digital then only an uplift of the current SCAL (by completing service specific tab) is required.
 
 ### Completion of SCAL
 
-  qwerty
+  
 
 ### Technical conformance certificate
 
-  qwerty
+On successful completion of technical conformance  NHS Digital solutions assurance provider a Technical Conformance Certificate
 
 ### Connection agreement
 
-  qwerty
+qwerty
 
 ## Service provider/comissioner
 
 ### Elegibility and prerequisites
 
-  qwerty
+qwerty
   
 ### End user NHS Digital service pack
 
-  qwerty
+qwerty
 
 ### Local Assurance
 
-  qwerty
+qwerty
   
 ### End user preparation
 
-  qwerty
+qwerty
   
 ### On-line end user agreement
 
-  qwerty
+qwerty
   
 ## Service provider and supplier
 
