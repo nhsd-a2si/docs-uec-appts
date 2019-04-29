@@ -16,6 +16,7 @@ summary: "Description of the Supplier Conformance Assessment List (SCAL)"
 * When the Technical Conformance process is complete, the SCAL will be provided to the End User Organisation via the 'Portal' for the NHS Digital Service API (see Further Information section below for specific links). This is done to assist the End User Organisation in assessing and accepting the Supplier Product. As stated in the End User Declaration, the End User Organisation is responsible for evaluating the information in this SCAL and undertaking local risk assessments and assurance of the Supplier Product. 
 
 ## Technical Conformance process
+
 * Technical Conformance assessment involves 'local' (Supplier) testing against an NHS Digital provided interface stub, followed by end-to-end testing in a live-like environment. 
 * Once these are satisfactorily completed, NHS Digital will confirm that the Technical Conformance process is complete and issue a Technical Conformance Certificate. 
 * The Supplier will then be guided to enter into a Connection Agreement with NHS Digital.
@@ -29,7 +30,8 @@ All Requirements, contact details and processes are outlined on the following 'P
 - NHS e-Referral Service (https://developer.nhs.uk/apis/e-Referrals/)
 - EPS Prescription tracker (TBC)
 	
-## Roles and Responsibilities 		
+## Roles and Responsibilities 	
+
 The table below outlines the roles and responsibilities for those who will either complete or review the Supplier Conformance checklist		
 | Role                    | Responsibility within the Technical Conformance process                                                                                                                                                                                                                                                                                                                                                                       |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
