@@ -35,14 +35,14 @@ The table below outlines the roles and responsibilities for those who will eithe
 
 | Role                    | Responsibility within the Technical Conformance process                                                |
 |-------------------------|--------------------------------------------------------------------------------------------------------|
-| End User Organisation   | The organisation that will deploy the Supplier System/Product for use in direct patient care, often by 
-                            healthcare professionals. Accountable for reviewing the content of the completed Supplier Conformance   
-                            Assessment Checklist and undertaking local assurance, risk management and acceptance of the Product.    
+| End User Organisation   | The organisation that will deploy the Supplier System/Product for use in direct patient care, often by <br> 
+                            healthcare professionals. Accountable for reviewing the content of the completed Supplier Conformance  <br> 
+                            Assessment Checklist and undertaking local assurance, risk management and acceptance of the Product.   <br> 
                             The End User Organisation may also be the Supplier, if a Product is developed in-house                 |
-| Supplier                | Organisation responsible for developing the System or Product that will interface with an NHS Digital  |
-                            Spine Service and be deployed by an End User Organisation. Responsible for completing the relevant     
-                            sections of the Supplier Conformance Assessment List, and thus demonstrating compliance against the    
+| Supplier                | Organisation responsible for developing the System or Product that will interface with an NHS Digital  <br>
+                            Spine Service and be deployed by an End User Organisation. Responsible for completing the relevant     <br>
+                            sections of the Supplier Conformance Assessment List, and thus demonstrating compliance against the    <br>
                             requirement set and agreeing to a Connection Agreement.                                                |
-| NHS Digital             | Responsible for reviewing the relevant sections of the Supplier Conformance Assessment Checklist for   |
-                            completion Responsible for ensuring guidance is provided to the Supplier completion of the SCAL.       
+| NHS Digital             | Responsible for reviewing the relevant sections of the Supplier Conformance Assessment Checklist for   <br>
+                            completion Responsible for ensuring guidance is provided to the Supplier completion of the SCAL.       <br>
                             Provides a certificate of technical conformance on successful completion of the SCAL.                  |
