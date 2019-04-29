@@ -32,6 +32,7 @@ All Requirements, contact details and processes are outlined on the following 'P
 ## Roles and Responsibilities 	
 
 The table below outlines the roles and responsibilities for those who will either complete or review the Supplier Conformance checklist:		
+
 | Role                    | Responsibility within the Technical Conformance process |
 |-------------------------|---------------------------------------------------------|
 | End User Organisation   | The organisation that will deploy the Supplier System/Product for use in direct patient care, often by healthcare professionals. Accountable for reviewing the content of the completed Supplier Conformance   Assessment Checklist and undertaking local assurance, risk management and acceptance of the Product. The End User Organisation may also be the Supplier, if a Product is developed in-house |
