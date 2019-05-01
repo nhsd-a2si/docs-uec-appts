@@ -19,15 +19,6 @@ permalink: assurance_scal.html
 * Technical Conformance assessment involves 'local' (Supplier) testing against an NHS Digital provided interface stub, followed by end-to-end testing in a live-like environment. 
 * Once these are satisfactorily completed, NHS Digital will confirm that the Technical Conformance process is complete and issue a Technical Conformance Certificate. 
 * The Supplier will then be guided to enter into a Connection Agreement with NHS Digital.
-
-Further Information
-All Requirements, contact details and processes are outlined on the following 'Portals' for each NHS Digital Service API.
-- NRLS (https://developer.nhs.uk/apis/nrls/)
-- GP Connect (https://developer.nhs.uk/apis/gpconnect/)
-- NHS Digital SMSP-PDS (https://developer.nhs.uk/library/systems/nhs-digital-smsp-pds/)
-- NEMS https://developer.nhs.uk/apis/ems-beta/NHS Login
-- NHS e-Referral Service (https://developer.nhs.uk/apis/e-Referrals/)
-- EPS Prescription tracker (TBC)
 	
 ## Roles and Responsibilities 	
 
