@@ -24,6 +24,8 @@ As a provider system, it is therefore expected that there will be a mechanism in
 
 ## Important DoS workflow considerations
 
+* How should a booking only service be profiled on the DoS?
+
 * What if a service is profiled for both triage outcomes that are appropriate for an appointment and other outcomes that are not appropriate?
 
 *The reccomendation is that where two different clinical profiles are required (e.g. booking and not booking triage outcomes), two DoS services are used. Only one would have a booking endpoint configured.*
