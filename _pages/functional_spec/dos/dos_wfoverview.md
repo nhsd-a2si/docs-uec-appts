@@ -34,7 +34,7 @@ As a provider system, it is therefore expected that there will be a mechanism in
 
 * How do you know what type of booking interaction is required by the provider system? Is it stored on the DoS?
 
-*When a call to SDS is made, the response will have an intereaction id. This will be different depending on whether it is GP Connect or CareConnect that is to be used for that endpoint.*
+*When a call to SDS is made, the response will have an interaction id. This will be different depending on whether it is GP Connect or CareConnect that is to be used for that endpoint.*
 
 * If a provider system is compliant with GP Connect and Care Connect, could you get two endpoints on SDS for the same DoS service?
 
