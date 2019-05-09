@@ -24,6 +24,7 @@ The 0.1.8 PREVIEW release has the following highlights:
   * A new section describing the SCAL document was created
 * Additional information in the DoS workflow overview section describing the reccomendation for how a booking only service should be profiled
 * a Broken link in the DoS workflow section was fixed
+* Fixed an incorrect release state for previous releases in the release notes
 
 <br>
 <br>
@@ -45,7 +46,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.7   | PREVIEW | Alpha | Current Version | 05/04/2019   | Volatile
+0.1.7   | PREVIEW | Alpha | Released | 05/04/2019   | Volatile
 
 The 0.1.7 PREVIEW release has the following highlights:
 
@@ -58,7 +59,7 @@ The 0.1.7 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.6   | PREVIEW | Alpha | Current Version | 20/02/2019   | Volatile
+0.1.6   | PREVIEW | Alpha | Released | 20/02/2019   | Volatile
 
 The 0.1.6 PREVIEW release has the following highlights:
 
@@ -75,7 +76,7 @@ The 0.1.6 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.5   | PREVIEW | Alpha | Current Version | 04/01/2019   | Volatile
+0.1.5   | PREVIEW | Alpha | Released | 04/01/2019   | Volatile
 
 The 0.1.5 PREVIEW release has the following highlights:
 * New DoS subsite in functional specification was created
@@ -99,7 +100,7 @@ The 0.1.5 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.4   | PREVIEW | Alpha | Current Version | 07/12/2018   | Volatile
+0.1.4   | PREVIEW | Alpha | Released | 07/12/2018   | Volatile
 
 The 0.1.4 PREVIEW release has the following highlights:
 * Small update to the glossary
