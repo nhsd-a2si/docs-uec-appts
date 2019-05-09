@@ -3,7 +3,7 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.7 PREVIEW"
+    version: "v0.1.8 PREVIEW"
     spec: "STU3 | FHIR NHS Scheduling | 1.0.3-alpha"
     speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.3-alpha/"
     folders: 
@@ -188,7 +188,12 @@ entries:
             output: "web, pdf"            
             url: /assurance_overview.html
           - 
-            title: "Supplier Assurance Process"
+            title: "Supplier Conformance Assessment List (SCAL)"
+            output: "web, pdf"            
+            url: /assurance_scal.html
+            output: web  
+          - 
+            title: "Supplier Assurance Prerequisites and requirements"
             output: "web, pdf"            
             url: /assurance_supplier.html
         output: web        

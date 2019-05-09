@@ -1,5 +1,5 @@
 ---
-title: Supplier Assurance Process
+title: Supplier Assurance Prerequisites and requirements
 toc: True
 sidebar: overview_sidebar
 permalink: assurance_supplier.html
