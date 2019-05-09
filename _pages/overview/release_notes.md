@@ -22,9 +22,9 @@ The 0.1.8 PREVIEW release has the following highlights:
     * Complete high level description of assurance and on-boarding process
     * Addition of an interactive assurance process info-graphic
   * A new section describing the SCAL document was created
-  * "Supplier assurance process" page (and associated menu item) was renamed to "Supplier Assurance Prerequisites and requirements"
+  * "Supplier assurance process" page (and associated menu item) was renamed to "Supplier Assurance Prerequisites and Requirements"
 * Additional information in the DoS workflow overview section describing the recommendation for how a booking only service should be profiled
-* a broken link in the DoS workflow section was fixed
+* A broken link in the DoS workflow section was fixed
 * Fixed an incorrect release state for previous releases in the release notes
 
 <br>
