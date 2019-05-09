@@ -5,7 +5,6 @@ sidebar: overview_sidebar
 permalink: assurance_overview.html
 summary: "Overview of the assurance processes involved in developing and deploying a solution"
 ---
-{% include note-notpublished.html %}
 
 The assurance process that has been adopted for the UEC Appointment Booking standard is based on the following principles:
 
