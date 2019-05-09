@@ -9,6 +9,38 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.8 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.8   | PREVIEW | Alpha | Current Version | 17/05/2019   | Volatile
+
+The 0.1.8 PREVIEW release has the following highlights:
+
+* Update to the assurance section encompasing the following new content:
+  * Update to the assurance overview section
+    * Complete high level description of assurance and onboarding process
+    * Addition of an interactive assurance process infographic
+  * A new section describing the SCAL document was created
+* Additional information in the DoS workflow overview section describing the reccomendation for how a booking only service should be profiled
+* a Broken link in the DoS workflow section was fixed
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.9 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.9   | PREVIEW | Alpha | Unreleased | 14/06/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.7 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -21,21 +53,6 @@ The 0.1.7 PREVIEW release has the following highlights:
 * A new section for appointment management (Cancel and Rebook) was created
   * This includes a section on technical architecture and workflow
 * New content for the demonstrator guidance was added
-<br>
-<br>
-
-## Future releases
-
-### 0.1.8 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.8   | PREVIEW | Alpha | Unreleased | 18/4/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.6 PREVIEW
 
