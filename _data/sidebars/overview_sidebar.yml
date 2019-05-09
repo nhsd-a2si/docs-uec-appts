@@ -193,7 +193,7 @@ entries:
             url: /assurance_scal.html
             output: web  
           - 
-            title: "Supplier Assurance Process"
+            title: "Supplier Assurance Prerequisites and requirements"
             output: "web, pdf"            
             url: /assurance_supplier.html
         output: web        
