@@ -89,7 +89,7 @@ Training completed for end users and any local configuration/RBAC changes in pla
 
 ### On-line end user agreement
 
-An online portal is provided to allow the end user organisation to understake and track the steps required to digitally "sign" the end user declaration (EUD). This will include acknowledgement that the organisation has read, understood and accept the chosen products SCAL.
+An online portal is provided to allow the end user organisation to undertake and track the steps required to digitally "sign" the end user declaration (EUD). This will include acknowledgement that the organisation has read, understood and accepted the chosen products SCAL.
 
 End points can be created once EUD for sites completed and approved.
 <a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
