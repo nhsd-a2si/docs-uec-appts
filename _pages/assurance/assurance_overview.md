@@ -60,6 +60,8 @@ With completed SCAL and Technical Conformance Certificate in place NHS Digital l
 
 ## Service provider/comissioner
 
+The following process would be completed by the comissioning organisation that is responsible for the service that will be using the products assured by the supplier product assurance process
+
 ### Elegibility and prerequisites
 
 Establish the required pre-requisites are in place:
@@ -86,6 +88,8 @@ Training completed for end users and any local configuration/RBAC changes in pla
 <a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### On-line end user agreement
+
+An online portal is provided to allow the end user organisation to understake and track the steps required to digitally "sign" the end user declaration (EUD). This will include acknowledgement that the organisation has read, understood and accept the chosen products SCAL.
 
 End points can be created once EUD for sites completed and approved.
 <a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
