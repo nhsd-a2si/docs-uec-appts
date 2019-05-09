@@ -17,14 +17,14 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 The 0.1.8 PREVIEW release has the following highlights:
 
-* Update to the assurance section encompasing the following new content:
+* Update to the assurance section encompassing the following new content:
   * Update to the assurance overview section
-    * Complete high level description of assurance and onboarding process
-    * Addition of an interactive assurance process infographic
+    * Complete high level description of assurance and on-boarding process
+    * Addition of an interactive assurance process info-graphic
   * A new section describing the SCAL document was created
-* Additional information in the DoS workflow overview section describing the reccomendation for how a booking only service should be profiled
+* Additional information in the DoS workflow overview section describing the recommendation for how a booking only service should be profiled
 * a Broken link in the DoS workflow section was fixed
-* Fixed an incorrect release state for previous releases in the release notes
+Fixed an incorrect release state for previous releases in the release notes
 
 <br>
 <br>
