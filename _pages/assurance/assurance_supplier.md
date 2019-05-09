@@ -1,12 +1,10 @@
 ---
-title: Supplier Assurance Prerequisites and requirements
+title: Supplier Assurance Prerequisites and Requirements
 toc: True
 sidebar: overview_sidebar
 permalink: assurance_supplier.html
 summary: "Details of what activities form the basis of assurance for a supplier involved in developing and deploying a solution"
 ---
-
-{% include note-notpublished.html %}
 
 ## Technical accreditation 
 Consuming supplier systems **MUST** have been tested and accredited to establish baseline Spine connectivity prerequisites:
