@@ -9,7 +9,6 @@ summary: "Details of what activities form the basis of assurance for a supplier 
 ## Technical accreditation 
 Consuming supplier systems **MUST** have been tested and accredited to establish baseline Spine connectivity prerequisites:
 * N3 connectivity / ASID / PKI Certificate 
-* Personal Demographic Service (PDS) integration 
 * Spine Directory Service (SDS) integration 
 
 ## Technical conformance 
