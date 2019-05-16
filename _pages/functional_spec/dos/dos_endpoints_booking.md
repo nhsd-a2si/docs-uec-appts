@@ -18,7 +18,7 @@ The new items are listed below:
 * Transport: http
 * Format: FHIR
 * Interaction: Scheduling
-* ASID: ASID referencing the AS Object in ODS for the booking endpoint for this service
+* ASID: ASID referencing the AS Object in SDS for the booking endpoint for this service
 
 An example of how this might look in XML is below:
 
