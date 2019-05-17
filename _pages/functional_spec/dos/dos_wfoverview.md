@@ -24,13 +24,17 @@ As a provider system, it is therefore expected that there will be a mechanism in
 
 ## Important DoS workflow considerations
 
+* How should a booking only service be profiled on the DoS?
+
+*Currently there is no way to technically prohibit a referral via the DoS if no appointments are available. The recommendation is to clearly indicate that referrals are not accepted both in the referral instructions and also in the title of the service*
+
 * What if a service is profiled for both triage outcomes that are appropriate for an appointment and other outcomes that are not appropriate?
 
-*The reccomendation is that where two different clinical profiles are required (e.g. booking and not booking triage outcomes), two DoS services are used. Only one would have a booking endpoint configured.*
+*The recommendation is that where two different clinical profiles are required (e.g. booking and not booking triage outcomes), two DoS services are used. Only one would have a booking endpoint configured.*
 
 * How do you know what type of booking interaction is required by the provider system? Is it stored on the DoS?
 
-*When a call to SDS is made, the response will have an intereaction id. This will be different depending on whether it is GP Connect or CareConnect that is to be used for that endpoint.*
+*When a call to SDS is made, the response will have an interaction id. This will be different depending on whether it is GP Connect or CareConnect that is to be used for that endpoint.*
 
 * If a provider system is compliant with GP Connect and Care Connect, could you get two endpoints on SDS for the same DoS service?
 

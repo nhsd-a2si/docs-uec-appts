@@ -9,11 +9,45 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.8 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.8   | PREVIEW | Alpha | Current Version | 17/05/2019   | Volatile
+
+The 0.1.8 PREVIEW release has the following highlights:
+
+* Update to the assurance section encompassing the following new content:
+  * Update to the assurance overview section
+    * Complete high level description of assurance and on-boarding process
+    * Addition of an interactive assurance process info-graphic
+  * A new section describing the SCAL document was created
+  * "Supplier assurance process" page (and associated menu item) was renamed to "Supplier Assurance Prerequisites and Requirements"
+* Additional information in the DoS workflow overview section describing the recommendation for how a booking only service should be profiled
+* A broken link in the DoS workflow section was fixed
+* Fixed an incorrect release state for previous releases in the release notes
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.9 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.9   | PREVIEW | Alpha | Unreleased | 14/06/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.7 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.7   | PREVIEW | Alpha | Current Version | 05/04/2019   | Volatile
+0.1.7   | PREVIEW | Alpha | Released | 05/04/2019   | Volatile
 
 The 0.1.7 PREVIEW release has the following highlights:
 
@@ -21,27 +55,12 @@ The 0.1.7 PREVIEW release has the following highlights:
 * A new section for appointment management (Cancel and Rebook) was created
   * This includes a section on technical architecture and workflow
 * New content for the demonstrator guidance was added
-<br>
-<br>
-
-## Future releases
-
-### 0.1.8 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.8   | PREVIEW | Alpha | Unreleased | 18/4/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.6 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.6   | PREVIEW | Alpha | Current Version | 20/02/2019   | Volatile
+0.1.6   | PREVIEW | Alpha | Released | 20/02/2019   | Volatile
 
 The 0.1.6 PREVIEW release has the following highlights:
 
@@ -58,7 +77,7 @@ The 0.1.6 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.5   | PREVIEW | Alpha | Current Version | 04/01/2019   | Volatile
+0.1.5   | PREVIEW | Alpha | Released | 04/01/2019   | Volatile
 
 The 0.1.5 PREVIEW release has the following highlights:
 * New DoS subsite in functional specification was created
@@ -82,7 +101,7 @@ The 0.1.5 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.4   | PREVIEW | Alpha | Current Version | 07/12/2018   | Volatile
+0.1.4   | PREVIEW | Alpha | Released | 07/12/2018   | Volatile
 
 The 0.1.4 PREVIEW release has the following highlights:
 * Small update to the glossary
