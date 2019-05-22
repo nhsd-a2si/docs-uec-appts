@@ -7,7 +7,7 @@ permalink: uec_overview.html
 
 The following info-graphic displays the patient flow through NHS 111 into the wider UEC system. The data shows NHS 111 call volumetrics of those patients triaged by NHS 111 and given a recommendation to attend/speak to onward UEC care setting. The data are taken from the NHS111 MDS (Minimum Data Set) published by NHS England ( <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/nhs-111-minimum-data-set/" target="_blank"> available here</a>) and data supplied internally by the NHS Pathways >Intelligent Data Tool (IDT) team at NHS Digital (<a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">information can be found here</a>).
 
-<image src="images/overview/iuc_overview.png"/>  
+<image src="images/overview/iuc_overview2.png"/>  
 
 The biggest development in 111 since its beginning is to move to an "Integrated Urgent Care" service model (IUC). This combines the original 111 service with a "Clinical Assessment Service" known as the "CAS". This is a telephone service staffed by a multidisciplinary team of senior clinicians.
 
