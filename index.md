@@ -13,7 +13,7 @@ permalink: index.html
 
 ## Introduction
 
-There is a demand for direct appointment booking capabilities across multiple Urgent and Emergency Care (UEC) services in England. This need stems from system interoperability and strategic requirements for the future of the UEC system in England. Therfore there is a need for a national standard that sets out what appointment booking solutions should and should not be able to do.
+There is a demand for direct appointment booking capabilities across multiple Urgent and Emergency Care (UEC) services in England. This need stems from a strategic requirement to improve patient journeys and system efficiency. Therfore there is a need for a national standard that sets out what appointment booking solutions should and should not be able to do.
 
 Historically, Urgent and Emergency Care (UEC) was provided locally & things like the ability to book appointments & transfer care was dealt with locally or internally within a service, meaning they were often done using the same IT system. Local evolution of care systems gave rise to a largely heterogeneous IT infrastructure across the country.
 
