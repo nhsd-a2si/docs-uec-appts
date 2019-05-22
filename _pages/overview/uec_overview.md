@@ -11,7 +11,7 @@ The following info-graphic displays the patient flow through NHS 111 into the wi
 
 The biggest development in 111 since its beginning is to move to an "Integrated Urgent Care" service model (IUC). This combines the original 111 service with a "Clinical Assessment Service" known as the "CAS". This is a telephone service staffed by a multidisciplinary team of senior clinicians.
 
-The 111/CAS service currently sends referrals to GP In Hours, GP Out of Hours (GP OOH), Urgent Treatment Centres (UTCs),and other services, using <a href="https://developer.nhs.uk/apis/uec-tech-standards/endpoint_location.html" target="_blank">CDA ITK messages</a>. Development and implementation has been done using proprietary solutions to enable booking between NHS 111 and both GP In Hours and UTCs. However, these solutions are point to point and take a lot of resource to implement and scale.
+The 111/CAS service currently sends referrals to GP In Hours, GP Out of Hours (GP OOH), Urgent Treatment Centres (UTCs), and other services, using <a href="https://developer.nhs.uk/apis/uec-tech-standards/referrals.html" target="_blank">CDA ITK messages</a>. Development and implementation has been done using proprietary solutions to enable booking between NHS 111 and both GP In Hours and UTCs. However, these solutions are point to point and take a lot of resource to implement and scale.
 
 The <a href="https://www.england.nhs.uk/wp-content/uploads/2014/06/Integrated-Urgent-Care-Service-Specification.pdf" target="_blank">Integrated Urgent Care service specification </a> references booking a number of times including:
 
