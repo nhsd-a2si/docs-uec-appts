@@ -5,9 +5,11 @@ permalink: uec_overview.html
 ---
 {% include note-notpublished.html %}
 
-The following info-graphic displays the patient flow through NHS 111 into the wider UEC system. The data shows NHS 111 call volumetrics of those patients triaged by NHS 111 and given recommendation to attend/speak to onward UEC care setting. The data are taken from the NHS111 MDS (Minimum Data Set) published by NHS England ( <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/nhs-111-minimum-data-set/" target="_blank"> available here</a>) and data supplied internally by the NHS Pathways >Intelligent Data Tool (IDT) team at NHS Digital (<a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">information can be found here</a>).
+The following info-graphic displays the patient flow through NHS 111 into the wider UEC system. The data shows NHS 111 call volumetrics of those patients triaged by NHS 111 and given a recommendation to attend/speak to onward UEC care setting. The data are taken from the NHS111 MDS (Minimum Data Set) published by NHS England ( <a href="https://www.england.nhs.uk/statistics/statistical-work-areas/nhs-111-minimum-data-set/" target="_blank"> available here</a>) and data supplied internally by the NHS Pathways >Intelligent Data Tool (IDT) team at NHS Digital (<a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">information can be found here</a>).
 
 <image src="images/overview/iuc_overview.png"/>  
+
+The biggest development in 111 since its beginning is to move to an "Integrated Urgent Care" service model (IUC). This combines the original 111 service with a "Clinical Assessment Service" known as the "CAS". This is a telephone service staffed by a multidisciplinary team of senior clinicians.
 
 The 111/CAS service currently sends referrals to GP In Hours, GP Out of Hours (GP OOH), Urgent Treatment Centres (UTCs),and other services, using <a href="https://developer.nhs.uk/apis/uec-tech-standards/endpoint_location.html" target="_blank">CDA ITK messages</a>. Development and implementation has been done using proprietary solutions to enable booking between NHS 111 and both GP In Hours and UTCs. However, these solutions are point to point and take a lot of resource to implement and scale.
 
