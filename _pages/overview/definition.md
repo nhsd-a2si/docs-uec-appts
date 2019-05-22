@@ -6,8 +6,8 @@ toc: false
 ---
 {% include note-notpublished.html %}
 
-### The urgent care service arranges for the patient:
-* to be given a timed appointment slot to directly see or speak to a clinician within the service they are being referred to
+### The urgent care service arranges for the patient to:
+* be given a timed appointment slot to directly see or speak to a clinician within the service they are being referred to
 * have no requirement to make further contact or arrangements with that service regarding their booked appointment
 * be seen or spoken to within the timeframe identified by the preceding clinical triage
 
