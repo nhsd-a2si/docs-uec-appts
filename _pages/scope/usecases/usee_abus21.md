@@ -15,15 +15,14 @@ permalink: usee_abus21.html
 ### Commentary 
 The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a cancel followed by a re-book.  There is still a user story to cover the amendment of an appt, but this will not cover amending details such as date/time/location. 
 
-As urgent care providers (definitely 111s) can receive calls for different regions they must have the ability to cancel appts that they did not actually raise.   
+As urgent care providers can receive calls for different regions they must have the ability to cancel appts that they did not actually raise.   
 
 It may be that the provider system cannot cancel the appt.  User systems will have to have protocols in place to handle all returned statuses. 
 
 GP Connect use case can be found <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html" target="_blank">here</a>
 
 ### Acceptance Criteria  
-* The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
-* The patient's appts **must** be capable of being cancelled by a consumer system at any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
+* The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation (does not apply to GP Connect booking).
 * The consumer system **must** provide visible confirmation to the user of the status returned by the provider system  ie. whether the requested appt was successfully cancelled or not.  Example returned statuses could be: 
    * Appt successfully cancelled 
    * Not cancelled - system failure 
