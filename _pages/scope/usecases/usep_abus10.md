@@ -24,7 +24,7 @@ Providers may wish to demand-manage their slot collections.  GP practices may 
 * The list **must** contain details of the start/end times of the available slots. 
 * The list **may** mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
 * The available appts **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user's organisation has with that provider (does not apply to GP Connect booking). 
-* The method of retrieval **must** not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. 
+* The method of retrieval **must** not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. (does not apply to GP Connect booking). 
 * Where there are no available slots, the provider **must** send an appropriate response to indicate this. 
 * The provider system **must** return available slots without requiring the potential patient to be "registered" with the provider. 
 * This list **may** be capable of being quickly refreshed by the user or automatically as a timed event. 
