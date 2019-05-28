@@ -19,12 +19,19 @@ GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpco
 
 Providers may wish to demand-manage their slot collections.  GP practices may wish to have some appts available for urgent cases, and urgent care providers. 
 
+From a 111 provider:
+>_Some providers may have multiple diaries set up where clinics are being delivered by more than one clinician.
+>Current proprietary solutions can offer up appointments grouped by diaries, forcing the 111 call handler to go through each diary looking for the best slot. Providers should simply return all appropriate slots for the selected service in one set_
+
 ### Acceptance Criteria 
 * The list **must** contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 
 * The list **must** contain details of the start/end times of the available slots. 
+* The list **must** contain details of the type of appt, such as face-to-face, video, telephone call-back. 
+* The request **must** have a date/time window specified by the consumer system.  The start time will be taken as "now". It is expected that the end time of the window will be derived from the disposition of the patient (i.e. the "clinical need").
+* The slots provided **must** be for a service that can respond to the current disposition of the patient. 
 * The list **may** mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
-* The available appts **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user's organisation has with that provider (does not apply to GP Connect booking). 
-* The method of retrieval **must** not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. (does not apply to GP Connect booking). 
+* The available appts **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user's organisation has with that provider. 
+* The method of retrieval **must** not depend on any pre-installed data linkage processes between the requesting user's organisation and the provider organisation. 
 * Where there are no available slots, the provider **must** send an appropriate response to indicate this. 
 * The provider system **must** return available slots without requiring the potential patient to be "registered" with the provider. 
 * This list **may** be capable of being quickly refreshed by the user or automatically as a timed event. 
