@@ -24,4 +24,4 @@ OR
 GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_book_an_appointment.html" target="_blank">GP Connect book and appointment use case</a>
 
 ### Acceptance Criteria 
-* The provider system **must** accept the appointment booking even if the patient is not "registered" with this provider. 
+* The provider system **must** accept the appointment booking even if the patient is not "registered" with this provider (does not apply to GP Connect booking). 
