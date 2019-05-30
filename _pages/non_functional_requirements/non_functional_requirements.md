@@ -20,7 +20,6 @@ position:absolute;
 left:0;
 background: rgba(255,255,255,.5);"
 >
-
 ## Volume and performance 
   * Volumetric
     * Provider systems MUST meet the agreed volumetric performance targets.
