@@ -82,27 +82,7 @@ entries:
           - 
             title: "Non Functional Requirements"
             output: "web, pdf"            
-            url: /non_functional_requirements.html
-          - 
-            title: "Security Guidance"
-            output: "web, pdf"            
-            url: /security_guidance.html
-          - 
-            title: "Volumetric Guidance"
-            output: "web, pdf"            
-            url: /volumetric_guidance.html
-          - 
-            title: "Performance Guidance"
-            output: "web, pdf"            
-            url: /performance_guidance.html
-          - 
-            title: "Operational Level Agreement"
-            output: "web, pdf"            
-            url: /ola.html
-          - 
-            title: Audit
-            output: "web, pdf"            
-            url: /audit.html
+            url: /non_functional_requirements.html          
         output: web       
       - 
         title: "Functional Specification"
