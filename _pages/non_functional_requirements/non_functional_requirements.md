@@ -16,13 +16,13 @@ Provider systems SHALL resist unauthorized, accidental or unintended usage and p
 Please refer to the [Security guidance](security_guidance.html) page for technical details. 
 
 ## Volume and performance 
- ~ * Volumetric ~
+  * Volumetric
     * Provider systems MUST meet the agreed volumetric performance targets.
-    * Please refer to the [Volumetric guidance](volumetric_guidance.html) page for technical details. 
+    ~~* Please refer to the [Volumetric guidance](volumetric_guidance.html) page for technical details. ~~
 
   * Performance
     * Provider systems MUST meet the agreed response time performance targets.
-    * Please refer to the [Performance guidance](performance_guidance.html) page for technical details. 
+   ~~* Please refer to the [Performance guidance](performance_guidance.html) page for technical details. ~~
 
 ## Capacity 
 Provider systems MUST meet the agreed capacity requirements. 
@@ -31,7 +31,7 @@ Provider systems MUST meet the agreed capacity requirements.
 Provider systems SHALL be designed to accommodate increased volumes, workloads and users. 
 
 ## Availability 
-Provider systems SHALL meet the agreed availability targets (service time and/or hours and planned downtime) as defined in the [operational level agreement](ola.html) (OLA). 
+Provider systems SHALL meet the agreed availability targets (service time and/or hours and planned downtime) as defined in the ~~[operational level agreement](ola.html) (OLA). ~~
 
 ## Recoverability 
 Provider systems SHALL meet the agreed recoverability targets as documented in the [Operational Level Agreement](ola.html) (OLA). 
