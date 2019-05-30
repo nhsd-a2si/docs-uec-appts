@@ -16,13 +16,13 @@ Provider systems SHALL resist unauthorized, accidental or unintended usage and p
 Please refer to the [Security guidance](security_guidance.html) page for technical details. 
 
 ## Volume and performance 
-  ### Volumetric 
-  Provider systems MUST meet the agreed volumetric performance targets. 
-  Please refer to the [Volumetric guidance](volumetric_guidance.html) page for technical details. 
+  * Volumetric 
+    Provider systems MUST meet the agreed volumetric performance targets. 
+    Please refer to the [Volumetric guidance](volumetric_guidance.html) page for technical details. 
 
-  ### Performance 
-  Provider systems MUST meet the agreed response time performance targets. 
-  Please refer to the [Performance guidance](performance_guidance.html) page for technical details. 
+  * Performance 
+    Provider systems MUST meet the agreed response time performance targets. 
+    Please refer to the [Performance guidance](performance_guidance.html) page for technical details. 
 
 ## Capacity 
 Provider systems MUST meet the agreed capacity requirements. 
