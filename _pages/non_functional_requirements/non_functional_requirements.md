@@ -15,6 +15,12 @@ Provider systems SHALL resist unauthorized, accidental or unintended usage and p
 
 Please refer to the [Security guidance](security_guidance.html) page for technical details. 
 
+<div style="
+position:absolute;
+left:0;
+background: rgba(255,255,255,.5);"
+>
+
 ## Volume and performance 
   * Volumetric
     * Provider systems MUST meet the agreed volumetric performance targets.
@@ -23,6 +29,7 @@ Please refer to the [Security guidance](security_guidance.html) page for technic
   * Performance
     * Provider systems MUST meet the agreed response time performance targets.
     * Please refer to the [Performance guidance](performance_guidance.html) page for technical details. 
+</div>
 
 ## Capacity 
 Provider systems MUST meet the agreed capacity requirements. 
