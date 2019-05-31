@@ -50,7 +50,7 @@ The SDS performs the role of the booking endpoint directory. Endpoints for the b
 #### NHS Authentication service
 An NHS authentication service will be used to provide a digital identity to ensure that the consuming service has authorisation to make a booking.
 
-For this booking standard, the authentication service validates credentials passed by the consumer system and subject to this check, issue a short lived (1 hour) access token which the consumer system must include in a http Authorization header in all requests to the provider system.
+For this booking standard, the authentication service validates credentials passed by the consumer system and subject to this check, issues a short lived (1 hour) access token which the consumer system must include in a http Authorization header in all requests to the provider system.
 
 #### Spine Secure Proxy (SSP)
 The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
@@ -104,9 +104,9 @@ ldapsearch -b ou=Services,o=nhs "(&(nhsMHSPartyKey= A12345-1234567)(urn:nhs:name
 Response:
 nhsMHSEndPoint: https://server.domain.nhs.uk/fhir_base
 ```
-The value returned is the endpoint required to build an SSP request.
-
 <img src="_pages/functional_spec/img/EndpointDiscovery4.png">
+
+The value returned is the endpoint required to build an SSP request.
 
 Before making a call to the FHIR endpoint, the consumer system needs to obtain an access token from NHS authentication service. This uses an OAuth Client Credentials grant making a call to the token endpoint of the NHS authentication service, including the following values:
 ```json
@@ -115,14 +115,6 @@ client_id=[issued during assurance].
 client_secret=[issued during assurance].
 scope=[https://host.nhs.uk/baseurl/.default]
 ```
-We’ve yet to finalise the set of scopes that the client is asking for, but it’ll be as a minimum:
-
-* appointment/*.write
-* slot/*.read
-* schedule/*.read
-* location/*.read
-* organization/*.read
-* healthcareservice/*.read
 
 Assuming the credentials match, then the Authentication server returns an access token encoded as a JWT.
 
@@ -259,6 +251,6 @@ If a booking is successfully created a  `201: Created` HTTP status code will be 
 
 <img src="_pages/functional_spec/img/BookAppointment3.png">
 
-If the slot has been taken the response would have a `422 status (see details)` as the request “…violated applicable FHIR profiles or server business rules”.
+If the slot has been taken the response would have a `422 status` as the request “…violated applicable FHIR profiles or server business rules”.
 
 The response body would be an OperationOutcome containing an explanation of the problem.
