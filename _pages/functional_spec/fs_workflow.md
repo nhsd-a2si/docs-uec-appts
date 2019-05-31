@@ -16,7 +16,7 @@ Below is the primary data model that describes the key data items that are requi
 
 ### Primary Data Model
 
-<img src="_pages/functional_spec/img/UEC_Appointments_Flow.png">
+<img src="_pages/functional_spec/img/ClassDiagram.png">
 
 The sections below will step through the process.
 
