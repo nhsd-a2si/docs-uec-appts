@@ -44,7 +44,7 @@ This is an Open Authentication Standard
 ### GP Connect
 
 ### RESTful
-This is "**Re**presentational **St**ate Transfer" and refers to an API which uses the concept of resources, and http verbs to support CRUD type operations.
+This is "**Re**presentational **St**ate Transfer" and refers to an API which uses the concept of resources, and http verbs to support CRUD (create, read, update and delete) type operations.
 
 ### NHS Identity (**Strat**egic **Auth**entication)
 The NHS Identity service provides a digital identity that can be consumed many times from a single logon. It can also be linked with every day devices to provide extra contextual information about that user (e.g. location, nearby services) and it can profile the characteristics of the owner(usual times of sign-on, services normally used, location, devices linked to the user).
