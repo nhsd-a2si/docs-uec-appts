@@ -45,7 +45,7 @@ The Patient Demographic Service is a Spine service that enables matching capture
 The national DoS can be used to discover the most appropriate service for the patient. If that service offers appointments the necessary information required to query SDS for the endpoint will be provided. 
 
 #### Spine Directory Service (SDS)
-The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
+The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS following <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
 
 #### NHS Authentication service
 An NHS authentication service will be used to provide a digital identity to ensure that the consuming service has authorisation to make a booking.
