@@ -2,7 +2,7 @@
 title: GP Connect - Workflow Overview
 sidebar: gpc_sidebar
 keywords: specification
-permalink: gpc_wfoverview.html
+permalink: gpc_wfoverview.html.backup
 toc: false
 folder: functional_spec
 ---
