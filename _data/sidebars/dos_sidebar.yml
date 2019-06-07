@@ -17,12 +17,20 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
-            title: "Workflow Overview"
+            title: "Care Connect Workflow Overview"
             url: /dos_wfoverview.html
           - 
             output: "web, pdf"
-            title: "Workflow example"
+            title: "Care Connect Workflow example"
             url: /dos_wfexample.html
+          - 
+            output: "web, pdf"
+            title: "GP Connect Workflow Overview"
+            url: /gpc_wfoverview.html
+          - 
+            output: "web, pdf"
+            title: "GP Connect Workflow example"
+            url: /gpc_wfexample.html
         output: web
         title: Workflow
       - 
