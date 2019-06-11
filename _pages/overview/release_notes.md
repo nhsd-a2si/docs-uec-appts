@@ -15,7 +15,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.1.9   | PREVIEW | Alpha | Current Version | 14/06/2019   | Volatile
 
-The 0.1.9 PREVIEW release has the following highlights:
+**The 0.1.9 PREVIEW release has the following highlights:**
 
 * Introduction and Overview Sections
   * Wording tidied up in the introduction
