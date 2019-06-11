@@ -15,18 +15,17 @@ The following example walks through a reasonably complex scenario that demonstra
 
 * On a Friday afternoon, Whilst at work, Mrs. Patient feels ill so calls a 111 service. 
 * It is determined during this assessment that they require a face to face consultation and an appointment is made at an appropriate service, near their home, in 12 hours time. 
-* When the appointment is confimred by the providing system, it creates a record on the Appointment Registry for that patient.
+* When the appointment is confirmed by the providing system, it creates a record on the Appointment Registry for that patient.
 * An hour later Mrs. Patient goes home.
 * When she arrives home she feels much worse so calls 111 back. 
-* Now she is at home, she reaches a different 111 service to the one she called whilst at work
-* Whilst they are confirming her demographics, the system they use is checking the appointment registry for any existing relvent appointments. It finds one (from earlier) and sets a flag against the record in the system and the 111 user is notified.
+* Now she is at home, she reaches a different 111 service from the one she called whilst at work
+* Whilst they are confirming her demographics, the system they use is checking the appointment registry for any existing relevent appointments. It finds one (from earlier) and sets a flag against the record in the system and the 111 user is notified.
 * Mrs. Patient is reassessed and a new assessment outcome is reached. An urgent appointment is required within 2 hours so the booking process is entered. 
 * The list of existing relevent appointments is displayed to the 111 user (in this case there is just one appointment)
-* the user confirms with Mrs. Patient the correct appointment that was previously booked and that this appointment will be cancelled and a new appointment booked.
-* the appointment booking process is completed at the new service and the provider system sends a booking confirmation for the new booking.
-* the new provider service
-* in the background the 111 system then cancels the previous appointment (confirmed above).
-* the original provider service expires the original booking entry on the Appointment Registry
+* The user confirms with Mrs. Patient the correct appointment that was previously booked and that this appointment will be cancelled and a new appointment booked.
+* The appointment booking process is completed at the new service and the provider system sends a booking confirmation for the new booking to the new provider service.
+* In the background the 111 system then cancels the previous appointment (confirmed above).
+* The original provider service expires the original booking entry on the Appointment Registry
 
 The above workflow is illustrated in the sequence diagram below:
 
@@ -35,15 +34,11 @@ The above workflow is illustrated in the sequence diagram below:
 
 There are some key requirements that the providing and consuming systems need to do to support this capability:
 
-### Providing servce:
+### Providing system:
 
 * Whenever an appointment confirmation is sent at the end of a successful booking process, the system will need to update the Appointment Registry with a new record for the appointment just made
-* Whenever a cancellation of an appointment is successfully completed, the system needs to update the Appointment Registry for that appointment to expire the record.
+* Whenever a cancellation of an appointment is successfully completed, the system needs to update the Appointment Registry for that appointment to update the record to cancelled.
 
-### Consuming service:
+### Consuming system:
 
-* whenever a new contact is being recorded on the system, as soon as the patients demographics have been confirmed the system will need to check the Appointment Registry for any relevent appointment records
-* If appointment records are found on the registry then a flag needs to be set against the patients record in the system to say they have an existing appointment
 * At the end of any re-assessment, the option to cancel the original appointment needs to be offered
-* if this cancelation process is required, the first step is to confirm with the Patient which appointment is the one that needs to be canceled. 
-
