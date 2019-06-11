@@ -9,9 +9,9 @@ folder: dos
 
 {% include note-notpublished.html %}
 
-## Proposed changes to the way endpoints are stored in and returned by the DoS
+## Recent changes to the way endpoints are stored in and returned by the DoS
 
-It is proposed that the endpoint format that is returned by the DoS API will change. The target release date for this is January 2019.
+Recently the endpoint format that is returned by the DoS API has changed. This change was included in the January 2019 release (1.5).
 
 The main change is to move away from a single string value with endpoint items delimited into key/value pairs and to have explicit separate entries in the XML structure for each of the endpoint values.
 

@@ -3,7 +3,7 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.8 PREVIEW"
+    version: "v0.1.9 PREVIEW"
     spec: "STU3 | FHIR NHS Scheduling | 1.0.3-alpha"
     speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.3-alpha/"
     folders: 
@@ -82,27 +82,7 @@ entries:
           - 
             title: "Non Functional Requirements"
             output: "web, pdf"            
-            url: /non_functional_requirements.html
-          - 
-            title: "Security Guidance"
-            output: "web, pdf"            
-            url: /security_guidance.html
-          - 
-            title: "Volumetric Guidance"
-            output: "web, pdf"            
-            url: /volumetric_guidance.html
-          - 
-            title: "Performance Guidance"
-            output: "web, pdf"            
-            url: /performance_guidance.html
-          - 
-            title: "Operational Level Agreement"
-            output: "web, pdf"            
-            url: /ola.html
-          - 
-            title: Audit
-            output: "web, pdf"            
-            url: /audit.html
+            url: /non_functional_requirements.html          
         output: web       
       - 
         title: "Functional Specification"
@@ -119,10 +99,6 @@ entries:
             title: "Interactions with the DoS"
             output: "web, pdf"            
             url: /dos_overview.html
-          -
-            title: "Appointment Types"
-            output: "web, pdf"
-            url: /fs_appointmenttypes.html
           - 
             title: "Slot Management"
             output: "web, pdf"            

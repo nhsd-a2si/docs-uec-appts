@@ -14,25 +14,10 @@ The intention of this standard is to support booking from any to any accross car
 ## Care Settings
 ### In Scope (Priority)
 #### Appointment Consumers (making a booking)
-* Integrated Urgent Care NHS 111 Call Centres
-* Clinical Assessment Services
-* Urgent Treatment Centres (and similar)
-* Other Urgent Care Services
+* 111 CAS
 
 #### Appointment Providers (being booked into)
-* Urgent Treatment Centres (and similar) 
-* GP Practices	
-* Emergency Care Practitioner (ECP)
-* Emergency Dentists	
-* Community Pharmacists
+* Urgent Treatment Centres
+* GP Practices (Patients registered GP)
 
-### Currently Out of Scope
-#### Appointment Consumers (making a booking)
-* Emergency Departments (ED)
-* EmergencyCare Practitioners (ECP)
-
-#### Appointment Providers (being booked into)
-* Patient Transport Servces (PTS)
-* Dental
-* Social Care
-* E-Referral Service (ERS)
+If you are interested in booking into other types of service, please contact the team.

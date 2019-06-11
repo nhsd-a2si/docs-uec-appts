@@ -1,5 +1,5 @@
 ---
-title: Non-Functional Requirements
+title: Non-Functional Requirements (Care Connect)
 toc: True
 sidebar: overview_sidebar
 permalink: non_functional_requirements.html
@@ -7,20 +7,19 @@ summary: "Details of non-functional requirements (NFRs) that describe system att
 ---
 {% include note-notpublished.html %}
 
+The non-functional requirements for systems assured for UEC Appointment booking using the Care Connect specification are detailed here.
+For the equivalent requirements for booking using the GP Connect standard, please see here: <a href="https://nhsconnect.github.io/gpconnect/development_api_non_functional_requirements.html" target="_blank">GP Connect non-functional requirements</a>.
+
 ## Security 
 Provider systems SHALL resist unauthorized, accidental or unintended usage and provide access only to legitimate users. 
 
-Please refer to the [Security guidance](security_guidance.html) page for technical details. 
-
 ## Volume and performance 
-### Volumetric 
- Provider systems MUST meet the agreed volumetric performance targets. 
- Please refer to the [Volumetric guidance](volumetric_guidance.html) page for technical details. 
-
-### Performance 
- Provider systems MUST meet the agreed response time performance targets. 
- Please refer to the [Performance guidance](performance_guidance.html) page for technical details. 
-
+  * Volumetric
+    * Provider systems MUST meet the agreed volumetric performance targets.
+   
+  * Performance
+    * Provider systems MUST meet the agreed response time performance targets.
+    
 ## Capacity 
 Provider systems MUST meet the agreed capacity requirements. 
 
@@ -28,14 +27,13 @@ Provider systems MUST meet the agreed capacity requirements.
 Provider systems SHALL be designed to accommodate increased volumes, workloads and users. 
 
 ## Availability 
-Provider systems SHALL meet the agreed availability targets (service time and/or hours and planned downtime) as defined in the [operational level agreement](ola.html) (OLA). 
+Provider systems SHALL meet the agreed availability targets (service time and/or hours and planned downtime).
 
 ## Recoverability 
-Provider systems SHALL meet the agreed recoverability targets as documented in the [Operational Level Agreement](ola.html) (OLA). 
+Provider systems SHALL meet the agreed recoverability targets
 
 ## Audit & provenance 
 Provider systems SHALL audit all API access and actions. 
-Please refer to the [cross organization audit and provenance](audit.html) page for technical details. 
 
 ## Maintainability 
 Provider systems SHALL be designed to optimise the ability of maintenance personnel to revise or enhance it. 
@@ -54,14 +52,3 @@ Provider and consumer systems SHOULD follow the <a href="https://www.iso.org/sta
 
 ## Accessibility 
 Provider and consumer systems MUST maintain a compliance of minimum Double “A” of the WCAG 1.0 (or equivalent in WCAG 2.0) or, as stipulated by UK Government guidelines, for all user interfaces. Please see the ,<a href="https://www.w3.org/WAI/" target="_blank">Web Accessibility Initiative</a> for more details. 
-
-Please refer to the <a href="https://developer.nhs.uk/apis/uec-tech-standards/index.html" target="_blank">UEC Technical Standards</a> for details. 
-
-## Deployment 
-Provider systems SHALL release a new major version of their UEC Booking API alongside a previous major version, until such time as consumers have migrated to the new major version. 
-
-Provider systems SHOULD release a new minor or patch version, replacing the previous minor or patch version. 
-
-Provider systems SHALL be deployed with the provider APIs enabled by default. 
-
-Provider systems MAY provide a mechanism for a data controller at an organisation to choose to globally disable/enable the provider APIs (that is, turn on/off the overall UEC Booking technical capability). 
