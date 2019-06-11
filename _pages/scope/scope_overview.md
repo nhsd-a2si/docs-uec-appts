@@ -19,3 +19,5 @@ The intention of this standard is to support booking from any to any accross car
 #### Appointment Providers (being booked into)
 * Urgent Treatment Centres
 * GP Practices (Patients registered GP)
+
+If you are interested in booking into other types of service, please contact the team.
