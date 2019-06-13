@@ -14,9 +14,11 @@ folder: dos
 For the three key actors in this process there are the following key requirments:
 
 * The appointment consumer (111 system in the example above):
-  * MUST be able to retreive the HealthcareServiceID from the endpoint details returned from the DoS
-  * MUST ensure that the booking functionality invoked is compliant with the national standards when a booking endpoint (HealthcareServiceID) is returned
+  * MUST be able to retreive the HealthcareServiceID (e.g. ASID or ODS) from the endpoint details returned from the DoS
+  * MUST ensure that the booking functionality invoked is compliant with the national standards when a booking endpoint is returned
   * MUST ensure that if no booking endpoint is returned by the relvant DoS API call that any other proprietary booking mechanisms still work and are then subsequently tried
+  * For GP Connect bookings, the <a href="https://nhsconnect.github.io/gpconnect/foundations_use_case_register_a_patient.html" target="_blank">Register a Patient</a> capability MUST be implemented and invoked if required
+  
 * The DoS:
   * MUST be able to store the HealthcareServiceID
   * MUST return a booking ASID (HealthcareServiceID) as part of its endpoint data
