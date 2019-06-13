@@ -28,7 +28,7 @@ This guidance is to detail how the DoS is used in combination with a 111 IT syst
 * The 111 IT System will use the endpoint information to retrieve the booking API endpoint from SDS - **SDS Endpoint Search**
 * A request will be made for appointment slots from the 111 IT System to the chosen Service Provider IT system, using the retrieved API endpoint to retrieve all available and appropriate slots from the appointment schedules at the chosen service - **GP Connect or CareConnect Appointment Slot Search**
 * The Service Provider IT system will return available slots and the user will choose one and then follow the process to book in (*note: this is not in these notes as that is detailed in the appropriate API specification*)
-* For GP Connect booking if the patient is not registered (or has an inactive registration) the <a href="https://nhsconnect.github.io/gpconnect/foundations_use_case_register_a_patient.html" target="_blank">Register a Patient</a>"Register a Patient"</a> capability MUST be used
+* For GP Connect booking if the patient is not registered (or has an inactive registration) the <a href="https://nhsconnect.github.io/gpconnect/foundations_use_case_register_a_patient.html" target="_blank">Register a Patient</a> capability MUST be used
 
 This guidance shows how areas highlighted in bold above are used in combination to return the appointment capability for services.
 
