@@ -1,5 +1,5 @@
 ---
-title: Authentication
+title: Authentication with Care Connect
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_authentication.html
@@ -9,11 +9,13 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
+Note: for GP Connect Authentication please see <a href="https://nhsconnect.github.io/gpconnect/development_api_security_guidance.html" target="_blank">here</a>
+
 ## Introduction
 
 The main principle in the approach to authentication is to authorise the consumer **system** rather than the user. Therefore there is no dependency on passing through a users strongly authenticated identity and role (such as via a smartcard) to authorise the transaction. This approach will always be the case for viewing and booking slots. There may be a future requirement for more granular authorisation when doing modification and retrieval operations such as third party cancelling and rebooking.
 
-In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA Strat Auth).
+In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA NHS Identity).
 
 For initial rollout the Health and Social Care Directory (HSCD) will be used. This is a mature service and supporting NHS Mail identities.
 
@@ -21,16 +23,16 @@ This uses the standard OAuth 2 client_credentials flow (see: <a href="https://oa
 
 * New Consumer and Provider systems can be implemented and removed with NO effect on other services. 
 * It allows central control over authorisation at a capability level 
-* All configuration is controlled centrally in HSCD/Strat Auth and those details are passed to the Provider to allow them to make the required authorisation decisions. 
+* All configuration is controlled centrally in HSCD/NHS Identity and those details are passed to the Provider to allow them to make the required authorisation decisions. 
 * In addition to the provider system checking the tokens, the SSP can also validate requests and could potentially block unauthorised requests
 
 ## Configuring a new consumer service
 
 When a new consumer or provider system is assured for booking using the Care Connect standard the following steps are taken:
 
-1. Each Consumer and Provider system created as an App Registration in Azure AD. 
+1. Each Consumer and Provider service created as an App Registration in the directory. 
   - This is done at a fine grained detailed level, so if many Provider or Consumer services are being run on one instance of a system, of which many instances have been deployed, the App registration is done at the 'Service' level.
-2. Two new groups in the HSCD directory are created (for ease of management, the names of these groups are the same as the SDS Interaction names):
+2. Several groups will be created, but they’re created once before anyone can go live:
   * urn:nhs:names:services:careconnect:fhir:rest:read:slot
     * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to view slots:
         * the Service
@@ -43,13 +45,11 @@ When a new consumer or provider system is assured for booking using the Care Con
         * the Organisation delivering the service
         * the system being used
         * and the supplier of that system 
-  Separating these two groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
+        
+  Separating these groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
   In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
   These new groups will be documented here.
-3. Edit the Manifest of each Provider application to have the value: "groupMembershipClaims": "All"
-  This means that the provider will receive (in any access_tokens intended for it, issued by HSCD) a list of the groups that a consumer system is a member of.
-4. Assign the Consumer applications to the groups as created above 
-5. Create a 'secret' in HSCD for each Consumer system. 
+3. Create a 'secret' in HSCD for each Consumer system. 
   * The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system
   * there is likely to be a security policy and attached process on the protection of these secrets published in due course
 
@@ -115,9 +115,8 @@ When decoded the token will look something like the following:
 [Signature]
 }
 ```
-See: <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens" target="_blank">"Azure Active Directory access tokens" at Microsoft Azure</a> for more details on the fields in the above.
 
-Because this token is signed, the Provider system can trust that the Consumer really is a member of the specified groups. It can also retrieve the public key from Azure AD and validate that the token hasn't been tampered with. There are standard ways of doing this.
+Because this token is signed, the Provider system can trust that the Consumer really is a member of the specified groups. It can also retrieve the public key from the directory and validate that the token hasn't been tampered with. There are standard ways of doing this.
 
 When requests are made to a Provider system, they must include an Authorization http header which takes the form:
 

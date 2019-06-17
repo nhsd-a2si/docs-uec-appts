@@ -21,16 +21,4 @@ entries:
             url: /fs_gpcdiff.html
         output: web
         title: Overview
-      - 
-        folderitems: 
-          - 
-            output: "web, pdf"
-            title: "Workflow Overview"
-            url: /gpc_wfoverview.html
-          - 
-            output: "web, pdf"
-            title: "Workflow example"
-            url: /gpc_wfexample.html
-        output: web
-        title: Workflow
     title: "Urgent & Emergency Care Appointment Booking Standards - Implementing GP Connect"

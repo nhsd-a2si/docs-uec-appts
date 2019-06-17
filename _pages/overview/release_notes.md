@@ -9,11 +9,61 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.9 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.9   | PREVIEW | Alpha | Current Version | 14/06/2019   | Volatile
+
+**The 0.1.9 PREVIEW release has the following highlights:**
+
+* Introduction and Overview Sections
+  * Wording tidied up in the introduction
+  * Definition page wording tidied up
+  * UEC Landscape page updated with more appropriate links and improved wording
+  * Updated UEC Overview infographic
+  * Tidied up and updated wording in scope section
+* Scope and user stories section
+   * Refreshed the scope overview page to align to current program milestones
+   * Fixed typos in user story overview section
+   *  Fixed typos and tidied up wording in various user stories
+* Updated the non-functional requirements to reflect the current expectations
+* Updated the workflow section in Functional Spec
+* Various updates were made to the DoS section: 
+  * Updated the DoS endpoints section
+  * Updated the DoS requirements page
+  * The workflow examples from the GP Connect section were moved into the DoS workflow section so the workflow examples for DoS interactions are in the same place.
+  * Some typos were fixed in the workflow section
+  * "Links between booking and CDA" page was elaborated
+* Appointment Types page was removed (concept no longer relevant to FHIR spec - delivery channel used instead  - for GP Connect only)
+* Cancel / Rebook section
+  * Wording updated and typos removed from architecture page
+  * Wording updated and typos removed from workflow page
+* The Demonstrator overview section was updated
+* Updated the FHIR profile page to link to GP Connect as well as Care Connect
+* Updated the Glossary with some more detail and corrections
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.9 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.10   | PREVIEW | Alpha | Unreleased | 28/06/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.8 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.8   | PREVIEW | Alpha | Current Version | 17/05/2019   | Volatile
+0.1.8   | PREVIEW | Alpha | Released | 17/05/2019   | Volatile
 
 The 0.1.8 PREVIEW release has the following highlights:
 
@@ -26,22 +76,6 @@ The 0.1.8 PREVIEW release has the following highlights:
 * Additional information in the DoS workflow overview section describing the recommendation for how a booking only service should be profiled
 * A broken link in the DoS workflow section was fixed
 * Fixed an incorrect release state for previous releases in the release notes
-
-<br>
-<br>
-
-## Future releases
-
-### 0.1.9 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.9   | PREVIEW | Alpha | Unreleased | 14/06/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.7 PREVIEW
 
