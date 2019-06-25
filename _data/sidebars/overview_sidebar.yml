@@ -103,6 +103,10 @@ entries:
             title: "Interactions with the DoS"
             output: "web, pdf"            
             url: /dos_overview.html
+          -
+            title: "Appointment Mapping"
+            output: "web, pdf"
+            url: /fs_slotmap.html
           - 
             title: "Slot Management"
             output: "web, pdf"            
@@ -111,10 +115,6 @@ entries:
             title: "Authentication"
             output: "web, pdf"
             url: /fs_authentication.html
-          -
-            title: "Slot Mapping/Semantics"
-            output: "web, pdf"
-            url: /fs_slotmap.html
           -
             title: "Appointment Management (Cancel and Rebook)"
             output: "web, pdf"
