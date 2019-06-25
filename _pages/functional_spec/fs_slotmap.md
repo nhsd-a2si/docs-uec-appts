@@ -9,10 +9,10 @@ folder: functional_spec
 
 {% include note-notpublished.html %}
 
-> : * Dx05 To contact a Primary Care Service within 2
-> : * Dx06 To contact a Primary Care Service within 6
-> : * Dx07 To contact a Primary Care Service within 12
-> : * Dx08 To contact a Primary Care Service within 24
+> * Dx05 To contact a Primary Care Service within 2
+> * Dx06 To contact a Primary Care Service within 6
+> * Dx07 To contact a Primary Care Service within 12
+> * Dx08 To contact a Primary Care Service within 24
 > * Dx09 For persistent or recurrent symptoms: get in touch with the GP Practice for a Non-Urgent Appointment (Green 4)
 > * Dx10 MUST contact own GP Practice for a Non-Urgent appointment
 > * Dx11 Speak to a Primary Care Service within 1 Hour
