@@ -24,7 +24,11 @@ This guidance is to detail how the DoS is used in combination with a 111 IT syst
 * The 111 IT System searches the DoS with the details of the patient and the assessment outcome - **DoS Service Search**
 * The DoS returns a ranked list of services that includes the metadata about those services, information on the referral and booking endpoints is also returned including the type of end point for appointment booking - **DoS Service Search Results**
 * The 111 IT System displays the returned services to the user, who selects one (*note: the logic for display and user interaction is not discussed here*)
-* If an endpoint exists in the metadata for appointments, the 111 IT System will display to the user that appointments are bookable at this service, and so the user can choose to book the patient in
+* The consuming system will check the endpoint metadata for appointments information:
+  * If an endpoint exists in the metadata for appointments, the 111 IT System will display to the user that appointments are bookable at this service, and so the user can choose to book the patient in
+  * If an endpoint **does not** exist then the 111 IT system will compare the chosen DoS service's ODS code to the ODS code obtained from the PDS trace for the patient. This will determine if the returned service is their regostered practice. 
+    * If there is a match, then this ODS code can be used to query SDS.
+    * If there is no match then booking is not possible
 * The 111 IT System will use the endpoint information to retrieve the booking API endpoint from SDS - **SDS Endpoint Search**
 * A request will be made for appointment slots from the 111 IT System to the chosen Service Provider IT system, using the retrieved API endpoint to retrieve all available and appropriate slots from the appointment schedules at the chosen service - **GP Connect or CareConnect Appointment Slot Search**
 * The Service Provider IT system will return available slots and the user will choose one and then follow the process to book in (*note: this is not in these notes as that is detailed in the appropriate API specification*)
