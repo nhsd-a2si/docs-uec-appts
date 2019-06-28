@@ -26,7 +26,7 @@ This guidance is to detail how the DoS is used in combination with a 111 IT syst
 * The 111 IT System displays the returned services to the user, who selects one (*note: the logic for display and user interaction is not discussed here*)
 * The consuming system will check the endpoint metadata for appointments information:
   * If an endpoint exists in the metadata for appointments, the 111 IT System will display to the user that appointments are bookable at this service, and so the user can choose to book the patient in
-  * If an endpoint **does not** exist then the 111 IT system will compare the chosen DoS service's ODS code to the ODS code obtained from the PDS trace for the patient. This will determine if the returned service is their regostered practice. 
+  * If an endpoint **does not** exist then the 111 IT system will compare the chosen DoS service's ODS code to the ODS code obtained from the PDS trace for the patient. This will determine if the returned service is their registered practice. 
     * If there is a match, then this ODS code can be used to query SDS.
     * If there is no match then booking is not possible
 * The 111 IT System will use the endpoint information to retrieve the booking API endpoint from SDS - **SDS Endpoint Search**
