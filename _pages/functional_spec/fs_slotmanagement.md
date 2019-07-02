@@ -18,7 +18,7 @@ The Directory of Services (DoS) lists services at the granular healthcare servic
 
 When an appointments consumer (e.g. NHS 111) requests available slots from a healthcare service, it needs to identify exactly which healthcare service it is targeting. This will allow provider systems to correctly route requests and filter the responses to be relevant to the specific request.
 
-## Use HealthcareServiceID to filter slot requests to specific healthcare services
+## Use ASID to filter slot requests to specific healthcare services
 A search parameter of the HealthcareService (an intrinsic part of FHIR RESTful search) will be sent.
 
 ### As a consumer, include the ASID of the healthcare service as a parameter
@@ -27,7 +27,7 @@ As a consumer, you should include a search parameter specifying the ASID of the 
 #### Example
 If the DoS has returned a service "Village Urgent Treatment Centre (ASID:124459850)", and you would like to book an appointmnent at that service, you will want to ensure the available slots you are presented with are specifically for that service.
 
-You would include a HealthcareServiceID parameter in your Slot request.
+You would include an ASID parameter in your Slot request.
 
 ### As a provider, use the healthcare service ASID to filter the slots returned in your response
 As a provider of slots, you will likely want to ensure that you only return slots in your response for which you would be happy receiving a booking.
