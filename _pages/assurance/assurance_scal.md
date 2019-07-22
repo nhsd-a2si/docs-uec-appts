@@ -4,7 +4,6 @@ toc: False
 sidebar: overview_sidebar
 permalink: assurance_scal.html
 ---
-{% include note-notpublished.html %}
 
 # The Purpose and use of the Supplier Conformance Assessment List (SCAL)
 
