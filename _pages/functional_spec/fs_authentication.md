@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 Note: for GP Connect Authentication please see <a href="https://nhsconnect.github.io/gpconnect/development_api_security_guidance.html" target="_blank">here</a>
 
 ## Introduction
