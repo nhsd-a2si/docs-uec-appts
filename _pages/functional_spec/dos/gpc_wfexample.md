@@ -7,10 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-
-{% include note-notpublished.html %}
-
-
 ## Overview
 
 This guidance is to detail how the DoS is used in combination with a 111 IT system and service provider systems to join up finding a service for a patient and booking an appointment directly for them into the service provider system.
