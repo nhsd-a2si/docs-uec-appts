@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 Below is a list of the key mandarory elements for the appointment and associated resources:
 
 * Appointment
