@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-{% include note-notpublished.html %}
-
 # Key Requirements
 
 For the three key actors in this process there are the following key requirments:
