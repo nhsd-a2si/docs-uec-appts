@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-{% include note-notpublished.html %}
-
 # Example scenario
 
 Services on the DoS are profiled with a range of data that is used to determine the ranking for services. There are also additional data items that are used for other purposes, for example interoperability. Examples of these data items are as follows:
