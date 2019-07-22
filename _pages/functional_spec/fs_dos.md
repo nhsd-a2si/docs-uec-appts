@@ -7,8 +7,6 @@ toc: true
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 ## Introduction
 
 The <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Urgent Care Directory of Services (known as the "DoS")</a> is the primary service discovery and information tool available to the NHS. Although this standard does support booking workflows that do not need to use the DoS it is envisaged that it will provide the service discovery element in the majority of booking workflows that use this standard.
