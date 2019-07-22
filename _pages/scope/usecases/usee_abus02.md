@@ -3,7 +3,6 @@ title: ABUS.02 Display Appt Availability Status of Providers
 sidebar: usecase_sidebar
 permalink: usee_abus02.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.02 Display Appt Availability Status of Providers
 **_In order_** that the patient can quickly be informed of what services have free appts and the call can be completed more quickly
