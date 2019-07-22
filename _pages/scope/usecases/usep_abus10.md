@@ -3,7 +3,6 @@ title: ABUS.10 Display Available Slots From a Specific Service
 sidebar: usecase_sidebar
 permalink: usep_abus10.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.10 Display Available Slots From a Specific Service
 **_In order_** to book a patient into the selected provider service 
