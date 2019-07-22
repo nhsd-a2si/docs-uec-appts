@@ -7,8 +7,6 @@ toc: true
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 ## Introduction
 This section describes the message interactions that happen as part of the main booking workflow. It will define the key parameters and attributes required to progress through the booking flow.
 
