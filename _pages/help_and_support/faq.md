@@ -7,8 +7,6 @@ toc: false
 folder: help_and_support
 ---
 
-{% include note-notpublished.html %}
-
 #### Does 30% booking target include booking into UTC's as well as GP's?
 >Yes 
 
