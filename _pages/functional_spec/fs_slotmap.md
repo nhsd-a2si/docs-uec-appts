@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 ## Introduction
 
 As already described the primary service discovery tool is envisaged to be the Urgent Care Directory of Services. One aspect of searching the DoS that has not been described is how outcomes from the prior clinical assessment map to DoS services and subsequent appointment booking workflows. 
