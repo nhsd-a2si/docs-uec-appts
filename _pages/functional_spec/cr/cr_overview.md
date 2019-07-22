@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 ## Overview
 
 Proprietary solutions currently provide the ability to Book an appointment with limited capability to Cancel or Reschedule that appointment from within the actual booking workflow. 
