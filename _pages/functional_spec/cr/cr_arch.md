@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 In order to support finding, and therefore cancelling of appointments, a central registry of appointments is proposed. This will be a RESTful service, based around a cut-down (profiled) Appointment resource, which acts as a pointer to the actual Appointment and will support the following interactions:
 
 * Create

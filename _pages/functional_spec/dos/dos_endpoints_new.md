@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-{% include note-notpublished.html %}
-
 ## Recent changes to the way endpoints are stored in and returned by the DoS
 
 Recently the endpoint format that is returned by the DoS API has changed. This change was included in the January 2019 release (1.5).

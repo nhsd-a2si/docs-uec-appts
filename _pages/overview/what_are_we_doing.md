@@ -4,7 +4,6 @@ sidebar: overview_sidebar
 permalink: what_are_we_doing.html
 toc: false
 ---
-{% include note-notpublished.html %}
 
 ## Key Objectives
 * Improve patient experience when booking an appointment through IUC/CAS

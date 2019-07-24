@@ -3,7 +3,6 @@ title: ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provid
 sidebar: usecase_sidebar
 permalink: usee_abus21.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider 
 **_In order_** that the patient or their carer can cancel or rearrange an already-booked appointment at a specific provider 

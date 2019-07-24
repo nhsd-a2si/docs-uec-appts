@@ -7,7 +7,6 @@ toc: false
 Summary: "Summary of user stories goes here"
 folder: usecases
 ---
-{% include note-notpublished.html %}
 
 Here you will find the main user stories that define the capabilities for solutions compliant with this standard. They are broken into two sections priority capabilities and emerging capabilities. 
 

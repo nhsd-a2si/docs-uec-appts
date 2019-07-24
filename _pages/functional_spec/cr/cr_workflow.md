@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 There are a number of workflows where the cancel/rebook capability can be demonstrated.
 
 The following example walks through a reasonably complex scenario that demonstrates the key interactions and their sequence:

@@ -3,7 +3,6 @@ title: ABUS.13 Warn Users Where Appts are Outside Disposition Timeframe
 sidebar: usecase_sidebar
 permalink: usep_abus13.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.13 Warn Users Where Appts are Outside Disposition Timeframe 
 **_In order_** that the patient and their call handler or clinician can make an informed decision of the appropriate timescale and location of service that best meets the patient's needs and situation 

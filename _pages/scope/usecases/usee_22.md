@@ -3,7 +3,6 @@ title: ABUS.22 Amend a Booked Appointment Reason for a specific Patient/Serv
 sidebar: usecase_sidebar
 permalink: usee_abus22.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.22 Amend a Booked Appointment Reason for a specific Patient/Service Provider 
 **_In order_** that the service provider has the correct reason for the appt displayed on their system 

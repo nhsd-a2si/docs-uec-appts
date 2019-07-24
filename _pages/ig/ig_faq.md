@@ -7,8 +7,6 @@ toc: false
 folder: ig
 ---
 
-{% include note-notpublished.html %}
-
 **Do I need a Data Sharing Agreement (DSA) between two organisations to allow booking?**
 
 * For GP Connect - Yes

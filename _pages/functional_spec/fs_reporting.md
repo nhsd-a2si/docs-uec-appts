@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 It is expected that there should be a capability to report against expected national metrics for appointment booking and a clear mechanism to share these data with commissioners and other key stakeholders.
 
 The below table identifies the key metrics required to meet the national commissioning reporting requirements as well the most common local operational reporting and performance metrics. This specification is still in draft and is developing and evolving.
@@ -31,4 +29,4 @@ The below table identifies the key metrics required to meet the national commiss
 | Number of times that a user books an appointment and the subsequently re-books the appointment over a date range                                                               | In December there were 8 times a user booked an appointment and then re-books it whilst the patient was on the phone                              |
 
 
-Regarding what the mechanism for sharing is, we are expecting that existing arrangements for sharing these metrics are utilised. There may be a possiblity that an API standard for data sharing will be published in the future.
+Regarding what the mechanism for sharing is, we are expecting that existing arrangements for sharing these metrics are utilised. There may be a possibility that an API standard for data sharing will be published in the future.
