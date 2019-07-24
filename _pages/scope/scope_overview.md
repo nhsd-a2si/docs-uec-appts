@@ -13,7 +13,8 @@ The intention of this standard is to support booking from any to any accross car
 ## Care Settings
 ### In Scope (Priority)
 #### Appointment Consumers (making a booking)
-* 111 CAS
+* 111 
+* CAS
 
 #### Appointment Providers (being booked into)
 * Urgent Treatment Centres
