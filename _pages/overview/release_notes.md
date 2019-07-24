@@ -13,7 +13,7 @@ folder: introduction
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.10   | PREVIEW | Alpha | Current Version |28/06/2019   | Volatile
+0.1.10   | PREVIEW | Alpha | Current Version |26/07/2019   | Volatile
 
 **The 0.1.10 PREVIEW release has the following highlights:**
 
