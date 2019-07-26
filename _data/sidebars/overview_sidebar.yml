@@ -38,11 +38,7 @@ entries:
           - 
             title: "What we are doing"
             output: "web, pdf"            
-            url: /what_are_we_doing.html
-          - 
-            title: "Roadmap"
-            output: "web, pdf"            
-            url: /roadmap.html
+            url: /what_are_we_doing.html          
         output: web       
       - 
         folderitems: 
@@ -191,11 +187,7 @@ entries:
           - 
             title: "Contact Details"
             output: "web, pdf"            
-            url: /contact.html
-          - 
-            title: FAQ
-            output: "web, pdf"            
-            url: /faq.html
+            url: /contact.html          
           - 
             title: Glossary
             output: "web, pdf"            
