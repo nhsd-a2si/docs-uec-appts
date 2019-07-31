@@ -18,4 +18,4 @@ Urgent care can theoretically book an appointment at any time offered even if th
 * The request to confirm the appt slot **must** warn the user if they are about to book an appt that is outside the clinical assessment timeframe. 
 * The user warning **should** include details of by how long the appt fails to meet the clinical assessment timeframe. 
 * The system **must** ensure that the user confirms a decision to continue. 
-* The returned list pf appointments **may** mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
+* The returned list of appointments **may** mark those appts that do not meet the current disposition timeframe, making them unbookable, if the user of the system does not have sufficient clinical authority to book appts outside the disposition timeframe. 
