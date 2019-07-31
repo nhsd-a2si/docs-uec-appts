@@ -22,6 +22,9 @@ entries:
     - title: Rebook a booked appoimtment
       url: /usee_abus22.html 
       output: web, pdf
+    - title: Stopping referrals for booking only services
+      url: /usep_abus24.html
+      output: web, pdf
       
   - title: Emerging Capabilites
     output: web
