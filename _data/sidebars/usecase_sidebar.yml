@@ -29,3 +29,6 @@ entries:
     - title: Booking outside assessment timeframe
       url: /usep_abus13.html
       output: web, pdf
+    - title: Cancel any IUC appointment
+      url: /usee_abus23.html
+      output: web, pdf
