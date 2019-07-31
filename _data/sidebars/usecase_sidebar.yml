@@ -15,17 +15,17 @@ entries:
       output: web, pdf
     - title: Book an appointment
       url: /usep_abus12.html
-      output: web, pdf    
-      
-  - title: Emerging Capabilites
-    output: web
-    folderitems:
+      output: web, pdf 
     - title: Cancel a booked appointment
       url: /usee_abus21.html
       output: web, pdf
-    - title: Amend a booked appoimtment
+    - title: Rebook a booked appoimtment
       url: /usee_abus22.html 
       output: web, pdf
+      
+  - title: Emerging Capabilites
+    output: web
+    folderitems:    
     - title: Booking outside assessment timeframe
       url: /usep_abus13.html
       output: web, pdf
