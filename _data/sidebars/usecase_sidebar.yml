@@ -15,10 +15,7 @@ entries:
       output: web, pdf
     - title: Book an appointment
       url: /usep_abus12.html
-      output: web, pdf
-    - title: Booking outside assessment timeframe
-      url: /usep_abus13.html
-      output: web, pdf
+      output: web, pdf    
       
   - title: Emerging Capabilites
     output: web
@@ -28,4 +25,7 @@ entries:
       output: web, pdf
     - title: Amend a booked appoimtment
       url: /usee_abus22.html 
+      output: web, pdf
+    - title: Booking outside assessment timeframe
+      url: /usep_abus13.html
       output: web, pdf
