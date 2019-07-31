@@ -5,14 +5,14 @@ permalink: usee_abus21.html
 ---
 
 ## ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider 
-**_In order_** that the patient or their carer can cancel or rearrange an already-booked appointment at a specific provider 
+**_In order_** that the patient or their carer can cancel an already-booked appointment that they had initially booked 
 
-**_As a 111_** Call Handler or urgent care service provider 
+**_As a** Integrated Urgent Care Sservice Provider
 
-**_I want_** to cancel appts booked for a patient with a specific service provider. 
+**_I want_** to cancel appts booked for a patient 
 
 ### Commentary 
-The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a cancel followed by a re-book.  There is still a user story to cover the amendment of an appt, but this will not cover amending details such as date/time/location. 
+The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a cancel followed by a re-book (following a reassessment).  
 
 As urgent care providers can receive calls for different regions they must have the ability to cancel appts that they did not actually raise.   
 
