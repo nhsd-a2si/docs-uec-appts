@@ -7,16 +7,14 @@ permalink: usep_abus10.html
 ## ABUS.10 Display Available Slots From a Specific Service
 **_In order_** to book a patient into the selected provider service 
 
-**_As a_** 111 Call Handler or urgent care service provider 
+**_As a_** Integrated Urgent Care Sservice Provider 
 
 **_I want_** to view the available slots for a provider service for a specified timeframe.
 
 ### Commentary 
-Where GP practices are huge joint practices or collections of federated practices, the list returned must be limited to only appointment slots at locations that fulfill the location requirement of the patient. This will nearly always be one location only. This may also be true for other urgent care providers either now or in the future.
+The list returned must be limited to only appointment slots at appropriate locations
 
 GP Connect use case can be found at <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_search_for_free_slots.html" target="_blank">GP Connect search for free slots use case</a>
-
-Providers may wish to demand-manage their slot collections.  GP practices may wish to have some appts available for urgent cases, and urgent care providers. 
 
 ### Acceptance Criteria 
 * The list **must** contain the actual geographic location of the appointment, rather than generic details of the location of the overall service provider. 
