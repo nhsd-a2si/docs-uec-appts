@@ -7,7 +7,6 @@ permalink: glossary.html
 summary: "Glossary of terms used in the UEC Appointment booking standards"
 toc: false
 ---
-{% include note-notpublished.html %}
 
 ### Consumer
 The IT system that is searching for and placing bookings on behalf of the patient 

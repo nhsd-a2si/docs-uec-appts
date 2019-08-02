@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-{% include note-notpublished.html %}
-
 # Example scenario
 
 Services on the DoS are profiled with a range of data that is used to determine the ranking for services. There are also additional data items that are used for other purposes, for example interoperability. Examples of these data items are as follows:
@@ -44,10 +42,10 @@ The UTC offers three different clinics. Each of the three clinics has its own ap
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 
 
-The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule has a unique HealthcareServiceID, this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
+The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule has a unique identifier, this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
 
 
-ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
+ID  |  Location Name  | ODS Code | Schedule | Appointment Type | ASID
 ----|-----------------|----------|----------|------------------|---------------------
 1   | Clinic 1   | AB1234   | 1        | GP               | ASID:109876543210
 1   | Clinic 1   | AB1234   | 2        | Nurse            | ASID:101234567890
@@ -56,11 +54,11 @@ ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServi
 
 
 
-The table below shows key information about the associated DoS services and the HealthcareServiceID defined against each service, Note that each service has its own unique HealthcareServiceID:
+The table below shows key information about the associated DoS services and the ASID defined against each service, Note that each service has its own unique ASID:
 
 
 
-Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
+Service Type | DoS ID  | Service Name                 | Service ODS Code | ASID
 -------------|---------|------------------------------|------------------|---------------------------
 UTC | 123456  | The UTC - GP Clinic      |      AB1234      | ASID:109876543210
 UTC | 654321  | The UTC - Nurse Clinic 1 |      654321      | ASID:101234567890
@@ -68,7 +66,7 @@ UTC | 123457  | The UTC - Nurse Clinic 2 |      123457      | ASID:987654321001
 UTC | 123458  | The UTC - Nurse Clinic 3 |      123458      | ASID:123456789001
 
  
-From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This identifier needs to be specified on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
+From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the ASID. This identifier needs to be specified on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the location and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
 
 The following digram illustrates with a typical return from the DoS, the relationship of DoS services to appointment schedules.
 
@@ -84,7 +82,7 @@ Once all the above is understood we can walk through a typical booking scenario 
 3. The clinician assesses the patient and determines that the patient requires an urgent appointment with a GP.
 4. The 111 IT system searches the DoS with the details of the patient and the assessment
 5. The DoS returns a ranked list of services. The top service is the service named "The UTC - GP Clinic"
-6. This service is selected and information on the referral and booking endpoints is returned including the HealthcareServiceID
-7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry.
-In this scenario, since the target system is all the same, the returned URL's will all be the same. However since the HealthcareServiceID (ASID) gets included in the query parameters, ANEDS can filter the slots returned appropriately.
+6. This service is selected and information on the referral and booking endpoints is returned including the ASID
+7. Next the 111 system will use the ASID to retreive the correct booking API endpoint from the endpoint registry.
+In this scenario, since the target system is all the same, the returned URL's will all be the same. However since the ASID gets included in the query parameters, ANEDS can filter the slots returned appropriately.
 8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "UTC - Clinic 1"

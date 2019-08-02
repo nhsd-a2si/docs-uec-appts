@@ -7,9 +7,6 @@ toc: false
 folder: getting_started
 ---
 
-{% include note-notpublished.html %}
-
-
 Welcome to the UEC appointment booking national standards website. On this site you will find guidance, specifications and background information for suppliers who are implementing these standards as well as providers and comissioners who are looking to procure and implement solutions that comply with these standards.
 
 #### For Suppliers

@@ -7,8 +7,6 @@ toc: true
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 ## Introduction
 
 The <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Urgent Care Directory of Services (known as the "DoS")</a> is the primary service discovery and information tool available to the NHS. Although this standard does support booking workflows that do not need to use the DoS it is envisaged that it will provide the service discovery element in the majority of booking workflows that use this standard.
@@ -59,10 +57,10 @@ Each of the three locations has its own appointment diary represented as a sched
 <script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 
 
-The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule has a unique HealthcareServiceID, this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
+The important thing here is how the DoS services link through the the appointment schedule. The below table describes the location configuration on the IT system. Note that each schedule has a unique identifier, this ID is what is known as an accredited system identifier (ASID) and is created when an endpoint is configured on the Spine Directory Service (SDS):
 
 
-ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServiceID
+ID  |  Location Name  | ODS Code | Schedule | Appointment Type | ASID
 ----|-----------------|----------|----------|------------------|---------------------
 1   | Main Location   | AB1234   | 1        | GP               | 109876543210
 1   | Main Location   | AB1234   | 2        | Nurse            | 101234567890
@@ -71,11 +69,11 @@ ID  |  Location Name  | ODS Code | Schedule | Appointment Type | HealthcareServi
 
 
 
-The table below shows key information about the associated DoS services and the HealthcareServicesID defined against each service, Note that each service has its own unique HealthcareServiceID:
+The table below shows key information about the associated DoS services and the HealthcareServicesID defined against each service, Note that each service has its own unique ASID:
 
 
 
-Service Type | DoS ID  | Service Name                 | Service ODS Code | HealthcareServiceID
+Service Type | DoS ID  | Service Name                 | Service ODS Code | ASID
 -------------|---------|------------------------------|------------------|---------------------------
 GP Federation| 123456  | GP Hub - Main location GP    |      AB1234      | 109876543210
 GP Federation| 654321  | GP Hub - Main location Nurse |      654321      | 101234567890
@@ -83,7 +81,7 @@ GP Federation| 123457  | GP Hub - the High Street     |      123457      | 98765
 GP Federation| 123458  | GP Hub - Other Town GP       |      123458      | 123456789001
 
  
-From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the HealthcareServiceID. This identifier needs to be specificied on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the locational and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
+From this information we can see that each DoS service has a 1:1 relationship with appointment schedules through the ASID. This identifier needs to be specificied on the appointment provider system and against the corresponding service on the DoS. As can be seen this means that each location (and even each appointment type) has its own DoS service. Since ODS code is not relevent to the booking process here it means that the locational and slot ambiguity caused by the brittle relationship between ODS code, the service, its locations and schedules is removed.
 
 The following digram illustrates with a typical return from the DoS, the relationship of DoS services to appointment schedules.
 
@@ -99,8 +97,8 @@ Once all the above is understood we can walk through a typical booking scenario 
 3. The clinician assesses the patient and determines that the patient requires an urgent appointment with a GP.
 4. The 111 IT system searches the DoS with the details of the patient and the assessment
 5. The DoS returns a ranked list of services. The top service is the service named "GP Hub - Main location GP"
-6. This service is selected and information on the referral and booking endpoints is returned including the HealthcareServiceID
-7. Next the 111 system will use the HealthcareServiceID to retreive the correct booking API endpoint from the endpoint registry
+6. This service is selected and information on the referral and booking endpoints is returned including the ASID
+7. Next the 111 system will use the ASID to retreive the correct booking API endpoint from the endpoint registry
 8. A request will be made by the 111 system to the appointment provider IT system to retreive all available and appropriate slots from the GP Diary at "GP Hub - Main location GP"
 
 ## Key Requirements
@@ -108,12 +106,12 @@ Once all the above is understood we can walk through a typical booking scenario 
 For the three key actors in this process there are the following key requirments:
 
 * The appointment consumer (111 system in the example above):
-  * MUST be able to retreive the HealthcareServiceID from the endpoint details returned from the DoS
-  * MUST ensure that the booking functionality invoked is compliant with the national standards when a booking endpoint (HealthcareServiceID) is returned
+  * MUST be able to retreive the ASID from the endpoint details returned from the DoS
+  * MUST ensure that the booking functionality invoked is compliant with the national standards when a booking endpoint (ASID) is returned
   * MUST ensure that if no booking endpoint is returned by the GetServiceDetailsByID API call that any proprietary booking mechanisms are then tried and still work
 * The DoS:
-  * MUST be able to store the HealthcareServiceID
-  * MUST return a booking endpoint (HealthcareServiceID) in response to a GetServiceDetailsByID API call
+  * MUST be able to store the ASID
+  * MUST return a booking endpoint (ASID) in response to a GetServiceDetailsByID API call
 * The appointment provider (GP Federation system in the example above):
-  * MUST allow association of a booking diary with a HealthcareServiceID
-  * MUST ensure that two different diaries cannot be associated with the same HealthcareServiceID UNLESS there is a clear use case for slots from multiple schedules to be returned in one schedule bundle and therefore be considered by a booking consumer as a single service.
+  * MUST allow association of a booking diary with a ASID
+  * MUST ensure that two different diaries cannot be associated with the same ASID UNLESS there is a clear use case for slots from multiple schedules to be returned in one schedule bundle and therefore be considered by a booking consumer as a single service.

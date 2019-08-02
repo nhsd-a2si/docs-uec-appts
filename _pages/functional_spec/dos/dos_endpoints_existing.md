@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-{% include note-notpublished.html %}
-
 ## Current Endpoint Configuration in the DoS
 
 The DoS currently has several different types of endpoints to support existing onward distribution of information for varios different types of interction scenarios. There s a UI to allow DoS administration users to create and manage these endpoints:

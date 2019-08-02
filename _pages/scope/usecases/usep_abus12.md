@@ -3,7 +3,6 @@ title: ABUS.12 Confirm/Book an Appointment Slot
 sidebar: usecase_sidebar
 permalink: usep_abus12.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.12 Confirm/Book an Appointment Slot 
 **_In order_** that the patient can be assured that the provider will see them on or around the allotted time at the selected location 

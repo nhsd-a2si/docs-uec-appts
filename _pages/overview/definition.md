@@ -4,7 +4,6 @@ sidebar: overview_sidebar
 permalink: definition.html
 toc: false
 ---
-{% include note-notpublished.html %}
 
 ### The urgent care service arranges for the patient to:
 * be given a timed appointment slot to directly see or speak to a clinician within the service they are being referred to

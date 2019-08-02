@@ -7,8 +7,6 @@ toc: false
 folder: dos
 ---
 
-{% include note-notpublished.html %}
-
 ## Proposed Changes to support Appointment Booking
 
 For appointment booking there will be a new transport type, format and interaction with an entirely new enpoint item (ASID). 

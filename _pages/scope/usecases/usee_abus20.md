@@ -3,7 +3,6 @@ title: ABUS.20 Display any Booked Appointments for a specific Patient/Service 
 sidebar: usecase_sidebar
 permalink: usee_abus20.html
 ---
-{% include note-notpublished.html %}
 
 ## ABUS.20 Display any Booked Appointments for a specific Patient/Service Provider 
 **_In order_** that the patient can confirm what appts are already booked for them at a provider or an urgent care clinician can check the attendance status of a patient's appt 

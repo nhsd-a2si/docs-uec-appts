@@ -8,8 +8,6 @@ Summary: "Summary of demonstrator"
 folder: implementation
 ---
 
-{% include note-notpublished.html %}
-
 In order to facilitate development both consuming and providing systems a demonstrator platform will be provided. ultimately this will offer the following capabilities:
 
 * <span style="color:red">example of a consuming system</span>

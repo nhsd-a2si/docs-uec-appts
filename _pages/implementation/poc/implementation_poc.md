@@ -8,8 +8,6 @@ Summary: "Summary of POC goes here"
 folder: implementation
 ---
 
-{% include note-notpublished.html %}
-
 ## Scope
 The proof of concept demonstrates the appointment booking workflow, specifically, how consumers can locate endpoints and retrieve appointment slots from providers. It is a technical demonstration of how the APIs can support the appointment booking workflow and not a full end to end solution.
 

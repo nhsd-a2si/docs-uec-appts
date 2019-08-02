@@ -10,7 +10,7 @@ folder: functional_spec
 For UEC GP Connect consuming system there are the following key requirments:
 
 * The appointment consumer (for example a 111/IUC system):
-  * MUST be able to retreive the HealthcareServiceID from the endpoint details returned from the DoS
+  * MUST be able to retreive the SDS record pointer (e.g. ASID or ODS code) from the endpoint details returned from the DoS
   * MUST be able to identify the ODS code for the patients registered GP Practice from the PDS
   * MUST be able to identify the patients preferred GP Practice location from the PDS (where present)
   * MUST clearly indicate to users a patients preferred GP Practice location where this information is available
