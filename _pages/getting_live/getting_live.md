@@ -18,6 +18,7 @@ folder: getting_live
       data-sort-priority='[{"sortName": "ID","sortOrder":"desc"},{"sortName":"Name","sortOrder":"desc"}]'
       data-advanced-search="true"
       data-id-table="advancedTable"
+      data-search-accent-neutralise="true"
 >
       <thead>
         <tr>
@@ -44,4 +45,5 @@ folder: getting_live
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js"></script>
 
