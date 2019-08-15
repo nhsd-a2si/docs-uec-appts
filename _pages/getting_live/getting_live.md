@@ -45,3 +45,4 @@ folder: getting_live
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
+
