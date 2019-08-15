@@ -15,7 +15,7 @@ folder: getting_live
       data-search="true"
       data-show-columns="true"
       data-show-multi-sort="true"
-      data-sort-priority='[{"sortName": "ID","sortOrder":"desc"},{"sortName":"Name","sortOrder":"desc"}]'
+      data-sort-priority='[{"sortName": "ID","sortOrder":"desc"},{"sortName":"Capability","sortOrder":"desc"}]'
       data-advanced-search="true"
       data-id-table="advancedTable"
       data-search-accent-neutralise="true"
@@ -23,20 +23,22 @@ folder: getting_live
       <thead>
         <tr>
           <th data-field="ID" data-sortable="true">Item ID</th>
-          <th data-field="Item" data-sortable="true">Item Name</th>
-          <th data-field="Price" data-sortable="true">Item Price</th>
+          <th data-field="Capability" data-sortable="true">Capability</th>
+          <th data-field="Supplier" data-sortable="true">Supplier</th>
+          <th data-field="Status" data-sortable="true">Status</th>
+          <th data-field="Date" data-sortable="true">Date</th>
+          <th data-field="Dependencies" data-sortable="true">Dependencies</th>
+          <th data-field="Comments" data-sortable="true">Comments</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Item 1</td>
-          <td>$1</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Item 2</td>
-          <td>$2</td>
+          <td>Book an appointment - GP</td>
+          <td>Advanced</td>
+          <td>Complete</td>
+          <td>July 2019</td>
+          <td>None</td>
+          <td>Ability to search and book an appointment</td>
         </tr>
       </tbody>
     </table>
