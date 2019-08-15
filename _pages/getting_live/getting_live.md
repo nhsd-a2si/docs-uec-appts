@@ -8,7 +8,6 @@ folder: getting_live
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
-<style>.sticky-header-container {left: 3em;right: 3em;}</style>
 
 <table 
       data-toggle="table"
