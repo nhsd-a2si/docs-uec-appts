@@ -33,6 +33,7 @@ folder: getting_live
       </thead>
       <tbody>
         <tr>
+          <td>1</td>
           <td>Book an appointment - GP</td>
           <td>Advanced</td>
           <td>Complete</td>
