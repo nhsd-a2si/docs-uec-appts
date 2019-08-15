@@ -15,7 +15,7 @@ folder: getting_live
       data-search="true"
       data-show-columns="true"
       data-show-multi-sort="true"
-      data-sort-priority='[{"sortName": "github.count.forks","sortOrder":"desc"},{"sortName":"github.count.stargazers","sortOrder":"desc"}]
+      data-sort-priority='[{"sortName": "ID","sortOrder":"desc"},{"sortName":"Name","sortOrder":"desc"}]'
       data-advanced-search="true"
       data-id-table="advancedTable"
 >
