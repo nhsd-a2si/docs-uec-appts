@@ -9,7 +9,12 @@ folder: getting_live
 
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
 
-<table data-toggle="table">
+<table 
+      data-toggle="table"
+      data-url="data1.json"
+      data-pagination="true"
+      data-search="true"
+>
       <thead>
         <tr>
           <th>Item ID</th>
