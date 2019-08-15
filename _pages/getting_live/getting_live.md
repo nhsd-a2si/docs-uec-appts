@@ -11,7 +11,6 @@ folder: getting_live
 
 <table 
       data-toggle="table"
-      data-url="data1.json"
       data-pagination="true"
       data-search="true"
 >
