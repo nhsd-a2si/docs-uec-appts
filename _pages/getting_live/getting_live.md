@@ -34,10 +34,11 @@ folder: getting_live
       <tbody>
         <tr>
           <td>1</td>
-          <td>Book an appointment - GP</td>
-          <td>Advanced</td>
-          <td>Complete</td>
-          <td>July 2019</td>
+          <td>Book an appointment - GP
+                <td>Advanced</td>
+                <td>Complete</td>
+                <td>July 2019</td>   
+          </td>          
           <td>None</td>
           <td>Ability to search and book an appointment</td>
         </tr>
