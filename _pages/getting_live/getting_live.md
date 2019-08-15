@@ -8,11 +8,17 @@ folder: getting_live
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
+<style>.sticky-header-container {left: 3em;right: 3em;}</style>
 
 <table 
       data-toggle="table"
       data-pagination="true"
       data-search="true"
+      data-show-columns="true"
+      data-show-multi-sort="true"
+      data-sort-priority='[{"sortName": "github.count.forks","sortOrder":"desc"},{"sortName":"github.count.stargazers","sortOrder":"desc"}]
+      data-advanced-search="true"
+      data-id-table="advancedTable"
 >
       <thead>
         <tr>
@@ -36,3 +42,6 @@ folder: getting_live
     </table>
 
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
