@@ -37,15 +37,19 @@ folder: getting_live
           <td rowspan="3">Book an appointment - GP</td>   
           <td>Advanced</td>
           <td>Complete</td>
-          <td>July 2019</td>
+          <td>July 2019</td>          
+          <td rowspan="3">None</td>
+          <td rowspan="3">Ability to search and book an appointment</td>
+         </tr>  
+         <tr>
           <td>IC24</td>
           <td>Testing</td>
-          <td>19th August 2019</td>   
+          <td>19th August 2019</td>
+         </tr>
+        <tr>
           <td>Cleric</td>
           <td>Development</td>
           <td>October 2019</td>    
-          <td rowspan="3">None</td>
-          <td rowspan="3">Ability to search and book an appointment</td>
         </tr>
       </tbody>
     </table>
