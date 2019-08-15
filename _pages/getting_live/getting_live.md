@@ -22,9 +22,9 @@ folder: getting_live
 >
       <thead>
         <tr>
-          <th>Item ID</th>
-          <th>Item Name</th>
-          <th>Item Price</th>
+          <th data-field="ID" data-sortable="true">Item ID</th>
+          <th data-field="Item" data-sortable="true">Item Name</th>
+          <th data-field="Price" data-sortable="true">Item Price</th>
         </tr>
       </thead>
       <tbody>
