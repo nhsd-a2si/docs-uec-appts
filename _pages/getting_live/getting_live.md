@@ -18,8 +18,7 @@ folder: getting_live
       data-sort-priority='[{"sortName": "ID","sortOrder":"desc"},{"sortName":"Capability","sortOrder":"desc"}]'
       data-advanced-search="true"
       data-id-table="advancedTable"
-      data-search-accent-neutralise="true"
->
+      data-search-accent-neutralise="true">
       <thead>
         <tr>
           <th data-field="ID" data-sortable="true">Item ID</th>
@@ -35,23 +34,29 @@ folder: getting_live
         <tr>
           <td rowspan="3">1</td>
           <td rowspan="3">Book an appointment - GP</td>
-        </tr>
-        <tr>
           <td>Advanced</td>
           <td>Complete</td>
           <td>July 2019</td>          
           <td rowspan="3">None</td>
           <td rowspan="3">Ability to search and book an appointment</td>
-         </tr>  
-         <tr>
+        </tr>  
+        <tr>
+          <td rowspan="3">1</td>
+          <td rowspan="3">Book an appointment - GP</td>
           <td>IC24</td>
           <td>Testing</td>
           <td>19th August 2019</td>
-         </tr>
+          <td rowspan="3">None</td>
+          <td rowspan="3">Ability to search and book an appointment</td>
+        </tr>
         <tr>
+          <td rowspan="3">1</td>
+          <td rowspan="3">Book an appointment - GP</td>
           <td>Cleric</td>
           <td>Development</td>
-          <td>October 2019</td>    
+          <td>October 2019</td>
+          <td rowspan="3">None</td>
+          <td rowspan="3">Ability to search and book an appointment</td>
         </tr>
       </tbody>
     </table>
