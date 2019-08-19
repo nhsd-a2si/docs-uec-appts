@@ -32,8 +32,8 @@ folder: getting_live
       </thead>
       <tbody>
         <tr>
-          <td rowspan="3">1</td>
-          <td rowspan="3">Book an appointment - GP</td>
+          <td>1</td>
+          <td>Book an appointment - GP</td>
           <td>Advanced</td>
           <td>Complete</td>
           <td>July 2019</td>          
@@ -62,4 +62,12 @@ folder: getting_live
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js"></script>
+<script>
+      $table.on('load-success.bs.table column-switch.bs.table page-change.bs.table search.bs.table', function () {
+            $table.bootstrapTable('mergeCells', {index: 1,
+        field: 'ID',
+        colspan: 1,
+        rowspan: 3})
+      })
+</script>
 
