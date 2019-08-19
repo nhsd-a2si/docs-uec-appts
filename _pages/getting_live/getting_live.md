@@ -29,8 +29,8 @@ folder: getting_live
 
     padding: 1rem;
 
-    color: #A77B0E;
-    background: #FAE042;
+    color: #FFFFFF;
+    background: #005EB8;
 
     cursor: pointer;
 
@@ -86,7 +86,7 @@ folder: getting_live
 
 <div class="wrap-collabsible">
   <input id="collapsible" class="toggle" type="checkbox">
-  <label for="collapsible" class="lbl-toggle">More Info</label>
+  <label for="collapsible" class="lbl-toggle">IT supplier Booking Capabilities - GP Connect - Consumer </label>
   <div class="collapsible-content">
     <div class="content-inner">
       <p>        
