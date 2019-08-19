@@ -22,12 +22,12 @@ folder: getting_live
     display: block;
 
     font-weight: bold;
-    font-family: monospace;
+    font-family: Verdana;
     font-size: 2rem;
     // text-transform: uppercase;
     text-align: left;
 
-    padding: 1rem;
+    padding: 10rem;
 
     color: #FFFFFF;
     background: #005EB8;
