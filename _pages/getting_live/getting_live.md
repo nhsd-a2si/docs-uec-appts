@@ -17,16 +17,6 @@ folder: getting_live
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: white;
-  float: right;
-  margin-left: 5px;
-}
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
 </style>
 
 <script>
