@@ -24,7 +24,7 @@ folder: getting_live
       <tbody>
         <tr>
           <td rowspan="3">1</td>
-          <tdrowspan="3">Book an appointment - GP</td>
+          <td rowspan="3">Book an appointment - GP</td>
           <td>Advanced</td>
           <td>Complete</td>
           <td>July 2019</td>          
