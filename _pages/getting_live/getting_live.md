@@ -67,7 +67,7 @@ folder: getting_live
   }
 
   .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 1200px;
+    max-height: 1600px;
   }
 
   .toggle:checked + .lbl-toggle {
