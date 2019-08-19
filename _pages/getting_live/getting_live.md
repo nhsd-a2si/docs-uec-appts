@@ -292,7 +292,7 @@ folder: getting_live
               </tr>    
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td rowspan="3">3</td>
+                <td rowspan="3">2</td>
                 <td rowspan="3">Cancel - During a consultation</td>
                 <td>Advanced</td>
                 <td>Complete</td>
@@ -312,7 +312,7 @@ folder: getting_live
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td rowspan="3">4</td>
+                <td rowspan="3">3</td>
                 <td rowspan="3">Cancel - After a consultation (Same 111 Provider)</td>
                 <td>Advanced</td>
                 <td>Development</td>
@@ -332,7 +332,7 @@ folder: getting_live
               </tr>     
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td rowspan="3">6</td>
+                <td rowspan="3">4</td>
                 <td rowspan="3">Appointment Warnings</td>
                 <td>Advanced</td>
                 <td>Not started</td>
@@ -352,7 +352,7 @@ folder: getting_live
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td rowspan="3">7</td>
+                <td rowspan="3">5</td>
                 <td rowspan="3">Referral Suppression</td>
                 <td>Advanced</td>
                 <td>Development</td>
@@ -370,6 +370,62 @@ folder: getting_live
                 <td>Development</td>
                 <td>October 2019</td>         
               </tr>
+            </tbody>
+      </table> 
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="wrap-collabsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Provider</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>        
+      <table class="pure-table pure-table-bordered"> 
+            <thead>
+              <tr>
+                <th data-field="ID" data-sortable="true">Item ID</th>
+                <th data-field="Capability" data-sortable="true">Capability</th>
+                <th data-field="Supplier" data-sortable="true">Supplier</th>
+                <th data-field="Status" data-sortable="true">Status</th>
+                <th data-field="Date" data-sortable="true">Date</th>
+                <th data-field="Dependencies" data-sortable="true">Dependencies</th>
+                <th data-field="Comments" data-sortable="true">Comments</th>
+              </tr>
+            </thead>
+            <tbody>        
+      <!------------------------------ROW----------------------------------->        
+              <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">Book an appointment</td>
+                <td>EMIS</td>
+                <td>TBC</td>
+                <td>TBC</td>          
+                <td rowspan="3"></td>
+                <td rowspan="3">Ability to search and book an appointment</td>
+              </tr>  
+              <tr>
+                <td>IC24</td>
+                <td>Not started</td>
+                <td>November 2019</td>         
+              </tr>                  
+      <!------------------------------ROW----------------------------------->             
+              <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Cancel an appointment</td>
+                <td>EMIS</td>
+                <td>TBC</td>
+                <td>TBC</td>          
+                <td rowspan="3"></td>
+                <td rowspan="3">Ability to cancel an appointment</td>
+              </tr>  
+              <tr>
+                <td>IC24</td>
+                <td>Not started</td>
+                <td>November 2019</td>         
+              </tr>                   
             </tbody>
       </table> 
       </p>
