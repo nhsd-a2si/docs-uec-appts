@@ -8,16 +8,8 @@ folder: getting_live
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css">
-<script>
-      $table.on('load-success.bs.table column-switch.bs.table page-change.bs.table search.bs.table', function () {
-            $table.bootstrapTable('mergeCells', {index: 0,
-        field: 'ID',
-        colspan: 1,
-        rowspan: 3})
-      })
-</script>
-
 <table 
+      id="table"
       data-toggle="table"
       data-pagination="true"
       data-search="true"
@@ -70,3 +62,12 @@ folder: getting_live
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/toolbar/bootstrap-table-toolbar.min.js"></script>
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js"></script>
+<script>
+       var $table = $('#table')
+      $table.on('load-success.bs.table column-switch.bs.table page-change.bs.table search.bs.table', function () {
+            $table.bootstrapTable('mergeCells', {index: 0,
+        field: 'ID',
+        colspan: 1,
+        rowspan: 3})
+      })
+</script>
