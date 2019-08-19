@@ -21,7 +21,8 @@ folder: getting_live
           <th data-field="Comments" data-sortable="true">Comments</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody>        
+<!------------------------------ROW----------------------------------->        
         <tr>
           <td rowspan="3">1</td>
           <td rowspan="3">Book an appointment - GP</td>
@@ -40,6 +41,126 @@ folder: getting_live
           <td>Cleric</td>
           <td>Development</td>
           <td>October 2019</td>         
+        </tr>
+<!------------------------------ROW----------------------------------->             
+        <tr>
+          <td rowspan="3">????</td>
+          <td rowspan="3">????</td>
+          <td>Advanced</td>
+          <td></td>
+          <td></td>          
+          <td rowspan="3"></td>
+          <td rowspan="3"></td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td></td>
+          <td></td>         
+        </tr>
+<!------------------------------ROW----------------------------------->             
+        <tr>
+          <td rowspan="3">????</td>
+          <td rowspan="3">????</td>
+          <td>Advanced</td>
+          <td></td>
+          <td></td>          
+          <td rowspan="3"></td>
+          <td rowspan="3"></td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td></td>
+          <td></td>         
+        </tr>
+<!------------------------------ROW----------------------------------->             
+        <tr>
+          <td rowspan="3">????</td>
+          <td rowspan="3">????</td>
+          <td>Advanced</td>
+          <td></td>
+          <td></td>          
+          <td rowspan="3"></td>
+          <td rowspan="3"></td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td></td>
+          <td></td>         
+        </tr>
+<!------------------------------ROW----------------------------------->             
+        <tr>
+          <td rowspan="3">????</td>
+          <td rowspan="3">????</td>
+          <td>Advanced</td>
+          <td></td>
+          <td></td>          
+          <td rowspan="3"></td>
+          <td rowspan="3"></td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td></td>
+          <td></td>         
+        </tr>
+<!------------------------------ROW----------------------------------->             
+        <tr>
+          <td rowspan="3">????</td>
+          <td rowspan="3">????</td>
+          <td>Advanced</td>
+          <td></td>
+          <td></td>          
+          <td rowspan="3"></td>
+          <td rowspan="3"></td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td></td>
+          <td></td>         
+        </tr>
+<!------------------------------ROW----------------------------------->             
+        <tr>
+          <td rowspan="3">????</td>
+          <td rowspan="3">????</td>
+          <td>Advanced</td>
+          <td></td>
+          <td></td>          
+          <td rowspan="3"></td>
+          <td rowspan="3"></td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td></td>
+          <td></td>         
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td></td>
+          <td></td>         
         </tr>
       </tbody>
     </table>
