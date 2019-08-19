@@ -1,0 +1,48 @@
+---
+title: Getting Live
+sidebar: overview_sidebar
+keywords: guidance
+permalink: getting_live.html
+toc: false
+folder: getting_live
+---
+
+
+<table> 
+      <thead>
+        <tr>
+          <th data-field="ID" data-sortable="true">Item ID</th>
+          <th data-field="Capability" data-sortable="true">Capability</th>
+          <th data-field="Supplier" data-sortable="true">Supplier</th>
+          <th data-field="Status" data-sortable="true">Status</th>
+          <th data-field="Date" data-sortable="true">Date</th>
+          <th data-field="Dependencies" data-sortable="true">Dependencies</th>
+          <th data-field="Comments" data-sortable="true">Comments</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Book an appointment - GP</td>
+          <td>Advanced</td>
+          <td>Complete</td>
+          <td>July 2019</td>          
+          <td>None</td>
+          <td>Ability to search and book an appointment</td>
+        </tr>  
+        <tr>
+          <td>IC24</td>
+          <td>Testing</td>
+          <td>19th August 2019</td>
+          <td>None</td>
+          <td>Ability to search and book an appointment</td>
+        </tr>
+        <tr>
+          <td>Cleric</td>
+          <td>Development</td>
+          <td>October 2019</td>
+          <td>None</td>
+          <td>Ability to search and book an appointment</td>
+        </tr>
+      </tbody>
+    </table>
