@@ -76,7 +76,7 @@ folder: getting_live
   }
 
   .collapsible-content .content-inner {
-    background: rgba(26, 32, 76, 0.05);
+    background: rgba(0, 0, 0, 0.01);
     border-bottom: 1px solid rgba(250, 224, 66, .45);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
