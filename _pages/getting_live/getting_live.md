@@ -9,35 +9,12 @@ folder: getting_live
 
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
-<style>
-.content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
-<button class="collapsible">IT supplier Booking Capabilities - GP Connect - Consumer </button>
-<div class="content">
+<div class="wrap-collabsible">
+  <input id="collapsible" class="toggle" type="checkbox">
+  <label for="collapsible" class="lbl-toggle">More Info</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>        
       <table class="pure-table pure-table-bordered"> 
             <thead>
               <tr>
@@ -193,4 +170,7 @@ for (i = 0; i < coll.length; i++) {
               </tr>
             </tbody>
       </table> 
+      </p>
+    </div>
+  </div>
 </div>
