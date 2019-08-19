@@ -44,13 +44,13 @@ folder: getting_live
         </tr>
 <!------------------------------ROW----------------------------------->             
         <tr>
-          <td rowspan="3">????</td>
-          <td rowspan="3">????</td>
+          <td rowspan="3">2</td>
+          <td rowspan="3">Book an appointment - Hub</td>
           <td>Advanced</td>
           <td></td>
           <td></td>          
-          <td rowspan="3"></td>
-          <td rowspan="3"></td>
+          <td rowspan="3">There is a dependency that all hubs work the same.  This work is not commissioned so would need to be followed through and scoped by BRAM</td>
+          <td rowspan="3">Ability to search and book an appointment</td>
         </tr>  
         <tr>
           <td>IC24</td>
@@ -64,13 +64,13 @@ folder: getting_live
         </tr>
 <!------------------------------ROW----------------------------------->             
         <tr>
-          <td rowspan="3">????</td>
-          <td rowspan="3">????</td>
+          <td rowspan="3">3</td>
+          <td rowspan="3">Cancel - During a consultation</td>
           <td>Advanced</td>
           <td></td>
           <td></td>          
           <td rowspan="3"></td>
-          <td rowspan="3"></td>
+          <td rowspan="3">Ability to cancel an appointment during a telephone call</td>
         </tr>  
         <tr>
           <td>IC24</td>
@@ -84,13 +84,13 @@ folder: getting_live
         </tr>
 <!------------------------------ROW----------------------------------->             
         <tr>
-          <td rowspan="3">????</td>
-          <td rowspan="3">????</td>
+          <td rowspan="3">4</td>
+          <td rowspan="3">Cancel - After a consultation (Same 111 Provider)</td>
           <td>Advanced</td>
           <td></td>
           <td></td>          
           <td rowspan="3"></td>
-          <td rowspan="3"></td>
+          <td rowspan="3">Ability to cancel an appointment after the telephone call has been competed.  By the same 111 provider </td>
         </tr>  
         <tr>
           <td>IC24</td>
@@ -104,13 +104,13 @@ folder: getting_live
         </tr>
 <!------------------------------ROW----------------------------------->             
         <tr>
-          <td rowspan="3">????</td>
-          <td rowspan="3">????</td>
+          <td rowspan="3">5</td>
+          <td rowspan="3">Temporary Register</td>
           <td>Advanced</td>
           <td></td>
           <td></td>          
           <td rowspan="3"></td>
-          <td rowspan="3"></td>
+          <td rowspan="3">When booking into a HUB/UTC and using a Primary Care IT System</td>
         </tr>  
         <tr>
           <td>IC24</td>
@@ -124,13 +124,13 @@ folder: getting_live
         </tr>
 <!------------------------------ROW----------------------------------->             
         <tr>
-          <td rowspan="3">????</td>
-          <td rowspan="3">????</td>
+          <td rowspan="3">6</td>
+          <td rowspan="3">Appointment Warnings</td>
           <td>Advanced</td>
           <td></td>
           <td></td>          
-          <td rowspan="3"></td>
-          <td rowspan="3"></td>
+          <td rowspan="3">This will be dependent on the NHS Pathways having a future version that provides this information</td>
+          <td rowspan="3">Present a warning when booking outside a disposition timeframe</td>
         </tr>  
         <tr>
           <td>IC24</td>
@@ -144,13 +144,13 @@ folder: getting_live
         </tr>
 <!------------------------------ROW----------------------------------->             
         <tr>
-          <td rowspan="3">????</td>
-          <td rowspan="3">????</td>
+          <td rowspan="3">7</td>
+          <td rowspan="3">Referral Suppression</td>
           <td>Advanced</td>
           <td></td>
           <td></td>          
-          <td rowspan="3"></td>
-          <td rowspan="3"></td>
+          <td rowspan="3">This will be dependent on the DOS team completed the service attribute information and this being populate by the local DOS team </td>
+          <td rowspan="3">When referring to a HUB</td>
         </tr>  
         <tr>
           <td>IC24</td>
