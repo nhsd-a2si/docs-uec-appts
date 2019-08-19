@@ -1,8 +1,8 @@
 ---
-title: Getting Live
+title: Supplier Conformance catalogue
 sidebar: overview_sidebar
 keywords: guidance
-permalink: getting_live.html
+permalink: catalogue.html
 toc: false
 folder: getting_live
 ---
