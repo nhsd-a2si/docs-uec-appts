@@ -28,8 +28,8 @@ folder: getting_live
           <td>Advanced</td>
           <td>Complete</td>
           <td>July 2019</td>          
-          <tdrowspan="3">None</td>
-          <tdrowspan="3">Ability to search and book an appointment</td>
+          <td rowspan="3">None</td>
+          <td rowspan="3">Ability to search and book an appointment</td>
         </tr>  
         <tr>
           <td>IC24</td>
