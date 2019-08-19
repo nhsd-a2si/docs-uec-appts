@@ -398,13 +398,13 @@ folder: getting_live
             <tbody>        
       <!------------------------------ROW----------------------------------->        
               <tr>
-                <td rowspan="3">1</td>
-                <td rowspan="3">Book an appointment</td>
+                <td rowspan="2">1</td>
+                <td rowspan="2">Book an appointment</td>
                 <td>EMIS</td>
                 <td>TBC</td>
                 <td>TBC</td>          
-                <td rowspan="3"></td>
-                <td rowspan="3">Ability to search and book an appointment</td>
+                <td rowspan="2"></td>
+                <td rowspan="2">Ability to search and book an appointment</td>
               </tr>  
               <tr>
                 <td>IC24</td>
@@ -413,13 +413,13 @@ folder: getting_live
               </tr>                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td rowspan="3">2</td>
-                <td rowspan="3">Cancel an appointment</td>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Cancel an appointment</td>
                 <td>EMIS</td>
                 <td>TBC</td>
                 <td>TBC</td>          
-                <td rowspan="3"></td>
-                <td rowspan="3">Ability to cancel an appointment</td>
+                <td rowspan="2"></td>
+                <td rowspan="2">Ability to cancel an appointment</td>
               </tr>  
               <tr>
                 <td>IC24</td>
