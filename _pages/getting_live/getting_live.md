@@ -23,9 +23,9 @@ folder: getting_live
 
     font-weight: bold;
     font-family: monospace;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-align: center;
+    font-size: 2rem;
+    // text-transform: uppercase;
+    text-align: left;
 
     padding: 1rem;
 
