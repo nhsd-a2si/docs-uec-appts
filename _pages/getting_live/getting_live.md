@@ -27,7 +27,8 @@ folder: getting_live
     // text-transform: uppercase;
     text-align: left;
 
-    padding: 10rem;
+    padding: 5rem;
+    padding-left: 2rem;
 
     color: #FFFFFF;
     background: #005EB8;
