@@ -184,8 +184,7 @@ entries:
             title: "Supplier Conformance Catalogue"
             output: "web, pdf"            
             url: /catalogue.html
-        output: web
-        - 
+          - 
             title: "Getting Live"
             output: "web, pdf"            
             url: /getting_live.html
