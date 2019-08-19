@@ -32,8 +32,8 @@ folder: getting_live
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>Book an appointment - GP</td>
+          <td rowspan="3">1</td>
+          <td rowspan="3">Book an appointment - GP</td>
           <td>Advanced</td>
           <td>Complete</td>
           <td>July 2019</td>          
@@ -41,8 +41,6 @@ folder: getting_live
           <td>Ability to search and book an appointment</td>
         </tr>  
         <tr>
-          <td>1</td>
-          <td>Book an appointment - GP</td>
           <td>IC24</td>
           <td>Testing</td>
           <td>19th August 2019</td>
@@ -50,8 +48,6 @@ folder: getting_live
           <td>Ability to search and book an appointment</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>Book an appointment - GP</td>
           <td>Cleric</td>
           <td>Development</td>
           <td>October 2019</td>
