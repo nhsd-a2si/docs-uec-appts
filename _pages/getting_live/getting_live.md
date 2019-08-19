@@ -64,7 +64,7 @@ folder: getting_live
 <script src="https://unpkg.com/bootstrap-table@1.15.4/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js"></script>
 <script>
       $table.on('load-success.bs.table column-switch.bs.table page-change.bs.table search.bs.table', function () {
-            $table.bootstrapTable('mergeCells', {index: 1,
+            $table.bootstrapTable('mergeCells', {index: 0,
         field: 'ID',
         colspan: 1,
         rowspan: 3})
