@@ -23,7 +23,7 @@ folder: getting_live
 
     font-weight: bold;
     font-family: Verdana;
-    font-size: 2rem;
+    font-size: 1.5rem;
     // text-transform: uppercase;
     text-align: left;
 
@@ -86,8 +86,8 @@ folder: getting_live
 </style>
 
 <div class="wrap-collabsible">
-  <input id="collapsible" class="toggle" type="checkbox">
-  <label for="collapsible" class="lbl-toggle">IT supplier Booking Capabilities - GP Connect - Consumer</label>
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">IT supplier Booking Capabilities - GP Connect - Consumer</label>
   <div class="collapsible-content">
     <div class="content-inner">
       <p>        
@@ -252,8 +252,8 @@ folder: getting_live
 </div>
 
 <div class="wrap-collabsible">
-  <input id="collapsible" class="toggle" type="checkbox">
-  <label for="collapsible" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
   <div class="collapsible-content">
     <div class="content-inner">
       <p>        
@@ -378,8 +378,8 @@ folder: getting_live
 </div>
 
 <div class="wrap-collabsible">
-  <input id="collapsible" class="toggle" type="checkbox">
-  <label for="collapsible" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Provider</label>
+  <input id="collapsible3" class="toggle" type="checkbox">
+  <label for="collapsible3" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Provider</label>
   <div class="collapsible-content">
     <div class="content-inner">
       <p>        
