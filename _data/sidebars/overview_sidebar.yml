@@ -178,16 +178,16 @@ entries:
             url: /assurance_supplier.html
         output: web        
       - 
-        title: "Getting Live"
+        title: "deployment"
         folderitems: 
-          - 
+         - 
+            title: "deployment_toolkit"
+            output: "web, pdf"            
+            url: /deployment_Toolkit.html
+         - 
             title: "Supplier Conformance Catalogue"
             output: "web, pdf"            
             url: /catalogue.html
-          - 
-            title: "Getting Live"
-            output: "web, pdf"            
-            url: /getting_live.html
         output: web        
       - 
         title: "Help and Support"
