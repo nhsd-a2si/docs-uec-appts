@@ -178,12 +178,12 @@ entries:
             url: /assurance_supplier.html
         output: web        
       - 
-        title: "deployment"
+        title: "Deployment"
         folderitems: 
          - 
-            title: "deployment_toolkit"
+            title: "Deployment Toolkit"
             output: "web, pdf"            
-            url: /deployment_Toolkit.html
+            url: /deployment_toolkit.html
          - 
             title: "Supplier Conformance Catalogue"
             output: "web, pdf"            
