@@ -8,9 +8,9 @@ folder: getting_live
 ---
 
 On this page the supplier conformance catalogue for the UEC appointment booking standards can be found. The catalogue is split into the three main settings: 
-    * GP Connect Consumer
-    * Care Connect Consumer
-    * Care Connect Provider
+* GP Connect Consumer
+* Care Connect Consumer
+* Care Connect Provider
      
 Each setting is split into the relevent capabilities. For each capability each supplier currently working through development and assurance for that capability is listed along with the current status of that capability and the expected date that the current status will change.
 
