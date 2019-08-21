@@ -7,12 +7,15 @@ toc: false
 folder: getting_live
 ---
 
-On this page the supplier conformance catalogue for the UEC appointment booking standards can be found. The catalogue is split into the three main settings: 
+On this page the supplier conformance catalogue for the UEC appointment booking standards can be found. 
+
+The catalogue is split into the three main use cases for UEC booking: 
 * GP Connect Consumer
 * Care Connect Consumer
 * Care Connect Provider
      
-Each setting is split into the relevent capabilities. For each capability each supplier currently working through development and assurance for that capability is listed along with the current status of that capability and the expected date that the current status will change.
+Each setting is split into the relevent use cases. For each use case every supplier currently working through development and assurance for that capability is listed, along with the current status of that capability and the expected date that the current status will change.
+
 
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
