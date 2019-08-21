@@ -7,6 +7,14 @@ toc: false
 folder: getting_live
 ---
 
+On this page the supplier conformance catalogue for the UEC appointment booking standards can be found. The catalogue is split into the three main settings: 
+
+     * GP Connect Consumer
+     * Care Connect Consumer
+     * Care Connect Provider
+     
+The 
+
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
 
 <style>
@@ -84,7 +92,7 @@ folder: getting_live
     padding: .5rem 1rem;
   }
 </style>
-
+<p>
 <div class="wrap-collabsible">
   <input id="collapsible1" class="toggle" type="checkbox">
   <label for="collapsible1" class="lbl-toggle">IT supplier Booking Capabilities - GP Connect - Consumer</label>
@@ -131,7 +139,7 @@ folder: getting_live
                 <td>Advanced</td>
                 <td>Development</td>
                 <td>September 2019</td>          
-                <td rowspan="3">There is a dependency that all hubs work the same.  This work is not commissioned so would need to be followed through and scoped by BRAM</td>
+                <td rowspan="3">There is currently a dependency that all hubs work the same.</td>
                 <td rowspan="3">Ability to search and book an appointment</td>
               </tr>  
               <tr>
@@ -231,7 +239,7 @@ folder: getting_live
                 <td>Advanced</td>
                 <td>Development</td>
                 <td>September 2019</td>          
-                <td rowspan="3">This will be dependent on the DOS team completed the service attribute information and this being populated by the local DOS team </td>
+                <td rowspan="3">This will be dependent on the DOS team completing the service attribute information and this being populated by the local DOS team </td>
                 <td rowspan="3">When referring to a HUB</td>
               </tr>  
               <tr>
@@ -250,7 +258,7 @@ folder: getting_live
     </div>
   </div>
 </div>
-
+<p>
 <div class="wrap-collabsible">
   <input id="collapsible2" class="toggle" type="checkbox">
   <label for="collapsible2" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
@@ -357,7 +365,7 @@ folder: getting_live
                 <td>Advanced</td>
                 <td>Development</td>
                 <td>September 2019</td>          
-                <td rowspan="3">This will be dependent on the DOS team completed the service attribute information and this being populated by the local DOS team </td>
+                <td rowspan="3">This will be dependent on the DOS team completing the service attribute information and this being populated by the local DOS team </td>
                 <td rowspan="3">When referring to a HUB</td>
               </tr>  
               <tr>
