@@ -36,7 +36,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.11   | PREVIEW | Alpha | Unreleased | 23/08/2019   | Volatile
+0.1.11   | PREVIEW | Alpha | Unreleased | 31/08/2019   | Volatile
 
 <br>
 <br>
