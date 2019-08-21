@@ -257,7 +257,9 @@ Each setting is split into the relevent capabilities. For each capability each s
     </div>
   </div>
 </div>
+
 <p>
+     
 <div class="wrap-collabsible">
   <input id="collapsible2" class="toggle" type="checkbox">
   <label for="collapsible2" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
@@ -384,6 +386,8 @@ Each setting is split into the relevent capabilities. For each capability each s
   </div>
 </div>
 
+<p>
+     
 <div class="wrap-collabsible">
   <input id="collapsible3" class="toggle" type="checkbox">
   <label for="collapsible3" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Provider</label>
