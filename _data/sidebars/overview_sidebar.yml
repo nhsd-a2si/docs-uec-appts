@@ -171,7 +171,6 @@ entries:
             title: "Supplier Conformance Assessment List (SCAL)"
             output: "web, pdf"            
             url: /assurance_scal.html
-            output: web  
           - 
             title: "Supplier Assurance Prerequisites and Requirements"
             output: "web, pdf"            
