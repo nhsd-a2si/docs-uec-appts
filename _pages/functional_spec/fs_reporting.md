@@ -145,8 +145,8 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
 <p>
     
 <div class="wrap-collabsible">
- <input id="collapsible1" class="toggle" type="checkbox">
- <label for="collapsible1" class="lbl-toggle">UEC Booking Reporting Requirements - Provider</label>
+ <input id="collapsible2" class="toggle" type="checkbox">
+ <label for="collapsible2" class="lbl-toggle">UEC Booking Reporting Requirements - Provider</label>
  <div class="collapsible-content">
     <div class="content-inner">
       <p>        
