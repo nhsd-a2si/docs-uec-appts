@@ -30,3 +30,116 @@ The below table identifies the key metrics required to meet the national commiss
 
 
 Regarding what the mechanism for sharing is, we are expecting that existing arrangements for sharing these metrics are utilised. There may be a possibility that an API standard for data sharing will be published in the future.
+
+
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+<style>
+    .wrap-collabsible {
+    margin-bottom: 1.2rem 0;
+  }
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  .lbl-toggle {
+    display: block;
+
+    font-weight: bold;
+    font-family: Verdana;
+    font-size: 1.5rem;
+    // text-transform: uppercase;
+    text-align: left;
+
+    padding: 5rem;
+    padding-left: 2rem;
+
+    color: #FFFFFF;
+    background: #005EB8;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+  }
+
+  .lbl-toggle:hover {
+    color: #7C5A0B;
+  }
+
+  .lbl-toggle::before {
+    content: ' ';
+    display: inline-block;
+
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transform: translateY(-2px);
+
+    transition: transform .2s ease-out;
+  }
+
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+  }
+
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 1600px;
+  }
+
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .collapsible-content .content-inner {
+    background: rgba(0, 0, 0, 0.01);
+    border-bottom: 1px solid rgba(250, 224, 66, .45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: .5rem 1rem;
+  }
+</style>
+<p>
+<div class="wrap-collabsible">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">IT supplier Booking Capabilities - GP Connect - Consumer</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>        
+      <table class="pure-table pure-table-bordered"> 
+            <thead>
+              <tr>
+                <th data-field="REQUIREMENT" data-sortable="true">Requirement</th>
+                <th data-field="OUTPUT" data-sortable="true">Which will produce the following data....</th>                
+              </tr>
+            </thead>
+            <tbody>        
+      <!------------------------------ROW----------------------------------->        
+              <tr>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>Number of appointments successfully booked over a date range</td>
+                <td>In December there were 2000 appointments booked</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+            </tbody>
+      </table> 
+      </p>
+    </div>
+  </div>
+</div>
+
+<p>
