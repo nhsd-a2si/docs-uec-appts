@@ -143,3 +143,35 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
 </div>
 
 <p>
+    
+<div class="wrap-collabsible">
+ <input id="collapsible1" class="toggle" type="checkbox">
+ <label for="collapsible1" class="lbl-toggle">UEC Booking Reporting Requirements - Provider</label>
+ <div class="collapsible-content">
+    <div class="content-inner">
+      <p>        
+      <table class="pure-table pure-table-bordered"> 
+            <thead>
+              <tr>
+                <th data-field="REQUIREMENT" data-sortable="true">Requirement</th>
+                <th data-field="OUTPUT" data-sortable="true">Which will produce the following data....</th>                
+              </tr>
+            </thead>
+            <tbody>        
+      <!------------------------------ROW----------------------------------->        
+              <tr>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>Number of appointments successfully booked over a date range</td>
+                <td>In December there were 2000 appointments booked</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+            </tbody>
+      </table> 
+      </p>
+    </div>
+  </div>
+ </div>
