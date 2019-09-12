@@ -148,6 +148,7 @@ The below tables identify the key metrics required to meet the national commissi
       <table class="pure-table pure-table-bordered"> 
             <thead>
               <tr>
+                <th data-field="ID" data-sortable="true">Requirement ID</th>
                 <th data-field="REQUIREMENT" data-sortable="true">Requirement</th>
                 <th data-field="OUTPUT" data-sortable="true">Which will produce the following data....</th>                
               </tr>
