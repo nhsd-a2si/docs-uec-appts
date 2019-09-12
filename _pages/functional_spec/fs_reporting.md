@@ -11,7 +11,7 @@ It is expected that there should be a capability to report against expected nati
 
 The below tables identify the key metrics required to meet the national commissioning reporting requirements as well the most common local operational reporting and performance metrics. This specification is still in draft and is developing and evolving.
 
-<%include table-collabsible.html %>
+{%include table-collabsible.html %}
 <p>
 
 <!------------------------------------------------------------------------------------------------------->  
