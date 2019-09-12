@@ -227,7 +227,7 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
-               tr>
+              <tr>
                 <td>rep-prov-09</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
