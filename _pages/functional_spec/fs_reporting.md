@@ -110,6 +110,13 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
   }
 </style>
 <p>
+
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->  
+<!-----------------------------------------------TABLE-1------------------------------------------------->       
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->
+
 <div class="wrap-collabsible">
   <input id="collapsible1" class="toggle" type="checkbox">
   <label for="collapsible1" class="lbl-toggle">UEC Booking Reporting Requirements - Consumer</label>
@@ -119,6 +126,7 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
       <table class="pure-table pure-table-bordered"> 
             <thead>
               <tr>
+                <th data-field="ID" data-sortable="true">Requirement ID</th>
                 <th data-field="REQUIREMENT" data-sortable="true">Requirement</th>
                 <th data-field="OUTPUT" data-sortable="true">Which will produce the following data....</th>                
               </tr>
@@ -126,11 +134,13 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
             <tbody>        
       <!------------------------------ROW----------------------------------->        
               <tr>
+                <td>ID-here</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
+                <td>rep-cons-01</td>
                 <td>Number of appointments successfully booked over a date range</td>
                 <td>In December there were 2000 appointments booked</td>      
               </tr>
@@ -143,7 +153,11 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
 </div>
 
 <p>
-    
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->  
+<!-----------------------------------------------TABLE-2------------------------------------------------->       
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->  
 <div class="wrap-collabsible">
  <input id="collapsible2" class="toggle" type="checkbox">
  <label for="collapsible2" class="lbl-toggle">UEC Booking Reporting Requirements - Provider</label>
@@ -160,76 +174,91 @@ Regarding what the mechanism for sharing is, we are expecting that existing arra
             <tbody>        
       <!------------------------------ROW----------------------------------->        
               <tr>
+                <td>rep-prov-01</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
+                <td>rep-prov-01</td>
                 <td>Number of appointments successfully booked over a date range</td>
                 <td>In December there were 2000 appointments booked</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
                <tr>
+                <td>rep-prov-02</td>
+                <td>Number of appointments successfully booked vs number of successful referrals over a date range</td>
+                <td>In December there were 2000 appointments booked and 2500 referrals, showing that we have a 80% booking utilisation rate</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-03</td>
+                <td>Number of appointments successfully booked and number of appointment slots available over a date range</td>
+                <td>In December there were 2000 appointments booked and there were 10,000 appointment slots available</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-04</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-              <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
+                <td>rep-prov-05</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
+                <td>rep-prov-06</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>requirement-here</td>
-                <td>output-here</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-                 <tr>
+                <td>rep-prov-07</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
+                <td>rep-prov-08</td>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+               tr>
+                <td>rep-prov-09</td>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-10</td>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-11</td>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-12</td>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-13</td>
+                <td>requirement-here</td>
+                <td>output-here</td>      
+              </tr>
+      <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>rep-prov-14</td>
                 <td>requirement-here</td>
                 <td>output-here</td>      
               </tr>
