@@ -1,5 +1,5 @@
 ---
-title: ABUS.25 xxxx
+title: ABUS.25 - Booking Required parameter on DoS
 sidebar: usecase_sidebar
 permalink: usee_abus25.html
 ---
