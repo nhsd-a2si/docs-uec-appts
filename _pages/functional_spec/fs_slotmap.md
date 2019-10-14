@@ -1,5 +1,5 @@
 ---
-title: Appointment/slot mapping
+title: Appointment Mapping
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_slotmap.html

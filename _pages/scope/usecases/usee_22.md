@@ -1,25 +1,22 @@
 ---
-title: ABUS.22 Amend a Booked Appointment Reason for a specific Patient/Service Provider 
+title: ABUS.22 Rebook an Appointment for a specific Patient/Service Provider 
 sidebar: usecase_sidebar
 permalink: usee_abus22.html
 ---
 
-## ABUS.22 Amend a Booked Appointment Reason for a specific Patient/Service Provider 
-**_In order_** that the service provider has the correct reason for the appt displayed on their system 
+## ABUS.22 Rebook an Appointment for a specific Patient/Service Provider 
+**_In order_** that the patient or their carer can rebook an already-booked appointment that they had initially booked 
 
-**_As a_** 111 Call Handler or urgent care service provider 
+**_As a** Integrated Urgent Care Sservice Provider
 
-**_I want_** to amend the appt reason for a previously booked appt, where the reason has changed or was erroneously provided to the service provider. 
+**_I want_** to rebook appts booked for a patient 
 
 ### Commentary 
-GP Connect offers the message set to enable the reason for the appt to be amended.  For the use case go <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_amend_an_appointment.html" target="_blank">here</a>
+The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a cancel followed by a re-book (following a reassessment of the patients clinical needs).  
+
+GP Connect use case can be found <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html" target="_blank">here</a>
 
 ### Acceptance Criteria  
-* The consumer system *must* be capable of amending slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation 
-* The patient's appts *must* be capable of being amended by a consumer system at any provider system where there are data sharing agreements loaded on the Spine, to be accessed by the Spine Security Proxy (SSP). 
-* The user's system *must* provide visible confirmation to the user of the status returned by the provider system  ie. whether the requested appt reason was successfully amended or not.  Example returned statuses could be: 
-   * Appt successfully amended 
-   * Not amended - system failure 
-   * Not amended - appt requested was not found 
-   * Not amended - appt was not for this patient 
-   * Not amended - appt was already in the past 
+* The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation (does not apply to GP Connect booking).
+* The consumer system **must** provide visible confirmation to the user of the status returned by the provider system  ie. whether the original appt was successfully cancelled and the new appointment has been made successfully. 
+* The provider system **must not** be required to inform the patient of the cancellation of the appt.  Business/clinical responsibility for informing the patient must remain with the consumer organisation. 
