@@ -1,195 +1,195 @@
 --- 
-entries:
+entries: 
   - 
-    title: "Urgent & Emergency Care Appointment Booking Standards"
-    product: ""
-    version: "v0.1.11 PREVIEW"
-    spec: "STU3 | FHIR NHS Scheduling | 1.0.4-alpha"
-    speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/"
     folders: 
       - 
-        title: Introduction
         folderitems: 
           - 
-            title: Introduction
             output: "web, pdf"
+            title: Introduction
             type: homepage
             url: /index.html
           - 
-            title: "Getting Started"
-            output: "web, pdf"            
-            url: /getting_started.html
-          -
-            title: "Release Notes"
             output: "web, pdf"
+            title: "Getting Started"
+            url: /getting_started.html
+          - 
+            output: "web, pdf"
+            title: "Release Notes"
             url: /release_notes.html
-        output: web        
+        output: web
+        title: Introduction
       - 
-        title: Overview
         folderitems: 
           - 
+            output: "web, pdf"
             title: "Definition of Direct Booking"
-            output: "web, pdf"            
             url: /definition.html
           - 
+            output: "web, pdf"
             title: "UEC Landscape"
-            output: "web, pdf"            
             url: /uec_overview.html
           - 
+            output: "web, pdf"
             title: "What we are doing"
-            output: "web, pdf"            
-            url: /what_are_we_doing.html          
-        output: web       
+            url: /what_are_we_doing.html
+        output: web
+        title: Overview
       - 
         folderitems: 
           - 
+            output: "web, pdf"
             title: "GP Practice"
-            output: "web, pdf"            
             url: /caresetting_gppractice.html
           - 
+            output: "web, pdf"
             title: UTC
-            output: "web, pdf"           
             url: /caresetting_utc.html
           - 
+            output: "web, pdf"
             title: Dental
-            output: "web, pdf"            
             url: /caresetting_dental.html
           - 
+            output: "web, pdf"
             title: Pharmacy
-            output: "web, pdf"            
             url: /caresetting_pharmacy.html
         output: web
         title: "Care Settings"
       - 
-        title: "Scope and user stories"
         folderitems: 
           - 
+            output: "web, pdf"
             title: "Scope Overview"
-            output: "web, pdf"            
             url: /scope_overview.html
           - 
+            output: "web, pdf"
             title: "Functional Scope"
-            output: "web, pdf"            
             url: /scope_functional.html
           - 
+            output: "web, pdf"
             title: "User Stories"
-            output: "web, pdf"            
             url: /use_overview.html
-        output: web        
+        output: web
+        title: "Scope and user stories"
       - 
-        title: "Non-Functional Requirements"
         folderitems: 
           - 
-            title: "Non Functional Requirements"
-            output: "web, pdf"            
-            url: /non_functional_requirements.html          
-        output: web       
-      - 
-        title: "Functional Specification"
-        folderitems: 
-          -
-            title: "Workflow and Interactions"
-            output: web, pdf"
-            url: /fs_workflow.html
-          -
-            title: "GP Connect"
-            output: "web, pdf"            
-            url: /gpc_overview.html
-          -
-            title: "Interactions with the DoS"
-            output: "web, pdf"            
-            url: /dos_overview.html
-          -
-            title: "Appointment Mapping"
             output: "web, pdf"
+            title: "Non Functional Requirements"
+            url: /non_functional_requirements.html
+        output: web
+        title: "Non-Functional Requirements"
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf\""
+            title: "Workflow and Interactions"
+            url: /fs_workflow.html
+          - 
+            output: "web, pdf"
+            title: "GP Connect"
+            url: /gpc_overview.html
+          - 
+            output: "web, pdf"
+            title: "Interactions with the DoS"
+            url: /dos_overview.html
+          - 
+            output: "web, pdf"
+            title: "Appointment Mapping"
             url: /fs_slotmap.html
           - 
+            output: "web, pdf"
             title: "Slot Management"
-            output: "web, pdf"            
             url: /fs_slotmanagement.html
-          -
-            title: "Authentication"
+          - 
             output: "web, pdf"
+            title: Authentication
             url: /fs_authentication.html
-          -
+          - 
+            output: "web, pdf"
             title: "Appointment Management (Cancel and Rebook)"
-            output: "web, pdf"
             url: /cr_overview.html
-          -
-            title: "Monitoring, Analytics and Reporting"
+          - 
             output: "web, pdf"
+            title: "Monitoring, Analytics and Reporting"
             url: /fs_reporting.html
-        output: web        
+        output: web
+        title: "Functional Specification"
       - 
-        title: "Implementing the standard"
         folderitems: 
           - 
+            output: "web, pdf"
             title: "Implementation Overview"
-            output: "web, pdf"            
             url: /implementation_overview.html
           - 
+            output: "web, pdf"
             title: "Implementing FHIR® Resources"
-            output: "web, pdf"            
             url: /implementation_FHIR.html
           - 
+            output: "web, pdf"
             title: "Provider and Consumer Demonstrator"
-            output: "web, pdf"            
             url: /demo_overview.html
-        output: web        
+        output: web
+        title: "Implementing the standard"
       - 
-        title: "First of Type"
         folderitems: 
           - 
+            output: "web, pdf"
             title: "First of Type"
-            output: "web, pdf"            
             url: /first_of_type.html
-        output: web        
-      -
-        title: "Information Governance"
-        folderitems:
-          - 
-            title: "Information Governance Overview"
-            output: "web, pdf"
-            url: /ig_overview.html
-          -
-            title: "Information Governance FAQ"
-            output: "web, pdf"
-            url: /ig_faq.html
-        output: web        
+        output: web
+        title: "First of Type"
       - 
-        title: "Assurance Process"
         folderitems: 
           - 
+            output: "web, pdf"
+            title: "Information Governance Overview"
+            url: /ig_overview.html
+          - 
+            output: "web, pdf"
+            title: "Information Governance FAQ"
+            url: /ig_faq.html
+        output: web
+        title: "Information Governance"
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
             title: "Assurance Overview"
-            output: "web, pdf"            
             url: /assurance_overview.html
           - 
+            output: "web, pdf"
             title: "Supplier Conformance Assessment List (SCAL)"
-            output: "web, pdf"            
             url: /assurance_scal.html
           - 
+            output: "web, pdf"
             title: "Supplier Assurance Prerequisites and Requirements"
-            output: "web, pdf"            
             url: /assurance_supplier.html
-        output: web        
+        output: web
+        title: "Assurance Process"
       - 
-        title: "Deployment"
         folderitems: 
           - 
+            output: "web, pdf"
             title: "Deployment Toolkit"
-            output: "web, pdf"            
             url: /deployment_toolkit.html
-          output: web
+        output: web
+        title: Deployment
       - 
-        title: "Help and Support"
         folderitems: 
           - 
+            output: "web, pdf"
             title: "Contact Details"
-            output: "web, pdf"            
-            url: /contact.html          
+            url: /contact.html
           - 
+            output: "web, pdf"
             title: Glossary
-            output: "web, pdf"            
             url: /glossary.html
-        output: web        
+        output: web
+        title: "Help and Support"
     levels: one
+    product: ""
+    spec: "STU3 | FHIR NHS Scheduling | 1.0.4-alpha"
+    speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/"
+    title: "Urgent & Emergency Care Appointment Booking Standards"
+    version: "v0.1.11 PREVIEW"
