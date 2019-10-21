@@ -175,11 +175,11 @@ entries:
       - 
         title: "Deployment"
         folderitems: 
-         - 
+          - 
             title: "Deployment Toolkit"
             output: "web, pdf"            
             url: /deployment_toolkit.html
-         output: web
+          output: web
       - 
         title: "Help and Support"
         folderitems: 
