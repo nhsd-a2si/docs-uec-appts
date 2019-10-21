@@ -178,12 +178,7 @@ entries:
          - 
             title: "Deployment Toolkit"
             output: "web, pdf"            
-            url: /deployment_toolkit.html
-         - 
-            title: "Supplier Conformance Catalogue"
-            output: "web, pdf"            
-            url: /catalogue.html
-        output: web        
+            url: /deployment_toolkit.html               
       - 
         title: "Help and Support"
         folderitems: 
