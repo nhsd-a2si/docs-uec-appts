@@ -53,18 +53,6 @@ The below tables identify the key metrics required to meet the national commissi
                 <td>Number of appointments successfully booked and number of appointment slots available over a date range</td>
                 <td>In December there were 2000 appointments booked and there were 10,000 appointment slots available</td>      
               </tr>
-      <!------------------------------ROW----------------------------------->   
-              <tr>
-                <td>rep-cons-04</td>
-                <td>Number of appointments successfully booked and number of appointment slots available that would not cause a breach over a date range</td>
-                <td>In December there were 200 “DX05” appointments booked and there were 400 appointment slots available that would not cause a breach.</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-              <tr>
-                <td>rep-cons-05</td>
-                <td>Number of appointments successfully booked and number of appointment slots available that would cause a breach over a date range</td>
-                <td>In December there were 200 “DX05” appointments booked and there were 800 appointment slots available that would cause a breach.</td>      
-              </tr>
       <!------------------------------ROW----------------------------------->         
               <tr>
                 <td>rep-cons-06</td>
