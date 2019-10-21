@@ -1,8 +1,8 @@
 ---
-title: Getting Live
+title: Deployment Toolkit
 sidebar: overview_sidebar
 keywords: guidance
-permalink: getting_live.html
+permalink: deployment_toolkit.html
 toc: false
 folder: getting_live
 ---

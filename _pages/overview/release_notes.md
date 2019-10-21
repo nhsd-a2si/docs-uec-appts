@@ -9,6 +9,44 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.11 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.11   | PREVIEW | Alpha | Current Version | 14/10/2019 | Volatile
+
+The 0.1.11 PREVIEW release has the following highlights:
+
+* Updated User Stories
+  * Updated wording in all existing user stories
+  * Added new user story for booking only services
+  * Split cancellation user story into two
+* Renamed "getting live" section to "Deployment"
+  * Created supplier conformance catalogue
+* Fixed a couple of issues in the main navigation
+* Updated the reporting requirements
+  * Split the requirements into consumer and provider sections
+  * updated the layout
+  * refreshed the requirements
+* Fixed the broken link in the FHIR implementation page
+* Fixed a few typos in several pages
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.12 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.12   | PREVIEW | Alpha | Unreleased | 4/11/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.10 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -27,21 +65,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 * Removed all reference to "HealthcareServiceID" as it was causing confusion and is no longer relevant
 * Added guidance for the DoS service attribute
 * Removed "not published" note from any pages that are complete
-<br>
-<br>
 
-## Future releases
-
-### 0.1.11 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.11   | PREVIEW | Alpha | Unreleased | 23/08/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.9 PREVIEW
 
