@@ -178,7 +178,8 @@ entries:
          - 
             title: "Deployment Toolkit"
             output: "web, pdf"            
-            url: /deployment_toolkit.html               
+            url: /deployment_toolkit.html
+         output: web
       - 
         title: "Help and Support"
         folderitems: 
