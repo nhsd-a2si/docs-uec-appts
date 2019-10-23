@@ -43,6 +43,10 @@ entries:
       - 
         folderitems: 
           - 
+            title: "Care Settings"
+            output: "web, pdf"            
+            url: /caresetting.html
+          - 
             title: "GP Practice"
             output: "web, pdf"            
             url: /caresetting_gppractice.html
