@@ -37,7 +37,7 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
-            title: "Existing Approach"
+            title: "Previous Approach"
             url: /dos_endpoints_existing.html
           - 
             output: "web, pdf"
