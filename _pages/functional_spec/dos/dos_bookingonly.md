@@ -37,7 +37,7 @@ This will be supported in an upcoming release of the DoS. A new "service attribu
      <ns1:transport>http</ns1:transport>
      <ns1:format>FHIR</ns1:format>
      <ns1:interaction>Scheduling</ns1:interaction>
-     <ns1:address>ASID:918999198999|or|ODS:ABC123</ns1:address>
+     <ns1:address>ASID:918999198999</ns1:address>
      <ns1:comment>a comment</ns1:comment>
   </ns1:EndPoint>
 </ns1:serviceEndPoints>
