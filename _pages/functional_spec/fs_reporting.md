@@ -187,7 +187,7 @@ The below tables identify the key metrics required to meet the national commissi
  
  <p>
   
-## Future Requirements
+### Future Requirements
 
 <p>
 The items in the following table are expected to become requirements in the near future: 
@@ -233,7 +233,7 @@ The items in the following table are expected to become requirements in the near
  
 <p>
   
-### Sharing Mechanism
+## Sharing Mechanism
 
 <p> 
 We are expecting that existing arrangements for sharing metrics are utilised. There may be a possibility that an API standard for data sharing will be published in the future.
