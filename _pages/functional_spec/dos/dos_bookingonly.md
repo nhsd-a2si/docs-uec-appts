@@ -25,27 +25,15 @@ An example workflow showing how this might be implemented is illustrated below:
 
 ### Example xml returned:
 
-When requesting endpoint details with "GetServiceDetailsByID" DoS API call, there is a section in the returned message for the additional attributes:
+When requesting endpoint details with "CheckCapacitySummary" DoS API call, there is a section in the returned message for the additional attributes:
 
 ```xml
-<ns1:serviceEndPoints>
-  <ns1:EndPoint>
-     <ns1:endpointOrder>1</ns1:endpointOrder>
-     <ns1:transport>email</ns1:transport>
-     <ns1:format>HTML</ns1:format>
-     <ns1:interaction>urn:nhs-itk:interaction:primaryEmergencyDepartmentRecipientNHS111CDADocument-v2-0</ns1:interaction>
-     <ns1:businessScenario>Primary</ns1:businessScenario>
-     <ns1:address>an address</ns1:address>
-     <ns1:isCompressionEnabled>uncompressed</ns1:isCompressionEnabled>
-     <ns1:comment>a comment</ns1:comment>
-  </ns1:EndPoint>
-  <ns1:EndPoint>
-     <ns1:endpointOrder>2</ns1:endpointOrder>
-     <ns1:transport>http</ns1:transport>
-     <ns1:format>FHIR</ns1:format>
-     <ns1:interaction>Scheduling</ns1:interaction>
-     <ns1:address>ASID:918999198999</ns1:address>
-     <ns1:comment>a comment</ns1:comment>
-  </ns1:EndPoint>
-</ns1:serviceEndPoints>
+<ns1:attributes>
+  <attribute>
+    <dataType>string</dataType>
+    <name>REQUIRES_APPOINTMENT</name>
+    <description>The service only accepts referrals with an accompanying booked appointment.</description>
+    <value>true</value>
+  </attribute>
+</ns1:attributes>
 ```
