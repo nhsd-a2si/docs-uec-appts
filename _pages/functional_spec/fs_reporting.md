@@ -185,4 +185,49 @@ The below tables identify the key metrics required to meet the national commissi
   </div>
  </div>
  
-Regarding what the mechanism for sharing is, we are expecting that existing arrangements for sharing these metrics are utilised. There may be a possibility that an API standard for data sharing will be published in the future.
+ <p>
+ ## Future Requirements
+
+The items in the following table are expected to become requirements in the near future: 
+
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->  
+<!-----------------------------------------------TABLE-3------------------------------------------------->       
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->  
+<div class="wrap-collabsible">
+ <input id="collapsible2" class="toggle" type="checkbox">
+ <label for="collapsible2" class="lbl-toggle">UEC Booking Reporting Requirements - Provider</label>
+ <div class="collapsible-content">
+    <div class="content-inner">
+      <p>        
+      <table class="pure-table pure-table-bordered"> 
+            <thead>
+              <tr>
+                <th data-field="ID" data-sortable="true">Requirement ID</th>
+                <th data-field="REQUIREMENT" data-sortable="true">Requirement</th>
+                <th data-field="OUTPUT" data-sortable="true">Which will produce the following data....</th>                
+              </tr>
+            </thead>
+            <tbody>
+      <!------------------------------ROW----------------------------------->   
+            <tr>
+             <td>rep-cons-04</td>
+             <td>Number of appointments successfully booked and number of appointment slots available that would not cause a breach over a date range</td>
+             <td>In December there were 200 “DX05” appointments booked and there were 400 appointment slots available that would not cause a breach.</td>      
+            </tr>
+  <!------------------------------ROW----------------------------------->   
+            <tr>
+             <td>rep-cons-05</td>
+             <td>Number of appointments successfully booked and number of appointment slots available that would cause a breach over a date range</td>
+             <td>In December there were 200 “DX05” appointments booked and there were 800 appointment slots available that would cause a breach.</td>      
+            </tr>   
+        </tbody>
+       </table> 
+      </p>
+    </div>
+  </div>
+ </div>
+ 
+### Sharing Mechanism
+We are expecting that existing arrangements for sharing metrics are utilised. There may be a possibility that an API standard for data sharing will be published in the future.
