@@ -40,8 +40,8 @@ When requesting DoS service details with "CheckCapacitySummary" DoS API call, th
 
 This attribute will have three possible states:
 
-* Not present
-* Present and false
-* Present and true
+* not present
+* present and false
+* present and true
 
-For the first two cases, it can be assumed that referrals can be made without a booking. Only if the attribute is present *and* true should a referral be witheld if there has been no booking.
+For the first two cases, it can be assumed that referrals can be made without a booking. Only if the attribute is *present* **and** *true* should a referral be witheld if there has been no booking.
