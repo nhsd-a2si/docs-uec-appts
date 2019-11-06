@@ -185,11 +185,11 @@ The below tables identify the key metrics required to meet the national commissi
   </div>
  </div>
  
- <p>
+ <br>
   
 ### Future Requirements
 
-<p>
+<br>
 The items in the following table are expected to become requirements in the near future: 
 <p>
 <!------------------------------------------------------------------------------------------------------->  
