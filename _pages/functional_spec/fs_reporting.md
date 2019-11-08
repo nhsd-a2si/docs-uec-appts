@@ -186,9 +186,9 @@ The below tables identify the key metrics required to meet the national commissi
  </div>
  
  <br>
-  
-### Future Requirements
-
+<p>  
+<h3>Future Requirements</h3>
+<p>
 <br>
 The items in the following table are expected to become requirements in the near future: 
 <p>
@@ -235,7 +235,7 @@ The items in the following table are expected to become requirements in the near
   
 <br>
   
-## Sharing Mechanism
+<h2>Sharing Mechanism</h2>
 
 <br>
 <p> 
