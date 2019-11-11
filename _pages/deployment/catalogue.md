@@ -16,6 +16,9 @@ The catalogue is split into the three main use cases for UEC booking:
      
 Each setting is split into the relevent use cases. For each use case every supplier currently working through development and assurance for that capability is listed, along with the current status of that capability and the expected date that the current status will change.
 
+| Not Started | Development | Assurance | Ready |
+|-------------|-------------|-----------|-------|
+
 {% include table-collapsible.html %} 
 
 <p>
