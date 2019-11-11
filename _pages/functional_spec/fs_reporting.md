@@ -214,13 +214,13 @@ The items in the following table are expected to become requirements in the near
             <tbody>
       <!------------------------------ROW----------------------------------->   
             <tr>
-             <td>rep-cons-04</td>
+             <td>rep-cons-15</td>
              <td>Number of appointments successfully booked and number of appointment slots available that would not cause a breach over a date range</td>
              <td>In December there were 200 “DX05” appointments booked and there were 400 appointment slots available that would not cause a breach.</td>      
             </tr>
   <!------------------------------ROW----------------------------------->   
             <tr>
-             <td>rep-cons-05</td>
+             <td>rep-cons-16</td>
              <td>Number of appointments successfully booked and number of appointment slots available that would cause a breach over a date range</td>
              <td>In December there were 200 “DX05” appointments booked and there were 800 appointment slots available that would cause a breach.</td>      
             </tr>   
