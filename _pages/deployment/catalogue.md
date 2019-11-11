@@ -287,14 +287,15 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td>Book an appointment</td>
                 <td>IC24</td>                
                 <td>November 2019</td>
-                <td></td>
+                <td>Ability to search and book an appointment </td>
               </tr>                  
       <!------------------------------ROW----------------------------------->    
               <tr>
-                <td></td>
+                <td>2</td>
+                <td>Cancel an appointment </td>
                 <td>IC24</td>
                 <td>Not started</td>
-                <td></td>
+                <td>Ability to search and cancel an appointment</td>
               </tr>                   
             </tbody>
       </table> 
