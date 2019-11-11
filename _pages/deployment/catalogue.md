@@ -42,7 +42,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">1</td>
                 <td rowspan="3">Book an appointment - GP</td>
                 <td>Advanced</td>
-                <td >Ready</td>                
+                <td bgcolor="green">Ready</td>                
                 <td rowspan="3">Ability to search and book an appointment</td>
               </tr>  
               <tr>
