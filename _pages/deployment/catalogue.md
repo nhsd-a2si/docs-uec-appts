@@ -283,13 +283,18 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <tbody>        
       <!------------------------------ROW----------------------------------->     
               <tr>
+                <td>1</td>
+                <td>Book an appointment</td>
                 <td>IC24</td>                
-                <td>November 2019</td>         
+                <td>November 2019</td>
+                <td></td>
               </tr>                  
       <!------------------------------ROW----------------------------------->    
               <tr>
+                <td></td>
                 <td>IC24</td>
-                <td>Not started</td>                     
+                <td>Not started</td>
+                <td></td>
               </tr>                   
             </tbody>
       </table> 
