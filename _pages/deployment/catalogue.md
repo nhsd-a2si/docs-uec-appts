@@ -42,12 +42,12 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">1</td>
                 <td rowspan="3">Book an appointment - GP</td>
                 <td>Advanced</td>
-                <td>Complete</td>                
+                <td >Ready</td>                
                 <td rowspan="3">Ability to search and book an appointment</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Testing</td>               
+                <td>Assurance</td>               
               </tr>
               <tr>
                 <td>Cleric</td>
@@ -58,7 +58,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">2</td>
                 <td rowspan="3">Book an appointment - Hub</td>
                 <td>Advanced</td>
-                <td>Development</td>                
+                <td>Assurance</td>                
                 <td rowspan="3">Ability to search and book an appointment</td>
               </tr>  
               <tr>
@@ -74,7 +74,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">3</td>
                 <td rowspan="3">Cancel - During a consultation</td>
                 <td>Advanced</td>
-                <td>Complete</td>
+                <td>Ready</td>
                 <td rowspan="3">Ability to cancel an appointment during a telephone call</td>
               </tr>  
               <tr>
@@ -90,7 +90,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">4</td>
                 <td rowspan="3">Cancel - After a consultation (Same 111 Provider)</td>
                 <td>Advanced</td>
-                <td>Development</td>                
+                <td>Assurance</td>                
                 <td rowspan="3">Ability to cancel an appointment after the telephone call has been competed.  By the same 111 provider </td>
               </tr>  
               <tr>
@@ -106,7 +106,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">5</td>
                 <td rowspan="3">Temporary Register</td>
                 <td>Advanced</td>
-                <td>Development</td>               
+                <td>Assurance</td>               
                 <td rowspan="3">When booking into a HUB/UTC and using a Primary Care IT System</td>
               </tr>  
               <tr>
@@ -122,16 +122,16 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">6</td>
                 <td rowspan="3">Appointment Warnings</td>
                 <td>Advanced</td>
-                <td>Not started</td>               
+                <td>Development</td>               
                 <td rowspan="3">Present a warning when booking outside a disposition timeframe</td>
               </tr>  
               <tr>
                 <td>IC24</td>               
-                <td>N/A – Cleo only displays results within the disposition timeframe</td>         
+                <td>Ready</td>         
               </tr>
               <tr>
                 <td>Cleric</td>               
-                <td>TBC</td>         
+                <td>Not Started</td>         
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
@@ -185,11 +185,11 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Not started</td>                       
+                <td>Development</td>                       
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                    
+                <td>Not Started</td>                    
               </tr>    
       <!------------------------------ROW----------------------------------->             
               <tr>
@@ -201,11 +201,11 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Not started</td>                   
+                <td>Development</td>                   
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                   
+                <td>Not Started</td>                   
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
@@ -217,11 +217,11 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Not started</td>                       
+                <td>Development</td>                       
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                        
+                <td>Not Started</td>                        
               </tr>     
       <!------------------------------ROW----------------------------------->             
               <tr>
@@ -233,28 +233,12 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
               <tr>
                 <td>IC24</td>               
-                <td>TBD</td>         
+                <td>Ready</td>         
               </tr>
               <tr>
                 <td>Cleric</td>                
-                <td>TBC</td>         
-              </tr>
-      <!------------------------------ROW----------------------------------->             
-              <tr>
-                <td rowspan="3">5</td>
-                <td rowspan="3">Referral Suppression</td>
-                <td>Advanced</td>
-                <td>Development</td>                
-                <td rowspan="3">When referring to a HUB</td>
-              </tr>  
-              <tr>
-                <td>IC24</td>
-                <td>Development</td>                        
-              </tr>
-              <tr>
-                <td>Cleric</td>
-                <td>Development</td>                       
-              </tr>
+                <td>Not Started</td>         
+              </tr>      
             </tbody>
       </table> 
       </p>
@@ -286,7 +270,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td>1</td>
                 <td>Book an appointment</td>
                 <td>IC24</td>                
-                <td>November 2019</td>
+                <td>Not Started</td>
                 <td>Ability to search and book an appointment </td>
               </tr>                  
       <!------------------------------ROW----------------------------------->    
