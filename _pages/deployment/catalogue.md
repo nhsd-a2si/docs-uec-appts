@@ -16,9 +16,6 @@ The catalogue is split into the three main use cases for UEC booking:
      
 Each setting is split into the relevent use cases. For each use case every supplier currently working through development and assurance for that capability is listed, along with the current status of that capability and the expected date that the current status will change.
 
-| Not Started | Development | Assurance | Ready |
-|-------------|-------------|-----------|-------|
-
 {% include table-collapsible.html %} 
 
 <p>
@@ -50,87 +47,87 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Assurance</td>               
+                <td style="background-color: #ffffcc;">Assurance</td>               
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                  
+                <td style="background-color: #0099ff;">Development</td>                  
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td rowspan="3">2</td>
                 <td rowspan="3">Book an appointment - Hub</td>
                 <td>Advanced</td>
-                <td>Assurance</td>                
+                <td style="background-color: #ffffcc;">Assurance</td>                
                 <td rowspan="3">Ability to search and book an appointment</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                   
+                <td style="background-color: #0099ff;">Development</td>                   
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                   
+                <td style="background-color: #0099ff;">Development</td>                   
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td rowspan="3">3</td>
                 <td rowspan="3">Cancel - During a consultation</td>
                 <td>Advanced</td>
-                <td>Ready</td>
+                <td style="background-color: #bde9ba;">Ready</td>
                 <td rowspan="3">Ability to cancel an appointment during a telephone call</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                      
+                <td style="background-color: #0099ff;">Development</td>                      
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                       
+                <td style="background-color: #0099ff;">Development</td>                       
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td rowspan="3">4</td>
                 <td rowspan="3">Cancel - After a consultation (Same 111 Provider)</td>
                 <td>Advanced</td>
-                <td>Assurance</td>                
+                <td style="background-color: #ffffcc;">Assurance</td>                
                 <td rowspan="3">Ability to cancel an appointment after the telephone call has been competed.  By the same 111 provider </td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>               
+                <td style="background-color: #0099ff;">Development</td>               
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                     
+                <td style="background-color: #0099ff;">Development</td>                     
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td rowspan="3">5</td>
                 <td rowspan="3">Temporary Register</td>
                 <td>Advanced</td>
-                <td>Assurance</td>               
+                <td style="background-color: #ffffcc;">Assurance</td>               
                 <td rowspan="3">When booking into a HUB/UTC and using a Primary Care IT System</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                  
+                <td style="background-color: #0099ff;">Development</td>                  
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>       
+                <td style="background-color: #0099ff;">Development</td>       
               </tr>
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td rowspan="3">6</td>
                 <td rowspan="3">Appointment Warnings</td>
                 <td>Advanced</td>
-                <td>Development</td>               
+                <td style="background-color: #0099ff;">Development</td>               
                 <td rowspan="3">Present a warning when booking outside a disposition timeframe</td>
               </tr>  
               <tr>
                 <td>IC24</td>               
-                <td>Ready</td>         
+                <td style="background-color: #bde9ba;">Ready</td>         
               </tr>
               <tr>
                 <td>Cleric</td>               
@@ -141,16 +138,16 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">7</td>
                 <td rowspan="3">Referral Suppression</td>
                 <td>Advanced</td>
-                <td>Development</td>              
+                <td style="background-color: #0099ff;">Development</td>              
                 <td rowspan="3">When referring to a HUB</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                      
+                <td style="background-color: #0099ff;">Development</td>                      
               </tr>
               <tr>
                 <td>Cleric</td>
-                <td>Development</td>                        
+                <td style="background-color: #0099ff;">Development</td>                        
               </tr>
             </tbody>
       </table> 
@@ -183,12 +180,12 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">1</td>
                 <td rowspan="3">Book an appointment</td>
                 <td>Advanced</td>
-                <td>Development</td>                
+                <td style="background-color: #0099ff;">Development</td>                
                 <td rowspan="3">Ability to search and book an appointment</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                       
+                <td style="background-color: #0099ff;">Development</td>                       
               </tr>
               <tr>
                 <td>Cleric</td>
@@ -199,12 +196,12 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">2</td>
                 <td rowspan="3">Cancel - During a consultation</td>
                 <td>Advanced</td>
-                <td>Complete</td>               
+                <td style="background-color: #bde9ba;">Ready</td>               
                 <td rowspan="3">Ability to cancel an appointment during a telephone call</td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                   
+                <td style="background-color: #0099ff;">Development</td>                   
               </tr>
               <tr>
                 <td>Cleric</td>
@@ -215,12 +212,12 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td rowspan="3">3</td>
                 <td rowspan="3">Cancel - After a consultation (Same 111 Provider)</td>
                 <td>Advanced</td>
-                <td>Development</td>               
+                <td style="background-color: #0099ff;">Development</td>               
                 <td rowspan="3">Ability to cancel an appointment after the telephone call has been competed.  By the same 111 provider </td>
               </tr>  
               <tr>
                 <td>IC24</td>
-                <td>Development</td>                       
+                <td style="background-color: #0099ff;">Development</td>                       
               </tr>
               <tr>
                 <td>Cleric</td>
@@ -236,7 +233,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
               <tr>
                 <td>IC24</td>               
-                <td>Ready</td>         
+                <td style="background-color: #bde9ba;">Ready</td>         
               </tr>
               <tr>
                 <td>Cleric</td>                
