@@ -96,6 +96,10 @@ entries:
             output: "web, pdf"
             url: /fs_authentication.html
           -
+            title: "Error Handling"
+            output: "web, pdf"
+            url: /fs_errorhandling.html
+          -
             title: "Appointment Management (Cancel and Rebook)"
             output: "web, pdf"
             url: /cr_overview.html
