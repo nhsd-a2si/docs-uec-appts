@@ -6,15 +6,11 @@ entries:
           - 
             output: "web, pdf"
             title: "Care Connect Workflow Overview"
-            url: /error_overview.html
+            url: /er_overview.html
           - 
             output: "web, pdf"
             title: "Care Connect Workflow example"
-            url: /dos_wfexample.html
-          - 
-            output: "web, pdf"
-            title: "GP Connect Workflow Overview"
-            url: /gpc_wfoverview.html           
+            url: /er_responsehandling.html                   
         output: web
         title: Error Handling      
     title: "Urgent & Emergency Care Appointment Booking Standards - Error Handling"
