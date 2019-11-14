@@ -5,12 +5,12 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
-            title: "Care Connect Workflow Overview"
+            title: "Error Handling Overview"
             url: /er_overview.html
           - 
             output: "web, pdf"
-            title: "Care Connect Workflow example"
+            title: "Response Handling"
             url: /er_responsehandling.html                   
         output: web
-        title: Error Handling      
+        title: "Error Handling"
     title: "Urgent & Emergency Care Appointment Booking Standards - Error Handling"
