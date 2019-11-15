@@ -44,21 +44,15 @@ The below tables identify the key metrics required to meet the national commissi
       <!------------------------------ROW----------------------------------->         
               <tr>
                 <td>rep-cons-04</td>
-                <td>Number of appointments not booked where there were no slots presented to the user and a successful referrals was made over a date range</td>
+                <td>Number of appointments not booked where there were no slots presented to the user and a successful referrals was made over a date range. Grouped by each service selected or patients registered practice</td>
                 <td>In December there were 200 appointments not been able to be made as the appointment slots were not available, but a referral to the service was made.</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-05</td>
-                <td>Number of appointments not booked where there were slots presented to the user and a successful referrals was made over a date range</td>
+                <td>Number of appointments not booked where there were slots presented to the user and a successful referrals was made over a date range. Grouped by each service selected or patients registered practice</td>
                 <td>In December there were 100 appointments not been able to be made but some appointment slots were available, but a referral to the service was made</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-              <tr>
-                <td>rep-cons-06</td>
-                <td>Number of appointments not booked where there were slots presented to the user, but the slots would have caused a breach and a successful referrals was made over a date range</td>
-                <td>In December there were 30 appointments not been able to made but the appointment slots that were available were outside of the disposition time frame</td>      
-              </tr>
+              </tr>     
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-07</td>
@@ -200,6 +194,12 @@ The items in the following table are expected to become requirements in the near
              <td>Number of appointments successfully booked and number of appointment slots available that would cause a breach over a date range</td>
              <td>In December there were 200 “DX05” appointments booked and there were 800 appointment slots available that would cause a breach.</td>      
             </tr>   
+  <!------------------------------ROW----------------------------------->   
+            <tr>
+             <td>rep-cons-06</td>
+             <td>Number of appointments not booked where there were slots presented to the user, but the slots would have caused a breach and a successful referrals was made over a date range</td>
+             <td>In December there were 30 appointments not been able to made but the appointment slots that were available were outside of the disposition time frame</td>      
+            </tr>
         </tbody>
        </table> 
       </p>
