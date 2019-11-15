@@ -35,11 +35,11 @@ The below tables identify the key metrics required to meet the national commissi
               </tr>
             </thead>
         <tbody>   
-      <!------------------------------ROW----------------------------------->   
+       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-01</td>
-                <td>Number of appointments successfully booked over a date range</td>
-                <td>In December there were 2000 appointments booked</td>      
+                <td>Number of appointments successfully booked grouped by each service selected or patients registered practice, over a date range</td>
+                <td>In December there were 2000 appointments booked in total, 50 for practice A, 32 for practice B etc..</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
                <tr>
