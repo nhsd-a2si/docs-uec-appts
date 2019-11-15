@@ -137,13 +137,13 @@ The below tables identify the key metrics required to meet the national commissi
               </tr>      
       <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>rep-prov-06</td>
+                <td>rep-prov-04</td>
                 <td>Number of appointments not booked vs number of successful referrals over a date range</td>
                 <td>In December there were 20 appointments booked and 50 referrals, showing that we have a 20% non-booking utilisation rate for this service</td>      
               </tr> 
       <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>rep-prov-13</td>
+                <td>rep-prov-05</td>
                 <td>Number of times that appointments were subsequently cancelled over a date range</td>
                 <td>In December there were 7 times an appointment was cancelled</td>      
               </tr>
