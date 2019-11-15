@@ -169,7 +169,7 @@ The items in the following table are expected to become requirements in the near
 <!------------------------------------------------------------------------------------------------------->  
 <div class="wrap-collabsible">
  <input id="collapsible3" class="toggle" type="checkbox">
- <label for="collapsible3" class="lbl-toggle">UEC Booking Reporting Requirements - Provider</label>
+ <label for="collapsible3" class="lbl-toggle">UEC Booking Reporting Requirements</label>
  <div class="collapsible-content">
     <div class="content-inner">
       <p>        
