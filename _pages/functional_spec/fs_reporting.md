@@ -50,13 +50,13 @@ The below tables identify the key metrics required to meet the national commissi
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-05</td>
-                <td>Number of appointments not booked where there were slots presented to the user and a successful referrals was made over a date range. Grouped by each service selected or patients registered practice</td>
+                <td>Number of appointments not booked where there were slots presented to the user and a successful referral was made over a date range. Grouped by each service selected or patients registered practice</td>
                 <td>In December there were 100 appointments not been able to be made but some appointment slots were available, but a referral to the service was made</td>      
               </tr>     
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-07</td>
-                <td>Number of appointments where an attempt to book into an offered slot failed because it was no longer available when the booking was made</td>
+                <td>Number of appointments where an attempt to book into an offered slot failed because it was no longer available when the booking was made. Grouped by each service selected or patients registered practice</td>
                 <td>In December there were 25 appointments not been able to be made successfully after the initial pre-allocation stage</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
