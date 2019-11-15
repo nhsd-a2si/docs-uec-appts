@@ -1,5 +1,5 @@
 ---
-title: FHIR&reg; implementation
+title: Error Handling - Overview
 keywords: fhir development
 tags: [fhir,development]
 sidebar: error_sidebar
@@ -11,7 +11,7 @@ summary: "Implementation guidance for developers - focusing on error handling"
 
 There are several points at which an error may occur to prevent the appointment booking operations completing successfully.
 
-The following guidance is for Care Connect Appointment booking.  GP Connect is very similar but has specific guidance here: https://nhsconnect.github.io/gpconnect/development_fhir_error_handling_guidance.html.
+The following guidance is for Care Connect Appointment booking.  GP Connect is very similar but has specific guidance <a href="https://nhsconnect.github.io/gpconnect/development_fhir_error_handling_guidance.html" target="_blank">here</a>.
 
 ## Overview
 
