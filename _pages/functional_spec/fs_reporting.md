@@ -40,13 +40,7 @@ The below tables identify the key metrics required to meet the national commissi
                 <td>rep-cons-01</td>
                 <td>Number of appointments successfully booked vs number of successful referrals. Grouped by each service selected or patients registered practice, over a date range</td>
                 <td>In December there were 2000 appointments booked in total, 50 for practice A, 32 for practice B etc..</td>      
-              </tr>
-      <!------------------------------ROW----------------------------------->   
-               <tr>
-                <td>rep-cons-02</td>
-                <td>Number of appointments successfully booked vs number of successful referrals over a date range</td>
-                <td>In December there were 2000 appointments booked and 2500 referrals, showing that we have a 80% booking utilisation rate</td>      
-              </tr>
+              </tr>      
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-03</td>
