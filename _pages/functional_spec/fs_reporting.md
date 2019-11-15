@@ -68,7 +68,7 @@ The below tables identify the key metrics required to meet the national commissi
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-09</td>
-                <td>Number of times that a user tried to book an appointment and got an error message over a date range</td>
+                <td>Number of times that a user tried to book an appointment and got an error message over a date range. Grouped by error message</td>
                 <td>In December there were 2 times where the appointment booking button was clicked and an error occurred</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
