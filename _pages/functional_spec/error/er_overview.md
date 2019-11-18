@@ -25,3 +25,28 @@ As the process is initiated by a Consumer there could be several stages that cre
 | Consumer→SDS                                  | SDS processes will fail if connectivity to SDS does not work, authentication of the Consumer system does not work or badly formed requests are sent in.A successful request should return the correct information on the endpoints to be used for the next stage of the process with SSP, however, if the data supplied from DOS is invalid there may be a successful return with no endpoint information. |
 | Consumer→SSP                                  | SSP processes will fail if connectivity to SSP does not work, authentication of the Consumer system does not work or badly formed requests are sent in.A successful request should be passed through to the Provider endpoint and processed by that system, but these operations could fail.                                                                                                               |
 | Consumer→SSP→Provider                       | If SSP successfully proxies a request through to a Provider endpoint, it will return an error code from that endpoint.                                                                                                                                                                                                                                                                                     |
+
+### Consumer → DOS
+
+The DOS will return specific errors when searching for services. These are detailed <a href="https://developer.nhs.uk/apis/dos-api/soap_api_errors_1_5.html" target="_blank">here</a>.
+
+**These errors are all about:**
+* Technical issues with connecting to DOS, which should be investigated by local IT Support; or
+* No valid services being returned, which should be handled locally with agreed processes for widening search parameters.
+*Note that successful completion of a DOS Search may occur, but provide incomplete or erroneous data for the booking process to continue due to poor data quality.*
+
+**Common issues with data held in the DOS that will be discovered later:**
+* Service information returned that supports booking, but a FHIR scheduling endpoint is not entered against the service or is not formatted correctly.  This will result in failure later when using SDS to retrieve the endpoint information. This is an issue with DOS configuration and should be investigated with the DOS Leads.
+* Service information returned but no FHIR endpoint is configured even though booking is permitted.
+
+#### Consumer responsibilities:
+
+1. Log errors returned by DOS for incident investigation
+2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options to warn users to choose another service
+3. Ensure information for appropriate local incident management is captured
+
+### Consumer → SDS
+
+SDS interactions are LDAP and provide specific error codes for these interactions.
+
+There are several errors that may be returned by SDS:
