@@ -79,7 +79,7 @@ Provider will respond to errors processing requests from a Consumer system as pe
 
 For Care Connect appointment workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR OperationOutcome resource.
 
-The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>:
+The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>
 
 ### Provider System responsibilities
 
