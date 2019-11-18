@@ -139,86 +139,88 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>  
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="2"></td>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td rowspan="2">Security</td>
+                <td>JWT badly constructed</td>
+                <td>403 Forbidden</td>
+                <td>Add in details of what went wrong including location details of the error.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>JWT context of org and user is not allowed to perform the operation requested</td>
+                <td>403 Forbidden</td>
+                <td>Add in details of what specifically is the issue by an appropriate error information about the reason that org or user lacks sufficient permissions in OperationOutcome.issue.diagnostics.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="4"></td>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td rowspan="4">Search for free slots</td>
+                <td>The ASID sent in does not match locally to any schedules </td>
+                <td>404 Not found</td>
+                <td>Add in details of what specifically is the issue by an appropriate error information about the ASID issue in OperationOutcome.issue.diagnostics.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>Query strings are invalid</td>
+                <td>400 Bad Request</td>
+                <td>Add in details of what specifically is the issue in the search parameters - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>No slots available bookable by for this consumer</td>
+                <td>200 Success</td>
+                <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around slots being opened up for a specific organisation e.g. if the provider org has restricted in the number of slots available to 111.
+
+</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>Time of search in the past</td>
+                <td>400 Bad Request</td>
+                <td>Add in details of what specifically is the issue by an appropriate error information about the ASID issue in OperationOutcome.issue.diagnostics.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="4"></td>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td rowspan="4">Book an appointment</td>
+                <td>The request body was simply invalid</td>
+                <td>400 Bad Request</td>
+                <td>Add in details of what specifically is the issue in the request - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>The requested Slot is no longer free</td>
+                <td>422 Unprocessable Entity</td>
+                <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>The request body failed validation</td>
+                <td>422 Unprocessable Entity</td>
+                <td>Add in details of what went wrong including location details of the error.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>The patient identifier - NHS no - was invalid</td>
+                <td>422 Unprocessable Entity</td>
+                <td>Add in details that the NHS No identifier was invalid in OperationOutcome.issue.diagnostics,  and highlight specifically the location in including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
               </tr> 
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="2"></td>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td rowspan="2">Get an appointment</td>
+                <td>The resource does not exist on the server e.g. invalid appointment resource reference</td>
+                <td>404 Not found</td>
+                <td>Add in details of what specifically is the issue.</td> 
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>The query string parameters were invalid or unsupported</td>
+                <td>400 Bad Request</td>
+                <td>Add in details of what specifically is the issue in the search parameters - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td> 
+                <td>Cancel an appointment</td>
+                <td>The consumer org is not permitted to cancel this appointment. Note the UEC appointment flows permit cancellation by organisations other than the organisation that booked the appointment - but this is managed locally in the Provider system with configuration to allow the provider to control who can cancel appointments.</td>
+                <td>403 Forbidden</td>
+                <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the appointment e.g. only the organisation that booked the appointment is permitted to cancel an appointment.</td> 
               </tr>         
         </tbody>
       </table> 
