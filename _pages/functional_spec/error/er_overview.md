@@ -228,8 +228,10 @@ The next table details the appropriate error code return values to be sent by Pr
   </div>
 </div-->
 
-### Consumer System responsibilities
+<h2> Consumer System responsibilities </h2>
 
-1. Log errors returned by Provider systems for incident investigation by IT support staff.  If the Response is malformed, this should be logged specifically as a Provider system issue.  Details of the Provider system should be logged to support investigation e.g. DOS Service ID.
-2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options (e.g. to warn users to choose another service)
-3. Ensure information for appropriate local incident management is captured.
+<ol>
+   <li>Log errors returned by Provider systems for incident investigation by IT support staff.  If the Response is malformed, this should be logged specifically as a Provider system issue.  Details of the Provider system should be logged to support investigation e.g. DOS Service ID.</li>
+   <li>Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options (e.g. to warn users to choose another service)</li>
+   <li>Ensure information for appropriate local incident management is captured.</li>
+</ol>
