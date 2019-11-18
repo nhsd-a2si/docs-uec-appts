@@ -228,7 +228,7 @@ The next table details the appropriate error code return values to be sent by Pr
   </div>
 </div-->
 
-<h2> Consumer System responsibilities </h2>
+<h3> Consumer System responsibilities </h3>
 
 <ol>
    <li>Log errors returned by Provider systems for incident investigation by IT support staff.  If the Response is malformed, this should be logged specifically as a Provider system issue.  Details of the Provider system should be logged to support investigation e.g. DOS Service ID.</li>
