@@ -101,12 +101,12 @@ The next table details the appropriate error code return values to be sent by Pr
 <!------------------------------------------------------------------------------------------------------->  
 <!------------------------------------------------------------------------------------------------------->
 
-<div class="wrap-collabsible">
+<!-- div class="wrap-collabsible">
   <input id="collapsible1" class="toggle" type="checkbox">
   <label for="collapsible1" class="lbl-toggle">UEC Booking Reporting Requirements - Consumer</label>
   <div class="collapsible-content">
     <div class="content-inner">
-      <p>        
+      <p -->        
       <table class="pure-table pure-table-bordered"> 
             <thead>
               <tr>
@@ -224,10 +224,10 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>         
         </tbody>
       </table> 
-      </p>
+      <!--/p>
     </div>
   </div>
-</div>
+</div-->
 
 ### Consumer System responsibilities
 
