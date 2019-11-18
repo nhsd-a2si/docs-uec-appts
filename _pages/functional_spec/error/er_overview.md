@@ -92,7 +92,6 @@ The error code guidance is provided for each capability in the <a href="https://
   
 The next table details the appropriate error code return values to be sent by Provider systems for important common issues that may occur for each interaction.  In addition, the table details specific information that should be appended into the OperationOutcome response by Provider systems.  Providers MUST implement these as a minimum.
 
-{% include table-collapsible.html %} 
 <p>
 
 <!------------------------------------------------------------------------------------------------------->  
