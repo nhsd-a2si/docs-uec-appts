@@ -39,7 +39,7 @@ The DOS will return specific errors when searching for services. These are detai
 * Service information returned that supports booking, but a FHIR scheduling endpoint is not entered against the service or is not formatted correctly.  This will result in failure later when using SDS to retrieve the endpoint information. This is an issue with DOS configuration and should be investigated with the DOS Leads.
 * Service information returned but no FHIR endpoint is configured even though booking is permitted.
 
-#### Consumer responsibilities:
+**Consumer responsibilities:**
 
 1. Log errors returned by DOS for incident investigation
 2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options to warn users to choose another service
