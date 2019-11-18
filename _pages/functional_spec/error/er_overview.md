@@ -50,3 +50,12 @@ The DOS will return specific errors when searching for services. These are detai
 SDS interactions are LDAP and provide specific error codes for these interactions.
 
 There are several errors that may be returned by SDS:
+
+| HTTP Code | Issue Type    | Description of Error                                                                                                           |
+|-----------|---------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 403       | forbidden     | The sender or receiver’s ASID is not authorised for this interaction.                                                          |
+| 405       | not-supported | Bad request for an unsupported HTTP verb such as TRACE.                                                                        |
+| 415       | not-supported | A consumer application asked for an unsupported media type.                                                                    |
+| 502       | transient     | A downstream server is offline.  This will mean the forwarding of the request to the Provider system failed as it was offline. |
+| 504       | transient     | A downstream server timed out.  This will mean SSP forwarded the request to the Provider system but it received a timeout.     |
+
