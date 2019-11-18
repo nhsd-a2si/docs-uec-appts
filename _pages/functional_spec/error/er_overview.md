@@ -91,3 +91,55 @@ The error code guidance is provided for each capability in the <a href="https://
   * An issue code
   
 The next table details the appropriate error code return values to be sent by Provider systems for important common issues that may occur for each interaction.  In addition, the table details specific information that should be appended into the OperationOutcome response by Provider systems.  Providers MUST implement these as a minimum.
+
+{% include table-collapsible.html %} 
+<p>
+
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->  
+<!-----------------------------------------------TABLE-1------------------------------------------------->       
+<!------------------------------------------------------------------------------------------------------->  
+<!------------------------------------------------------------------------------------------------------->
+
+<div class="wrap-collabsible">
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">UEC Booking Reporting Requirements - Consumer</label>
+  <div class="collapsible-content">
+    <div class="content-inner">
+      <p>        
+      <table class="pure-table pure-table-bordered"> 
+            <thead>
+              <tr>
+                <th data-field="Capability" data-sortable="true">Capability Area</th>
+                <th data-field="Issue" data-sortable="true">Issue Description</th>
+                <th data-field="ErrorCode" data-sortable="true">HTML Error Codes</th>
+                <th data-field="OperationOutcome" data-sortable="true">OperationOutcome Details</th>   
+              </tr>
+            </thead>
+        <tbody>   
+       <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td rowspan="3">General</td>
+                <td>No CapabilityStatement returned</td>
+                <td></td>
+                <td></td> 
+              </tr>
+         <!------------------------------ROW----------------------------------->   
+              <tr>                
+                <td>The FHIR resources are malformed</td>
+                <td>400 Bad Request</td>
+                <td>Add in details of what specifically is the issue in the FHIR resources - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
+              </tr>  
+         <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>Server can't return the requested format e.g. server only does XML but JSON was requested
+</td>
+                <td>400 Bad Request</td>
+                <td>Add in details of what specifically is the issue by an appropriate error information in OperationOutcome.issue.diagnostics.</td>
+              </tr>  
+        </tbody>
+      </table> 
+      </p>
+    </div>
+  </div>
+</div>
