@@ -161,19 +161,16 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td></td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td></td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td> 
@@ -189,19 +186,16 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td></td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td></td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td> 
@@ -215,7 +209,6 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td></td> 
