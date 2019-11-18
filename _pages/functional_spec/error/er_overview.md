@@ -47,9 +47,17 @@ The DOS will return specific errors when searching for services. These are detai
 
 ### Consumer → SDS
 
-SDS interactions are LDAP and provide specific error codes for these interactions.
+If the SSP determines the endpoint is valid using the supplied ASID, then it will forward the request to the FHIR endpoint of the Provider system.  The SSP will act as a true proxy here and passthrough requests and responses between Consumer and Provider systems.
 
-There are several errors that may be returned by SDS:
+However, there are instances where the request will fail before the Provider system receives the requests.
+
+SSP will return specific HTML error codes under these circumstances as per the following approach:
+
+https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html
+
+https://developer.nhs.uk/apis/spine-core/ssp_implementation_guide.html
+
+Here are examples of errors returned by SSP as error codes:
 
 | HTTP Code | Issue Type    | Description of Error                                                                                                           |
 |-----------|---------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -59,3 +67,27 @@ There are several errors that may be returned by SDS:
 | 502        | transient      | A downstream server is offline.  This will mean the forwarding of the request to the Provider system failed as it was offline. |
 | 504        | transient      | A downstream server timed out.  This will mean SSP forwarded the request to the Provider system but it received a timeout.     |
 
+### Consumer responsibilities:
+
+1. Log errors returned by SSP for incident investigation by IT support staff
+2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options to warn users to choose another service
+3. Ensure information for appropriate local incident management is captured
+
+**Consumer → SSP → Provider**
+
+Provider will respond to errors processing requests from a Consumer system as per the guidance below.  The SSP will forward the responses unchanged.
+
+For Care Connect appointment workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR OperationOutcome resource.
+
+The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>:
+
+### Provider System responsibilities
+
+1. Log errors locally for incident investigation by IT support staff.  If the Request is malformed, this should be logged specifically as a Consumer system issue.  Details of the Consumer system should be logged to support investigation e.g. Org ID.
+2. On error send an appropriate HTML error code and an OperationOutcome resource. Use the sections of the OperationOutcome resource to send detailed information back to the Consumer system on what went wrong and why. This is especially important if there was an error in the Request, as this will help the Consumer support function diagnose what is wrong with their system or configuration.
+3. As a minimum the OperationOutcome resource must contain:
+  * ID - a Provider id for the outcome e.g. a local ID to identify local error codes or a text description
+  * An issue severity code
+  * An issue code
+  
+The next table details the appropriate error code return values to be sent by Provider systems for important common issues that may occur for each interaction.  In addition, the table details specific information that should be appended into the OperationOutcome response by Provider systems.  Providers MUST implement these as a minimum.
