@@ -1,5 +1,5 @@
 ---
-title: FHIR&reg; implementation
+title: Error Handling - Implementation Guidance
 keywords: fhir development
 tags: [fhir,development]
 sidebar: error_sidebar
