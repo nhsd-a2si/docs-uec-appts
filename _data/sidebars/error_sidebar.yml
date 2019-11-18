@@ -10,7 +10,7 @@ entries:
           - 
             output: "web, pdf"
             title: "Response Handling"
-            url: /er_responsehandling.html                   
+            url: /er_errorhandling.html                   
         output: web
         title: "Error Handling"
     title: "Urgent & Emergency Care Appointment Booking Standards - Error Handling"
