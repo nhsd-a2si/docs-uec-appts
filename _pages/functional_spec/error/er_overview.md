@@ -67,13 +67,13 @@ Here are examples of errors returned by SSP as error codes:
 | 502        | transient      | A downstream server is offline.  This will mean the forwarding of the request to the Provider system failed as it was offline. |
 | 504        | transient      | A downstream server timed out.  This will mean SSP forwarded the request to the Provider system but it received a timeout.     |
 
-### Consumer responsibilities:
+**Consumer responsibilities:**
 
 1. Log errors returned by SSP for incident investigation by IT support staff
 2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options to warn users to choose another service
 3. Ensure information for appropriate local incident management is captured
 
-**Consumer → SSP → Provider**
+### Consumer → SSP → Provider
 
 Provider will respond to errors processing requests from a Consumer system as per the guidance below.  The SSP will forward the responses unchanged.
 
@@ -81,7 +81,7 @@ For Care Connect appointment workflows, the process is very similar to GP Connec
 
 The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>
 
-### Provider System responsibilities
+**Provider System responsibilities**
 
 1. Log errors locally for incident investigation by IT support staff.  If the Request is malformed, this should be logged specifically as a Consumer system issue.  Details of the Consumer system should be logged to support investigation e.g. Org ID.
 2. On error send an appropriate HTML error code and an OperationOutcome resource. Use the sections of the OperationOutcome resource to send detailed information back to the Consumer system on what went wrong and why. This is especially important if there was an error in the Request, as this will help the Consumer support function diagnose what is wrong with their system or configuration.
