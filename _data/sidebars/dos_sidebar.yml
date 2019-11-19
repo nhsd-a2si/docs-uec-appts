@@ -31,13 +31,17 @@ entries:
             output: "web, pdf"
             title: "GP Connect Workflow example"
             url: /gpc_wfexample.html
+          - 
+            output: "web, pdf"
+            title: "Support for booking only services"
+            url: /dos_bookingonly.html   
         output: web
         title: Workflow
       - 
         folderitems: 
           - 
             output: "web, pdf"
-            title: "Existing Approach"
+            title: "Previous Approach"
             url: /dos_endpoints_existing.html
           - 
             output: "web, pdf"
@@ -50,7 +54,7 @@ entries:
           - 
             output: "web, pdf"
             title: "Booking and referral messages"
-            url: /dos_itk.html
+            url: /dos_itk.html          
         output: web
         title: Endpoints
     title: "Urgent & Emergency Care Appointment Booking Standards - DoS Interactions"

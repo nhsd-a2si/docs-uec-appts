@@ -7,9 +7,9 @@ toc: false
 folder: dos
 ---
 
-## Proposed Changes to support Appointment Booking
+## Changes to support Appointment Booking
 
-For appointment booking there will be a new transport type, format and interaction with an entirely new enpoint item (ASID). 
+For appointment booking there is a new transport type, format and interaction. There are also two new address types, ASID and ODS.
 
 The new items are listed below:
 
@@ -18,7 +18,7 @@ The new items are listed below:
 * Interaction: Scheduling
 * address: and ODS or ASID referencing the AS Object in SDS for the booking endpoint for this service (with the form "ODS:xxxx" or "ASID:xxxx")
 
-An example of how this might look in XML is below:
+An example of how this will look in XML is below:
 
 
 ```xml
@@ -38,8 +38,9 @@ An example of how this might look in XML is below:
      <ns1:transport>http</ns1:transport>
      <ns1:format>FHIR</ns1:format>
      <ns1:interaction>Scheduling</ns1:interaction>
-     <ns1:address>an ASID (eg 918999198999 Usually 12 (but could be more) digits, stored as a string) in the format "</ns1:address>
+     <ns1:address>ASID:918999198999|or|ODS:ABC123</ns1:address>
      <ns1:comment>a comment</ns1:comment>
   </ns1:EndPoint>
 </ns1:serviceEndPoints>
 ```
+
