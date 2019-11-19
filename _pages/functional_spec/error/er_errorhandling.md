@@ -7,10 +7,7 @@ permalink: er_errorhandling.html
 summary: "Implementation guidance for developers - focusing on error handling"
 ---
 
-## Purpose
-
-This section is intended for use by software developers looking to build a conformant NHS FHIR Scheduling API interface for UEC flows.
-
+This page is intended for use by software developers looking to build a conformant NHS FHIR Scheduling API interface for UEC flows.
 The purpose of response values is to support diagnostic investigation of issues between consumers and providers.
 
 ## Spine Secure Proxy responses
@@ -111,7 +108,3 @@ Servers SHALL produce the following main [HTTP status codes](http://www.iana.org
 Providers are permitted to reject update interactions because of integrity concerns or other business rules, and return HTTP status codes accordingly (usually a `422`).
 
 As part of this API, erros of this type MUST be accompanied by an [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource that provides additional detail concerning the issue.
-
-
-
-```fs
