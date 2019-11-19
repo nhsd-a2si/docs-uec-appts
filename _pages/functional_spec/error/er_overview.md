@@ -53,9 +53,9 @@ However, there are instances where the request will fail before the Provider sys
 
 SSP will return specific HTML error codes under these circumstances as per the following approach:
 
-https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html
+<a href="https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html" target="_blank">https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html</a>
 
-https://developer.nhs.uk/apis/spine-core/ssp_implementation_guide.html
+<a href="https://developer.nhs.uk/apis/spine-core/ssp_implementation_guide.html" target="_blank">https://developer.nhs.uk/apis/spine-core/ssp_implementation_guide.html</a>
 
 Here are examples of errors returned by SSP as error codes:
 
