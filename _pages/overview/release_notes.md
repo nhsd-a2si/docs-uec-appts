@@ -9,6 +9,38 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.12 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.12   | PREVIEW | Alpha | Current Version | 19/11/2019 | Volatile
+
+The 0.1.12 PREVIEW release has the following highlights:
+
+* New section on error handling created
+* Updated Authentication details with significant changes to reflect current approach
+* Created "booking only" services section on DoS sub site
+  * Added details for booking only attribute, including sample code (XML)
+* Updated reporting requirements section 
+   * Added future requirements section
+   * Tidied up existing requirements  
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.13 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.13   | PREVIEW | Alpha | Unreleased | 10/12/2019   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.11 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -31,22 +63,6 @@ The 0.1.11 PREVIEW release has the following highlights:
 * Fixed the broken link in the FHIR implementation page
 * Fixed a few typos in several pages
 
-<br>
-<br>
-
-## Future releases
-
-### 0.1.12 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.12   | PREVIEW | Alpha | Unreleased | 4/11/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
-
 ### 0.1.10 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -65,7 +81,6 @@ Version | Handle  | Phase | State           | Release Date | Stability
 * Removed all reference to "HealthcareServiceID" as it was causing confusion and is no longer relevant
 * Added guidance for the DoS service attribute
 * Removed "not published" note from any pages that are complete
-
 
 ### 0.1.9 PREVIEW
 

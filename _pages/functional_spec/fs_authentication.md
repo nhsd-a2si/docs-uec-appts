@@ -13,16 +13,13 @@ Note: for GP Connect Authentication please see <a href="https://nhsconnect.githu
 
 The main principle in the approach to authentication is to authorise the consumer **system** rather than the user. Therefore there is no dependency on passing through a users strongly authenticated identity and role (such as via a smartcard) to authorise the transaction. This approach will always be the case for viewing and booking slots. There may be a future requirement for more granular authorisation when doing modification and retrieval operations such as third party cancelling and rebooking.
 
-In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA NHS Identity).
+In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA NHS Identity).  This process will provide bth system and user Authorisation with signed tokens.
 
-For initial rollout the Health and Social Care Directory (HSCD) will be used. This is a mature service and supporting NHS Mail identities.
+Prior to the delivery of NHS Identity for this purpose, the SSP will validate requests and could potentially block unauthorised requests.  Therefore, Provider systems can trust the system request from SSP.
 
-This uses the standard OAuth 2 client_credentials flow (see: <a href="https://oauth.net/2/grant-types/client-credentials/" target="_blank">OAuth Client Credentials Flow</a>) and has the following key features:
+To support audit and provenance, the information about both the Consumer system and the authenticated user MUST be passed into the API calls in the form of an OAuth Access (bearer) token - specifically an encoded JSON web token.
 
-* New Consumer and Provider systems can be implemented and removed with NO effect on other services. 
-* It allows central control over authorisation at a capability level 
-* All configuration is controlled centrally in HSCD/NHS Identity and those details are passed to the Provider to allow them to make the required authorisation decisions. 
-* In addition to the provider system checking the tokens, the SSP can also validate requests and could potentially block unauthorised requests
+In the future NHS Identity solution will provide an authorisation endpoint that can grant these tokens to authorised users/systems, but until that service is available the calling system must generate the token itself. The specification of this token, what should be in it, and how it can be generated can be found in the below.
 
 ## Configuring a new consumer service
 
@@ -45,88 +42,366 @@ When a new consumer or provider system is assured for booking using the Care Con
         * and the supplier of that system 
         
   Separating these groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
+  
   In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
   These new groups will be documented here.
-3. Create a 'secret' in HSCD for each Consumer system. 
-  * The secret is the equivalent to a password, and as such it is ESSENTIAL that it is strongly protected by the Consumer system
-  * there is likely to be a security policy and attached process on the protection of these secrets published in due course
 
-## Authentication workflow
+## Use of bearer tokens
 
-When a Consumer system wants to request Slots or to book an Appointment at a Provider system, a request is made to HSCD for an access token. It includes the secret and the details of the Provider system it's accessing, e.g:
+An output of [authorising access](security_authorisation.html) to an API is the provision of a JSON Web Token. This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
 
-```json
-client_id: "id Goes here",
-client_secret: "secret goes here",
-scope:  [base url of the provider system] + "/.default",
-grant_type: "client_credentials"
+In order to achieve this, the Consumer MUST include Access token in the HTTP authorisation header as an oAuth Bearer Token (as outlined in [RFC 6749](https://tools.ietf.org/html/rfc6749){:target="_blank"}) in the form of a JSON Web Token (JWT) as defined in [RFC 7519](https://tools.ietf.org/html/rfc7519){:target="_blank"}.
+
+An example such an HTTP header is given below:
+
+```
+     Authorization: Bearer jwt_token_string
 ```
 
-For example these values might be used:
-```json
-client_id=92d85f9d-0666-49bc-a31c-12b45b04a7de
-client_secret=y7rCysA8anvYshLckwwFNs8qnC6JPyCerE7CUAAnGgo=
-```
+API Provider systems SHALL respond to oAuth Bearer Token errors in line with [RFC 6750 - section 3.1](https://tools.ietf.org/html/rfc6750#section-3.1).
 
-HSCD will then issue a signed access token containing the groups that the Consumer is a member of. This token is valid for one hour. The response will look similar to this:
+It is highly recommended that standard libraries are used for creating the JWT as constructing and encoding the token manually may lead to issues with parsing the token. A good source of information about JWT and libraries to use can be found on the [JWT.io site](https://jwt.io/)
+
+
+## JWT without an Authorisation Server ##
+
+The new national authentication service is not yet in place, so it is not currently possible to request an Access token from that service. In the interim, Consumer systems are expected to either use a local service to generate tokens, or generate a new JWT for each API request themselves. A consumer generated JSON Web Token (JWT) SHALL consisting of three parts seperated by dots `.`, which are:
+
+- Header
+- Payload
+- Signature
+
+### Header ###
+
+Where Consumer systems are generating the JWT locally, they SHALL generate an Unsecured JSON Web Token (JWT) using the 'none' algorithm parameter in the header to indicate that no digital signature or MAC has been performed (please refer to section 6 of [RFC 7519](https://tools.ietf.org/html/rfc7519){:target="_blank"} for details).
 
 ```json
 {
-"token_type": "Bearer",
-"expires_in": 3600,
-"ext_expires_in": 3600,
-"access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwOi8vYXBwb2ludG1lbnRzLmRpcmVjdG9yeW9mc2VydmljZXMubmhzLnVrOjQ0My9wb2MiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lNTIxMTFjNy00MDQ4LTRmMzQtYWVhOS02MzI2YWZhNDRhOGQvIiwiaWF0IjoxNTQ3MDMyNDU1LCJuYmYiOjE1NDcwMzI0NTUsImV4cCI6MTU0NzAzNjM1NSwiYWlvIjoiNDJSZ1lNZ0tEbFZYMnBIMnE5cFhlamJ6MzVtWkFBPT0iLCJhcHBpZCI6IjkyZDg1ZjlkLTA2NjYtNDliYy1hMzFjLTEyYjQ1YjA0YTdkZSIsImFwcGlkYWNyIjoiMSIsImdyb3VwcyI6WyJhYjQxMmZlOS0zZjY4LTQzNjgtOTgxMC05ZGMyNGQxNjU5YjEiLCJkYWNiODJjNS1hZWE4LTQ1MDktODg3Zi0yODEzMjQwNjJkZmQiLCI1NWRhMWM5YS0yY2ViLTQxYTctOWI3Yy0xYzcwMTVlZDFmZGUiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTUyMTExYzctNDA0OC00ZjM0LWFlYTktNjMyNmFmYTQ0YThkLyIsIm9pZCI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInN1YiI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInRpZCI6ImU1MjExMWM3LTQwNDgtNGYzNC1hZWE5LTYzMjZhZmE0NGE4ZCIsInV0aSI6IlI1S2FEa21Rc0VlTk96d1c3WElUQUEiLCJ2ZXIiOiIxLjAifQ.eVSncRYT138bByvEHa00uQpfuZrLvW0b9NPF9tDsxIckjaxEiOWJz1pYpaEJoZPnSxmJjKZ_v7h-0ea21ApB-9dYRE6OZ9Y12CGbDr4IKIbO2Oh0QulU06BzvDrA9hMbLXV2vG06mIcLBE8BAJbJp8ktF4PZ1vmRXd0jxy1YonEFqO9e5QsUoekw7eL_LPBBUlNrUsFedP7eKPdW1uGRrd6i_UmQTDx0tq0cV8NOV-vvQLgKY7GROPjZ1qOx6-3s_oEDL_T65ERFJH4CMcMBOH1HsDf2Ee47pM3-lGlBh7SSLpCVbxpOxAc1O6cULbbbSRuAEyUXuQZroagtqoiiwQ"
+  "alg": "none",
+  "typ": "JWT"
 }
 ```
 
-The access_token field in that response contains the actual JWT to be used when making requests to the Provider system specified in the request as 'scope'.
+### Payload ###
 
-This access_token can then be decoded (for example the following sites: <a href="https://jwt.ms" target="_blank">jwt.ms</a>  or <a href="https://jwt.io" target="_blank">jwt.io</a>).
+Consumers systems SHALL generate a JWT Payload conforming to the requirements set out in the [JWT Payload](#jwt-payload) section of this page.
 
-When decoded the token will look something like the following:
-```json
-{ // Header section
-"typ": "JWT",
-"alg": "RS256",
-"x5t": "nbCwW11w3XkB-xUaXwKRSLjMHGQ",
-"kid": "nbCwW11w3XkB-xUaXwKRSLjMHGQ" // This indicates the id of the public key that can be used to validate the signature
-}.{
-  "aud": "https://provider url will be here", // This will be set from the requested scope.
-  "iss": "https://sts.windows.net/e52111c7-4048-4f34-aea9-6326afa44a8d/", // The issuer, i.e: HSCD - this will change before we go live
-  "iat": 1540205024, // Issued at
-  "nbf": 1540205024, // Not for use before
-  "exp": 1540208924, // Expiry
-  "aio": "42RgYOj/WnPNrHf6KrsGL/Nmb+tnAA==",
-  "appid": "da94f55e-c638-4fe6-a547-993648947ac3", // The client id (as submitted in the request)
-  "appidacr": "1",
-  "groups": [
-    "99402151-a646-470d-a82a-765024126cc4", // The Identifiers  of the Groups - these values will change before we go live
-    "E8e69933-5429-45e9-bbb1-bfd4db3c2b15"
+### Signature ###
+
+Consumer systems SHALL generate an empty signature.
+
+### Complete JWT ###
+
+The final output is three Base64url encoded strings separated by dots (note - there is some canonicalisation done to the JSON before it is Base64url encoded, which the JWT code libraries will do for you).
+
+```shell
+eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwczovL2Nhcy5uaHMudWsiLCJzdWIiOiJodHRwczovL2ZoaXIubmhzLnVrL0lkL3Nkcy1yb2xlLXByb2ZpbGUtaWR8Mzg3NDI5Nzg1MzA5Mjc1IiwiYXVkIjoiaHR0cHM6Ly9jbGluaWNhbHMuc3BpbmVzZXJ2aWNlcy5uaHMudWsiLCJleHAiOjE0Njk0MzY5ODcsImlhdCI6MTQ2OTQzNjY4NywicmVhc29uX2Zvcl9yZXF1ZXN0IjoiZGlyZWN0Y2FyZSIsInNjb3BlIjoicGF0aWVudC8qLnJlYWQiLCJyZXF1ZXN0aW5nX3N5c3RlbSI6Imh0dHBzOi8vZmhpci5uaHMudWsvSWQvYWNjcmVkaXRlZC1zeXN0ZW18MjAwMDAwMDAwMjA1IiwicmVxdWVzdGluZ191c2VyIjoiaHR0cHM6Ly9maGlyLm5ocy51ay9JZC9zZHMtcm9sZS1wcm9maWxlLWlkfDQzODcyOTM4NzQ5MjgifQ.
+```
+
+NOTE: The final section (the signature) is empty, so the JWT will end with a trailing `.` (this must not be omitted, otherwise it would be an invalid token).
+
+
+## JWT Payload ##
+
+Consumers **SHALL** populate the payload section of the JWT with the following claims:
+
+- [`iss`](#iss-issuer-claim) (issuer)
+- [`sub`](#sub-subject-claim) (subject)
+- [`aud`](#aud-audience-claim) (audience)
+- [`exp`](#exp-expiry-claim) (expiry)
+- [`iat`](#iat-issued-at-claim) (issued at)
+- [`reason_for_request`](#reason_for_request-claim)
+- [`requested_scope`](#requested_scope-claim)
+- [`requesting_device`](#requesting_device-claim)
+- [`requesting_organization`](#requesting_organization-claim)
+- [`requesting_practitioner`](#requesting_practitioner-claim)
+
+Please see details below on how to populate each claim.
+
+#### `iss` (issuer) claim
+
+Consumer systems token issuer URI.
+
+As the consuming system is presently responsible for generating the access token, this **SHALL** contain the URL of the Spine endpoint of the consumer system.
+
+In future OAuth2 implementation, the `iss` claim will contain the URL of the OAuth2 authorisation server token endpoint.
+
+**Example**: `"iss": "https://consumersupplier.thirdparty.nhs.uk/"`
+
+---
+
+#### `sub` (subject) claim
+
+ID for the user on whose behalf this request is being made. Matches [`requesting_practitioner.id`](#requesting_practitioner-claim).
+
+**Example**: `"sub": "10019"`
+
+---
+
+#### `aud` (audience) claim
+
+The [service root URL](development_general_api_guidance.html#service-root-url) of the provider system.
+
+This is the value returned from the [SDS endpoint lookup service](integration_spine_directory_service.html) in the `nhsMhsEndPoint` field.
+
+**Example**: `"aud": "https://providersupplier.thirdparty.nhs.uk/STU3/1"`
+
+---
+
+#### `exp` (expiry) claim
+
+Identifies the expiration time in UTC on and after which the JWT **SHALL NOT** be accepted for processing.
+
+The expiration time **SHALL** be set to 5 minutes after the token creation time (populated in the [`iat` claim](#iat-issued-at-claim)).
+
+The value must be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time).
+
+Providers **SHALL** reject requests with expired tokens.
+
+**Example**: `"exp": 1469436987`
+
+{% include important.html content="To ensure accuracy of timestamps, and minimise the likelihood of tokens being rejected due to clock skew providers and consumers **SHALL** synchronise their server clocks with NHS Network Time Protocol (NTP) servers." %}
+
+---
+
+#### `iat` (issued at) claim
+
+The time the request and token were generated in UTC.
+
+The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time).
+
+**Example**: `"iat": 1469436687`
+
+---
+
+#### `reason_for_request` claim
+
+The purpose for which access is being requested.
+
+As GP Connect only supports usage for direct care, this value **SHALL** be set to `directcare`.
+
+**Example**: `"reason_for_request": "directcare"`
+
+---
+
+#### `requested_scope` claim
+
+The scope of the request.
+
+Please the table below for which values to populate.
+
+| Claim value | Description |
+|-------|-------------|
+| `patient/appointment.write` | Booking in an appointment | 
+| `organization/slot.read` | Searching for available slots |
+
+Providers should also read the associated [Security guidance](development_api_security_guidance.html#authorisation-of-access-to-endpoints) in relation to this claim.
+
+---
+
+#### `requesting_device` claim
+
+The system or device making the request, populated as a minimal [Device](https://www.hl7.org/fhir/STU3/device.html) resource.
+
+The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/STU3/device.html) fields:
+
+- an `identifier` element, with:
+  - `system` containing a consumer-defined system URL representing the type of identifier in the value field, e.g. `https://consumersupplier.com/Id/device-identifier`
+  - `value` containing the device or system identifier
+- `model` with the consumer product or system name
+- `version` with the version number of the consumer product or system
+
+The [Device](https://www.hl7.org/fhir/STU3/device.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+
+**Example**:
+
+<pre class="remove-highlight"><code class="no-highlight">"requesting_device": {
+  "resourceType": "Device",
+  "identifier": [
+    {
+      "system": "https://consumersupplier.com/Id/device-identifier",
+      "value": "CONS-APP-4"
+    }
   ],
-  "idp": "https://sts.windows.net/e52111c7-4048-4f34-aea9-6326afa44a8d/", // The issuer, i.e: HSCD - this will change before we go live
-  "oid": "d70d78d1-afb8-4993-ab68-64722bfa5a95",
-  "sub": "d70d78d1-afb8-4993-ab68-64722bfa5a95",
-  "tid": "e52111c7-4048-4f34-aea9-6326afa44a8d",
-  "uti": "BC6JP5cx9022Tz_CyK5vAA",
-  "ver": "1.0"
-}.{ // Signature section
-[Signature]
+  "model": "Consumer product name",
+  "version": "5.3.0"
+}
+</code></pre>
+
+---
+
+#### `requesting_organization` claim
+
+The consumer organisation making the request, populated as a minimal [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource.
+
+The consumer **SHALL** populate the following [Organization](https://www.hl7.org/fhir/STU3/organization.html) fields:
+
+- `name` with the name of the organisation
+- an `identifier` element, with:
+  - `system` containing `https://fhir.nhs.uk/Id/ods-organization-code`, and
+  - `value` containing the ODS code of the organisation
+
+{% include important.html content="In consumer system topologies where consumer applications are provisioned via a portal or middleware hosted by another organisation, it is vital for audit purposes that the organisation populated in the JWT reflects the organisation from where the request originates, rather than the hosting organisation.<br/>
+This is normally determined as the organisation of the logged on user making the request." %}
+
+The [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+
+**Example**:
+
+<pre class="remove-highlight"><code class="no-highlight">"requesting_organization": {
+  "resourceType": "Organization",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "A1001"
+    }
+  ],
+  "name": "111 North East Service"
+}
+</code></pre>
+
+---
+
+#### `requesting_practitioner` claim
+
+The user making the request, populated as a minimal [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) resource.
+
+To contain the logged on user's identifier(s) (for example, login details / username). Where the user has both a local system user role as well as a nationally-recognised user role, then both **SHALL** be provided.
+
+{% include important.html content="This field **SHALL NOT** be populated with fixed values or a generic \"system\" user. The values **SHALL** represent the logged on user making the request." %}
+
+The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) fields:
+
+- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id) identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [`sub` (subject) claim](integration_cross_organisation_audit_and_provenance.html#sub-subject-claim).
+- `name` with:
+  - `family` containing the user's family name
+  - `given` containing the user's given name
+  - `prefix` containing the user's title, where available
+- an `identifier` element with:
+  - `system` containing `https://fhir.nhs.uk/Id/sds-user-id`
+  - `value` containing the SDS user ID from the user's NHS smartcard, or the value `UNK` if the user is not logged on with an NHS smartcard
+- an `identifier` element with:
+  - `system` containing `https://fhir.nhs.uk/Id/sds-role-profile-id`
+  - `value` containing the SDS user role profile ID from the user's NHS smartcard, or the value `UNK` if the user is not logged on with an NHS smartcard
+- an `identifier` element containing a unique local user or user-role identifier for the logged on user (e.g. user ID, user role ID, logon name) from the consumer system:
+  - `system` containing a consumer-defined system URL representing the type of identifier in the value field, e.g. `https://consumersupplier.com/Id/user-guid`
+  - `value` containing the unique local identifier for the logged on user
+
+{% include important.html content="Providers should be aware of variance in the population of the `identifier` field amongst existing consumer systems when reading this claim, specifically the latter two elements (SDS role profile ID, and local user identifier) are not always present." %}
+
+The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+
+**Example**:
+
+<pre class="remove-highlight"><code class="no-highlight">"requesting_practitioner": {
+  "resourceType": "Practitioner",
+  "id": "10019",
+  "identifier": [
+    {
+      "system": "https://fhir.nhs.uk/Id/sds-user-id",
+      "value": "111222333444"
+    },
+    {
+      "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+      "value": "444555666777"
+    },
+    {
+      "system": "https://consumersupplier.com/Id/user-guid",
+      "value": "98ed4f78-814d-4266-8d5b-cde742f3093c"
+    }
+  ],
+  "name": [
+    {
+      "family": "Jones",
+      "given": [
+        "Claire"
+      ],
+      "prefix": [
+        "Dr"
+      ]
+    }
+  ]
+}</code></pre>
+
+### JWT payload full example ###
+
+```json
+{
+  "iss": "https://consumersupplier.thirdparty.nhs.uk/",
+  "sub": "10019",
+  "aud": "https://providersupplier.thirdparty.nhs.uk/STU3/1",
+  "exp": 1469436987,
+  "iat": 1469436687,
+  "reason_for_request": "directcare",
+  "requested_scope": "patient/appointment.write",
+  "requesting_device": {
+    "resourceType": "Device",
+    "identifier": [
+      {
+        "system": "https://consumersupplier.com/Id/device-identifier",
+        "value": "CONS-APP-4"
+      }
+    ],
+    "model": "Consumer product name",
+    "version": "5.3.0"
+  },
+  "requesting_organization": {
+    "resourceType": "Organization",
+    "identifier": [
+      {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "A1001"
+      }
+    ],
+    "name": "Test Hospital"
+  },
+  "requesting_practitioner": {
+    "resourceType": "Practitioner",
+    "id": "10019",
+    "identifier": [
+      {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "111222333444"
+      },
+      {
+        "system": "https://fhir.nhs.uk/Id/sds-role-profile-id",
+        "value": "444555666777"
+      },
+      {
+        "system": "https://consumersupplier.com/Id/user-guid",
+        "value": "98ed4f78-814d-4266-8d5b-cde742f3093c"
+      }
+    ],
+    "name": [
+      {
+        "family": "Jones",
+        "given": [
+          "Claire"
+        ],
+        "prefix": [
+          "Dr"
+        ]
+      }
+    ]
+  }
 }
 ```
 
-Because this token is signed, the Provider system can trust that the Consumer really is a member of the specified groups. It can also retrieve the public key from the directory and validate that the token hasn't been tampered with. There are standard ways of doing this.
+## Provenance ##
 
-When requests are made to a Provider system, they must include an Authorization http header which takes the form:
+Provider systems **SHALL** ensure that all additions, amendments or logical deletions to administrative and clinical data made via an API is clearly identified with information regarding the provenance of the data (such as timestamp, details of consumer system, details of user (including role)), so it is clear which information has been generated through an API rather than through the provider system itself.
 
-```
-Authorization	Bearer +  space +  [access_token value from above ]
-```
+Provider systems **SHALL** record the following provenance details of all API personal and sensitive personal data recorded within the system:
 
-For example using the token shown above:
+- author details (identified through unique ID), including name and role
+- data entered by (if different from author)
+- date and time (to the second) entered
+- originating organisation
+- API interaction
 
-```
-Authorization	Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSIsImtpZCI6Im5iQ3dXMTF3M1hrQi14VWFYd0tSU0xqTUhHUSJ9.eyJhdWQiOiJodHRwOi8vYXBwb2ludG1lbnRzLmRpcmVjdG9yeW9mc2VydmljZXMubmhzLnVrOjQ0My9wb2MiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9lNTIxMTFjNy00MDQ4LTRmMzQtYWVhOS02MzI2YWZhNDRhOGQvIiwiaWF0IjoxNTQ3MDMyNDU1LCJuYmYiOjE1NDcwMzI0NTUsImV4cCI6MTU0NzAzNjM1NSwiYWlvIjoiNDJSZ1lNZ0tEbFZYMnBIMnE5cFhlamJ6MzVtWkFBPT0iLCJhcHBpZCI6IjkyZDg1ZjlkLTA2NjYtNDliYy1hMzFjLTEyYjQ1YjA0YTdkZSIsImFwcGlkYWNyIjoiMSIsImdyb3VwcyI6WyJhYjQxMmZlOS0zZjY4LTQzNjgtOTgxMC05ZGMyNGQxNjU5YjEiLCJkYWNiODJjNS1hZWE4LTQ1MDktODg3Zi0yODEzMjQwNjJkZmQiLCI1NWRhMWM5YS0yY2ViLTQxYTctOWI3Yy0xYzcwMTVlZDFmZGUiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTUyMTExYzctNDA0OC00ZjM0LWFlYTktNjMyNmFmYTQ0YThkLyIsIm9pZCI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInN1YiI6IjU4YjI1Zjk5LWQ0MDQtNDQ4My1hNjBhLTQwNmYxY2MzYzg4NyIsInRpZCI6ImU1MjExMWM3LTQwNDgtNGYzNC1hZWE5LTYzMjZhZmE0NGE4ZCIsInV0aSI6IlI1S2FEa21Rc0VlTk96d1c3WElUQUEiLCJ2ZXIiOiIxLjAifQ.eVSncRYT138bByvEHa00uQpfuZrLvW0b9NPF9tDsxIckjaxEiOWJz1pYpaEJoZPnSxmJjKZ_v7h-0ea21ApB-9dYRE6OZ9Y12CGbDr4IKIbO2Oh0QulU06BzvDrA9hMbLXV2vG06mIcLBE8BAJbJp8ktF4PZ1vmRXd0jxy1YonEFqO9e5QsUoekw7eL_LPBBUlNrUsFedP7eKPdW1uGRrd6i_UmQTDx0tq0cV8NOV-vvQLgKY7GROPjZ1qOx6-3s_oEDL_T65ERFJH4CMcMBOH1HsDf2Ee47pM3-lGlBh7SSLpCVbxpOxAc1O6cULbbbSRuAEyUXuQZroagtqoiiwQ
-```
+Provider system **MAY** use the organisation id passed in this or the FHIR profiles to manage authorisatios locally.  For example, refuse requests from organisations that should not be permitted to book into you.  This is not mandatory as a DOS search already controls business rules determining what UEC services can be booked into. 
+
+We say we are passing in user role for future use and audit, we do not require use of this for authorising requests.
 
 ## Migration to NHS Identity
 
