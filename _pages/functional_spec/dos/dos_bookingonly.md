@@ -31,7 +31,7 @@ When requesting DoS service details with "CheckCapacitySummary" DoS API call, th
 <ns1:attributes>
   <attribute>
     <dataType>string</dataType>
-    <name>REQUIRESAPPOINTMENT</name>
+    <name>REQUIREBOOKING</name>
     <description>The service only accepts referrals with an accompanying booked appointment.</description>
     <value>true</value>
   </attribute>
