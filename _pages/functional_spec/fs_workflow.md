@@ -18,6 +18,10 @@ Below is the primary data model that describes the key data items that are requi
 
 The sections below will step through the process.
 
+### How times should be handled
+
+All time and date information **MUST** be converted into Coordinated Universal Time (or UTC) from the local time zone for all time and date information in any API messaging. Also, all times **MUST** be converted into a local time from UTC when being displayed to a user, however UTC times should be stored for any logging etc..
+
 ## The Actors
 
 There are a number of different systems involved in the end to end booking process. These fall into the following catagories:
