@@ -49,11 +49,6 @@ The national DoS can be used to discover the most appropriate service for the pa
 #### Spine Directory Service (SDS)
 The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS following <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
 
-#### NHS Authentication service
-An NHS authentication service will be used to provide a digital identity to ensure that the consuming service has authorisation to make a booking.
-
-For this booking standard, the authentication service validates credentials passed by the consumer system and subject to this check, issues a short lived (1 hour) access token which the consumer system must include in a http Authorization header in all requests to the provider system.
-
 #### Spine Secure Proxy (SSP)
 The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
 
@@ -110,15 +105,7 @@ nhsMHSEndPoint: https://server.domain.nhs.uk/fhir_base
 
 The value returned is the endpoint required to build an SSP request.
 
-Before making a call to the FHIR endpoint, the consumer system needs to obtain an access token from NHS authentication service. This uses an OAuth Client Credentials grant making a call to the token endpoint of the NHS authentication service, including the following values:
-```json
-grant_type=client_credentials
-client_id=[issued during assurance].
-client_secret=[issued during assurance].
-scope=[https://host.nhs.uk/baseurl/.default]
-```
-
-Assuming the credentials match, then the Authentication server returns an access token encoded as a JWT.
+Before making a call to the FHIR endpoint, the consumer system needs to generate an access token. 
 
 This access token is then passed in the Authorization http header in all calls to a provider system.
 
@@ -127,6 +114,8 @@ Using the access token the provider system can:
 * Be reassured that the consumer system has gone through the appropriate assurance to request slots and/or book appointments.
 * Determine that the consumer system is involved in the provision of direct patient care (rather than for administrative purposes).
 * Determine the care setting (e.g. urgent care, routine care Etc) for which the consumer system is requesting slots or booking an appointment.
+
+More details on the authentication approach can be found <a href="fs_authentication.html" target="_blank">here</a>.
 
 ## Get Slots
 
