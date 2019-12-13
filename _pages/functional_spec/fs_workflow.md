@@ -105,6 +105,8 @@ nhsMHSEndPoint: https://server.domain.nhs.uk/fhir_base
 
 The value returned is the endpoint required to build an SSP request.
 
+## Authentication
+
 Before making a call to the FHIR endpoint, the consumer system needs to generate an access token. 
 
 This access token is then passed in the Authorization http header in all calls to a provider system.
