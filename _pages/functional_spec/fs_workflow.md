@@ -127,7 +127,7 @@ The first request to the SSP will be to get available slots. The request returns
 2. FHIR endpoint server root URL
 3. FHIR resource location and request parameters
 
-<img src="_pages/functional_spec/img/GetSlots1(new).png">
+<img src="_pages/functional_spec/img/GetSlots1(newest).png">
 
 Once the request is made at the SSP, it is passed through to the FHIR endpoint at the provider service.
 <img src="_pages/functional_spec/img/GetSlots2.png">
