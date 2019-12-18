@@ -1,5 +1,19 @@
 <div class="infocard-parent" id="infocard-parent" style="
-    @media (max-width: 750px) {
+    @media (min-width: 750px) {
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        list-style: none;
+        flex-direction: row;
+        height: 900px;
+        padding: 0;
+        margin: 0;  
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+    }
+   @media (max-width: 750px) {
         display: flex;
         display: -webkit-box;
         display: -moz-box;
