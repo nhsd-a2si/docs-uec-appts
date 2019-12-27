@@ -1,5 +1,5 @@
-<div class="infocard-parent" id="infocard-parent" style="    
-        @media only screen and (min-width: 600px) {
+<div class="infocard-parent" id="infocard-parent">
+        <style>        
                 display: flex;
                 display: -webkit-box;
                 display: -moz-box;
@@ -12,24 +12,8 @@
                 margin: 0;  
                 -webkit-flex-flow: row wrap;
                 justify-content: space-around;
-         }
-         @media only screen and (max-width: 600px) {
-                display: flex;
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                list-style: none;
-                flex-direction: row;
-                height: 900px;
-                padding: 0;
-                margin: 0;  
-                -webkit-flex-flow: row wrap;
-                justify-content: space-around;
-         }
- ">
-     <div class="infocard-child" id="infocard-child" style="
-        @media only screen and (min-width: 600px) {
+        </style>
+     <div class="infocard-child" id="infocard-child" style="        
                 background: rgba(51,153,255,0.3);
                 border: 2px solid grey;
                 padding: 5px;
@@ -41,22 +25,7 @@
                 color: black;
                 font-weight: normal;
                 font-size: 0.8em;
-                text-align: left;
-        }
-        @media only screen and (max-width: 600px) {
-                background: rgba(51,153,255,0.3);
-                border: 2px solid grey;
-                padding: 5px;
-                padding-left: 10px;
-                width: 400px;
-                height: 475px;
-                margin-top: 10px;
-                line-height: 15px;
-                color: black;
-                font-weight: normal;
-                font-size: 0.8em;
-                text-align: left;
-        }
+                text-align: left;       
      ">
          <p style="text-align: center; font-weight: 1em"><b>{{include.title1}}</b></p>
          <p style="font-weight: 0.5em">
