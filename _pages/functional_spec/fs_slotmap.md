@@ -21,10 +21,10 @@ However, since this level of granularity for linking DoS services to appointment
 
 When the clinical assement is performed using the NHS Pathways assessment tool a standard set of Pathways dispositions has been developed to support this mapping. When booking into Primary Care services it is expected that all Pathways assesments that reach one of the following list of dispositons should result in a referral to a service with an appointment being offered:
 
-> * Dx05 To contact a Primary Care Service within 2
-> * Dx06 To contact a Primary Care Service within 6
-> * Dx07 To contact a Primary Care Service within 12
-> * Dx08 To contact a Primary Care Service within 24
+> * Dx05 To contact a Primary Care Service within 2 Hours
+> * Dx06 To contact a Primary Care Service within 6 Hours
+> * Dx07 To contact a Primary Care Service within 12 Hours
+> * Dx08 To contact a Primary Care Service within 24 Hours
 > * Dx09 For persistent or recurrent symptoms: get in touch with the GP Practice for a Non-Urgent Appointment (Green 4)
 > * Dx10 MUST contact own GP Practice for a Non-Urgent appointment
 > * Dx11 Speak to a Primary Care Service within 1 Hour
