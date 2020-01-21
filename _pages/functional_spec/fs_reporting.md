@@ -74,7 +74,7 @@ The below tables identify the key metrics required to meet the national commissi
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-07</td>
-                <td>Number of times that a user books an appointment and the subsequently cancelled the appointment over a date range. Grouped by each service selected or patients registered practice.</td>
+                <td>Number of times that a user books an appointment and then cancels it before the end of the encounter. the appointment over a date range. Grouped by each service selected or patients registered practice.</td>
                 <td>In December there were 7 times a user booked an appointment and then cancelled it.</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
