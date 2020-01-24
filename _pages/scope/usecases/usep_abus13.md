@@ -7,7 +7,7 @@ permalink: usep_abus13.html
 ## ABUS.13 Warn Users Where Appts are Outside Disposition Timeframe 
 **_In order_** that the patient and their call handler or clinician can make an informed decision of the appropriate timescale and location of service that best meets the patient's needs and situation 
 
-**_As a_** Integrated Urgent Care Sservice Provider
+**_As a_** Integrated Urgent Care Service Provider
 
 **_I want_** to be warned if the appt slot I am about to book falls outside of the clinically appropriate timeframe for this patient. 
 
