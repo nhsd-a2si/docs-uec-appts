@@ -15,7 +15,10 @@ entries:
       output: web, pdf
     - title: Book an appointment
       url: /usep_abus12.html
-      output: web, pdf 
+      output: web, pdf     
+    - title: Booking outside assessment timeframe
+      url: /usep_abus13.html
+      output: web, pdf
     - title: Cancel a booked appointment
       url: /usee_abus21.html
       output: web, pdf
@@ -24,14 +27,10 @@ entries:
       output: web, pdf
     - title: Stopping referrals for booking only services
       url: /usep_abus24.html
-      output: web, pdf
-      
+      output: web, pdf      
   - title: Emerging Capabilites
     output: web
-    folderitems:    
-    - title: Booking outside assessment timeframe
-      url: /usep_abus13.html
-      output: web, pdf
-    - title: Cancel any IUC appointment
-      url: /usee_abus23.html
-      output: web, pdf
+    folderitems: 
+  - title: Cancel any IUC appointment
+    url: /usee_abus23.html
+    output: web, pdf
