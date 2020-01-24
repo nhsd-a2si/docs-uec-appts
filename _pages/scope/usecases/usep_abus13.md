@@ -16,28 +16,28 @@ permalink: usep_abus13.html
 
 Notifications are only applicable to non-clinical users and any booking outside a dispositions should be logged and auditable. 
 
-A notification and prompt to seek clinical approval to book outside the disposition timeframe will be needed for dispositions up to 6 hours:
+A notification and prompt to seek clinical approval to book outside the disposition timeframe will be needed for dispositions up to 6 hours. For example, where Pathways is being used, the dispositions would be:
 * Dx05 To contact a Primary Care Service within 2 hours
 * Dx06 To contact a Primary Care Service within 6 hours
 * Dx11 Speak to a Primary Care Service within 1 Hour
 * Dx12 Speak to a Primary Care Service within 2 Hours
 * Dx13 Speak to a Primary Care Service within 6 Hours
 
-Users will be need to be notified when booking outside the disposition timeframe for dispositions from 6 hours to 12 hours:
+Users will be need to be notified when booking outside the disposition timeframe for dispositions from 6 hours to 12 hours. For example, where Pathways is being used, those dispositions would be::
 * Dx07 To contact a Primary Care Service within 12 hours
 * Dx08 To contact a Primary Care Service within 24 hours
 * Dx14 Speak to a Primary Care Service within 12 Hours
 * Dx15 Speak to a Primary Care Service within 24 Hours
 
 ### Acceptance Criteria
-*	The system must allow clinical users to book outside the disposition timeframes 
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx05
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx06
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx11
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx12
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx13
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe for Dx07
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe for Dx08
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe for Dx14
-*	The system must notify non-clinical users that they are booking outside a disposition timeframe for Dx15
-*	The system must allow you to produce a report to show where a patient has been booked outside their disposition timeframe
+*	The system **must** allow clinical users to book outside the disposition timeframes 
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx05
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx06
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx11
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx12
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for Dx13
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe for Dx07
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe for Dx08
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe for Dx14
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe for Dx15
+*	The system **must** allow you to produce a report to show where a patient has been booked outside their disposition timeframe
