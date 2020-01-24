@@ -7,7 +7,7 @@ permalink: usee_abus22.html
 ## ABUS.22 Rebook an Appointment for a specific Patient/Service Provider 
 **_In order_** that the patient or their carer can rebook an already-booked appointment that they had initially booked 
 
-**_As a** Integrated Urgent Care Sservice Provider
+**_As a** Integrated Urgent Care Service Provider
 
 **_I want_** to rebook appts booked for a patient 
 
