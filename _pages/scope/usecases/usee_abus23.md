@@ -7,7 +7,7 @@ permalink: usee_abus23.html
 ## ABUS.23 Cancel a Booked Appointment for a specific Patient/Service Provider by any IUC Provider
 **_In order_** that the patient or their carer can cancel or rearrange an already-booked appointment at a specific provider 
 
-**_As a**  Integrated Urgent Care Sservice Provider
+**_As a**  Integrated Urgent Care Service Provider
 
 **_I want_** to cancel appts booked for a patient with a specific service provider that is not themselves 
 
