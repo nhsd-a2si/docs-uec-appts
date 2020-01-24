@@ -34,7 +34,7 @@ Users will be need to be notified when booking outside the disposition timeframe
 ### Acceptance Criteria
 
 *	The system **must** allow clinical users to book outside the disposition timeframes 
-*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for 2 hour contact primary care dispositions (e.x. Dx05)
+*	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for 2 hour contact primary care dispositions (e.g. Dx05)
 *	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for 6 hour contact primary care dispositions (e.g. Dx06)
 *	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for 1 hour speak to primary care dispositions (e.g. Dx11)
 *	The system **must** notify non-clinical users that they are booking outside a disposition timeframe and they need to seek clinical approval for 2 hour speak to primary care dispositions (e.g. Dx12)
