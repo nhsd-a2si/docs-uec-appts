@@ -30,7 +30,7 @@ There are a number of different systems involved in the end to end booking proce
 * National Infrastructure
 * Provider System
 
-<img src="_pages/functional_spec/img/Actors.png">
+<img src="_pages/functional_spec/img/Actors_DoSID.png">
 
 ### Consumer Systems
 
@@ -127,10 +127,10 @@ The first request to the SSP will be to get available slots. The request returns
 2. FHIR endpoint server root URL
 3. FHIR resource location and request parameters
 
-<img src="_pages/functional_spec/img/GetSlots1(newest).png">
+<img src="_pages/functional_spec/img/GetSlots1_DoSID.png">
 
 Once the request is made at the SSP, it is passed through to the FHIR endpoint at the provider service.
-<img src="_pages/functional_spec/img/GetSlots2.png">
+<img src="_pages/functional_spec/img/GetSlots2_DoSID.png">
 
 This will return a FHIR slot resource bundle for example:
 
