@@ -9,6 +9,44 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.13 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.13   | PREVIEW | Alpha | Current Version | 07/02/2020 | Volatile
+
+The 0.1.13 PREVIEW release has the following highlights:
+* **Updated all functional specification pages where the ASID being included in the search parameters of FHIR queries is referenced. This has been changed to the more generic Healthcare Service ID and where appropriate direct reference to the DoS Service ID**
+* Made some updates to the Functional Spec -> Workflow section
+  * Created new requirements about how times and dates should be handled
+  * Updated a few of the examples in the diagrams to reflect changes to the FHIR specification
+  * Updated the references to authentication to reflect new approach
+* Updated the Appointment mapping page to correct a typographical error and add clarification around local variance in GP Connect disposition mapping
+* Updated slot mapping page to correct some typos
+* Updated reporting specification page 
+  * to fix some typos
+  * to bring future requirements in to current requirements section (as they are now current requirements)
+* Updated the Use Cases
+  * Created a new Use Case for booking outside a disposition timeframe
+  * Fixed some typos
+* Updated the demonstrator pages to reflect a change for a future update
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.13 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.14   | PREVIEW | Alpha | Unreleased | 28/02/2020   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.12 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -24,23 +62,7 @@ The 0.1.12 PREVIEW release has the following highlights:
 * Updated reporting requirements section 
    * Added future requirements section
    * Tidied up existing requirements  
-
-<br>
-<br>
-
-## Future releases
-
-### 0.1.13 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.13   | PREVIEW | Alpha | Unreleased | 10/12/2019   | Volatile
-
-<br>
-<br>
-
-## Previous releases
-
+   
 ### 0.1.11 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
