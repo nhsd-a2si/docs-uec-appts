@@ -18,6 +18,10 @@ Below is the primary data model that describes the key data items that are requi
 
 The sections below will step through the process.
 
+### How times should be handled
+
+All time and date information **MUST** be converted into Coordinated Universal Time (or UTC) from the local time zone for all time and date information in any API messaging. Also, all times **MUST** be converted into a local time from UTC when being displayed to a user, however UTC times should be stored for any logging etc..
+
 ## The Actors
 
 There are a number of different systems involved in the end to end booking process. These fall into the following catagories:
@@ -26,7 +30,7 @@ There are a number of different systems involved in the end to end booking proce
 * National Infrastructure
 * Provider System
 
-<img src="_pages/functional_spec/img/Actors.png">
+<img src="_pages/functional_spec/img/Actors_DoSID.png">
 
 ### Consumer Systems
 
@@ -44,11 +48,6 @@ The national DoS can be used to discover the most appropriate service for the pa
 
 #### Spine Directory Service (SDS)
 The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS following <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
-
-#### NHS Authentication service
-An NHS authentication service will be used to provide a digital identity to ensure that the consuming service has authorisation to make a booking.
-
-For this booking standard, the authentication service validates credentials passed by the consumer system and subject to this check, issues a short lived (1 hour) access token which the consumer system must include in a http Authorization header in all requests to the provider system.
 
 #### Spine Secure Proxy (SSP)
 The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
@@ -68,7 +67,7 @@ Once the chosen service has been selected the next call to the DoS API is made (
 
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
-An ASID is used to obtain the endpoint for booking into the Provider system.
+An ASID is used to obtain the endpoint for booking into the Provider system. The DoS service ID would be used to identify the appointment schedule in the Provider system.
 
 ## Endpoint Discovery
 
@@ -106,15 +105,9 @@ nhsMHSEndPoint: https://server.domain.nhs.uk/fhir_base
 
 The value returned is the endpoint required to build an SSP request.
 
-Before making a call to the FHIR endpoint, the consumer system needs to obtain an access token from NHS authentication service. This uses an OAuth Client Credentials grant making a call to the token endpoint of the NHS authentication service, including the following values:
-```json
-grant_type=client_credentials
-client_id=[issued during assurance].
-client_secret=[issued during assurance].
-scope=[https://host.nhs.uk/baseurl/.default]
-```
+## Authentication
 
-Assuming the credentials match, then the Authentication server returns an access token encoded as a JWT.
+Before making a call to the FHIR endpoint, the consumer system needs to generate an access token. 
 
 This access token is then passed in the Authorization http header in all calls to a provider system.
 
@@ -124,6 +117,8 @@ Using the access token the provider system can:
 * Determine that the consumer system is involved in the provision of direct patient care (rather than for administrative purposes).
 * Determine the care setting (e.g. urgent care, routine care Etc) for which the consumer system is requesting slots or booking an appointment.
 
+More details on the authentication approach can be found <a href="fs_authentication.html" target="_blank">here</a>.
+
 ## Get Slots
 
 The first request to the SSP will be to get available slots. The request returns the slot resource from the target service. the request URL has three parts:
@@ -132,108 +127,111 @@ The first request to the SSP will be to get available slots. The request returns
 2. FHIR endpoint server root URL
 3. FHIR resource location and request parameters
 
-<img src="_pages/functional_spec/img/GetSlots1(new).png">
+<img src="_pages/functional_spec/img/Get_Slots1_DoSID.png">
 
 Once the request is made at the SSP, it is passed through to the FHIR endpoint at the provider service.
-<img src="_pages/functional_spec/img/GetSlots2.png">
+<img src="_pages/functional_spec/img/Get_Slots2_DoSID.png">
 
 This will return a FHIR slot resource bundle for example:
 
-<!-- div markdown="span" class="bs-callout bs-callout-code" -->
-```json
-{
-  "resourceType": "Bundle",
-  "type": "searchset",
-  "entry": [
-    {
-      "fullUrl": "Schedule/14",
-      "resource": {
-        "resourceType": "Schedule",
-        "id": "14",
-        "meta": {
-          "versionId": "1469444400000",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Schedule-1"
-          ]
-        },        
-        "actor": [
+<details>
+  <summary>Click to expand!</summary>
+   
+      ```json
+      {
+        "resourceType": "Bundle",
+        "type": "searchset",
+        "entry": [
           {
-            "reference": "Location/17"
+            "fullUrl": "Schedule/14",
+            "resource": {
+              "resourceType": "Schedule",
+              "id": "14",
+              "meta": {
+                "versionId": "1469444400000",
+                "profile": [
+                  "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Schedule-1"
+                ]
+              },        
+              "actor": [
+                {
+                  "reference": "Location/17"
+                },
+                {
+                  "reference": "Practitioner/2"
+                }
+              ],
+              "comment": "Schedule 1 for general appointments"
+            }
           },
           {
-            "reference": "Practitioner/2"
-          }
-        ],
-        "comment": "Schedule 1 for general appointments"
-      }
-    },
-    {
-      "fullUrl": "Practitioner/2",
-      "resource": {
-        "resourceType": "Practitioner",
-        "id": "2",
-        "meta": {
-          "versionId": "636064088099800115",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
-          ]
-        },
-        "identifier": [
+            "fullUrl": "Practitioner/2",
+            "resource": {
+              "resourceType": "Practitioner",
+              "id": "2",
+              "meta": {
+                "versionId": "636064088099800115",
+                "profile": [
+                  "https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"
+                ]
+              },
+              "identifier": [
+                {
+                  "system": "https://fhir.nhs.uk/Id/sds-user-id",
+                  "value": "S001"
+                }
+              ],
+              "name": {
+                "family": [ "Black" ],
+                "given": [ "Sarah" ],
+                "prefix": [ "Mrs" ]
+              },
+              "gender": "female"
+            }
+          },
           {
-            "system": "https://fhir.nhs.uk/Id/sds-user-id",
-            "value": "S001"
+            "fullUrl": "Slot/1584",
+            "resource": {
+              "resourceType": "Slot",
+              "id": "1584",
+              "meta": {
+                "versionId": "1471219260000",
+                "profile": [
+                  "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Slot-1"
+                ]
+              },        
+              "schedule": {
+                "reference": "Schedule/14"
+              },
+              "status": "free",
+              "start": "2016-08-15T11:30:00.000+01:00",
+              "end": "2016-08-15T11:59:59.000+01:00"
+            }
+          },
+          {
+            "fullUrl": "Slot/1644",
+            "resource": {
+              "resourceType": "Slot",
+              "id": "1644",
+              "meta": {
+                "versionId": "1471219260112",
+                "profile": [
+                  "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Slot-1"
+                ]
+              },        
+              "schedule": {
+                "reference": "Schedule/14"
+              },
+              "status": "free",
+              "start": "2016-08-15T12:00:00.000+01:00",
+              "end": "2016-08-15T12:29:59.000+01:00"
+            }
           }
-        ],
-        "name": {
-          "family": [ "Black" ],
-          "given": [ "Sarah" ],
-          "prefix": [ "Mrs" ]
-        },
-        "gender": "female"
+        ]
       }
-    },
-    {
-      "fullUrl": "Slot/1584",
-      "resource": {
-        "resourceType": "Slot",
-        "id": "1584",
-        "meta": {
-          "versionId": "1471219260000",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Slot-1"
-          ]
-        },        
-        "schedule": {
-          "reference": "Schedule/14"
-        },
-        "status": "free",
-        "start": "2016-08-15T11:30:00.000+01:00",
-        "end": "2016-08-15T11:59:59.000+01:00"
-      }
-    },
-    {
-      "fullUrl": "Slot/1644",
-      "resource": {
-        "resourceType": "Slot",
-        "id": "1644",
-        "meta": {
-          "versionId": "1471219260112",
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/NHS-Slot-1"
-          ]
-        },        
-        "schedule": {
-          "reference": "Schedule/14"
-        },
-        "status": "free",
-        "start": "2016-08-15T12:00:00.000+01:00",
-        "end": "2016-08-15T12:29:59.000+01:00"
-      }
-    }
-  ]
-}
-```
-<!--/div -->
+      ```
+
+</details>
 
 ## Book Appointment
 

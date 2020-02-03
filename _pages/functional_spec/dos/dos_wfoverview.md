@@ -18,15 +18,15 @@ The overall workflow for the booking process is as follows:
 
 The bold items in the list above indicate where in the process the DoS is involved. As discussed elsewhere, the actual endpoint address will be stored in a separate directory (SDS). The DoS will provide a pointer (ASID) to the correct directory entry. 
 
-Each SDS directory entry will correspond to the specific schedule resource on the target provider system. Therefore it can be assumed that a system could have multiple entries on the directory (SDS). 
+Each service directory entry will correspond to the specific schedule resource on the target provider system. Therefore it can be assumed that a system could have multiple entries on the directory (e.g. DoS). 
 
-As a provider system, it is therefore expected that there will be a mechanism in the system to link diaries/schedules to an ASID. This will then be the "grouping factor" on the slots that are returned by a "get slots" request from a consuming system.
+As a provider system, it is therefore expected that there will be a mechanism in the system to link diaries/schedules to a service directory ID. This will then be the "grouping factor" on the slots that are returned by a "get slots" request from a consuming system.
 
 ## Important DoS workflow considerations
 
 * How should a booking only service be profiled on the DoS?
 
-*Currently there is no way to technically prohibit a referral via the DoS if no appointments are available. The recommendation is to clearly indicate that referrals are not accepted both in the referral instructions and also in the title of the service*
+*There is a new way to technically prohibit a referral via the DoS if no appointments are available. If this is not available the recommendation is to clearly indicate that referrals are not accepted both in the referral instructions and also in the title of the service*
 
 * What if a service is profiled for both triage outcomes that are appropriate for an appointment and other outcomes that are not appropriate?
 

@@ -16,18 +16,18 @@ The Directory of Services (DoS) lists services at the granular healthcare servic
 
 When an appointments consumer (e.g. NHS 111) requests available slots from a healthcare service, it needs to identify exactly which healthcare service it is targeting. This will allow provider systems to correctly route requests and filter the responses to be relevant to the specific request.
 
-## Use ASID to filter slot requests to specific healthcare services
+## Use Healthcare Service ID to filter slot requests to specific healthcare services
 A search parameter of the HealthcareService (an intrinsic part of FHIR RESTful search) will be sent.
 
-### As a consumer, include the ASID of the healthcare service as a parameter
-As a consumer, you should include a search parameter specifying the ASID of the healthcare service to which you are directing the query.
+### As a consumer, include the ID of the healthcare service as a parameter
+As a consumer, you should include a search parameter specifying the Service Discovery tool ID of the healthcare service to which you are directing the query.
 
 #### Example
-If the DoS has returned a service "Village Urgent Treatment Centre (ASID:124459850)", and you would like to book an appointmnent at that service, you will want to ensure the available slots you are presented with are specifically for that service.
+If the DoS has returned a service "Village Urgent Treatment Centre (Dos Service ID:124459850)", and you would like to book an appointmnent at that service, you will want to ensure the available slots you are presented with are specifically for that service.
 
-You would include an ASID parameter in your Slot request.
+You would include a Service ID parameter in your Slot request.
 
-### As a provider, use the healthcare service ASID to filter the slots returned in your response
+### As a provider, use the healthcare service ID to filter the slots returned in your response
 As a provider of slots, you will likely want to ensure that you only return slots in your response for which you would be happy receiving a booking.
 
 Filtering is based both on the JWT received in the http Authorization header (to filter slots appropriate to be released to that specific Consumer) and on the healthcareservice specified in the query (to filter slots provided by that specific service)
@@ -43,7 +43,7 @@ Within your system you might have a separate appointment schedule for each of th
 
 You should configure a mapping between the healthcare services for which you might receive queries, and the appointment schedules against which you'd like those queries to be run.
 
-| Service                 | ASID | Linked Schedule |
+| Service                 | DoS ID | Linked Schedule |
 |-------------------------|------------|-----------------|
 | Walk-in Centre          | 124459850 | Schedule 1      |
 | Urgent Treatment Centre | 2329483525 | Schedule 2      |
@@ -51,7 +51,7 @@ You should configure a mapping between the healthcare services for which you mig
 
 You might want to share schedules between healthcare services, so you could include multiple mappings like this:
 
-| Service                 | ASID | Linked Schedule |
+| Service                 | DoS ID | Linked Schedule |
 |-------------------------|------------|-----------------|
 | Walk-in Centre          | 124459850 | Schedule 1      |
 | Urgent Treatment Centre | 2329483525 | Schedule 1      |
