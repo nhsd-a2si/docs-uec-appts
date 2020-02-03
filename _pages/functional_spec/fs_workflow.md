@@ -67,7 +67,7 @@ Once the chosen service has been selected the next call to the DoS API is made (
 
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
-An ASID is used to obtain the endpoint for booking into the Provider system.
+An ASID is used to obtain the endpoint for booking into the Provider system. The DoS service ID would be used to identify the appointment schedule in the Provider system.
 
 ## Endpoint Discovery
 
