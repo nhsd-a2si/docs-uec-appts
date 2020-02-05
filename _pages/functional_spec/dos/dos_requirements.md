@@ -19,4 +19,4 @@ For the three key actors in this process there are the following key requirments
   * MUST be able to store the SDS record pointer (e.g. ASID or ODS code)
   * MUST return a booking ASID or ODS as part of its endpoint data (in the correct form)
 * The appointment provider:
-  * MUST allow association of the discovered service with the booking diary(s) for that service (for example the DoS Service ID retrieved from the DoS endpoint details)
+  * MUST allow association of the discovered service with the booking diary(s) for that service (for example the DoS Service ID).
