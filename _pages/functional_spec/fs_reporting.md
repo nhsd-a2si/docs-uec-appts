@@ -74,7 +74,7 @@ The below tables identify the key metrics required to meet the national commissi
       <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>rep-cons-07</td>
-                <td>Number of times that a user books an appointment and the subsequently cancelled the appointment over a date range. Grouped by each service selected or patients registered practice. Grouped by each service selected or patients registered practice</td>
+                <td>Number of times that a user books an appointment and then cancels it before the end of the encounter. the appointment over a date range. Grouped by each service selected or patients registered practice.</td>
                 <td>In December there were 7 times a user booked an appointment and then cancelled it.</td>      
               </tr>
       <!------------------------------ROW----------------------------------->   
@@ -88,15 +88,33 @@ The below tables identify the key metrics required to meet the national commissi
                 <td>rep-cons-09</td>
                 <td>Number of times that a user books an appointment and the subsequently cancelled the appointment over a date range. Grouped by each service selected or patients registered practice</td>
                 <td>In December there were 8 times a user booked an appointment and then cancels it when the patient calls back</td>     
-              </tr>
-            </tbody>
-      </table> 
+              </tr><!------------------------------ROW----------------------------------->   
+            <tr>
+             <td>rep-cons-10</td>
+             <td>Number of appointments successfully booked and number of appointment slots available that would not cause a breach over a date range</td>
+             <td>In December there were 200 “DX05” appointments booked and there were 400 appointment slots available that would not cause a breach.</td>      
+            </tr>
+  <!------------------------------ROW----------------------------------->   
+            <tr>
+             <td>rep-cons-11</td>
+             <td>Number of appointments successfully booked and number of appointment slots available that would cause a breach over a date range</td>
+             <td>In December there were 200 “DX05” appointments booked and there were 800 appointment slots available that would cause a breach.</td>      
+            </tr>   
+  <!------------------------------ROW----------------------------------->   
+            <tr>
+             <td>rep-cons-12</td>
+             <td>Number of appointments not booked where there were slots presented to the user, but the slots would have caused a breach and a successful referrals was made over a date range</td>
+             <td>In December there were 30 appointments not been able to made but the appointment slots that were available were outside of the disposition time frame</td>      
+            </tr>
+        </tbody>
+       </table> 
       </p>
     </div>
   </div>
-</div>
-
+ </div>
+ 
 <p>
+  
 <!------------------------------------------------------------------------------------------------------->  
 <!------------------------------------------------------------------------------------------------------->  
 <!-----------------------------------------------TABLE-2------------------------------------------------->       
@@ -182,23 +200,11 @@ The items in the following table are expected to become requirements in the near
               </tr>
             </thead>
             <tbody>
-      <!------------------------------ROW----------------------------------->   
-            <tr>
-             <td>rep-cons-10</td>
-             <td>Number of appointments successfully booked and number of appointment slots available that would not cause a breach over a date range</td>
-             <td>In December there were 200 “DX05” appointments booked and there were 400 appointment slots available that would not cause a breach.</td>      
-            </tr>
   <!------------------------------ROW----------------------------------->   
             <tr>
-             <td>rep-cons-11</td>
-             <td>Number of appointments successfully booked and number of appointment slots available that would cause a breach over a date range</td>
-             <td>In December there were 200 “DX05” appointments booked and there were 800 appointment slots available that would cause a breach.</td>      
-            </tr>   
-  <!------------------------------ROW----------------------------------->   
-            <tr>
-             <td>rep-cons-12</td>
-             <td>Number of appointments not booked where there were slots presented to the user, but the slots would have caused a breach and a successful referrals was made over a date range</td>
-             <td>In December there were 30 appointments not been able to made but the appointment slots that were available were outside of the disposition time frame</td>      
+             <td>None</td>
+             <td>There are currently no future requirements published.</td>
+             <td></td>      
             </tr>
         </tbody>
        </table> 

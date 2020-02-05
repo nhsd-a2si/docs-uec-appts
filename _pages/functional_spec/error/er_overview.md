@@ -152,9 +152,9 @@ The next table details the appropriate error code return values to be sent by Pr
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td rowspan="4">Search for free slots</td>
-                <td>The ASID sent in does not match locally to any schedules </td>
+                <td>The Service ID sent in does not match locally to any schedules </td>
                 <td>404 Not found</td>
-                <td>Add in details of what specifically is the issue by an appropriate error information about the ASID issue in OperationOutcome.issue.diagnostics.</td> 
+                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
@@ -174,7 +174,7 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <td>Time of search in the past</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue by an appropriate error information about the ASID issue in OperationOutcome.issue.diagnostics.</td> 
+                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td> 
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>

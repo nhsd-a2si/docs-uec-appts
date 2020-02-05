@@ -19,12 +19,12 @@ It is the intention that with UEC booking using the Care Connect standard the cl
 
 However, since this level of granularity for linking DoS services to appointment diaries is not available when booking UEC appointments using the GP Connect standard some services may be returned that are profiled for broader clinical needs for which there is no intention to support a booking. It is therefore a requirement to perform a local mapping within the consumer system against the triage outcome and appointment booking.
 
-When the clinicl assement is performed using the NHS Pathways assessment tool a standard set of Pathways dispositions has been developed to support this mapping. When booking into Primary Care services it is expected that all Pathways assesments that reach one of the following list of dispositons should result in a referral to a service with an appointment being offered:
+When the clinical assement is performed using the NHS Pathways assessment tool a standard set of Pathways dispositions has been developed to support this mapping. When booking into Primary Care services it is expected that all Pathways assesments that reach one of the following list of dispositons should result in a referral to a service with an appointment being offered:
 
-> * Dx05 To contact a Primary Care Service within 2
-> * Dx06 To contact a Primary Care Service within 6
-> * Dx07 To contact a Primary Care Service within 12
-> * Dx08 To contact a Primary Care Service within 24
+> * Dx05 To contact a Primary Care Service within 2 Hours
+> * Dx06 To contact a Primary Care Service within 6 Hours
+> * Dx07 To contact a Primary Care Service within 12 Hours
+> * Dx08 To contact a Primary Care Service within 24 Hours
 > * Dx09 For persistent or recurrent symptoms: get in touch with the GP Practice for a Non-Urgent Appointment (Green 4)
 > * Dx10 MUST contact own GP Practice for a Non-Urgent appointment
 > * Dx11 Speak to a Primary Care Service within 1 Hour
@@ -36,6 +36,8 @@ When the clinicl assement is performed using the NHS Pathways assessment tool a 
 > * Dx81 Contact own GP Practice next working day for a repeat prescription
 > * Dx115 Contact own GP Practice next working day for an appointment
 > * Dx117 Speak to a Primary Care Service within 1 hour for Palliative Care
+
+However, locally some areas may differ from the above list, therefore your system should be flexible enough to meet local need in terms of which dispositions can support booking.
 
 ## Support for "booking only" type services
 

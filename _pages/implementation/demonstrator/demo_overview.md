@@ -11,7 +11,7 @@ folder: implementation
 In order to facilitate development both consuming and providing systems a demonstrator platform will be provided. ultimately this will offer the following capabilities:
 
 * <span style="color:red">example of a consuming system</span>
-* <span style="color:green">an authorisation service for generating and authenticating JWT tokens</span>
+* <span style="color:red">an authorisation service for generating and authenticating JWT tokens</span>
 * <span style="color:green">a provider service, loaded with synthetic data</span>
 * <span style="color:green">a website to: </span>
     * <span style="color:green">trigger certain calls</span>
