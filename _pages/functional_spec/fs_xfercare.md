@@ -1,5 +1,5 @@
 ---
-title: Referenceing Transfer of Care Documentation
+title: Referencing Transfer of Care Documentation
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_xfercare.html
