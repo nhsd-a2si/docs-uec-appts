@@ -104,6 +104,10 @@ entries:
             output: "web, pdf"
             url: /cr_overview.html
           -
+            title: "Transfer of Care"
+            output: "web, pdf"
+            url: /fs_xfercare.html
+          -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"
             url: /fs_reporting.html
