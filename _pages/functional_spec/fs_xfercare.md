@@ -16,7 +16,17 @@ The CDA should have a new component in it, which holds a <linkHtml href="URL her
 ### Appointment reference 
 
 ```XML 
-<component typeCode="COMP" contextConductionInd="true">  <npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146246GB01#Section1"/>    <section classCode="DOCSECT" moodCode="EVN">      <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>      <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>      <title>Booked Appointment Information </title>      <text>        <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>      </text>  </section></component>
+<component typeCode="COMP" contextConductionInd="true">  
+ <npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146246GB01#Section1"/>    
+ <section classCode="DOCSECT" moodCode="EVN">      
+  <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>      
+  <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>      
+  <title>Booked Appointment Information </title>      
+  <text>        
+   <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>      
+  </text>  
+ </section>
+</component>
 ```
 
 The process for being able to link the two together is complicated by the fact that the identifier for the CDA is created by the Consumer, while the identifier for the Appointment is created by the Provider. As a result of this, the following process needs to be followed:
