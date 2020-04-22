@@ -16,6 +16,9 @@ Version | Handle  | Phase | State           | Release Date | Stability
 0.1.14   | PREVIEW | Alpha | Current Version | 24/04/2020 | Volatile
 
 The 0.1.14 PREVIEW release has the following highlights:
+* Updated the FHIR specification version to 1.0.5-alpha
+* Added a new page in "Functional Specification" section providing guidance for referencing transfer of care documentation
+* Tidied up some aspects of the reporting specification
 * Updated the demonstrator pages to reflect a change for a future update
 
 <br>
