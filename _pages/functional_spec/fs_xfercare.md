@@ -11,7 +11,13 @@ folder: functional_spec
 
 The UEC Booking standard specifically does not include any transfer of care information. The booking process typically forms a part of an overall referral workflow and the standard allows for reference to any transfer of care documentation that might be sent.
 
-The intention is to allow the booking message to include a reference to any referral document (e.g. 111CDA, Kettering, and FHIR documents) and in the FHIR profile for an appointment it is possible to add this refference, this is detailed in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.5-alpha/appointment.html" target="_blank">message specification</href>
+The intention is to allow the booking message to include a reference to any referral document (e.g. 111CDA, Kettering, and FHIR documents) and in the FHIR profile for an appointment it is possible to add this reference, this is detailed in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.5-alpha/appointment.html" target="_blank">message specification</href>.
+
+The reference is in the form of a contained FHIR <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1" target="_blank">document reference</href> resource. This resource allows the reference to be made in a standardised and structured way. 
+
+Ideally the referral documentation will also include a reference to the appointment too. This will then allow for cross referencing which will help with the asynchronous relationship between the booking and referral messages. Depending on use case, the referral documentation may be sent first, at the same time or after the appointment message. In the cases where the appointment is created before the referral document, the reference to the booking would have to be included to allow them to be matched by the appointment provider. 
+
+The intention is that any standards that govern referral messaging and documentation will include references to appointments in due course.
 
 ## Example of how this might work in practice
 
