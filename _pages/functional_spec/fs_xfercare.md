@@ -56,7 +56,7 @@ On receipt, the Provider must then do the following:
  c.Find matched cases based on Appointment.DocumentReference.identifier == ID of the CDA that triggered the case. 
  d.Merge Appointment into Case. 
 
-##### When anappointment arrives:
+##### When an appointment arrives:
 
 1. First receive Appointment.
 2. Find existing matched cases (probably none) based on Appointment.DocumentReference.identifier == ID of the CDA that triggered the case.
