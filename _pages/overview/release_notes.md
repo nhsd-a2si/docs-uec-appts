@@ -19,7 +19,7 @@ The 0.1.14 PREVIEW release has the following highlights:
 * Updated the FHIR specification version to 1.0.5-alpha
 * Added a new page in "Functional Specification" section providing guidance for referencing transfer of care documentation
 * Tidied up some aspects of the reporting specification
-* Updated the demonstrator pages to reflect a change for a future update
+* Updated the demonstrator pages to reflect recent updates and a change for a future update
 
 <br>
 <br>
