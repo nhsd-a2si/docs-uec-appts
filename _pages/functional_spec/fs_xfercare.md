@@ -62,21 +62,21 @@ On receipt, the Provider must then do the following:
 ##### When a CDA arrives:
 
 1. First receive CDA. 
-2. Find matched cases (probably none) based on ID of the CDA == Appointment.DocumentReference.identifier. 
+2. Find matched cases (probably none) based on ID of the CDA->Appointment.DocumentReference.identifier. 
 3. Create Case. 
 4. Lookup / Create the Patient. 
  a. Optionally(Appointment might or might not arrive) 
  b. Then receive Appointment. 
- c.Find matched cases based on Appointment.DocumentReference.identifier == ID of the CDA that triggered the case. 
+ c.Find matched cases based on Appointment.DocumentReference.identifier->ID of the CDA that triggered the case. 
  d.Merge Appointment into Case. 
 
 ##### When an appointment arrives:
 
 1. First receive Appointment.
-2. Find existing matched cases (probably none) based on Appointment.DocumentReference.identifier == ID of the CDA that triggered the case.
+2. Find existing matched cases (probably none) based on Appointment.DocumentReference.identifier->ID of the CDA that triggered the case.
 3.Create a new Case.
 4.Lookup / Create the Patient.
  a.Optionally(CDA might or might not arrive)
  b.Then receive CDA.
- c.Find matched cases based on ID of the CDA == Appointment.DocumentReference.identifier of the Appointment that triggered the case.
+ c.Find matched cases based on ID of the CDA->Appointment.DocumentReference.identifier of the Appointment that triggered the case.
  d.Merge CDA into Case.This isolates the process from any sensitivity about whether both messages arrive, and will work regardless of what sequence they arrive.
