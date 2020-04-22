@@ -9,6 +9,10 @@ folder: functional_spec
 
 ## How do we reference transfer of care documentation?
 
+## Example of how this might work in practice
+
+Below is an example of how one type of transfer of care process can be linked with appointment booking. In this illustration a referal from 111 using a 111CDA document is used.
+
 ### Consumer Requirements
 
 The CDA should have a new component in it, which holds a <linkHtml href="URL here">Link title here</linkHtml>, for example:
