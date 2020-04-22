@@ -7,13 +7,13 @@ toc: false
 folder: functional_spec
 ---
 
-### How do we reference transfer of care documentation?
+## How do we reference transfer of care documentation?
 
-Consumer Requirements
+### Consumer Requirements
 
 The CDA should have a new component in it, which holds a <linkHtml href="URL here">Link title here</linkHtml>, for example:
 
-### Appointment reference 
+#### Appointment reference 
 
 ```XML 
 <component typeCode="COMP" contextConductionInd="true">  
