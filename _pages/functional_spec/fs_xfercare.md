@@ -23,7 +23,9 @@ The CDA should have a new component in it, which holds a <linkHtml href="URL her
   <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>      
   <title>Booked Appointment Information </title>      
   <text>        
-   <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>      
+   <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">
+    https://servername.orgname.nhs.uk/FHIR/Appointment/1234567
+   </linkHtml>      
   </text>  
  </section>
 </component>
