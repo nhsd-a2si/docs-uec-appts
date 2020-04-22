@@ -9,6 +9,8 @@ folder: functional_spec
 
 ## How do we reference transfer of care documentation?
 
+The UEC Booking standard specifically does not include any transfer of care information. Instead it allows for reference to transfer of care documentation that might be transferred during the referral workflow of which the booking is a part.
+
 ## Example of how this might work in practice
 
 Below is an example of how one type of transfer of care process can be linked with appointment booking. In this illustration a referal from 111 using a 111CDA document is used.
