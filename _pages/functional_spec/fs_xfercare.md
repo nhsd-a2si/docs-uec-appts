@@ -9,7 +9,9 @@ folder: functional_spec
 
 ## How do we reference transfer of care documentation?
 
-The UEC Booking standard specifically does not include any transfer of care information. Instead it allows for reference to transfer of care documentation that might be transferred during the referral workflow of which the booking is a part.
+The UEC Booking standard specifically does not include any transfer of care information. The booking process typically forms a part of an overall referral workflow and the standard allows for reference to any transfer of care documentation that might be sent.
+
+The intention is to allow the booking message to include a reference to any referral document (e.g. 111CDA, Kettering, and FHIR documents) and in the FHIR profile for an appointment it is possible to add this refference, this is detailed in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.5-alpha/appointment.html" target="_blank">message specification</href>
 
 ## Example of how this might work in practice
 
