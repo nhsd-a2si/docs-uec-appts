@@ -45,7 +45,8 @@ The process for being able to link the two together is complicated by the fact t
 
 On receipt, the Provider must then do the following:
 
-When a CDA arrives:
+##### When a CDA arrives:
+
 1. First receive CDA. 
 2. Find matched cases (probably none) based on ID of the CDA == Appointment.DocumentReference.identifier. 
 3. Create Case. 
@@ -55,7 +56,8 @@ When a CDA arrives:
  c.Find matched cases based on Appointment.DocumentReference.identifier == ID of the CDA that triggered the case. 
  d.Merge Appointment into Case. 
 
-When anappointment arrives:
+##### When anappointment arrives:
+
 1. First receive Appointment.
 2. Find existing matched cases (probably none) based on Appointment.DocumentReference.identifier == ID of the CDA that triggered the case.
 3.Create a new Case.
