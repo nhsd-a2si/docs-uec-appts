@@ -10,8 +10,8 @@ folder: implementation
 
 In order to facilitate development both consuming and providing systems a demonstrator platform will be provided. ultimately this will offer the following capabilities:
 
-* <span style="color:red">example of a consuming system</span>
-* <span style="color:red">an authorisation service for generating and authenticating JWT tokens</span>
+* <span style="color:orange">example of a consuming system</span>
+* <span style="color:green">an authorisation service for generating and authenticating JWT tokens</span>
 * <span style="color:green">a provider service, loaded with synthetic data</span>
 * <span style="color:green">a website to: </span>
     * <span style="color:green">trigger certain calls</span>
@@ -21,7 +21,7 @@ In order to facilitate development both consuming and providing systems a demons
     * <span style="color:green">link to annotated sample requests</span>
     * <span style="color:green">build version information</span>
 
-N.B. in the list above text in <span style="background-color: green;color:white">green</span> indicates capabilities that are available now and text in <span style="background-color: red;color:white">red</span> indicates capabilities that are not currently available.
+N.B. in the list above text in <span style="background-color: green;color:white">green</span> indicates capabilities that are available now, text in <span style="background-color: orange;color:white">orange</span> indicates capabilities that are being developed and text in <span style="background-color: red;color:white">red</span> indicates capabilities that are not currently available.
 
 This platform will allow experimentation by development teams as well as assisting with some testing for assurance.
 
