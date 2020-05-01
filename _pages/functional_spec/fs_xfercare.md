@@ -62,21 +62,22 @@ On receipt, the Provider must then do the following:
 ##### When a CDA arrives:
 
 1. First receive CDA. 
-2. Find matched cases (probably none) based on ID of the CDA->Appointment.DocumentReference.identifier. 
-3. Create Case. 
-4. Lookup / Create the Patient. 
- a. Optionally(Appointment might or might not arrive) 
- b. Then receive Appointment. 
- c.Find matched cases based on Appointment.DocumentReference.identifier->ID of the CDA that triggered the case. 
- d.Merge Appointment into Case. 
+2. Find matched cases based on ID of the CDA->Appointment.DocumentReference.identifier. 
+3. If no case found:
+     a. Lookup / Create the Patient. 
+     b. Create case.
+     c. Save the CDA to the record against this case.
+4. If case is found (as appointment was created first), merge CDA into case - save against the record so that the CDA information is easily accessible by a clinician against the case when the patient attends the appointment.
 
 ##### When an appointment arrives:
 
 1. First receive Appointment.
-2. Find existing matched cases (probably none) based on Appointment.DocumentReference.identifier->ID of the CDA that triggered the case.
-3.Create a new Case.
-4.Lookup / Create the Patient.
- a.Optionally(CDA might or might not arrive)
- b.Then receive CDA.
- c.Find matched cases based on ID of the CDA->Appointment.DocumentReference.identifier of the Appointment that triggered the case.
- d.Merge CDA into Case.This isolates the process from any sensitivity about whether both messages arrive, and will work regardless of what sequence they arrive.
+2. Find existing matched cases based on Appointment.DocumentReference.identifier->ID of the CDA document.
+3. If no case found:
+     a. Lookup / Create the Patient. 
+     b. Create case
+     c. Create appointment- with the reference to the CDA document within it.
+4. If case is found (as CDA was received first), link appointment to the case - save against the record so that the appointment is linked to the clinical case that has been transferred using the CDA. This ensures that when the patient attends the appointment it is linked to the transfer of care information.
+
+ 
+This isolates the process from any sensitivity about whether both messages arrive, and will work regardless of what sequence they arrive.
