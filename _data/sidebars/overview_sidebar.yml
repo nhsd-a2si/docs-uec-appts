@@ -3,9 +3,9 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.13 PREVIEW"
-    spec: "STU3 | FHIR NHS Scheduling | 1.0.5-alpha"
-    speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.5-alpha/"
+    version: "v0.1.14 PREVIEW"
+    spec: "STU3 | FHIR NHS Scheduling | 1.0.6-alpha"
+    speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.6-alpha/"
     folders: 
       - 
         title: Introduction
@@ -103,6 +103,10 @@ entries:
             title: "Appointment Management (Cancel and Rebook)"
             output: "web, pdf"
             url: /cr_overview.html
+          -
+            title: "Transfer of Care"
+            output: "web, pdf"
+            url: /fs_xfercare.html
           -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"

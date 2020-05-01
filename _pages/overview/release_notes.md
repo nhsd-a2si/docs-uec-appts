@@ -9,6 +9,34 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.14 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.14   | PREVIEW | Alpha | Current Version | 24/04/2020 | Volatile
+
+The 0.1.14 PREVIEW release has the following highlights:
+* Updated the FHIR specification version to 1.0.5-alpha
+* Added a new page in "Functional Specification" section providing guidance for referencing transfer of care documentation
+* Tidied up some aspects of the reporting specification
+* Updated the demonstrator pages to reflect recent updates and a change for a future update
+
+<br>
+<br>
+
+## Future releases
+
+### 0.1.15 PREVIEW
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.15   | PREVIEW | Alpha | Unreleased | 30/05/2020   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.13 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -30,22 +58,6 @@ The 0.1.13 PREVIEW release has the following highlights:
   * Created a new Use Case for booking outside a disposition timeframe
   * Fixed some typos
 * Updated the demonstrator pages to reflect a change for a future update
-
-<br>
-<br>
-
-## Future releases
-
-### 0.1.13 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.14   | PREVIEW | Alpha | Unreleased | 28/02/2020   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.12 PREVIEW
 
