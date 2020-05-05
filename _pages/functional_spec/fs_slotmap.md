@@ -39,6 +39,11 @@ When the clinical assessment  is performed using the NHS Pathways assessment too
 > *	Dx1115 COVID risk Clinical Assessment Service 6 hours
 > *	Dx1116 COVID risk Clinical Assessment Service 12 hours
 > *	Dx1117 COVID risk Clinical Assessment Service next working day
+> * Dx110	Community Nurse within 4 hours 
+> * Dx111	Community Nurse within 24 hours 
+> * Dx112	Community Nurse next working day 
+> * Dx113	Health Visitor next working day 
+> * Dx114	Community Midwife next working Day 
 > * Dx115 Contact own GP Practice next working day for an appointment
 > * Dx117 Speak to a Primary Care Service within 1 hour for Palliative Care
 
