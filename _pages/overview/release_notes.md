@@ -13,7 +13,7 @@ folder: introduction
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.14   | PREVIEW | Alpha | Current Version | 24/04/2020 | Volatile
+0.1.14   | PREVIEW | Alpha | Current Version | 05/05/2020 | Volatile
 
 The 0.1.14 PREVIEW release has the following highlights:
 * Updated the FHIR specification version to 1.0.6-alpha
