@@ -1,0 +1,60 @@
+entries: 
+  - 
+    folders: 
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: Overview
+            url: /dep_overview.html          
+        output: web
+        title: Overview
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Overview"
+            url: /dep_devoverview.html
+          - 
+            output: "web, pdf"
+            title: "Path to Live"
+            url: /dep_devptl.html
+          - 
+            output: "web, pdf"
+            title: "System topologies"
+            url: /dep_devtopo.html
+          - 
+            output: "web, pdf"
+            title: "Connecting to Spine"
+            url: /dep_devspine.html
+          - 
+            output: "web, pdf"
+            title: "Testing Resources"
+            url: /dep_devtest.html   
+        output: web
+        title: Suppliers
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Overview"
+            url: /dep_provoverview.html                    
+        output: web
+        title: Providers
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Overview"
+            url: /dep_dosoverview.html                    
+        output: web
+        title: DoS Leads
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Overview"
+            url: /dep_commoverview.html                    
+        output: web
+        title: Commissioner
+    title: "Urgent & Emergency Care Appointment Booking Standards - Deployment Toolkit"
