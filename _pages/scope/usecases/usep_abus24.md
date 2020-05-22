@@ -12,7 +12,7 @@ permalink: usep_abus24.html
 **_I want_** to be notified when selecting a service that only accepts referrals when a booking has been made
 
 ### Commentary 
-For booking only DoS services a service attribute will need to be added by the local DoS lead. The service attribute is called "**BOOKINGREQUIRED**"
+For booking only DoS services a service attribute will need to be added by the local DoS lead. The service attribute is called "**requirebooking**"
 
 ### Acceptance Criteria 
 * The system **must** stop the users from making a referral if no appointment has been made when the "**requirebooking**" service attribute is present on the DoS service
