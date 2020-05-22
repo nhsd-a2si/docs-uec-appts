@@ -15,7 +15,7 @@ permalink: usep_abus24.html
 For booking only DoS services a service attribute will need to be added by the local DoS lead. The service attribute is called "**BOOKINGREQUIRED**"
 
 ### Acceptance Criteria 
-* The system **must** stop the users from making a referral if no appointment has been made when the "**BOOKINGREQUIRED**" service attribute is present on the DoS service
+* The system **must** stop the users from making a referral if no appointment has been made when the "**requirebooking**" service attribute is present on the DoS service
 * The system **must** present an appropriate warning message to the user
 * The system **must** allow the user to select a different service on the DoS
 * The system **must** allow a referral to be sent when a booking is made
