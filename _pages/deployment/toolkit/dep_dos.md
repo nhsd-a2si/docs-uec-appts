@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit
+title: eployment Toolkit - DoS Lead Resources
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_dos.html
