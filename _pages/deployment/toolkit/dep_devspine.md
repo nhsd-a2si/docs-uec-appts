@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit - Supplier Resources
+title: Deployment Toolkit - Connecting to Spine
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_devspine.html
