@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit - Supplier Resources
+title: Deployment Toolkit - Testing Resources
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_devtest.html
