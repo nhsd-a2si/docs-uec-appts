@@ -7,6 +7,8 @@ toc: false
 folder: functional_spec
 ---
 
+{% include warning.html content="The information on this page is currently out of scope and will form part of a future enhancement. It is included here for interest only" %}
+
 There are a number of workflows where the cancel/rebook capability can be demonstrated.
 
 The following example walks through a reasonably complex scenario that demonstrates the key interactions and their sequence:
