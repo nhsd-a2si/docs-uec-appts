@@ -7,6 +7,9 @@ toc: false
 folder: functional_spec
 ---
 
+{% include warning.html content="The information on this page is currently out of scope and will form part of a future enhancement. It is included here for interest only" %}
+
+
 In order to support finding, and therefore cancelling of appointments, a central registry of appointments is proposed. This will be a RESTful service, based around a cut-down (profiled) Appointment resource, which acts as a pointer to the actual Appointment and will support the following interactions:
 
 * Create
