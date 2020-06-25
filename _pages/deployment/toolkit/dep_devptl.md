@@ -16,10 +16,89 @@ folder: deployment
 
 ### Research
 
+During this stage, suppliers will conduct any initial engagement, research etc.. required to get development underway. The UEC Booking demonstrator is a useful tool for this stage (see <a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">here</a>).
+
 ### Development Complete
+
+Once Development is complete, the sullplier can move onto Integration Testing.
+
 
 ## Integration Testing
 
+Integration testing can be a challenging step. It involves gaining access to the SPINE Integration Environment (INT).
+There are a series of prerequestites and steps to complete before you can begin integration testing.
+'''JSON
+    Pre-Req 
+
+    HSCN connectivity 
+
+    Started on-boarding (SCAL) process with SA 
+
+ 
+
+    Get connectivity as in here https://digital.nhs.uk/services/path-to-live-environments#top 
+
+https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment 
+
+ 
+
+    1 Register or modify your FQDN with the NHS' DNS service 
+
+    DNS request form 
+
+    You need to know what your URL is, see here for how to do that:  
+
+    2 Register or modify your messaging product with Spine 
+
+    MPV registration request form 
+
+    3 Request new certificates and/or create or modify endpoints 
+
+    Combined endpoint and service registration request form 
+
+ 
+
+    Configure your environment to connect to SSP: 
+
+    Install the cert you have been given to local cert store and bind you your site e.g. – xxx.thirdparty.nhs.uk etc 
+
+    Configure your firewall to make outbound connections to: https://proxy.int.spine2.ncrs.nhs.uk/[provider service root url]/[fhir request] 
+
+     (see https://digital.nhs.uk/services/path-to-live-environments/integration-environment#messaging-urls) for more information 
+
+    Configure your firewall to receive connection inbound from msg-out.int.spine2.ncrs.nhs.uk  
+
+    (See here for more information: https://digital.nhs.uk/services/path-to-live-environments/integration-environment#outbound-network-address-translation-nat-addresses 
+
+    Root CA and Sub ca installed in cert store and added to bindings for local site in SSL/TLS  - as described here: https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates 
+
+    Note, contrary to the information in that link, PLEASE ENSURE YOU PUT BOTH CERTIFICATES IN (SHA1 + SHA2)!! 
+
+    (See documentation for more information: https://digital.nhs.uk/services/path-to-live-environments/integration-environment) 
+
+    Configure and check Certificate revocation (CRL checks) for both old (SHA1) and new (SHA2) root certs. 
+
+    They use different revocation methods 
+
+    New (SHA2) needs the following: 
+
+     http://crl.nhs.uk/int/1c/crlc2.crl - for SHA2.  The Subca/Rootca will point to this URL.  This URL will download a CRL file locally and will add CRL checks in.  Local TLS should be configured to go check this file.  It is on the INTERNET – ie configure firewall outbound to be able to go to this URL over the internet. 
+
+    Old (SHA1) needs the following: 
+
+    The CDP is a relative request to an LDAP query!  This is not live and not accessible. 
+
+    So the process required is to download the file and load it locally into the CRL cache and then configure the service to not check for a new file! 
+
+    The CRL files can be downloaded from here:  http://checkit/public/pki/crls.php.  This is on HSCN. This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule.  I recommend once per week.  For your clients you will obviously need this to be a batch process to download and install. 
+
+    Note – you need to find the correct CRL file for the right SSP integration or live environment 
+
+    In IIS there is a way of setting IIS CRL use to default to the cached file and use that even if the file downloaded CRL expiry date is in the past. " If CertCheckMode is set to 2 Certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will obviously fail." I think that means from in here: https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN, the DefaultCertCheckMode is set to 2.   
+'''
+ 
+
+ 
 ### End-to-End test
 
 ## Assure
