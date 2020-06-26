@@ -27,22 +27,17 @@ Once Development is complete, the sullplier can move onto Integration Testing.
 
 Integration testing can be a challenging step. It involves gaining access to the SPINE Integration Environment (INT).
 There are a series of prerequestites and steps to complete before you can begin integration testing.
-'''JSON
-    Pre-Req 
 
-    HSCN connectivity 
-
-    Started on-boarding (SCAL) process with SA 
-
+### Pre-Requisites
  
+Below are the prerequisites that need to be established before it is possible to connect to the INT environment:
+    
+    * You must have HSCN connectivity 
+    * You must have started the on-boarding (SCAL) process with the NHS Digital Solutions Assurance team
 
-    Get connectivity as in here https://digital.nhs.uk/services/path-to-live-environments#top 
-
-https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment 
-
+ Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment " target="_blank">get connected to the INT environment</a>. This requires a series of steps:
  
-
-    1 Register or modify your FQDN with the NHS' DNS service 
+    1. Register or modify your FQDN with the NHS' DNS service 
 
     DNS request form 
 
@@ -95,7 +90,7 @@ https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-l
     Note – you need to find the correct CRL file for the right SSP integration or live environment 
 
     In IIS there is a way of setting IIS CRL use to default to the cached file and use that even if the file downloaded CRL expiry date is in the past. " If CertCheckMode is set to 2 Certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will obviously fail." I think that means from in here: https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN, the DefaultCertCheckMode is set to 2.   
-'''
+
  
 
  
