@@ -46,20 +46,14 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  * Use the <a href="https://digital.nhs.uk/forms/combined-endpoint-and-service-registration-request" target="_blank">Combined endpoint and service registration request form</a> for this
  
 ### Configure your environment to connect to SSP: 
-
-    Install the cert you have been given to local cert store and bind you your site e.g. – xxx.thirdparty.nhs.uk etc 
-
-    Configure your firewall to make outbound connections to: https://proxy.int.spine2.ncrs.nhs.uk/[provider service root url]/[fhir request] 
-
-     (see https://digital.nhs.uk/services/path-to-live-environments/integration-environment#messaging-urls) for more information 
-
-    Configure your firewall to receive connection inbound from msg-out.int.spine2.ncrs.nhs.uk  
-
-    (See here for more information: https://digital.nhs.uk/services/path-to-live-environments/integration-environment#outbound-network-address-translation-nat-addresses 
-
-    Root CA and Sub ca installed in cert store and added to bindings for local site in SSL/TLS  - as described here: https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates 
-
-    Note, contrary to the information in that link, PLEASE ENSURE YOU PUT BOTH CERTIFICATES IN (SHA1 + SHA2)!! 
+1. Install the cert you have been given to local cert store and bind you your site e.g. – *xxx.thirdparty.nhs.uk* etc 
+2. Configure your firewall to make outbound connections to: *https://proxy.int.spine2.ncrs.nhs.uk/[provider service root url]/[fhir request]* 
+ * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#messaging-urls" targe"_blank">here</a> for more information 
+3. Configure your firewall to receive connection inbound from msg-out.int.spine2.ncrs.nhs.uk  
+ * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#outbound-network-address-translation-nat-addresses" target="_blank">here</a> for more information 
+4. Root CA and Sub CA installed in cert store and added to bindings for local site in SSL/TLS
+ * as described <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates" target="_blank">here</a>
+ * Note: contrary to the information in that link, PLEASE ENSURE YOU PUT BOTH CERTIFICATES IN (SHA1 + SHA2)!! 
 
     (See documentation for more information: https://digital.nhs.uk/services/path-to-live-environments/integration-environment) 
 
@@ -82,7 +76,6 @@ Once you have the above pre-requisites you will need to <a href="https://digital
     Note – you need to find the correct CRL file for the right SSP integration or live environment 
 
     In IIS there is a way of setting IIS CRL use to default to the cached file and use that even if the file downloaded CRL expiry date is in the past. " If CertCheckMode is set to 2 Certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will obviously fail." I think that means from in here: https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN, the DefaultCertCheckMode is set to 2.   
-
  
 
  
