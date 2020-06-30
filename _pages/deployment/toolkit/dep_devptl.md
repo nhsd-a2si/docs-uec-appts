@@ -34,13 +34,12 @@ Below are the prerequisites that need to be established before it is possible to
  * You must have HSCN connectivity 
  * You must have started the on-boarding (SCAL) process with the NHS Digital Solutions Assurance team
 
-Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment " target="_blank">get connected to the INT environment</a>. This requires a series of steps:
+### Getting connected
+Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment" target="_blank">get connected to the INT environment</a>. This requires a series of steps:
 
-1. Register or modify your FQDN with the NHS' DNS service
-
-    DNS request form 
-
-    You need to know what your URL is, see here for how to do that:  
+1. Register or modify your FQDN with the NHS' DNS service 
+ * You will find the <a href="https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments" target="_blank">DNS request form here</a>.
+ * You need to know what your URL is, see here for how to do that:  
 
     2 Register or modify your messaging product with Spine 
 
