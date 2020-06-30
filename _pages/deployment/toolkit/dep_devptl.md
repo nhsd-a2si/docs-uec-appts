@@ -39,19 +39,13 @@ Once you have the above pre-requisites you will need to <a href="https://digital
 
 1. Register or modify your FQDN with the NHS' DNS service 
  * You will find the <a href="https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments" target="_blank">DNS request form here</a>.
- * You need to know what your URL is, see here for how to do that:  
-
-    2 Register or modify your messaging product with Spine 
-
-    MPV registration request form 
-
-    3 Request new certificates and/or create or modify endpoints 
-
-    Combined endpoint and service registration request form 
-
+ * You need to know what your URL is  
+2. Register or modify your messaging product with Spine 
+ * Use the <a href="https://digital.nhs.uk/forms/manufacturer-product-version-registration-request" target="_blank£">MPV registration request form</a> for this
+3 Request new certificates and/or create or modify endpoints 
+ * Use the <a href="https://digital.nhs.uk/forms/combined-endpoint-and-service-registration-request" target="_blank">Combined endpoint and service registration request form</a> for this
  
-
-    Configure your environment to connect to SSP: 
+### Configure your environment to connect to SSP: 
 
     Install the cert you have been given to local cert store and bind you your site e.g. – xxx.thirdparty.nhs.uk etc 
 
