@@ -12,7 +12,7 @@ permalink: usee_abus22.html
 **_I want_** to rebook appts booked for a patient 
 
 ### Commentary 
-The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a cancel followed by a re-book (following a reassessment of the patients clinical needs).  
+The capability to cancel an appointment gives the ultimate capability of also amending an appt as an amendment is effectively a re-book (following a reassessment of the patients clinical needs) followed by a cancel of the original appointment.  
 
 GP Connect use case can be found <a href="https://nhsconnect.github.io/gpconnect/appointments_use_case_cancel_an_appointment.html" target="_blank">here</a>
 
