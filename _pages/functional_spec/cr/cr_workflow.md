@@ -9,6 +9,7 @@ folder: functional_spec
 
 With the UEC Booking Standard there is no specific Rebook functionality. The reason for this is that any need for a change to an appointment should require a re-assessment and be considered as a new encounter. Only once this assessment has been completed (including any new bookings associated with that encounter) would the consumer system then cancel any appointments that they are aware of that would no longer be appropriate. It is worth noting that depending on the capabilities of the system being used to make the reassessment the original appointment may not be cancelled.
 
+### Workflows
 
 There are a number of workflows where the cancel/rebook capability can be demonstrated.
 
