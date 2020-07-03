@@ -1,5 +1,5 @@
 ---
-title: Appointment Management - Architecture
+title: Appointment Management - Registry Architecture
 sidebar: cr_sidebar
 keywords: specification
 permalink: cr_arch.html
