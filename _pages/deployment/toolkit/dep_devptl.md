@@ -66,13 +66,13 @@ Once you have the above pre-requisites you will need to <a href="https://digital
      Note: The CDP is a relative request to an LDAP query, this is not live and not accessible. 
      * So the process required is to download the file and load it locally into the CRL cache and then configure the service to not check for a new file 
      * The CRL files can be downloaded from <a href="http://checkit/public/pki/crls.php" target="_blank">here</a>: "http://checkit/public/pki/crls.php".  
-      * This location is on HSCN. 
-      * This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule. (we recommend once per week)
-      * For your clients you will obviously need this to be a batch process to download and install. 
+        * This location is on HSCN. 
+        * This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule. (we recommend once per week)
+        * For your clients you will obviously need this to be a batch process to download and install. 
      Note – you need to find the correct CRL file for the right SSP integration or live environment 
      * If you are using IIS:
-      * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
-      * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN). 
+        * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
+        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN). 
  
 ### End-to-End test
 
