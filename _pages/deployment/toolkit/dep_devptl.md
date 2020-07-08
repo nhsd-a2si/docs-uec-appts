@@ -76,14 +76,28 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  
 ### End-to-End test
 
+TBC
+
 ## Assure
+
+TBC
 
 ### Technical Conformance Certificate
 
+TBC
+
 ## Provider Testing
+
+TBC
 
 ### End-User Organisation Connection Policy (EUOCP)
 
+TBC
+
 ## Technical Live
 
+TBC
+
 ### Business Live
+
+TBC
