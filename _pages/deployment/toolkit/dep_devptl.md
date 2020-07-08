@@ -53,31 +53,26 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#outbound-network-address-translation-nat-addresses" target="_blank">here</a> for more information 
 4. Root CA and Sub CA installed in cert store and added to bindings for local site in SSL/TLS
  * as described <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#rootca-and-subca-certificates" target="_blank">here</a>
- * Note: contrary to the information in that link, PLEASE ENSURE YOU PUT BOTH CERTIFICATES IN (SHA1 + SHA2)!! 
+ * Note: contrary to the information in that link, PLEASE ENSURE YOU PUT BOTH CERTIFICATES IN (SHA1 + SHA2) 
+   (See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment" target="_blank">documentation</a> for more information) 
+5. Configure and check Certificate revocation (CRL checks) for both old (SHA1) and new (SHA2) root certs. 
+   Note: They use different revocation methods 
+   * New (SHA2) needs the following:
+     * The SubCA/RootCA will point to this URL: "http://crl.nhs.uk/int/1c/crlc2.crl".  This location will download a CRL file locally and will add CRL checks in.
+     * Local TLS should be configured to go check this file.  
+      * It is on the INTERNET so please configure firewall outbound rules to be able to go to this URL over the internet. 
 
-    (See documentation for more information: https://digital.nhs.uk/services/path-to-live-environments/integration-environment) 
-
-    Configure and check Certificate revocation (CRL checks) for both old (SHA1) and new (SHA2) root certs. 
-
-    They use different revocation methods 
-
-    New (SHA2) needs the following: 
-
-     http://crl.nhs.uk/int/1c/crlc2.crl - for SHA2.  The Subca/Rootca will point to this URL.  This URL will download a CRL file locally and will add CRL checks in.  Local TLS should be configured to go check this file.  It is on the INTERNET – ie configure firewall outbound to be able to go to this URL over the internet. 
-
-    Old (SHA1) needs the following: 
-
-    The CDP is a relative request to an LDAP query!  This is not live and not accessible. 
-
-    So the process required is to download the file and load it locally into the CRL cache and then configure the service to not check for a new file! 
-
-    The CRL files can be downloaded from here:  http://checkit/public/pki/crls.php.  This is on HSCN. This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule.  I recommend once per week.  For your clients you will obviously need this to be a batch process to download and install. 
-
-    Note – you need to find the correct CRL file for the right SSP integration or live environment 
-
-    In IIS there is a way of setting IIS CRL use to default to the cached file and use that even if the file downloaded CRL expiry date is in the past. " If CertCheckMode is set to 2 Certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will obviously fail." I think that means from in here: https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN, the DefaultCertCheckMode is set to 2.   
- 
-
+   * Old (SHA1) needs the following: 
+     Note: The CDP is a relative request to an LDAP query, this is not live and not accessible. 
+     * So the process required is to download the file and load it locally into the CRL cache and then configure the service to not check for a new file 
+     * The CRL files can be downloaded from <a href="http://checkit/public/pki/crls.php" target="_blank">here</a>: "http://checkit/public/pki/crls.php".  
+      * This location is on HSCN. 
+      * This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule. (we recommend once per week)
+      * For your clients you will obviously need this to be a batch process to download and install. 
+     Note – you need to find the correct CRL file for the right SSP integration or live environment 
+     * If you are using IIS:
+      * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
+      * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN). 
  
 ### End-to-End test
 
