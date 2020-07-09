@@ -9,4 +9,4 @@ folder: deployment
 
 {% include note-notpublished.html %}
 
-<a href="111 to UTC Care Connect - Operational Test Plan.xlsx" download="111 to UTC Care Connect - Operational Test Plan.xlsx">test files</a>
+<a href="_pages/deployment/toolkit/files/Care_Connect_Consumer_Assurance_Test_Scripts.xlsx" download>test files</a>
