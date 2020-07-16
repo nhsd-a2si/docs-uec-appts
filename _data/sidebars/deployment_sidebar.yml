@@ -34,23 +34,11 @@ entries:
           - 
             output: "web, pdf"
             title: "Overview"
-            url: /dep_provoverview.html                    
-        output: web
-        title: Providers
-      - 
-        folderitems: 
+            url: /dep_provoverview.html
           - 
             output: "web, pdf"
-            title: "Overview"
-            url: /dep_dosoverview.html                    
+            title: "Testing Resources"
+            url: /dep_provtest.html  
         output: web
-        title: DoS Leads
-      - 
-        folderitems: 
-          - 
-            output: "web, pdf"
-            title: "Overview"
-            url: /dep_commoverview.html                    
-        output: web
-        title: Commissioners
+        title: Providers     
     title: "Urgent & Emergency Care Appointment Booking Standards - Deployment Toolkit"
