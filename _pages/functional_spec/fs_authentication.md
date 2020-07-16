@@ -154,7 +154,7 @@ Identifies the expiration time in UTC on and after which the JWT **SHALL NOT** b
 
 The expiration time **SHALL** be set to 5 minutes after the token creation time (populated in the [`iat` claim](#iat-issued-at-claim)).
 
-The value must be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time).
+The value must be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time){:target="_blank"}.
 
 Providers **SHALL** reject requests with expired tokens.
 
@@ -168,7 +168,7 @@ Providers **SHALL** reject requests with expired tokens.
 
 The time the request and token were generated in UTC.
 
-The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time).
+The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time){:target="_blank"}.
 
 **Example**: `"iat": 1469436687`
 
@@ -190,10 +190,10 @@ The scope of the request.
 
 Please the table below for which values to populate.
 
-| Claim value | Description |
-|-------|-------------|
-| `patient/appointment.write` | Booking in an appointment | 
-| `organization/slot.read` | Searching for available slots |
+| Claim value | Operation | Description |
+|-------|-------|-------------|
+| `patient/appointment.write` | Book / Cancel |Booking in an appointment | 
+| `organization/slot.read` | Slot Search |Searching for available slots |
 
 Providers should also read the associated [Security guidance](development_api_security_guidance.html#authorisation-of-access-to-endpoints) in relation to this claim.
 
@@ -201,9 +201,9 @@ Providers should also read the associated [Security guidance](development_api_se
 
 #### `requesting_device` claim
 
-The system or device making the request, populated as a minimal [Device](https://www.hl7.org/fhir/STU3/device.html) resource.
+The system or device making the request, populated as a minimal [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} resource.
 
-The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/STU3/device.html) fields:
+The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} fields:
 
 - an `identifier` element, with:
   - `system` containing a consumer-defined system URL representing the type of identifier in the value field, e.g. `https://consumersupplier.com/Id/device-identifier`
@@ -232,9 +232,9 @@ The [Device](https://www.hl7.org/fhir/STU3/device.html) resource populated in th
 
 #### `requesting_organization` claim
 
-The consumer organisation making the request, populated as a minimal [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource.
+The consumer organisation making the request, populated as a minimal [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} resource.
 
-The consumer **SHALL** populate the following [Organization](https://www.hl7.org/fhir/STU3/organization.html) fields:
+The consumer **SHALL** populate the following [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} fields:
 
 - `name` with the name of the organisation
 - an `identifier` element, with:
@@ -244,7 +244,7 @@ The consumer **SHALL** populate the following [Organization](https://www.hl7.org
 {% include important.html content="In consumer system topologies where consumer applications are provisioned via a portal or middleware hosted by another organisation, it is vital for audit purposes that the organisation populated in the JWT reflects the organisation from where the request originates, rather than the hosting organisation.<br/>
 This is normally determined as the organisation of the logged on user making the request." %}
 
-The [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 
@@ -264,15 +264,15 @@ The [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource pop
 
 #### `requesting_practitioner` claim
 
-The user making the request, populated as a minimal [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) resource.
+The user making the request, populated as a minimal [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} resource.
 
 To contain the logged on user's identifier(s) (for example, login details / username). Where the user has both a local system user role as well as a nationally-recognised user role, then both **SHALL** be provided.
 
 {% include important.html content="This field **SHALL NOT** be populated with fixed values or a generic \"system\" user. The values **SHALL** represent the logged on user making the request." %}
 
-The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) fields:
+The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} fields:
 
-- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id) identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [`sub` (subject) claim](integration_cross_organisation_audit_and_provenance.html#sub-subject-claim).
+- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id){:target="_blank"} identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [`sub` (subject) claim](integration_cross_organisation_audit_and_provenance.html#sub-subject-claim).
 - `name` with:
   - `family` containing the user's family name
   - `given` containing the user's given name
@@ -289,7 +289,7 @@ The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org
 
 {% include important.html content="Providers should be aware of variance in the population of the `identifier` field amongst existing consumer systems when reading this claim, specifically the latter two elements (SDS role profile ID, and local user identifier) are not always present." %}
 
-The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html)integration_cross_organisation_audit_and_provenance.html#sub-subject-claim resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 
