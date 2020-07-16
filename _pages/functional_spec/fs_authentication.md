@@ -9,11 +9,11 @@ folder: functional_spec
 
 
 [//]: # (Broken Links by line number below:)
-[//]: # (51 - security_authorisation.html)
-[//]: # (143 - development_general_api_guidance.html#service-root-url)
-[//]: # (145 - integration_spine_directory_service.html)
-[//]: # (198 - development_api_security_guidance.html#authorisation-of-access-to-endpoints)
-[//]: # (275 - integration_cross_organisation_audit_and_provenance.html#sub-subject-claim)
+[//]: # (60 - security_authorisation.html)
+[//]: # (152 - development_general_api_guidance.html#service-root-url)
+[//]: # (154 - integration_spine_directory_service.html)
+[//]: # (207 - development_api_security_guidance.html#authorisation-of-access-to-endpoints)
+[//]: # (284 - integration_cross_organisation_audit_and_provenance.html#sub-subject-claim)
 [//]: # (These look to be relative links to GP Connect documentation??)
 
 Note: for GP Connect Authentication please see <a href="https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html" target="_blank">here</a>
