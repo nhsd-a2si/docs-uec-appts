@@ -18,11 +18,7 @@ entries:
           - 
             output: "web, pdf"
             title: "System topologies"
-            url: /dep_devtopo.html
-          - 
-            output: "web, pdf"
-            title: "Connecting to Spine"
-            url: /dep_devspine.html
+            url: /dep_devtopo.html          
           - 
             output: "web, pdf"
             title: "Testing Resources"
