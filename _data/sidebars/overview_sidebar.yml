@@ -91,6 +91,10 @@ entries:
             title: "Slot Management"
             output: "web, pdf"            
             url: /fs_slotmanagement.html
+          - 
+            title: "Delivery Channel"
+            output: "web, pdf"            
+            url: /fs_deliverychannel.html
           -
             title: "Authentication"
             output: "web, pdf"
