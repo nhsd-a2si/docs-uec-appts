@@ -8,3 +8,5 @@ folder: deployment
 ---
 
 {% include note-notpublished.html %}
+
+<a href="https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html" target="_blank"></a>
