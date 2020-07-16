@@ -57,7 +57,7 @@ When a new consumer or provider system is assured for booking using the Care Con
 
 ## Use of bearer tokens
 
-An output of authorising access to an API is the provision of a JSON Web Token (see GP Connect documentation for some more guidance on this subject: [authorising access](security_authorisation.html){:target="_blank"} for UEC booking (Care Connect) the same guidance applies). This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
+An output of authorising access to an API is the provision of a JSON Web Token (see GP Connect documentation for some more guidance on this subject: [authorising access](https://developer.nhs.uk/apis/gpconnect-1-2-7/security_authorisation.html){:target="_blank"} for UEC booking (Care Connect) the same guidance applies). This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
 
 In order to achieve this, the Consumer MUST include Access token in the HTTP authorisation header as an oAuth Bearer Token (as outlined in [RFC 6749](https://tools.ietf.org/html/rfc6749){:target="_blank"}) in the form of a JSON Web Token (JWT) as defined in [RFC 7519](https://tools.ietf.org/html/rfc7519){:target="_blank"}.
 
@@ -154,7 +154,7 @@ The service root URL of the provider system.
 This is the value returned from the SDS endpoint lookup service in the `nhsMhsEndPoint` field.
 
 **Example**: `"aud": "https://providersupplier.thirdparty.nhs.uk/STU3/1"`
-(Please see GP Connect documentation for more guidance on this subject: [service root URL](development_general_api_guidance.html#service-root-url) for UEC booking (Care Connect) the same guidance applies).
+(Please see GP Connect documentation for more guidance on this subject: [service root URL](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_general_api_guidance.html#service-root-url) for UEC booking (Care Connect) the same guidance applies).
 
 ---
 
@@ -205,7 +205,7 @@ Please the table below for which values to populate.
 | `patient/appointment.write` | Book / Cancel |Booking in an appointment | 
 | `organization/slot.read` | Slot Search |Searching for available slots |
 
-Providers should also read the associated [Security guidance](development_api_security_guidance.html#authorisation-of-access-to-endpoints) GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
+Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html#authorisation-of-access-to-endpoints) GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
 
 ---
 
