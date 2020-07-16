@@ -10,11 +10,11 @@ folder: functional_spec
 
 [//]: # (Broken Links by line number below:)
 [//]: # (60 - security_authorisation.html)
-[//]: # (152 - development_general_api_guidance.html#service-root-url)
-[//]: # (154 - integration_spine_directory_service.html)
-[//]: # (207 - development_api_security_guidance.html#authorisation-of-access-to-endpoints)
-[//]: # (284 - integration_cross_organisation_audit_and_provenance.html#sub-subject-claim)
-[//]: # (These look to be relative links to GP Connect documentation??)
+[//]: # (152 - development_general_api_guidance.html#service-root-url - linked to GPC section)
+[//]: # (154 - integration_spine_directory_service.html - DELETED)
+[//]: # (208 - development_api_security_guidance.html#authorisation-of-access-to-endpoints - linked to GPC section)
+[//]: # (284 - integration_cross_organisation_audit_and_provenance.html#sub-subject-claim - fixed link so now points at own documentation)
+[//]: # (<DR> These look to be relative links to GP Connect documentation?? - I have made them absolute but will need to check with KG)
 
 Note: for GP Connect Authentication please see <a href="https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html" target="_blank">here</a>
 
@@ -57,7 +57,7 @@ When a new consumer or provider system is assured for booking using the Care Con
 
 ## Use of bearer tokens
 
-An output of [authorising access](security_authorisation.html) to an API is the provision of a JSON Web Token. This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
+An output of authorising access to an API is the provision of a JSON Web Token (see GP Connect documentation for some more guidance on this subject: [authorising access](security_authorisation.html){:target="_blank"} for UEC booking (Care Connect) the same guidance applies). This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
 
 In order to achieve this, the Consumer MUST include Access token in the HTTP authorisation header as an oAuth Bearer Token (as outlined in [RFC 6749](https://tools.ietf.org/html/rfc6749){:target="_blank"}) in the form of a JSON Web Token (JWT) as defined in [RFC 7519](https://tools.ietf.org/html/rfc7519){:target="_blank"}.
 
@@ -149,11 +149,12 @@ ID for the user on whose behalf this request is being made. Matches [`requesting
 
 #### `aud` (audience) claim
 
-The [service root URL](development_general_api_guidance.html#service-root-url) of the provider system.
+The service root URL of the provider system.
 
-This is the value returned from the [SDS endpoint lookup service](integration_spine_directory_service.html) in the `nhsMhsEndPoint` field.
+This is the value returned from the SDS endpoint lookup service in the `nhsMhsEndPoint` field.
 
 **Example**: `"aud": "https://providersupplier.thirdparty.nhs.uk/STU3/1"`
+(Please see GP Connect documentation for more guidance on this subject: [service root URL](development_general_api_guidance.html#service-root-url) for UEC booking (Care Connect) the same guidance applies).
 
 ---
 
@@ -187,7 +188,7 @@ The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00
 
 The purpose for which access is being requested.
 
-As GP Connect only supports usage for direct care, this value **SHALL** be set to `directcare`.
+As UEC apointment booking only supports usage for direct care, this value **SHALL** be set to `directcare`.
 
 **Example**: `"reason_for_request": "directcare"`
 
@@ -204,7 +205,7 @@ Please the table below for which values to populate.
 | `patient/appointment.write` | Book / Cancel |Booking in an appointment | 
 | `organization/slot.read` | Slot Search |Searching for available slots |
 
-Providers should also read the associated [Security guidance](development_api_security_guidance.html#authorisation-of-access-to-endpoints) in relation to this claim.
+Providers should also read the associated [Security guidance](development_api_security_guidance.html#authorisation-of-access-to-endpoints) GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
 
 ---
 
@@ -281,7 +282,7 @@ To contain the logged on user's identifier(s) (for example, login details / user
 
 The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} fields:
 
-- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id){:target="_blank"} identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [`sub` (subject) claim](integration_cross_organisation_audit_and_provenance.html#sub-subject-claim).
+- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id){:target="_blank"} identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [`sub`](#sub-subject-claim).
 - `name` with:
   - `family` containing the user's family name
   - `given` containing the user's given name
