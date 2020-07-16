@@ -220,7 +220,7 @@ The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/
 - `model` with the consumer product or system name
 - `version` with the version number of the consumer product or system
 
-The [Device](https://www.hl7.org/fhir/STU3/device.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 
@@ -298,7 +298,7 @@ The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org
 
 {% include important.html content="Providers should be aware of variance in the population of the `identifier` field amongst existing consumer systems when reading this claim, specifically the latter two elements (SDS role profile ID, and local user identifier) are not always present." %}
 
-The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html)integration_cross_organisation_audit_and_provenance.html#sub-subject-claim resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} integration_cross_organisation_audit_and_provenance.html#sub-subject-claim resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 
