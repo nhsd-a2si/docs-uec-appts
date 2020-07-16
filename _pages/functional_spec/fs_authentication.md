@@ -7,7 +7,7 @@ toc: false
 folder: functional_spec
 ---
 
-Note: for GP Connect Authentication please see <a href="https://nhsconnect.github.io/gpconnect/development_api_security_guidance.html" target="_blank">here</a>
+Note: for GP Connect Authentication please see <a href="https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html" target="_blank">here</a>
 
 ## Introduction
 
