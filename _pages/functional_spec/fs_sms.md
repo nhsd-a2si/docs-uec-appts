@@ -1,5 +1,5 @@
 ---
-title: Appointment Types
+title: SMS For Appointments
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_sms.html
