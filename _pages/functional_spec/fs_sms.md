@@ -7,8 +7,6 @@ toc: false
 folder: functional_spec
 ---
 
-{% include note-notpublished.html %}
-
 {% include important.html content="Currently the below guidance is only in draft, it is published here for information only" %}
 
 Research '<link to reference here>' has shown that attendances for appointments are improved when a patient receives an SMS reminder for their appointment. Therefore we offer the following guidance on SMS messaging for appointments made to the UEC Booking Standard:
