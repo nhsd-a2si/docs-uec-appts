@@ -7,8 +7,6 @@ toc: false
 folder: deployment
 ---
 
-{% include note-notpublished.html %}
-
 Here you will find some links to testing files that will be useful for supplier product assurance:
 <p>
 <a href="_pages/deployment/toolkit/files/Care_Connect_Consumer_Assurance_Test_Scripts.xlsx" download>Care Connect **Consumer** Assurance Test Script (excel file)</a>
