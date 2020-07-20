@@ -16,6 +16,11 @@ There are several different types of deployment topologies for brokering API cal
 
 #### Simple Model
 
+![alt text](https://developer.nhs.uk/apis/spine-core/images/integration/consumer-topology1-simple.png "see: https://developer.nhs.uk/apis/spine-core/images/integration/consumer-topology1-simple.png"
+
+In this model, each different Care Connect consumer systems, all connecting directly to an appointment provider via the SSP. Each consumer in this example is registered as a CMA endpoint. The key point is that each consumer system has its own ASID
+
+
 #### Aggregator Model
 
 #### Single Practice System
