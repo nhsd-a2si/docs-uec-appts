@@ -14,13 +14,13 @@ There are several different types of deployment topologies for brokering API cal
 - [`Single Practice System`](#single-practice-system)
 - [`Data Centre Hosted Practice System`](#data-centre-hosted-practice-system)
 
-#### `Simple Model`
+#### Simple Model
 
-#### `Aggregator Model`
+#### Aggregator Model
 
-#### `Single Practice System`
+#### Single Practice System
 
-#### `Data Centre Hosted Practice System`
+#### Data Centre Hosted Practice System
 
 
 For further information, please see <a href="https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html" target="_blank">here (links to core SPINE documentation)</a>
