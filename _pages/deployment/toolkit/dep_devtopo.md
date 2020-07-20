@@ -7,6 +7,20 @@ toc: false
 folder: deployment
 ---
 
-{% include note-notpublished.html %}
+There are several different types of deployment topologies for brokering API calls through the SSP:
 
-<a href="https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html" target="_blank"></a>
+- [`Simple Model`](#simple-model) (simple)
+- [`Aggregator Model`](#aggregator-model) (aggregator)
+- [`Single Practice System`](#single-practice-model) (single)
+- [`Data Centre Hosted Practice System`](#datacentre-model) (datacentre)
+
+#### `Simple Model` (simple)
+
+#### `Aggregator Model` (aggregator)
+
+#### `Single Practice System` (single)
+
+#### `Data Centre Hosted Practice System` (datacentre)
+
+
+For further information, please see <a href="https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html" target="_blank">here (links to core SPINE documentation)</a>
