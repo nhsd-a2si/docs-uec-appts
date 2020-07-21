@@ -50,7 +50,7 @@ Finally, an appointment provider system instance hosted in a supplier’s data c
 ### See also:
 
 Legend for diagrams: 
-<img src="https://developer.nhs.uk/apis/spine-core/images/integration/provider-topology2-datacentre.png" alt="see: https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html">
+<img src="https://developer.nhs.uk/apis/spine-core/images/integration/topologies-legend.png" alt="see: https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html">
 
 
-For further information, please see <a href="https://developer.nhs.uk/apis/spine-core/images/integration/topologies-legend.png" target="_blank">here (links to core SPINE documentation)</a>
+For further information and source for this page, please see <a href="https://developer.nhs.uk/apis/spine-core/ssp_system_topologies.html" target="_blank">here</a> (links to core SPINE documentation)
