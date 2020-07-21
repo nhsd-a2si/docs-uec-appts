@@ -10,9 +10,10 @@ folder: introduction
 ## Current Release
 
 ### 0.1.15 ALPHA
+
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.15   | ALPHA | Alpha | Current Version | 24/07/2020 | Volatile
+0.1.15  | ALPHA   | Alpha | Current Version | 24/07/2020   | Volatile
 
 The 0.1.15 ALPHA release has the following highlights:
 
