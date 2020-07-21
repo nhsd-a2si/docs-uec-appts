@@ -9,6 +9,42 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.15 ALPHA
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.15  | ALPHA   | Alpha | Current Version | 24/07/2020   | Volatile
+
+The 0.1.15 ALPHA release has the following highlights:
+
+* First iteration of the deployment toolkit
+  * Path-to-Live guidance started (based on lessons learned so far)
+  * System Topoogies page added
+  * Testing resources for system suppliers added
+  * Testing resources for providers added
+* Made a slight wording change to the definition of appointment booking in the overview/definition page
+* Updated AUBS.22 wording to remove ambiguity over rebooking appointments
+* Updated the cancellation workflow page to have increased clarity over the different possible workflows and the sequence of events.
+* Added a placeholder page for future addition of support for "Delivery Channels"
+* Fixed some broken links on Authentication page and updated some elements with more detail
+* A new page providing guidence for Appointment Text Messages was added
+
+<br>
+<br>
+
+## Future releases
+
+### 0.2.0 BETA
+
+Version | Handle  | Phase | State           | Release Date (planned) | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.2.0   | BETA | Private Beta | Unreleased | 28/08/2020   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.14 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -21,22 +57,6 @@ The 0.1.14 PREVIEW release has the following highlights:
 * Tidied up some aspects of the reporting specification
 * Updated the demonstrator pages to reflect recent updates and a change for a future update
 * added Covid-19 Dx codes and fixed typos to the appointment mapping page
-
-<br>
-<br>
-
-## Future releases
-
-### 0.1.15 PREVIEW
-
-Version | Handle  | Phase | State           | Release Date | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.1.15   | PREVIEW | Alpha | Unreleased | 30/05/2020   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.13 PREVIEW
 

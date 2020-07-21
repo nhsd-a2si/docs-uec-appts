@@ -7,7 +7,7 @@ permalink: usep_abus12.html
 ## ABUS.12 Confirm/Book an Appointment Slot 
 **_In order_** that the patient can be assured that the provider will see them on or around the allotted time at the selected location 
 
-**_As a_** Integrated Urgent Care Sservice Provider
+**_As a_** Integrated Urgent Care Service Provider
 
 **_I want_** to confirm/book an offered appointment slot with the provider. 
 
