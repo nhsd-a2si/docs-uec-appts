@@ -55,12 +55,12 @@ Once you have the above pre-requisites you will need to <a href="https://digital
    (See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment" target="_blank">documentation</a> for more information) 
 5. Configure and check Certificate revocation (CRL checks) for both old (SHA1) and new (SHA2) root certs. 
    Note: They use different revocation methods 
-   * New (SHA2) needs the following:
+   * New method (SHA2) needs the following:
      * The SubCA/RootCA will point to this URL: "http://crl.nhs.uk/int/1c/crlc2.crl".  This location will download a CRL file locally and will add CRL checks in.
      * Local TLS should be configured to go check this file.  
       * It is on the INTERNET so please configure firewall outbound rules to be able to go to this URL over the internet. 
 
-   * Old (SHA1) needs the following: 
+   * Old method (SHA1) needs the following: 
      Note: The CDP is a relative request to an LDAP query, this is not live and not accessible. 
      * So the process required is to download the file and load it locally into the CRL cache and then configure the service to not check for a new file 
      * The CRL files can be downloaded from <a href="http://checkit/public/pki/crls.php" target="_blank">here</a>: "http://checkit/public/pki/crls.php".  
@@ -70,7 +70,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
      Note – you need to find the correct CRL file for the right SSP integration or live environment 
      * If you are using IIS:
         * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
-        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN). 
+        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; <a href="https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN" target="_blank">MSDN Article</a>). 
  
 ### End-to-End test
 
