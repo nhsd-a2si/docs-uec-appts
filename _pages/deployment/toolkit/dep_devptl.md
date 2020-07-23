@@ -18,13 +18,13 @@ During this stage, suppliers will conduct any initial engagement, research etc..
 
 ### Development Complete
 
-Once Development is complete, the sullplier can move onto Integration Testing.
+Once Development is complete, the suplier can move onto Integration Testing.
 
 
 ## Integration Testing
 
 Integration testing can be a challenging step. It involves gaining access to the SPINE Integration Environment (INT).
-There are a series of prerequestites and steps to complete before you can begin integration testing.
+There are a series of pre-requestites and steps to complete before you can begin integration testing.
 
 ### Pre-Requisites
  
@@ -46,7 +46,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
 ### Configure your environment to connect to SSP: 
 1. Install the cert you have been given to local cert store and bind you your site e.g. – *xxx.thirdparty.nhs.uk* etc 
 2. Configure your firewall to make outbound connections to: *https://proxy.int.spine2.ncrs.nhs.uk/[provider service root url]/[fhir request]* 
- * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#messaging-urls" targe"_blank">here</a> for more information 
+ * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#messaging-urls" target="_blank">here</a> for more information 
 3. Configure your firewall to receive connection inbound from msg-out.int.spine2.ncrs.nhs.uk  
  * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#outbound-network-address-translation-nat-addresses" target="_blank">here</a> for more information 
 4. Root CA and Sub CA installed in cert store and added to bindings for local site in SSL/TLS
