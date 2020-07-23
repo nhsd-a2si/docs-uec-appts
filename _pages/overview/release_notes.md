@@ -19,7 +19,7 @@ The 0.1.15 ALPHA release has the following highlights:
 
 * First iteration of the deployment toolkit
   * Path-to-Live guidance started (based on lessons learned so far)
-  * System Topoogies page added
+  * System Topologies page added
   * Testing resources for system suppliers added
   * Testing resources for providers added
 * Made a slight wording change to the definition of appointment booking in the overview/definition page
