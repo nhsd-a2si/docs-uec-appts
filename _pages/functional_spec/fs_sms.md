@@ -9,7 +9,7 @@ folder: functional_spec
 
 {% include important.html content="Currently the below guidance is only in draft, it is published here for information only" %}
 
-Research '''link to reference here''' has shown that attendances for appointments are improved when a patient receives an SMS reminder for their appointment. Therefore we offer the following guidance on SMS messaging for appointments made to the UEC Booking Standard:
+Research (currently unpublished) has shown that attendances for appointments are improved when a patient receives an SMS reminder for their appointment. Therefore we offer the following guidance on SMS messaging for appointments made to the UEC Booking Standard:
 
 ### Appointment consumers:
 *	SHOULD send an SMS confirmation to any patients that have provided mobile numbers and consented during the booking process.

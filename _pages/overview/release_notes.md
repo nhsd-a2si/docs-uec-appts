@@ -18,16 +18,17 @@ Version | Handle  | Phase | State           | Release Date | Stability
 The 0.1.15 ALPHA release has the following highlights:
 
 * First iteration of the deployment toolkit
-  * Path-to-Live guidance started (based on lessons learned so far)
-  * System Topoogies page added
-  * Testing resources for system suppliers added
-  * Testing resources for providers added
-* Made a slight wording change to the definition of appointment booking in the overview/definition page
-* Updated AUBS.22 wording to remove ambiguity over rebooking appointments
-* Updated the cancellation workflow page to have increased clarity over the different possible workflows and the sequence of events.
-* Added a placeholder page for future addition of support for "Delivery Channels"
-* Fixed some broken links on Authentication page and updated some elements with more detail
-* A new page providing guidence for Appointment Text Messages was added
+  * <a href="dep_devptl.html" target="_blank">Path-to-Live guidance started (based on lessons learned so far)</a>
+  * <a href="dep_devtopo.html" target="_blank">System Topologies page added</a>
+  * <a href="dep_devtest.html" target="_blank">Testing resources for system suppliers added</a>
+  * <a href="dep_provtest.html" target="_blank">Testing resources for providers added</a>
+* <a href="definition.html" target="_blank">Made a slight wording change to the definition of appointment booking in the overview/definition page</a>
+* <a href="usee_abus22.html" target="_blank">Updated user story: AUBS.22 wording to remove ambiguity over rebooking appointments</a>
+* <a href="cr_workflow.html" target="_blank">Updated the cancellation workflow page to have increased clarity over the different possible workflows and the sequence of events.</a>
+* <a href="fs_deliverychannel.html" target="_blank">Added a placeholder page for addition of support for "Delivery Channels" (due in the next release)</a>
+* <a href="fs_authentication.html" target="_blank">Fixed some broken links on Authentication page and updated some elements with more detail</a>
+* <a href="fs_sms.html" target="_blank">A new page providing (draft) guidence for Appointment Text Messages was added</a>
+* <a href="assurance_overview.html" target="_blank">Updated the assurance process overview to reflect the current iteration of the process</a>
 
 <br>
 <br>
