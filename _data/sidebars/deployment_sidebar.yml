@@ -1,0 +1,40 @@
+entries: 
+  - 
+    folders: 
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: Overview
+            url: /deployment_toolkit.html         
+        output: web
+        title: Overview
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Path to Live"
+            url: /dep_devptl.html
+          - 
+            output: "web, pdf"
+            title: "System topologies"
+            url: /dep_devtopo.html          
+          - 
+            output: "web, pdf"
+            title: "Testing Resources"
+            url: /dep_devtest.html   
+        output: web
+        title: Suppliers
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Overview"
+            url: /dep_provoverview.html
+          - 
+            output: "web, pdf"
+            title: "Testing Resources"
+            url: /dep_provtest.html  
+        output: web
+        title: Providers     
+    title: "Urgent & Emergency Care Appointment Booking Standards - Deployment Toolkit"

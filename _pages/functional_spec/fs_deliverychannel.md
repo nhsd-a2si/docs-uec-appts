@@ -1,8 +1,8 @@
 ---
-title: Appointment Types
+title: Delivery Channels
 sidebar: overview_sidebar
 keywords: specification
-permalink: fs_appointmenttypes.html
+permalink: fs_deliverychannel.html
 toc: false
 folder: functional_spec
 ---

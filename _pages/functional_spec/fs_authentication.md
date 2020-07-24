@@ -7,7 +7,16 @@ toc: false
 folder: functional_spec
 ---
 
-Note: for GP Connect Authentication please see <a href="https://nhsconnect.github.io/gpconnect/development_api_security_guidance.html" target="_blank">here</a>
+
+[//]: # (Broken Links by line number below:)
+[//]: # (60 - security_authorisation.html)
+[//]: # (152 - development_general_api_guidance.html#service-root-url - linked to GPC section)
+[//]: # (154 - integration_spine_directory_service.html - DELETED)
+[//]: # (208 - development_api_security_guidance.html#authorisation-of-access-to-endpoints - linked to GPC section)
+[//]: # (284 - integration_cross_organisation_audit_and_provenance.html#sub-subject-claim - fixed link so now points at own documentation)
+[//]: # (<DR> These look to be relative links to GP Connect documentation?? - I have made them absolute but will need to check with KG)
+
+Note: for GP Connect Authentication please see <a href="https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html" target="_blank">here</a>
 
 ## Introduction
 
@@ -48,7 +57,7 @@ When a new consumer or provider system is assured for booking using the Care Con
 
 ## Use of bearer tokens
 
-An output of [authorising access](security_authorisation.html) to an API is the provision of a JSON Web Token. This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
+An output of authorising access to an API is the provision of a JSON Web Token (see GP Connect documentation for some more guidance on this subject: [authorising access](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html#authorisation-of-access-to-endpoints){:target="_blank"} for UEC booking (Care Connect) the same guidance applies). This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
 
 In order to achieve this, the Consumer MUST include Access token in the HTTP authorisation header as an oAuth Bearer Token (as outlined in [RFC 6749](https://tools.ietf.org/html/rfc6749){:target="_blank"}) in the form of a JSON Web Token (JWT) as defined in [RFC 7519](https://tools.ietf.org/html/rfc7519){:target="_blank"}.
 
@@ -58,9 +67,9 @@ An example such an HTTP header is given below:
      Authorization: Bearer jwt_token_string
 ```
 
-API Provider systems SHALL respond to oAuth Bearer Token errors in line with [RFC 6750 - section 3.1](https://tools.ietf.org/html/rfc6750#section-3.1).
+API Provider systems SHALL respond to oAuth Bearer Token errors in line with [RFC 6750 - section 3.1](https://tools.ietf.org/html/rfc6750#section-3.1){:target="_blank"}.
 
-It is highly recommended that standard libraries are used for creating the JWT as constructing and encoding the token manually may lead to issues with parsing the token. A good source of information about JWT and libraries to use can be found on the [JWT.io site](https://jwt.io/)
+It is highly recommended that standard libraries are used for creating the JWT as constructing and encoding the token manually may lead to issues with parsing the token. A good source of information about JWT and libraries to use can be found on the [JWT.io site](https://jwt.io/){:target="_blank"}
 
 
 ## JWT without an Authorisation Server ##
@@ -140,11 +149,13 @@ ID for the user on whose behalf this request is being made. Matches [`requesting
 
 #### `aud` (audience) claim
 
-The [service root URL](development_general_api_guidance.html#service-root-url) of the provider system.
+The service root URL of the provider system.
 
-This is the value returned from the [SDS endpoint lookup service](integration_spine_directory_service.html) in the `nhsMhsEndPoint` field.
+This is the value returned from the SDS endpoint lookup service in the `nhsMhsEndPoint` field.
 
 **Example**: `"aud": "https://providersupplier.thirdparty.nhs.uk/STU3/1"`
+<br>
+(Please see GP Connect documentation for more guidance on this subject: [service root URL](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_general_api_guidance.html#service-root-url){:target="_blank"} for UEC booking (Care Connect) the same guidance applies).
 
 ---
 
@@ -154,7 +165,7 @@ Identifies the expiration time in UTC on and after which the JWT **SHALL NOT** b
 
 The expiration time **SHALL** be set to 5 minutes after the token creation time (populated in the [`iat` claim](#iat-issued-at-claim)).
 
-The value must be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time).
+The value must be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time){:target="_blank"}.
 
 Providers **SHALL** reject requests with expired tokens.
 
@@ -168,7 +179,7 @@ Providers **SHALL** reject requests with expired tokens.
 
 The time the request and token were generated in UTC.
 
-The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time).
+The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00 UTC, i.e. [UNIX time](https://en.wikipedia.org/wiki/Unix_time){:target="_blank"}.
 
 **Example**: `"iat": 1469436687`
 
@@ -178,7 +189,7 @@ The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00
 
 The purpose for which access is being requested.
 
-As GP Connect only supports usage for direct care, this value **SHALL** be set to `directcare`.
+As UEC apointment booking only supports usage for direct care, this value **SHALL** be set to `directcare`.
 
 **Example**: `"reason_for_request": "directcare"`
 
@@ -190,20 +201,20 @@ The scope of the request.
 
 Please the table below for which values to populate.
 
-| Claim value | Description |
-|-------|-------------|
-| `patient/appointment.write` | Booking in an appointment | 
-| `organization/slot.read` | Searching for available slots |
+| Claim value | Operation | Description |
+|-------|-------|-------------|
+| `patient/appointment.write` | Book / Cancel |Booking in an appointment | 
+| `organization/slot.read` | Slot Search |Searching for available slots |
 
-Providers should also read the associated [Security guidance](development_api_security_guidance.html#authorisation-of-access-to-endpoints) in relation to this claim.
+Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html){:target="_blank"} GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
 
 ---
 
 #### `requesting_device` claim
 
-The system or device making the request, populated as a minimal [Device](https://www.hl7.org/fhir/STU3/device.html) resource.
+The system or device making the request, populated as a minimal [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} resource.
 
-The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/STU3/device.html) fields:
+The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} fields:
 
 - an `identifier` element, with:
   - `system` containing a consumer-defined system URL representing the type of identifier in the value field, e.g. `https://consumersupplier.com/Id/device-identifier`
@@ -211,7 +222,7 @@ The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/
 - `model` with the consumer product or system name
 - `version` with the version number of the consumer product or system
 
-The [Device](https://www.hl7.org/fhir/STU3/device.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 
@@ -232,9 +243,9 @@ The [Device](https://www.hl7.org/fhir/STU3/device.html) resource populated in th
 
 #### `requesting_organization` claim
 
-The consumer organisation making the request, populated as a minimal [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource.
+The consumer organisation making the request, populated as a minimal [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} resource.
 
-The consumer **SHALL** populate the following [Organization](https://www.hl7.org/fhir/STU3/organization.html) fields:
+The consumer **SHALL** populate the following [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} fields:
 
 - `name` with the name of the organisation
 - an `identifier` element, with:
@@ -244,7 +255,7 @@ The consumer **SHALL** populate the following [Organization](https://www.hl7.org
 {% include important.html content="In consumer system topologies where consumer applications are provisioned via a portal or middleware hosted by another organisation, it is vital for audit purposes that the organisation populated in the JWT reflects the organisation from where the request originates, rather than the hosting organisation.<br/>
 This is normally determined as the organisation of the logged on user making the request." %}
 
-The [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 
@@ -264,15 +275,15 @@ The [Organization](https://www.hl7.org/fhir/STU3/organization.html) resource pop
 
 #### `requesting_practitioner` claim
 
-The user making the request, populated as a minimal [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) resource.
+The user making the request, populated as a minimal [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} resource.
 
 To contain the logged on user's identifier(s) (for example, login details / username). Where the user has both a local system user role as well as a nationally-recognised user role, then both **SHALL** be provided.
 
 {% include important.html content="This field **SHALL NOT** be populated with fixed values or a generic \"system\" user. The values **SHALL** represent the logged on user making the request." %}
 
-The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) fields:
+The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} fields:
 
-- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id) identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [`sub` (subject) claim](integration_cross_organisation_audit_and_provenance.html#sub-subject-claim).
+- `id` with a unique [logical](https://www.hl7.org/fhir/STU3/resource.html#id){:target="_blank"} identifier (e.g. user ID or GUID) for the logged on user. This **SHALL** match the value of the [sub](#sub-subject-claim) claim.
 - `name` with:
   - `family` containing the user's family name
   - `given` containing the user's given name
@@ -289,7 +300,7 @@ The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org
 
 {% include important.html content="Providers should be aware of variance in the population of the `identifier` field amongst existing consumer systems when reading this claim, specifically the latter two elements (SDS role profile ID, and local user identifier) are not always present." %}
 
-The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html) resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} integration_cross_organisation_audit_and_provenance.html#sub-subject-claim resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
 
 **Example**:
 

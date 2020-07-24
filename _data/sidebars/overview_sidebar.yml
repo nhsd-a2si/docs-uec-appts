@@ -3,7 +3,7 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.14 PREVIEW"
+    version: "v0.1.15 ALPHA"
     spec: "STU3 | FHIR NHS Scheduling | 1.0.6-alpha"
     speclink: "https://developer.nhs.uk/apis/nhsscheduling-1.0.6-alpha/"
     folders: 
@@ -91,6 +91,10 @@ entries:
             title: "Slot Management"
             output: "web, pdf"            
             url: /fs_slotmanagement.html
+          - 
+            title: "Delivery Channel"
+            output: "web, pdf"            
+            url: /fs_deliverychannel.html
           -
             title: "Authentication"
             output: "web, pdf"
@@ -107,6 +111,10 @@ entries:
             title: "Transfer of Care"
             output: "web, pdf"
             url: /fs_xfercare.html
+          -
+            title: "SMS For Appointments"
+            output: "web, pdf"
+            url: /fs_sms.html"
           -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"
