@@ -88,7 +88,7 @@ TBC
 
 TBC
 
-### End-User Organisation Connection Policy (EUOCP)
+### Live Install
 
 TBC
 
