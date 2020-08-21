@@ -92,7 +92,7 @@ entries:
             output: "web, pdf"            
             url: /fs_slotmanagement.html
           - 
-            title: "Delivery Channel"
+            title: "Consumer Slot Display Requirements"
             output: "web, pdf"            
             url: /fs_deliverychannel.html
           -
