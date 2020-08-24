@@ -84,7 +84,7 @@ entries:
             output: "web, pdf"            
             url: /dos_overview.html
           -
-            title: "How appointments map to clinic need"
+            title: "How appointments map to clinical need"
             output: "web, pdf"
             url: /fs_slotmap.html
           - 
