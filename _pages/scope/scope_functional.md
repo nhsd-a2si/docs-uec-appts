@@ -29,7 +29,7 @@ For UEC booking not using GP Connect:
 A national solution should support the full range of workflow actions expected from an appointment booking system.
 
 ## Patient Access to the booking system(s)
-* No direct access to the booking capability by the patient is currently envisaged but might be required in the future  
+* This standard supports direct access to the booking capability by patients
 
 ## Monitoring, Analytics and Reporting 
 * Provider systems SHALL audit all API access and actions.
