@@ -1,13 +1,11 @@
 ---
-title: How times should be handled
+title: Principle of operation regarding times:
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_times.html
 toc: false
 folder: functional_spec
 ---
-
-## Principle of operation regarding times:
 	
 * All times included in the API messages MUST be in FHIR Instant format (```YYYY-MM-DDThh:mm:ss.sss+zz:zz```)
   * e.g. ```YearMonth-DayTHours:Minutes:Seconds+OffsetFromUTC``` 
