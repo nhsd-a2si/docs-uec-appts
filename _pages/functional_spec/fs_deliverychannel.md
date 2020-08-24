@@ -11,9 +11,9 @@ There are a number of fields that are supported by the standard when retrieving 
 
 In order to prevent incorrect or unsuitable bookings, and to allow a patient to attend the appointment at the correct time, place or via the correct delivery channel, consumer systems **SHALL** support the following fields: 
 
-- Start date and time <span style="color:blue">`provider:mandatory`</span>
-- End date and time, or duration `mandatory`
-- Delivery channel (in-person, telephone, video) `optional`
-- Location name and address `optional`
-- Practitioner role (e.g. General Medical Practitioner, Nurse) `optional`
-- Practitioner name and gender `optional`
+- Start date and time `mandatory (Consumer)` `mandatory (Provider)`
+- End date and time, or duration `mandatory (Consumer)` `mandatory (Provider)`
+- Delivery channel (in-person, telephone, video) `mandatory (Consumer)` `optional (Provider)`
+- Location name and address `mandatory (Consumer)` `optional (Provider)`
+- Practitioner role (e.g. General Medical Practitioner, Nurse) `mandatory (Consumer)` `optional (Provider)`
+- Practitioner name and gender `mandatory (Consumer)` `optional (Provider)`
