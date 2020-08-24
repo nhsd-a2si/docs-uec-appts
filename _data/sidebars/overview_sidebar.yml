@@ -84,17 +84,21 @@ entries:
             output: "web, pdf"            
             url: /dos_overview.html
           -
-            title: "Appointment Mapping"
+            title: "How appointments map to clinic need"
             output: "web, pdf"
             url: /fs_slotmap.html
           - 
-            title: "Slot Management"
+            title: "How appointments map to services"
             output: "web, pdf"            
             url: /fs_slotmanagement.html
           - 
-            title: "Consumer Slot Display Requirements"
+            title: "Slot Display Requirements"
             output: "web, pdf"            
             url: /fs_deliverychannel.html
+          -
+            title: "How to handle times"
+            output: "web, pdf"
+            url: /fs_times.html
           -
             title: "Authentication"
             output: "web, pdf"
@@ -104,7 +108,7 @@ entries:
             output: "web, pdf"
             url: /er_overview.html
           -
-            title: "Appointment Management (Cancel and Rebook)"
+            title: "Cancelling Appointments"
             output: "web, pdf"
             url: /cr_overview.html
           -
