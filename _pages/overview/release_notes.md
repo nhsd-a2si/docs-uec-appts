@@ -57,7 +57,7 @@ Version | Handle  | Phase | State           | Release Date (planned) | Stability
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.15  | ALPHA   | Alpha | Current Version | 24/07/2020   | Volatile
+0.1.15  | ALPHA   | Alpha | Released | 24/07/2020   | Volatile
 
 The 0.1.15 ALPHA release has the following highlights:
 
@@ -78,7 +78,7 @@ The 0.1.15 ALPHA release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.14   | PREVIEW | Alpha | Current Version | 05/05/2020 | Volatile
+0.1.14   | PREVIEW | Alpha | Released | 05/05/2020 | Volatile
 
 The 0.1.14 PREVIEW release has the following highlights:
 * Updated the FHIR specification version to 1.0.6-alpha
@@ -91,7 +91,7 @@ The 0.1.14 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.13   | PREVIEW | Alpha | Current Version | 07/02/2020 | Volatile
+0.1.13   | PREVIEW | Alpha | Released | 07/02/2020 | Volatile
 
 The 0.1.13 PREVIEW release has the following highlights:
 * **Updated all functional specification pages where the ASID being included in the search parameters of FHIR queries is referenced. This has been changed to the more generic Healthcare Service ID and where appropriate direct reference to the DoS Service ID**
@@ -113,7 +113,7 @@ The 0.1.13 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.12   | PREVIEW | Alpha | Current Version | 19/11/2019 | Volatile
+0.1.12   | PREVIEW | Alpha | Released | 19/11/2019 | Volatile
 
 The 0.1.12 PREVIEW release has the following highlights:
 
@@ -129,7 +129,7 @@ The 0.1.12 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.11   | PREVIEW | Alpha | Current Version | 14/10/2019 | Volatile
+0.1.11   | PREVIEW | Alpha | Released | 14/10/2019 | Volatile
 
 The 0.1.11 PREVIEW release has the following highlights:
 
@@ -151,7 +151,7 @@ The 0.1.11 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.10   | PREVIEW | Alpha | Current Version |26/07/2019   | Volatile
+0.1.10   | PREVIEW | Alpha | Released |26/07/2019   | Volatile
 
 **The 0.1.10 PREVIEW release has the following highlights:**
 
@@ -170,7 +170,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.9   | PREVIEW | Alpha | Current Version | 14/06/2019   | Volatile
+0.1.9   | PREVIEW | Alpha | Released | 14/06/2019   | Volatile
 
 **The 0.1.9 PREVIEW release has the following highlights:**
 
