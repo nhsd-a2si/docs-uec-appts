@@ -18,18 +18,18 @@ Version | Handle  | Phase | State           | Release Date | Stability
 The 0.1.16 ALPHA release has the following highlights:
 
 * <a href="" target="_blank">Update of FHIR Specification to 2.0.0-beta</a>
- - <a href="" target="_blank">Renamed from NHS FHIR Scheduling API to NHS FHIR Booking API.</a>
- - <a href="" target="_blank">Updated Appointment guidance to include mandatory Appointment.end to align with the FHIR standard.</a>
- - <a href="" target="_blank">Updated Appointment.created guidance to align with the FHIR standard.</a>
- - <a href="" target="_blank">Updated Appointment.contained to include Slot as a contained resource.</a>
- - <a href="" target="_blank">Updated Appointment examples.</a>
- - <a href="" target="_blank">Updated Patient identifier guidance in line with <a href='https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1' target="_blank">CareConnect-Patient-1</a> profile.</a>
- - <a href="" target="_blank">Updated 'success' behaviour for cancelling an Appointment.</a>
- - <a href="" target="_blank">Updated Slot elements.</a>
- - <a href="" target="_blank">Updated 'Search for free slots' example.</a>
- - <a href="" target="_blank">Updated 'Search for appointments' example.</a>
- - <a href="" target="_blank">Updated 'Get an appointment' examples.</a>
- - <a href="" target="_blank">Updated development guidance on validating resources.</a>
+   - <a href="" target="_blank">Renamed from NHS FHIR Scheduling API to NHS FHIR Booking API.</a>
+   - <a href="" target="_blank">Updated Appointment guidance to include mandatory Appointment.end to align with the FHIR standard.</a>
+   - <a href="" target="_blank">Updated Appointment.created guidance to align with the FHIR standard.</a>
+   - <a href="" target="_blank">Updated Appointment.contained to include Slot as a contained resource.</a>
+   - <a href="" target="_blank">Updated Appointment examples.</a>
+   - <a href="" target="_blank">Updated Patient identifier guidance in line with <a href='https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1' target="_blank">CareConnect-Patient-1</a> profile.</a>
+   - <a href="" target="_blank">Updated 'success' behaviour for cancelling an Appointment.</a>
+   - <a href="" target="_blank">Updated Slot elements.</a>
+   - <a href="" target="_blank">Updated 'Search for free slots' example.</a>
+   - <a href="" target="_blank">Updated 'Search for appointments' example.</a>
+   - <a href="" target="_blank">Updated 'Get an appointment' examples.</a>
+   - <a href="" target="_blank">Updated development guidance on validating resources.</a>
 * <a href="fs_times.html" target="_blank">Created a new page describing how to handle times</a>
 * <a href="fs_workflow.html#how-times-should-be-handled" target="_blank">References to times have been updated to refer to new page on times</a>
 * The "functional specification" menu items were updated to more clearly reflect content
