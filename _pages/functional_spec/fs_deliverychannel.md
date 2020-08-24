@@ -1,5 +1,5 @@
 ---
-title: Consumer Slot Display Requirements
+title: Slot Display Requirements
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_deliverychannel.html
@@ -11,7 +11,7 @@ There are a number of fields that are supported by the standard when retrieving 
 
 In order to prevent incorrect or unsuitable bookings, and to allow a patient to attend the appointment at the correct time, place or via the correct delivery channel, consumer systems **SHALL** support the following fields: 
 
-- Start date and time `mandatory`
+- Start date and time <span style="color:blue">`provider:mandatory`</span>
 - End date and time, or duration `mandatory`
 - Delivery channel (in-person, telephone, video) `optional`
 - Location name and address `optional`
