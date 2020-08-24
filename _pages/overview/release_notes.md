@@ -9,26 +9,33 @@ folder: introduction
 
 ## Current Release
 
-### 0.1.15 ALPHA
+### 0.1.16 ALPHA
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.15  | ALPHA   | Alpha | Current Version | 24/07/2020   | Volatile
+0.1.16  | ALPHA   | Alpha | Current Version | 28/08/2020   | Volatile
 
-The 0.1.15 ALPHA release has the following highlights:
+The 0.1.16 ALPHA release has the following highlights:
 
-* First iteration of the deployment toolkit
-  * <a href="dep_devptl.html" target="_blank">Path-to-Live guidance started (based on lessons learned so far)</a>
-  * <a href="dep_devtopo.html" target="_blank">System Topologies page added</a>
-  * <a href="dep_devtest.html" target="_blank">Testing resources for system suppliers added</a>
-  * <a href="dep_provtest.html" target="_blank">Testing resources for providers added</a>
-* <a href="definition.html" target="_blank">Made a slight wording change to the definition of appointment booking in the overview/definition page</a>
-* <a href="usee_abus22.html" target="_blank">Updated user story: AUBS.22 wording to remove ambiguity over rebooking appointments</a>
-* <a href="cr_workflow.html" target="_blank">Updated the cancellation workflow page to have increased clarity over the different possible workflows and the sequence of events.</a>
-* <a href="fs_deliverychannel.html" target="_blank">Added a placeholder page for addition of support for "Delivery Channels" (due in the next release)</a>
-* <a href="fs_authentication.html" target="_blank">Fixed some broken links on Authentication page and updated some elements with more detail</a>
-* <a href="fs_sms.html" target="_blank">A new page providing (draft) guidence for Appointment Text Messages was added</a>
-* <a href="assurance_overview.html" target="_blank">Updated the assurance process overview to reflect the current iteration of the process</a>
+* <a href="" target="_blank">Update of FHIR Specification to 2.0.0-beta</a>
+ - <a href="" target="_blank">Renamed from NHS FHIR Scheduling API to NHS FHIR Booking API.</a>
+ - <a href="" target="_blank">Updated Appointment guidance to include mandatory Appointment.end to align with the FHIR standard.</a>
+ - <a href="" target="_blank">Updated Appointment.created guidance to align with the FHIR standard.</a>
+ - <a href="" target="_blank">Updated Appointment.contained to include Slot as a contained resource.</a>
+ - <a href="" target="_blank">Updated Appointment examples.</a>
+ - <a href="" target="_blank">Updated Patient identifier guidance in line with <a href='https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1' target="_blank">CareConnect-Patient-1</a> profile.</a>
+ - <a href="" target="_blank">Updated 'success' behaviour for cancelling an Appointment.</a>
+ - <a href="" target="_blank">Updated Slot elements.</a>
+ - <a href="" target="_blank">Updated 'Search for free slots' example.</a>
+ - <a href="" target="_blank">Updated 'Search for appointments' example.</a>
+ - <a href="" target="_blank">Updated 'Get an appointment' examples.</a>
+ - <a href="" target="_blank">Updated development guidance on validating resources.</a>
+* <a href="fs_times.html" target="_blank">Created a new page describing how to handle times</a>
+* <a href="fs_workflow.html#how-times-should-be-handled" target="_blank">References to times have been updated to refer to new page on times</a>
+* The "functional specification" menu items were updated to more clearly reflect content
+* <a href="scope_functional.html" target="_blank">The Functional Scope page was updated to move Emergency Departments and Patient facing uses into scope</a>
+* <a href="fs_deliverychannel.html" target="_blank">A new page documenting requirements for displaying slots, including explicit reference to delivery channel was added</a>
+* <a href="" target="_blank">The conformance catalogue page was updated to remove unnecessary reference to GP Connect and change the format and content to reflect the current status of suppliers </a>
 
 <br>
 <br>
