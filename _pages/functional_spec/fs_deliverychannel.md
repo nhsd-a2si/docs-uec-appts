@@ -11,7 +11,7 @@ There are a number of fields that are supported by the standard when retrieving 
 
 In order to prevent incorrect or unsuitable bookings, and to allow a patient to attend the appointment at the correct time, place or via the correct delivery channel, consumer systems **SHALL** support the following fields: 
 
-- Start date and time <mark style="background-color: blue;font: Courier New">mandatory (Consumer)</mark> `mandatory (Provider)`
+- Start date and time <mark style="background-color: blue;font-family: Courier New, Courier, monospace">mandatory (Consumer)</mark> `mandatory (Provider)`
 - End date and time, or duration `mandatory (Consumer)` `mandatory (Provider)`
 - Delivery channel (in-person, telephone, video) `mandatory (Consumer)` `optional (Provider)`
 - Location name and address `mandatory (Consumer)` `optional (Provider)`
