@@ -47,7 +47,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
-        <tr>
+              <tr>
                 <td>Cleo Systems</td>
                 <td>v0.1.15 ALPHA</td>
                 <td>v1.0.6 ALPHA</td>
@@ -56,7 +56,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
-        <tr>
+              <tr>
                 <td>Cleric</td>
                 <td>v0.1.15 ALPHA</td>
                 <td>v1.0.6 ALPHA</td>
