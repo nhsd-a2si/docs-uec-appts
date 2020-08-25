@@ -29,9 +29,9 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <table class="pure-table pure-table-bordered"> 
             <thead>
               <tr>
-                <th data-field="ID" data-sortable="true">Item ID</th>
-                <th data-field="Capability" data-sortable="true">Capability</th>
                 <th data-field="Supplier" data-sortable="true">Supplier</th>
+                <th data-field="Standard" data-sortable="true">Standard Version</th>
+                <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>                
                 <th data-field="Comments" data-sortable="true">Comments</th>
               </tr>
@@ -39,68 +39,15 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <tbody>        
       <!------------------------------ROW----------------------------------->        
               <tr>
-                <td rowspan="3">1</td>
-                <td rowspan="3">Book an appointment</td>
                 <td>Advanced</td>
+                <td>v0.1.15 ALPHA</td>
+                <td>v1.0.6 ALPHA</td>
                 <td style="background-color: #0099ff;">Development</td>                
-                <td rowspan="3">Ability to search and book an appointment</td>
+                <td>Ability to search and book an appointment</td>
               </tr>  
-              <tr>
-                <td>IC24</td>
-                <td style="background-color: #0099ff;">Development</td>                       
-              </tr>
-              <tr>
-                <td>Cleric</td>
-                <td>Not Started</td>                    
-              </tr>    
+                 
       <!------------------------------ROW----------------------------------->             
-              <tr>
-                <td rowspan="3">2</td>
-                <td rowspan="3">Cancel - During a consultation</td>
-                <td>Advanced</td>
-                <td style="background-color: #bde9ba;">Ready</td>               
-                <td rowspan="3">Ability to cancel an appointment during a telephone call</td>
-              </tr>  
-              <tr>
-                <td>IC24</td>
-                <td style="background-color: #0099ff;">Development</td>                   
-              </tr>
-              <tr>
-                <td>Cleric</td>
-                <td>Not Started</td>                   
-              </tr>
-      <!------------------------------ROW----------------------------------->             
-              <tr>
-                <td rowspan="3">3</td>
-                <td rowspan="3">Cancel - After a consultation (Same 111 Provider)</td>
-                <td>Advanced</td>
-                <td style="background-color: #0099ff;">Development</td>               
-                <td rowspan="3">Ability to cancel an appointment after the telephone call has been competed.  By the same 111 provider </td>
-              </tr>  
-              <tr>
-                <td>IC24</td>
-                <td style="background-color: #0099ff;">Development</td>                       
-              </tr>
-              <tr>
-                <td>Cleric</td>
-                <td>Not Started</td>                        
-              </tr>     
-      <!------------------------------ROW----------------------------------->             
-              <tr>
-                <td rowspan="3">4</td>
-                <td rowspan="3">Appointment Warnings</td>
-                <td>Advanced</td>
-                <td>Not started</td>               
-                <td rowspan="3">Present a warning when booking outside a disposition timeframe</td>
-              </tr>  
-              <tr>
-                <td>IC24</td>               
-                <td style="background-color: #bde9ba;">Ready</td>         
-              </tr>
-              <tr>
-                <td>Cleric</td>                
-                <td>Not Started</td>         
-              </tr>      
+             
             </tbody>
       </table> 
       </p>
