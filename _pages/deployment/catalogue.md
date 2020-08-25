@@ -30,7 +30,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <thead>
               <tr>
                 <th data-field="Supplier" data-sortable="true">Supplier</th>
-                <th data-field="Product" data-sortable="true">Supplier</th>
+                <th data-field="Product" data-sortable="true">Product</th>
                 <th data-field="Standard" data-sortable="true">Standard Version</th>
                 <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>                
@@ -89,7 +89,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <thead>
               <tr>
                 <th data-field="Supplier" data-sortable="true">Supplier</th>
-                <th data-field="Product" data-sortable="true">Supplier</th>
+                <th data-field="Product" data-sortable="true">Product</th>
                 <th data-field="Standard" data-sortable="true">Standard Version</th>
                 <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>                
