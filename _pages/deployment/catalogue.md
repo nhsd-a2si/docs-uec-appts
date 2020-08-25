@@ -40,8 +40,8 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->        
               <tr>
                 <td>Advanced</td>
-                <td>v0.1.15 ALPHA</td>
-                <td>v1.0.6 ALPHA</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">v0.1.15 ALPHA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightSkyBlue;">Assurance</td>                
                 <td></td>
               </tr>  
@@ -49,8 +49,8 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td>Cleo Systems</td>
-                <td>v0.1.15 ALPHA</td>
-                <td>v1.0.6 ALPHA</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">v0.1.15 ALPHA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightSkyBlue;">Assurance</td>                
                 <td></td>
               </tr>  
@@ -58,8 +58,8 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td>Cleric</td>
-                <td>v0.1.15 ALPHA</td>
-                <td>v1.0.6 ALPHA</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">v0.1.15 ALPHA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: Linen;">Development</td>                
                 <td></td>
               </tr>  
