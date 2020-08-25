@@ -39,7 +39,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <tbody>        
       <!------------------------------ROW----------------------------------->        
               <tr>
-                <td>Advanced</td>
+                <td style="font-size:small">Advanced</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightSkyBlue;">Assurance</td>                
