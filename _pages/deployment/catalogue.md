@@ -21,8 +21,8 @@ Each setting is split into the relevent use cases. For each use case every suppl
 <p>
      
 <div class="wrap-collabsible">
-  <input id="collapsible2" class="toggle" type="checkbox">
-  <label for="collapsible2" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
+  <input id="collapsible1" class="toggle" type="checkbox">
+  <label for="collapsible1" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
   <div class="collapsible-content">
     <div class="content-inner">
       <p>        
@@ -74,42 +74,56 @@ Each setting is split into the relevent use cases. For each use case every suppl
 
 <p>
      
+    
 <div class="wrap-collabsible">
-  <input id="collapsible3" class="toggle" type="checkbox">
-  <label for="collapsible3" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Provider</label>
+  <input id="collapsible2" class="toggle" type="checkbox">
+  <label for="collapsible2" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Provider</label>
   <div class="collapsible-content">
     <div class="content-inner">
       <p>        
       <table class="pure-table pure-table-bordered"> 
             <thead>
               <tr>
-                <th data-field="ID" data-sortable="true">Item ID</th>
-                <th data-field="Capability" data-sortable="true">Capability</th>
                 <th data-field="Supplier" data-sortable="true">Supplier</th>
+                <th data-field="Standard" data-sortable="true">Standard Version</th>
+                <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>                
                 <th data-field="Comments" data-sortable="true">Comments</th>
               </tr>
             </thead>
             <tbody>        
-      <!------------------------------ROW----------------------------------->     
+      <!------------------------------ROW----------------------------------->        
               <tr>
-                <td>1</td>
-                <td>Book an appointment</td>
-                <td>IC24</td>                
-                <td>Not Started</td>
-                <td>Ability to search and book an appointment </td>
-              </tr>                  
-      <!------------------------------ROW----------------------------------->    
+                <td>Advanced</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
+                <td style="background-color: LightSkyBlue;">Assurance</td>                
+                <td></td>
+              </tr>  
+                 
+      <!------------------------------ROW----------------------------------->             
               <tr>
-                <td>2</td>
-                <td>Cancel an appointment </td>
-                <td>IC24</td>
-                <td>Not started</td>
-                <td>Ability to search and cancel an appointment</td>
-              </tr>                   
+                <td>Cleo Systems</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
+                <td style="background-color: LightSkyBlue;">Assurance</td>                
+                <td></td>
+              </tr>  
+                 
+      <!------------------------------ROW----------------------------------->             
+              <tr>
+                <td>Cleric</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
+                <td style="background-color: Linen;">Development</td>                
+                <td></td>
+              </tr>  
+                 
+      <!------------------------------ROW----------------------------------->             
             </tbody>
       </table> 
       </p>
     </div>
   </div>
 </div>
+
