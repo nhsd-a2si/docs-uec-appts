@@ -42,12 +42,29 @@ Each setting is split into the relevent use cases. For each use case every suppl
                 <td>Advanced</td>
                 <td>v0.1.15 ALPHA</td>
                 <td>v1.0.6 ALPHA</td>
-                <td style="background-color: #0099ff;">Development</td>                
-                <td>Ability to search and book an appointment</td>
+                <td style="background-color: LightSkyBlue;">Assurance</td>                
+                <td></td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
-             
+        <tr>
+                <td>Cleo Systems</td>
+                <td>v0.1.15 ALPHA</td>
+                <td>v1.0.6 ALPHA</td>
+                <td style="background-color: LightSkyBlue;">Assurance</td>                
+                <td></td>
+              </tr>  
+                 
+      <!------------------------------ROW----------------------------------->             
+        <tr>
+                <td>Cleric</td>
+                <td>v0.1.15 ALPHA</td>
+                <td>v1.0.6 ALPHA</td>
+                <td style="background-color: Linen;">Development</td>                
+                <td></td>
+              </tr>  
+                 
+      <!------------------------------ROW----------------------------------->             
             </tbody>
       </table> 
       </p>
