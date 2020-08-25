@@ -30,6 +30,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <thead>
               <tr>
                 <th data-field="Supplier" data-sortable="true">Supplier</th>
+                <th data-field="Product" data-sortable="true">Supplier</th>
                 <th data-field="Standard" data-sortable="true">Standard Version</th>
                 <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>                
@@ -40,6 +41,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->        
               <tr>
                 <td style="font-size:small">Advanced</td>
+                <td style="font-size:small">Adastra</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightSkyBlue;">Assurance</td>                
@@ -49,6 +51,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td style="font-size:small">Cleo Systems</td>
+                <td style="font-size:small">Cleo</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightSkyBlue;">Assurance</td>                
@@ -58,6 +61,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td style="font-size:small">Cleric Computer Services</td>
+                <td style="font-size:small">RESPOND-2</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: Linen;">Development</td>                
@@ -85,6 +89,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
             <thead>
               <tr>
                 <th data-field="Supplier" data-sortable="true">Supplier</th>
+                <th data-field="Product" data-sortable="true">Supplier</th>
                 <th data-field="Standard" data-sortable="true">Standard Version</th>
                 <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>                
@@ -95,6 +100,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->        
               <tr>
                 <td style="font-size:small">Cleo Systems</td>
+                <td style="font-size:small">Cleo</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: Linen;">Development</td>                
@@ -103,7 +109,8 @@ Each setting is split into the relevent use cases. For each use case every suppl
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small">EMIS</td>
+                <td style="font-size:small">EMIS Health</td>
+                <td style="font-size:small">Symphony</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightSkyBlue;">Assurance</td>                
@@ -113,6 +120,7 @@ Each setting is split into the relevent use cases. For each use case every suppl
       <!------------------------------ROW----------------------------------->             
               <tr>
                 <td style="font-size:small">WASP Software</td>
+                <td style="font-size:small">Wasp</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:x-small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: Linen;">Development</td>                
