@@ -6,7 +6,7 @@ permalink: fs_times.html
 toc: false
 folder: functional_spec
 ---
-	
+
 * All times included in the API messages MUST be in FHIR Instant format (```YYYY-MM-DDThh:mm:ss.sss+zz:zz```)
   * e.g. ```YearMonth-DayTHours:Minutes:Seconds+OffsetFromUTC``` 
   * e.g. ```201502-07T13:28:17.239+02:00```
