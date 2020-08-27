@@ -1,5 +1,5 @@
 ---
-title: Principle of operation regarding times:
+title: Principle of operation regarding times
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_times.html
