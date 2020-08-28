@@ -20,7 +20,7 @@ The sections below will step through the process.
 
 ### How times should be handled
 
-All time and date information **MUST** be converted into Coordinated Universal Time (or UTC) from the local time zone for all time and date information in any API messaging. Also, all times **MUST** be converted into a local time from UTC when being displayed to a user, however UTC times should be stored for any logging etc..
+Please see the page on how times should be handled <a href="fs_times.html" target="_blank">here</a>.
 
 ## The Actors
 

@@ -9,11 +9,55 @@ folder: introduction
 
 ## Current Release
 
+### 0.1.16 ALPHA
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.16  | ALPHA   | Alpha | Current Version | 28/08/2020   | Volatile
+
+The 0.1.16 ALPHA release has the following highlights:
+
+* <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/overview_release_notes.html" target="_blank">Update of FHIR Specification to 2.0.0-beta</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/" target="_blank">Renamed from NHS FHIR Scheduling API to NHS FHIR Booking API.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/appointment.html" target="_blank">Updated Appointment guidance to include mandatory Appointment.end to align with the FHIR standard.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/appointment.html" target="_blank">Updated Appointment.created guidance to align with the FHIR standard.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/appointment.html" target="_blank">Updated Appointment.contained to include Slot as a contained resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/appointment.html" target="_blank">Updated Appointment examples.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/patient.html" target="_blank">Updated Patient identifier guidance in line with</a> <a href='https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1' target="_blank">CareConnect-Patient-1</a> profile. Notably removing mandatory NHS Number
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/cancel_an_appointment.html" target="_blank">Updated 'success' behaviour for cancelling an Appointment.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/slot.html" target="_blank">Updated Slot elements.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/search_free_slots.html" target="_blank">Updated 'Search for free slots' example.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/search_patient_appointments.html" target="_blank">Updated 'Search for appointments' example.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/get_an_appointment.html" target="_blank">Updated 'Get an appointment' examples.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/developing.html" target="_blank">Updated development guidance on validating resources.</a>
+* <a href="fs_times.html" target="_blank">Created a new page describing how to handle times</a>
+* <a href="fs_workflow.html#how-times-should-be-handled" target="_blank">References to times have been updated to refer to new page on times</a>
+* The "functional specification" menu items were updated to more clearly reflect content
+* <a href="scope_functional.html" target="_blank">The Functional Scope page was updated to move Emergency Departments and Patient facing uses into scope</a>
+* <a href="fs_deliverychannel.html" target="_blank">A new page documenting requirements for displaying slots, including explicit reference to delivery channel was added</a>
+* <a href="" target="_blank">The conformance catalogue page was updated to remove unnecessary reference to GP Connect and change the format and content to reflect the current status of suppliers </a>
+
+<br>
+<br>
+
+## Future releases
+
+### 0.2.0 BETA
+
+Version | Handle  | Phase | State           | Release Date (planned) | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.2.0   | BETA | Private Beta | Unreleased | TBC   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.15 ALPHA
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.15  | ALPHA   | Alpha | Current Version | 24/07/2020   | Volatile
+0.1.15  | ALPHA   | Alpha | Released | 24/07/2020   | Volatile
 
 The 0.1.15 ALPHA release has the following highlights:
 
@@ -30,27 +74,11 @@ The 0.1.15 ALPHA release has the following highlights:
 * <a href="fs_sms.html" target="_blank">A new page providing (draft) guidence for Appointment Text Messages was added</a>
 * <a href="assurance_overview.html" target="_blank">Updated the assurance process overview to reflect the current iteration of the process</a>
 
-<br>
-<br>
-
-## Future releases
-
-### 0.2.0 BETA
-
-Version | Handle  | Phase | State           | Release Date (planned) | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.2.0   | BETA | Private Beta | Unreleased | 28/08/2020   | Volatile
-
-<br>
-<br>
-
-## Previous releases
-
 ### 0.1.14 PREVIEW
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.14   | PREVIEW | Alpha | Current Version | 05/05/2020 | Volatile
+0.1.14   | PREVIEW | Alpha | Released | 05/05/2020 | Volatile
 
 The 0.1.14 PREVIEW release has the following highlights:
 * Updated the FHIR specification version to 1.0.6-alpha
@@ -63,7 +91,7 @@ The 0.1.14 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.13   | PREVIEW | Alpha | Current Version | 07/02/2020 | Volatile
+0.1.13   | PREVIEW | Alpha | Released | 07/02/2020 | Volatile
 
 The 0.1.13 PREVIEW release has the following highlights:
 * **Updated all functional specification pages where the ASID being included in the search parameters of FHIR queries is referenced. This has been changed to the more generic Healthcare Service ID and where appropriate direct reference to the DoS Service ID**
@@ -85,7 +113,7 @@ The 0.1.13 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.12   | PREVIEW | Alpha | Current Version | 19/11/2019 | Volatile
+0.1.12   | PREVIEW | Alpha | Released | 19/11/2019 | Volatile
 
 The 0.1.12 PREVIEW release has the following highlights:
 
@@ -101,7 +129,7 @@ The 0.1.12 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.11   | PREVIEW | Alpha | Current Version | 14/10/2019 | Volatile
+0.1.11   | PREVIEW | Alpha | Released | 14/10/2019 | Volatile
 
 The 0.1.11 PREVIEW release has the following highlights:
 
@@ -123,7 +151,7 @@ The 0.1.11 PREVIEW release has the following highlights:
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.10   | PREVIEW | Alpha | Current Version |26/07/2019   | Volatile
+0.1.10   | PREVIEW | Alpha | Released |26/07/2019   | Volatile
 
 **The 0.1.10 PREVIEW release has the following highlights:**
 
@@ -142,7 +170,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.9   | PREVIEW | Alpha | Current Version | 14/06/2019   | Volatile
+0.1.9   | PREVIEW | Alpha | Released | 14/06/2019   | Volatile
 
 **The 0.1.9 PREVIEW release has the following highlights:**
 
