@@ -131,8 +131,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Ready</td>                
-                <td></td>
+                <td>Not Started</td>                
+                <td>Engagement started</td>
               </tr>  
                 
       <!------------------------------ROW----------------------------------->               
@@ -249,7 +249,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
                 <td>Not Started</td>                
-                <td></td>
+                <td>Engagement started</td>
                </tr>  
                 
       <!------------------------------ROW----------------------------------->                 
@@ -386,7 +386,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
                 <td>Not Started</td>                
-                <td></td>
+                <td>Engagement started</td>
               </tr>  
                 
       <!------------------------------ROW----------------------------------->    
@@ -398,7 +398,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 ALPHA</mark></td>
                 <td>Not Started</td>                
-                <td></td>
+                <td>Engagement started</td>
               </tr>  
                 
       <!------------------------------ROW----------------------------------->    
@@ -482,7 +482,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>                
-                <td></td>
+                <td>Engagement started</td>
               </tr>  
                 
       <!------------------------------ROW----------------------------------->    
