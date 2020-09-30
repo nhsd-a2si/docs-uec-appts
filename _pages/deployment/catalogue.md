@@ -69,7 +69,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: Linen;">Development</td>                
+                <td style="background-color: LightSkyBlue;">Assurance</td>               
                 <td></td>
               </tr>  
                  
@@ -80,7 +80,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightSkyBlue;">Assurance</td>                 
+                <td style="background-color: LightGreen;">Ready</td>                 
                 <td></td>
               </tr>
               <!------------------------------ROW----------------------------------->      
@@ -506,7 +506,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightSkyBlue;">Assurance</td>                
+                <td style="background-color: LightGreen;">Ready</td>                
                 <td></td>
               </tr>   
               
