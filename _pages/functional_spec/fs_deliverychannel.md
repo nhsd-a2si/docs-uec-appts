@@ -24,7 +24,7 @@ In order to prevent incorrect or unsuitable bookings, and to allow a patient to 
 - Health Care Service 
 <br><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">mandatory (Consumer)</mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Provider)</mark>
 - Providing Organisation 
-<br></mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Consumer)</mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Provider)</mark>
+<br><mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Consumer)</mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Provider)</mark>
 - Location name and address 
 <br><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">mandatory (Consumer)</mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Provider)</mark>
 - Practitioner role (e.g. General Medical Practitioner, Nurse) 
