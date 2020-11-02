@@ -152,7 +152,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: LightBlue;">Development</td>
+                <td>Not Started</td>
               </tr>  
               
       <!------------------------------ROW----------------------------------->
