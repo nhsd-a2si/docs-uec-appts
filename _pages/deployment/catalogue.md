@@ -258,8 +258,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">DXC Technology</td>
                 <td style="font-size:small">Lorenzo</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
                </tr>  
                 
@@ -375,8 +375,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">Meditech</td>
                 <td style="font-size:small">Meditech</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
               </tr>  
                 
@@ -386,8 +386,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">Nervecentre</td>
                 <td style="font-size:small">BIMS</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
               </tr>  
                 
