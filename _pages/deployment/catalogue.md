@@ -115,7 +115,8 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>
             </thead>
             <tbody>              
-            <!------------------------------ROW----------------------------------->  
+      <!------------------------------ROW----------------------------------->  
+             
              <tr>
                 <td style="font-size:small">Cleo Systems</td>
                 <td style="font-size:small">Cleo</td>
@@ -123,9 +124,10 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
                 <td style="background-color: LightGreen;">Ready</td>
-              </tr>                   
-               
+              </tr>
+              
       <!------------------------------ROW----------------------------------->
+              
               <tr>
                 <td style="font-size:small">EMIS Health</td>
                 <td style="font-size:small">Symphony</td>
@@ -133,7 +135,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightGreen;">Ready</td>
-               </tr>  
+              </tr> 
+               
       <!------------------------------ROW----------------------------------->
       
               <tr>
@@ -179,6 +182,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>  
       
       <!------------------------------ROW----------------------------------->                
+              
               <tr>
                 <td style="font-size:small">Harris</td>
                 <td style="font-size:small">QuadraMED</td>
@@ -186,8 +190,10 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Engagement</td>
-              </tr>  
+              </tr> 
+              
        <!------------------------------ROW----------------------------------->  
+              
               <tr>
                 <td style="font-size:small">Nervecentre</td>
                 <td style="font-size:small">BIMS</td>
@@ -195,17 +201,10 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Engagement</td>
-              </tr>   
-      <!------------------------------ROW----------------------------------->                  
-              <tr>
-                <td style="font-size:small">Nervecentre</td>
-                <td style="font-size:small">BIMS</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
-              </tr>
-      <!------------------------------ROW----------------------------------->                
+              </tr> 
+              
+      <!------------------------------ROW----------------------------------->  
+      
               <tr>
                 <td style="font-size:small">TPP</td>
                 <td style="font-size:small">SystmOne</td>
@@ -213,7 +212,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Engagement</td>
-              </tr>  
+              </tr> 
+              
       <!------------------------------ROW----------------------------------->            
         
               <tr>
