@@ -77,8 +77,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightGreen;">Ready</td>
-              </tr>
-              <!------------------------------ROW----------------------------------->      
+          </tr>
+      <!------------------------------ROW----------------------------------->      
           <tr>
                 <td style="font-size:small">TPP</td>
                 <td style="font-size:small">SystmOne</td>
@@ -164,10 +164,57 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
+                <td>Engagement</td>
               </tr>  
-                
-      <!------------------------------ROW----------------------------------->               
+      
+      <!------------------------------ROW----------------------------------->     
+              
+              <tr>
+                <td style="font-size:small">Cerner</td>
+                <td style="font-size:small">Millenium</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Engagement</td>
+              </tr>  
+      
+      <!------------------------------ROW----------------------------------->                
+              <tr>
+                <td style="font-size:small">Harris</td>
+                <td style="font-size:small">QuadraMED</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Engagement</td>
+              </tr>  
+       <!------------------------------ROW----------------------------------->  
+              <tr>
+                <td style="font-size:small">Nervecentre</td>
+                <td style="font-size:small">BIMS</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Engagement</td>
+              </tr>   
+      <!------------------------------ROW----------------------------------->                  
+              <tr>
+                <td style="font-size:small">Nervecentre</td>
+                <td style="font-size:small">BIMS</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Engagement</td>
+              </tr>
+      <!------------------------------ROW----------------------------------->                
+              <tr>
+                <td style="font-size:small">TPP</td>
+                <td style="font-size:small">SystmOne</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Engagement</td>
+              </tr>  
+      <!------------------------------ROW----------------------------------->            
         
               <tr>
                 <td style="font-size:small">Alert Life</td>
@@ -209,17 +256,6 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
-              </tr>  
-                
-      <!------------------------------ROW----------------------------------->     
-              
-              <tr>
-                <td style="font-size:small">Cerner</td>
-                <td style="font-size:small">Millenium</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
               </tr>  
                                 
       <!------------------------------ROW----------------------------------->   
@@ -293,18 +329,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
-              </tr>  
-                
-      <!------------------------------ROW----------------------------------->                
-              <tr>
-                <td style="font-size:small">Harris</td>
-                <td style="font-size:small">QuadraMED</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
-              </tr>  
-                
+              </tr>                 
+      
       <!------------------------------ROW----------------------------------->                
               
               <tr>
@@ -378,18 +404,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
-              </tr>  
-                
-      <!------------------------------ROW----------------------------------->    
-               
-              <tr>
-                <td style="font-size:small">Nervecentre</td>
-                <td style="font-size:small">BIMS</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
-              </tr>  
+              </tr>                 
+     
                 
       <!------------------------------ROW----------------------------------->               
                
@@ -444,17 +460,6 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
-              </tr>  
-                
-      <!------------------------------ROW----------------------------------->    
-            
-              <tr>
-                <td style="font-size:small">TPP</td>
-                <td style="font-size:small">SystmOne</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
               </tr>  
               
             </tbody>
