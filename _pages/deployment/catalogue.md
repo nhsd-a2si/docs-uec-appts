@@ -114,18 +114,9 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <th data-field="Status" data-sortable="true">Status</th>
               </tr>
             </thead>
-            <tbody> 
-           <!------------------------------ROW----------------------------------->               
-              <tr>
-                <td style="font-size:small">Cerner</td>
-                <td style="font-size:small">Millenium</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
-              </tr>  
-            <!------------------------------ROW----------------------------------->             
-              <tr>
+            <tbody>              
+            <!------------------------------ROW----------------------------------->  
+             <tr>
                 <td style="font-size:small">Cleo Systems</td>
                 <td style="font-size:small">Cleo</td>
                 <td style="font-size:small">11.2009</td>
@@ -143,20 +134,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightGreen;">Ready</td>
                </tr>  
-                
-      <!------------------------------ROW----------------------------------->  
-      
-              <tr>
-                <td style="font-size:small">Harris</td>
-                <td style="font-size:small">QuadraMED</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
-              </tr>  
-              
       <!------------------------------ROW----------------------------------->
-            
+      
               <tr>
                 <td style="font-size:small">NHS Digital</td>
                 <td style="font-size:small">EDDI</td>
@@ -230,7 +209,18 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
-              </tr> 
+              </tr>  
+                
+      <!------------------------------ROW----------------------------------->     
+              
+              <tr>
+                <td style="font-size:small">Cerner</td>
+                <td style="font-size:small">Millenium</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Not Started</td>
+              </tr>  
                                 
       <!------------------------------ROW----------------------------------->   
               
@@ -268,8 +258,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">DXC Technology</td>
                 <td style="font-size:small">Lorenzo</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
                </tr>  
                 
@@ -303,7 +293,17 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
-              </tr>
+              </tr>  
+                
+      <!------------------------------ROW----------------------------------->                
+              <tr>
+                <td style="font-size:small">Harris</td>
+                <td style="font-size:small">QuadraMED</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Not Started</td>
+              </tr>  
                 
       <!------------------------------ROW----------------------------------->                
               
@@ -375,8 +375,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">Meditech</td>
                 <td style="font-size:small">Meditech</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
               </tr>  
                 
@@ -386,8 +386,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">Nervecentre</td>
                 <td style="font-size:small">BIMS</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td>Not Started</td>
               </tr>  
                 
@@ -463,4 +463,3 @@ The list includes only suppliers we are actively engaged with and are currently 
     </div>
   </div>
 </div>
-
