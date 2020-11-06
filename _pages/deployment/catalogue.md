@@ -167,7 +167,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
               </tr>  
       
       <!------------------------------ROW----------------------------------->     
@@ -178,7 +178,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
               </tr>  
       
       <!------------------------------ROW----------------------------------->                
@@ -189,7 +189,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
               </tr> 
               
        <!------------------------------ROW----------------------------------->  
@@ -200,7 +200,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
               </tr> 
               
       <!------------------------------ROW----------------------------------->  
@@ -211,7 +211,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Engagement</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
               </tr> 
               
       <!------------------------------ROW----------------------------------->            
