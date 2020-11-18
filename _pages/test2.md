@@ -2,7 +2,7 @@
 title: Test Page 2
 sidebar: overview_sidebar
 keywords: test
-permalink: test.html
+permalink: test2.html
 toc: false
 ---
 
