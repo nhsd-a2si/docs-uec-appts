@@ -142,7 +142,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               <tr>
                 <td style="font-size:small">NHS Digital</td>
                 <td style="font-size:small">EDDI</td>
-                <td style="font-size:small">1.0</td>
+                <td style="font-size:small">2.0</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
                 <td style="background-color: LightGreen;">Ready</td>
