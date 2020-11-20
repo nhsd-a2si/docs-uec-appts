@@ -41,7 +41,6 @@ This is an Open Authentication Standard
 ### SA
 
 ### GP Connect
-Appointment booking for Gp Surgeries
 
 ### RESTful
 This is "**Re**presentational **St**ate Transfer" and refers to an API which uses the concept of resources, and http verbs to support CRUD (create, read, update and delete) type operations.
