@@ -195,7 +195,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               
               <tr>
                 <td style="font-size:small">Harris</td>
-                <td style="font-size:small">QuadraMED</td>
+                <td style="font-size:small">HARRIS Flex</td>
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
