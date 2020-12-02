@@ -73,6 +73,8 @@ The 0.1.16 ALPHA release has the following highlights:
 * <a href="fs_deliverychannel.html" target="_blank">A new page documenting requirements for displaying slots, including explicit reference to delivery channel was added</a>
 * <a href="" target="_blank">The conformance catalogue page was updated to remove unnecessary reference to GP Connect and change the format and content to reflect the current status of suppliers </a>
 
+* Fixed broken menu item for GP Connect section
+
 ### 0.1.15 ALPHA
 
 Version | Handle  | Phase | State           | Release Date | Stability
