@@ -26,6 +26,7 @@ The 0.1.17 ALPHA release has the following highlights:
 * <a href="fs_workflow.html#endpoint-discovery" target="_blank">Fixed some incorrect interactions in some diagrams on the workflow page</a>
 * <a href="usep_abus13.html" target="_blank">Updated user story (abus13) to be more generic in its guidance, removing specific references to the UEC DoS</a>
 * <a href="what_are_we_doing.html" target="_blank">Updated some wording on the "What we are doing?" page</a>
+* <a href="caresetting.html" target="_blank">Updated some wording on the "Care Settings" page</a>
 
 
 <br>
