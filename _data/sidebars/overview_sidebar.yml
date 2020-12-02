@@ -77,12 +77,8 @@ entries:
             url: /fs_workflow.html
           - 
             title: "GP Connect"
-            folderitems: 
-            -
-              title: "GP Connect"
-              output: "web, pdf"            
-              url: /gpc_overview.html
-            output: web
+            output: "web, pdf"            
+            url: /gpc_overview.html            
           -
             title: "Interactions with the DoS"
             output: "web, pdf"            
