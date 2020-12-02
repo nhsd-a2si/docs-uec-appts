@@ -1,10 +1,10 @@
 ---
-title: ABUS.13 Warn Users Where Appts Are Outside the Assessment Outcome Timeframe 
+title: ABUS.13 Warn Users Where Appointments Are Outside the Assessment Outcome Timeframe 
 sidebar: usecase_sidebar
 permalink: usep_abus13.html
 ---
 
-## ABUS.13 Booking outside a disposition timeframe
+## ABUS.13 Booking outside an assessment outcome timeframe
 
 **_In order_** that bookings are not made outside an assessment outcome timeframe 
 
