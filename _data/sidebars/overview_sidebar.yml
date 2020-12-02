@@ -22,11 +22,7 @@ entries:
           -
             title: "Release Notes"
             output: "web, pdf"
-            url: /release_notes.html
-          -
-            title: "test Page 2"
-            output: "web, pdf"
-            url: /test2.html
+            url: /release_notes.html          
         output: web 
       - 
         title: Overview
