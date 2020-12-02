@@ -23,6 +23,9 @@ The 0.1.17 ALPHA release has the following highlights:
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Added guidance for using ‘incomingReferral’ element for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated contained resource guidance for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/search_free_slots.html" target="_blank">Updated search parameters guidance when searching for free slots.</a>
+* <a href="fs_workflow.html#endpoint-discovery" target="_blank">Fixed some incorrect interactions in some diagrams on the workflow page</a>
+* <a href="usep_abus13.html" target="_blank">Updated user story (abus13) to be more generic in its guidance, removing specific references to the UEC DoS</a>
+
 
 <br>
 <br>
