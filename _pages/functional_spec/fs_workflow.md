@@ -41,7 +41,7 @@ The Consumer System is the IT system that is being used by the service that is s
 During the booking process a number of systems that are hosted by NHS Digital as national infrastructure need to be interacted with. These are as follows:
 
 #### Patient Demographic Service (PDS)
-The Patient Demographic Service is a Spine service that enables matching captured demographics against a national demographic  repository. PDS verified demographics, in particular NHS number is required by a lot of interoperability in the NHS. **A spine verified NHS number, either by direct verification on PDS or through a Spine Mini Service Provider (SMSP) is required for booking using this standard**.
+The Patient Demographic Service is a Spine service that enables matching captured demographics against a national demographic  repository. PDS verified demographics, in particular NHS number is required by a lot of interoperability in the NHS. Although not a mandatory requirement it is reccomended that consumer systems attempt to obtain a spine verified NHS number, either by direct verification on PDS or through a Spine Mini Service Provider (SMSP) prior to attempting a booking.
 
 ####  National DoS
 The national DoS can be used to discover the most appropriate service for the patient. If that service offers appointments the necessary information required to query SDS for the endpoint will be provided. 
