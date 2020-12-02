@@ -22,6 +22,7 @@ Users will be need to be notified when booking outside the assessment outcome ti
 
 ### Acceptance Criteria
 
-*	The system **must** allow clinical users to book outside the assessment outcome timeframe 
-
+*	The system **must** allow clinical users to book outside the assessment outcome timeframe
+*	The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe for outcomes up to 6 hours 
+*	The system **must** present to the user a notification for outcomes between 6 and 12 hours
 *	The system **must** allow you to produce a report to show where a patient has been booked outside their assessment outcome timeframe
