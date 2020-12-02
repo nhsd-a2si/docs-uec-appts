@@ -1,5 +1,5 @@
 ---
-title: ABUS.13 Warn Users Where Appts are Outside Disposition Timeframe 
+title: ABUS.13 Warn Users Where Appts Are Outside the Assessment Outcome Timeframe 
 sidebar: usecase_sidebar
 permalink: usep_abus13.html
 ---
