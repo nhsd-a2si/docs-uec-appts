@@ -90,12 +90,12 @@ Response:
 nhsMHSPartyKey: A12345-1234567
 ```
 The value returned is needed for step 2:
-<img src="_pages/functional_spec/img/EndpointDiscovery2.png">
+<img src="_pages/functional_spec/img/EndpointDiscovery2(updated-interactions).png">
 
 Step 2:
 A request for the nhsMHS object can then be made using the interaction and Party Key:
 
-<img src="_pages/functional_spec/img/EndpointDiscovery3.png">
+<img src="_pages/functional_spec/img/EndpointDiscovery3(updated-interactions).png">
 ```json
 ldapsearch -b ou=Services,o=nhs "(&(nhsMHSPartyKey= A12345-1234567)(urn:nhs:names:services:careconnect:fhir:rest:create:appointment))" nhsMHSEndPoint
 Response:
