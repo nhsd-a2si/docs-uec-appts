@@ -51,7 +51,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small">Cleo Systems</td>
+                <td style="font-size:small"><a href="https://www.cleosystems.com/" target="_blank">Cleo Systems</td>
                 <td style="font-size:small">Cleo</td>
                 <td style="font-size:small">11.2009</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
@@ -61,7 +61,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small">Cleric Computer Services</td>
+                <td style="font-size:small"><a href="" target="_blank">Cleric Computer Services</td>
                 <td style="font-size:small">RESPOND-2</td>
                 <td style="font-size:small">4.7.97</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
