@@ -4,6 +4,7 @@ sidebar: overview_sidebar
 keywords: introduction
 permalink: release_notes.html
 toc: true
+tags: [getting_started]
 folder: introduction
 ---
 
