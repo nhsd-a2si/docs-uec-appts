@@ -51,7 +51,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small"><a href="https://www.cleosystems.com/" target="_blank">Cleo Systems</td>
+                <td style="font-size:small"><a href="https://www.cleosystems.com/" target="_blank">Cleo Systems</a></td>
                 <td style="font-size:small">Cleo</td>
                 <td style="font-size:small">11.2009</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
@@ -61,7 +61,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small"><a href="" target="_blank">Cleric Computer Services</td>
+                <td style="font-size:small"><a href="https://www.cleric.co.uk/" target="_blank">Cleric Computer Services</a></td>
                 <td style="font-size:small">RESPOND-2</td>
                 <td style="font-size:small">4.7.97</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
@@ -71,8 +71,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->      
           <tr>
-                <td style="font-size:small">NHS Digital</td>
-                <td style="font-size:small">111 Online</td>
+                <td style="font-size:small"><a href="https://digital.nhs.uk" target="_blank">NHS Digital</a></td>
+                <td style="font-size:small"><a href="https://digital.nhs.uk/services/nhs-111-online" target="_blank">111 Online</a></td>
                 <td style="font-size:small">4.122.0</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
@@ -118,7 +118,7 @@ The list includes only suppliers we are actively engaged with and are currently 
       <!------------------------------ROW----------------------------------->  
              
              <tr>
-                <td style="font-size:small">Cleo Systems</td>
+                <td style="font-size:small"><a href="https://www.cleosystems.com/" target="_blank">Cleo Systems</a></td>
                 <td style="font-size:small">Cleo</td>
                 <td style="font-size:small">11.2009</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
@@ -129,8 +129,8 @@ The list includes only suppliers we are actively engaged with and are currently 
       <!------------------------------ROW----------------------------------->
               
               <tr>
-                <td style="font-size:small">EMIS Health</td>
-                <td style="font-size:small">Symphony</td>
+                <td style="font-size:small"><a href="https://www.emishealth.com" target="_blank">EMIS Health</a></td>
+                <td style="font-size:small"><a href="https://www.emishealth.com/products/symphony/" target="_blank">Symphony</a></td>
                 <td style="font-size:small">2.39</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
@@ -140,8 +140,8 @@ The list includes only suppliers we are actively engaged with and are currently 
       <!------------------------------ROW----------------------------------->
       
               <tr>
-                <td style="font-size:small">NHS Digital</td>
-                <td style="font-size:small">EDDI</td>
+                <td style="font-size:small"><a href="https://digital.nhs.uk" target="_blank">NHS Digital</a></td>
+                <td style="font-size:small"><a href="https://digital.nhs.uk/services/emergency-department-digital-integration" target="_blank">EDDI</a></td>
                 <td style="font-size:small">2.0</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
@@ -151,8 +151,8 @@ The list includes only suppliers we are actively engaged with and are currently 
       <!------------------------------ROW----------------------------------->
     
               <tr>
-                <td style="font-size:small">WASP Software</td>
-                <td style="font-size:small">Wasp</td>
+                <td style="font-size:small"><a href="http://www.waspsoftware.co.uk" target="_blank">WASP Software</a></td>
+                <td style="font-size:small"><a href="http://www.waspsoftware.co.uk/nhs111-first/" target="_blank">Wasp</a></td>
                 <td style="font-size:small">1.0</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
@@ -205,12 +205,12 @@ The list includes only suppliers we are actively engaged with and are currently 
        <!------------------------------ROW----------------------------------->  
               
               <tr>
-                <td style="font-size:small">Nervecentre</td>
+                <td style="font-size:small"><a href="" target="_blank">Nervecentre</a></td>
                 <td style="font-size:small">BIMS</td>
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: #ffffcc;">Engagement</td>
+                <td style="background-color: #DDA0DD;">Development</td>
               </tr> 
               
       <!------------------------------ROW----------------------------------->  
@@ -225,7 +225,17 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr> 
               
       <!------------------------------ROW----------------------------------->            
-        
+                
+              <tr>
+                <td style="font-size:small">Silverlink</td>
+                <td style="font-size:small">PCS</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td style="background-color: #ffffcc;">Engagement</td>
+              </tr>  
+                
+      <!------------------------------ROW-----------------------------------> 
               <tr>
                 <td style="font-size:small">Alert Life</td>
                 <td style="font-size:small">Alert</td>
@@ -440,18 +450,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>  
                 
       <!------------------------------ROW----------------------------------->
-               
-              <tr>
-                <td style="font-size:small">Silverlink</td>
-                <td style="font-size:small">PCS</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
-              </tr>  
-                
-      <!------------------------------ROW----------------------------------->
-               
+                  
               <tr>
                 <td style="font-size:small">System C</td>
                 <td style="font-size:small">HEV</td>
