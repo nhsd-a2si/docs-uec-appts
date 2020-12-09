@@ -5,15 +5,8 @@ tags: [getting_started]
 sidebar: overview_sidebar
 permalink: glossary.html
 summary: "Glossary of terms used in the UEC Appointment booking standards"
-toc: false
+toc: true
 ---
-
-# Something like: 
-* POC
-* Pilot
-* First of Type
-* Private BETA
-* Discovery
 
 ### Ambulance Service Trust 
 
@@ -26,6 +19,10 @@ Ambulance services Trusts may also provide NHS 111 call handling (see above) how
 ### Consumer
 
 The IT system that is searching for and placing bookings on behalf of the patient 
+
+### Discovery
+
+This is an early phase in a project. Usually undertaken prior to main activities starting and will be used to define scope and design direction
 
 ### Distance-selling pharmacy (Internet Pharmacy)  
 
@@ -58,11 +55,17 @@ The traditional role of the community pharmacist as the healthcare professional 
 
 Other pharmacy services that provide e-prescribing but are not a community pharmacy.
 
+### First of Type
+
+Usually the first instance of a deployment using a new technology or standard. It is highly constrained and closely supported and monitored. This will then drive the next iteration of the standard
+
 ### FHIR
+
 This stands for "Fast Healthcare Interoperability Resources"
 
 ### GP Connect
-(Interoperability Standard for GP Practices)[https://developer.nhs.uk/apis/gpconnect-1-2-7/]{target="_blank"}
+
+[Interoperability Standard for GP Practices](https://developer.nhs.uk/apis/gpconnect-1-2-7/){:target="_blank"}
 
 ### GP contract Enhanced Services (Primary Care)  
 
@@ -109,12 +112,26 @@ The NHS Identity service provides a digital identity that can be consumed many t
 For this booking standard, NHS Identity could validate credentials passed by the consuming system, and subject to this check, issue a short lived (1 hour) access token which the consuming system must include in an http Authorization header in all requests to the provider system.
 
 ### OAuth
-This is an Open Authentication Standard
+[This is an Open Authentication Standard](https://oauth.net/){:target="_blank"}
+
+### Open Beta
 
 ### PDS
 This stands for "Patient Demographic Service"
 
+### Pilot
+
+The pilot phase of a project will usually involve a limited deployment in live service to gather feedback and establish feasibility
+
+### POC
+"**P**roof **o**f **C**oncept" - a prototype system that is developed to establish or demonstrate the utility of a new technology
+
+### Private BETA
+
+a typically non-live, constrained period of testing with a number of chosen suppliers to test out an immature standard
+
 ### Provider
+
 The IT system that holds the appointments being searched for and booked into 
 
 ### RESTful
