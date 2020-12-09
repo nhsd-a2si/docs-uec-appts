@@ -123,6 +123,9 @@ Consumers **SHALL** populate the payload section of the JWT with the following c
 - [`requested_scope`](#requested_scope-claim)
 - [`requesting_device`](#requesting_device-claim)
 - [`requesting_organization`](#requesting_organization-claim)
+
+Consumers **COULD** optionally populate the payload section of the JWT with the following claims, (therefore provider systems **MUST** cope with it being both present or absent):
+
 - [`requesting_practitioner`](#requesting_practitioner-claim)
 
 Please see details below on how to populate each claim.
