@@ -30,6 +30,7 @@ The 0.1.17 ALPHA release has the following highlights:
 * <a href="caresetting.html" target="_blank">Updated some wording on the "Care Settings" page</a>
 * <a href="catalogue.html" target="_blank">Updated the conformance catalogue page to reflect the latest status and add links</a>
 * <a href="scope_functional.html" target="_blank">Updated the functional scope page to reflect the latest developments in the standard</a>
+* <a href="fs_authentication.html#jwt-payload" target="_blank">Made the "requesting_practitioner" claim optional</a>
 
 <br>
 <br>
