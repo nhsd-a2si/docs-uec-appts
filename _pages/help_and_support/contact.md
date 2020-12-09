@@ -4,6 +4,7 @@ sidebar: overview_sidebar
 keywords: guidance
 permalink: contact.html
 toc: false
+tags: [getting_started]
 folder: help_and_support
 ---
 
