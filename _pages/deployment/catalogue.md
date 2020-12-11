@@ -142,7 +142,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               <tr>
                 <td style="font-size:small"><a href="https://digital.nhs.uk" target="_blank">NHS Digital</a></td>
                 <td style="font-size:small"><a href="https://digital.nhs.uk/services/emergency-department-digital-integration" target="_blank">EDDI</a></td>
-                <td style="font-size:small">2.0</td>
+                <td style="font-size:small">3.0</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
                 <td style="background-color: LightGreen;">Ready</td>
