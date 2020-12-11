@@ -29,3 +29,17 @@ The attribute used for apointment booking is entitled 'requirebooking' and is of
 
 If this attribute is assigned to a service it means a referral cannot be made unless an appointment has been booked. 
 
+#### Configuring DoS 
+1. Find the service you wish to add the Attribute to
+2. On the 'Service Attributes' tab, click the pencil icon to edit 
+<img src="_pages/deployment/toolkit/img/DoS_attribute_Add.png">
+3. Select the Attribute option, Service Attibute - 'requirebooking' and Value - 'TRUE' 
+<img src="_pages/deployment/toolkit/img/DoS_attribute_Configure.png">
+4. Click the green 'plus' symbol and click 'Save' 
+<img src="_pages/deployment/toolkit/img/DoS_attribute_Save.png">
+5. You will return to the Service Attributes tab and see the addition listed
+<img src="_pages/deployment/toolkit/img/DoS_attribute_Added.png">
+
+
+
+
