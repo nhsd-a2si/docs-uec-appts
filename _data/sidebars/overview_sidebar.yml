@@ -91,18 +91,14 @@ entries:
             title: "Interactions with the DoS"
             output: "web, pdf"
             url: /dos_overview.html
-
           -
             title: "Interactions with the SDS"
             output: "web, pdf"
-            url: /sds_overview.html
-
+            url: /fs_sds.html
           -
             title: "Interactions with the SSP"
             output: "web, pdf"
-            url: /ssp_overview.html  
-
-
+            url: /fs_ssp.html  
           -
             title: "How appointments map to clinical need"
             output: "web, pdf"
