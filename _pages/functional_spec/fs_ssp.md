@@ -13,4 +13,4 @@ The <a href="https://nhsconnect.github.io/FHIR-SpineCore/ssp_overview.html" targ
 
 In the case of Urgent & Emergency Care Appointment Booking these APIs are published by [provider systems](\fs_workflow.md)
 
-For more information please see the [Spine Secure Proxy Implementation Guide](https://developer.nhs.uk/apis/spine-core-1-0/ssp_implementation_guide.html)
+For more information please see the [Spine Secure Proxy Implementation Guide](https://developer.nhs.uk/apis/spine-core-1-0/ssp_implementation_guide.html) and the [Urgent & Emergency Care Appointment Booking Workflow and Interactions](\fs_workflow.md)
