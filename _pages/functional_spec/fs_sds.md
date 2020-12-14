@@ -3,7 +3,7 @@ title: Interactions with the SDS
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_sds.html
-toc: true
+toc: false
 folder: functional_spec
 ---
 
