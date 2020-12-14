@@ -24,10 +24,9 @@ The discovery of the FHIR end point is a two stage process, first using the ASID
 
 
 
-#### Example
-***
-
 <dl>
+  <dt>Example</dt>
+  
   <dt>Step 1</dt>
   <dd>ASID of 123456789012 obtained from DoS is used to obtain the nhsMHSPartyKey of the nhsAS object.</dd>
   <dd>Query - ldapsearch -b uniqueIdentifier=123456789012,ou=Services,o=nhs nhsMHSPartyKey</dd>
