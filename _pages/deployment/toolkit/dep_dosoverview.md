@@ -18,7 +18,7 @@ folder: deployment
 
 ## Configuring the DoS for Appointment Booking
 
-**Service Attributes**
+### Service Attributes
 
 The DoS supports configuration of [Attributes](https://developer.nhs.uk/apis/dos-api/ccs_fields_v1.5_service_attribute.html) against a service which, in the case of appointment booking, informs system behvaiour to ensure the service is appropriately engaged with.
 *NB: Not all system suppliers have implemented system behaviour based on attributes, therefore, the workflow (outlined below) cannot be guaranteed by adding this configuration to the DoS.*
@@ -27,7 +27,7 @@ The attribute used for apointment booking is entitled '**requirebooking**' and i
 
 If this attribute is assigned to a service it means a referral cannot be made unless an appointment has been booked. 
 
-**Configuring DoS**
+### Configuring DoS
 1. Find the service you wish to add the Attribute to
 2. On the 'Service Attributes' tab, click the pencil icon to edit 
 <img src="_pages/deployment/toolkit/img/DoS_attribute_Add.png#1">
