@@ -33,7 +33,7 @@ If this attribute is assigned to a service it means a referral cannot be made un
 <img src="_pages/deployment/toolkit/img/DoS_attribute_Add.png#1">
 3. Select the Attribute option, *Service Attribute* - '**requirebooking**' and *Value* - '**TRUE**' 
 <img src="_pages/deployment/toolkit/img/DoS_attribute_Configure.png">
-4. Click the green 'plus' symbol and click 'Save' 
+4. Click the green 'plus' symbol and then click 'Save' 
 <img src="_pages/deployment/toolkit/img/DoS_attribute_Save.png">
 5. You will return to the Service Attributes tab and see the addition listed
 <img src="_pages/deployment/toolkit/img/DoS_attribute_Added.png">
