@@ -14,7 +14,7 @@ folder: introduction
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.17  | ALPHA   | Alpha | Current Version | 14/12/2020   | Volatile
+0.1.17  | ALPHA   | Alpha | Current Version | 18/12/2020   | Volatile
 
 The 0.1.17 ALPHA release has the following highlights:
 
