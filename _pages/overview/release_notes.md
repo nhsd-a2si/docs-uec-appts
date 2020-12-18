@@ -20,7 +20,7 @@ The 0.1.17 ALPHA release has the following highlights:
 
 * <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/overview_release_notes.html" target="_blank">Update of FHIR Specification to 2.0.1-beta</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘supportingInfo’ element for the Appointment resource.</a>
-   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘particpant’ element for the Appointment resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘participant’ element for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Added guidance for using ‘incomingReferral’ element for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated contained resource guidance for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/search_free_slots.html" target="_blank">Updated search parameters guidance when searching for free slots.</a>
