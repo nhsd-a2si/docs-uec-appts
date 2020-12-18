@@ -1,6 +1,7 @@
 ---
 title: Urgent Emergency Care Landscape
 sidebar: overview_sidebar
+tags: [getting_started]
 permalink: uec_overview.html
 ---
 

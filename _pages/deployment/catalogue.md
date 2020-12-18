@@ -51,7 +51,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small">Cleo Systems</td>
+                <td style="font-size:small"><a href="https://www.cleosystems.com/" target="_blank">Cleo Systems</a></td>
                 <td style="font-size:small">Cleo</td>
                 <td style="font-size:small">11.2009</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
@@ -61,7 +61,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                  
       <!------------------------------ROW----------------------------------->             
               <tr>
-                <td style="font-size:small">Cleric Computer Services</td>
+                <td style="font-size:small"><a href="https://www.cleric.co.uk/" target="_blank">Cleric Computer Services</a></td>
                 <td style="font-size:small">RESPOND-2</td>
                 <td style="font-size:small">4.7.97</td>
                 <td><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
@@ -126,8 +126,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="background-color: LightGreen;">Ready</td>
               </tr>
               
-      <!------------------------------ROW----------------------------------->
-              
+      <!------------------------------ROW----------------------------------->           
+
               <tr>
                 <td style="font-size:small">EMIS Health</td>
                 <td style="font-size:small">Symphony</td>
@@ -192,7 +192,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>  
               
       <!------------------------------ROW----------------------------------->                
-              
+
               <tr>
                 <td style="font-size:small">Harris</td>
                 <td style="font-size:small">HARRIS Flex</td>

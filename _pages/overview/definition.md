@@ -2,6 +2,7 @@
 title: Definition of Direct Booking
 sidebar: overview_sidebar
 permalink: definition.html
+tags: [getting_started]
 toc: false
 ---
 
