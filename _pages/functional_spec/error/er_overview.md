@@ -106,7 +106,7 @@ The error code guidance is provided for each capability in the <a href="https://
 1. Log errors locally for incident investigation by IT support staff.  If the Request is malformed, this should be logged specifically as a Consumer system issue.  Details of the Consumer system should be logged to support investigation e.g. Org ID.
 2. On error send an appropriate HTTP `4xx` or `5xx` error code and an [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource. Use the sections of the [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html)  resource to send detailed information back to the Consumer system on what went wrong and why. This is especially important if there was an error in the Request, as this will help the Consumer support function diagnose what is wrong with their system or configuration.
 3. As a minimum the OperationOutcome resource must contain:
-  * ID - a Provider id for the outcome e.g. a local ID to identify local error codes or a text description
+  * A provider id for the outcome e.g. a local id to identify local error codes or a text description
   * An issue severity code
   * An issue code
 
