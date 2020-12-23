@@ -47,23 +47,14 @@ The DOS will return specific errors when searching for services. These are detai
 
 ### Consumer → SDS
 
-TO-DO - Complete and expand
-
-The SDS will return specific errors when searching for an endpoint, for more information see the [Spine Directory Service - LDAP API](href="https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap") and the [Spine External Interface Specification (EIS)](https://digital.nhs.uk/developer/guides-and-documentation/spine-external-interface-specification)
-
-**TBC - These errors are all about:**
-* Technical issues with connecting to SDS, which should be investigated by local IT Support; or
-* No valid endpoints being returned, which should be ..... TBC
-
-**TBC -  Common issues with data held in the DOS that will be discovered later:**
-
+The SDS will return specific errors when searching for an endpoint, for more information see the [Spine Directory Service - LDAP API](https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap) and the [Spine External Interface Specification (EIS)](https://digital.nhs.uk/developer/guides-and-documentation/spine-external-interface-specification).  In the event that a SDS query does not return an FHIR endpoint, this should be raised with NHS Digital using the existing support process.
 
 **Consumer responsibilities:**
 
-1. Log errors returned by SDS for incident investigation
+
+1. Log errors returned by SDS for local and potential NHS Digital incident investigation
 2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options to warn users to choose another service
 3. Ensure information for appropriate local incident management is captured
-
 
 ### Consumer → SSP
 
@@ -71,7 +62,7 @@ If the SSP determines the endpoint is valid using the supplied ASID, then it wil
 
 However, there are instances where the request will fail before the Provider system receives the requests.
 
-SSP will return specific HTML error codes under these circumstances as per the following approach:
+SSP will return specific HTTP error codes under these circumstances as per the following approach:
 
 <a href="https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html" target="_blank">https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html</a>
 
@@ -161,7 +152,7 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <th data-field="Capability" data-sortable="true">Capability Area</th>
                 <th data-field="Issue" data-sortable="true">Issue Description</th>
-                <th data-field="ErrorCode" data-sortable="true">HTML Error Codes</th>
+                <th data-field="ErrorCode" data-sortable="true">HTTP Error Codes</th>
                 <th data-field="OperationOutcome" data-sortable="true">OperationOutcome Details</th>   
               </tr>
             </thead>

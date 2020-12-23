@@ -103,7 +103,7 @@ Servers SHALL produce the following main [HTTP status codes](http://www.iana.org
 
 #### Errors
 
-If the event of an error response HTTP `4xx` or `5xx` response code an [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) MUST be returned.
+If the event of an error response HTTP `4xx` or `5xx` an [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) MUST be returned.
 
 As a minimum the OperationOutcome resource must contain:
   * A provider id for the outcome e.g. a local id to identify local error codes or a text description
