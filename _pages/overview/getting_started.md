@@ -3,6 +3,7 @@ title: Getting Started
 sidebar: overview_sidebar
 keywords: guidance
 permalink: getting_started.html
+tags: [getting_started]
 toc: false
 folder: getting_started
 ---

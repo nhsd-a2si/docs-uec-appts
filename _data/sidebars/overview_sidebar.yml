@@ -3,9 +3,9 @@ entries:
   - 
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.16 ALPHA"
-    spec: "STU3 | FHIR NHS Scheduling | 2.0.0-beta"
-    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/"
+    version: "v0.1.17 ALPHA"
+    spec: "STU3 | FHIR NHS Scheduling | 2.0.1-beta"
+    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/"
     folders: 
       - 
         title: Introduction
@@ -22,11 +22,7 @@ entries:
           -
             title: "Release Notes"
             output: "web, pdf"
-            url: /release_notes.html
-          -
-            title: "test Page 2"
-            output: "web, pdf"
-            url: /test2.html
+            url: /release_notes.html          
         output: web 
       - 
         title: Overview
@@ -81,12 +77,8 @@ entries:
             url: /fs_workflow.html
           - 
             title: "GP Connect"
-            folderitems: 
-            -
-              title: "GP Connect"
-              output: "web, pdf"            
-              url: /gpc_overview.html
-            output: web
+            output: "web, pdf"            
+            url: /gpc_overview.html            
           -
             title: "Interactions with the DoS"
             output: "web, pdf"            
@@ -126,7 +118,7 @@ entries:
           -
             title: "SMS For Appointments"
             output: "web, pdf"
-            url: /fs_sms.html"
+            url: /fs_sms.html
           -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"

@@ -7,8 +7,13 @@ summary: "This page defines the currently envisaged limit of functional scope fo
 ---
 
 ## What is a UEC Appointment?
-* UEC Appointments are specific time-based slots 
-* Urgency tends to be denoted by the 'disposition' which represents a timeframe within which the patient needs to be seen (e.g. within 6 hours) - this is basically a short-term representation of clinical urgency but it differs from planned care in as much as it works on the basis that the 'clock is ticking from the moment the patient first calls'. 
+* UEC Appointments are where a patient is allocated to a specific time-based unit of resource at a healthcare service
+  * Traditionally this would be a time where the patient would expect to be starting a face to face consultation with a clinician
+  * However there are many other uses for UEC Appointments:
+      * it could just be a "turn-up" time to "check-in" to the service (as in "ED Bookings")
+      * the appointment could be for a telephone or video assessment
+      * the patient would normally be notified of the booking but this need not be the case, the bookings might be "silent" and used just to manage capacity etc..
+* Urgency tends to be determined by the outcome of the initial assessment which represents a timeframe within which the patient needs to be seen after an onward referral (e.g. within 6 hours) - this is basically a short-term representation of clinical urgency but it differs from planned care in as much as it works on the basis that the 'clock is ticking from the moment the patient first calls'. 
 * Appointments can be offered which are delivered by different roles
 
 ## Slot Management 
@@ -25,8 +30,8 @@ For UEC booking not using GP Connect:
 * In urgent & emergency care, slots do not usually have a named clinician.
 
 ## Appointment Management 
-* Proprietary solutions currently provide the ability to Book an appointment with limited capability to Cancel or Reschedule that appointment from within the actual booking workflow. None of the existing proprietary solutions support cancellations / rescheduling after the call has ended.
-A national solution should support the full range of workflow actions expected from an appointment booking system.
+* Proprietary solutions currently provide the ability to Book an appointment with limited capability to Cancel or Reschedule that appointment from within the actual booking workflow. None of the existing proprietary solutions support cancellations/rescheduling after the call has ended.
+* A national solution should support the full range of workflow actions expected from an appointment booking system.
 
 ## Patient Access to the booking system(s)
 * This standard supports direct access to the booking capability by patients

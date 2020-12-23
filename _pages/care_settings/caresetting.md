@@ -1,5 +1,5 @@
 ---
-title: Booking into GP Practices
+title: Care Settings
 sidebar: overview_sidebar
 keywords: guidance
 permalink: caresetting.html
@@ -7,12 +7,11 @@ toc: true
 folder: care_settings
 ---
 
-Care Setting Descriptions
-To ensure consistency in the naming and meaning of the different care settings, they have been documented below.
+To ensure consistency in the naming and meaning of the different care settings, they have been documented below:
 
-### 111 Integrated Urgent Care (111 IUC)
+## 111 Integrated Urgent Care (111 IUC)
 
-The care settings below are part of an Integrate Urgent Care service / area
+The care settings below are part of an Integrated Urgent Care service / area
 
 
 ### NHS 111 (111)
@@ -33,33 +32,36 @@ Some of these services are currently in development and not formalised yet. For 
 These services operate to provider cover for GP surgeries when they are unavailable to the patient” to broaden the situations where OOH GP might be used (e.g. to help manage capacity issues etc.) and not just when the surgery is closed.
 There are few areas in Birmingham and London where the GPs taken on responsibilities themselves (and to add confusion) they may contract the GP OOH provider directly instead the CCG taking on such responsibility.
 
+## Other Urgent and Emergency Care
 
 ### Urgent Treatment Centre (UTC)
 
 Urgent Treatment Centres are an initiative of the NHS Five Year Forward View. They will be open 12 hours a day, seven days a week, and offer patients who do not need to go to A&E treatment by clinicians with access to blood tests, ECGs and X-rays.
-They will offer booked appointments to patients calling in to NHS 111 as well as walk-in patients. They are formed of ‘upgrades’ of existing walk-in centres, minor injury units, urgent care centres, Type 3 & 4 A&E services, or similar services.
+They will offer booked appointments to patients calling in to NHS 111 as well as walk-in patients. They are formed of ‘upgrades’ of existing walk-in centres, minor injury units, urgent care centres, Type 3 & 4 ED services, or similar services.
 Eventually there will be around 400 UTC’s in total. The first round identifies about 150 so the list is currently incomplete. As they are ‘upgrades’ of existing services then we will be collecting information on those other services and will be able to extrapolate across to the UTC world from that.
 
 
-### Emergency Care Centre, Minor Injuries Unit etc. (A&E Type 3)
+### Emergency Care Centre, Minor Injuries Unit etc. (ED Type 3)
 
 These services go by many names: Urgent Care Centre, Minor Injury Unit, Primary Urgent Care Service, Co-located Primary Care Service, Primary Care Walk-in Centre to name some of them.
 The treatments offered and opening times all vary, they even vary if the services are both an Urgent Care Centre. Which has led to confusion amount patients. Services who meet (or can meet) the new service specification will be upgraded to Urgent Treatment Centres (see above).
 
 
-### Walk-in Centres (A&E Type 4)
+### Walk-in Centres (ED Type 4)
 
 The treatments offered and opening times all vary, they even vary if the services are both a Walk-in Centre. Which has led to confusion amount patients. Services who meet (or can meet) the new service specification will be upgraded to Urgent Treatment Centres (see above).
 
 
-### Emergency Department (A&E Type 1)
+### Emergency Department (ED Type 1)
 
 A consultant led 24-hour service with full resuscitation facilities and designated accommodation for the reception of accident and emergency patients.
 
 
-### Emergency Department (A&E Type 2)
+### Emergency Department (ED Type 2)
 
 A consultant led single specialty accident and emergency service (e.g. ophthalmology, dental) with designated accommodation for the reception of patients.
+
+## Primary and Community Care
 
 
 ### GP Surgery (Primary Care)
