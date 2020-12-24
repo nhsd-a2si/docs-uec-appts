@@ -84,19 +84,26 @@ There is a requirement to support reporting from both Consumer and Provider pers
 
 
 ### Specification 
-The [Specification](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/) is a technical document which explicitly details the resources and structures provided, consumed and interchanged within workflows, the requirements for implementing workflows etc. <REST operations>
+The [Specification](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/) is a technical document which explicitly details the resources and structures provided, consumed and interchanged within workflows. The outline of the method operations for the resources is also explained with worked through examples. 
 
 #### Resources 
 NHS FHIR Booking API is based on STU3 FHIR Resources. The StructureDefinitions for each resource can be found in the Specification along with an overview of the dependencies and those mandated. 
 A key resource is the Appointment resource which differs slightly from other resources in that it can be constructed using contained resources.
 
-#### Implementation 
-The Specification also includes a guide to development which describes the implementation of key capabilities and how these work for both Provider and Consumer perspectives. As you would expect, the guide specifies the explicit technical detail for making and consuming the various requests and responses including interactions with external services – SDS & SSP. 
-For any Developer involved in the project, this will be a key resource.
-<Only to define REST operations, GET, PUT, POST>
+#### Operations 
+The Specification explains the method operations expected to be performed against the resources, such as GET, PUT and POST. Furthermore, there is information on authentication and error handling. 
+There are worked examples to guide development which describe the implementation of key capabilities and how the operations work from both Provider and Consumer perspectives. The guide specifies the explicit technical detail for making and consuming the various requests and responses including interactions with external services – SDS & SSP. 
+For any developer involved in the project this will be a key resource.
+
 
 ### Testing & Assurance
-Quality Assurance is a key part of any development and the UEC Booking Team have a range of options to support you in this area. 
+**Testing** is central to any development and there are a range of options to support you in this area, from sandboxed environments (INT Spine) to purpose built tools which can validate workflows. 
+**Assurance** is another significant part of developing a booking solution. A supplier will not be able to move into a Production environment with their customer base until the assurance process is complete. 
+The approach to assurance has been designed to be lightweight and driven by the supplier to help limit delays. The principle is suppliers to self-assure and provide documentation for the NHS Digital Solution Assurance Team to review and verify. A key document in the process is the **SCAL** (Supplier Conformance Assessment List).  
+
+#### SCAL – Supplier Conformance Assessment List 
+The SCAL document is for a supplier to complete, stating they support the various documented capabilities. Alongside this document, is the requirement for evidence and supporting diagrams to be provided, enabling the Solution Assurance Team to understand the solution and ensure it meets the required standard. 
+In addition, the supplier will demonstrate an end-to-end test of their solution functionality within the INT environment, following given test scripts.
 
 #### Environments
 There are numerous environments to assist with all levels of development maturity. There aren’t any documented barriers-to-entry for any of these environments but you will work closely with the Team to establish when access is appropriate based on development progress. 
@@ -104,21 +111,13 @@ There are numerous environments to assist with all levels of development maturit
 ##### UEC Booking Demonstrator (deprecated) 
 This Demonstrator provides an internet facing implementation of the NHS FHIR Booking API to start development against. It provides a Postman collection and place to generate valid JWT Bearer tokens new implementations would be expected to generate and validate. 
 
-##### Spine INT
-This environment is within HSCN with connectivity to like-live production services of DoS, SDS and SSP. It is a more mature environment than the Demonstrator and would only expect to be accessed when a solution is nearing the first draft of completion and can work end-to-end. 
+##### INT Spine
+This sandbox environment is within HSCN with connectivity to like-live production services of DoS, SDS and SSP. It is more mature than the Demonstrator and would only expect to be accessed when a solution is nearing the first draft of completion and can work end-to-end. 
 In order to access it, you will be required to speak to a member of the UEC Booking Team who can make the necessary arrangements for your system to engage with this environment.
 Any development must be tested within the INT environment before it could be assured and expect to move to an FoT Production with a customer.
 
-#### Assurance 
-Assurance is a vital part of developing a solution. A supplier will not be able to move into a Production environment with their customer base until assurance is complete. 
-The process of assurance has been designed to be lightweight and driven at the pace of the supplier so they’re not held up in anyway. The principle is the supplier to self-assure and provide documentation for NHS Digital Solution Assurance Team to review and verify. A key document in the process is the SCAL.  
-
-#### SCAL – Supplier Conformance Assessment List 
-The SCAL document is for a supplier to complete, stating they support the various documented capabilities. Alongside this document, is the requirement for evidence and supporting diagrams to be provided, enabling the Solution Assurance Team to understand the solution and ensure it meets the required standard. 
-In addition, the supplier will demonstrate an end-to-end test of their solution functionality within the INT environment, following given test scripts.
- 
 #### Tooling
-Along with the internet facing Demonstrator environment, there is also the Assurance Tool. This is a series of Docker containers which simulate the various use cases for Providers and Consumers, outputting evidence (which can be supplied as part of the SCAL) and providing detailed reports on where a solution meets the standard or not. Therefore, this tool can also be used during any stage of development for either set of capabilities – Provider or Consumer. 
+Along with the internet facing Demonstrator environment, there are the **TKW Assurance Simulators**. These are Docker containers which simulate the various use cases for Providers and Consumers, outputting evidence (which can be supplied as part of the SCAL) and providing detailed validation reports on where a solution meets the standard or not. These tools can also be used during any stage of development for either set of capabilities – Provider or Consumer. 
 
 [Provider Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator)
 [Consumer Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator)
@@ -139,7 +138,7 @@ The Toolkit provides and advice and guidance for subsequent deployment to  –
 
 ### Communication 
 It is expected engagement with the UEC Booking Team will be ongoing throughout the development process and to support this we offer plan to support. 
-*	Communication Plan
+Communication Plan -
 *	Teams Channel – continuously monitored and updated
 *	Weekly calls – to mark progress and allow discussion 
 *	Ad hoc calls – to be arranged if blockers occur 
