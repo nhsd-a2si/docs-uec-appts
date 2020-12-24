@@ -66,7 +66,7 @@ The Standard has core use cases which suppliers must satisfy for their solution 
 The Standard can only be fulfilled at present in conjunction with additional National and Spine services.
 NEW
 
-###### DoS - Directory of Services
+##### DoS - Directory of Services
 The DoS is required to find the Provider services and, therefore, the slots they provide for the various schedules. 
 The functionality of the DoS also enables support for Booking Only services and Consumer systems will need to 
 
