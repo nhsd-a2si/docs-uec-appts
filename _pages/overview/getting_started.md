@@ -18,29 +18,29 @@ This is an overview of the phases of engagement. Click on an area to explore fur
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 ### Context 
-The aim of this programme of work is to deliver a standard for direct appointment booking within the UEC landscape, to improve patient experience of service through connected care paths. 
-The standard ensures suppliers build compatible systems to both provide appointment slots and consume the advertised availability by requesting appointments. 
+The aim of this programme of work is to deliver a standard for direct bookings within the UEC landscape, to improve patient experience of services through connected care paths. 
+The standard ensures suppliers build compatible systems to both provide slots for bookings and consume the advertised availability by requesting bookings. 
 
 
 ### Functionality 
-The functionality Suppliers adopt is that of Consumer and/or Provider. The functions for each are different aspects of the same workflow, namely, providing available slots and managing bookings within those slots. 
+The functionality Suppliers adopt is that of Consumer and/or Provider. The operations for each are different aspects of the same workflow, namely, providing available slots and managing bookings within those slots. 
 
 #### Provider
-As a Provider, a supplier will perform the following key functions: 
+As a Provider, a supplier will perform the following: 
 *	Offer Slots to Consumers
 *	Create Booking
 *	Cancel Booking
 *	Receive Referral
 
 #### Consumer
-As a Consumer, a supplier will perform the following key functions: 
+As a Consumer, a supplier will perform the following: 
 *	Service discovery (DoS)
 *	Endpoint discovery (SDS)
 *	Request Slots
 *	Request Booking
 *	Cancel Booking
-*	Within consultation 
-*	Outside consultation
+**	Within consultation 
+**	Outside consultation
 *	Send Referral
 
 
@@ -48,23 +48,22 @@ As a Consumer, a supplier will perform the following key functions:
 The overall [Standard](https://developer.nhs.uk/apis/uec-appointments/) covers the context in which the functionality is intended to be used, the scope of functionality and how a supplier is expected to engage to deliver a successfully assured solution for their customer base. It can be thought of as an implementation guide, covering every step a supplier can expect to traverse from analysis through to deployment. 
 
 #### Functional Scope 
-This Standard supports the implementation of UEC bookings, which includes **Slot Management**, **Appointment Management** and **Analytics & Reporting**, related to these activities. 
+This Standard supports the implementation of UEC bookings, which includes [**Slot Management**](https://developer.nhs.uk/apis/uec-appointments/fs_deliverychannel.html), [**Appointment Management**](https://developer.nhs.uk/apis/uec-appointments/fs_slotmanagement.html) and [**Analytics & Reporting**](https://developer.nhs.uk/apis/uec-appointments/fs_reporting.html), related to these activities. 
 Additionally, it provides guidance on how to interact with national services (**DoS**, **SDS** & **SSP**) which support the implementation of the above functions. 
 
 #### Capabilities 
 The Standard has core use cases which suppliers must satisfy for their solution to be successfully assured. The capabilities overlap for Providers and Consumers but both having distinct roles in the workflows. <The are outlined in the Functionality section of this of this guide.> 
   
-* Display Provider services based on clinical need (Consumer)
-*	Offer (Provider) and display (Consumer) available slots
-*	Request (Consumer) and Create (Provider) Booking
-*	Request (Consumer) and Cancel (Provider) Booking inside and outside assessment made by the Consumer
-*	Request (Consumer) and Rebook (Provider) Booking inside assessment
-*	Notify user when Booking outside of an assessment timeframe (Consumer)
-*	Support Booking Only service requirements (Consumer)
+* [Display Provider services based on clinical need (Consumer)](https://developer.nhs.uk/apis/uec-appointments/usep_abus01.html)
+*	[Offer (Provider) and display (Consumer) available slots](https://developer.nhs.uk/apis/uec-appointments/usep_abus10.html)
+*	[Request (Consumer) and Create (Provider) Booking](https://developer.nhs.uk/apis/uec-appointments/usep_abus12.html)
+*	[Request (Consumer) and Cancel (Provider) Booking inside and outside assessment made by the Consumer](https://developer.nhs.uk/apis/uec-appointments/usee_abus21.html)
+*	[Request (Consumer) and Rebook (Provider) Booking inside assessment](https://developer.nhs.uk/apis/uec-appointments/usee_abus22.html)
+*	[Notify user when Booking outside of an assessment timeframe (Consumer)](https://developer.nhs.uk/apis/uec-appointments/usep_abus13.html)
+*	[Support Booking Only service requirements (Consumer)](https://developer.nhs.uk/apis/uec-appointments/usep_abus24.html)
 
 #### Interactions
-The Standard can only be fulfilled at present in conjunction with additional National and Spine services.
-NEW
+The Standard can only be fulfilled at present in conjunction with additional [National and Spine services](https://developer.nhs.uk/apis/uec-appointments/dos_overview.html).
 
 ##### DoS - Directory of Services
 The DoS is required to find the Provider services and, therefore, the slots they provide for the various schedules. 
@@ -77,10 +76,10 @@ This LDAP service provides a directory of endpoints for Provider systems. The Do
 This proxy controls all traffic from Consumers to Providers, handling both the auth-n and auth-z functions. 
 
 #### Referrals 
-The Standard supports the ability to include a reference to any referral documents which might be sent in conjunction with the Booking. In order to support a cross-reference, it is expected the Referral document will contain reference to the Booking.
+The Standard supports the ability to include a reference to any [referral documents](https://developer.nhs.uk/apis/uec-appointments/fs_xfercare.html) which might be sent in conjunction with the Booking. In order to support a cross-reference, it is expected the Referral document will contain reference to the Booking.
 
 #### Reporting 
-There is a requirement to support reporting from both Consumer and Provider perspectives. Full details for each can be found <here>
+There is a requirement to support [reporting](https://developer.nhs.uk/apis/uec-appointments/fs_reporting.html) from both Consumer and Provider perspectives.
 
 
 ### Specification 
@@ -97,12 +96,12 @@ For any developer involved in the project this will be a key resource.
 
 
 ### Testing & Assurance
-**Testing** is central to any development and there are a range of options to support you in this area, from sandboxed environments (INT Spine) to purpose built tools which can validate workflows. 
+[**Testing**](https://developer.nhs.uk/apis/uec-appointments/assurance_overview.html) is central to any development and there are a range of options to support you in this area, from sandboxed environments (INT Spine) to purpose built tools which can validate workflows. 
 **Assurance** is another significant part of developing a booking solution. A supplier will not be able to move into a Production environment with their customer base until the assurance process is complete. 
 The approach to assurance has been designed to be lightweight and driven by the supplier to help limit delays. The principle is suppliers to self-assure and provide documentation for the NHS Digital Solution Assurance Team to review and verify. A key document in the process is the **SCAL** (Supplier Conformance Assessment List).  
 
 #### SCAL – Supplier Conformance Assessment List 
-The SCAL document is for a supplier to complete, stating they support the various documented capabilities. Alongside this document, is the requirement for evidence and supporting diagrams to be provided, enabling the Solution Assurance Team to understand the solution and ensure it meets the required standard. 
+The [SCAL](https://developer.nhs.uk/apis/uec-appointments/assurance_scal.html) document is for a supplier to complete, stating they support the various documented capabilities. Alongside this document, is the requirement for evidence and supporting diagrams to be provided, enabling the Solution Assurance Team to understand the solution and ensure it meets the required standard. 
 In addition, the supplier will demonstrate an end-to-end test of their solution functionality within the INT environment, following given test scripts.
 
 #### Environments
@@ -127,14 +126,14 @@ Along with the internet facing Demonstrator environment, there are the **TKW Ass
 
 
 ### Deployment 
-The process of moving a solution into a Live environment involves developing maturity and satisfying a given level of assurance. If a supplier is completely new to NHS Spine services, there will be certain prerequisite services (HSCN connectivity, SDS, PDS) which they need to be compliant with before moving onto environments which support booking. This is ensures they have what is termed **Technical Accreditation**. 
+The process of moving a solution into a Live environment involves [developing maturity](https://developer.nhs.uk/apis/uec-appointments/deployment_toolkit.html) and satisfying a given level of [assurance](https://developer.nhs.uk/apis/uec-appointments/assurance_overview.html). If a supplier is completely new to NHS Spine services, there will be certain prerequisite services (HSCN connectivity, SDS, PDS) which they need to be compliant with before moving onto environments which support booking. This is ensures they have what is termed [**Technical Accreditation**](https://developer.nhs.uk/apis/uec-appointments/assurance_supplier.html). 
 
 #### Roles and Responsibilities 
 The testing phases require management and co-ordination of several actors (Suppliers, their customers, DoS Leads etc.). The NHS Digital UEC Booking Team will orchestra the setup of tests, co-ordinating each of these stages, but there is an expectation suppliers and their customers will provide sufficient resource to support too. A supplier should expect to provide a degree of project management to co-ordinate their internal teams and the engagement of their customers to run the end-to-end tests.
 
 #### INT Testing 
 The first like-live end-to-end test of a solution will be on the INT environment. This environment support the various spine services (PDS, SDS, SSP) to allow this to take place. A test on this environment should be prepared for with the similar degree of management as a Live test. It will involve multiple suppliers, configuration of the DoS and a member of the UEC Booking Team. 
-The evidence required for the SCAL can be performed and collected during testing on INT. This will lead to Assurance being agreed and a **Technical Conformance certificate** being issued, which must be obtained before progressing to a live deployment. 
+The evidence required for the SCAL can be performed and collected during testing on INT. This will lead to Assurance being agreed and a [**Technical Conformance certificate**](https://developer.nhs.uk/apis/uec-appointments/assurance_supplier.html) being issued, which must be obtained before progressing to a live deployment. 
 
 #### Technical Live
 The first live end-to-end test of the solution and the last stage the UEC Booking Team will be involved before the supplier moves to a business-as-usual deployment model. Again, this is a full end-to-end test, using customers live environments and live Spine services, including the live DoS. 
