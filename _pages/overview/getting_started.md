@@ -127,17 +127,18 @@ Along with the internet facing Demonstrator environment, there are the **TKW Ass
 
 
 ### Deployment 
-There are several aspects to deployment, involving multiple teams for various services. As a supplier, there are various stages to a successful Production deployment, which will involve deployments to INT in the process. 
+The process of moving a solution into a Live environment involves developing maturity and satisfying a given level of assurance. If a supplier is completely new to NHS Spine services, there will be certain prerequisite services (HSCN connectivity, SDS, PDS) which they need to be compliant with before moving onto environments which support booking. This is ensures they have what is termed **Technical Accreditation**. 
 
-#### FoT – First of Type
-There is a dedicated Deployment Toolkit to help guide through the initial phases for the various actors involved in getting a supplier to Production. 
-The UEC Booking Team will assist initial First-of-Type provider test, orchestrating the various parties involved, imparting information around key roles and responsibilities to enable subsequent go-lives to happen without the Booking Team being involved. 
-The Toolkit provides and advice and guidance for subsequent deployment to  – 
-*	Suppliers 
-*	Providers
-*	DoS Leaders 
-*	Commissioners 
-<roles and responsibilities for all parties involved in deployments – suppliers/NHS Digital etc. INT/Provider Testing/Production>
+#### Roles and Responsibilities 
+The testing phases require management and co-ordination of several actors (Suppliers, their customers, DoS Leads etc.). The NHS Digital UEC Booking Team will orchestra the setup of tests, co-ordinating each of these stages, but there is an expectation suppliers and their customers will provide sufficient resource to support too. A supplier should expect to provide a degree of project management to co-ordinate their internal teams and the engagement of their customers to run the end-to-end tests.
+
+#### INT Testing 
+The first like-live end-to-end test of a solution will be on the INT environment. This environment support the various spine services (PDS, SDS, SSP) to allow this to take place. A test on this environment should be prepared for with the similar degree of management as a Live test. It will involve multiple suppliers, configuration of the DoS and a member of the UEC Booking Team. 
+The evidence required for the SCAL can be performed and collected during testing on INT. This will lead to Assurance being agreed and a **Technical Conformance certificate** being issued, which must be obtained before progressing to a live deployment. 
+
+#### Technical Live
+The first live end-to-end test of the solution and the last stage the UEC Booking Team will be involved before the supplier moves to a business-as-usual deployment model. Again, this is a full end-to-end test, using customers live environments and live Spine services, including the live DoS. 
+
 
 ### Communication 
 It is expected engagement with the UEC Booking Team will be ongoing throughout the development process and to support this we offer plan to support. 
