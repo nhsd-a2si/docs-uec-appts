@@ -52,7 +52,7 @@ Consumers SHALL follow the pattern described in the [Transactional Integrity](ht
 
 ### Requests
 
-Providers SHALL be able to consume and process the following requests for NHS FHIR Scheduling FoT:
+Providers SHALL be able to consume and process the following requests for NHS FHIR Scheduling:
 
 | Interaction | Path | Request verb | Request content-type | Body | Prefer | Conditional |
 | ----------- | ---- | ------------ | -------------------- | ---- | ------ | ----------- |
@@ -67,7 +67,7 @@ Providers SHALL be able to consume and process the following requests for NHS FH
 
 ### Responses
 
-Providers SHALL be expected to produce the following responses for NHS FHIR Shceduling FoT:
+Providers SHALL be expected to produce the following responses for NHS FHIR Scheduling :
 
 | Interaction | Response content-type | Body | Location | Content-location | Versioning | Status codes |
 | ----------- | --------------------- | ---- | -------- | ---------------- | ---------- | ------------ |
