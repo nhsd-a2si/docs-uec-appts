@@ -4,10 +4,51 @@ sidebar: overview_sidebar
 keywords: introduction
 permalink: release_notes.html
 toc: true
+tags: [getting_started]
 folder: introduction
 ---
 
 ## Current Release
+
+### 0.1.17 ALPHA
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.1.17  | ALPHA   | Alpha | Current Version | 18/12/2020   | Volatile
+
+The 0.1.17 ALPHA release has the following highlights:
+
+* <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/overview_release_notes.html" target="_blank">Update of FHIR Specification to 2.0.1-beta</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘supportingInfo’ element for the Appointment resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘participant’ element for the Appointment resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Added guidance for using ‘incomingReferral’ element for the Appointment resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated contained resource guidance for the Appointment resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/search_free_slots.html" target="_blank">Updated search parameters guidance when searching for free slots.</a>
+* <a href="fs_workflow.html#endpoint-discovery" target="_blank">Fixed some incorrect interactions in some diagrams on the workflow page</a>
+* <a href="fs_workflow.html#patient-demographic-service-pds" target="_blank">Removed guidance that PDS trace is mandatory for Consumer systems</a>
+* <a href="usep_abus13.html" target="_blank">Updated user story (abus13) to be more generic in its guidance, removing specific references to the UEC DoS</a>
+* <a href="what_are_we_doing.html" target="_blank">Updated some wording on the "What we are doing?" page</a>
+* <a href="caresetting.html" target="_blank">Updated some wording on the "Care Settings" page</a>
+* <a href="catalogue.html" target="_blank">Updated the conformance catalogue page to reflect the latest status and add links</a>
+* <a href="scope_functional.html" target="_blank">Updated the functional scope page to reflect the latest developments in the standard</a>
+* <a href="fs_authentication.html#jwt-payload" target="_blank">Made the "requesting_practitioner" claim optional</a>
+* <a href="glossary.html" target="_blank">Added a number of new items to the glossary</a>
+
+<br>
+<br>
+
+## Future releases
+
+### 0.2.0 BETA
+
+Version | Handle  | Phase | State           | Release Date (planned) | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.2.0   | BETA | Public Beta | Unreleased | TBC   | Volatile
+
+<br>
+<br>
+
+## Previous releases
 
 ### 0.1.16 ALPHA
 
@@ -37,21 +78,7 @@ The 0.1.16 ALPHA release has the following highlights:
 * <a href="fs_deliverychannel.html" target="_blank">A new page documenting requirements for displaying slots, including explicit reference to delivery channel was added</a>
 * <a href="" target="_blank">The conformance catalogue page was updated to remove unnecessary reference to GP Connect and change the format and content to reflect the current status of suppliers </a>
 
-<br>
-<br>
-
-## Future releases
-
-### 0.2.0 BETA
-
-Version | Handle  | Phase | State           | Release Date (planned) | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.2.0   | BETA | Private Beta | Unreleased | TBC   | Volatile
-
-<br>
-<br>
-
-## Previous releases
+* Fixed broken menu item for GP Connect section
 
 ### 0.1.15 ALPHA
 
