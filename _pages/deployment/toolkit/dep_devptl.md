@@ -78,6 +78,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
         
 <details>
 <summary>Click to see step-by-step guide</summary>
+<div>
 
 ## Heading
   1. A numbered
@@ -95,7 +96,9 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  2. test 
  3. test 
  4. test
+ 5. test
  
+</div>
 </details>
  
 ### End-to-End test
