@@ -45,4 +45,12 @@ entries:
             url: /dep_dosoverview.html
         output: web
         title: DoS Leads
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Test Plan"
+            url: /dep_testplan.html
+        output: web
+        title: Test Plan
     title: "Urgent & Emergency Care Appointment Booking Standards - Deployment Toolkit"
