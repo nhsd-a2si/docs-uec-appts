@@ -36,5 +36,13 @@ entries:
             title: "Testing Resources"
             url: /dep_provtest.html  
         output: web
-        title: Providers     
+        title: Providers
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "DoS Lead Guidance"
+            url: /dep_dosoverview.html
+        output: web
+        title: DoS 
     title: "Urgent & Emergency Care Appointment Booking Standards - Deployment Toolkit"
