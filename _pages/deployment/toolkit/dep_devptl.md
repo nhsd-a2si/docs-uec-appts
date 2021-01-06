@@ -78,7 +78,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
         
 <details>
 <summary>Click to see step-by-step guide</summary>
-<div>
+<div class="special-class" markdown="1">
 
 ## Heading
   1. A numbered
