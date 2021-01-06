@@ -75,6 +75,27 @@ Once you have the above pre-requisites you will need to <a href="https://digital
         * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
         * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; <a href="https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN" target="_blank">MSDN Article</a>). 
         </details>
+        
+<details>
+<summary>Click to see step-by-step guide</summary>
+
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+     
+## Heading 2
+ * bullet
+   * sub bullet
+ * bullet
+
+ 1. test
+ * bullet
+ 2. test 
+ 3. test 
+</details>
  
 ### End-to-End test
 
