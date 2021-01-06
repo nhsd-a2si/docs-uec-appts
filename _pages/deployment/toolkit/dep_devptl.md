@@ -79,8 +79,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
 <details>
 <summary>Click to see step-by-step guide</summary>
 
-  
-  ## Heading
+## Heading
   1. A numbered
   2. list
      * With some
@@ -95,6 +94,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  * bullet
  2. test 
  3. test 
+ 
 </details>
  
 ### End-to-End test
