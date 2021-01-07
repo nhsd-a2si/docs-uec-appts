@@ -16,4 +16,4 @@ folder: deployment
 
 Testing is a continuous process whilst building and assuring a solution to make it production ready. 
 
-The early phases of testing can happen in virtual isolation, however, when moving to assure a solution, achiveing Technical Conformance and finally onto Business Go Live, more rigorous Test plans must be followed to ensure co-ordination with the range of actors (other suppliers, DoS Leads etc.) required for success.
+The early phases of testing can happen in virtual isolation, however, when moving to assure a solution, achiveing Technical Conformance and finally onto Business Go Live, more rigorous Test plans must be followed. This ensures the range of actors (other suppliers, DoS Leads etc.), required for a successful test, can be appropriately co-ordinated. See Test Plans section for further detail. 
