@@ -49,6 +49,14 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
+            title: "Testing"
+            url: /dep_testtesting.html
+        output: web
+        title: Testing
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
             title: "Test Plan"
             url: /dep_testplan.html
         output: web
