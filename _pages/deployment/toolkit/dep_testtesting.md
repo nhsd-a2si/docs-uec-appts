@@ -1,1 +1,17 @@
-## Testing Phases
+---
+title: Deployment Toolkit - Testing
+sidebar: deployment_sidebar
+keywords: guidance
+permalink: dep_testtesting.html
+toc: false
+folder: deployment
+---
+
+## Testing Maturity
+
+<div class="mxgraph" style="max-width:100%;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;lightbox&quot;:false,&quot;nav&quot;:true,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2021-01-07T11:55:56.010Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\&quot; etag=\&quot;yU6WRpv09NU2qdzhe333\&quot; version=\&quot;14.1.8\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;ht8IVbNLFKrBuEw-HWi5\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+
+### Phased approach 
+
+Testing is a continuous process whilst building and assuring a solution to make it production ready. The early phases of testing can happen in virtual isolation, however, when moving to assure a solution, achiveing Technical Conformance and finally onto Business Go Live, more rigorous Test plans must be followed to ensure co-ordination with the range of actors (other suppliers, DoS Leads etc.) required for success.
