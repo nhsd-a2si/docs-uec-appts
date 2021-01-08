@@ -85,6 +85,15 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
+                <td style="background-color: #DDA0DD;">Development</td>
+           </tr>
+      <!------------------------------ROW----------------------------------->      
+          <tr>
+                <td style="font-size:small">Yorkshire and Humber</td>
+                <td style="font-size:small">SPA</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
                 <td style="background-color: #ffffcc;">Engagement</td>
            </tr>  
          </tbody>
@@ -381,7 +390,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td></td>
+                <td>Not Started</td>
               </tr> 
               
       <!------------------------------ROW----------------------------------->       
