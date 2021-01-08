@@ -14,7 +14,10 @@ folder: deployment
 
 ### Analysis
 
-During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) or the TKW Simulators are useful tools for this stage ([Demonstrator](http://appointments.directoryofservices.nhs.uk:443/poc/index), [Provider Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator) or [Consumer Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator)). The solution can be checked at any of development using these tools and the simulators will provide useful validation reports to highlight points of failure or oversight.
+During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) or the TKW Simulators are useful tools for this stage ([Demonstrator](http://appointments.directoryofservices.nhs.uk:443/poc/index), [Provider Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator) or [Consumer Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator)). 
+
+The solution can be tested at any stage of development using these tools and the simulators will provide useful validation reports to highlight points of failure or oversight. These is more about testing during development maturity under the Testing section of this Deployment Toolkit. 
+
 
 ### Development Complete
 
@@ -83,23 +86,27 @@ Once you have the above pre-requisites you will need to <a href="https://digital
 
 Once set up on the Integration Environment it is possible to perform like-live tests, including making requests to spine components - SDS, SSP - to interact with other supplier solutions. 
 
-The end-to-end tests can be characterised in either an informal/ad hoc approach, where suppliers may contact each other to arrange tests, or more formal test plans can be followed. If a formal test is required, the UEC Booking Team will take the lead, requests systems to be configure, arrange a meeting time and guide users through a step-by-step test plan. The formal approach would be required for a supplier to demonstrate their solution or gather evidence for their SCAL submission.  
+The end-to-end tests can be characterised in either an informal/ad hoc approach, where suppliers may contact each other to arrange tests, or more formal test plans can be followed. If a formal test is required the UEC Booking Team will take the lead, requesting systems to be configured, arrange a meeting time and guide users through a step-by-step test plan. The formal approach would be required for a supplier to demonstrate their solution or gather evidence for their SCAL submission.  
 
 ## Assure
 
-TBC
+Assurance is a vital step in developing a Booking solution for either Provider or Consumer functionality. You will engage with the Solutions Assurance Team, via the UEC Booking Team, who will provide the [SCAL](https://developer.nhs.uk/apis/uec-appointments/assurance_scal.html) (Supplier Conformance Assessment List) document for completion. This is a self-assurance process but there is a requirement to demonstrate the end-to-end functionality and provide documented evidence of how the solution meets the Standard.
+
+The TKW Simulator will provide all the evidence documents required to support the SCAL.
 
 ### Technical Conformance Certificate
 
-TBC
+A Technical Conformance Certificate confirms NHS Digital are satisfied the solution meets the published Standard. The supplier is subsequently able to enter into a Connection Agreement and progress to live testing in the Production environment. 
 
 ## Provider Testing
 
-TBC
+The first live Production test a supplier will undertake will be a controlled test, following a pre-determined Test plan. The test will involve all actors (Service Provider, Supplier(s), DoS Leads etc) and aim to prove end-to-end functionality of the supplier solution with components - DoS, SDS & SSP, along with other existing supplier soltions. 
 
 ### Live Install
 
-TBC
+The Live install of a Provider can only be performed once the Technical Conformance Certificate has been issues and Connection Agreement confirmed. 
+
+It is expected the supplier will dedicate project management resource to arranging the Live install of their customer; the Provider. The Live install will take place as part of the preparations for the end-to-end test which also includes ensuring connection to Production, registering endpoints, obtaining ASIDs, installing certificates etc. 
 
 ## Technical Live
 
