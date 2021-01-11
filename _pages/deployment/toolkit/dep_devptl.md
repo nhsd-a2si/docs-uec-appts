@@ -110,8 +110,8 @@ It is expected the supplier will dedicate project management resource to arrangi
 
 ## Technical Live
 
-TBC
+At this point, with the system having been tested in Production, it is now technically ready to go live. The supplier, service provider and supporting leads e.g. DoS lead, Commisioners etc. can agree a date to start using the solution in Production. 
 
 ### Business Live
 
-TBC
+On the agreed date of go-live, the system will be switched on, and end-to-end test run to verify functionality and the service declared live.
