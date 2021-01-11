@@ -102,11 +102,24 @@ A Technical Conformance Certificate confirms NHS Digital are satisfied the solut
 
 The first live Production test a supplier will undertake will be a controlled test, following a pre-determined Test plan. The test will involve all actors (Service Provider, Supplier(s), DoS Leads etc) and aim to prove end-to-end functionality of the supplier solution with components - DoS, SDS & SSP, along with other existing supplier soltions. 
 
+In the unlikely event of an issue being raised at this point, it provides time for resolution prior to business go-live, whether it be in the developed solution itself or setup and configuration.
+
 ### Live Install
 
-The Live install of a Provider can only be performed once the Technical Conformance Certificate has been issues and Connection Agreement confirmed. 
+The Live install of a Provider can only be performed once the Technical Conformance Certificate has been issued and Connection Agreement confirmed. 
 
-It is expected the supplier will dedicate project management resource to arranging the Live install of their customer; the Provider. The Live install will take place as part of the preparations for the end-to-end test which also includes ensuring connection to Production, registering endpoints, obtaining ASIDs, installing certificates etc. 
+It is expected the supplier will dedicate project management resource to arranging the Live install of their customer; the Provider. The Live install will take place as part of the preparations for the end-to-end Provider test which includes ensuring connection to Production, registering endpoints, obtaining ASIDs, installing certificates etc. 
+
+* Connectivity to [HSCN](https://digital.nhs.uk/services/health-and-social-care-network/new-hscn-connections)
+* Establish [Connection Agreement](https://digital.nhs.uk/services/health-and-social-care-network/connection-governance)
+*	Register [FQDN](https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments)
+*	Register Product with the Spine - MPV
+*	Request & install certificates 
+* Assignment of ASID(s)
+*	Assign interactions (SDS/SSP) to ASID
+*	Ensure Firewalls are open for connections
+* Upgrade & configuration of Provider system with supplier solution
+*	Configure DoS
 
 ## Technical Live
 
@@ -114,4 +127,8 @@ At this point, with the system having been tested in Production, it is now techn
 
 ### Business Live
 
-On the agreed date of go-live, the system will be switched on, and end-to-end test run to verify functionality and the service declared live.
+On the agreed date of go-live, the system will be switched on, and end-to-end test run to verify functionality and the service declared live. The solution moves from a project into a BAU (Business as Usual) process. 
+
+Depending on the supplier adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
+
+
