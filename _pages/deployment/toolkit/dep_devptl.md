@@ -27,7 +27,7 @@ Once Development is complete, the suplier can move onto Integration Testing.
 ## Integration Testing
 
 Integration testing can be a challenging step. It involves gaining access to the SPINE Integration Environment (INT).
-There are a series of pre-requestites and steps to complete before you can begin integration testing which equate to [Technical Accreditation](https://developer.nhs.uk/apis/uec-appointments/assurance_supplier.html#technical-accreditation).
+There are a series of pre-requestites and steps to complete before you can begin integration testing which equate to <a href="assurance_supplier.html#technical-accreditation" target="_blank">Technical Accreditation</a>.
 
 ### Pre-Requisites
  
