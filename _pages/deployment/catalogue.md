@@ -56,7 +56,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">11.2009</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
@@ -66,7 +66,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">4.7.97</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->      
@@ -76,7 +76,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">4.122.0</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
           </tr>
       <!------------------------------ROW----------------------------------->      
           <tr>
@@ -85,7 +85,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
-                <td style="background-color: #DDA0DD;">Development</td>
+                <td style="background-color: LightBlue;">Development</td>
            </tr>
       <!------------------------------ROW----------------------------------->      
           <tr>
@@ -132,7 +132,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">11.2009</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr>
               
       <!------------------------------ROW----------------------------------->
@@ -143,7 +143,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">2.39</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr> 
                
       <!------------------------------ROW----------------------------------->
@@ -154,7 +154,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">3.0</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.16 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.0 BETA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr>  
               
       <!------------------------------ROW----------------------------------->
@@ -165,7 +165,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">1.0</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr>  
               
       <!------------------------------ROW----------------------------------->     
@@ -209,7 +209,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
-                <td style="background-color: #DDA0DD;">Development</td>
+                <td style="background-color: LightBlue;">Development</td>
               </tr> 
          
         <!------------------------------ROW----------------------------------->
@@ -390,7 +390,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
+                <td>Using 3rd Party Integration</td>
               </tr> 
               
       <!------------------------------ROW----------------------------------->       
