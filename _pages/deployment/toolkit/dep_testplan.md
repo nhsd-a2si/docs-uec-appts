@@ -26,7 +26,7 @@ In the process of building a solution a supplier will be involved in several rou
 The actors from the numerous parties must know what is expected of them during a planned test. This ensure the test has the best chance of success and valuable time is not wasted through trial-and-error attempts.
 
 ### Actors 
-There may be others involved but there is a requirement to cover these core roles for any level of test. 
+There may be others involved but there is a requirement to cover these core roles for any level of arranged test. 
 
 * NHS Digital - UEC Booking - Delivery Manager
 * NHS Digital - DoS - Configuration Lead 
@@ -38,14 +38,59 @@ There may be others involved but there is a requirement to cover these core role
 * Service Provider - Provider (software) - User 
 
 ## Prerequisites 
-### Supplier Systems
+
+### All Supplier Systems
+* Certs obtained and installed – Provider & Consumer
+* Connected to INT – Provider & Consumer
+*	ASID supplied for connecting system/service 
+*	Interactions for ASID added to SDS
+* Identify PDS traceable patient
+
+### Provider 
+*	Confirm Booking endpoint is running and accessible (firewalls updated)
+*	Confirm Referral endpoint is running and accessible (firewalls updated)
+*	Slots added to Schedule accessible via DoS
+
+### Consumer
+*	Access to DoS 
+*	Local configuration to make requests of Provider endpoints
+    *	Scheduling
+    * Referral 
+
 ### DoS
+*	Service for Provider System configured 
+*	Scheduling Endpoint configured 
+*	ITK Endpoint configured 
+*	Optional ‘requirebooking’ attribute added and set to TRUE
+*	Note following supported by service to assist Consumer
+    * Age range
+    * DX code
+    * Opening Times
 
 ## Test Plan Management 
 * Arrange the meeting 
 * Ensure everyone is ready 
 
 ## Test Run 
+*	Consumer system performs triage/consultation resulting in appropriate outcome code to make request of DoS Service
+*	Views DoS services
+*	Selects configured DoS service 
+*	Selects option to initiate request for Slots 
+*	View available slots 
+    *	Indicate where no slots are available to user
+*	Slots outside of outcome code timeframe adhere to user type (Clinical/Non-clinical) requirements
+*	Select Slot 
+*	Request Booking 
+    * Indication Booking has been made
+* User is able to Rebook 
+*	User is able to Cancel booking 
+*	Referral is made 
+*	Triage/consultation complete 
+* SMS transferred to patient
+
+After triage/consultation 
+*	User is able to cancel booking outside of triage/consultation window
+
 
 ## Test Plan Resources 
 
