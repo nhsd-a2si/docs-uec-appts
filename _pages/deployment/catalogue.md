@@ -46,7 +46,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">3.33</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightGreen;">Ready</td>
+                <td style="background-color: LightBlue;">Ready</td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
