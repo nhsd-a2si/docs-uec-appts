@@ -26,41 +26,48 @@ In the process of building a solution a supplier will be involved in several rou
 The actors from the numerous parties must know what is expected of them during a planned test. This ensure the test has the best chance of success and valuable time is not wasted through trial-and-error attempts.
 
 ### Actors 
-There may be others involved but there is a requirement to cover these core roles for any level of arranged test. 
+There is a requirement to cover these core roles for any level of arranged test. There may be others involved or some individuals may perform multiple roles.  
 
-* NHS Digital - UEC Booking - Delivery Manager
-* NHS Digital - DoS - Configuration Lead 
-* Supplier - Consumer - Technical
-* Service Provider - Consumer (software) - Project Lead
-* Service Provider - Consumer (software) - User 
-* Supplier - Provider - Technical
-* Service Provider - Provider (software) - Project Lead
-* Service Provider - Provider (software) - User 
+|Organisation|Expertise|Individual Role|
+|:---|:---|:---|
+|NHS Digital|UEC Booking|Delivery Manager|
+|NHS England (regional)|DoS|Configuration Lead|
+|Supplier (Software solution*)|Consumer|Technical|
+|Service Provider (e.g. 111 Provider)|Consumer (software)|Project Lead|
+|Service Provider (e.g. 111 Provider)|Consumer (software)|User|
+|Supplier (Software solution*)|Provider|Technical|
+|Service Provider (e.g. ED)|Provider (software)|Project Lead|
+|Service Provider (e.g. ED)|Provider (software)|User|
+
+\* Potentially the same organisation. Some suppliers have developed both Booking Provider and Consumer functionality.
 
 ## Prerequisites 
 
-### All Supplier Systems
+### Both Service Systems (Provider & Consumer)
 * Certs obtained and installed – Provider & Consumer
 * Connected to INT – Provider & Consumer
-*	ASID supplied for connecting system/service 
-*	Interactions for ASID added to SDS
-* Identify PDS traceable patient
-
+    * ASID supplied for connecting system/service 
+    *	Interactions for ASID added to SDS
+* Software upgraded to appropriate version 
+* Software configured to support functionality 
+* Users with appropriate system access and knowledge to perform and verify functionality, including 
+    * Smartcard access & roles
+    * Workstations being used adhere to the WES (Warranted Environment Specification)?  See link https://digital.nhs.uk/services/spine/spine-technical-information-warranted-environment-specification-wes 
+    
 ### Provider 
 *	Confirm Booking endpoint is running and accessible (firewalls updated)
 *	Confirm Referral endpoint is running and accessible (firewalls updated)
 *	Slots added to Schedule accessible via DoS
 
 ### Consumer
-*	Access to DoS 
-*	Local configuration to make requests of Provider endpoints
-    *	Scheduling
-    * Referral 
+*	Access to DoS or Service Discovery Tool 
+*	Local configuration of firewalls/ports to make requests of spine services (SSP/SDS)
+*  Identify PDS traceable patient
 
 ### DoS
 *	Service for Provider System configured 
 *	Scheduling Endpoint configured 
-*	ITK Endpoint configured 
+*	Referral Endpoint configured 
 *	Optional ‘requirebooking’ attribute added and set to TRUE
 *	Note following supported by service to assist Consumer
     * Age range
@@ -68,29 +75,51 @@ There may be others involved but there is a requirement to cover these core role
     * Opening Times
 
 ## Test Plan Management 
-* Arrange the meeting 
-* Ensure everyone is ready 
+
+Pre test - 
+* Arrange the meeting date agreed by all
+* Provide contact details for - 
+    * DoS Lead
+    * Software Supplier - Product Lead
+    * Consumer service - Project Lead
+    * Provider service - Project Lead
+* Share Test Plan with all key stakeholders, including
+    * DoS Service(s) to be utilised
+* Verify all parties have completed the prerequisites
+
+Post test - 
+* Brief review of test, stating sucess or failure 
+* Document actions and next steps
 
 ## Test Run 
+The steps below outline a typical test run but the agreed Test Plan should be adhered to. 
+
+The recording of the session as a whole or snapshot of screens and log data should be taken where appropriate to verify functionality (especially, if being submitted for the SCAL) or record error data for later investigation. 
+
+Steps in the test -  
 *	Consumer system performs triage/consultation resulting in appropriate outcome code to make request of DoS Service
-*	Views DoS services
-*	Selects configured DoS service 
+*  Perform Service Discovery (DoS or alternative)
+*	Selects configured DoS service
 *	Selects option to initiate request for Slots 
 *	View available slots 
     *	Indicate where no slots are available to user
-*	Slots outside of outcome code timeframe adhere to user type (Clinical/Non-clinical) requirements
-*	Select Slot 
-*	Request Booking 
+*  Confirm slot data offered by the Provider is reflected on the Consumer system
+*	Verify slots outside of outcome code timeframe adhere to user type (Clinical/Non-clinical) requirements
+*	Select slot 
+*	Request booking 
     * Indication Booking has been made
-* User is able to Rebook 
-*	User is able to Cancel booking 
-*	Referral is made 
+*  Confirm booking exists in the Provider system
+*  Send referral 
+*	Verify referral (supporting document) exists and marrys up to booking (Provider System) 
 *	Triage/consultation complete 
 * SMS transferred to patient
 
+Additional test within Consultation 
+*  Verify user is able to change the booking 
+*	Verify user is able to cancel the booking
+
 After triage/consultation 
 *	User is able to cancel booking outside of triage/consultation window
-
 
 ## Test Plan Resources 
 
