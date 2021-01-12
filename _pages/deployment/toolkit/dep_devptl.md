@@ -90,7 +90,7 @@ The end-to-end tests can be characterised in either an informal/ad hoc approach,
 
 ## Assure
 
-Assurance is a vital step in developing a Booking solution for either Provider or Consumer functionality. You will engage with the Solutions Assurance Team, via the UEC Booking Team, who will provide the [SCAL](https://developer.nhs.uk/apis/uec-appointments/assurance_scal.html) (Supplier Conformance Assessment List) document for completion. This is a self-assurance process but there is a requirement to demonstrate the end-to-end functionality and provide documented evidence of how the solution meets the Standard.
+Assurance is a vital step in developing a Booking solution for either Provider or Consumer functionality. You will engage with the Solutions Assurance Team, via the UEC Booking Team, who will provide the <a href="assurance_scal.html" target="_blank">SCAL</a> (Supplier Conformance Assessment List) document for completion. This is a self-assurance process but there is a requirement to demonstrate the end-to-end functionality and provide documented evidence of how the solution meets the Standard.
 
 The TKW Simulator will provide all the evidence documents required to support the SCAL.
 
@@ -110,9 +110,9 @@ The Live install of a Provider can only be performed once the Technical Conforma
 
 It is expected the supplier will dedicate project management resource to arranging the Live install of their customer; the Provider. The Live install will take place as part of the preparations for the end-to-end Provider test which includes ensuring connection to Production, registering endpoints, obtaining ASIDs, installing certificates etc. 
 
-* Connectivity to [HSCN](https://digital.nhs.uk/services/health-and-social-care-network/new-hscn-connections)
-* Establish [Connection Agreement](https://digital.nhs.uk/services/health-and-social-care-network/connection-governance)
-*	Register [FQDN](https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments)
+* Connectivity to <a href="https://digital.nhs.uk/services/health-and-social-care-network/new-hscn-connections" target="_blank">HSCN</a>
+* Establish <a href="https://digital.nhs.uk/services/health-and-social-care-network/connection-governance" target="_blank">Connection Agreement</a>
+*	Register <a href="https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments" target="_blank">FQDN</a>
 *	Register Product with the Spine - MPV
 *	Request & install certificates 
 * Assignment of ASID(s)
