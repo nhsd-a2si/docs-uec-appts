@@ -18,11 +18,7 @@ entries:
           - 
             output: "web, pdf"
             title: "System topologies"
-            url: /dep_devtopo.html          
-          - 
-            output: "web, pdf"
-            title: "Testing Resources"
-            url: /dep_devtest.html   
+            url: /dep_devtopo.html            
         output: web
         title: Suppliers
       - 
@@ -30,11 +26,7 @@ entries:
           - 
             output: "web, pdf"
             title: "Overview"
-            url: /dep_provoverview.html
-          - 
-            output: "web, pdf"
-            title: "Testing Resources"
-            url: /dep_provtest.html  
+            url: /dep_provoverview.html 
         output: web
         title: Providers
       - 
