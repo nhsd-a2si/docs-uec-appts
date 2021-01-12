@@ -9,21 +9,23 @@ folder: deployment
 
 ## Test Plans Overview
 
-Planning is essential to successful testing when numerous parties are involved, especially when prior configuration is required outside of the scope of the test. The co-ordination needs careful orchestration and for each of the actors involved to know their roles and resposibilities. 
+Planning is essential to successful testing when numerous parties are involved. The test needs careful orchestration and for each of the actors involved to know the plan and their roles and resposibilities. 
 
-This section will outline the precurive steps, the actors and the provide an example of a typcial test run. 
+This section will outline the precursive steps, the actors involved and provide an example of a typcial Test Run. 
 
 ### Types of Test
 
-In the process of building a solution a supplier will be involved in several rounds of testing, at different maturity levels and environments. 
+In the process of building a solution a supplier will be involved in several [phases of testing](https://developer.nhs.uk/apis/uec-appointments/dep_testtesting.html), at different maturity levels and environments - 
 
 * Like-Live (INT)
-* Provider (Live)
-* Technical Live
+* Provider (Production)
+* Business Go Live 
+
+Test Plans must be adopted for testing on any of these environment. However, there are circumstances where testing could occur on INT in isolation, without the paraphernalia of a full Test Plan, for example, when a supplier is initially deploying and configuring their solution and testing against those already assured. 
 
 ## Roles & Responsibilities 
 
-The actors from the numerous parties must know what is expected of them during a planned test. This ensure the test has the best chance of success and valuable time is not wasted through trial-and-error attempts.
+The actors from the numerous parties must know what is expected of them during a planned test. This ensures the test has the best chance of success and valuable time is not wasted through trial-and-error attempts.
 
 ### Actors 
 There is a requirement to cover these core roles for any level of arranged test. There may be others involved or some individuals may perform multiple roles.  
@@ -130,6 +132,7 @@ Here you will find some links to testing files that will be useful for **provide
 <a href="_pages/deployment/toolkit/files/111_to_Registered_GP-Operational_Test_Plan_v3.xlsx" download>111 to registered GP Practice, operational test plan (excel file) (excel file)</a>
 <p>
 <a href="_pages/deployment/toolkit/files/111_to_UTC_Care_Connect-Operational_Test_Plan.xlsx" download>111 to UTC Care Connect, operational test plan (excel file)</a>
+
 
 Here you will find some links to testing files that will be useful for **suppliers** looking to perform product assurance:
 <p>
