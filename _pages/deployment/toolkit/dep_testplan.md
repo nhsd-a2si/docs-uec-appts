@@ -34,12 +34,12 @@ There is a requirement to cover these core roles for any level of arranged test.
 |:---|:---|:---|
 |NHS Digital|UEC Booking|Delivery Manager|
 |NHS England (regional)|DoS|Configuration Lead|
-|Supplier (Software solution*)|Consumer|Technical Support|
-|Service Provider (e.g. 111 Provider)|Consumer (software)|Project Lead|
-|Service Provider (e.g. 111 Provider)|Consumer (software)|System User|
-|Supplier (Software solution*)|Provider|Technical Support|
-|Service Provider (e.g. ED)|Provider (software)|Project Lead|
-|Service Provider (e.g. ED)|Provider (software)|System User|
+|Supplier (Software solution*)|Consumer (software)|Technical Support|
+|Service Provider (e.g. 111 Provider)|Consumer|Project Lead|
+|Service Provider (e.g. 111 Provider)|Consumer|System User|
+|Supplier (Software solution*)|Provider (software)|Technical Support|
+|Service Provider (e.g. ED)|Provider|Project Lead|
+|Service Provider (e.g. ED)|Provider|System User|
 
 \* Potentially the same organisation. Some suppliers have developed both Booking Provider and Consumer functionality.
 
@@ -133,7 +133,7 @@ Here you will find some links to testing files that will be useful for **provide
 <p>
 <a href="_pages/deployment/toolkit/files/111_to_UTC_Care_Connect-Operational_Test_Plan.xlsx" download>111 to UTC Care Connect, operational test plan (excel file)</a>
 
-
+###
 Here you will find some links to testing files that will be useful for **suppliers** looking to perform product assurance:
 <p>
 <a href="_pages/deployment/toolkit/files/Care_Connect_Consumer_Assurance_Test_Scripts.xlsx" download>Care Connect <b>Consumer</b> Assurance Test Script (excel file)</a>
