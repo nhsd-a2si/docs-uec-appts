@@ -14,7 +14,9 @@ folder: deployment
 
 ### Analysis
 
-During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) or the TKW Simulators are useful tools for this stage ([Demonstrator](http://appointments.directoryofservices.nhs.uk:443/poc/index), [Provider Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator) or [Consumer Simulator](https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator)). 
+During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) or the TKW Simulators are useful tools for this stage (<a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">Demonstrator</a>, 
+<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator" target="_blank">Provider Simulator</a> or
+<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator" target="_blank">Consumer Simulator</a>).
 
 The solution can be tested at any stage of development using these tools and the simulators will provide useful validation reports to highlight points of failure or oversight. These is more about testing during development maturity under the Testing section of this Deployment Toolkit. 
 
@@ -113,7 +115,7 @@ It is expected the supplier will dedicate project management resource to arrangi
 * Connectivity to <a href="https://digital.nhs.uk/services/health-and-social-care-network/new-hscn-connections" target="_blank">HSCN</a>
 * Establish <a href="https://digital.nhs.uk/services/health-and-social-care-network/connection-governance" target="_blank">Connection Agreement</a>
 *	Register <a href="https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments" target="_blank">FQDN</a>
-*	Register Product with the Spine - MPV
+*	Register Product with the Spine - Manufacturer Product Version Registration
 *	Request & install certificates 
 * Assignment of ASID(s)
 *	Assign interactions (SDS/SSP) to ASID
