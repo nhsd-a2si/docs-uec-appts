@@ -34,12 +34,12 @@ There is a requirement to cover these core roles for any level of arranged test.
 |:---|:---|:---|
 |NHS Digital|UEC Booking|Delivery Manager|
 |NHS England (regional)|DoS|Configuration Lead|
-|Supplier (Software solution*)|Consumer|Technical|
+|Supplier (Software solution*)|Consumer|Technical Support|
 |Service Provider (e.g. 111 Provider)|Consumer (software)|Project Lead|
-|Service Provider (e.g. 111 Provider)|Consumer (software)|User|
-|Supplier (Software solution*)|Provider|Technical|
+|Service Provider (e.g. 111 Provider)|Consumer (software)|System User|
+|Supplier (Software solution*)|Provider|Technical Support|
 |Service Provider (e.g. ED)|Provider (software)|Project Lead|
-|Service Provider (e.g. ED)|Provider (software)|User|
+|Service Provider (e.g. ED)|Provider (software)|System User|
 
 \* Potentially the same organisation. Some suppliers have developed both Booking Provider and Consumer functionality.
 
