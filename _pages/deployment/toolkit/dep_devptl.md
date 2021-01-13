@@ -14,17 +14,14 @@ folder: deployment
 
 ### Analysis
 
-During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) or the TKW Simulators are useful tools for this stage (<a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">Demonstrator</a>, 
-<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator" target="_blank">Provider Simulator</a> or
-<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator" target="_blank">Consumer Simulator</a>).
+During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) (<a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">Demonstrator</a>) or the TKW Simulators (<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator" target="_blank">Provider Simulator</a> and
+<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator" target="_blank">Consumer Simulator</a>) are useful tools for this stage.
 
-The solution can be tested at any stage of development using these tools and the simulators will provide useful validation reports to highlight points of failure or oversight. These is more about testing during development maturity under the Testing section of this Deployment Toolkit. 
-
+The solution can be tested at any stage of development using these tools and the TKW Simulators will provide useful validation reports to highlight points of failure or oversight. These is more about testing during development maturity under the <a href="dep_testtesting.html" target="_blank">Testing section</a> of this Deployment Toolkit. 
 
 ### Development Complete
 
 Once Development is complete, the suplier can move onto Integration Testing.
-
 
 ## Integration Testing
 
@@ -86,31 +83,31 @@ Once you have the above pre-requisites you will need to <a href="https://digital
          
 ### End-to-End test
 
-Once set up on the Integration Environment it is possible to perform like-live tests, including making requests to spine components - SDS, SSP - to interact with other supplier solutions. 
+Once set up on the Integration Environment it is possible to perform like-live tests, including making requests to spine components - SDS, SSP - and interacting with other supplier solutions. 
 
-The end-to-end tests can be characterised in either an informal/ad hoc approach, where suppliers may contact each other to arrange tests, or more formal test plans can be followed. If a formal test is required the UEC Booking Team will take the lead, requesting systems to be configured, arrange a meeting time and guide users through a step-by-step test plan. The formal approach would be required for a supplier to demonstrate their solution or gather evidence for their SCAL submission.  
+The end-to-end tests can be characterised in either an informal, ad hoc, approach where suppliers may contact each other to arrange tests, or more formal <a href="dep_testplan.html" target="_blank">Test Plans</a> can be followed. If a formal test is required the UEC Booking Team will take the lead, requesting systems to be configured, arrange a meeting time and guide users through a step-by-step test plan. The formal approach would be required for a supplier to demonstrate their solution (part of the assurance process) or gather evidence for their SCAL submission.  
 
 ## Assure
 
 Assurance is a vital step in developing a Booking solution for either Provider or Consumer functionality. You will engage with the Solutions Assurance Team, via the UEC Booking Team, who will provide the <a href="assurance_scal.html" target="_blank">SCAL</a> (Supplier Conformance Assessment List) document for completion. This is a self-assurance process but there is a requirement to demonstrate the end-to-end functionality and provide documented evidence of how the solution meets the Standard.
 
-The TKW Simulator will provide all the evidence documents required to support the SCAL.
+The TKW Simulator can provide supporting evidence documents required by the SCAL.
 
 ### Technical Conformance Certificate
 
-A Technical Conformance Certificate confirms NHS Digital are satisfied the solution meets the published Standard. The supplier is subsequently able to enter into a Connection Agreement and progress to live testing in the Production environment. 
+A Technical Conformance Certificate confirms NHS Digital are satisfied the solution meets the published Standard. The supplier is subsequently able to progress to live testing with a service providers in the Production environment. 
 
 ## Provider Testing
 
-The first live Production test a supplier will undertake will be a controlled test, following a pre-determined Test plan. The test will involve all actors (Service Provider, Supplier(s), DoS Leads etc) and aim to prove end-to-end functionality of the supplier solution with components - DoS, SDS & SSP, along with other existing supplier soltions. 
+The first live Production test a supplier will undertake will be a controlled test, following a pre-determined <a href="dep_testplan.html" target="_blank">Test Plan</a>. The test will involve all actors (Service Provider, Supplier(s), DoS Leads etc) and aim to prove end-to-end functionality of the supplier solution with components - DoS, SDS & SSP, along with other existing supplier soltions. 
 
 In the unlikely event of an issue being raised at this point, it provides time for resolution prior to business go-live, whether it be in the developed solution itself or setup and configuration.
 
 ### Live Install
 
-The Live install of a Provider can only be performed once the Technical Conformance Certificate has been issued and Connection Agreement confirmed. 
+The Live install of a Provider, to support the Provider Test, can only be performed once the Technical Conformance Certificate has been issued and Connection Agreement confirmed.
 
-It is expected the supplier will dedicate project management resource to arranging the Live install of their customer; the Provider. The Live install will take place as part of the preparations for the end-to-end Provider test which includes ensuring connection to Production, registering endpoints, obtaining ASIDs, installing certificates etc. 
+It is expected the supplier will dedicate project management resource to arranging the Live install of their customer; the Provider. The Live install will take place as part of the preparations for the end-to-end Provider Test which includes ensuring the following steps are complete:
 
 * Connectivity to <a href="https://digital.nhs.uk/services/health-and-social-care-network/new-hscn-connections" target="_blank">HSCN</a>
 * Establish <a href="https://digital.nhs.uk/services/health-and-social-care-network/connection-governance" target="_blank">Connection Agreement</a>
@@ -125,12 +122,12 @@ It is expected the supplier will dedicate project management resource to arrangi
 
 ## Technical Live
 
-At this point, with the system having been tested in Production, it is now technically ready to go live. The supplier, service provider and supporting leads e.g. DoS lead, Commisioners etc. can agree a date to start using the solution in Production. 
+At this point, assuming the Provider Testing has been successful, the solution is now technically ready to go live. The supplier, service provider and supporting leads e.g. DoS lead, Commisioners etc. can agree a date to start using the solution in Production. 
 
 ### Business Live
 
-On the agreed date of go-live, the system will be switched on, and end-to-end test run to verify functionality and the service declared live. The solution moves from a project into a BAU (Business as Usual) process. 
+On the agreed date of go-live, the system will be 'switched on', an end-to-end test run to verify functionality and the service declared live. The solution moves from a project into BAU (Business as Usual), supported by all usual processes e.g. Technical Support. 
 
-Depending on the supplier adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
+Depending on the supplier's adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
 
 
