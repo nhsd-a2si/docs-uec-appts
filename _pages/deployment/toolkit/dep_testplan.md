@@ -9,26 +9,26 @@ folder: deployment
 
 ## Test Plans Overview
 
-Planning is essential to successful testing when numerous parties are involved. The test needs careful orchestration and for each of the actors involved to know the plan and their roles and resposibilities. 
+Planning is essential to successful testing when numerous parties are involved. The test needs careful orchestration and for each of the actors involved to know the plan and their roles and resposibilities within it. 
 
-This section will outline the precursive steps, the actors involved and provide an example of a typcial Test Run. 
+This section will outline the precursive setup and management steps, the actors involved and provide an example of what to expect of a typcial Test Run. 
 
 ### Types of Test
 
-In the process of building a solution a supplier will be involved in several [phases of testing](https://developer.nhs.uk/apis/uec-appointments/dep_testtesting.html), at different maturity levels and environments - 
+In the process of building a solution a supplier will be involved in several [phases of testing](https://developer.nhs.uk/apis/uec-appointments/dep_testtesting.html), progressing through different maturity levels and environments - 
 
 * Like-Live (INT)
 * Provider (Production)
 * Business Go Live 
 
-Test Plans must be adopted for testing on any of these environment. However, there are circumstances where testing could occur on INT in isolation, without the paraphernalia of a full Test Plan, for example, when a supplier is initially deploying and configuring their solution and testing against those already assured. 
+Test Plans must be adopted for testing on any of these environment. However, there are circumstances where testing could occur on INT in isolation, without the paraphernalia of a full Test Plan. For example, when a supplier is initially deploying and configuring their solution and testing against other suppliers who are already deployed and assured. 
 
 ## Roles & Responsibilities 
 
 The actors from the numerous parties must know what is expected of them during a planned test. This ensures the test has the best chance of success and valuable time is not wasted through trial-and-error attempts.
 
 ### Actors 
-There is a requirement to cover these core roles for any level of arranged test. There may be others involved or some individuals may perform multiple roles.  
+There is a requirement to cover these core roles for any level of planned test. There may be others involved or some individuals may perform multiple roles.  
 
 |Organisation|Expertise|Individual Role|
 |:---|:---|:---|
@@ -45,32 +45,36 @@ There is a requirement to cover these core roles for any level of arranged test.
 
 ## Prerequisites 
 
+The solutions deployed with in any of the environments must be configured and checked prior to the test taking place. 
+
+The list of prerequisites outlined assumes a supplier is starting from the beginning and not worked on similar projects in the past.
+
 ### Both Service Systems (Provider & Consumer)
-* Certs obtained and installed – Provider & Consumer
+* Certificates obtained and installed – Provider & Consumer
 * Connected to INT – Provider & Consumer
     * ASID supplied for connecting system/service 
-    *	Interactions for ASID added to SDS
+    *	Interactions for ASID assigned via SDS
 * Software upgraded to appropriate version 
 * Software configured to support functionality 
 * Users with appropriate system access and knowledge to perform and verify functionality, including 
     * Smartcard access & roles
-    * Workstations being used adhere to the WES (Warranted Environment Specification)?  See link https://digital.nhs.uk/services/spine/spine-technical-information-warranted-environment-specification-wes 
+    * Workstations being used adhere to the WES ([Warranted Environment Specification](https://digital.nhs.uk/services/spine/spine-technical-information-warranted-environment-specification-wes))?  
     
 ### Provider 
 *	Confirm Booking endpoint is running and accessible (firewalls updated)
 *	Confirm Referral endpoint is running and accessible (firewalls updated)
-*	Slots added to Schedule accessible via DoS
+*	Slots added to Schedule configured on the DoS or alternative Service Discovery Tool
 
 ### Consumer
-*	Access to DoS or Service Discovery Tool 
+*	Access to DoS or alternative Service Discovery Tool 
 *	Local configuration of firewalls/ports to make requests of spine services (SSP/SDS)
 *  Identify PDS traceable patient
 
 ### DoS
-*	Service for Provider System configured 
-*	Scheduling Endpoint configured 
-*	Referral Endpoint configured 
-*	Optional ‘requirebooking’ attribute added and set to TRUE
+*	Service for Provider system configured 
+    *	Scheduling Endpoint configured 
+    *	Referral Endpoint configured 
+    *	Optional ‘requirebooking’ attribute added and set to TRUE
 *	Note following supported by service to assist Consumer
     * Age range
     * DX code
@@ -78,7 +82,7 @@ There is a requirement to cover these core roles for any level of arranged test.
 
 ## Test Plan Management 
 
-Pre test - 
+**Pre test** - 
 * Arrange the meeting date agreed by all
 * Provide contact details for - 
     * DoS Lead
@@ -87,18 +91,19 @@ Pre test -
     * Provider service - Project Lead
 * Share Test Plan with all key stakeholders, including
     * DoS Service(s) to be utilised
-* Verify all parties have completed the prerequisites
+    * PDS traceable patient
+* Verify all parties have completed the prerequisite steps
 
-Post test - 
+**Post test** - 
 * Brief review of test, stating sucess or failure 
-* Document actions and next steps
+* Document actions and any next steps
 
 ## Test Run 
 The steps below outline a typical test run but the agreed Test Plan should be adhered to. 
 
-The recording of the session as a whole or snapshot of screens and log data should be taken where appropriate to verify functionality (especially, if being submitted for the SCAL) or record error data for later investigation. 
+The recording of the session as a whole or snapshot of screens and log data should be taken where appropriate to verify functionality (especially, if being submitted for the SCAL) or recording error data for later investigation. 
 
-Steps in the test -  
+**Steps in the test** -  
 *	Consumer system performs triage/consultation resulting in appropriate outcome code to make request of DoS Service
 *  Perform Service Discovery (DoS or alternative)
 *	Selects configured DoS service
@@ -114,26 +119,24 @@ Steps in the test -
 *  Send referral 
 *	Verify referral (supporting document) exists and marrys up to booking (Provider System) 
 *	Triage/consultation complete 
-* SMS transferred to patient
+*  SMS transferred to patient
 
-Additional test within Consultation 
+**Additional test within Consultation**
 *  Verify user is able to change the booking 
 *	Verify user is able to cancel the booking
 
-After triage/consultation 
+**After triage/consultation**
 *	User is able to cancel booking outside of triage/consultation window
 
 ## Test Plan Resources 
 
 Here you will find some links to testing files that will be useful for **providers** looking to perform end to end testing prior to go-live:
 
-1. <a href="_pages/deployment/toolkit/files/111_to_GP_Hub-Operational_Test_Plan_v2.xlsx" download>111 to GP Hub, operational test plan (excel file)</a>
-2. <a href="_pages/deployment/toolkit/files/111_to_Registered_GP-Operational_Test_Plan_v3.xlsx" download>111 to registered GP Practice, operational test plan (excel file) (excel file)</a>
-3. <a href="_pages/deployment/toolkit/files/111_to_UTC_Care_Connect-Operational_Test_Plan.xlsx" download>111 to UTC Care Connect, operational test plan (excel file)</a>
+* <a href="_pages/deployment/toolkit/files/111_to_GP_Hub-Operational_Test_Plan_v2.xlsx" download>111 to GP Hub, operational test plan (excel file)</a>
+* <a href="_pages/deployment/toolkit/files/111_to_Registered_GP-Operational_Test_Plan_v3.xlsx" download>111 to registered GP Practice, operational test plan (excel file) (excel file)</a>
+* <a href="_pages/deployment/toolkit/files/111_to_UTC_Care_Connect-Operational_Test_Plan.xlsx" download>111 to UTC Care Connect, operational test plan (excel file)</a>
 
 Here you will find some links to testing files that will be useful for **suppliers** looking to perform product assurance:
-1. <a href="_pages/deployment/toolkit/files/Care_Connect_Consumer_Assurance_Test_Scripts.xlsx" download>Care Connect <b>Consumer</b> Assurance Test Script (excel file)</a>
-2. <a href="_pages/deployment/toolkit/files/Care_Connect_Provider_Assurance_Test_Scripts.xlsx" download>Care Connect <b>Provider</b> Assurance Test Script (excel file)</a>
-
-
+* <a href="_pages/deployment/toolkit/files/Care_Connect_Consumer_Assurance_Test_Scripts.xlsx" download>Care Connect <b>Consumer</b> Assurance Test Script (excel file)</a>
+* <a href="_pages/deployment/toolkit/files/Care_Connect_Provider_Assurance_Test_Scripts.xlsx" download>Care Connect <b>Provider</b> Assurance Test Script (excel file)</a>
 
