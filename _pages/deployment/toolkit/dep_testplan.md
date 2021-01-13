@@ -15,7 +15,7 @@ This section will outline the precursive setup and management steps, the actors 
 
 ### Types of Test
 
-In the process of building a solution a supplier will be involved in several [phases of testing](https://developer.nhs.uk/apis/uec-appointments/dep_testtesting.html), progressing through different maturity levels and environments - 
+In the process of building a solution a supplier will be involved in several <a href="dep_testtesting.html" target="_blank">phases of testing</a>, progressing through different maturity levels and environments - 
 
 * Like-Live (INT)
 * Provider (Production)
