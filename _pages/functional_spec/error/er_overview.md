@@ -47,11 +47,22 @@ The DOS will return specific errors when searching for services. These are detai
 
 ### Consumer → SDS
 
+The SDS will return specific errors when searching for an endpoint, for more information see the [Spine Directory Service - LDAP API](https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap) and the [Spine External Interface Specification (EIS)](https://digital.nhs.uk/developer/guides-and-documentation/spine-external-interface-specification).  In the event that a SDS query does not return an FHIR endpoint, this should be raised with NHS Digital using the existing support process.
+
+**Consumer responsibilities:**
+
+
+1. Log errors returned by SDS for local and potential NHS Digital incident investigation
+2. Inform end-user with a suitable message appropriate to the business flow e.g. critical error with advice to call local IT helpdesk, or business process options to warn users to choose another service
+3. Ensure information for appropriate local incident management is captured
+
+### Consumer → SSP
+
 If the SSP determines the endpoint is valid using the supplied ASID, then it will forward the request to the FHIR endpoint of the Provider system.  The SSP will act as a true proxy here and passthrough requests and responses between Consumer and Provider systems.
 
 However, there are instances where the request will fail before the Provider system receives the requests.
 
-SSP will return specific HTML error codes under these circumstances as per the following approach:
+SSP will return specific HTTP error codes under these circumstances as per the following approach:
 
 <a href="https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html" target="_blank">https://developer.nhs.uk/apis/spine-core/api_spine-operationoutcome.html</a>
 
@@ -75,21 +86,51 @@ Here are examples of errors returned by SSP as error codes:
 
 ### Consumer → SSP → Provider
 
-Provider will respond to errors processing requests from a Consumer system as per the guidance below.  The SSP will forward the responses unchanged.
+Providers MUST respond to errors processing requests from a Consumer system as per the guidance below.  The SSP will forward the responses unchanged.
 
-For Care Connect appointment workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR OperationOutcome resource.
+For Care Connect appointment workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource.
 
 The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>
 
 **Provider System responsibilities**
 
 1. Log errors locally for incident investigation by IT support staff.  If the Request is malformed, this should be logged specifically as a Consumer system issue.  Details of the Consumer system should be logged to support investigation e.g. Org ID.
-2. On error send an appropriate HTML error code and an OperationOutcome resource. Use the sections of the OperationOutcome resource to send detailed information back to the Consumer system on what went wrong and why. This is especially important if there was an error in the Request, as this will help the Consumer support function diagnose what is wrong with their system or configuration.
+2. On error send an appropriate HTTP `4xx` or `5xx` error code and an [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource. Use the sections of the [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html)  resource to send detailed information back to the Consumer system on what went wrong and why. This is especially important if there was an error in the Request, as this will help the Consumer support function diagnose what is wrong with their system or configuration.
 3. As a minimum the OperationOutcome resource must contain:
-  * ID - a Provider id for the outcome e.g. a local ID to identify local error codes or a text description
+  * A provider id for the outcome e.g. a local id to identify local error codes or a text description
   * An issue severity code
   * An issue code
-  
+
+  ***Example***
+```
+{
+  "resourceType": "OperationOutcome",
+  "id": "ERR-23451",
+  "meta": {
+    "profile": [
+      "https://www.hl7.org/fhir/STU3/operationoutcome.html"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "value",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/ValueSet/Spine-ErrorOrWarningCode-1",
+            "code": "INVALID_NHS_NUMBER"
+          }
+        ]
+      },
+      "diagnostics": "Any further internal debug details i.e. stack trace details etc."
+    }
+  ]
+}
+```
+
+
+
 The next table details the appropriate error code return values to be sent by Provider systems for important common issues that may occur for each interaction.  In addition, the table details specific information that should be appended into the OperationOutcome response by Provider systems.  Providers MUST implement these as a minimum.
 
 <p>
@@ -106,12 +147,12 @@ The next table details the appropriate error code return values to be sent by Pr
   <div class="collapsible-content">
     <div class="content-inner">
       <p -->        
-      <table class="pure-table pure-table-bordered"> 
+      <table class="pure-table pure-table-bordered">
             <thead>
               <tr>
                 <th data-field="Capability" data-sortable="true">Capability Area</th>
                 <th data-field="Issue" data-sortable="true">Issue Description</th>
-                <th data-field="ErrorCode" data-sortable="true">HTML Error Codes</th>
+                <th data-field="ErrorCode" data-sortable="true">HTTP Error Codes</th>
                 <th data-field="OperationOutcome" data-sortable="true">OperationOutcome Details</th>   
               </tr>
             </thead>
@@ -121,13 +162,13 @@ The next table details the appropriate error code return values to be sent by Pr
                 <td rowspan="3">General</td>
                 <td>No CapabilityStatement returned</td>
                 <td></td>
-                <td></td> 
+                <td></td>
               </tr>
          <!------------------------------ROW----------------------------------->   
               <tr>                
                 <td>The FHIR resources are malformed</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue in the FHIR resources - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
+                <td>Add in details of what specifically is the issue in the FHIR resources - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
               </tr>  
          <!------------------------------ROW----------------------------------->   
               <tr>
@@ -141,26 +182,26 @@ The next table details the appropriate error code return values to be sent by Pr
                 <td rowspan="2">Security</td>
                 <td>JWT badly constructed</td>
                 <td>403 Forbidden</td>
-                <td>Add in details of what went wrong including location details of the error.</td> 
+                <td>Add in details of what went wrong including location details of the error.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>JWT context of org and user is not allowed to perform the operation requested</td>
                 <td>403 Forbidden</td>
-                <td>Add in details of what specifically is the issue by an appropriate error information about the reason that org or user lacks sufficient permissions in OperationOutcome.issue.diagnostics.</td> 
+                <td>Add in details of what specifically is the issue by an appropriate error information about the reason that org or user lacks sufficient permissions in OperationOutcome.issue.diagnostics.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td rowspan="4">Search for free slots</td>
                 <td>The Service ID sent in does not match locally to any schedules </td>
                 <td>404 Not found</td>
-                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td> 
+                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>Query strings are invalid</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue in the search parameters - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
+                <td>Add in details of what specifically is the issue in the search parameters - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
@@ -168,61 +209,61 @@ The next table details the appropriate error code return values to be sent by Pr
                 <td>200 Success</td>
                 <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around slots being opened up for a specific organisation e.g. if the provider org has restricted in the number of slots available to 111.
 
-</td> 
+</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>Time of search in the past</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td> 
+                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td rowspan="4">Book an appointment</td>
                 <td>The request body was simply invalid</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue in the request - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
+                <td>Add in details of what specifically is the issue in the request - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The requested Slot is no longer free</td>
                 <td>422 Unprocessable Entity</td>
-                <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics.</td> 
+                <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The request body failed validation</td>
                 <td>422 Unprocessable Entity</td>
-                <td>Add in details of what went wrong including location details of the error.</td> 
+                <td>Add in details of what went wrong including location details of the error.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The patient identifier - NHS no - was invalid</td>
                 <td>422 Unprocessable Entity</td>
-                <td>Add in details that the NHS No identifier was invalid in OperationOutcome.issue.diagnostics,  and highlight specifically the location in including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
-              </tr> 
+                <td>Add in details that the NHS No identifier was invalid in OperationOutcome.issue.diagnostics,  and highlight specifically the location in including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
+              </tr>
          <!------------------------------ROW----------------------------------->   
               <tr>
                 <td rowspan="2">Get an appointment</td>
                 <td>The resource does not exist on the server e.g. invalid appointment resource reference</td>
                 <td>404 Not found</td>
-                <td>Add in details of what specifically is the issue.</td> 
+                <td>Add in details of what specifically is the issue.</td>
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The query string parameters were invalid or unsupported</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue in the search parameters - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td> 
+                <td>Add in details of what specifically is the issue in the search parameters - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>Cancel an appointment</td>
                 <td>The consumer org is not permitted to cancel this appointment. Note the UEC appointment flows permit cancellation by organisations other than the organisation that booked the appointment - but this is managed locally in the Provider system with configuration to allow the provider to control who can cancel appointments.</td>
                 <td>403 Forbidden</td>
-                <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the appointment e.g. only the organisation that booked the appointment is permitted to cancel an appointment.</td> 
+                <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the appointment e.g. only the organisation that booked the appointment is permitted to cancel an appointment.</td>
               </tr>         
         </tbody>
-      </table> 
+      </table>
       <!--/p>
     </div>
   </div>
