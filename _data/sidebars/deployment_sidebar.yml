@@ -18,11 +18,7 @@ entries:
           - 
             output: "web, pdf"
             title: "System topologies"
-            url: /dep_devtopo.html          
-          - 
-            output: "web, pdf"
-            title: "Testing Resources"
-            url: /dep_devtest.html   
+            url: /dep_devtopo.html            
         output: web
         title: Suppliers
       - 
@@ -30,11 +26,27 @@ entries:
           - 
             output: "web, pdf"
             title: "Overview"
-            url: /dep_provoverview.html
+            url: /dep_provoverview.html 
+        output: web
+        title: Providers
+      - 
+        folderitems: 
           - 
             output: "web, pdf"
-            title: "Testing Resources"
-            url: /dep_provtest.html  
+            title: "DoS Lead Guidance"
+            url: /dep_dosoverview.html
         output: web
-        title: Providers     
+        title: DoS Leads
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Testing Maturity"
+            url: /dep_testtesting.html
+          - 
+            output: "web, pdf"
+            title: "Test Plan"
+            url: /dep_testplan.html
+        output: web
+        title: Testing
     title: "Urgent & Emergency Care Appointment Booking Standards - Deployment Toolkit"
