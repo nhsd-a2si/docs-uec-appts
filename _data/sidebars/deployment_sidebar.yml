@@ -41,7 +41,7 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
-            title: "Testing"
+            title: "Testing Maturity"
             url: /dep_testtesting.html
           - 
             output: "web, pdf"
