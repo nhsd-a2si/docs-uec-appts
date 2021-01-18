@@ -22,7 +22,7 @@ Note: for GP Connect Authentication please see <a href="https://developer.nhs.uk
 
 The main principle in the approach to authentication is to authorise the consumer **system** rather than the user. Therefore there is no dependency on passing through a users strongly authenticated identity and role (such as via a smartcard) to authorise the transaction. This approach will always be the case for viewing and booking slots. There may be a future requirement for more granular authorisation when doing modification and retrieval operations such as third party cancelling and rebooking.
 
-In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA NHS Identity).  This process will provide bth system and user Authorisation with signed tokens.
+In order to allow the Provider to trust requests from Consumer systems, we need to implement support for Authorisation. In the fullness of time, this is expected to be performed by NHS Identity (AKA NHS Identity).  This process will provide both system and user Authorisation with signed tokens.
 
 Prior to the delivery of NHS Identity for this purpose, the SSP will validate requests and could potentially block unauthorised requests.  Therefore, Provider systems can trust the system request from SSP.
 
@@ -34,7 +34,7 @@ In the future NHS Identity solution will provide an authorisation endpoint that 
 
 When a new consumer or provider system is assured for booking using the Care Connect standard the following steps are taken:
 
-1. Each Consumer and Provider service created as an App Registration in the directory. 
+1. Each Consumer and Provider service created as an App Registration in the directory.
   - This is done at a fine grained detailed level, so if many Provider or Consumer services are being run on one instance of a system, of which many instances have been deployed, the App registration is done at the 'Service' level.
 2. Several groups will be created, but they’re created once before anyone can go live:
   * urn:nhs:names:services:careconnect:fhir:rest:read:slot
@@ -42,16 +42,16 @@ When a new consumer or provider system is assured for booking using the Care Con
         * the Service
         * the Organisation delivering the service
         * the system being used
-        * and the supplier of that system 
+        * and the supplier of that system
     * urn:nhs:names:services:careconnect:fhir:rest:create:appointment
      * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to book appointments:
         * the Service
         * the Organisation delivering the service
         * the system being used
-        * and the supplier of that system 
-        
+        * and the supplier of that system
+
   Separating these groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
-  
+
   In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
   These new groups will be documented here.
 
@@ -207,7 +207,7 @@ Please the table below for which values to populate.
 
 | Claim value | Operation | Description |
 |-------|-------|-------------|
-| `patient/appointment.write` | Book / Cancel |Booking in an appointment | 
+| `patient/appointment.write` | Book / Cancel |Booking in an appointment |
 | `organization/slot.read` | Slot Search |Searching for available slots |
 
 Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html){:target="_blank"} GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
@@ -414,7 +414,7 @@ Provider systems **SHALL** record the following provenance details of all API pe
 - originating organisation
 - API interaction
 
-Provider system **MAY** use the organisation id passed in this or the FHIR profiles to manage authorisatios locally.  For example, refuse requests from organisations that should not be permitted to book into you.  This is not mandatory as a DOS search already controls business rules determining what UEC services can be booked into. 
+Provider system **MAY** use the organisation id passed in this or the FHIR profiles to manage authorisatios locally.  For example, refuse requests from organisations that should not be permitted to book into you.  This is not mandatory as a DOS search already controls business rules determining what UEC services can be booked into.
 
 We say we are passing in user role for future use and audit, we do not require use of this for authorising requests.
 

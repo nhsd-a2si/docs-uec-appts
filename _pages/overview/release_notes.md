@@ -14,13 +14,13 @@ folder: introduction
 
 Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
-0.1.17  | ALPHA   | Alpha | Current Version | 14/12/2020   | Volatile
+0.1.17  | ALPHA   | Alpha | Current Version | 18/12/2020   | Volatile
 
 The 0.1.17 ALPHA release has the following highlights:
 
 * <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/overview_release_notes.html" target="_blank">Update of FHIR Specification to 2.0.1-beta</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘supportingInfo’ element for the Appointment resource.</a>
-   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘particpant’ element for the Appointment resource.</a>
+   - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated description for ‘participant’ element for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Added guidance for using ‘incomingReferral’ element for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/appointment.html" target="_blank">Updated contained resource guidance for the Appointment resource.</a>
    - <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/search_free_slots.html" target="_blank">Updated search parameters guidance when searching for free slots.</a>
@@ -32,7 +32,7 @@ The 0.1.17 ALPHA release has the following highlights:
 * <a href="catalogue.html" target="_blank">Updated the conformance catalogue page to reflect the latest status and add links</a>
 * <a href="scope_functional.html" target="_blank">Updated the functional scope page to reflect the latest developments in the standard</a>
 * <a href="fs_authentication.html#jwt-payload" target="_blank">Made the "requesting_practitioner" claim optional</a>
-* <a href="glossary.html" target="_blank">Added a number of new items to the gloassary</a>
+* <a href="glossary.html" target="_blank">Added a number of new items to the glossary</a>
 
 <br>
 <br>
