@@ -1,10 +1,11 @@
 ---
-title: Capability Statement
+title: Get the FHIR® capability statement
 sidebar: overview_sidebar
 keywords: Capability
 permalink: uec_capability.html
 toc: true
 folder: iops
+summary: Use case for getting the Care Connect UEC Appointment FHIR server's capability statement
 ---
 
 # Get the FHIR® capability statement
@@ -12,26 +13,26 @@ Use case for getting the GP Connect FHIR server's capability statement
 
 
 
-## Prerequisites
-### Consumer
+# Prerequisites
+## Consumer
 The consumer system:
 * SHALL have previously resolved the organisation’s FHIR endpoint base URL through the [Spine Directory Service](https://nhsconnect.github.io/FHIR-SpineCore/build_directory.html)
 
-## API usage
-### Request operation
-#### FHIR relative request
+# API usage
+## Request operation
+### FHIR relative request
 ```html
 GET /metadata
 ```
 
 
-#### FHIR absolute request
+### FHIR absolute request
 ```html
 GET https://[proxy_server]/https://[provider_server]/[fhir_base]/metadata
 ```
 
 
-#### Request headers
+### Request headers
 Consumers SHALL include the following additional HTTP request headers:
 
 | Header | Value |
@@ -43,20 +44,20 @@ Consumers SHALL include the following additional HTTP request headers:
 | Authorisation | JWT Authorisation Token  |
 
 
-#### Payload request body
+### Payload request body
 N/A
 
-#### Error handling
+### Error handling
 Provider systems are expected to always be able to return a valid capability statement.
 
 
 
 
-### Request response
-#### Response Headers
+## Request response
+### Response Headers
 Provider systems are not expected to add any specific headers beyond that described in the HTTP and FHIR® standards.
 
-#### Payload response body
+### Payload response body
 Provider systems:
 
 * SHALL return a 200 OK HTTP status code on successful retrieval of the capability statement
@@ -64,7 +65,7 @@ Provider systems:
 
 An example Care Connect UEC Appointment CapabilityStatement is shown below ready for customisation and embedding into Care Connect assured provider systems. Providers should use this CapabilityStatement as a base for their own CapabilityStatement, replacing the element in square brackets ([ & ]) with specific information of their implementation. The main version at the top of the CapabilityStatement should represent the Care Connect UEC Appointment specification version which the FHIR server implements.
 
-```json
+```
 {
   "resourceType": "CapabilityStatement",
   "version": "2.0.1",
