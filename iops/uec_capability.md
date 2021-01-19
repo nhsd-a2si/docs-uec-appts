@@ -36,7 +36,7 @@ Consumers SHALL include the following additional HTTP request headers:
 | Ssp-TraceID| Consumer’s TraceID (i.e. GUID/UUID) |
 | Ssp-From | Consumer’s ASID |
 | Ssp-To | Provider’s ASID |
-| Ssp-InteractionID | TBC|
+| Ssp-InteractionID | urn:nhs:names:services:careconnect:fhir:rest:read:metadata|
 | Authorisation | JWT Authorisation Token  |
 
 
