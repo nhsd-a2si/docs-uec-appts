@@ -5,59 +5,55 @@ keywords: Capability
 permalink: uec_capability.html
 toc: true
 folder: iops
-summary: Use case for getting the Care Connect UEC Appointment FHIR server's capability statement
+summary: Care Connect UEC Appointment FHIR server's capability statement
 ---
 
-# Get the FHIR® capability statement
-Use case for getting the GP Connect FHIR server's capability statement
-
-
-
-# Prerequisites
-## Consumer
+## Prerequisites
+### Consumer
 The consumer system:
 * SHALL have previously resolved the organisation’s FHIR endpoint base URL through the [Spine Directory Service](https://nhsconnect.github.io/FHIR-SpineCore/build_directory.html)
 
-# API usage
-## Request operation
-### FHIR relative request
+## API usage
+### Request operation
+#### FHIR relative request
+
 ```html
 GET /metadata
 ```
 
 
-### FHIR absolute request
+#### FHIR absolute request
 ```html
 GET https://[proxy_server]/https://[provider_server]/[fhir_base]/metadata
 ```
 
 
-### Request headers
+#### Request headers
 Consumers SHALL include the following additional HTTP request headers:
 
 | Header | Value |
 | :--- | :--- |
-| Ssp-TraceID | Consumer’s TraceID (i.e. GUID/UUID) |
+| Ssp-TraceID| Consumer’s TraceID (i.e. GUID/UUID) |
 | Ssp-From | Consumer’s ASID |
 | Ssp-To | Provider’s ASID |
 | Ssp-InteractionID | TBC|
 | Authorisation | JWT Authorisation Token  |
 
 
-### Payload request body
+#### Payload request body
 N/A
 
-### Error handling
+#### Error handling
 Provider systems are expected to always be able to return a valid capability statement.
 
 
 
 
-## Request response
-### Response Headers
+### Request response
+#### Response Headers
 Provider systems are not expected to add any specific headers beyond that described in the HTTP and FHIR® standards.
 
-### Payload response body
+#### Payload response body
 Provider systems:
 
 * SHALL return a 200 OK HTTP status code on successful retrieval of the capability statement
@@ -65,7 +61,7 @@ Provider systems:
 
 An example Care Connect UEC Appointment CapabilityStatement is shown below ready for customisation and embedding into Care Connect assured provider systems. Providers should use this CapabilityStatement as a base for their own CapabilityStatement, replacing the element in square brackets ([ & ]) with specific information of their implementation. The main version at the top of the CapabilityStatement should represent the Care Connect UEC Appointment specification version which the FHIR server implements.
 
-```
+```json
 {
   "resourceType": "CapabilityStatement",
   "version": "2.0.1",
@@ -134,6 +130,16 @@ An example Care Connect UEC Appointment CapabilityStatement is shown below ready
               "name": "identifier",
               "type": "token",
               "documentation": "NHS Number (i.e. https://fhir.nhs.uk/Id/nhs-number|123456789)"
+            },
+            {
+              "name": "appointmentId",
+              "type": "token",
+              "documentation": "Unique identifier for an appointment"
+            },
+            {
+              "name": "version",
+              "type": "token",
+              "documentation": "The version identifier for the Appointment being requested."
             }
           ]
         },
@@ -145,12 +151,22 @@ An example Care Connect UEC Appointment CapabilityStatement is shown below ready
             }
           ],
           "searchInclude": [
-            "Schedule:actor:Location",
+            "Slot.schedule",
             "Schedule:actor:Practitioner",
-            "Slot:schedule",
-            "Location:managingOrganization"
+            "Schedule:actor:PractitionerRole",
+            "Schedule:actor:HealthcareService",
+            "HealthcareService.providedBy",
+            "HealthcareService.location"
           ],
           "searchParam": [
+            {
+              "name": "service",
+              "type": "token"
+            },
+            {
+              "name": "status",
+              "type": "token"
+            },
             {
               "name": "start",
               "type": "date"
@@ -158,15 +174,8 @@ An example Care Connect UEC Appointment CapabilityStatement is shown below ready
             {
               "name": "end",
               "type": "date"
-            },
-            {
-              "name": "status",
-              "type": "token"
-            },
-            {
-              "name": "searchFilter",
-              "type": "token"
             }
+
           ]
         }
       ],
