@@ -36,6 +36,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <th data-field="Standard" data-sortable="true">Standard Version</th>
                 <th data-field="FHIR" data-sortable="true">FHIR Version</th>
                 <th data-field="Status" data-sortable="true">Status</th>
+                <th data-field="Link" data-sortable="true">Link</th>
               </tr>
             </thead>
             <tbody>        
@@ -47,6 +48,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
+                <td style="background-color: LightGrey;"></td>  
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
@@ -57,6 +59,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
+                <td style="background-color: LightGrey;"></td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
@@ -67,6 +70,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
+                <td style="background-color: LightGrey;"></td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->      
@@ -77,6 +81,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
+                <td style="background-color: LightGrey;"></td>
           </tr>
       <!------------------------------ROW----------------------------------->      
           <tr>
@@ -86,6 +91,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
                 <td style="background-color: LightGreen;">Development</td>
+                <td style="background-color: LightGrey;"></td>
            </tr>
       <!------------------------------ROW----------------------------------->      
           <tr>
@@ -95,6 +101,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
                 <td style="background-color: #ffffcc;">Engagement</td>
+                <td style="background-color: LightGrey;"></td>
            </tr>  
          </tbody>
       </table> 
