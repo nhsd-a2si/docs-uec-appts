@@ -215,9 +215,5 @@ entries:
             title: "Capability"
             output: "web, pdf"
             url: /uec_capability.html
-          -
-            title: Glossary
-            output: "web, pdf"
-            url: /glossary.html
         output: web
     levels: one
