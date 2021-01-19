@@ -118,9 +118,6 @@ An example Care Connect UEC Appointment CapabilityStatement is shown below ready
               "code": "create"
             },
             {
-              "code": "update"
-            },
-            {
               "code": "search-type"
             }
           ],
