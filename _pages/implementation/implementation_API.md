@@ -48,13 +48,7 @@ The [Service Root URL](https://www.hl7.org/fhir/STU3/http.html#general) is the a
 
 The Service Root URL is the `[base]` portion of FHIR URLs.
 
-It is important to note that the Service Root URL will be different for each Care Connect capability (excluding Appointments and Foundations as mentioned below), as each capability is defined as its own FHIR server:
-
-- Appointment Management (including Foundations, which will always have the same Service Root URL as Appointment Management)
-- Access Record Structured
-- Access Document (available in a future version)
-
-Each capability's Service Root URL may have a different URL path, or point to a different server, or a completely different supplier system.
+It is important to note that the Service Root URL will be different for each Care Connect capability.  Each capability's Service Root URL may have a different URL path, or point to a different server, or a completely different supplier system.
 
 {% include important.html content="All URLs (and ids that form part of the URL) defined by this specification are case sensitive." %}
 
