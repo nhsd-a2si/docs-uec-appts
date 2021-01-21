@@ -85,8 +85,6 @@ The provider SHALL publish the Service Root URL for each capability to [Spine Di
 
 `https://provider.nhs.uk/CC0001/STU3/1/careconnect/structured`
 
-Please see [Registering Care Connect systems in SDS for more details](fs_sds.html).
-
 Consumer systems are required to construct a [Service Root URL containing the SSP URL followed by the FHIR Server Root URL of the providers FHIR server](https://developer.nhs.uk/apis/spine-core-1-0/ssp_implementation_guide.html#system-architecture) that is suitable for interacting with the SSP service. API provider systems will be unaware of the SSP URL prefix as this will be removed prior to calling the provider API endpoint.
 
 The consumer system would therefore issue a request to the new version of the provider FHIR API to the following URL:
