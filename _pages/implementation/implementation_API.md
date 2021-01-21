@@ -71,7 +71,7 @@ Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs
 - `[PROVIDER_ROUTING_SEGMENT]` enables providers to differentiate between logical FHIR servers defined by Care Connect capabilities, or other FHIR based APIs. For example, the `[PROVIDER_ROUTING_SEGMENT]` could be:
   - `careconnect/metadata` for the Foundations capabilities
   - `careconnect/appointment` for the Appointment capabilities
-  - `careconnect/appointment` for the Slot capabilities
+  - `careconnect/slot` for the Slot capabilities
 
 
   **Please note:** The Appointment Management and Foundations capabilities **SHALL** have the same `[PROVIDER_ROUTING_SEGMENT]` value.  Other capabilies **SHALL** have different values.
@@ -90,7 +90,6 @@ The consumer system would therefore issue a request to the new version of the pr
 
 `https://[ssp_fqdn]/https://provider.nhs.uk/CC0001/STU3/1/careconnect/appointment/[FHIR request]`
 
-{% include important.html content="Please see [a worked example of the lookup and endpoint construction process](integration_spine_directory_service.html#worked-example-of-the-endpoint-lookup-process) for consumer systems for more information." %}
 
 ### Resource URL ###
 
