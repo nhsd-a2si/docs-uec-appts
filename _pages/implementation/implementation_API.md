@@ -72,7 +72,6 @@ Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs
   - `careconnect/metadata` for the Foundations capabilities
   - `careconnect/appointment` for the Appointment capabilities
   - `careconnect/appointment` for the Slot capabilities
-  -
 
 
   **Please note:** The Appointment Management and Foundations capabilities **SHALL** have the same `[PROVIDER_ROUTING_SEGMENT]` value.  Other capabilies **SHALL** have different values.
