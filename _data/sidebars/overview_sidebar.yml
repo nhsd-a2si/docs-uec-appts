@@ -144,6 +144,7 @@ entries:
             output: "web, pdf"
             url: /implementation_API.html
 
+
           -
             title: "Implementing FHIR® Resources"
             output: "web, pdf"
@@ -212,5 +213,15 @@ entries:
             title: Glossary
             output: "web, pdf"
             url: /glossary.html
+
+        output: web
+
+        title: "Richard"
+        folderitems:
+          -
+            title: "Capability"
+            output: "web, pdf"
+            url: /uec_capability.html
+
         output: web
     levels: one
