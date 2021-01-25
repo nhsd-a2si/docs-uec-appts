@@ -44,7 +44,7 @@ The FHIR RESTful API style guide defines the following URL conventions which are
 
 ### Service Root URL ###
 
-The [Service Root URL](https://www.hl7.org/fhir/STU3/http.html#general) is the address root address of where the resources defined by a capability are found.
+The [Service Root URL](https://www.hl7.org/fhir/STU3/http.html#general) is the root address of where the resources defined by a capability are found.
 
 The Service Root URL is the `[base]` portion of FHIR URLs.
 
@@ -62,7 +62,7 @@ Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs
 
 - `[FQDN_OF_FHIR_SERVER]` is the fully qualified domain name where traffic will be routed to the logical FHIR server for the organisation in question
 
-- `[ODS_CODE]` is the [Organisation Data Service](https://digital.nhs.uk/organisation-data-service) code which uniquely identifies the GP Practice organisation
+- `[ODS_CODE]` is the [Organisation Data Service](https://digital.nhs.uk/organisation-data-service) code which uniquely identifies the organisation
 
 - `[FHIR_VERSION_NAME]` refers to the textual name identifying the major FHIR version, examples being `DSTU2` and `STU3`. The FHIR Version name SHALL be specified in UPPERCASE characters.
 
@@ -249,4 +249,4 @@ For servers that don't persist historical versions of a resource (that is, any r
 
 ### Managing return errors ###
 
-To [manage return errors](http://hl7.org/fhir/STU3/http.html#2.1.0.4), FHIR defines an [OperationOutcome](http://hl7.org/fhir/STU3/operationoutcome.html) resource that can be used to convey specific detailed processable error information. See er_errorhandling.html for more information on errors
+To [manage return errors](http://hl7.org/fhir/STU3/http.html#2.1.0.4), FHIR defines an [OperationOutcome](http://hl7.org/fhir/STU3/operationoutcome.html) resource that can be used to convey specific detailed processable error information. See [Error Handling](/er_errorhandling.md) for more information on errors

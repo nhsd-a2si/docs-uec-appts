@@ -183,5 +183,5 @@ An example Care Connect UEC Appointment CapabilityStatement is shown below ready
 ```
 Consumer systems:
 
-* SHOULD request the capability statement from the FHIR server endpoint in order to ascertain details of the implementation of GP Connect capabilities delivered by the FHIR server
-* Consumers may also cache the capability statement information retrieved from an endpoint to reduce the number of future calls they make to the target organization’s FHIR server.
+* SHOULD request the capability statement from the FHIR server endpoint in order to ascertain details of the implementation of Care Connect capabilities delivered by the FHIR server
+* Consumers may also cache the capability statement information retrieved from an endpoint to reduce the number of future calls they make to the target organisation’s FHIR server.
