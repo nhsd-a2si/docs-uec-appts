@@ -122,17 +122,17 @@ This section will explain how they’re intended to be used and their functional
 ## Consumer 
 The TKW Consumer Simulator will test a Provider endpoint and is capable of running in three modes – 
 * All tests suite (see Test Suites section below)
-   * e.g. **./run_consumer_simulator.sh /<toAsid/>**
-*	Single test suite (see Test Suites section below)
-   * e.g. **./run_consumer_simulator.sh /<toAsid/> [A|S|B|C]**
-*	Single test within a test suite (see Postman collection for individual test names)
-   * e.g. **./run_consumer_simulator.sh -s /<toAsid/> /<TestName/>**
+   * e.g. **./run_consumer_simulator.sh \<toAsid\>**
+* Single test suite (see Test Suites section below)
+   * e.g. **./run_consumer_simulator.sh \<toAsid\> [A|S|B|C]**
+* Single test within a test suite (see Postman collection for individual test names)
+   * e.g. **./run_consumer_simulator.sh -s \<toAsid\> \<TestName\>**
 
 The simulator is instantiated by running either a batch (Windows) or shell (Mac) file, the mode being defined by the parameters assigned. It will perform the requested tests and output a validation report for review.
 
 There are logs of activity for the Consumer Simulator under ‘..\autotest_logs’.
 
-**NB: To point the TKW Consumer Simulator at the Provider solution to be tested edit the /<ASID/>.sh file in the ..\endpoint_configs folder, editing the ‘to_ep=/<provider solution endpoint/>’ value.**
+**NB: To point the TKW Consumer Simulator at the Provider solution to be tested edit the \<ASID\>.sh file in the ..\endpoint_configs folder, editing the ‘to_ep=\<provider solution endpoint\>’ value.**
 
 ### Test Suites
 To run a single test suite, use the Initial when invoking the Consumer Simulator.
@@ -191,7 +191,7 @@ Workflows
     network_mode : "host"
 
     volumes:
-        # /<host path to mount/> : /<mount point within docker/>
+        # <host path to mount> : <mount point within docker>
         # auto_tests folder
         - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/auto_tests:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/auto_tests'
         # endpoint_configs folder
@@ -239,7 +239,7 @@ Workflows
     network_mode : "host"
 
     volumes:
-    # <host path to mount> : /<mount point within docker/>
+    # <host path to mount> : <mount point within docker>
     # auto_tests folder
     - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/auto_tests:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/auto_tests
     # endpoint_configs folder
