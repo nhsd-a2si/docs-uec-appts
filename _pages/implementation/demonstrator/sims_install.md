@@ -1,3 +1,13 @@
+---
+title: TKW Simulators Install
+sidebar: poc_sidebar
+keywords: install
+permalink: sims_install.html
+toc: false
+Summary: "Install Simulators"
+folder: implementation
+---
+
 
 TKW Simulators 
 The TKW (ToolKit Workbench) Simulators are tools to assist with developing and assuring a solution to meet the Booking Standard. 
