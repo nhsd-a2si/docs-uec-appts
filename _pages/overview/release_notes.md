@@ -10,6 +10,33 @@ folder: introduction
 
 ## Current Release
 
+### 0.2.0 BETA
+
+Version | Handle  | Phase | State           | Release Date | Stability
+--------|---------|-------|-----------------|--------------|----------------
+0.2.0  | BETA   | Public Beta | Current Version | 12/02/2021   | Volatile
+
+The 0.2.2 BETA release has the following highlights:
+
+* Updated [Authentication Page](fs_authentication.html){:target="_blank"}
+   * Some typos were fixed
+
+<br>
+<br>
+
+## Future releases
+
+### 1.0.0 RC1
+
+Version | Handle  | Phase | State           | Release Date (planned) | Stability
+--------|---------|-------|-----------------|--------------|----------------
+1.0.0   | RC1 | Release Candidate | Unreleased | TBC   | Volatile
+
+<br>
+<br>
+
+## Previous releases
+
 ### 0.1.17 ALPHA
 
 Version | Handle  | Phase | State           | Release Date | Stability
@@ -33,22 +60,6 @@ The 0.1.17 ALPHA release has the following highlights:
 * <a href="scope_functional.html" target="_blank">Updated the functional scope page to reflect the latest developments in the standard</a>
 * <a href="fs_authentication.html#jwt-payload" target="_blank">Made the "requesting_practitioner" claim optional</a>
 * <a href="glossary.html" target="_blank">Added a number of new items to the glossary</a>
-
-<br>
-<br>
-
-## Future releases
-
-### 0.2.0 BETA
-
-Version | Handle  | Phase | State           | Release Date (planned) | Stability
---------|---------|-------|-----------------|--------------|----------------
-0.2.0   | BETA | Public Beta | Unreleased | TBC   | Volatile
-
-<br>
-<br>
-
-## Previous releases
 
 ### 0.1.16 ALPHA
 
