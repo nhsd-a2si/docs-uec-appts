@@ -226,7 +226,7 @@ The consumer **SHALL** populate the following [Device](https://www.hl7.org/fhir/
 - `model` with the consumer product or system name
 - `version` with the version number of the consumer product or system
 
-The [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Device](https://www.hl7.org/fhir/STU3/device.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition.
 
 **Example**:
 
@@ -259,7 +259,7 @@ The consumer **SHALL** populate the following [Organization](https://www.hl7.org
 {% include important.html content="In consumer system topologies where consumer applications are provisioned via a portal or middleware hosted by another organisation, it is vital for audit purposes that the organisation populated in the JWT reflects the organisation from where the request originates, rather than the hosting organisation.<br/>
 This is normally determined as the organisation of the logged on user making the request." %}
 
-The [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Organization](https://www.hl7.org/fhir/STU3/organization.html){:target="_blank"} resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition.
 
 **Example**:
 
@@ -304,7 +304,7 @@ The consumer **SHALL** populate the following [Practitioner](https://www.hl7.org
 
 {% include important.html content="Providers should be aware of variance in the population of the `identifier` field amongst existing consumer systems when reading this claim, specifically the latter two elements (SDS role profile ID, and local user identifier) are not always present." %}
 
-The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} integration_cross_organisation_audit_and_provenance.html#sub-subject-claim resource populated in this claim is a minimally populated resource to convey key details for audit, conforming to the base STU3 FHIR resources definition, and is not required to conform to a GP Connect FHIR resource profile.
+The [Practitioner](https://www.hl7.org/fhir/STU3/practitioner.html){:target="_blank"} integration_cross_organisation_audit_and_provenance.html#sub-subject-claim resource populated in this claim is a minimally populated resource to convey key details for audit.
 
 **Example**:
 
@@ -420,4 +420,4 @@ We say we are passing in user role for future use and audit, we do not require u
 
 ## Migration to NHS Identity
 
-It is expected that in the future the authorisation process will migrate away from HSCD to NHS Identity. Although the process will be bradly the same there are likely to be some differences. These differences and the process for migrating over to NHS Identity will be documented here in due course.
+It is expected that in the future the authorisation process will migrate away from HSCD to NHS Identity. Although the process will be broadly the same there are likely to be some differences. These differences and the process for migrating over to NHS Identity will be documented here in due course.
