@@ -54,9 +54,9 @@ It is important to note that the Service Root URL will be different for each Car
 
 ### Service Root URL versioning ###
 
-Service Root URLs SHALL be aligned with the Care Connect specification they were built against, specifically the [major version number](design_product_versioning.html#version-number-standard) SHALL be present in the server's Service Root URL to provide a clear distinction between API versions that are incompatible (i.e. contain breaking changes) vs. backwards-compatible (i.e. contain no breaking changes).
+Service Root URLs SHALL be aligned with the Care Connect specification they were built against, specifically the major version number SHALL be present in the server's Service Root URL to provide a clear distinction between API versions that are incompatible (i.e. contain breaking changes) vs. backwards-compatible (i.e. contain no breaking changes).
 
-Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs in the [Spine Directory Service](integration_spine_directory_service.html) in the following format:
+Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs in the [Spine Directory Service](fs_sds.md) in the following format:
 
 {% include callout.html content="`https://[FQDN of FHIR Server]/[ODS_CODE]/[FHIR_VERSION_NAME]/[CC_MAJOR_VERSION]/[PROVIDER_ROUTING_SEGMENT]`" %}
 
