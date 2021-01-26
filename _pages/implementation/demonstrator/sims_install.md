@@ -124,7 +124,7 @@ The TKW Consumer Simulator will test a Provider endpoint and is capable of runni
 * All test suites (see Test Suites section below)
    * e.g. *./run_consumer_simulator.sh \<toAsid\>*
 * Single test suite (see Test Suites section below)
-   * e.g. *./run_consumer_simulator.sh \<toAsid\> [A|S|B|C]*
+   * e.g. *./run_consumer_simulator.sh \<toAsid\> [A S B C]*
 * Single test within a test suite (see [Postman collection](https://github.com/nhsdigitalmait/FHIR_111_UEC/blob/master/Postman_collection/FHIR_111-UEC.postman_collection.json) for individual test names)
    * e.g. *./run_consumer_simulator.sh -s \<toAsid\> \<TestName\>*
 
