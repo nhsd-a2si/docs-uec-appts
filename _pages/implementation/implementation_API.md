@@ -56,7 +56,7 @@ It is important to note that the Service Root URL will be different for each Car
 
 Service Root URLs SHALL be aligned with the Care Connect specification they were built against, specifically the major version number SHALL be present in the server's Service Root URL to provide a clear distinction between API versions that are incompatible (i.e. contain breaking changes) vs. backwards-compatible (i.e. contain no breaking changes).
 
-Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs in the [Spine Directory Service](fs_sds.md) in the following format:
+Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs in the [Spine Directory Service](fs_sds.html) in the following format:
 
 {% include callout.html content="`https://[FQDN of FHIR Server]/[ODS_CODE]/[FHIR_VERSION_NAME]/[CC_MAJOR_VERSION]/[PROVIDER_ROUTING_SEGMENT]`" %}
 
@@ -198,7 +198,7 @@ To meet auditing and provenance requirements (which are expected to be closely a
 
 {% include tip.html content="We are using an open standard (JWT) to provide a container for the provenance and audit data for ease of transport between the consumer and provider systems. It is important to note that these tokens (for Care Connect FoT) will **not** be centrally issued and are not signed or encrypted (that is, they are constructed of plain text). There are JWT libraries available for most programming languages simplifying the generation of this data in JWT format." %}
 
-Refer to [Authentication](fs_authentication.md) for full details of the JWT claims that SHALL be used for passing audit and provenance details between systems.
+Refer to [Authentication](fs_authentication.html) for full details of the JWT claims that SHALL be used for passing audit and provenance details between systems.
 
 {% include important.html content="We have defined a small number of additional headers which are also required to be included in NHS Digital defined custom headers." %}
 
@@ -250,4 +250,4 @@ For servers that don't persist historical versions of a resource (that is, any r
 
 ### Managing return errors ###
 
-To [manage return errors](http://hl7.org/fhir/STU3/http.html#2.1.0.4), FHIR defines an [OperationOutcome](http://hl7.org/fhir/STU3/operationoutcome.html) resource that can be used to convey specific detailed processable error information. See [Error Handling](er_errorhandling.md) for more information on errors.
+To [manage return errors](http://hl7.org/fhir/STU3/http.html#2.1.0.4), FHIR defines an [OperationOutcome](http://hl7.org/fhir/STU3/operationoutcome.html) resource that can be used to convey specific detailed processable error information. See [Error Handling](er_errorhandling.html) for more information on errors.
