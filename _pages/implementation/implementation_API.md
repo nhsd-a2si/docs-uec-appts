@@ -116,7 +116,7 @@ The following [HTTP verbs](http://hl7.org/fhir/STU3/valueset-http-verb.html) SHA
 
 #### Resource types ####
 
-Care Connect provider systems SHALL support FHIR [resource types](http://hl7.org/fhir/STU3/resourcelist.html) as detailed within the [FHIR Resource Guidance](implementation_FHIR.html).
+Care Connect provider systems SHALL support FHIR [resource types](http://hl7.org/fhir/STU3/resourcelist.html) as detailed within the [FHIR Resource Guidance](implementation_FHIR.md).
 
 #### Resource ID ####
 
@@ -151,15 +151,16 @@ Servers should support two [wire formats](https://www.hl7.org/fhir/STU3/formats.
 - Servers SHALL support [JSON](https://www.hl7.org/fhir/STU3/json.html)
 - Servers SHOULD support [XML](https://www.hl7.org/fhir/STU3/xml.html)
 
-{% include warning.html content="NHS Digital strongly recommend that suppliers use JSON rather than XML when sent over the wire as JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not
-
-For supplier with less experience working with JSON formats, implementation tools in your language of choice simplify the process of producing and consuming FHIR in JSON." %}
-
 {% include important.html content="The FHIR standard outlines specific rules for formatting XML and JSON on the wire. It is important to read and understand in full the differences between how XML and JSON are required to be represented." %}
 
 Consumers SHALL ignore unknown extensions and elements in order to foster [forwards compatibility](https://www.hl7.org/fhir/STU3/compatibility.html#1.10.3) and declare this by setting [CapabilityStatement.acceptUnknown](https://www.hl7.org/fhir/STU3/capabilitystatement-definitions.html#CapabilityStatement.acceptUnknown) to 'both' in their capability statement.
 
 Systems SHALL declare which format(s) they support in their CapabilityStatement. If a server receives a request for a format that it does not support, it SHALL return an HTTP status code of `415` indicating an `Unsupported Media Type`.
+
+{% include warning.html content="NHS Digital strongly recommend that suppliers use JSON rather than XML as JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not
+
+For supplier with less experience working with JSON formats, implementation tools in your language of choice simplify the process of producing and consuming FHIR in JSON." %}
+
 
 ### Transfer encoding ###
 
@@ -197,7 +198,7 @@ To meet auditing and provenance requirements (which are expected to be closely a
 
 {% include tip.html content="We are using an open standard (JWT) to provide a container for the provenance and audit data for ease of transport between the consumer and provider systems. It is important to note that these tokens (for Care Connect FoT) will **not** be centrally issued and are not signed or encrypted (that is, they are constructed of plain text). There are JWT libraries available for most programming languages simplifying the generation of this data in JWT format." %}
 
-Refer to [Integration - cross-organisation audit and provenance](integration_cross_organisation_audit_and_provenance) for full details of the JWT claims that SHALL be used for passing audit and provenance details between systems.
+Refer to [Authentication](fs_authentication.md) for full details of the JWT claims that SHALL be used for passing audit and provenance details between systems.
 
 {% include important.html content="We have defined a small number of additional headers which are also required to be included in NHS Digital defined custom headers." %}
 
@@ -206,9 +207,7 @@ Clients SHALL add the following Spine proxy headers for audit and security purpo
 - `Ssp-TraceID` - TraceID (generated per request) which identifies the sender's message/interaction (for example, a GUID/UUID).
 - `Ssp-From` - ASID which identifies the sender's FHIR endpoint.
 - `Ssp-To` - ASID which identifies the recipient's FHIR endpoint.
-- `Ssp-InteractionID` - identifies the FHIR interaction that is being performed <sup>1</sup>
-
-<sup>1</sup> please refer to the [Development - FHIR API guidance - operation guidance](integration_interaction_ids.html) for full details.
+- `Ssp-InteractionID` - identifies the FHIR interaction that is being performed
 
 The SSP SHALL perform the following checks to authenticate client request:
 
@@ -251,4 +250,4 @@ For servers that don't persist historical versions of a resource (that is, any r
 
 ### Managing return errors ###
 
-To [manage return errors](http://hl7.org/fhir/STU3/http.html#2.1.0.4), FHIR defines an [OperationOutcome](http://hl7.org/fhir/STU3/operationoutcome.html) resource that can be used to convey specific detailed processable error information. See [Error Handling](/er_errorhandling.md) for more information on errors
+To [manage return errors](http://hl7.org/fhir/STU3/http.html#2.1.0.4), FHIR defines an [OperationOutcome](http://hl7.org/fhir/STU3/operationoutcome.html) resource that can be used to convey specific detailed processable error information. See [Error Handling](er_errorhandling.md) for more information on errors.
