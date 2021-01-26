@@ -9,15 +9,15 @@ folder: implementation
 ---
 
 The TKW (ToolKit Workbench) Simulators are tools to assist with developing and assuring a solution to meet the Booking Standard. 
-There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or with the dedicated environments – OpenTest, DEV or INT. 
-Within these environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible. 
+There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or in the dedicated environments – OpenTest, DEV or INT. 
+When utlised within the dedicated environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible. 
 
 ## What are they?
 Fundamentally, the TKW Simulators are containers (Docker) which neatly package all required resources, irrespective of the environment they are run on. 
-There are two containers to replicate the Provider and Consumer aspects of functionality and the links to each of them can be found under the Resources section. 
+There are two containers (Provider and Consumer) to replicate the different aspects of functionality and links to each of them can be found under the Resources section below. 
 
 ## Resources 
-All resources required to understand and run the TKW Simulators 
+Resources required to understand and run the TKW Simulators 
 
 ### Docker 
 Docker download - https://www.docker.com/get-started
@@ -27,89 +27,91 @@ Docker download - https://www.docker.com/get-started
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 # Deploying 
-When starting to build a solution, the TKW Simulators can be deployed locally to validate the requests and responses made by either Providers or Consumers. This section will explain how to deploy and other sections will detail how to use the tool and read validation reports.
+When starting to build a solution, the TKW Simulators can be deployed locally to validate the requests and responses made by either Providers or Consumers. This section will explain how to deploy them and later sections will go on to explain how to use the tool.
 
 ## Windows
 <details>
-<summary>Click to see step-by-step guide</summary>
+<summary>Click to see step-by-step setup guide</summary>
 <div class="expanded-class" markdown="1">
  
 ### Prerequisites 
 * Install Docker
-   * https://docs.docker.com/docker-for-windows/install/ (10 Pro)
-   * https://docs.docker.com/docker-for-windows/install-windows-home/ (10 Home)
+   * [Windows 10 Pro](https://docs.docker.com/docker-for-windows/install/)
+   * [Windows 10 home](https://docs.docker.com/docker-for-windows/install-windows-home/)
 
 ### Download Containers 
 * Launch Powershell (local user)
-* Download Container(s)
-   * Provider - docker pull nhsdigitalmait/tkw_uec_provider_simulator
-   * Consumer - docker pull nhsdigitalmait/tkw_uec_consumer_simulator
+* Run the following to download the Container(s)
+   * Provider - *docker pull nhsdigitalmait/tkw_uec_provider_simulator*
+   * Consumer - *docker pull nhsdigitalmait/tkw_uec_consumer_simulator*
 
 ### Run Containers 
 *  Create Docker compose (.yml) files to instantiate the Containers
 
 * **Provider**
-   * Copy ‘docker-compose_provider_simulator.yml’ from https://github.com/nhsdigitalmait/FHIR_111_UEC
+   * Copy ‘**docker-compose_provider_simulator.yml**’ from [here](https://github.com/nhsdigitalmait/FHIR_111_UEC)
    * Update volume references to local resources – see Appendix1 
       * NB: The section after the colon (:) should not be altered because this is used by the Container
    * Save file 
-   * Run the following from Powershell – ‘docker-compose -f <filename>.yml up’
-   * The Provider Simulator will start and report ‘ITK Testbench ready’ when successfully running
+   * Run the following from Powershell – *docker-compose -f \<filename\>.yml up*
+   * The Provider Simulator will start and report ‘*ITK Testbench ready*’ when successfully running
 
 * **Consumer**
-   * Copy ‘docker-compose_consumer_simulator.yml’ from https://github.com/nhsdigitalmait/FHIR_111_UEC
+   * Copy ‘**docker-compose_consumer_simulator.yml**’ from [here](https://github.com/nhsdigitalmait/FHIR_111_UEC)
    * Update volume references to local resources – see Appendix2
       * NB: The section after the colon (:) should not be altered because this is used by the Container
    * Save file 
    * Go to folder location ….Config/FHIR_111_UEC/autotest_config/endpoint_configs
-   * Create an endpoint config file named "200000000359.sh" with 200000000359 being the ASID of the test service and add the appropriate content, see below  
-   * Save the 200000000359.sh
-   * Create batch file ‘run_consumer_test.cmd’ to instantiate the Container and run the various Consumer test routines – see Appendix3 for an example
+   * Create an endpoint config file named '**200000000359.sh**', with 200000000359 being the ASID of the test service, and add the appropriate content, see Appendix6  
+   * Save the **200000000359.sh** file 
+   * Create batch file ‘**run_consumer_test.cmd**’ to instantiate the Container and run the various Consumer test routines – see Appendix3 for an example
    * Call the batch file specifying the test routine required 
-      * run_consumer_test.cmd <ASID> <Routine>
+      * run_consumer_test.cmd \<ASID\> \<Routine\>
       * See further detail in the Using TKW section below 
+   * Once execution is complete check the auto_tests folder and autotest logs folders for the test results and logs
 </div>
 </details>
 
 ## Mac
 <details>
-<summary>Click to see step-by-step guide</summary>
+<summary>Click to see step-by-step setup guide</summary>
 <div class="expanded-class" markdown="1">
  
 ### Prerequisites 
-* Install Docker - https://docs.docker.com/docker-for-mac/install/
-* Test Installation - https://hub.docker.com/editions/community/docker-ce-desktop-mac/
+* [Install Docker](https://docs.docker.com/docker-for-mac/install/)
+* [Test Installation](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
 
 ### Download Containers 
 * Launch Terminal
 * Download Container(s)
-   * Provider - docker pull nhsdigitalmait/tkw_uec_provider_simulator
-   * Consumer - docker pull nhsdigitalmait/tkw_uec_consumer_simulator
+   * Provider - *docker pull nhsdigitalmait/tkw_uec_provider_simulator*
+   * Consumer - *docker pull nhsdigitalmait/tkw_uec_consumer_simulator*
 
 ### Run Containers 
 *  Create Docker compose (.yml) files to instantiate the Containers
 
 * **Provider**
-   * Copy ‘docker-compose_provider_simulator.yml’ and ‘run_provider_simulator.sh’ from https://github.com/nhsdigitalmait/FHIR_111_UEC
-   *	Now edit docker-compose_provider_simulator.yml
+   * Copy ‘**docker-compose_provider_simulator.yml**’ and ‘**run_provider_simulator.sh**’ from [here](https://github.com/nhsdigitalmait/FHIR_111_UEC)
+   *	Now edit **docker-compose_provider_simulator.yml**
    *	The section under 'volumes' requires amending such that the folder locations preceding the colon (:) refer to folders on the machine running the Docker Container, see Appendix4
-   *	Save docker-compose_provider_simulator.yml
+   *	Save **docker-compose_provider_simulator.yml**
    *	Open a terminal session
-   *	Execute run_provider_simulator.sh
+   *	Execute *run_provider_simulator.sh*
    *	The provider simulator container will now launch in Docker
 
 
 * **Consumer**
-   * Copy ‘docker-compose_consumer_simulator.yml’ and ‘run_consumer_simulator.sh’ from https://github.com/nhsdigitalmait/FHIR_111_UEC
-   * Now edit docker-compose_consumer_simulator.yml
-   * The section under 'volumes' requires amending such that the folder locations preceding the colon (:) refer to folders on the machine running the Docker Container, see example below.
+   * Copy ‘**docker-compose_consumer_simulator.yml**’ and ‘**run_consumer_simulator.sh**’ from [here](https://github.com/nhsdigitalmait/FHIR_111_UEC)
+   * Now edit **docker-compose_consumer_simulator.yml**
+   * The section under 'volumes' requires amending such that the folder locations preceding the colon (:) refer to folders on the machine running the Docker Container, see Appendix5.
    * Go to …Config/FHIR_111_UEC/autotest_config/endpoint_configs
-   * Create an endpoint config file named "200000000359.sh" with 200000000359 being the ASID of the test service and add the appropriate content, see Appendix5
-   * Save the 200000000359.sh
+   * Create an endpoint config file named '**200000000359.sh**', with 200000000359 being the ASID of the test service, and add the appropriate content, see Appendix6
+   * Save the **200000000359.sh**
    * Open a terminal session
-   * Execute run_consumer_simulator.sh
-   * The consumer simulator container will now launch in Docker and execute the automated test scripts
-   * Once execution is complete check the auto_tests folder and autotest logs folders for the test results and logs.
+   * Execute *run_consumer_simulator.sh* file specifying the test routine required 
+      * run_consumer_test.cmd \<ASID\> \<Routine\>
+      * See further detail in the Using TKW section below 
+   * Once execution is complete check the auto_tests folder and autotest logs folders for the test results and logs
 </div>
 </details>
 
@@ -119,21 +121,21 @@ This section will explain how they’re intended to be used and their functional
 
 ## Consumer 
 The TKW Consumer Simulator will test a Provider endpoint and is capable of running in three modes – 
-* All tests suite (see Test Suites section below)
-   * e.g. **./run_consumer_simulator.sh \<toAsid\>**
+* All test suites (see Test Suites section below)
+   * e.g. *./run_consumer_simulator.sh \<toAsid\>*
 * Single test suite (see Test Suites section below)
-   * e.g. **./run_consumer_simulator.sh \<toAsid\> [A|S|B|C]**
-* Single test within a test suite (see Postman collection for individual test names)
-   * e.g. **./run_consumer_simulator.sh -s \<toAsid\> \<TestName\>**
+   * e.g. *./run_consumer_simulator.sh \<toAsid\> [A|S|B|C]*
+* Single test within a test suite (see [Postman collection](https://github.com/nhsdigitalmait/FHIR_111_UEC/blob/master/Postman_collection/FHIR_111-UEC.postman_collection.json) for individual test names)
+   * e.g. *./run_consumer_simulator.sh -s \<toAsid\> \<TestName\>*
 
-The simulator is instantiated by running either a batch (Windows) or shell (Mac) file, the mode being defined by the parameters assigned. It will perform the requested tests and output a validation report for review.
+The simulator is instantiated by running either a batch (Windows) or shell (Mac) file, the mode being defined by the parameters assigned. It will perform the requested tests and output a validation report for review under '..\auto_tests\\<ASID\>\'.
 
 There are logs of activity for the Consumer Simulator under ‘..\autotest_logs’.
 
 **NB: To point the TKW Consumer Simulator at the Provider solution to be tested edit the \<ASID\>.sh file in the ..\endpoint_configs folder, editing the ‘to_ep=\<provider solution endpoint\>’ value.**
 
 ### Test Suites
-To run a single test suite, use the Initial when invoking the Consumer Simulator.
+To run a single test suite, use the Initial value when invoking the Consumer Simulator.
 
 |Initial|Test Suite|
 |-------|----------|     
@@ -143,13 +145,13 @@ To run a single test suite, use the Initial when invoking the Consumer Simulator
 |C|Cancel appointment|
 
 # Provider
-The TKW Provider Simulator is capable of testing a Consumer solution. As with any Provider system solution, it’s passive and waits to accept requests. 
+The TKW Provider Simulator is capable of testing a Consumer solution. As with any Provider system solution, it is passive and waits to accept requests. 
 
-Once the container is up and running, reporting ‘ITK Testbench ready’, request can be made sent to it. The suppliers Consumer solution can be directed to the Provider Simulator, based on the address is was configured to listen via the Docker compose file docker-compose_provider_simulator.yml’.
+Once the container is up and running, reporting ‘*ITK Testbench ready*’, requests can be sent to it. The supplier's Consumer solution can be directed to the Provider Simulator, based on the address is was configured to listen via the Docker compose file - **docker-compose_provider_simulator.yml**.
 
-The Provider Simulator can also be tested using an API Test Tool such as Postman (https://www.postman.com/downloads/). A collection of all the requests which can be made to the Provider Simulator have been documented and can be imported into the tool to help see what the requests contain and envisage the eventual workflows.
+The Provider Simulator can also be tested using an API Test Tool such as [Postman](https://www.postman.com/downloads/). A [collection](https://github.com/nhsdigitalmait/FHIR_111_UEC/blob/master/Postman_collection/FHIR_111-UEC.postman_collection.json) of all the requests which can be made to the Provider Simulator have been documented and can be imported into the tool to assist seeing what the requests contain and envisage the eventual workflows.
 
-There are logs of activity for the Provider Simulator under ‘..\logs’.
+A validation report of activity sent to the Provider Simulator resides under '..\all_evidence\\<ASID\>' and logs of activity is recorded in ‘..\logs’.
 
 # Assuring with TKW
 Test plans 
@@ -245,6 +247,25 @@ Workflows
     # autotest logs folder
     - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/autotest_logs:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/autotest_logs
 
+**Appendix6 - Endpoint configuration file example (default)**
+---
+    # Autotest endpoint config file
+    #
+    # to local clear
+    to_ep=http://localhost:4434/STU3
+    #to_ep=http://localhost/STU3
+    
+    # to local secure
+    #to_ep=https://localhost:4431/STU3
+    # to local via reverse proxy
+    #to_ep=http://192.168.1.112/STU3 
+    
+    # defaults
+    #toasid=200000000359
+    #fromasid=200000000359
+    #sendtls=No
+    #truststore=/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs/certs/opentest.jks
+    #keystore=/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs/certs/vpn-client-1003.opentest.hscic.gov.uk.jks
 </div>
 </details>
 
