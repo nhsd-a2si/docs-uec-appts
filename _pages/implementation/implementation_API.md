@@ -151,7 +151,9 @@ Servers should support two [wire formats](https://www.hl7.org/fhir/STU3/formats.
 - Servers SHALL support [JSON](https://www.hl7.org/fhir/STU3/json.html)
 - Servers SHOULD support [XML](https://www.hl7.org/fhir/STU3/xml.html)
 
-{% include warning.html content="Consumers planning their development should read [the following information](support_faq.html#which-serialisation-format-should-i-choose-as-an-gp-connect-api-consumer---json-or-xml) before choosing whether to use JSON or XML in their implementation." %}
+{% include warning.html content="NHS Digital strongly recommend that suppliers use JSON rather than XML when sent over the wire as JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not
+
+For supplier with less experience working with JSON formats, implementation tools in your language of choice simplify the process of producing and consuming FHIR in JSON." %}
 
 {% include important.html content="The FHIR standard outlines specific rules for formatting XML and JSON on the wire. It is important to read and understand in full the differences between how XML and JSON are required to be represented." %}
 
