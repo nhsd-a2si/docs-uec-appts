@@ -13,7 +13,7 @@ There are two tools in the suite, to support the Provider and Consumer functiona
 When utlised within the dedicated environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible. 
 
 ## What are they?
-Fundamentally, the TKW Simulators are containers (Docker) which neatly package all required resources, irrespective of the environment they are run on. 
+Fundamentally, the TKW Simulators are (Docker) containers which neatly package all required resources, irrespective of the environment they are run on. 
 There are two containers (Provider and Consumer) to replicate the different aspects of functionality and links to each of them can be found under the Resources section below. 
 
 ## Resources 
@@ -27,7 +27,7 @@ Docker [download](https://www.docker.com/get-started)
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 # Deploying 
-When starting to build a solution, the TKW Simulators can be deployed locally to validate the requests and responses made by either Providers or Consumers. This section will explain how to deploy them and later sections will go on to explain how to use the tool.
+When starting to build a solution the TKW Simulators can be deployed locally, to validate the requests and responses made by either Providers or Consumers. This section will explain how to deploy and later sections will go on to explain how to use the tool.
 
 ## Windows
 <details>
@@ -53,7 +53,7 @@ When starting to build a solution, the TKW Simulators can be deployed locally to
    * Update volume references to local resources – see Appendix1 
       * NB: The section after the colon (:) should not be altered because this is used by the Container
    * Save file 
-   * Run the following from Powershell – *docker-compose -f \<filename\>.yml up*
+   * Run the following from Powershell – *docker-compose -f docker-compose_provider_simulator.yml up*
    * The Provider Simulator will start and report ‘*ITK Testbench ready*’ when successfully running
 
 * **Consumer**
@@ -62,9 +62,10 @@ When starting to build a solution, the TKW Simulators can be deployed locally to
       * NB: The section after the colon (:) should not be altered because this is used by the Container
    * Save file 
    * Go to folder location ….Config/FHIR_111_UEC/autotest_config/endpoint_configs
-   * Create an endpoint config file named '**200000000359.sh**', with 200000000359 being the ASID of the test service, and add the appropriate content, see Appendix6  
+   * Create an endpoint config file named '**200000000359.sh**', with 200000000359 being the ASID of the test service, and amend the required configuration (only to_ep for a local install), see Appendix6  
    * Save the **200000000359.sh** file 
    * Create batch file ‘**run_consumer_test.cmd**’ to instantiate the Container and run the various Consumer test routines – see Appendix3 for an example
+   * Run Command
    * Call the batch file specifying the test routine required 
       * *run_consumer_test.cmd \<ASID\> \<Routine\>*
       * See further detail in the Using TKW section below 
@@ -94,20 +95,23 @@ When starting to build a solution, the TKW Simulators can be deployed locally to
    * Copy ‘**docker-compose_provider_simulator.yml**’ and ‘**run_provider_simulator.sh**’ from [here](https://github.com/nhsdigitalmait/FHIR_111_UEC)
    *	Now edit **docker-compose_provider_simulator.yml**
    *	The section under 'volumes' requires amending such that the folder locations preceding the colon (:) refer to folders on the machine running the Docker Container, see Appendix4
+      * NB: The section after the colon (:) should not be altered because this is used by the Container
    *	Save **docker-compose_provider_simulator.yml**
-   *	Open a terminal session
+   *	Open a Terminal session
    *	Execute *run_provider_simulator.sh*
    *	The provider simulator container will now launch in Docker
+   * The Provider Simulator will start and report ‘*ITK Testbench ready*’ when successfully running
 
 
 * **Consumer**
    * Copy ‘**docker-compose_consumer_simulator.yml**’ and ‘**run_consumer_simulator.sh**’ from [here](https://github.com/nhsdigitalmait/FHIR_111_UEC)
    * Now edit **docker-compose_consumer_simulator.yml**
    * The section under 'volumes' requires amending such that the folder locations preceding the colon (:) refer to folders on the machine running the Docker Container, see Appendix5.
+      * NB: The section after the colon (:) should not be altered because this is used by the Container
    * Go to …Config/FHIR_111_UEC/autotest_config/endpoint_configs
-   * Create an endpoint config file named '**200000000359.sh**', with 200000000359 being the ASID of the test service, and add the appropriate content, see Appendix6
+   * Create an endpoint config file named '**200000000359.sh**', with 200000000359 being the ASID of the test service, and amend the required configuration (only to_ep for a local install) see Appendix6
    * Save the **200000000359.sh**
-   * Open a terminal session
+   * Open a Terminal session
    * Execute *run_consumer_simulator.sh* file specifying the test routine required 
       * *run_consumer_test.cmd \<ASID\> \<Routine\>*
       * See further detail in the Using TKW section below 
@@ -115,8 +119,8 @@ When starting to build a solution, the TKW Simulators can be deployed locally to
 </div>
 </details>
 
-# Using TKW 
-The TKW Provider and Consumer simulators will interact with each. It is advisable to set them up like that initially to ensure they’re working before proceeding to use them to test any other implementation. 
+# Using TKW Simulators
+The TKW Provider and Consumer Simulators will interact with each. It is advisable to set them up like that initially to ensure they’re working before proceeding to use them to test any other implementation. 
 This section will explain how they’re intended to be used and their functionality.
 
 ## Consumer 
@@ -130,7 +134,7 @@ The TKW Consumer Simulator will test a Provider endpoint and is capable of runni
 
 The simulator is instantiated by running either a batch (Windows) or shell (Mac) file, the mode being defined by the parameters assigned. It will perform the requested tests and output a validation report for review under '..\auto_tests\\<ASID\>\'.
 
-There are logs of activity for the Consumer Simulator under ‘..\autotest_logs’.
+There are logs of activity of the Consumer Simulator under ‘..\autotest_logs’.
 
 **NB: To point the TKW Consumer Simulator at the Provider solution to be tested edit the \<ASID\>.sh file in the ..\endpoint_configs folder, editing the ‘to_ep=\<provider solution endpoint\>’ value.**
 
@@ -147,15 +151,14 @@ To run a single test suite, use the Initial value when invoking the Consumer Sim
 # Provider
 The TKW Provider Simulator is capable of testing a Consumer solution. As with any Provider system solution, it is passive and waits to accept requests. 
 
-Once the container is up and running, reporting ‘*ITK Testbench ready*’, requests can be sent to it. The supplier's Consumer solution can be directed to the Provider Simulator, based on the address is was configured to listen via the Docker compose file - **docker-compose_provider_simulator.yml**.
+Once the container is up and running, reporting ‘*ITK Testbench ready*’, requests can be sent to it. The supplier's Consumer solution can be directed to the Provider Simulator, based on the address it was configured to listen via the Docker compose file - **docker-compose_provider_simulator.yml**.
 
-The Provider Simulator can also be tested using an API Test Tool such as [Postman](https://www.postman.com/downloads/). A [collection](https://github.com/nhsdigitalmait/FHIR_111_UEC/blob/master/Postman_collection/FHIR_111-UEC.postman_collection.json) of all the requests which can be made to the Provider Simulator have been documented and can be imported into the tool to assist seeing what the requests contain and envisage the eventual workflows.
+The Provider Simulator can also be tested using an API Test Tool such as [Postman](https://www.postman.com/downloads/). A [collection](https://github.com/nhsdigitalmait/FHIR_111_UEC/blob/master/Postman_collection/FHIR_111-UEC.postman_collection.json) of all the requests which can be made to the Provider Simulator have been documented and can be imported into the Postman tool to assist seeing what the requests contain and envisage the eventual workflows.
 
 A validation report of activity sent to the Provider Simulator resides under '..\all_evidence\\<ASID\>' and logs of activity is recorded in ‘..\logs’.
 
 # Assuring with TKW
-Test plans 
-Workflows
+Another key feature of the TKW Simulator Tools is to assist with the self assurance process and provide the required evidence for the SCAL submission. Once the solution is complete, depending on whether it is fulfilling Provider or Consumer functionality, it can be configured to make or receive requests from the corresponding Simulator Tool. The Tool will record and collate the necesary evidence to be attached as part of the assurance process, as detailed in *Using TKW Simulators* section above. 
 
 # Appendices 
 <details>
