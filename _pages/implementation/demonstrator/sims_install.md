@@ -1,5 +1,5 @@
 ---
-title: TKW Simulators Install
+title: TKW Simulators - Installing and Using
 sidebar: poc_sidebar
 keywords: install
 permalink: sims_install.html
