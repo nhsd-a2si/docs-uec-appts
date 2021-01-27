@@ -203,12 +203,14 @@ As UEC apointment booking only supports usage for direct care, this value **SHAL
 
 The scope of the request.
 
+The first claim is for "operations on an appointment from the context of a patient" and the second for "operations on a slot (from the context of an organisation)". The first scope supports verbs up to and including ones that can change data (e.g. POST and PUT). The second scope does not (e.g. just GET).
+
 Please the table below for which values to populate.
 
 | Claim value | Operation | Description |
 |-------|-------|-------------|
-| `patient/appointment.write` | Book / Cancel |Booking in an appointment |
-| `organization/slot.read` | Slot Search |Searching for available slots |
+| `patient/appointment.write` | Get appointment by ID / Book / Cancel |Operations on appointments |
+| `organization/slot.read` | Slot Search |Operations on slots |
 
 Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html){:target="_blank"} GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
 
