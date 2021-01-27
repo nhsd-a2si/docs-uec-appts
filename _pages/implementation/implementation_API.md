@@ -157,7 +157,7 @@ Consumers SHALL ignore unknown extensions and elements in order to foster [forwa
 
 Systems SHALL declare which format(s) they support in their CapabilityStatement. If a server receives a request for a format that it does not support, it SHALL return an HTTP status code of `415` indicating an `Unsupported Media Type`.
 
-{% include warning.html content="It is strongly recommend that suppliers use JSON rather than XML as JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not." %}
+{% include warning.html content="It is strongly recommend that suppliers use JSON rather than XML.  JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not." %}
 
 
 ### Transfer encoding ###
@@ -194,12 +194,11 @@ Additional HTTP headers SHALL be added into the HTTP request/response for allowi
 
 To meet auditing and provenance requirements (which are expected to be closely aligned with the IM1 requirements), clients SHALL provide an oAuth 2.0 Bearer token in the HTTP Authorization header (as outlined in [RFC 6749](http://tools.ietf.org/html/rfc6749)) in the form of a JSON Web Token (JWT) as defined in [RFC 7519](http://tools.ietf.org/html/rfc7519).
 
-{% include tip.html content="We are using an open standard (JWT) to provide a container for the provenance and audit data for ease of transport between the consumer and provider systems. It is important to note that these tokens (for Care Connect FoT) will **not** be centrally issued and are not signed or encrypted (that is, they are constructed of plain text). There are JWT libraries available for most programming languages simplifying the generation of this data in JWT format." %}
+{% include tip.html content="We are using an open standard (JWT) to provide a container for the provenance and audit data for ease of transport between the consumer and provider systems. It is important to note that these tokens will **not** be centrally issued and are not signed or encrypted (that is, they are constructed of plain text). There are JWT libraries available for most programming languages simplifying the generation of this data in JWT format." %}
 
 Refer to [Authentication](fs_authentication.html) for full details of the JWT claims that SHALL be used for passing audit and provenance details between systems.
 
-{% include important.html content="We have defined a small number of additional headers which are also required to be included in NHS Digital defined custom headers." %}
-
+#### Spine Proxy Headers
 Clients SHALL add the following Spine proxy headers for audit and security purposes:
 
 - `Ssp-TraceID` - TraceID (generated per request) which identifies the sender's message/interaction (for example, a GUID/UUID).
