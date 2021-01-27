@@ -70,7 +70,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
-                <td><a href="https://www.cleric.co.uk/" target="_blank">www.cleric.co.uk</a></td></td>
+                <td><a href="https://www.cleric.co.uk/" target="_blank">www.cleric.co.uk</a></td>
               </tr>  
                  
       <!------------------------------ROW----------------------------------->      
