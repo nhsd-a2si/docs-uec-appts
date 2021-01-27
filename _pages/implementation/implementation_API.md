@@ -157,9 +157,7 @@ Consumers SHALL ignore unknown extensions and elements in order to foster [forwa
 
 Systems SHALL declare which format(s) they support in their CapabilityStatement. If a server receives a request for a format that it does not support, it SHALL return an HTTP status code of `415` indicating an `Unsupported Media Type`.
 
-{% include warning.html content="NHS Digital strongly recommend that suppliers use JSON rather than XML as JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not
-
-For supplier with less experience working with JSON formats, implementation tools in your language of choice simplify the process of producing and consuming FHIR in JSON." %}
+{% include warning.html content="It is strongly recommend that suppliers use JSON rather than XML as JSON is a MUST requirement across other NHS Digital interoperability programmes, whereas XML is not." %}
 
 
 ### Transfer encoding ###
@@ -172,7 +170,7 @@ Clients and servers SHALL support the `UTF-8` [character encoding](https://www.h
 
 > FHIR uses `UTF-8` for all request and response bodies. Since the HTTP specification (section 3.7.1) defines a default character encoding of `ISO-8859-1`, requests and responses SHALL explicitly set the character encoding to `UTF-8` using the `charset` parameter of the MIME-type in the `Content-Type` header. Requests MAY also specify this charset parameter in the `Accept` header and/or use the `Accept-Charset` header.
 
-Where the character encoding is included with the "Content-Type" or "Accept" header there should not be a space between the MIME-type and the character encoding, as per the standard for these headers ([rfc2616](https://www.ietf.org/rfc/rfc2616.txt)).
+Where the character encoding is included with the "Content-Type" or "Accept" header there should not be a space between the MIME-type and the character encoding, as per the standard for these headers ([RFC 2616](https://www.ietf.org/rfc/rfc2616.txt)).
 
 ### Content compression ###
 
