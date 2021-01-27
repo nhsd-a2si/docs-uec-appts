@@ -85,6 +85,16 @@ The list includes only suppliers we are actively engaged with and are currently 
           </tr>
       <!------------------------------ROW----------------------------------->      
           <tr>
+                <td style="font-size:small"><a href="https://www.sensely.com/" target="_blank">Sense.ly</a></td>
+                <td style="font-size:small">Sense.ly</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
+                <td style="background-color: #ffffcc;">Engagement</td>
+                <td><a href="https://www.sensely.com/" target="_blank">www.sensely.com</a></td>
+           </tr>  
+      <!------------------------------ROW----------------------------------->      
+          <tr>
                 <td style="font-size:small">TPP</td>
                 <td style="font-size:small">SystmOne</td>
                 <td style="font-size:small">TBC</td>
