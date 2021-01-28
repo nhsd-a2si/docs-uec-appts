@@ -21,7 +21,7 @@ A [**technical document**](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/)
 
 ***
 ## Planning a project 
-There is a <a href="getting_started.html" target="_blank"><strong>Quick Start Guide</strong></a> which assists suppliers through all key areas of a project when building a solution. This should be reviewed in detail as part of the analysis process and subsequent project planning. It is also a useful resource to return to, at any of the project phases, to keep track of progress but also for links to more detailed information. 
+There is a <a href="getting_started.html" target="_blank"><strong>Quick Start Guide</strong></a> which assists suppliers through all key areas of a project when building a solution. This should be reviewed in detail as part of the analysis process and subsequent project planning. It is also a useful resource to return to, at any of the project phases, to keep track of progress and for links to more detailed information. 
 
 ## Other key areas 
 ### Use Cases 
