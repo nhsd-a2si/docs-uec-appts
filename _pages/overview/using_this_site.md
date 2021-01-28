@@ -35,7 +35,7 @@ There is a <a href="demo_overview.html" target="_blank">Demonstrator</a> (deprec
 A new suite of tools are available called <a href="sims_install.html" target="_blank">TKW Simulators</a> (replicating Provider and Consumer behaviour). These are Docker Containers available to deploy locally and within the Path-to-Live environments, OpenTest, DEV and INT. They are intended to assist with both development and assurance, capturing and packaging evidence which can be appended to the SCAL submission. 
 
 ### Assurance 
-The solution developed is self assured by the supplier using the <a href="assurance_scal.html" target="_blank">SCAL</a>. This is a manual process of confirming the solution meets certain capabilities and providing evidence to support. The new suite of tools (as described above) is capable of capturing and colating the evidence required for submission.
+The solution developed is self assured by the supplier using the <a href="assurance_scal.html" target="_blank">SCAL</a>. This is a manual process of confirming the solution meets certain capabilities and providing evidence to support. The new suite of <a href="sims_install.html" target="_blank">tools</a> (as described above) is capable of capturing and colating the evidence required for submission.
 
 ### Deployment 
 
