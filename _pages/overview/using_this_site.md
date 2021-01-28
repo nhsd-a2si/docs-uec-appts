@@ -8,7 +8,6 @@ tags: [getting_started]
 folder: getting_started
 ---
 To help get the most out of the published resources, understanding what exists and how it is intended to be used is documented here.
-
 There are two core resources - 
 
 ## Standard
