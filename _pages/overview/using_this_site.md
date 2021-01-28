@@ -17,6 +17,8 @@ It should be used to guide the analysis and define the scope of a solution, init
 ## * Specification 
 A [**technical document**](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/) which explicitly defines the NHS FHIR(STU3) Booking API resources and structures, along with the method operations (GET, PUT & POST) used
 
+____
+
 ## Planning a project 
 There is a <a href="getting_started.html" target="_blank"><strong>Quick Start Guide</strong></a> which guides suppliers through all key areas of a project when building a solution. This should be reviewed in detail as part of the analysis process and subsequent project planning. It is also a useful resource to return to at any of the project phases for quick overview and links to more detailed resources. 
 
