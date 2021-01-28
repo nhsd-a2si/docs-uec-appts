@@ -11,7 +11,6 @@ To help get the most out of the published resources, understanding what exists a
 
 There are two core resources - 
 
-***
 ## Standard
 This site, which can be thought of as an [**implementation guide**](https://developer.nhs.uk/apis/uec-appointments/), covering everything from use cases for booking through to the what an authentication token needs to include. 
 
@@ -40,4 +39,4 @@ A new suite of tools are available called <a href="sims_install.html" target="_b
 The solution developed is self assured by the supplier using the <a href="assurance_scal.html" target="_blank">SCAL</a>. This is a manual process of confirming the solution meets certain capabilities and providing evidence to support. The new suite of <a href="sims_install.html" target="_blank">tools</a> (as described above) is capable of capturing and colating the evidence required for submission.
 
 ### Deployment 
-
+There is a clearly defined <a href="dep_devptl.html" target="_blank">Path-to-Live</a>, taking a solution through all levels of <a href="dep_testtesting.html" target="_blank">testing maturity</a> and into Production go-live.
