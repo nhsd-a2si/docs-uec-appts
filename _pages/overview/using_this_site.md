@@ -7,8 +7,10 @@ toc: false
 tags: [getting_started]
 folder: getting_started
 ---
-To help get the most out of the published resources, understanding what exists and how they are intended to be used is documented here. There are two core resources - 
+To help get the most out of the published resources, understanding what exists and how they are intended to be used is documented here. 
+There are two core resources - 
 
+___
 ## Standard
 This site, which can be thought of as an [**implementation guide**](https://developer.nhs.uk/apis/uec-appointments/), covering everything from use cases for booking through to the what an authentication token needs to include. 
 
