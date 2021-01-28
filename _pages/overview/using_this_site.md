@@ -7,10 +7,10 @@ toc: false
 tags: [getting_started]
 folder: getting_started
 ---
-To help get the most out of the published resources, understanding what exists and how they are intended to be used is documented here. 
-There are two core resources - 
+To help get the most out of the published resources, understanding what exists and how they are intended to be used is documented here.
 
-___
+There are two core resources - 
+***
 ## Standard
 This site, which can be thought of as an [**implementation guide**](https://developer.nhs.uk/apis/uec-appointments/), covering everything from use cases for booking through to the what an authentication token needs to include. 
 
@@ -18,9 +18,7 @@ It should be used to guide the analysis and define the scope of a solution, init
 
 ## Specification 
 A [**technical document**](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/) which explicitly defines the NHS FHIR(STU3) Booking API resources and structures, along with the method operations (GET, PUT & POST) used 
-
-____
-
+***
 ## Planning a project 
 There is a <a href="getting_started.html" target="_blank"><strong>Quick Start Guide</strong></a> which guides suppliers through all key areas of a project when building a solution. This should be reviewed in detail as part of the analysis process and subsequent project planning. It is also a useful resource to return to at any of the project phases for quick overview and links to more detailed resources. 
 
@@ -37,6 +35,7 @@ There is a <a href="demo_overview.html" target="_blank">Demonstrator</a> (deprec
 A new suite of tools are available called <a href="sims_install.html" target="_blank">TKW Simulators</a> (replicating Provider and Consumer behaviour). These are Docker Containers available to deploy locally and within the Path-to-Live environments, OpenTest, DEV and INT. They are intended to assist with both development and assurance, capturing and packaging evidence which can be appended to the SCAL submission. 
 
 ### Assurance 
+The solution developed is self assured by the supplier using the <a href="assurance_scal.html" target="_blank">SCAL</a>. This is a manual process of confirming the solution meets certain capabilities and providing evidence to support. The new suite of tools (as described above) is capable of capturing and colating the evidence required for submission.
 
 ### Deployment 
 
