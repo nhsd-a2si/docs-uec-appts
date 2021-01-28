@@ -16,7 +16,6 @@ It should be used to guide the analysis and define the scope of a solution, init
 
 ## Specification 
 A [**technical document**](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/) which explicitly defines the NHS FHIR(STU3) Booking API resources and structures, along with the method operations (GET, PUT & POST) used
-
 ____
 
 ## Planning a project 
@@ -24,8 +23,11 @@ There is a <a href="getting_started.html" target="_blank"><strong>Quick Start Gu
 
 ## Other key areas 
 ### Use Cases 
+<a href="use_overview.html" target="_blank">User Stories</a> which define the scope of capabilites the booking Standard aims to cover 
 
 ### Workflows 
+The Functional Specification outlines the <a href="fs_workflow.html" target="_blank">workflows</a> involved in the booking Standard and goes on to breakdown the key areas in more detail. This area cover some of the very technical points of the Standard and will be used by anyone (Developers, Solution Architects, Technical Business Analysts) involved in documenting or building these aspects of a solution. 
+
 ### Demonstrator
 ### Assurance 
 ### Deployment 
