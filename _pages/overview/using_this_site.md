@@ -28,6 +28,12 @@ There is a <a href="getting_started.html" target="_blank"><strong>Quick Start Gu
 ### Workflows 
 The Functional Specification outlines the <a href="fs_workflow.html" target="_blank">workflows</a> involved in the booking Standard and goes on to breakdown the key areas in more detail. This area cover some of the very technical points of the Standard and will be used by anyone (Developers, Solution Architects, Technical Business Analysts) involved in documenting or building these aspects of a solution. 
 
-### Demonstrator
+### Tooling
+There is a <a href="demo_overview.html" target="_blank">Demonstrator</a> (deprecated) is an example of the requests and responses expected to be exchanged at API level. It is internet facing but doesn't support all the components in a live workflow e.g. SDS, SSP and DoS. 
+
+A new suite of tools are available called <a href="sims_install.html" target="_blank">TKW Simulators</a> (replicating Provider and Consumer behaviour). These are Docker Containers available to deploy locally and within the Path-to-Live environments, OpenTest, DEV and INT. They are intended to assist with both development and assurance, capturing and packaging evidence which can be appended to the SCAL submission. 
+
 ### Assurance 
+
 ### Deployment 
+
