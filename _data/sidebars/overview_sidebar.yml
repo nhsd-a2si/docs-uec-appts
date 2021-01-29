@@ -3,9 +3,9 @@ entries:
   -
     title: "Urgent & Emergency Care Appointment Booking Standards"
     product: ""
-    version: "v0.1.17 ALPHA"
-    spec: "STU3 | FHIR NHS Scheduling | 2.0.1-beta"
-    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/"
+    version: "v0.2.0 BETA"
+    spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
+    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/"
     folders: 
       - 
         title: Introduction
