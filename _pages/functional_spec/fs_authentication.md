@@ -210,7 +210,7 @@ Please the table below for which values to populate.
 | Claim value | Operation | Description |
 |-------|-------|-------------|
 | `patient/appointment.write` | Get appointment by ID / Book / Cancel |Operations on appointments |
-| `organization/slot.read` | Slot Search |Operations on slots |
+| `organization/slot.read` | Get Metadata / Slot Search |Operations on slots |
 
 Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html){:target="_blank"} GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
 
