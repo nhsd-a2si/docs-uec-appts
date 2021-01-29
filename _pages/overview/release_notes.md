@@ -21,6 +21,7 @@ The 0.2.2 BETA release has the following highlights:
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
    * Some typos were fixed
    * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes
+* Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank}
 
 <br>
 <br>
