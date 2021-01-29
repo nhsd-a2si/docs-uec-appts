@@ -92,6 +92,10 @@ entries:
             output: "web, pdf"
             url: /fs_ssp.html
           -
+            title: "Capability Statement"
+            output: "web, pdf"
+            url: /uec_capability.html
+          -
             title: "How appointments map to clinical need"
             output: "web, pdf"
             url: /fs_slotmap.html
@@ -213,15 +217,5 @@ entries:
             title: Glossary
             output: "web, pdf"
             url: /glossary.html
-
-        output: web
-
-        title: "Richard"
-        folderitems:
-          -
-            title: "Capability"
-            output: "web, pdf"
-            url: /uec_capability.html
-
         output: web
     levels: one
