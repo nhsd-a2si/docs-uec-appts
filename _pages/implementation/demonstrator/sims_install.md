@@ -113,7 +113,7 @@ When starting to build a solution the TKW Simulators can be deployed locally, to
    * Save the **200000000359.sh**
    * Open a Terminal session
    * Execute *run_consumer_simulator.sh* file specifying the test routine required 
-      * *run_consumer_test.cmd \<ASID\> \<Routine\>*
+      * *run_consumer_test.sh \<ASID\> \<Routine\>*
       * See further detail in the Using TKW section below 
    * Once execution is complete check the auto_tests folder and autotest logs folders for the test results and logs
 </div>
