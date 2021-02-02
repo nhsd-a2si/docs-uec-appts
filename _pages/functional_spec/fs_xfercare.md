@@ -56,8 +56,9 @@ The process for being able to link the two together is complicated by the fact t
  * Add the ODS into the CDA as shown above.
 
 {% include important.html content="The URL **MUST NOT** include the specific version of the appointment.   
-* Correct - https://servername.orgname.nhs.uk/FHIR/Appointment/1234567
-* Incorrect - https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1
+**Examples**
+Correct - https://servername.orgname.nhs.uk/FHIR/Appointment/1234567
+Incorrect - https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1
 " %}
 
 
