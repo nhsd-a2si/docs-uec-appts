@@ -65,7 +65,7 @@
               "documentation": "NHS Number (i.e. https://fhir.nhs.uk/Id/nhs-number|123456789)"
             },
             {
-              "name": "appointmentId",
+              "name": "_id",
               "type": "token",
               "documentation": "Unique identifier for an appointment"
             },
