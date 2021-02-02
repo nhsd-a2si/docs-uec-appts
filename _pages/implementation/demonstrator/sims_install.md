@@ -272,44 +272,45 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 
 **Appendix7 - Endpoint configuration file example (default)**
 ---
+
 |Test Name|Test Group|Short Description|
 |---------|----------|-----------------|
-|Capability_xml_accept	|Capability	|Request capability statement with a fhir+xml accept http header|
-|Capability_json_accept	|Capability	|Request capability statement with a fhir+json accept http header|
-|Capability_xml_parameter	|Capability	|Request capability statement with a xml _format parameter|
-|Capability_json_parameter	|Capability	|Request capability statement with a json _format parameter|
-|Capability_xml_parameter_json_accept	|Capability	|Request capability statement with  xml _format parameter and a fhir+json accept http header|
-|Capability_json_parameter_xml_accept	|Capability	|Request capability statement with  json _format parameter and a fhir+xml accept http header|
-|SFFSWithValidParameters_parameter_json	|Search For Free Slots	|Search for free slots with a json _format parameter|
-|SFFSWithValidParameters_header_json	|Search For Free Slots	|Search for free slots with a fhir+json http accept header|
-|SFFSWithValidParameters_parameter_xml	|Search For Free Slots	|Search for free slots with a xml _format parameter|
-|SFFSWithValidParameters_header_xml	|Search For Free Slots	|Search for free slots with a fhir+xml http accept header|
-|SFFSWithValidParameters_JWT_NoPractitioner	|Search For Free Slots	|Search for free slots with a JWT that does not contain a practitioner claim element|
-|SFFSWithValidParameters_3_days	|Search For Free Slots	|Search for free slots with a three day window from tomorrow to tomorrow+2|
-|SFFSWithValidParameters_includes	|Search For Free Slots	|Search for free slots with added _include parameters|
-|SFFSNoSlots_HappyPath	|Search For Free Slots	|Search for free slots returning no slots|
-|SFFSInvalid	|Search For Free Slots	|Search for free slots using an invalid request|
-|SFFSForbidden	|Search For Free Slots	|Search for free slots forbidden repsonse|
-|SFFSWrongMethod	|Search For Free Slots	|Search for free slots wrong method response|
-|SFFSWithBusySlots	|Search For Free Slots	|Search for busy slots|
-|BookAppointment_HappyPath	|Book Appointment	|Happy Path Appointment booking|
-|BookAppointment_NoNHSNumber	|Book Appointment	|Happy Path Appointment booking where no patient nhs number is supplied|
-|BookAppointment_SlotAlreadyBooked	|Book Appointment	|Attempt to book an already booked appointment|
-|BookAppointment_FailedValidation	|Book Appointment	|Book an apppintment with an invalid request|
-|BookAppointment_Invalid	|Book Appointment	|Book an apppintment with an invalid request|
-|BookAppointment_Forbidden	|Book Appointment	|Book appointment forbidden response|
-|BookAppointment_ServerError	|Book Appointment	|Book appointment server error response|
-|BookAppointment_UnsupportedMediaType	|Book Appointment	|Book appointment requesting an unsupported media type|
-|BookAppointment_BadGateway	|Book Appointment	|Book appointment bad gateway response|
-|ReadNonExistentAppointment	|Cancel Appointment	|Read an appointment that does not exist|
-|CancelAppointment_HappyPath	|Cancel Appointment	|Successfully cancel an appointment|
-|CancelAppointment_DifferencesDetected	|Cancel Appointment	|Attempt to cancel an appointment supplying different appointment details|
-|CancelAppointment_VersionConflict	|Cancel Appointment	|Attempt to cancel an appointment supplying incorrect version|
-|CancelAppointment_If-MatchHeaderMissing	|Cancel Appointment	|Attempt to cancel an appointment without supplying an if match http header|
-|CancelAppointment_ServerError	|Cancel Appointment	|Cancel appointment server error response|
-|CancelAppointment_Forbidden	|Cancel Appointment	|Cancel appointment forbidden response|
-|CancelAppointment_BadGateway	|Cancel Appointment	|Cancel appointment bad gateway response|
-|CancelAppointment_GatewayTimeout	|Cancel Appointment	|Cancel appointment gateway timeout response|
+|Capability_xml_accept|Capability|Request capability statement with a fhir+xml accept http header|
+|Capability_json_accept|Capability|Request capability statement with a fhir+json accept http header|
+|Capability_xml_parameter|Capability|Request capability statement with a xml \_format parameter|
+|Capability_json_parameter|Capability|Request capability statement with a json \_format parameter|
+|Capability_xml_parameter_json_accept|Capability|Request capability statement with  xml \_format parameter and a fhir+json accept http header|
+|Capability_json_parameter_xml_accept|Capability|Request capability statement with  json \_format parameter and a fhir+xml accept http header|
+|SFFSWithValidParameters_parameter_json|Search For Free Slots|Search for free slots with a json \_format parameter|
+|SFFSWithValidParameters_header_json|Search For Free Slots|Search for free slots with a fhir+json http accept header|
+|SFFSWithValidParameters_parameter_xml|Search For Free Slots|Search for free slots with a xml \_format parameter|
+|SFFSWithValidParameters_header_xml|Search For Free Slots|Search for free slots with a fhir+xml http accept header|
+|SFFSWithValidParameters_JWT_NoPractitioner|Search For Free Slots|Search for free slots with a JWT that does not contain a practitioner claim element|
+|SFFSWithValidParameters_3_days	|Search For Free Slots|Search for free slots with a three day window from tomorrow to tomorrow+2|
+|SFFSWithValidParameters_includes|Search For Free Slots|Search for free slots with added \_include parameters|
+|SFFSNoSlots_HappyPath|Search For Free Slots|Search for free slots returning no slots|
+|SFFSInvalid|Search For Free Slots|Search for free slots using an invalid request|
+|SFFSForbidden|Search For Free Slots|Search for free slots forbidden repsonse|
+|SFFSWrongMethod|Search For Free Slots|Search for free slots wrong method response|
+|SFFSWithBusySlots|Search For Free Slots|Search for busy slots|
+|BookAppointment_HappyPath|Book Appointment|Happy Path Appointment booking|
+|BookAppointment_NoNHSNumber|Book Appointment|Happy Path Appointment booking where no patient nhs number is supplied|
+|BookAppointment_SlotAlreadyBooked|Book Appointment|Attempt to book an already booked appointment|
+|BookAppointment_FailedValidation|Book Appointment|Book an apppintment with an invalid request|
+|BookAppointment_Invalid|Book Appointment|Book an apppintment with an invalid request|
+|BookAppointment_Forbidden|Book Appointment|Book appointment forbidden response|
+|BookAppointment_ServerError|Book Appointment|Book appointment server error response|
+|BookAppointment_UnsupportedMediaType|Book Appointment|Book appointment requesting an unsupported media type|
+|BookAppointment_BadGateway|Book Appointment|Book appointment bad gateway response|
+|ReadNonExistentAppointment|Cancel Appointment|Read an appointment that does not exist|
+|CancelAppointment_HappyPath|Cancel Appointment|Successfully cancel an appointment|
+|CancelAppointment_DifferencesDetected|Cancel Appointment|Attempt to cancel an appointment supplying different appointment details|
+|CancelAppointment_VersionConflict|Cancel Appointment|Attempt to cancel an appointment supplying incorrect version|
+|CancelAppointment_If-MatchHeaderMissing|Cancel Appointment|Attempt to cancel an appointment without supplying an if match http header|
+|CancelAppointment_ServerError|Cancel Appointment|Cancel appointment server error response|
+|CancelAppointment_Forbidden|Cancel Appointment|Cancel appointment forbidden response|
+|CancelAppointment_BadGateway|Cancel Appointment|Cancel appointment bad gateway response|
+|CancelAppointment_GatewayTimeout|Cancel Appointment|Cancel appointment gateway timeout response|
 
 </div>
 </details>
