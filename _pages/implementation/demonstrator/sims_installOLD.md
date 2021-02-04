@@ -2,7 +2,7 @@
 title: TKW Simulators - Installing and Using
 sidebar: overview_sidebar
 keywords: install
-permalink: sims_install.html
+permalink: sims_installOLD.html
 toc: false
 Summary: "Install Simulators"
 folder: implementation
