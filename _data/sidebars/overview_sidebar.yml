@@ -128,6 +128,10 @@ entries:
             output: "web, pdf"
             url: /fs_sms.html
           -
+            title: "How to store patient contacts"
+            output: "web, pdf"
+            url: /fs_patientcontact.html  
+          -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"
             url: /fs_reporting.html
