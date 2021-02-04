@@ -1,6 +1,6 @@
 ---
 title: TKW Simulators - Installing and Using
-sidebar: poc_sidebar
+sidebar: overview_sidebar
 keywords: install
 permalink: sims_install.html
 toc: false
