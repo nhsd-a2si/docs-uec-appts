@@ -15,6 +15,10 @@ entries:
             output: "web, pdf"
             type: homepage
             url: /index.html
+          - 
+            title: "Using this site"
+            output: "web, pdf"            
+            url: /using_this_site.html
           -
             title: "Getting Started"
             output: "web, pdf"
@@ -153,10 +157,10 @@ entries:
             title: "Implementing FHIR® Resources"
             output: "web, pdf"
             url: /implementation_FHIR.html
-          -
-            title: "Provider and Consumer Demonstrator"
-            output: "web, pdf"
-            url: /demo_overview.html
+          - 
+            title: "TKW Simulators"
+            output: "web, pdf"            
+            url: /sims_install.html
         output: web
       -
         title: "First of Type"
