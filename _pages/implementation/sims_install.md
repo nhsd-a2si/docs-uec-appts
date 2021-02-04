@@ -10,7 +10,7 @@ folder: implementation
 
 The TKW (ToolKit Workbench) Simulators are tools to assist with developing and assuring a solution to meet the Booking Standard. 
 There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or in the dedicated environments – OpenTest, DEV or INT. 
-When utlised within the dedicated environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible. 
+When utlised within the dedicated environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible. NEW
 
 ## What are they?
 Fundamentally, the TKW Simulators are (Docker) containers which neatly package all required resources, irrespective of the environment they are run on. 
