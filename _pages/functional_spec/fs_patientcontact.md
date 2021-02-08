@@ -7,6 +7,12 @@ toc: false
 folder: functional_spec
 ---
 
+When storing patient contact details against the [Patient Resource](patientresource){:target="_blank"}
+
+
+
+
+
 Patient.address | 1..*
 At least one address should be populated. you MUST also populate the Patient.Address.Use
 
