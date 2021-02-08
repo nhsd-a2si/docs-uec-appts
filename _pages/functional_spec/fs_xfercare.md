@@ -1,6 +1,6 @@
 ---
 title: Referencing Transfer of Care Documentation
-sidebar: overview_sidebar
+sidebar: cda_itk_sidebar
 keywords: specification
 permalink: fs_xfercare.html
 toc: false
@@ -19,7 +19,7 @@ Ideally the referral documentation will also include a reference to the appointm
 
 The intention is that any standards that govern referral messaging and documentation will include references to appointments in due course.
 
-{% include important.html content="Please be aware of the changes to Urgent Care Messaging, which can be found [here](https://github.com/nhsd-a2si/docs-uec-appts/files/5140988/Changes%2Bto%2BUrgent%2BCare%2BMessaging%2B.v3-0.%2B-%2BPart%2B1%2B-%2BNon-breaking%2BChanges.docx)." %}
+{% include important.html content="Please be aware of the changes to Urgent Care Messaging, which can be found in [Transfer of Care Documentation Guidance and Changes](fs_xfercare guidance)." %}
 
 
 
