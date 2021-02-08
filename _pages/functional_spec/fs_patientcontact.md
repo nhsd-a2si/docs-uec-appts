@@ -7,7 +7,7 @@ toc: false
 folder: functional_spec
 ---
 
-When storing patient contact details against the {%include FHIRSpecificationLink.html link="patient.html" text="Patient Resource" %}
+When storing patient contact details against the {%include FHIRSpecificationLink.html page="patient.html" text="Patient Resource" %}
 
 
 
