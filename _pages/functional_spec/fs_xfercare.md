@@ -19,7 +19,7 @@ Ideally the referral documentation will also include a reference to the appointm
 
 The intention is that any standards that govern referral messaging and documentation will include references to appointments in due course.
 
-<a href="fs_xfercare guidance.html" target="_blank">Transfer of Care Documentation Guidance and Changes</a>
+<a href="fs_xfercare_guidance.html" target="_blank">Transfer of Care Documentation Guidance and Changes</a>
 
 
 
