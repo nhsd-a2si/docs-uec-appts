@@ -4,7 +4,6 @@ sidebar: cda_itk_sidebar
 keywords: specification
 permalink: fs_xfercare_guidance.html
 toc: false
-folder: functional_spec
 ---
 
 ## Changes to Urgent Care Messaging
