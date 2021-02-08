@@ -19,9 +19,14 @@ Ideally the referral documentation will also include a reference to the appointm
 
 The intention is that any standards that govern referral messaging and documentation will include references to appointments in due course.
 
+{% include important.html content="Please be aware of the changes to Urgent Care Messaging, which can be found [here](https://github.com/nhsd-a2si/docs-uec-appts/files/5140988/Changes%2Bto%2BUrgent%2BCare%2BMessaging%2B.v3-0.%2B-%2BPart%2B1%2B-%2BNon-breaking%2BChanges.docx)." %}
+
+
+
+
 ## Example of how this might work in practice
 
-Below is an example of how one type of transfer of care process can be linked with appointment booking. In this illustration a referal from 111 using a 111CDA document is used.
+Below is an example of how one type of transfer of care process can be linked with appointment booking. In this illustration a referral from 111 using a 111CDA document is used.
 
 ### Consumer Requirements
 
