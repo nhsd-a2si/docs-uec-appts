@@ -19,7 +19,7 @@ Ideally the referral documentation will also include a reference to the appointm
 
 The intention is that any standards that govern referral messaging and documentation will include references to appointments in due course.
 
-{% include important.html content="Please be aware of the changes to Urgent Care Messaging, which can be found in [Transfer of Care Documentation Guidance and Changes](fs_xfercare guidance)." %}
+<a href="fs_xfercare guidance.html" target="_blank">Transfer of Care Documentation Guidance and Changes</a>
 
 
 
