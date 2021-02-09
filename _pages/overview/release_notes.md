@@ -22,6 +22,8 @@ The 0.2.2 BETA release has the following highlights:
    * Some typos were fixed
    * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes
 * Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank}
+* Updated the name of the standard to the "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard"
+* Updated the [Booking Definition Page](definition.html){:target="_blank"} to reference booking and not be UEC specific
 
 <br>
 <br>
