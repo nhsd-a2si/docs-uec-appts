@@ -1,6 +1,6 @@
 ---
 title: Referencing Transfer of Care Documentation
-sidebar: cda_itk_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: fs_xfercare.html
 toc: false
@@ -18,35 +18,65 @@ Ideally the referral documentation will also include a reference to the appointm
 
 The intention is that any standards that govern referral messaging and documentation will include references to appointments in due course.
 
-<a href="fs_xfercare_guidance.html" target="_blank">Transfer of Care Documentation Guidance and Changes</a>
 
+### How this might work in practice
 
+Below is an example of how one type of transfer of care process can be linked with appointment booking.
 
-
-## Example of how this might work in practice
-
-Below is an example of how one type of transfer of care process can be linked with appointment booking. In this illustration a referral from 111 using a 111CDA document is used.
-
-### Consumer Requirements
-
-The CDA should have a new component in it, which holds a <linkHtml href="URL here">Link title here</linkHtml>, for example:
-
-#### Appointment reference
+In this illustration we have a referral from 111 using a 111CDA document containing a coded entry which holds the appointment reference / identifier and a coded section heading which holds a text representation of appointment details.  
 
 ```XML
-<component typeCode="COMP" contextConductionInd="true">  
- <npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146246GB01#Section1"/>    
- <section classCode="DOCSECT" moodCode="EVN">      
-  <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>      
-  <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>      
-  <title>Booked Appointment Information </title>      
-  <text>        
-   <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">
-    https://servername.orgname.nhs.uk/FHIR/Appointment/1234567
-   </linkHtml>      
-  </text>  
- </section>
-</component>
+<?xml version="1.0" encoding="UTF-8"?>
+<entry typeCode="COMP" contextConductionInd="true">
+  <npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146093GB01#AppointmentReference"/>
+  <encounter classCode="ENC" moodCode="APT">
+    <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#AppointmentReference"/>
+    <id root="2.16.840.1.113883.2.1.3.2.4.17.541" extension="eb4f7f21-3962-4416-9a29-a46dd6ee5f17"/>
+    <code code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.542" displayName="Patient booking"/>
+    <effectiveTime value="201706011400+00"/>
+    <participant typeCode="LOC" contextControlCode="OP">
+      <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#location"/>
+      <participantRole classCode="ASSIGNED">
+        <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#assignedEntity"/>
+        <id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="Q36"/>
+        <addr use="WP">
+          <streetAddressLine>Great George Street</streetAddressLine>
+          <city>Leeds</city>
+          <postalCode>LE13EX</postalCode>
+        </addr>
+        <playingEntity classCode="ORG" determinerCode="INSTANCE">
+          <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#assignedOrganization"/>
+          <name>CENTRAL LONDON COMMUNITY HEALTHCARE NHS TRUST</name>
+          <desc>Psychiatric Community Care Services</desc>
+        </playingEntity>
+      </participantRole>
+    </participant>
+    <section classCode="DOCSECT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>
+      <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>
+      <title>Booked Appointment Information </title>
+      <text>
+        <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">
+          https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>
+      </text>
+    </section>
+  </encounter>
+</entry>
+
+```
+
+Key to the linking is the ```DOCSECT``` section, specifically the ```linkHtml``` element where the appointment URL is specified.
+
+```xml
+<section classCode="DOCSECT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>
+  <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>
+  <title>Booked Appointment Information </title>
+  <text>
+    <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">
+      https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>
+  </text>
+</section>
 ```
 
 The process for being able to link the two together is complicated by the fact that the identifier for the CDA is created by the Consumer, while the identifier for the Appointment is created by the Provider. As a result of this, the following process needs to be followed:
