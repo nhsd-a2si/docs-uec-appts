@@ -7,7 +7,7 @@ toc: false
 folder: deployment
 ---
 
-## What is the "UEC Appointment Booking Standard"
+## What is the "UEC Booking Standard"
 
 This section will provide a brief overview of the Standard for commissioners involved in appointing Integrated Care System, supporting both patients and organisations in unifying care services. 
 
