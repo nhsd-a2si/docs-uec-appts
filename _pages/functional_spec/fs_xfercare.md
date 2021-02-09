@@ -26,7 +26,6 @@ Below is an example of how one type of transfer of care process can be linked wi
 In this illustration we have a referral from 111 using a 111CDA document containing a coded entry which holds the appointment reference / identifier and a coded section heading which holds a text representation of appointment details.  
 
 ```XML
-<?xml version="1.0" encoding="UTF-8"?>
 <entry typeCode="COMP" contextConductionInd="true">
   <npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146093GB01#AppointmentReference"/>
   <encounter classCode="ENC" moodCode="APT">
