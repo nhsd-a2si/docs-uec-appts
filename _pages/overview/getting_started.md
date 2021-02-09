@@ -8,7 +8,7 @@ toc: false
 folder: getting_started
 ---
 
-Welcome to the UEC booking national standards website. On this site you will find guidance, specifications and background information for suppliers who are implementing these standards as well as providers and comissioners who are looking to procure and deploy solutions that comply with these standards.
+Welcome to the NHS booking standard website. On this site you will find guidance, specifications and background information for suppliers who are implementing these standards as well as providers and comissioners who are looking to procure and deploy solutions that comply with these standards.
 
 This page is a Quick Start Guide for those wishing to engage and build to the standard. 
 
