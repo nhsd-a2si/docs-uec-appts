@@ -33,6 +33,14 @@ entries:
         folderitems: 
           - 
             output: "web, pdf"
+            title: "Overview"
+            url: /dep_commoverview.html 
+        output: web
+        title: Commissioners
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
             title: "DoS Lead Guidance"
             url: /dep_dosoverview.html
         output: web
