@@ -14,7 +14,7 @@ folder: deployment
 
 ### Analysis
 
-During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The UEC Booking demonstrator (deprecated) (<a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">Demonstrator</a>) or the TKW Simulators (<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator" target="_blank">Provider Simulator</a> and
+During this stage, suppliers will conduct any initial engagement, analysis etc.. required to get development underway. The NHS Booking demonstrator (deprecated) (<a href="http://appointments.directoryofservices.nhs.uk:443/poc/index" target="_blank">Demonstrator</a>) or the TKW Simulators (<a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_provider_simulator" target="_blank">Provider Simulator</a> and
 <a href="https://hub.docker.com/r/nhsdigitalmait/tkw_uec_consumer_simulator" target="_blank">Consumer Simulator</a>) are useful tools for this stage.
 
 The solution can be tested at any stage of development using these tools and the TKW Simulators will provide useful validation reports to highlight points of failure or oversight. These is more about testing during development maturity under the <a href="dep_testtesting.html" target="_blank">Testing section</a> of this Deployment Toolkit. 
