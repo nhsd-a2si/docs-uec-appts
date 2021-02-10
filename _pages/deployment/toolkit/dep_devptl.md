@@ -85,11 +85,11 @@ Once you have the above pre-requisites you will need to <a href="https://digital
 
 Once set up on the Integration Environment it is possible to perform like-live tests, including making requests to spine components - SDS, SSP - and interacting with other supplier solutions. 
 
-The end-to-end tests can be characterised in either an informal, ad hoc, approach where suppliers may contact each other to arrange tests, or more formal <a href="dep_testplan.html" target="_blank">Test Plans</a> can be followed. If a formal test is required the UEC Booking Team will take the lead, requesting systems to be configured, arrange a meeting time and guide users through a step-by-step test plan. The formal approach would be required for a supplier to demonstrate their solution (part of the assurance process) or gather evidence for their SCAL submission.  
+The end-to-end tests can be characterised in either an informal, ad hoc, approach where suppliers may contact each other to arrange tests, or more formal <a href="dep_testplan.html" target="_blank">Test Plans</a> can be followed. If a formal test is required the Booking Team will take the lead, requesting systems to be configured, arrange a meeting time and guide users through a step-by-step test plan. The formal approach would be required for a supplier to demonstrate their solution (part of the assurance process) or gather evidence for their SCAL submission.  
 
 ## Assure
 
-Assurance is a vital step in developing a Booking solution for either Provider or Consumer functionality. You will engage with the Solutions Assurance Team, via the UEC Booking Team, who will provide the <a href="assurance_scal.html" target="_blank">SCAL</a> (Supplier Conformance Assessment List) document for completion. This is a self-assurance process but there is a requirement to demonstrate the end-to-end functionality and provide documented evidence of how the solution meets the Standard.
+Assurance is a vital step in developing a Booking solution for either Provider or Consumer functionality. You will engage with the Solutions Assurance Team, via the Booking Team, who will provide the <a href="assurance_scal.html" target="_blank">SCAL</a> (Supplier Conformance Assessment List) document for completion. This is a self-assurance process but there is a requirement to demonstrate the end-to-end functionality and provide documented evidence of how the solution meets the Standard.
 
 The TKW Simulator can provide supporting evidence documents required by the SCAL.
 
@@ -129,5 +129,3 @@ At this point, assuming the Provider Testing has been successful, the solution i
 On the agreed date of go-live, the system will be 'switched on', an end-to-end test run to verify functionality and the service declared live. The solution moves from a project into BAU (Business as Usual), supported by all usual processes e.g. Technical Support. 
 
 Depending on the supplier's adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
-
-
