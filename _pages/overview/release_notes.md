@@ -21,9 +21,12 @@ The 0.2.2 BETA release has the following highlights:
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
    * Some typos were fixed
    * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes
-* Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank}
-* Updated the name of the standard to the "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard"
-* Updated the [Booking Definition Page](definition.html){:target="_blank"} to reference booking and not be UEC specific
+* Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank"}
+* Updated the name of the standard to "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard" to support future use cases
+* Updated most pages to reference booking rather than "appointment" unless specifically appropriate
+* Updated some wording on [booking definition](definition.html){:target="_blank"} page to be more generic
+* Updated [contact details](contact.html){:target="_blank"} to new contact email address
+* A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made.
 
 <br>
 <br>
