@@ -83,10 +83,10 @@ There is a requirement to support [reporting](fs_reporting.html) from both Consu
 
 
 ### Specification 
-The [Specification](index.html) is a technical document which explicitly details the resources and structures provided, consumed and interchanged within workflows. The outline of the method operations for the resources is also explained with worked through examples. 
+The {%include FHIRSpecificationLink.html page="index.html" text="Specification" %} is a technical document which explicitly details the resources and structures provided, consumed and interchanged within workflows. The outline of the method operations for the resources is also explained with worked through examples. 
 
 #### Resources 
-NHS FHIR Booking API is based on STU3 FHIR Resources. The Structure Definitions for each resource can be found in the Specification along with an overview of the dependencies including those which are mandated. It should be noted, the Booking Standard is not exactly equal to the base FHIR Resources and care should be taken to review what is documented in the Specification to avoid any omissions. 
+FHIR NHS Booking API is based on STU3 FHIR Resources. The Structure Definitions for each resource can be found in the Specification along with an overview of the dependencies including those which are mandated. It should be noted, the Booking Standard is not exactly equal to the base FHIR Resources and care should be taken to review what is documented in the Specification to avoid any omissions. 
 A key resource is the Appointment resource which differs slightly from other resources in that it can be constructed using contained resources.
 
 #### Operations 
@@ -149,4 +149,4 @@ If you have any questions please contact the UEC appointment booking team at:
 
 #### References 
 *	[NHS Booking Standard](index.html)
-* [NHS Booking FHIR API Specification](https://digital.nhs.uk/developer/api-catalogue/nhs-booking-fhir)
+* {%include FHIRSpecificationLink.html page="index.html" text="FHIR NHS Scheduling API Specification" %}
