@@ -7,7 +7,7 @@ permalink: er_errorhandling.html
 summary: "Implementation guidance for developers - focusing on error handling"
 ---
 
-This page is intended for use by software developers looking to build a conformant NHS FHIR Scheduling API interface for UEC flows.
+This page is intended for use by software developers looking to build a conformant NHS FHIR Scheduling API interface for booking flows.
 The purpose of response values is to support diagnostic investigation of issues between consumers and providers.
 
 ## Spine Secure Proxy responses
@@ -42,7 +42,7 @@ When performing an update or creating [resource transactions](https://www.hl7.or
 -	MAY apply business rules that alter the content
 -	MAY merge updated content with existing content
 
-Providers SHALL validate the existence of any referenced resources when creating or updating a resource. For example, a `Slot` reference (for example, `Slot/D497DB00-99AA-11E5-A837-0800200C9A66`) used when creating a new `Appointment` would be checked for existence on the server and an error returned (and the create interaction aborted) if the slot does not exist.
+Providers SHALL validate the existence of any referenced resources when creating or updating a resource. For example, a `Slot` reference (for example, `Slot/D497DB00-99AA-11E5-A837-0800200C9A66`) used when creating a new `booking` would be checked for existence on the server and an error returned (and the create interaction aborted) if the slot does not exist.
 
 Providers SHALL provide a read interaction for every resource it accepts update interactions on.
 

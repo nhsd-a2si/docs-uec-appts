@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit - DoS Lead Resources
+title: Deployment Toolkit - UEC DoS Lead Resources
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_dosoverview.html
@@ -16,7 +16,7 @@ folder: deployment
 ## How can I get involved?
 
 
-## Configuring the DoS for Appointment Booking
+## Configuring the UEC DoS for Booking
 
 ### Service Attributes
 

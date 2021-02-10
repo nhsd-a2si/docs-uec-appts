@@ -7,13 +7,13 @@ toc: false
 folder: getting_live
 ---
 
-On this page the supplier conformance catalogue for the UEC appointment booking standards can be found. 
+On this page the supplier conformance catalogue for the NHS booking standard can be found. 
 
 The catalogue is split into two sets of suppliers: 
 * Care Connect Consumer
 * Care Connect Provider
     
-A "Consumer" is a system that is seaching for slots and looking to book an appointment for a patient and a "Provider" is a system that holds appointments and is being booked into.
+A "Consumer" is a system that is seaching for slots and looking to make a booking for a patient and a "Provider" is a system that holds bookings and is being booked into.
     
 The list includes only suppliers we are actively engaged with and are currently working on implementing against the standard.
 
