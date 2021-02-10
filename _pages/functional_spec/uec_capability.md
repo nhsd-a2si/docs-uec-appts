@@ -5,7 +5,7 @@ keywords: Capability
 permalink: uec_capability.html
 toc: true
 folder: iops
-summary: Care Connect UEC Appointment FHIR server's capability statement
+summary: FHIR NHS Scheduling API server's capability statement
 ---
 
 ## Prerequisites
@@ -59,7 +59,7 @@ Provider systems:
 * SHALL return a 200 OK HTTP status code on successful retrieval of the capability statement
 * SHALL return a capability statement which conforms to the standard FHIR CapabilityStatement
 
-An example Care Connect UEC Appointment CapabilityStatement is shown below ready for customisation and embedding into Care Connect assured provider systems. Providers should use this CapabilityStatement as a base for their own CapabilityStatement, replacing the element in square brackets ([ & ]) with specific information of their implementation. The main version at the top of the CapabilityStatement should represent the Care Connect UEC Appointment specification version which the FHIR server implements.
+An example FHIR NHS Scheduling API CapabilityStatement is shown below ready for customisation and embedding into assured provider systems. Providers should use this CapabilityStatement as a base for their own CapabilityStatement, replacing the element in square brackets ([ & ]) with specific information of their implementation. The main version at the top of the CapabilityStatement should represent the FHIR NHS Scheduling API specification version which the FHIR server implements.
 
 ```json
 {
@@ -74,7 +74,7 @@ An example Care Connect UEC Appointment CapabilityStatement is shown below ready
       "name": "[Provider Software Vendor Contact Name]"
     }
   ],
-  "description": "This server implements the Care Connect UEC Appointment API version 2.0.0",
+  "description": "This server implements the FHIR NHS Scheduling API version 2.0.0",
   "copyright": "Copyright NHS Digital 2016-21
   ",
   "kind": "capability",
