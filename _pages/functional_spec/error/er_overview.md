@@ -228,19 +228,19 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <td>The requested Slot is no longer free</td>
                 <td>422 Unprocessable Entity</td>
-                <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics.</td>
+                <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The request body failed validation</td>
                 <td>422 Unprocessable Entity</td>
-                <td>Add in details of what went wrong including location details of the error.</td>
+                <td>Add in details of what went wrong including location details of the error in  OperationOutcome.issue.diagnostics.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The patient identifier - NHS no - was invalid</td>
                 <td>422 Unprocessable Entity</td>
-                <td>Add in details that the NHS No identifier was invalid in OperationOutcome.issue.diagnostics,  and highlight specifically the location in including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
+                <td>Add in details that the NHS No identifier was invalid in OperationOutcome.issue.diagnostics and highlight specifically the location in including OperationOutcome.issue.location or OperationOutcome.issue.expression as appropriate.</td>
               </tr>
          <!------------------------------ROW----------------------------------->   
               <tr>

@@ -15,6 +15,10 @@ entries:
             output: "web, pdf"
             type: homepage
             url: /index.html
+          - 
+            title: "Using this site"
+            output: "web, pdf"            
+            url: /using_this_site.html
           -
             title: "Getting Started"
             output: "web, pdf"
@@ -22,8 +26,8 @@ entries:
           -
             title: "Release Notes"
             output: "web, pdf"
-            url: /release_notes.html          
-        output: web 
+            url: /release_notes.html
+        output: web
       -
         title: Overview
         folderitems:
@@ -77,8 +81,8 @@ entries:
             url: /fs_workflow.html
           -
             title: "GP Connect"
-            output: "web, pdf"            
-            url: /gpc_overview.html            
+            output: "web, pdf"
+            url: /gpc_overview.html
           -
             title: "Interactions with the DoS"
             output: "web, pdf"
@@ -90,7 +94,11 @@ entries:
           -
             title: "Interactions with the SSP"
             output: "web, pdf"
-            url: /fs_ssp.html  
+            url: /fs_ssp.html
+          -
+            title: "Capability Statement"
+            output: "web, pdf"
+            url: /uec_capability.html
           -
             title: "How bookings map to clinical need"
             output: "web, pdf"
@@ -144,13 +152,17 @@ entries:
             output: "web, pdf"
             url: /implementation_overview.html
           -
+            title: "API Guidance"
+            output: "web, pdf"
+            url: /implementation_API.html
+          -
             title: "Implementing FHIR® Resources"
             output: "web, pdf"
             url: /implementation_FHIR.html
-          -
-            title: "Provider and Consumer Demonstrator"
-            output: "web, pdf"
-            url: /demo_overview.html
+          - 
+            title: "TKW Simulators"
+            output: "web, pdf"            
+            url: /sims_install.html
         output: web
       -
         title: "First of Type"
