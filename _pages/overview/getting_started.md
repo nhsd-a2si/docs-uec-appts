@@ -8,7 +8,7 @@ toc: false
 folder: getting_started
 ---
 
-Welcome to the NHS booking standard website. On this site you will find guidance, specifications and background information for suppliers who are implementing these standards as well as providers and comissioners who are looking to procure and deploy solutions that comply with these standards.
+Welcome to the NHS booking standard website. On this site you will find guidance, specifications and background information for suppliers who are implementing this standard as well as providers and comissioners who are looking to procure and deploy solutions that comply with this standard.
 
 This page is a Quick Start Guide for those wishing to engage and build to the standard. 
 
@@ -18,7 +18,7 @@ This is an overview of the anticipated phases of engagement. Click on an area to
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 ### Context 
-The aim of this programme of work is to deliver a standard for direct bookings within the UEC landscape, to improve the patient experience of services through connected care paths. 
+The aim of this programme of work is to deliver a standard for direct bookings within the NHS, to improve the patient experience of services through connected care paths. 
 The standard ensures suppliers build compatible systems to both provide slots for bookings and consume the advertised availability by requesting bookings. 
 
 
@@ -45,7 +45,7 @@ As a Consumer, a supplier will perform the following:
 
 
 ### Standard - Implementation Guide 
-The overall [Standard](https://developer.nhs.uk/apis/uec-appointments/) covers the context in which the functionality is intended to be used, the scope of functionality and how a supplier is expected to engage to deliver a successfully assured solution for their customer base. It can be thought of as an implementation guide, covering every step a supplier can expect to traverse from analysis through to deployment. 
+The overall [Standard](index.html) covers the context in which the functionality is intended to be used, the scope of functionality and how a supplier is expected to engage to deliver a successfully assured solution for their customer base. It can be thought of as an implementation guide, covering every step a supplier can expect to traverse from analysis through to deployment. 
 
 #### Functional Scope 
 This Standard supports the implementation of UEC bookings, which includes [**Slot Management**](https://developer.nhs.uk/apis/uec-appointments/fs_deliverychannel.html), [**Appointment Management**](https://developer.nhs.uk/apis/uec-appointments/fs_slotmanagement.html) and [**Analytics & Reporting**](https://developer.nhs.uk/apis/uec-appointments/fs_reporting.html). 
