@@ -32,7 +32,7 @@ There is a requirement to cover these core roles for any level of planned test. 
 
 |Organisation|Expertise|Individual Role|
 |:---|:---|:---|
-|NHS Digital|UEC Booking|Delivery Manager|
+|NHS Digital|Booking|Delivery Manager|
 |NHS England (regional)|DoS|Configuration Lead|
 |Supplier (Software solution*)|Consumer (software)|Technical Support|
 |Service Provider (e.g. 111 Provider)|Consumer|Project Lead|
