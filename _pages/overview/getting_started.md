@@ -105,14 +105,14 @@ The [SCAL](assurance_scal.html) document is for a supplier to complete, stating 
 In addition, the supplier will demonstrate an end-to-end test of their solution functionality within the INT environment, following given test scripts.
 
 #### Environments
-There are numerous environments to assist with all levels of development maturity. There aren’t any documented barriers-to-entry for any of these environments but you will work closely with the UEC Booking Team to establish when access is appropriate based on development progress. 
+There are numerous environments to assist with all levels of development maturity. There aren’t any documented barriers-to-entry for any of these environments but you will work closely with the Booking Team to establish when access is appropriate based on development progress. 
 
-##### UEC Booking Demonstrator (deprecated) 
+##### Booking Demonstrator (deprecated) 
 This Demonstrator provides an internet facing implementation of the NHS FHIR Booking API to start development against. It includes a Postman collection and place to generate valid JWT Bearer tokens new implementations would be expected to generate and validate. 
 
 ##### INT Spine
 This sandbox environment is within HSCN with connectivity to like-live production services of DoS, SDS and SSP. It is more mature than the Demonstrator and would only expect to be accessed when a solution is nearing the first draft of completion and can work end-to-end. 
-In order to access it, you will be required to speak to a member of the UEC Booking Team who can make the necessary arrangements for your system to engage with this environment.
+In order to access it, you will be required to speak to a member of the Booking Team who can make the necessary arrangements for your system to engage with this environment.
 Any development must be tested within the INT environment before it could be assured and expect to move to Production with a customer.
 
 #### Tooling
@@ -126,25 +126,25 @@ Along with the internet facing Demonstrator environment, there are the **TKW Ass
 The process of moving a solution into a Live environment involves [developing maturity](deployment_toolkit.html) and satisfying a given level of [assurance](assurance_overview.html). If a supplier is completely new to NHS Spine services, there will be certain prerequisite services (HSCN connectivity, SDS) which they need to be compliant with before moving onto environments which support booking. This ensures they have what is termed [**Technical Accreditation**](assurance_supplier.html). 
 
 #### Roles and Responsibilities 
-The testing phases require management and co-ordination of several actors (Suppliers, their customers, DoS Leads etc.). The NHS Digital UEC Booking Team will orchestra the setup of tests, co-ordinating each of these stages, but there is an expectation suppliers and their customers will provide sufficient resource to support too. A supplier should expect to provide a degree of project management to co-ordinate their internal teams and the engagement of their customers to run the end-to-end tests.
+The testing phases require management and co-ordination of several actors (Suppliers, their customers, DoS Leads etc.). The NHS Digital Booking Team will orchestra the setup of tests, co-ordinating each of these stages, but there is an expectation suppliers and their customers will provide sufficient resource to support too. A supplier should expect to provide a degree of project management to co-ordinate their internal teams and the engagement of their customers to run the end-to-end tests.
 
 #### INT Testing 
-The first like-live end-to-end test of a solution will be on the INT environment. This environment supports the various spine services (PDS, SDS, SSP) to allow this to take place. A test on this environment should be prepared for with the similar degree of management as a Live test. It will involve multiple suppliers, configuration of the DoS and a member of the UEC Booking Team. 
+The first like-live end-to-end test of a solution will be on the INT environment. This environment supports the various spine services (PDS, SDS, SSP) to allow this to take place. A test on this environment should be prepared for with the similar degree of management as a Live test. It will involve multiple suppliers, configuration of the DoS and a member of the Booking Team. 
 The evidence required for the SCAL can be performed and collected during testing on INT. This will lead to Assurance being agreed and a [**Technical Conformance certificate**](assurance_supplier.html) being issued, which must be obtained before progressing to a live deployment. 
 
 #### Technical Live
-The first live end-to-end test of the solution and the last stage the UEC Booking Team will be involved before the supplier moves to a business-as-usual deployment model. Again, this is a full end-to-end test, using customers live environments and live Spine services, including the live DoS, and needs careful planning to ensure all parties are engaged and ready. 
+The first live end-to-end test of the solution and the last stage the Booking Team will be involved before the supplier moves to a business-as-usual deployment model. Again, this is a full end-to-end test, using customers live environments and live Spine services, including the live DoS, and needs careful planning to ensure all parties are engaged and ready. 
 
 
 ### Communication 
-It is expected engagement with the UEC Booking Team will be ongoing throughout the development process and to support this we offer a plan to support. 
+It is expected engagement with the Booking Team will be ongoing throughout the development process and to support this we offer a plan to support. 
 Communication Plan -
 *	Teams Channel – continuously monitored and updated
 *	Weekly calls – to mark progress and allow discussion 
 *	Ad hoc calls – to be arranged if blockers occur 
 
-If you have any questions please contact the UEC appointment booking team at:
-<a href="bookingandreferrals@nhs.net">bookingandreferrals@nhs.net</a>
+If you have any questions please contact the Booking team at:
+<a href="mailto: bookingandreferrals@nhs.net">bookingandreferrals@nhs.net</a>
 
 
 #### References 
