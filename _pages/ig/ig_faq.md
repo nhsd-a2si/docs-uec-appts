@@ -19,8 +19,8 @@ folder: ig
 >
 >The presence of a DSA is enforced by the Spine Secure Proxy (SSP) when any GP Connect operation is attempted. This therefore performs the role of access control too.
 >
->For UEC bookings using Care Connect the only operations relate to appointments. The information being transmitted and accessed for appointment booking is minimal. Most of the important information is (e.g. patient demographics) is obtained from the PDS (Spine) and obtained/requested prior to the booking operations.
+>For bookings using this standard the only operations relate to bookings. The information being transmitted and accessed for booking is minimal. Most of the important information is (e.g. patient demographics) is obtained from the PDS (Spine) and obtained/requested prior to the booking operations.
 >
->Therefore a specific pre-established DSA is not required allowing for on-the-fly establishment of booking relationships. The access control is applied during the service discovery. If a service advertises its appointments on the service directory being used for service discovery (such as the Urgent Care DoS) then the service looking up on the directory will be able to book.
+>Therefore a specific pre-established DSA is not required allowing for on-the-fly establishment of booking relationships. The access control is applied during the service discovery. If a service advertises its slots on the service directory being used for service discovery (such as the Urgent Care DoS) then the service looking up on the directory will be able to book.
 >
->The authentication that happens for Care Connect on the SSP establishes trust that the service performing the booking operations is a valid service and system accredited and allowed to do so.
+>The authentication that happens for this standard on the SSP establishes trust that the service performing the booking operations is a valid service and system accredited and allowed to do so.
