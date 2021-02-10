@@ -71,48 +71,47 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
                 <td><a href="https://www.cleric.co.uk/" target="_blank">www.cleric.co.uk</a></td>
+              </tr>                  
+       <!------------------------------ROW----------------------------------->      
+              <tr>
+                    <td style="font-size:small">MIS</td>
+                    <td style="font-size:small">MIS</td>
+                    <td style="font-size:small">TBC</td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
+                    <td style="background-color: DarkGreen;">Assurance</td>
+                    <td style="background-color: LightGrey;"></td>
+               </tr>
+      <!------------------------------ROW----------------------------------->      
+              <tr>
+                    <td style="font-size:small"><a href="https://digital.nhs.uk" target="_blank">NHS Digital</a></td>
+                    <td style="font-size:small"><a href="https://digital.nhs.uk/services/nhs-111-online" target="_blank">111 Online</a></td>
+                    <td style="font-size:small">4.122.0</td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
+                    <td style="background-color: LightBlue;">Ready</td>
+                    <td><a href="https://digital.nhs.uk/services/nhs-111-online" target="_blank">https://digital.nhs.uk/services/nhs-111-online</a></td>
+              </tr>        
+      <!------------------------------ROW----------------------------------->      
+              <tr>
+                    <td style="font-size:small">TPP</td>
+                    <td style="font-size:small">SystmOne</td>
+                    <td style="font-size:small">TBC</td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
+                    <td style="background-color: DarkGreen;">Assurance</td>
+                    <td style="background-color: LightGrey;"></td>
+               </tr>
+      <!------------------------------ROW----------------------------------->      
+              <tr>
+                    <td style="font-size:small">Yorkshire and Humber</td>
+                    <td style="font-size:small">SPA</td>
+                    <td style="font-size:small">TBC</td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
+                    <td style="background-color: LightGreen;">Development</td>
+                    <td style="background-color: LightGrey;"></td>
               </tr>  
-                 
-      <!------------------------------ROW----------------------------------->      
-          <tr>
-                <td style="font-size:small"><a href="https://digital.nhs.uk" target="_blank">NHS Digital</a></td>
-                <td style="font-size:small"><a href="https://digital.nhs.uk/services/nhs-111-online" target="_blank">111 Online</a></td>
-                <td style="font-size:small">4.122.0</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
-                <td style="background-color: LightBlue;">Ready</td>
-                <td><a href="https://digital.nhs.uk/services/nhs-111-online" target="_blank">https://digital.nhs.uk/services/nhs-111-online</a></td>
-          </tr>
-      <!------------------------------ROW----------------------------------->      
-          <tr>
-                <td style="font-size:small"><a href="https://www.sensely.com/" target="_blank">Sense.ly</a></td>
-                <td style="font-size:small">Sense.ly</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
-                <td style="background-color: #ffffcc;">Engagement</td>
-                <td><a href="https://www.sensely.com/" target="_blank">www.sensely.com</a></td>
-           </tr>  
-      <!------------------------------ROW----------------------------------->      
-          <tr>
-                <td style="font-size:small">TPP</td>
-                <td style="font-size:small">SystmOne</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
-                <td style="background-color: LightGreen;">Development</td>
-                <td style="background-color: LightGrey;"></td>
-           </tr>
-      <!------------------------------ROW----------------------------------->      
-          <tr>
-                <td style="font-size:small">Yorkshire and Humber</td>
-                <td style="font-size:small">SPA</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
-                <td style="background-color: LightGreen;">Development</td>
-                <td style="background-color: LightGrey;"></td>
-           </tr>  
          </tbody>
       </table> 
       </p>
@@ -202,30 +201,6 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="background-color: LightGrey;"></td>
               </tr>  
       
-      <!------------------------------ROW----------------------------------->     
-              
-              <tr>
-                <td style="font-size:small">Cerner</td>
-                <td style="font-size:small">Millenium</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: #ffffcc;">Engagement</td>
-                <td style="background-color: LightGrey;"></td>
-              </tr>  
-      
-      <!------------------------------ROW----------------------------------->                
-              
-              <tr>
-                <td style="font-size:small">Fortrus</td>
-                <td style="font-size:small">TBC</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: #ffffcc;">Engagement</td>
-                <td style="background-color: LightGrey;"></td>
-              </tr>  
-      
       <!------------------------------ROW----------------------------------->                  
                         
               <tr>
@@ -236,20 +211,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
                 <td style="background-color: LightGreen;">Assurance</td>
                 <td><a href="http://nervecentresoftware.com/" target="_blank">www.nervecentresoftware.com/</a></td>
-              </tr> 
-         
-        <!------------------------------ROW----------------------------------->
-               
-              <tr>
-                <td style="font-size:small">Redwood Technologies</td>
-                <td style="font-size:small">Storm</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: #ffffcc;">Engagement</td>
-                <td style="background-color: LightGrey;"></td>
-              </tr>   
-              
+              </tr>       
+                      
         <!------------------------------ROW----------------------------------->            
                 
               <tr>
@@ -343,7 +306,17 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td>Not Started</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>  
-                                
+      <!------------------------------ROW----------------------------------->     
+              
+              <tr>
+                <td style="font-size:small">Cerner</td>
+                <td style="font-size:small">Millenium</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Not Started</td>
+                <td style="background-color: LightGrey;"></td>
+              </tr>                            
       <!------------------------------ROW----------------------------------->   
               
               <tr>
@@ -423,7 +396,17 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td>Not Started</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>                 
-      
+       <!------------------------------ROW----------------------------------->                
+              
+              <tr>
+                <td style="font-size:small">Fortrus</td>
+                <td style="font-size:small">TBC</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Not Started</td>
+                <td style="background-color: LightGrey;"></td>
+              </tr>  
       <!------------------------------ROW----------------------------------->                
              
              <tr>
@@ -518,7 +501,18 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="background-color: LightGrey;"></td>
               </tr>                 
      
-                
+      <!------------------------------ROW----------------------------------->
+               
+              <tr>
+                <td style="font-size:small">Redwood Technologies</td>
+                <td style="font-size:small">Storm</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td>Not Started</td>
+                <td style="background-color: LightGrey;"></td>
+              </tr>  
+              
       <!------------------------------ROW----------------------------------->               
                
               <tr>
