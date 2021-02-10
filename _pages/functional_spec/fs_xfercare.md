@@ -9,9 +9,9 @@ folder: functional_spec
 
 ## How do we reference transfer of care documentation?
 
-The UEC Booking standard specifically does not include any transfer of care information. The booking process typically forms a part of an overall referral workflow and the standard allows for reference to any transfer of care documentation that might be sent.
+The NHSC Booking standard specifically does not include any transfer of care information. The booking process typically forms a part of an overall referral workflow and the standard allows for reference to any transfer of care documentation that might be sent.
 
-The intention is to allow the booking message to include a reference to any referral document (e.g. 111CDA, Kettering, and FHIR documents) and in the FHIR profile for an appointment it is possible to add this reference, this is detailed in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.5-alpha/appointment.html" target="_blank">message specification</a>.
+The intention is to allow the booking message to include a reference to any referral document (e.g. 111CDA, Kettering, and FHIR documents) and in the FHIR profile for an appointment it is possible to add this reference, this is detailed in the {%include FHIRSpecificationLink.html page="index.html" text="Message Specification" %}.
 
 The reference is in the form of a contained FHIR <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-DocumentReference-1" target="_blank">document reference</a> resource. This resource allows the reference to be made in a standardised and structured way. 
 
@@ -25,7 +25,7 @@ Below is an example of how one type of transfer of care process can be linked wi
 
 ### Consumer Requirements
 
-The CDA should have a new component in it, which holds a <linkHtml href="URL here">Link title here</linkHtml>, for example:
+The CDA should have a new component in it, which holds a  ```<linkHtml href="URL here">Link title here</linkHtml>```, for example:
 
 #### Appointment reference 
 
