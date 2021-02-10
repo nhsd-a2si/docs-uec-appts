@@ -48,7 +48,7 @@ As a Consumer, a supplier will perform the following:
 The overall [Standard](index.html) covers the context in which the functionality is intended to be used, the scope of functionality and how a supplier is expected to engage to deliver a successfully assured solution for their customer base. It can be thought of as an implementation guide, covering every step a supplier can expect to traverse from analysis through to deployment. 
 
 #### Functional Scope 
-This Standard supports the implementation of UEC bookings, which includes [**Slot Management**](fs_deliverychannel.html), [**Appointment Management**](fs_slotmanagement.html) and [**Analytics & Reporting**](fs_reporting.html). 
+This Standard supports the implementation of bookings, which includes [**Slot Management**](fs_deliverychannel.html), [**Appointment Management**](fs_slotmanagement.html) and [**Analytics & Reporting**](fs_reporting.html). 
 Additionally, it provides guidance on how to interact with services (**DoS**, **SDS** & **SSP**) which are utilised in combination with booking operations - see [Interactions](getting_started.html#interactions) section. 
 
 #### Capabilities 
