@@ -24,7 +24,7 @@ Additionally there is a third way related contact details collected *might* be s
     - who is *not* associated with the care delivery organization
     - who is allocated tasks specifically for the care of the Patient
 
-It is often the case that a third party individual (such as a parent of a child) might meet the requirements of both third party contact and also being a relevent ```RelatedPerson``` to the patient. In this case the contact details would be stored in both a separate RelatedPerson profile *and* against the patient in ```Patient.contact``` as third party contact details for the patient.
+{%include note.html content="It is often the case that a third party individual (such as a parent of a child) might meet the requirements of both third party contact and also being a relevent ```RelatedPerson``` to the patient. In this case the contact details would be stored in both a separate RelatedPerson profile *and* against the patient in ```Patient.contact``` as third party contact details for the patient." %}
 
 Therefore a supplier system **must** also identify the relationship of the contact details to the patient. Then depending on that relationship those contact details **must** be recorded into the correct location according to the rational above.
 
