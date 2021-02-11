@@ -39,7 +39,9 @@ Therefore a supplier system **must** also identify the relationship of the conta
     * 3rd party contact details **must** include: 
       * a relationship
       * a name
-  * all contact details **must** record a rank, including setting a rank of 1 as a default value when only one set of contact details are collected for a given individual
+  * all contact details **must** record a rank
+  * Each rank value **must** be unique and **not** used more than once in a Patient profile.
+  * Rank values **must** use the following precedence:
   
 * At *least* **ONE** set of address details **must** be recorded against the patient
   * ```Patient.address``` **must** always be populated
@@ -47,7 +49,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
 
 ### Requirements for the Provider, consuming the Patient resource and storing the contact details:
 
-
+* When specfic 3rd party contact details are displayed to a user a name and a relationship **must** be displayed
 
 
 
