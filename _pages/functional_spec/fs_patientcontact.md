@@ -7,6 +7,9 @@ toc: false
 folder: functional_spec
 ---
 
+
+
+
 When storing patient contact details against the {%include FHIRSpecificationLink.html page="patient.html" text="Patient Resource" %} there are some specific business rules that need to be followed.
 
 In the Patient profile there are two ways to store contact details. Each one has a specific use. 
