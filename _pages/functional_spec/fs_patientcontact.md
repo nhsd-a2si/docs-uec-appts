@@ -16,12 +16,18 @@ In the Patient profile there are three ways to store contact details. Each one h
 * ```Patient.contact``` 
   - Should be used to store contact details for third parties whose details can be used to contact the patient (e.g. a Parent)
 * ```Patient.link(RelatedPerson)``` 
-  - Should be used to store a relationship to another individual who: 
+  - Should be used to store a relationship to another individual who meets **all* of the following requirements: 
     - has a personal or non-healthcare-specific professional relationship to the patient
-    - who is not associated with the care delivery organization, 
+    - who is **not** associated with the care delivery organization
     - who is allocated tasks specifically for the care of the Patient
 
 Therefore a supplier system **must** also identify the relationship of the contact details to the patient. Then depending on that relationship those contact details **must** be recorded into the correct location according to the rational above.
+
+### Requirements for the Consumer, collecting and recording the contact details:
+* At *least* **ONE** set of contact details 
+
+
+### Requirements for the Provider, consuming the Patient resource and storing the contact details:
 
 
 
