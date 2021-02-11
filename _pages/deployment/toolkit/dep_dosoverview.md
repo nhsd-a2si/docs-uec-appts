@@ -31,7 +31,7 @@ A scheduling endpoint must be configured against a service to enabling booking. 
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoint_Save.png">
 6. The scheduling endpoint should not be visible under 'Endpoint Details'
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoint_Complete.png">
-{% include important.html content="Services consuming the schedule resoure to request bookings rely on the **ASID:** prefix and without it booking will not work" %}
+{% include important.html content="Services consuming the schedule resource to request bookings rely on the **ASID:** prefix and without it booking will not work" %}
 
 ### Service Attributes
 
