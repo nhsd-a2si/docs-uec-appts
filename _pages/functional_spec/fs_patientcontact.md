@@ -39,7 +39,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
     * 3rd party contact details **must** include: 
       * a relationship
       * a name
-  * all contact details **must** record a rank, including setting a rank of 1 as a default value when only one set of contact details a available for a given individual
+  * all contact details **must** record a rank, including setting a rank of 1 as a default value when only one set of contact details are collected for a given individual
   
 * At *least* **ONE** set of address details **must** be recorded against the patient
   * ```Patient.address``` **must** always be populated
