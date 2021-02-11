@@ -9,17 +9,22 @@ folder: functional_spec
 
 When storing patient contact details against the {%include FHIRSpecificationLink.html page="patient.html" text="Patient Resource" %} there are some specific business rules that need to be followed.
 
-In the Patient profile there are three ways to store contact details. Each one has a specific use. 
+In the Patient profile there are two ways to store contact details. Each one has a specific use. 
 
 * ```Patient.telecom``` 
   - Should be used as the place to store primary contact information that has a direct relationship to the Patient
 * ```Patient.contact``` 
   - Should be used to store contact details for third parties whose details can be used to contact the patient (e.g. a Parent)
+
+Additionally there is a third way related contact details collected *might* be stored, however this has a very specific use and should **not** be used as a way to store third party contact details:
+
 * ```Patient.link(RelatedPerson)``` 
   - Should be used to store a relationship to another individual (with their own separate set of contact details) who meets **all** of the following requirements: 
     - has a personal or non-healthcare-specific professional relationship to the patient
     - who is *not* associated with the care delivery organization
     - who is allocated tasks specifically for the care of the Patient
+
+It is often the case that a third party individual (such as a parent of a child) might meet the requirements of both third party contact and also being a relevent ```RelatedPerson``` to the patient. In this case the contact details would be stored in both a separate RelatedPerson profile *and* against the patient in ```Patient.contact``` as third party contact details for the patient.
 
 Therefore a supplier system **must** also identify the relationship of the contact details to the patient. Then depending on that relationship those contact details **must** be recorded into the correct location according to the rational above.
 
