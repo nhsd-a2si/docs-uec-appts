@@ -25,9 +25,9 @@ A scheduling endpoint must be configured against a service to enabling booking. 
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoints.png">
 3. Configure the endpoint options, as detailed in the screenshot below
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_EndpointsConfig.png">
-4. The Address field is important, it must have the 'ASID:' prefix before the ASID value because this is used by consumer services
+4. The Address field is important, it must have the 'ASID:' prefix before the ASID value
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_ASID_Prefix.png">
-{% include important.html content="Without the **ASID:** prefix booking will not work" %} 
+{% include important.html content="Services consuming the scheule resoure to request bookings rely on the **ASID:** prefix without booking will not work" %} 
 5. Click 'Save' to commit the configuration, followed by 'OK'
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoint_Save.png">
 6. The scheduling endpoint should not be visible under 'Endpoint Details'
