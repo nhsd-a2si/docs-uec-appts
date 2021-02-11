@@ -16,7 +16,7 @@ In the Patient profile there are three ways to store contact details. Each one h
 * ```Patient.contact``` 
   - Should be used to store contact details for third parties whose details can be used to contact the patient (e.g. a Parent)
 * ```Patient.link(RelatedPerson)``` 
-  - Should be used to store a relationship to another individual who meets **all* of the following requirements: 
+  - Should be used to store a relationship to another individual (with their own separate set of contact details) who meets **all* of the following requirements: 
     - has a personal or non-healthcare-specific professional relationship to the patient
     - who is **not** associated with the care delivery organization
     - who is allocated tasks specifically for the care of the Patient
@@ -24,7 +24,17 @@ In the Patient profile there are three ways to store contact details. Each one h
 Therefore a supplier system **must** also identify the relationship of the contact details to the patient. Then depending on that relationship those contact details **must** be recorded into the correct location according to the rational above.
 
 ### Requirements for the Consumer, collecting and recording the contact details:
-* At *least* **ONE** set of contact details 
+
+* At *least* **ONE** set of contact details **must** be recorded against the patient
+  * **if** the contact details are *directly* related/owned by the patient then the details **must** be stored as ```Patient.telecom```
+  * **if** the contact details belong to a 3rd party, they **must** be stored in the ```Patient.contact``` section
+    * 3rd party contact details **must** include: 
+      * a relationship
+      * a name
+  * all contact details **must** record a rank, including setting a rank of 1 as a default value when only one set of contact details a available for a given individual
+  
+* At *least* **ONE** set of address details **must** be recorded against the patient
+  * ```Patient.address``` **must** always be populated
 
 
 ### Requirements for the Provider, consuming the Patient resource and storing the contact details:
