@@ -33,7 +33,7 @@ There are numerous stages to enabling booking and the steps will differ dependin
 
 Firstly, the software used by the service must provide booking functionality which adheres to the Booking Standard. A full list of conformant system suppliers can be found under the <a href="catalogue.html" target="_blank">Supplier Conformance catalogue</a>. 
   
-Implementing booking within a service may take one of many routes to arrive at the point of wanting to engage a project. Whatever the path, one of the first things to establish is a project scope and team to support (including stakeholders) and the Booking Team (and related resources) will be an invaluable to ensuring a successful go live. 
+Implementing booking within a service may take one of many routes to arrive at the point of wanting to engage a project. Whatever the path, one of the first things to establish is a project scope and team to support (including stakeholders), the Booking Team (and related resources) will be invaluable to ensuring a successful go live. 
 
 This is not an exhaustive plan of the stages of implementation but gives a flavour of some key considerations.  
 
