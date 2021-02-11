@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit - Provider Resources
+title: Deployment Toolkit - Service Provider Resources
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_provoverview.html
@@ -9,7 +9,7 @@ folder: deployment
 
 The ability to control patient encounters has a significant benefit for service providers; whether managing the numbers of encounters or being able to directly refer to a service and provide the patient with accurate data on when they can expect to be dealt with. 
 
-The UEC Booking Standard support these, and other related scenarios, for software suppliers to build booking functionality which is interoperable between their systems and, therefore, services. 
+The Booking Standard support these, and other related scenarios, for software suppliers to build booking functionality which is interoperable between their systems and, therefore, services. 
 
 ## Benefits
 
@@ -31,9 +31,9 @@ When it has been identified a patient need to be sent to another service, having
 
 There are numerous stages to enabling booking and the steps will differ depending on whether the Service Provider intends to offer booking availability (Provider) or request bookings (Consumer).
 
-Firstly, the software used by the service must provide booking functionality which adheres to the UEC Booking Standard. A full list of conformant system suppliers can be found under the <a href="catalogue.html" target="_blank">Supplier Conformance catalogue</a>. 
+Firstly, the software used by the service must provide booking functionality which adheres to the Booking Standard. A full list of conformant system suppliers can be found under the <a href="catalogue.html" target="_blank">Supplier Conformance catalogue</a>. 
   
-Implementing booking within a service may take one of many routes to arrive at the point of wanting to engage a project. Whatever the path, one of the first things to establish is a project scope and team to support (including stakeholders) and the UEC Booking Team (and related resources) will be an invaluable to ensuring a successful go live. 
+Implementing booking within a service may take one of many routes to arrive at the point of wanting to engage a project. Whatever the path, one of the first things to establish is a project scope and team to support (including stakeholders) and the Booking Team (and related resources) will be an invaluable to ensuring a successful go live. 
 
 This is not an exhaustive plan of the stages of implementation but gives a flavour of some key considerations.  
 
