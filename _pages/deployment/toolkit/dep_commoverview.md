@@ -7,7 +7,7 @@ toc: false
 folder: deployment
 ---
 
-## What is the "UEC Booking Standard"
+## What is the "Booking Standard"
 
 This section will provide a brief overview of the Standard for commissioners involved in appointing services, aiming to integrate the experience of care by supporting both patients and organisations running services. 
 
