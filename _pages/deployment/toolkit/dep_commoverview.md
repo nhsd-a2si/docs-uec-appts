@@ -31,3 +31,6 @@ Service activity can be monitored through a suggested suite of <a href="fs_repor
 
 If there is any particular metric not included as default but required to assist with continued commissioning of a service, we would happy to consider reviewing and expanding requirements around Monitoring, Analytics and Reporting. 
 
+
+If you have any questions please contact the Booking team at: bookingandreferrals@nhs.net
+
