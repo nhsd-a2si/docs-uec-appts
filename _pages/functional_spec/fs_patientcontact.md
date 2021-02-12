@@ -29,7 +29,7 @@ Additionally there is a third way related contact details collected *might* be s
 
 {%include note.html content="It is often the case that a third party individual (such as a parent of a child) might meet the requirements of both third party contact and also being a relevent ```RelatedPerson``` to the patient. In this case the contact details would be stored in both a separate RelatedPerson profile *and* against the patient in ```Patient.contact``` as third party contact details for the patient." %}
 
-Therefore a supplier system **must** also identify the relationship of the contact details to the patient. Then depending on that relationship those contact details **must** be recorded into the correct location according to the rational above.
+Therefore a supplier system **must** also identify the relationship of the contact details to the patient. Then depending on that relationship those contact details **must** be recorded into the correct location according to the rules above.
 
 ### Requirements for the Consumer, collecting and recording the contact details:
 
@@ -40,8 +40,11 @@ Therefore a supplier system **must** also identify the relationship of the conta
       * a relationship
       * a name
   * all contact details **must** record a rank
-  * Each rank value **must** be unique and **not** used more than once in a Patient profile.
+  * the rank value of ```1``` **must** be unique and **not** used more than once in a Patient profile.
   * Rank values **must** use the following precedence:
+    * the *primary* contact details (e.g. those that should be tried first) for the patient **must** always have a rank value of 1
+    * if precedence for other contact details can be determined then rank values **must** reflect this
+    * if no precedence can be determined then they can all be allocated the same value (e.g. ```2```)
   
 * At *least* **ONE** set of address details **must** be recorded against the patient
   * ```Patient.address``` **must** always be populated
