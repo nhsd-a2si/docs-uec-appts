@@ -1,13 +1,13 @@
 ---
 entries:
   -
-    title: "Urgent & Emergency Care Appointment Booking Standards"
+    title: "NHS Booking Standard"
     product: ""
-    version: "v0.1.17 ALPHA"
-    spec: "STU3 | FHIR NHS Scheduling | 2.0.1-beta"
-    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/"
-    folders:
-      -
+    version: "v0.2.0 BETA"
+    spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
+    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/"
+    folders: 
+      - 
         title: Introduction
         folderitems:
           -
@@ -100,11 +100,11 @@ entries:
             output: "web, pdf"
             url: /uec_capability.html
           -
-            title: "How appointments map to clinical need"
+            title: "How bookings map to clinical need"
             output: "web, pdf"
             url: /fs_slotmap.html
           -
-            title: "How appointments map to services"
+            title: "How bookings map to services"
             output: "web, pdf"
             url: /fs_slotmanagement.html
           -
@@ -124,7 +124,7 @@ entries:
             output: "web, pdf"
             url: /er_overview.html
           -
-            title: "Cancelling Appointments"
+            title: "Cancelling Bookings"
             output: "web, pdf"
             url: /cr_overview.html
           -
@@ -132,9 +132,13 @@ entries:
             output: "web, pdf"
             url: /fs_xfercare.html
           -
-            title: "SMS For Appointments"
+            title: "SMS For Bookings"
             output: "web, pdf"
             url: /fs_sms.html
+          -
+            title: "How to store patient contacts"
+            output: "web, pdf"
+            url: /fs_patientcontact.html  
           -
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"
@@ -151,8 +155,6 @@ entries:
             title: "API Guidance"
             output: "web, pdf"
             url: /implementation_API.html
-
-
           -
             title: "Implementing FHIR® Resources"
             output: "web, pdf"

@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit - DoS Lead Resources
+title: Deployment Toolkit - UEC DoS Lead Resources
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_dosoverview.html
@@ -19,6 +19,7 @@ If you have any questions please contact the Booking team at: bookingandreferral
 
 ### Scheduling Endpoint
 
+
 A scheduling endpoint must be configured against a service to enabling booking. If a Service Provider opts to divide their schedule resource, it is permissable to configure the same endpoint against multiple DoS Service Ids. The services making a request (the consumers) of the Service Providers resource will use the DoS Service Id to distinguish between different schedules the Service Provider offers. 
 
 #### Configuring DoS
@@ -34,6 +35,9 @@ A scheduling endpoint must be configured against a service to enabling booking. 
 6. The scheduling endpoint should now be visible under 'Endpoint Details'
 <img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoint_Complete.png">
 {% include important.html content="Services consuming the schedule resource to request bookings rely on the **ASID:** prefix and without it booking will not work" %}
+
+## Configuring the UEC DoS for Booking
+
 
 ### Service Attributes
 

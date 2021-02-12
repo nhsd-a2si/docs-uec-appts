@@ -1,10 +1,10 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: Urgent & Emergency Care Appointment Booking
+topnav_title: NHS Booking Standard
 # this appears on the top navigation bar next to the home button
 
-site_title: Urgent & Emergency Care Appointment Booking Standards
+site_title: NHS Booking Standard
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: NHS Digital
@@ -42,7 +42,7 @@ exclude:
   - Gemfile.lock
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: uec.appointmentbooking@nhs.net
+feedback_email: bookingandreferrals@nhs.net
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
@@ -95,7 +95,7 @@ sidebars:
 - poc_sidebar
 - dos_sidebar
 
-description: "Urgent & Emergency Care Appointment Booking Standards"
+description: "NHS Booking Standard"
 # the description is used in the feed.xml file
 
 permalink: /:title/

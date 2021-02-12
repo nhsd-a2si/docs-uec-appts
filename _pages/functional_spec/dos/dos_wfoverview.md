@@ -26,9 +26,9 @@ As a provider system, it is therefore expected that there will be a mechanism in
 
 * How should a booking only service be profiled on the DoS?
 
-*There is a new way to technically prohibit a referral via the DoS if no appointments are available. If this is not available the recommendation is to clearly indicate that referrals are not accepted both in the referral instructions and also in the title of the service*
+*There is a new way to technically prohibit a referral via the DoS if no bookings are available. If this is not available the recommendation is to clearly indicate that referrals are not accepted both in the referral instructions and also in the title of the service*
 
-* What if a service is profiled for both triage outcomes that are appropriate for an appointment and other outcomes that are not appropriate?
+* What if a service is profiled for both triage outcomes that are appropriate for a booking and other outcomes that are not appropriate?
 
 *The recommendation is that where two different clinical profiles are required (e.g. booking and not booking triage outcomes), two DoS services are used. Only one would have a booking endpoint configured.*
 
