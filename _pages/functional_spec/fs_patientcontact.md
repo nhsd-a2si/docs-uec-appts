@@ -113,6 +113,77 @@ The following examples show abridged Patient resources with *only* the pertinent
                 "Leeds"
             ],
             "city": "Leeds",
+            "postalCode": "LS1 4HR",           
+        }
+      ],
+      <-snip->
+      "contact": [
+        {
+          "relationship": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0131",
+                  "code": "N"
+                }
+              ]
+            }
+          ],
+          "name": {
+            "family": "Smith",            
+            "given": [
+              "Jane"
+            ]
+          },
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "01234 567 890",
+              "rank": 1
+            }
+          ],
+          "address": {
+            "use": "home",
+            "text": "123 High Street, Leeds LS1 4HR",
+            "line": [
+                "123 High Street",
+                "Leeds"
+            ],
+            "city": "Leeds",
+            "postalCode": "LS1 4HR"
+            }
+          },
+          "gender": "female",          
+      }
+    ],     
+    <-snip->
+  }
+  {% endhighlight %}
+</details>
+
+<details>
+  <summary markdown="span">Patient with own and 3rd party contact details</summary>
+  {% highlight json %}
+  {
+    "resourceType": "Patient",
+    <-snip->
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "01234 567 890",
+            "use": "home",
+            "rank": 1
+        }
+     ],
+     "address": [
+        {
+            "use": "home",
+            "text": "123 High Street, Leeds LS1 4HR",
+            "line": [
+                "123 High Street",
+                "Leeds"
+            ],
+            "city": "Leeds",
             "postalCode": "LS1 4HR"
         }
       ],
@@ -130,43 +201,30 @@ The following examples show abridged Patient resources with *only* the pertinent
             }
           ],
           "name": {
-            "family": "du Marché",
-            "_family": {
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
-                  "valueString": "VV"
-                }
-              ]
-            },
+            "family": "Smith",            
             "given": [
-              "Bénédicte"
+              "Jane"
             ]
           },
           "telecom": [
             {
               "system": "phone",
-              "value": "+33 (237) 998327"
+              "value": "01234 056 789"
+              "rank": 2
             }
           ],
           "address": {
             "use": "home",
-            "type": "both",
+            "text": "123 High Street, Leeds LS1 4HR",
             "line": [
-              "534 Erewhon St"
+                "123 High Street",
+                "Leeds"
             ],
-            "city": "PleasantVille",
-            "district": "Rainbow",
-            "state": "Vic",
-            "postalCode": "3999",
-            "period": {
-              "start": "1974-12-25"
+            "city": "Leeds",
+            "postalCode": "LS1 4HR"
             }
           },
-          "gender": "female",
-          "period": {
-            "start": "2012"
-        }
+          "gender": "female",          
       }
     ],     
     <-snip->
