@@ -31,7 +31,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
 
 ### Requirements for the Consumer, collecting and recording the contact details:
 
-* At *least* **ONE** set of contact details **must** be recorded against the patient
+* At *least* **one** set of contact details **must** be recorded against the patient
   * **if** the contact details are *directly* related/owned by the patient then the details **must** be stored as ```Patient.telecom```
   * **if** the contact details belong to a 3rd party, they **must** be stored in the ```Patient.contact``` section
     * 3rd party contact details **must** include: 
