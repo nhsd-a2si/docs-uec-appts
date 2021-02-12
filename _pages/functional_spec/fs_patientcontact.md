@@ -60,7 +60,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
   *  ```Patient.contact.telecom``` & ```Patient.contact.address```
 * when specfic 3rd party contact details are displayed to a user, a name and a relationship **must** be displayed
 * at *least* the primary contact for the patient **must** be displayed to a user (indicated by a ```rank``` value of 1)
-* additional contacts **should** be displayed to the patient if present with the precedence identified to the user (based on ```rank``` values)
+* additional contacts **should** be displayed to the user if present with the precedence identified to the user (based on ```rank``` values)
 
 ## Examples
 
