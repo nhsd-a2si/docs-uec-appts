@@ -69,7 +69,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
   {% highlight json %}
   {
     "resourceType": "Patient",
-    
+    ...
     "telecom": [
         {
             "system": "phone",
@@ -78,7 +78,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
             "rank": 1
         }
     ],
-    
+  ...  
     "address": [
         {
             "use": "home",
@@ -91,7 +91,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
             "postalCode": "LS1 4HR"
         }
     ]
-   
+   ...
   }
   {% endhighlight %}
 </details>
