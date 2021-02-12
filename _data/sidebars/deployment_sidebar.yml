@@ -28,7 +28,15 @@ entries:
             title: "Overview"
             url: /dep_provoverview.html 
         output: web
-        title: Providers
+        title: Service Providers
+      - 
+        folderitems: 
+          - 
+            output: "web, pdf"
+            title: "Overview"
+            url: /dep_commoverview.html 
+        output: web
+        title: Commissioners
       - 
         folderitems: 
           - 
