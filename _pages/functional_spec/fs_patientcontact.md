@@ -47,7 +47,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
       * if precedence for other contact details can be determined then rank values **must** reflect this
       * if no precedence can be determined then they can all be allocated the same value (e.g. ```2```)
   
-* At *least* **ONE** set of address details **must** be recorded against the patient
+* At *least* **one** set of address details **must** be recorded against the patient
   * ```Patient.address``` **must** always be populated
   * third-party address details **must** be stored in the ```Patient.contact``` section with other contact details (e.g. ```telecom```)
 
