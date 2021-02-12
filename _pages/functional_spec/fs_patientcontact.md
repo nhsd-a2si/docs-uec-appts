@@ -64,7 +64,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
 
 ## Examples
 
-The following examples show abridged Patient resources with *only* the pertinent contact elements included for illustration only:
+The following examples show abridged Patient resources with *only* the pertinent contact elements included for illustration only *(click to expand)*:
 
 <details>
   <summary markdown="span">Patient with no 3rd party contact details</summary>
