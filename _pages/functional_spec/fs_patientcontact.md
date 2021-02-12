@@ -64,12 +64,14 @@ Therefore a supplier system **must** also identify the relationship of the conta
 
 ## Examples
 
+The following examples show abridged Patient resources with *only* the pertinent contact elements included for illustration only:
+
 <details>
   <summary markdown="span">Patient with no 3rd party contact details</summary>
   {% highlight json %}
   {
     "resourceType": "Patient",
-    ...
+    <-snip->
     "telecom": [
         {
             "system": "phone",
@@ -78,7 +80,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
             "rank": 1
         }
     ],
-  ...  
+    <-snip->  
     "address": [
         {
             "use": "home",
@@ -91,7 +93,42 @@ Therefore a supplier system **must** also identify the relationship of the conta
             "postalCode": "LS1 4HR"
         }
     ]
-   ...
+    <-snip->
   }
   {% endhighlight %}
 </details>
+      
+<details>
+  <summary markdown="span">Patient with no 3rd party contact details</summary>
+  {% highlight json %}
+  {
+    "resourceType": "Patient",
+    <-snip->
+    "contact": [
+      { 
+        "telecom": [
+            {
+                "system": "phone",
+                "value": "01234 567 890",
+                "use": "home",
+                "rank": 1
+            }
+        ],          
+        "address": [
+            {
+                "use": "home",
+                "text": "123 High Street, Leeds LS1 4HR",
+                "line": [
+                    "123 High Street",
+                    "Leeds"
+                ],
+                "city": "Leeds",
+                "postalCode": "LS1 4HR"
+            }
+        ]
+      }
+    <-snip->
+  }
+  {% endhighlight %}
+</details>
+
