@@ -232,3 +232,110 @@ The following examples show abridged Patient resources with *only* the pertinent
   {% endhighlight %}
 </details>
 
+<details>
+  <summary markdown="span">Patient with own and two 3rd party contact details</summary>
+  {% highlight json %}
+  {
+    "resourceType": "Patient",
+    <-snip->
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "01234 567 890",
+            "use": "home",
+            "rank": 1
+        }
+     ],
+     "address": [
+        {
+            "use": "home",
+            "text": "123 High Street, Leeds LS1 4HR",
+            "line": [
+                "123 High Street",
+                "Leeds"
+            ],
+            "city": "Leeds",
+            "postalCode": "LS1 4HR"
+        }
+      ],
+      <-snip->
+      "contact": [
+        {
+          "relationship": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0131",
+                  "code": "N"
+                }
+              ]
+            }
+          ],
+          "name": {
+            "family": "Smith",            
+            "given": [
+              "Jane"
+            ]
+          },
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "01234 056 789"
+              "rank": 2
+            }
+          ],
+          "address": {
+            "use": "home",
+            "text": "123 High Street, Leeds LS1 4HR",
+            "line": [
+                "123 High Street",
+                "Leeds"
+            ],
+            "city": "Leeds",
+            "postalCode": "LS1 4HR"
+            }
+          },
+          "gender": "female",          
+      },
+      {
+          "relationship": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0131",
+                  "code": "N"
+                }
+              ]
+            }
+          ],
+          "name": {
+            "family": "Smith",            
+            "given": [
+              "John"
+            ]
+          },
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "01234 905 678"
+              "rank": 2
+            }
+          ],
+          "address": {
+            "use": "home",
+            "text": "123 High Street, Leeds LS1 4HR",
+            "line": [
+                "123 High Street",
+                "Leeds"
+            ],
+            "city": "Leeds",
+            "postalCode": "LS1 4HR"
+            }
+          },
+          "gender": "male",          
+      }  
+    ],     
+    <-snip->
+  }
+  {% endhighlight %}
+</details>
