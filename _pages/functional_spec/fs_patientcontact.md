@@ -40,6 +40,9 @@ Therefore a supplier system **must** also identify the relationship of the conta
       * a relationship
       * a name
   * all contact details **must** record a ```rank```
+    * the ```rank``` element is a positive integer value
+    * Contacts are ranked with lower values coming before higher values (e.g. 1=highest)
+    * rank does not necessarily follow the order in which the contacts are represented in the instance.
   * the ```rank``` value of ```1``` **must** be unique and **not** used more than once in a Patient profile.
   * ```rank``` values **must** use the following precedence:
     * the *primary* contact details (e.g. those that should be tried first) for the patient **must** always have a rank value of 1
