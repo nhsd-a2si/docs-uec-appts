@@ -66,7 +66,7 @@ Therefore a supplier system **must** also identify the relationship of the conta
 
 <details>
   <summary markdown="span">Patient with no 3rd party contact details</summary>
-  ```json
+  ```
   {
     "resourceType": "Patient",
     ...
