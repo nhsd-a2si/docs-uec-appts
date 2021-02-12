@@ -13,6 +13,8 @@ When a service engages a project to open their booking schedules, and allow othe
 
 System suppliers will build to the Booking Standard and support Service Providers to offer their schedule resource in a very granular way, splitting services using the DoS Service Id or combining them, as detailed under the <a href="fs_slotmanagement.html" target="_blank">functional specification</a>. The DoS Service Id is central to exposing the service schedules, marrying up the Service Provider’s schedules with entries on the DoS.
 
+If you have any questions please contact the Booking team at: bookingandreferrals@nhs.net
+
 ## Configuring the DoS for Appointment Booking
 
 ### Scheduling Endpoint
