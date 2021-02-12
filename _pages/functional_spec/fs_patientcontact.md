@@ -38,16 +38,16 @@ Therefore a supplier system **must** also identify the relationship of the conta
   * **if** the contact details belong to a 3rd party, they **must** be stored in the ```Patient.contact``` section
     * 3rd party contact details **must** include: 
       * a relationship
-      * a name
-  * all contact details **must** record a ```rank```
+      * a name      
+  * all contact details **must** record a ```rank```:
     * the ```rank``` element is a positive integer value
     * Contacts are ranked with lower values coming before higher values (e.g. 1=highest)
     * rank does not necessarily follow the order in which the contacts are represented in the instance.
-  * the ```rank``` value of ```1``` **must** be unique and **not** used more than once in a Patient profile.
-  * ```rank``` values **must** use the following precedence:
-    * the *primary* contact details (e.g. those that should be tried first) for the patient **must** always have a rank value of 1
-    * if precedence for other contact details can be determined then rank values **must** reflect this
-    * if no precedence can be determined then they can all be allocated the same value (e.g. ```2```)
+    * the ```rank``` value of ```1``` **must** be unique and **not** used more than once in a Patient profile.
+    * ```rank``` values **must** use the following precedence:
+      * the *primary* contact details (e.g. those that should be tried first) for the patient **must** always have a rank value of 1
+      * if precedence for other contact details can be determined then rank values **must** reflect this
+      * if no precedence can be determined then they can all be allocated the same value (e.g. ```2```)
   
 * At *least* **ONE** set of address details **must** be recorded against the patient
   * ```Patient.address``` **must** always be populated
