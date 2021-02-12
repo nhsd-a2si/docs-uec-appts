@@ -50,3 +50,6 @@ Altering or extending a Service's business processes is often a significant unde
 It is common for a system supplier Consultant to discuss potential workflow and outline options to meet the service need, designing and implement the necessary configuration. 
 
 Testing of the implementation and configuration will be undertaken in an isolated setting in the Production environment, following a strictly outlined Test Plan. Once confirmed successful, a plan for Business Go-Live can be agreed, involving training staff, completing the project phase and communicating the new service processes to the Business-as-usual teams.
+
+
+If you have any questions please contact the Booking team at: bookingandreferrals@nhs.net
