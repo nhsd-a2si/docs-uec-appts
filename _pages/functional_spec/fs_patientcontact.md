@@ -39,25 +39,20 @@ Therefore a supplier system **must** also identify the relationship of the conta
     * 3rd party contact details **must** include: 
       * a relationship
       * a name
-  * all contact details **must** record a rank
-  * the rank value of ```1``` **must** be unique and **not** used more than once in a Patient profile.
-  * Rank values **must** use the following precedence:
+  * all contact details **must** record a ```rank```
+  * the ```rank``` value of ```1``` **must** be unique and **not** used more than once in a Patient profile.
+  * ```rank``` values **must** use the following precedence:
     * the *primary* contact details (e.g. those that should be tried first) for the patient **must** always have a rank value of 1
     * if precedence for other contact details can be determined then rank values **must** reflect this
     * if no precedence can be determined then they can all be allocated the same value (e.g. ```2```)
   
 * At *least* **ONE** set of address details **must** be recorded against the patient
   * ```Patient.address``` **must** always be populated
+  * third-party address details **must** be stored in the ```Patient.contact``` section with other contact details (e.g. ```telecom```)
 
 
 ### Requirements for the Provider, consuming the Patient resource and storing the contact details:
 
-* When specfic 3rd party contact details are displayed to a user a name and a relationship **must** be displayed
-
-
-
-Patient.address | 1..*
-At least one address should be populated. you MUST also populate the Patient.Address.Use
-
-Patient.telecom | 1..* OR Patient.contact.telecom | 1..*
-At least one telecom MUST be populated, either Patient.telecom OR Patient.contact.telecom. You MUST also populate the Patient.telecom.rank OR Patient.contact.telecom.rank and there must be a clear indication or priority by ONLY ONE element with Patient.telecom.rank = 1 OR Patient.contact.rank = 1.
+* when specfic 3rd party contact details are displayed to a user a name and a relationship **must** be displayed
+* at *least* the primary contact for the patient **must** be displayed to a user (indicated by a ```rank``` value of 1)
+* additional contacts **should** be displayed to the patient if present with the precedence identified to the user (based on ```rank``` values)
