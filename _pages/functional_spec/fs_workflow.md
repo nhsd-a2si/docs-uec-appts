@@ -136,7 +136,7 @@ This will return a FHIR slot resource bundle for example:
 
 <details>
   <summary>Click to expand!</summary>
-   
+  {% highlight json %} 
       ```json
       {
         "resourceType": "Bundle",
@@ -229,8 +229,7 @@ This will return a FHIR slot resource bundle for example:
           }
         ]
       }
-      ```
-
+      {% endhighlight %}
 </details>
 
 ## Make Booking
