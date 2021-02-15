@@ -202,13 +202,6 @@ entries:
             output: "web, pdf"
             url: /catalogue.html
         output: web
-      -
-        title: "Versioning and Release Management"
-        folderitems:
-          -
-            title: "Versioning"
-            output: "web, pdf"
-            url: /Versioning.html
 
       -
         title: "Help and Support"
@@ -232,4 +225,14 @@ entries:
             url: /uec_capability.html
 
         output: web
+
+        title: "Versioning"
+        folderitems:
+          -
+            title: "Versioning"
+            output: "web, pdf"
+            url: /Versioning.html
+
+        output: web
+        
     levels: one
