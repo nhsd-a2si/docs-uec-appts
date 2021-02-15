@@ -254,4 +254,4 @@ entries:
             output: "web, pdf"
             url: /glossary.html
         output: web
-    levels: one
+    levels: two
