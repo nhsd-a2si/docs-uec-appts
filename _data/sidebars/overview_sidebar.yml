@@ -144,15 +144,21 @@ entries:
             output: "web, pdf"
             url: /implementation_API.html
 
-
           -
             title: "Implementing FHIR® Resources"
             output: "web, pdf"
             url: /implementation_FHIR.html
+
           -
             title: "Provider and Consumer Demonstrator"
             output: "web, pdf"
             url: /demo_overview.html
+
+          -
+            title: "Versioning"
+            output: "web, pdf"
+            url: /Versioning.html
+            
         output: web
       -
         title: "First of Type"
@@ -216,7 +222,7 @@ entries:
             url: /glossary.html
 
         output: web
-
+      -
         title: "Richard"
         folderitems:
           -
@@ -225,14 +231,4 @@ entries:
             url: /uec_capability.html
 
         output: web
-
-        title: "Versioning"
-        folderitems:
-          -
-            title: "Versioning"
-            output: "web, pdf"
-            url: /Versioning.html
-
-        output: web
-        
     levels: one
