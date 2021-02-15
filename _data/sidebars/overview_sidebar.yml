@@ -203,6 +203,14 @@ entries:
             url: /catalogue.html
         output: web
       -
+        title: "Versioning and Release Management"
+        folderitems:
+          -
+            title: "Versioning"
+            output: "web, pdf"
+            url: /Versioning.html
+
+      -
         title: "Help and Support"
         folderitems:
           -
