@@ -61,7 +61,6 @@ In this illustration we have a referral from 111 using a 111CDA document contain
     </section>
   </encounter>
 </entry>
-
 ```
 
 Key to the linking is the ```DOCSECT``` section, specifically the ```linkHtml``` element where the appointment URL is specified.
