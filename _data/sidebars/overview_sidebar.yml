@@ -97,16 +97,9 @@ entries:
     - title: "Authentication"
       url: /fs_authentication.html      
       output: "web, pdf"
-      subfolders:
-      - title: "Error Handling"
-        output: "web, pdf"
-        subfolderitems: 
-        - title: "Error Handling Overview"
-          url: /er_overview.html
-          output: "web, pdf"
-        - title: "Response Handling"
-          url: /er_errorhandling.html
-          output: "web, pdf"            
+    - title: "Error Handling"
+      output: "web, pdf"
+      url: /er_overview.html                 
     - title: "Cancelling Bookings"
       url: /cr_overview.html
       output: "web, pdf"
