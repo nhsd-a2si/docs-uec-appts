@@ -1,83 +1,70 @@
----
 entries:
-  -
-    title: "NHS Booking Standard"
-    product: ""
-    version: "v0.2.0 BETA"
-    spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
-    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/"
-    folders: 
-      - 
-        title: Introduction
-        folderitems:
-          -
-            title: Introduction
-            output: "web, pdf"
-            type: homepage
-            url: /index.html
-          - 
-            title: "Using this site"
-            output: "web, pdf"            
-            url: /using_this_site.html
-          -
-            title: "Getting Started"
-            output: "web, pdf"
-            url: /getting_started.html
-          -
-            title: "Release Notes"
-            output: "web, pdf"
-            url: /release_notes.html
-        output: web
-      -
-        title: Overview
-        folderitems:
-          -
-            title: "Definition of Direct Booking"
-            output: "web, pdf"
-            url: /definition.html
-          -
-            title: "UEC Landscape"
-            output: "web, pdf"
-            url: /uec_overview.html
-          -
-            title: "What we are doing"
-            output: "web, pdf"
-            url: /what_are_we_doing.html
-          -
-            title: "Care Settings"
-            output: "web, pdf"
-            url: /caresetting.html
-        output: web
-      -
-        title: "Scope and user stories"
-        folderitems:
-          -
-            title: "Scope Overview"
-            output: "web, pdf"
-            url: /scope_overview.html
-          -
-            title: "Functional Scope"
-            output: "web, pdf"
-            url: /scope_functional.html
-          -
-            title: "User Stories"
-            output: "web, pdf"
-            url: /use_overview.html
-        output: web
-      -
-        title: "Non-Functional Requirements"
-        folderitems:
-          -
-            title: "Non Functional Requirements"
-            output: "web, pdf"
-            url: /non_functional_requirements.html
-        output: web
-      -
-        title: "Functional Specification"
-        folderitems:
-          -
-            title: "Workflow and Interactions"
-            output: web, pdf"
+- title: "NHS Booking Standard"
+  product: ""
+  version: "v0.2.0 BETA"
+  spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
+  speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/"
+  levels: one
+  folders: 
+  
+  - title: Introduction
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: "web, pdf"
+      type: homepage
+    - title: "Using this site"
+      url: /using_this_site.html
+      output: "web, pdf"
+    - title: "Getting Started"
+      url: /getting_started.html
+      output: "web, pdf"
+    - title: "Release Notes"
+      url: /release_notes.html
+      output: "web, pdf"      
+  - title: Overview
+    output: web
+    folderitems:    
+    - title: "Definition of Direct Booking"
+      url: /definition.html
+      output: "web, pdf"      
+      - title: "UEC Landscape"
+        url: /uec_overview.html
+        output: "web, pdf"        
+      - title: "What we are doing"
+        url: /what_are_we_doing.html
+        output: "web, pdf"
+      - title: "Care Settings"
+        url: /caresetting.html
+        output: "web, pdf"            
+
+  - title: "Scope and user stories"
+    output: web
+    folderitems:
+    - title: "Scope Overview"
+      url: /scope_overview.html
+      output: "web, pdf"     
+    - title: "Functional Scope"      
+      url: /scope_functional.html
+      output: "web, pdf" 
+    - title: "User Stories"
+      url: /use_overview.html
+      output: "web, pdf"
+            
+        
+  - title: "Non-Functional Requirements"
+    output: web
+    folderitems:
+    - title: "Non Functional Requirements"
+      url: /non_functional_requirements.html      
+      output: "web, pdf"
+  
+  - title: "Functional Specification"
+    output: web
+    folderitems:
+    - title: "Workflow and Interactions"
+      output: web, pdf"
             url: /fs_workflow.html
           -
             title: "GP Connect"
@@ -152,7 +139,8 @@ entries:
             title: "Monitoring, Analytics and Reporting"
             output: "web, pdf"
             url: /fs_reporting.html
-        output: web
+        
+        
       -
         title: "Implementing the standard"
         folderitems:
@@ -233,4 +221,3 @@ entries:
             output: "web, pdf"
             url: /glossary.html
         output: web
-    levels: one
