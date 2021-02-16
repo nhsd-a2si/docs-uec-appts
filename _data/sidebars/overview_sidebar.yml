@@ -30,15 +30,15 @@ entries:
     - title: "Definition of Direct Booking"
       url: /definition.html
       output: "web, pdf"      
-      - title: "UEC Landscape"
-        url: /uec_overview.html
-        output: "web, pdf"        
-      - title: "What we are doing"
-        url: /what_are_we_doing.html
-        output: "web, pdf"
-      - title: "Care Settings"
-        url: /caresetting.html
-        output: "web, pdf"            
+    - title: "UEC Landscape"
+      url: /uec_overview.html
+      output: "web, pdf"        
+    - title: "What we are doing"
+      url: /what_are_we_doing.html
+      output: "web, pdf"
+    - title: "Care Settings"
+      url: /caresetting.html
+      output: "web, pdf"            
 
   - title: "Scope and user stories"
     output: web
@@ -131,12 +131,14 @@ entries:
     - title: "TKW Simulators"
       url: /sims_install.html      
       output: "web, pdf"            
+  
   - title: "First of Type"
     output: web
     folderitems:
     - title: "First of Type"
       url: /first_of_type.html     
       output: "web, pdf"
+  
   - title: "Information Governance"
     output: web
     folderitems:
@@ -169,8 +171,9 @@ entries:
     - title: "Supplier Conformance Catalogue"
       url: /catalogue.html
       output: "web, pdf"
-  - title: "Help and Support"
-    
+  
+  - title: "Help and Support"    
+    output: web
     folderitems:
     - title: "Contact Details"
       url: /contact.html      
