@@ -2,7 +2,7 @@
 title: Error Handling - Implementation Guidance
 keywords: fhir development
 tags: [fhir,development]
-sidebar: error_sidebar
+sidebar: overview_sidebar
 permalink: er_errorhandling.html
 summary: "Implementation guidance for developers - focusing on error handling"
 ---
