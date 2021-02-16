@@ -215,7 +215,7 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <td>End of search in the past</td>
                 <td>400 Bad Request</td>
-                <td>If **BOTH** search times are in the past, add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics. **NOTE - it is perfectly fine for the start of the search window to be in the past**</td>
+                <td>If BOTH search times are in the past, add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics. NOTE - it is perfectly fine for the start of the search window to be in the past</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
