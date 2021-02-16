@@ -65,7 +65,7 @@ entries:
         - title: "- Make a Booking"
           url: /usep_abus12.html
           output: web, pdf     
-        - title: - Booking outside assessment timeframe
+        - title: "- Booking outside assessment timeframe"
           url: /usep_abus13.html
           output: web, pdf
         - title: "- Cancel a Booking"
