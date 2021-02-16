@@ -23,6 +23,7 @@ entries:
     - title: "Release Notes"
       url: /release_notes.html
       output: "web, pdf"      
+  
   - title: Overview
     output: web
     folderitems:    
@@ -64,160 +65,123 @@ entries:
     output: web
     folderitems:
     - title: "Workflow and Interactions"
+      url: /fs_workflow.html
       output: web, pdf"
-            url: /fs_workflow.html
-          -
-            title: "GP Connect"
-            output: "web, pdf"
-            url: /gpc_overview.html
-          -
-            title: "Interactions with the DoS"
-            output: "web, pdf"
-            url: /dos_overview.html
-          -
-            title: "Interactions with the SDS"
-            output: "web, pdf"
-            url: /fs_sds.html
-          -
-            title: "Interactions with the SSP"
-            output: "web, pdf"
-            url: /fs_ssp.html
-          -
-            title: "Capability Statement"
-            output: "web, pdf"
-            url: /uec_capability.html
-          -
-            title: "How bookings map to clinical need"
-            output: "web, pdf"
-            url: /fs_slotmap.html
-          -
-            title: "How bookings map to services"
-            output: "web, pdf"
-            url: /fs_slotmanagement.html
-          -
-            title: "Slot Display Requirements"
-            output: "web, pdf"
-            url: /fs_deliverychannel.html
-          -
-            title: "How to handle times"
-            output: "web, pdf"
-            url: /fs_times.html
-          - 
-            title: "Authentication"
-            output: "web, pdf"
-            url: /fs_authentication.html
-          
-          subfolders:
-          
-          - title: "Error Handling"
-            output: "web, pdf"
-            subfolderitems: 
-            - title: "Error Handling Overview"
-              url: /er_overview.html
-              output: "web, pdf"
-            - title: "Response Handling"
-              url: /er_errorhandling.html
-              output: "web, pdf"            
+    - title: "GP Connect"
+      url: /gpc_overview.html
+      output: "web, pdf"
+    - title: "Interactions with the DoS"
+      url: /dos_overview.html
+      output: "web, pdf"
+    - title: "Interactions with the SDS"
+      url: /fs_sds.html
+      output: "web, pdf"
+    - title: "Interactions with the SSP"
+      url: /fs_ssp.html
+      output: "web, pdf"
+    - title: "Capability Statement"
+      url: /uec_capability.html
+      output: "web, pdf"
+    - title: "How bookings map to clinical need"
+      url: /fs_slotmap.html
+      output: "web, pdf"
+    - title: "How bookings map to services"
+      url: /fs_slotmanagement.html      
+      output: "web, pdf"
+    - title: "Slot Display Requirements"
+      url: /fs_deliverychannel.html
+      output: "web, pdf"
+    - title: "How to handle times"
+      url: /fs_times.html
+      output: "web, pdf"
+    - title: "Authentication"
+      url: /fs_authentication.html      
+      output: "web, pdf"
+      subfolders:
+      - title: "Error Handling"
+        output: "web, pdf"
+        subfolderitems: 
+        - title: "Error Handling Overview"
+          url: /er_overview.html
+          output: "web, pdf"
+        - title: "Response Handling"
+          url: /er_errorhandling.html
+          output: "web, pdf"            
+    - title: "Cancelling Bookings"
+      url: /cr_overview.html
+      output: "web, pdf"
+    - title: "Transfer of Care"
+      url: /fs_xfercare.html
+      output: "web, pdf"
+    - title: "SMS For Bookings"
+      url: /fs_sms.html
+      output: "web, pdf"
+    - title: "How to store patient contacts"
+      url: /fs_patientcontact.html   
+      output: "web, pdf"
+    - title: "Monitoring, Analytics and Reporting"
+      url: /fs_reporting.html      
+      output: "web, pdf"
+      
+  - title: "Implementing the standard"
+    output: web
+    folderitems:
+    - title: "Implementation Overview"
+      url: /implementation_overview.html
+      output: "web, pdf"
+    - title: "API Guidance"
+      url: /implementation_API.html
+      output: "web, pdf"
+    - title: "Implementing FHIR® Resources"
+      url: /implementation_FHIR.html
+      output: "web, pdf"
+    - title: "TKW Simulators"
+      url: /sims_install.html      
+      output: "web, pdf"            
+  - title: "First of Type"
+    output: web
+    folderitems:
+    - title: "First of Type"
+      url: /first_of_type.html     
+      output: "web, pdf"
+  - title: "Information Governance"
+    output: web
+    folderitems:
+    - title: "Information Governance Overview"
+      url: /ig_overview.html
+      output: "web, pdf"
+    - title: "Information Governance FAQ"
+      url: /ig_faq.html
+      output: "web, pdf"
+  
+  - title: "Assurance Process"
+    output: web
+    folderitems:
+    - title: "Assurance Overview"
+      url: /assurance_overview.html
+      output: "web, pdf"            
+    - title: "Supplier Conformance Assessment List (SCAL)"
+      url: /assurance_scal.html
+      output: "web, pdf"
+    - title: "Supplier Assurance Prerequisites and Requirements"
+      url: /assurance_supplier.html
+      output: "web, pdf"
             
-          -
-            title: "Cancelling Bookings"
-            output: "web, pdf"
-            url: /cr_overview.html
-          -
-            title: "Transfer of Care"
-            output: "web, pdf"
-            url: /fs_xfercare.html
-          -
-            title: "SMS For Bookings"
-            output: "web, pdf"
-            url: /fs_sms.html
-          -
-            title: "How to store patient contacts"
-            output: "web, pdf"
-            url: /fs_patientcontact.html  
-          -
-            title: "Monitoring, Analytics and Reporting"
-            output: "web, pdf"
-            url: /fs_reporting.html
-        
-        
-      -
-        title: "Implementing the standard"
-        folderitems:
-          -
-            title: "Implementation Overview"
-            output: "web, pdf"
-            url: /implementation_overview.html
-          -
-            title: "API Guidance"
-            output: "web, pdf"
-            url: /implementation_API.html
-          -
-            title: "Implementing FHIR® Resources"
-            output: "web, pdf"
-            url: /implementation_FHIR.html
-          - 
-            title: "TKW Simulators"
-            output: "web, pdf"            
-            url: /sims_install.html
-        output: web
-      -
-        title: "First of Type"
-        folderitems:
-          -
-            title: "First of Type"
-            output: "web, pdf"
-            url: /first_of_type.html
-        output: web
-      -
-        title: "Information Governance"
-        folderitems:
-          -
-            title: "Information Governance Overview"
-            output: "web, pdf"
-            url: /ig_overview.html
-          -
-            title: "Information Governance FAQ"
-            output: "web, pdf"
-            url: /ig_faq.html
-        output: web
-      -
-        title: "Assurance Process"
-        folderitems:
-          -
-            title: "Assurance Overview"
-            output: "web, pdf"
-            url: /assurance_overview.html
-          -
-            title: "Supplier Conformance Assessment List (SCAL)"
-            output: "web, pdf"
-            url: /assurance_scal.html
-          -
-            title: "Supplier Assurance Prerequisites and Requirements"
-            output: "web, pdf"
-            url: /assurance_supplier.html
-        output: web
-      -
-        title: "Deployment"
-        folderitems:
-         -
-            title: "Deployment Toolkit"
-            output: "web, pdf"
-            url: /deployment_toolkit.html
-         -
-            title: "Supplier Conformance Catalogue"
-            output: "web, pdf"
-            url: /catalogue.html
-        output: web
-      -
-        title: "Help and Support"
-        folderitems:
-          -
-            title: "Contact Details"
-            output: "web, pdf"
-            url: /contact.html
-          -
-            title: Glossary
-            output: "web, pdf"
-            url: /glossary.html
-        output: web
+  - title: "Deployment"
+    output: web
+    folderitems:
+    - title: "Deployment Toolkit"
+      url: /deployment_toolkit.html
+      output: "web, pdf"
+    - title: "Supplier Conformance Catalogue"
+      url: /catalogue.html
+      output: "web, pdf"
+  - title: "Help and Support"
+    
+    folderitems:
+    - title: "Contact Details"
+      url: /contact.html      
+      output: "web, pdf"
+    - title: Glossary
+      url: /glossary.html
+      output: "web, pdf"
