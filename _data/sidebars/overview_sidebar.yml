@@ -48,11 +48,14 @@ entries:
       output: "web, pdf"     
     - title: "Functional Scope"      
       url: /scope_functional.html
-      output: "web, pdf" 
-    - title: "User Stories"
-      url: /use_overview.html
       output: "web, pdf"
-            
+      subfolders:    
+      - title: "User Stories"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /use_overview.html
+          output: web, pdf
         
   - title: "Non-Functional Requirements"
     output: web
