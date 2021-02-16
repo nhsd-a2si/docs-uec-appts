@@ -115,14 +115,21 @@ entries:
             title: "How to handle times"
             output: "web, pdf"
             url: /fs_times.html
-          -
+          - 
             title: "Authentication"
             output: "web, pdf"
             url: /fs_authentication.html
-          -
-            title: "Error Handling"
+          
+          - title: "Error Handling"
             output: "web, pdf"
-            url: /er_overview.html
+            subfolderitems: 
+            - title: "Error Handling Overview"
+              url: /er_overview.html
+              output: "web, pdf"
+            - title: "Response Handling"
+              url: /er_errorhandling.html
+              output: "web, pdf"            
+            
           -
             title: "Cancelling Bookings"
             output: "web, pdf"
