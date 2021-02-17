@@ -18,8 +18,8 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 The 0.2.2 BETA release has the following highlights:
 
-* The FHIR API Specification has been update to 2.0.2 BETA <mark style="background-color: LightRed;font-family: Courier New, Courier, monospace">breaking</mark>
-  * Resources Overview page has been updated to reflect a generic use case.<mark style="background-color: LightGreen;font-family: Courier New, Courier, monospace">non-breaking </mark>
+* The FHIR API Specification has been update to 2.0.2 BETA <mark style="background-color: #ff8080">breaking</mark>
+  * Resources Overview page has been updated to reflect a generic use case.<mark style="background-color: LightGreen">non-breaking </mark>
   * Guidance around Location resource has been updated.
   * Additional guidance added regarding include and revinclude parameters
   * Element Id has been replaced with identifier for HealthcareService resource.
