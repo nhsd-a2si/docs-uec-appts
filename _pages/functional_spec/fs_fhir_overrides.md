@@ -7,7 +7,7 @@ toc: false
 folder: functional_spec
 ---
 ## Rationale 
-The Booking Standard attempts to align with unmodified versions of the <a href="https://fhir.hl7.org.uk/StructureDefinition" target="_blank">CareConnect FHIR Profiles</a> to ensure validation works without excessive number of exceptions to maintain. On occassions the Booking Standard has deviated from the default and below is a list of the profiles and related overrides. 
+The Booking Standard attempts to align with unmodified versions of the <a href="https://fhir.hl7.org.uk/StructureDefinition" target="_blank">CareConnect FHIR Profiles</a> to ensure validation works without an excessive number of exceptions to maintain. On occassions the Booking Standard has deviated from the default and below is a list of the profiles and related overrides. 
 
 
 ## Overrides 
