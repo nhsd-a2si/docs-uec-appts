@@ -44,23 +44,18 @@ The 0.2.2 BETA release has the following highlights:
 * Updated [contact details](contact.html){:target="_blank"} to new contact email address <mark style="background-color: LightGreen">non-breaking</mark>
 * A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made. <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page on [how to store patient contacts](fs_patientcontact.html){:target="_blank"} has been added. This providers clear business rules on what and where contacts should be stored <mark style="background-color: #ff8080">breaking</mark>
-
 * Based on usability feedback, the menu system has been updated to use a single menu flow rather than break out to "sub-pages" for certain sections <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing how to [maintain transactional integrity](fs_xti.html){:target="_blank"} and how custom headers can support this <mark style="background-color: #ff8080">breaking</mark>
 * Updated the [deployment toolkit](deployment_toolkit.html){:target="_blank"} with a significant amount of new content <mark style="background-color: LightGreen">non-breaking</mark>
 * Removed references to the demonstrator and added new pages to support the new [Provider and Consumer simulator tools](sims_install.html){:target="_blank"} ?? <mark style="background-color: LightGreen">non-breaking</mark>
 * Fixed some broken links that referenced external resources<mark style="background-color: LightGreen">non-breaking</mark>
-* Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing abiguity over a number of subjects  ?? <mark style="background-color: #ff8080">breaking</mark>
+* Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing abiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
 * A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * The overview page on [error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
 * The page on [error handling](er_errorhandling.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
 * The [booking and referral messages](dos_itk.html.html){:target="_blank"} page was removed as it is duplicating the "transfer of care" page in the "functional spec" section <mark style="background-color: LightGreen">non-breaking</mark>
-* The [transfer of care](????.html){:target="_blank"} ?? <mark style="background-color: LightGreen">non-breaking</mark>
-
-* ?? [????](fs_xfercare.html){:target="_blank"} page was updated to add clarity on how to add the appointment reference to a 111CDA document <mark style="background-color: LightGreen">non-breaking</mark>
-
-
+* The [transfer of care](fs_xfercare.html){:target="_blank"}  page was updated to provide more clarity on how to store appointment references in the 111CDA document <mark style="background-color: LightGreen">non-breaking</mark>
 * An indication of breaking and non-breaking changes has been added to the release notes <mark style="background-color: LightGreen">non-breaking</mark>
 
 <br>
