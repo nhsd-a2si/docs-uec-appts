@@ -47,6 +47,18 @@ The 0.2.2 BETA release has the following highlights:
 
 * Based on usability feedback, the menu system has been updated to use a single menu flow rather than break out to "sub-pages" for certain sections <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing how to [maintain transactional integrity](fs_xti.html){:target="_blank"} and how custom headers can support this <mark style="background-color: #ff8080">breaking</mark>
+* Updated the [deployment toolkit](deployment_toolkit.html){:target="_blank"} with a significant amount of new content <mark style="background-color: LightGreen">non-breaking</mark>
+* Removed references to the demonstrator and added new pages to support the new [Provider and Consumer simulator tools](sims_install.html){:target="_blank"} ?? <mark style="background-color: LightGreen">non-breaking</mark>
+* Fixed some broken links that referenced external resources<mark style="background-color: LightGreen">non-breaking</mark>
+* Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing abiguity over a number of subjects  ?? <mark style="background-color: #ff8080">breaking</mark>
+* A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
+* A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
+* The overview page on [error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
+* The page on [error handling](er_errorhandling.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
+* The [booking and referral messages](dos_itk.html.html){:target="_blank"} page was removed as it is duplicating the "transfer of care" page in the "functional spec" section <mark style="background-color: LightGreen">non-breaking</mark>
+* The [transfer of care](????.html){:target="_blank"} ?? <mark style="background-color: LightGreen">non-breaking</mark>
+
+* ?? [????](fs_xfercare.html){:target="_blank"} page was updated to add clarity on how to add the appointment reference to a 111CDA document <mark style="background-color: LightGreen">non-breaking</mark>
 
 
 * An indication of breaking and non-breaking changes has been added to the release notes <mark style="background-color: LightGreen">non-breaking</mark>
