@@ -26,7 +26,6 @@ The 0.2.2 BETA release has the following highlights:
   * Updated the description for id for the Schedule resource. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Practitioner and PractitionerRole pages have been removed. <mark style="background-color: LightGreen">non-breaking</mark>
   * Appointment example has been fixed to reflect the correct format for references. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-  * Appointment.created element datatype has been changed from Instant to dateTime to reflect the profile. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * References to the registry function has been removed. <mark style="background-color: LightGreen">non-breaking</mark>
   * Additional guidance added to the Appointment.created element. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Narrative added to the diagrams on the profile overview page. <mark style="background-color: LightGreen">non-breaking</mark>
@@ -48,7 +47,7 @@ The 0.2.2 BETA release has the following highlights:
 * A new page describing how to [maintain transactional integrity](fs_xti.html){:target="_blank"} and how custom headers can support this <mark style="background-color: #ff8080">breaking</mark>
 * Updated the [deployment toolkit](deployment_toolkit.html){:target="_blank"} with a significant amount of new content <mark style="background-color: LightGreen">non-breaking</mark>
 * Removed references to the demonstrator and added new pages to support the new [Provider and Consumer simulator tools](sims_install.html){:target="_blank"} ?? <mark style="background-color: LightGreen">non-breaking</mark>
-* Fixed some broken links that referenced external resources<mark style="background-color: LightGreen">non-breaking</mark>
+* Fixed some broken links that referenced external resources <mark style="background-color: LightGreen">non-breaking</mark>
 * Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing abiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
 * A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
