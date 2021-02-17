@@ -18,9 +18,25 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 The 0.2.2 BETA release has the following highlights:
 
+* The FHIR API Specification has been update to 2.0.2 BETA <mark style="background-color: LightRed;font-family: Courier New, Courier, monospace">breaking</mark>
+  * Resources Overview page has been updated to reflect a generic use case.<mark style="background-color: LightGreen;font-family: Courier New, Courier, monospace">non-breaking </mark>
+  * Guidance around Location resource has been updated.
+  * Additional guidance added regarding include and revinclude parameters
+  * Element Id has been replaced with identifier for HealthcareService resource.
+  * Updated the description for id for the Schedule resource.
+  * Practitioner and PractitionerRole pages have been removed.
+  * Appointment example has been fixed to reflect the correct format for references.
+  * Appointment.created element datatype has been changed from Instant to dateTime to reflect the profile.
+  * References to the registry function has been removed.
+  * Additional guidance added to the Appointment.created element.
+  * Narrative added to the diagrams on the profile overview page.
+  * New page added for the the Bundle resource.
+  * Addition of a new FHIR SearchParameter required for searching slots.
+  * Guidance added for outputting data in different formats.
+  * Additional guidance added for the patient.telecom element.  
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
-   * Some typos were fixed
-   * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes
+  * Some typos were fixed
+  * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes
 * Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank"}
 * Updated the name of the standard to "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard" to support future use cases
 * Updated most pages to reference booking rather than "appointment" unless specifically appropriate
