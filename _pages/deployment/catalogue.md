@@ -75,7 +75,7 @@ The list includes only suppliers we are actively engaged with and are currently 
        <!------------------------------ROW----------------------------------->      
               <tr>
                     <td style="font-size:small">MIS</td>
-                    <td style="font-size:small">C3 Tripath</td>
+                    <td style="font-size:small">C<sup>3</sup> Tripath</td>
                     <td style="font-size:small">TBC</td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
@@ -323,21 +323,10 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
                 <td style="background-color: LightGrey;"></td>
-              </tr>  
-                
-      <!------------------------------ROW----------------------------------->          
-                    
-              <tr>
-                <td style="font-size:small">ExtraMED</td>
-                <td style="font-size:small">Patient Flow</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
-                <td style="background-color: LightGrey;"></td>
-              </tr>                 
+              </tr>                  
+           
        <!------------------------------ROW----------------------------------->                
               
               <tr>
@@ -349,6 +338,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td>Not Started</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>  
+              
       <!------------------------------ROW----------------------------------->                
              
              <tr>
@@ -381,7 +371,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>  
                 
