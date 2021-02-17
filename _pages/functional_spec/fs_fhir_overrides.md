@@ -10,6 +10,7 @@ folder: functional_spec
 
 ## Overrides 
 ### Appointment 
+
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
 |contained resources|-|1..1|
@@ -25,12 +26,14 @@ folder: functional_spec
 |participant|1..*|1..1|
 
 ### HealthcareService
+
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
 |id (Booking) identifier (Base)|0..*|1..1|
 |location|0..*|0..1|
 
 ### Patient 
+
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
 |id (unique in contained Appointment Resource)|-|1..1|
@@ -48,6 +51,7 @@ folder: functional_spec
 
 
 ### Schedule 
+
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
 |id (Booking) identifier (Base)|0..*|1..1|
@@ -58,6 +62,7 @@ folder: functional_spec
 
 
 ### Slot 
+
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
 |identifier|0..*|1..1|
