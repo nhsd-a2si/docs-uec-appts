@@ -18,31 +18,31 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 The 0.2.2 BETA release has the following highlights:
 
-* The FHIR API Specification has been update to 2.0.2 BETA <mark style="background-color: #ff8080">breaking</mark>
-  * Resources Overview page has been updated to reflect a generic use case.<mark style="background-color: LightGreen">non-breaking </mark>
-  * Guidance around Location resource has been updated.
-  * Additional guidance added regarding include and revinclude parameters
-  * Element Id has been replaced with identifier for HealthcareService resource.
-  * Updated the description for id for the Schedule resource.
-  * Practitioner and PractitionerRole pages have been removed.
-  * Appointment example has been fixed to reflect the correct format for references.
-  * Appointment.created element datatype has been changed from Instant to dateTime to reflect the profile.
-  * References to the registry function has been removed.
-  * Additional guidance added to the Appointment.created element.
-  * Narrative added to the diagrams on the profile overview page.
-  * New page added for the the Bundle resource.
-  * Addition of a new FHIR SearchParameter required for searching slots.
-  * Guidance added for outputting data in different formats.
-  * Additional guidance added for the patient.telecom element.  
+* The FHIR API Specification has been update to 2.0.2 BETA 
+  * Resources Overview page has been updated to reflect a generic use case.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Guidance around Location resource has been updated.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Additional guidance added regarding include and revinclude parameters <mark style="background-color: Yellow">correction</mark>
+  * Element Id has been replaced with identifier for HealthcareService resource.<mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
+  * Updated the description for id for the Schedule resource.<mark style="background-color: LightGreen">non-breaking</mark><mark style="background-color: Yellow">correction</mark>
+  * Practitioner and PractitionerRole pages have been removed.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Appointment example has been fixed to reflect the correct format for references.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Appointment.created element datatype has been changed from Instant to dateTime to reflect the profile.<mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
+  * References to the registry function has been removed.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Additional guidance added to the Appointment.created element.<mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * Narrative added to the diagrams on the profile overview page.<mark style="background-color: LightGreen">non-breaking</mark>
+  * New page added for the the Bundle resource.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Addition of a new FHIR SearchParameter required for searching slots.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Guidance added for outputting data in different formats.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Additional guidance added for the patient.telecom element.<mark style="background-color: LightGreen">non-breaking</mark>  
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
-  * Some typos were fixed
-  * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes
-* Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank"}
-* Updated the name of the standard to "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard" to support future use cases
-* Updated most pages to reference booking rather than "appointment" unless specifically appropriate
-* Updated some wording on [booking definition](definition.html){:target="_blank"} page to be more generic
-* Updated [contact details](contact.html){:target="_blank"} to new contact email address
-* A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made.
+  * Some typos were fixed<mark style="background-color: LightGreen">non-breaking</mark>
+  * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes<mark style="background-color: LightGreen">non-breaking</mark>
+* Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank"}<mark style="background-color: LightGreen">non-breaking</mark>
+* Updated the name of the standard to "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard" to support future use cases<mark style="background-color: LightGreen">non-breaking</mark>
+* Updated most pages to reference booking rather than "appointment" unless specifically appropriate<mark style="background-color: LightGreen">non-breaking</mark>
+* Updated some wording on [booking definition](definition.html){:target="_blank"} page to be more generic<mark style="background-color: LightGreen">non-breaking</mark>
+* Updated [contact details](contact.html){:target="_blank"} to new contact email address<mark style="background-color: LightGreen">non-breaking</mark>
+* A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made.<mark style="background-color: LightGreen">non-breaking</mark>
 
 <br>
 <br>
