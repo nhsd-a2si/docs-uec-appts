@@ -22,11 +22,11 @@ The 0.2.2 BETA release has the following highlights:
   * Resources Overview page has been updated to reflect a generic use case. <mark style="background-color: LightGreen">non-breaking</mark>
   * Guidance around Location resource has been updated.<mark style="background-color: LightGreen">non-breaking</mark>
   * Additional guidance added regarding include and revinclude parameters <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-  * Element Id has been replaced with identifier for HealthcareService resource.<mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
-  * Updated the description for id for the Schedule resource.<mark style="background-color: LightGreen">non-breaking</mark><mark style="background-color: Yellow">correction</mark>
-  * Practitioner and PractitionerRole pages have been removed.<mark style="background-color: LightGreen">non-breaking</mark>
-  * Appointment example has been fixed to reflect the correct format for references.<mark style="background-color: LightGreen">non-breaking</mark><mark style="background-color: Yellow">correction</mark>
-  * Appointment.created element datatype has been changed from Instant to dateTime to reflect the profile.<mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
+  * Element Id has been replaced with identifier for HealthcareService resource. <mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
+  * Updated the description for id for the Schedule resource. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * Practitioner and PractitionerRole pages have been removed. <mark style="background-color: LightGreen">non-breaking</mark>
+  * Appointment example has been fixed to reflect the correct format for references. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * Appointment.created element datatype has been changed from Instant to dateTime to reflect the profile. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * References to the registry function has been removed. <mark style="background-color: LightGreen">non-breaking</mark>
   * Additional guidance added to the Appointment.created element. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Narrative added to the diagrams on the profile overview page. <mark style="background-color: LightGreen">non-breaking</mark>
@@ -44,8 +44,12 @@ The 0.2.2 BETA release has the following highlights:
 * Updated [contact details](contact.html){:target="_blank"} to new contact email address <mark style="background-color: LightGreen">non-breaking</mark>
 * A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made. <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page on [how to store patient contacts](fs_patientcontact.html){:target="_blank"} has been added. This providers clear business rules on what and where contacts should be stored <mark style="background-color: #ff8080">breaking</mark>
-* Based on usability feedback, the menu system has been updated to use a single menu flow rather than break out to "sub-pages" for certain sections
-* Use 
+
+* Based on usability feedback, the menu system has been updated to use a single menu flow rather than break out to "sub-pages" for certain sections <mark style="background-color: LightGreen">non-breaking</mark>
+* A new page describing how to [maintain transactional integrity](fs_xti.html){:target="_blank"} and how custom headers can support this <mark style="background-color: #ff8080">breaking</mark>
+
+
+* An indication of breaking and non-breaking changes has been added to the release notes <mark style="background-color: LightGreen">non-breaking</mark>
 
 <br>
 <br>
