@@ -91,9 +91,22 @@ entries:
     - title: "Workflow and Interactions"
       url: /fs_workflow.html
       output: web, pdf"
-    - title: "GP Connect"
-      url: /gpc_overview.html
-      output: "web, pdf"
+      subfolders:
+      - title: "GP Connect"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /gpc_overview.html
+          output: "web, pdf"
+        - title: "Key requirements"
+          url: /gpc_requirement.html
+          output: "web, pdf"            
+        - title: "Comparison with proprietary booking"
+          url: /gpc_propcon.html
+          output: "web, pdf"
+        - title: "Differences between GP Connect and CareConnect"
+          url: /fs_gpcdiff.html
+          output: "web, pdf"
     - title: "Interactions with the DoS"
       url: /dos_overview.html
       output: "web, pdf"
