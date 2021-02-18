@@ -1,6 +1,6 @@
 ---
 title: Deployment Toolkit - UEC DoS Lead Resources
-sidebar: deployment_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: dep_dosoverview.html
 toc: false
