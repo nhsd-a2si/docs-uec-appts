@@ -34,20 +34,20 @@ The 0.2.2 BETA release has the following highlights:
   * Guidance added for outputting data in {%include FHIRSpecificationLink.html page="search_free_slots.html#_format" text="different formats" %} <mark style="background-color: LightGreen">non-breaking</mark>
   * Additional guidance added for the {%include FHIRSpecificationLink.html page="patient.html#key-fhir-elements" text="patient.telecom element" %} <mark style="background-color: LightGreen">non-breaking</mark>  
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
-  * Some typos were fixed <mark style="background-color: LightGreen">non-breaking</mark>
+  * Some typos were fixed <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes <mark style="background-color: LightGreen">non-breaking</mark>
 * Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank"} <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated the name of the standard to "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard" to support future use cases <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated most pages to reference booking rather than "appointment" unless specifically appropriate <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated some wording on [booking definition](definition.html){:target="_blank"} page to be more generic <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated [contact details](contact.html){:target="_blank"} to new contact email address <mark style="background-color: LightGreen">non-breaking</mark>
-* A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made. <mark style="background-color: LightGreen">non-breaking</mark>
+* A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
 * A new page on [how to store patient contacts](fs_patientcontact.html){:target="_blank"} has been added. This providers clear business rules on what and where contacts should be stored <mark style="background-color: #ff8080">breaking</mark>
 * Based on usability feedback, the menu system has been updated to use a single menu flow rather than break out to "sub-pages" for certain sections <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing how to [maintain transactional integrity](fs_xti.html){:target="_blank"} and how custom headers can support this <mark style="background-color: #ff8080">breaking</mark>
 * Updated the [deployment toolkit](deployment_toolkit.html){:target="_blank"} with a significant amount of new content <mark style="background-color: LightGreen">non-breaking</mark>
 * Removed references to the demonstrator and added new pages to support the new [Provider and Consumer simulator tools](sims_install.html){:target="_blank"} ?? <mark style="background-color: LightGreen">non-breaking</mark>
-* Fixed some broken links that referenced external resources <mark style="background-color: LightGreen">non-breaking</mark>
+* Fixed some broken links that referenced external resources <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
 * Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing ambiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
 * A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
