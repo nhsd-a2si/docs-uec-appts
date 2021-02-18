@@ -245,34 +245,34 @@ entries:
   - title: "Deployment"
     output: web
     folderitems:
-    subfolders:
-    - title: "Deployment Toolkit"
-      output: "web, pdf"
-      subfolderitems:
-      - title: Overview
-        url: /deployment_toolkit.html 
-        output: "web, pdf"              
-      - title: "Suppliers - Path to Live"
-        url: /dep_devptl.html
-        output: "web, pdf"            
-      - title: "Suppliers - System topologies"
-        url: /dep_devtopo.html  
-        output: "web, pdf"
-      - title: "Providers - Overview"
-        url: /dep_provoverview.html   
-        output: "web, pdf"
-      - title: "DoS Lead Guidance"
-        url: /dep_dosoverview.html 
-        output: "web, pdf"
-      - title: "Testing Maturity"
-        url: /dep_testtesting.html
-        output: "web, pdf"
-      - title: "Test Plan"
-        url: /dep_testplan.html  
-        output: "web, pdf"
     - title: "Supplier Conformance Catalogue"
       url: /catalogue.html
       output: "web, pdf"
+      subfolders:
+      - title: "Deployment Toolkit"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /deployment_toolkit.html 
+          output: "web, pdf"              
+        - title: "Suppliers - Path to Live"
+          url: /dep_devptl.html
+          output: "web, pdf"            
+        - title: "Suppliers - System topologies"
+          url: /dep_devtopo.html  
+          output: "web, pdf"
+        - title: "Providers - Overview"
+          url: /dep_provoverview.html   
+          output: "web, pdf"
+        - title: "DoS Lead Guidance"
+          url: /dep_dosoverview.html 
+          output: "web, pdf"
+        - title: "Testing Maturity"
+          url: /dep_testtesting.html
+          output: "web, pdf"
+        - title: "Test Plan"
+          url: /dep_testplan.html  
+          output: "web, pdf"    
   
   - title: "Help and Support"    
     output: web
