@@ -1,6 +1,6 @@
 ---
 title: Booking Management (Cancel and Rebook)
-sidebar: cr_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: cr_overview.html
 toc: false
