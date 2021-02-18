@@ -19,20 +19,20 @@ Version | Handle  | Phase | State           | Release Date | Stability
 The 0.2.2 BETA release has the following highlights:
 
 * The FHIR API Specification has been updated to 2.0.2 BETA 
-  * Resources Overview page has been updated to reflect a generic use case. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Guidance around Location resource has been updated.<mark style="background-color: LightGreen">non-breaking</mark>
-  * Additional guidance added regarding include and revinclude parameters <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-  * Element Id has been replaced with identifier for HealthcareService resource. <mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
-  * Updated the description for id for the Schedule resource. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * {%include FHIRSpecificationLink.html page="resources_overview.html" text="Resources Overview" %} page has been updated to reflect a generic use case. <mark style="background-color: LightGreen">non-breaking</mark>
+  * Guidance around {%include FHIRSpecificationLink.html page="location.html" text="Location resource" %} has been updated.<mark style="background-color: LightGreen">non-breaking</mark>
+  * Additional guidance added regarding include and revinclude parameters when {%include FHIRSpecificationLink.html page="search_free_slots.html" text="searching for free slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * Element Id has been replaced with identifier for {%include FHIRSpecificationLink.html page="healthcare_service.html" text="HealthcareService resource" %}. <mark style="background-color: #ff8080">breaking</mark><mark style="background-color: Yellow">correction</mark>
+  * Updated the description for id for the {%include FHIRSpecificationLink.html page="schedule.html" text="Schedule resource" %}. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Practitioner and PractitionerRole pages have been removed. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Appointment example has been fixed to reflect the correct format for references. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * {%include FHIRSpecificationLink.html page="appointment.html#booking-example-resource" text="Appointment" %} example has been fixed to reflect the correct format for references. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * References to the registry function has been removed. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Additional guidance added to the Appointment.created element. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
-  * Narrative added to the diagrams on the profile overview page. <mark style="background-color: LightGreen">non-breaking</mark>
-  * New page added for the the Bundle resource. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Addition of a new FHIR SearchParameter required for searching slots. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Guidance added for outputting data in different formats. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Additional guidance added for the patient.telecom element. <mark style="background-color: LightGreen">non-breaking</mark>  
+  * Additional guidance added to the {%include FHIRSpecificationLink.html page="appointment.html#key-fhir-elements-for-booking" text="Appointment.created" %} element. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
+  * Narrative added to the diagrams on the profile {%include FHIRSpecificationLink.html page="resources_overview.html" text="overview page" %}. <mark style="background-color: LightGreen">non-breaking</mark>
+  * New page added for the the {%include FHIRSpecificationLink.html page="bundle.html" text="Bundle resource" %}. <mark style="background-color: LightGreen">non-breaking</mark>
+  * Addition of a new FHIR SearchParameter required for {%include FHIRSpecificationLink.html page="search_free_slots.html#search-parameters" text="searching slots" %}. <mark style="background-color: LightGreen">non-breaking</mark>
+  * Guidance added for outputting data in {%include FHIRSpecificationLink.html page="search_free_slots.html#_format" text="different formats" %} <mark style="background-color: LightGreen">non-breaking</mark>
+  * Additional guidance added for the {%include FHIRSpecificationLink.html page="patient.html#key-fhir-elements" text="patient.telecom element" %} <mark style="background-color: LightGreen">non-breaking</mark>  
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
   * Some typos were fixed <mark style="background-color: LightGreen">non-breaking</mark>
   * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes <mark style="background-color: LightGreen">non-breaking</mark>
