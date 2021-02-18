@@ -15,4 +15,4 @@ This review was for the standard itself and not specific implementations that re
 <br>
 The following diagram illustrates how data is shared using the NHS Booking Standrad within UEC:
 
-<image src="DPIA-diagram.jpeg"/> 
+<image src="/ig/DPIA-diagram.jpeg"/>
