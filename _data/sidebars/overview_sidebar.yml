@@ -131,6 +131,15 @@ entries:
         - title: "Support for booking only services"
           url: /dos_bookingonly.html   
           output: "web, pdf" 
+        - title: "Previous Approach"
+          url: /dos_endpoints_existing.html
+          output: "web, pdf"           
+        - title: "New Approach"
+          url: /dos_endpoints_new.html
+          output: "web, pdf"            
+        - title: "Changes for Booking"
+          url: /dos_endpoints_booking.html  
+          output: "web, pdf"                
     - title: "Interactions with the SDS"
       url: /fs_sds.html
       output: "web, pdf"
@@ -165,9 +174,15 @@ entries:
         - title: "Response Handling" 
           url: /er_errorhandling.html
           output: "web, pdf" 
-    - title: "Cancelling Bookings"
-      url: /cr_overview.html
-      output: "web, pdf"
+      - title: "Cancelling Bookings"        
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /cr_overview.html
+          output: "web, pdf"                       
+        - title: Workflow
+          url: /cr_workflow.html 
+          output: "web, pdf"            
     - title: "Transfer of Care"
       url: /fs_xfercare.html
       output: "web, pdf"
