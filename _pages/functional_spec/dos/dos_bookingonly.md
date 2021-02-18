@@ -1,6 +1,6 @@
 ---
 title: Support for booking only services
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_bookingonly.html
 toc: false
