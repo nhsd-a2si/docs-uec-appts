@@ -55,6 +55,8 @@ The 0.2.2 BETA release has the following highlights:
 * The page on [error handling](er_errorhandling.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
 * The [booking and referral messages](dos_itk.html.html){:target="_blank"} page was removed as it is duplicating the "transfer of care" page in the "functional spec" section <mark style="background-color: LightGreen">non-breaking</mark>
 * The [transfer of care](fs_xfercare.html){:target="_blank"}  page was updated to provide more clarity on how to store appointment references in the 111CDA document <mark style="background-color: LightGreen">non-breaking</mark>
+* [IG Pages](ig_overview.html){:target="_blank"} have been updated with new IG statement
+* [IG FAQ](ig_overview.html){:target="_blank"} has been updated with new content
 * An indication of breaking and non-breaking changes has been added to the release notes <mark style="background-color: LightGreen">non-breaking</mark>
 
 <br>
