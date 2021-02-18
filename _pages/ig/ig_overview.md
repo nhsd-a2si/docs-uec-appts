@@ -15,4 +15,4 @@ This review was for the standard itself and not specific implementations that re
 
 The following diagram illustrates how data is shared using the NHS Booking Standrad within UEC:
 
-![alt text](EDDI DPIA diagram - CareConnect Base IG.jpeg "how data is shared using the NHS Booking Standard for UEC")
+<image src="DPIA-diagram.jpeg"/> 
