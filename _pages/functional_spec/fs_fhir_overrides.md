@@ -7,8 +7,9 @@ toc: false
 folder: functional_spec
 ---
 ## Rationale 
-The Booking Standard attempts to align with unmodified versions of the <a href="https://fhir.hl7.org.uk/StructureDefinition" target="_blank">CareConnect FHIR Profiles</a> to ensure validation works without an excessive number of exceptions to maintain. On occassions the Booking Standard has deviated from the defaults and below is a list of the affected profiles and the related overrides. 
+The Booking Standard attempts to align with unmodified versions of the <a href="https://fhir.hl7.org.uk/StructureDefinition" target="_blank">CareConnect FHIR Profiles</a> to increase familiarity and ensure validation works without an excessive number of exceptions to maintain. On occassions though it is necesary for the Booking Standard to deviate from the defaults and below is a list of the affected profiles and related overrides. 
 
+The main reason for the overriding the profiles is because there is a reilance on data that, as default, is not mandatory. For example, the Booking Standard stipulates a requirement for start and end, within Appointment, to be populated, ensuring a time period is allocated and agreed between the Provider and Consumer and something tangiable can be given to the patient. Furthermore, the decision to utilise contained resources was an attempt to simplify the inital implementations, rather than adopt standard FHIR bundles. 
 
 ## Overrides 
 ### <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1" target="_blank">Appointment</a>
@@ -27,14 +28,14 @@ The Booking Standard attempts to align with unmodified versions of the <a href="
 |incomingReferral|0..\*|0..1|
 |participant|1..\*|1..1|
 
-### HealthcareService
+### <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HealthcareService-1" target="_blank">HealthcareService</a>
 
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
 |id (Booking) identifier (Base)|0..\*|1..1|
 |location|0..\*|0..1|
 
-### Patient 
+### <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1" target="_blank">Patient</a>
 
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
@@ -52,7 +53,7 @@ The Booking Standard attempts to align with unmodified versions of the <a href="
 |address|0..\*|1..1|
 
 
-### Schedule 
+### <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1" target="_blank">Schedule</a>
 
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
@@ -63,7 +64,7 @@ The Booking Standard attempts to align with unmodified versions of the <a href="
 |actor(PractitionerRole)|1..\*|0..1|
 
 
-### Slot 
+### <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Slot-1" target="_blank">Slot</a>
 
 |Field|Base Profile|Booking Override|
 |-----|----|----------------|
