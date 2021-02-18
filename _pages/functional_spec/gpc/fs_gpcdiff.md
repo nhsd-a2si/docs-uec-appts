@@ -1,6 +1,6 @@
 ---
 title: Differences between GP Connect and CareConnect
-sidebar: gpc_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: fs_gpcdiff.html
 toc: true
