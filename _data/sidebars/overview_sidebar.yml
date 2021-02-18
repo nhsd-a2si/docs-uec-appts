@@ -107,9 +107,31 @@ entries:
         - title: "Differences between GP Connect and CareConnect"
           url: /fs_gpcdiff.html
           output: "web, pdf"
-    - title: "Interactions with the DoS"
-      url: /dos_overview.html
-      output: "web, pdf"
+      subfolders:
+      - title: "Interactions with the DoS"      
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /dos_overview.html
+          output: "web, pdf"            
+        - title: "Key requirements"
+          url: /dos_requirements.html
+          output: "web, pdf"
+        - title: "Care Connect Workflow Overview"
+          url: /dos_wfoverview.html
+          output: "web, pdf"
+        - title: "Care Connect Workflow example"
+          url: /dos_wfexample.html
+          output: "web, pdf"
+        - title: "GP Connect Workflow Overview"
+          url: /gpc_wfoverview.html
+          output: "web, pdf"
+        - title: "GP Connect Workflow example"
+          url: /gpc_wfexample.html
+          output: "web, pdf"
+        - title: "Support for booking only services"
+          url: /dos_bookingonly.html   
+          output: "web, pdf" 
     - title: "Interactions with the SDS"
       url: /fs_sds.html
       output: "web, pdf"
