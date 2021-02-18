@@ -9,9 +9,6 @@ folder: ig
 
 ## Do I need a Data Sharing Agreement (DSA) between two organisations to allow booking?  
 
-* For NHS Booking - No
-* For GP Connect Yes
-
 * There are two aspects to this. Firstly does a pre-existing agreement between two specific organisations already cover this flow? Secondly what access controls are in place to restrict access to appointments between organisations.
 * GP Connect requires a DSA to be in place between two organisations before any GP Connect operations can take place. This is mainly because the capabilities of GP Connect include sharing information from a patients medical record at their GP Practice.
 * The presence of a DSA is enforced by the Spine Secure Proxy (SSP) when any GP Connect operation is attempted. This therefore performs the role of access control too.
