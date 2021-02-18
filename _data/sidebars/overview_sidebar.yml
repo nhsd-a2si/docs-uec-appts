@@ -192,6 +192,9 @@ entries:
     - title: "How to store patient contacts"
       url: /fs_patientcontact.html   
       output: "web, pdf"
+    - title: "Transactional Integrity"
+      url: /fs_xti.html   
+      output: "web, pdf"
     - title: "Monitoring, Analytics and Reporting"
       url: /fs_reporting.html      
       output: "web, pdf"
