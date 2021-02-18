@@ -106,8 +106,7 @@ entries:
           output: "web, pdf"
         - title: "Differences between GP Connect and CareConnect"
           url: /fs_gpcdiff.html
-          output: "web, pdf"
-      subfolders:
+          output: "web, pdf"      
       - title: "Interactions with the DoS"      
         output: "web, pdf"
         subfolderitems:
