@@ -46,6 +46,7 @@ The following diagram illustrates this:
 Therefore the following requirements apply:
 
 ### For the booking consumer:
+
 * each request **must** include an ```X-request-ID```
 * any retry of the same request **must** include the original ```X-request-ID``` unchanged
 * received responses **should** be correlated with the originating request
@@ -53,6 +54,7 @@ Therefore the following requirements apply:
 
 ### For the booking provider:
 
-```X-Correlation-ID```
-
-
+* each response **must** include an ```X-request-ID```
+* each response **must** echo the request ```X-request-ID``` as the ```X-Correlation-ID```
+* The ```X-request-ID``` from the request message **must** be used to verify a previous successful booking has not already been made from a request with this ```X-request-ID```
+* receved ```X-request-ID``` and ```X-Correlation-ID``` **must** be placed in a log or audit trail against the booking attempt
