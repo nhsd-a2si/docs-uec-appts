@@ -1,6 +1,6 @@
 ---
 title: Endpoint Structure - booking changes
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_endpoints_booking.html
 toc: false
