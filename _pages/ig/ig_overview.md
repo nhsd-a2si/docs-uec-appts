@@ -7,7 +7,7 @@ toc: false
 folder: ig
 ---
 
-##Information Governance Overview
+## Information Governance Overview
 
 The NHS Booking Standard has had extensive review to understand the implications and context for information governance. 
 
