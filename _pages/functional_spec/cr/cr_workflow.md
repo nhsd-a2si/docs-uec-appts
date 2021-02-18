@@ -1,6 +1,6 @@
 ---
 title: Booking Management - workflow
-sidebar: cr_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: cr_workflow.html
 toc: false
