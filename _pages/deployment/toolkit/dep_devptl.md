@@ -1,6 +1,6 @@
 ---
 title: Deployment Toolkit - Path to Live
-sidebar: deployment_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: dep_devptl.html
 toc: false
