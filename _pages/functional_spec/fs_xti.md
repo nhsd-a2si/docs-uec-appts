@@ -23,7 +23,7 @@ This is why all updates (such as when performing a cancel operation) **must** be
 * Before updating, the consumer **must** read the latest version of the resource
 * The consumer applies the changes it wants to the resource, leaving other information intact
 * The consumer writes the result back as an update interaction, and is able to handle a 409 (conflict) or 412 (precondition failed) response (usually by trying again)
-* If consumers follow this pattern, then information from other systems that they do not understand will be maintained through the update.
+If consumers follow this pattern, then information from other systems that they do not understand will be maintained through the update.
 
 Both consumer and provider systems **should** clearly document how transaction integrity is handled by specifying in the documentation inside the [CapabilityStatement](uec_capability.html){:target="_blank"}.
 
