@@ -18,7 +18,7 @@ Version | Handle  | Phase | State           | Release Date | Stability
 
 The 0.2.2 BETA release has the following highlights:
 
-* The FHIR API Specification has been update to 2.0.2 BETA 
+* The FHIR API Specification has been updated to 2.0.2 BETA 
   * Resources Overview page has been updated to reflect a generic use case. <mark style="background-color: LightGreen">non-breaking</mark>
   * Guidance around Location resource has been updated.<mark style="background-color: LightGreen">non-breaking</mark>
   * Additional guidance added regarding include and revinclude parameters <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
