@@ -3,26 +3,54 @@ title: Versioning
 sidebar: overview_sidebar
 keywords: Versioning
 permalink: versioning.html
-toc: false
+toc: true
+summary: How multiple versions of the the NHS Booking Standard will be managed and published.
 ---
 
 ## Introduction
+This page details the NHS Booking Standard approach to versioning and release management.  
 
-This page details how  multiple versions of the the NHS Booking Standard will be managed and published.
 
 ## Lifecycle
->TODO - Agree standard publication lifecycle with team
+This diagram shows the NHS Booking Standards lifecycle.
+
+<img src="images/NHS Booking Release Process.png">
 
 
+### 1. Discovery and Elaboration
+- New Requirement/s Emerge
+- Requirement Elaborated
 
-### FHIR
-The current version of the NHS Booking Standard [0.1.16 ALPHA](release_notes.html#0116-alpha) is aligned to [FHIR R3](
-http://hl7.org/fhir/STU3/index.html), however, from release 1.0.0 the standard will been aligned to [FHIR UK Core](#fhir_uk_core).
+### 2. Uplift
+- Standard Uplifted
+- Articfacts Uplifted
+  - Swagger - Interface Definition
+  - Testing Toolkit
+  - SCAL
+- Booking Standard Site Uplifted
+- FHIR NHS Booking API Uplifted
 
+### 3. Review 
+- Uplift Reviewed
 
-### FHIR UK Core {#fhir_uk_core}
+### 4. Versioning 
+- Standard Version Incremented
+- Standard Marked As Pre-release
 
-[FHIR UK Core](https://digital.nhs.uk/services/fhir-uk-core) is aligned with [FHIR R4 ](http://hl7.org/fhir/R4/) the most current iteration of FHIR.  Please refer to the [FHIR UK Core](https://digital.nhs.uk/services/fhir-uk-core) site for more information.
+### 5. Publishing (Pre-Release)
+- Booking Standard Published
+- FHIR NHS Booking API Published
+- Artefacts Published  
+
+### 6 External Review
+- Suppliers Engaged
+- Supplier Feedback
+  - Optional - Back to Discovery and Elaboration
+
+### 7 Publishing (Alpha/Beta/Public)
+  - Booking Standard Published
+  - FHIR NHS Booking API Published
+  - Artefacts Published  
 
 
 ### Versioning
@@ -32,7 +60,7 @@ The NHS Booking standard will follow [Semantic Versioning](https://semver.org/),
 Full details can be found at the [Semantic Versioning](https://semver.org/) site, however, here are the key points.
 
 #### Major version {#major_version_heading}
-The major version is increment when an incompatible changes is made aka non backward compatible.
+The major version is incremented when an incompatible changes is made, i.e. a non backwards compatible change.
 
 
 #### Minor version {#minor_version_heading}
@@ -45,6 +73,19 @@ The patch version is incremented when backwards compatible bug fixes are impleme
 #### Extensions {#extension_version_heading}
 The extensions ALPHA and BETA will be used to indicate the maturity of a pre-release version of the standard.
 
+
+#### Associated technical artefacts
+The following artefacts will be released as part standard, taking the same version number as the specification.
+
+>TODO - Need correct URLS for these
+
+[Interactive Swagger API documentation](https://app.swaggerhub.com/apis/Sphinx/CareConnect-Alpha/2.0.0)
+[Automated test toolkit](sims_install.html)
+
+
+### FHIR
+The current version of the NHS Booking Standard [0.1.16 ALPHA](release_notes.html#0116-alpha) is aligned to [FHIR R3](
+http://hl7.org/fhir/STU3/index.html), however, from release 2.0.0 the standard will been aligned to [FHIR UK Core](#fhir_uk_core), which in turn is based on [FHIR R4 ](http://hl7.org/fhir/R4/)
 
 
 ### Provider Requirements
