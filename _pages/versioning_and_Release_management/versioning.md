@@ -14,14 +14,14 @@ This page details the NHS Booking Standard approach to versioning and release ma
 ## Lifecycle
 This diagram shows the NHS Booking Standards lifecycle.
 
-<img src="images/NHS Booking Release Process.png">
+<img src="img/NHS Booking Lifecycle Process.png">
 
 
-### 1. Discovery and Elaboration
+### Discovery and Elaboration
 - New Requirement/s Emerge
 - Requirement Elaborated
 
-### 2. Uplift
+### Uplift
 - Standard Uplifted
 - Articfacts Uplifted
   - Swagger - Interface Definition
@@ -30,24 +30,24 @@ This diagram shows the NHS Booking Standards lifecycle.
 - Booking Standard Site Uplifted
 - FHIR NHS Booking API Uplifted
 
-### 3. Review 
+### Review 
 - Uplift Reviewed
 
-### 4. Versioning 
+### Versioning 
 - Standard Version Incremented
 - Standard Marked As Pre-release
 
-### 5. Publishing (Pre-Release)
+### Publishing (Pre-Release)
 - Booking Standard Published
 - FHIR NHS Booking API Published
 - Artefacts Published  
 
-### 6 External Review
+### External Review
 - Suppliers Engaged
 - Supplier Feedback
   - Optional - Back to Discovery and Elaboration
 
-### 7 Publishing (Alpha/Beta/Public)
+### Publishing (Alpha/Beta/Public)
   - Booking Standard Published
   - FHIR NHS Booking API Published
   - Artefacts Published  
@@ -89,14 +89,14 @@ http://hl7.org/fhir/STU3/index.html), however, from release 2.0.0 the standard w
 
 
 ### Provider Requirements
-Providers MUST support multiple versions of the NHS Booking Standard.  
+- Providers MUST support multiple versions of the NHS Booking Standard.  
 
-Providers MUST support a minimum of 2 NHS Booking Standard versions, this support MUST when appropriate include support for multiple [Major Version](#major_version_heading) iterations.
+- Providers MUST support a minimum of 2 NHS Booking Standard versions, this support MUST when appropriate include support for multiple [Major Version](#major_version_heading) iterations.
 
-Providers MUST specify their version support in their [Capability Statement](TBC)
+- Providers MUST specify their version support in their [Capability Statement](TBC)
 
 >TODO - Need Capability URL from IOPS once it has been published
 
 
 ### Consumer Requirements
-Consumers MUST use the Provider's [Capability Statement](TBC) to establish.......
+- Consumers MUST use the Provider's [Capability Statement](TBC) to establish the version/s of the NHS Booking Standard supported by the Provider.
