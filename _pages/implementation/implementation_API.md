@@ -216,6 +216,11 @@ The SSP SHALL perform the following checks to authenticate client request:
 
 Providers SHALL use the following HTTP header to ensure that no intermediaries cache responses: `Cache-Control: no-store`
 
+#### Integrity Headers ####
+{% include important.html content="Please refer to [Transactional Integrity](fs_xti.html) for more information on Integrity Header parameters." %}
+
+
+
 ### Managing resource contention ###
 
 To facilitate the management of [resource contention](http://hl7.org/fhir/STU3/http.html#concurrency), servers SHALL always return an `ETag` header with each resource including the resource’s `versionId`:
