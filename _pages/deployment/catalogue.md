@@ -221,7 +221,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>  
                 
@@ -233,7 +233,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td>Not Started</td>
+                <td style="background-color: #ffffcc;">Engagement</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>  
                 
