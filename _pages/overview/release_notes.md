@@ -32,7 +32,8 @@ The 0.2.2 BETA release has the following highlights:
   * New page added for the the {%include FHIRSpecificationLink.html page="bundle.html" text="Bundle resource" %}. <mark style="background-color: LightGreen">non-breaking</mark>
   * Addition of a new FHIR SearchParameter required for {%include FHIRSpecificationLink.html page="search_free_slots.html#search-parameters" text="searching slots" %}. <mark style="background-color: LightGreen">non-breaking</mark>
   * Guidance added for outputting data in {%include FHIRSpecificationLink.html page="search_free_slots.html#_format" text="different formats" %} <mark style="background-color: LightGreen">non-breaking</mark>
-  * Additional guidance added for the {%include FHIRSpecificationLink.html page="patient.html#key-fhir-elements" text="patient.telecom element" %} <mark style="background-color: LightGreen">non-breaking</mark>  
+  * Additional guidance added for the {%include FHIRSpecificationLink.html page="patient.html#key-fhir-elements" text="patient.telecom element" %} <mark style="background-color: LightGreen">non-breaking</mark> 
+  * A new page describing the {%include FHIRSpecificationLink.html page="uec_capability.html" text="capability statement"%} has been created. <mark style="background-color: LightGreen">non-breaking</mark> <ADD-CORRECT-LINK-WHEN-READY>
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
   * Some typos were fixed <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes <mark style="background-color: LightGreen">non-breaking</mark>
