@@ -216,8 +216,8 @@ The SSP SHALL perform the following checks to authenticate client request:
 
 Providers SHALL use the following HTTP header to ensure that no intermediaries cache responses: `Cache-Control: no-store`
 
-#### Integrity Headers ####
-{% include important.html content="Please refer to [Transactional Integrity](fs_xti.html) for more information on Integrity Header parameters." %}
+#### Integrity headers ####
+{% include important.html content="Header parameters supporting the integrity of transactions are defined in the [Transactional Integrity](fs_xti.html) pages." %}
 
 
 ### Managing resource contention ###
