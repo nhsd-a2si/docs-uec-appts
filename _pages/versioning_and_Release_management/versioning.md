@@ -14,7 +14,7 @@ This page details the NHS Booking Standard approach to versioning and release ma
 ## Lifecycle
 This diagram shows the NHS Booking Standards lifecycle.
 
-<img src="img/NHS Booking Lifecycle Process.png">
+<img src="img/NHS_ Booking_Lifecycle_Process.png">
 
 
 ### Discovery and Elaboration
