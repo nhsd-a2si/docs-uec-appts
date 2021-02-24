@@ -16,7 +16,9 @@ Version | Handle  | Phase | State           | Release Date | Stability
 --------|---------|-------|-----------------|--------------|----------------
 0.2.0  | BETA   | Public Beta | Current Version | 12/02/2021   | Volatile
 
-The 0.2.2 BETA release has the following highlights:
+This is the biggest release for some time. It marks the progression to a public beta level of maturity and it is planned to be the final step before a release candidate for version 1.0.0
+
+The 0.2.0 BETA release has the following highlights:
 
 * The FHIR API Specification has been updated to 2.0.2 BETA 
   * {%include FHIRSpecificationLink.html page="resources_overview.html" text="Resources Overview" %} page has been updated to reflect a generic use case. <mark style="background-color: LightGreen">non-breaking</mark>
@@ -53,7 +55,7 @@ The 0.2.2 BETA release has the following highlights:
 * Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing ambiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
 * A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
-* The overview page on [error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
+* The [overview page on error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
 * The page on [error handling](er_errorhandling.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
 * The [booking and referral messages](dos_itk.html.html){:target="_blank"} page was removed as it is duplicating the "transfer of care" page in the "functional spec" section <mark style="background-color: LightGreen">non-breaking</mark>
 * The [transfer of care](fs_xfercare.html){:target="_blank"}  page was updated to provide more clarity on how to store appointment references in the 111CDA document <mark style="background-color: LightGreen">non-breaking</mark>
