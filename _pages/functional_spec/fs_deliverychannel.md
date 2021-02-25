@@ -31,3 +31,5 @@ In order to prevent incorrect or unsuitable bookings, and to allow a patient to 
 <br><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">mandatory (Consumer)</mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Provider)</mark>
 - Practitioner name and gender 
 <br><mark style="background-color: LightGray;font-family: Courier New, Courier, monospace">mandatory (Consumer)</mark> <mark style="background-color: LightBlue;font-family: Courier New, Courier, monospace">Optional (Provider)</mark>
+
+In the case of Delivery Channel, if no delivery channel is specified by the Provider, then the Consumer **must not** default to any specific delivery channel, they must instead not display anything or else in some way indicate the information was not supplied.
