@@ -52,7 +52,7 @@ The 0.2.0 BETA release has the following highlights:
 * Removed references to the demonstrator 
 * Added new pages to support the new [Provider and Consumer simulator tools](sims_install.html){:target="_blank"} <mark style="background-color: LightGreen">non-breaking</mark>
 * Fixed some broken links that referenced external resources <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-* Added a new page providing some [API guidance](implementation_api){:target="_blank"}, removing ambiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
+* Added a new page providing some [API guidance](implementation_api.html){:target="_blank"}, removing ambiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
 * A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * The [overview page on error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
@@ -64,6 +64,7 @@ The 0.2.0 BETA release has the following highlights:
 * [IG FAQ](ig_overview.html){:target="_blank"} has been updated with new content <mark style="background-color: LightGreen">non-breaking</mark>  
 * A new page: [using this site](using_this_site.html){:target="_blank"} has been added <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page: [getting started](getting_started.html){:target="_blank"} has been added with new content <mark style="background-color: LightGreen">non-breaking</mark>
+* Updated guidance on [delivery channel](fs_deliverychannel.html){:target="_blank"} to specifically prohibit setting a default<mark style="background-color: #ff8080">breaking</mark>
 * An indication of breaking and non-breaking changes has been added to the release notes <mark style="background-color: LightGreen">non-breaking</mark>
 
 <br>
