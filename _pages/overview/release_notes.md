@@ -39,6 +39,7 @@ The 0.2.0 BETA release has the following highlights:
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
   * Some typos were fixed <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes <mark style="background-color: LightGreen">non-breaking</mark>
+  * A new scope claim has been added to make their application more intuitive <mark style="background-color: #ff8080">breaking</mark>
 * Removed references to Appointment Registry from [Cancellation section](cr_overview.html){:target="_blank"} <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated the name of the standard to "NHS Booking Standard" and removed references specifically referring to the standard as the "UEC Booking Standard" to support future use cases <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated most pages to reference booking rather than "appointment" unless specifically appropriate <mark style="background-color: LightGreen">non-breaking</mark>
