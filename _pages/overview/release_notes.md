@@ -45,7 +45,7 @@ The 0.2.0 BETA release has the following highlights:
 * Updated some wording on [booking definition](definition.html){:target="_blank"} page to be more generic <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated [contact details](contact.html){:target="_blank"} to new contact email address <mark style="background-color: LightGreen">non-breaking</mark>
 * A small update to the guidance on [how to handle times](fs_times.html){:target="_blank"} was made. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-* A new page on [how to store patient contacts](fs_patientcontact.html){:target="_blank"} has been added. This providers clear business rules on what and where contacts should be stored <mark style="background-color: #ff8080">breaking</mark>
+* A new page on [how to store patient contacts](fs_patientcontact.html){:target="_blank"} has been added. This provides clear business rules on what and where contacts should be stored <mark style="background-color: #ff8080">breaking</mark>
 * Based on usability feedback, the menu system has been updated to use a single menu flow rather than break out to "sub-pages" for certain sections <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing how to [maintain transactional integrity](fs_xti.html){:target="_blank"} and how custom headers can support this <mark style="background-color: #ff8080">breaking</mark>
 * Updated the [deployment toolkit](deployment_toolkit.html){:target="_blank"} with a significant amount of new content <mark style="background-color: LightGreen">non-breaking</mark>
