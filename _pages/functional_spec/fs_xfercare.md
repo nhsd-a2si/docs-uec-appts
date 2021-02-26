@@ -50,31 +50,35 @@ In this illustration we have a referral from 111 using a 111CDA document contain
         </playingEntity>
       </participantRole>
     </participant>
-    <section classCode="DOCSECT" moodCode="EVN">
-      <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>
-      <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>
-      <title>Booked Appointment Information </title>
-      <text>
-        <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">
-          https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>
-      </text>
-    </section>
+    <component typeCode="COMP" contextConductionInd="true">
+        <npfitlc:contentId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+        <section classCode="DOCSECT" moodCode="EVN">
+            <templateId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+            <id root="90611FD4-6616-11EB-B9BD-00155D70280A"/>
+            <title>Booked Appointment Information</title>
+            <text>
+                <linkHtml href="https://<generic-address-here>/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348/">https://NHSD.Test.INT.nhs.uk/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348</linkHtml>
+            </text>
+        </section>
+    </component>
   </encounter>
 </entry>
 ```
 
-Key to the linking is the ```DOCSECT``` section, specifically the ```linkHtml``` element where the appointment URL is specified.
+Key to the linking is the ```COMP``` component, specifically the ```linkHtml``` element where the appointment URL is specified.
 
-```xml
-<section classCode="DOCSECT" moodCode="EVN">
-  <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146246GB01#Section1"/>
-  <id root="773110DB-288F-4B32-8DE1-362646A65E8C"/>
-  <title>Booked Appointment Information </title>
-  <text>
-    <linkHtml href="https://servername.orgname.nhs.uk/FHIR/Appointment/1234567">
-      https://servername.orgname.nhs.uk/FHIR/Appointment/1234567</linkHtml>
-  </text>
-</section>
+```XML
+<component typeCode="COMP" contextConductionInd="true">
+    <npfitlc:contentId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
+    <section classCode="DOCSECT" moodCode="EVN">
+        <templateId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
+        <id root="90611FD4-6616-11EB-B9BD-00155D70280A"/>
+        <title>Booked Appointment Information</title>
+        <text>
+            <linkHtml href="https://<generic-address-here>/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348/">https://NHSD.Test.INT.nhs.uk/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348</linkHtml>
+        </text>
+    </section>
+</component>
 ```
 
 The process for being able to link the two together is complicated by the fact that the identifier for the CDA is created by the Consumer, while the identifier for the Appointment is created by the Provider. As a result of this, the following process needs to be followed:
@@ -87,7 +91,7 @@ The process for being able to link the two together is complicated by the fact t
  * Complete the CDA generation as normal.
  * Add the ODS into the CDA as shown above.
 
-{% include important.html content="Whist the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
+{% include important.html content="The URL **MUST** be taken from the ```linkHtml``` ```href``` tag and a whilst the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
 
 For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
 " %}
