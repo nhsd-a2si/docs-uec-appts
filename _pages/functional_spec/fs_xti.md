@@ -27,6 +27,7 @@ If consumers follow this pattern, then information from other systems that they 
 
 Both consumer and provider systems **should** clearly document how transaction integrity is handled by specifying in the documentation inside the {%include FHIRSpecificationLink.html page="uec_capability.html" text="CapabilityStatement" %}
 
+
 ## Handling a special case - duplicates arising from retrys
 
 In order to further assist in maintaining the integrity of transactions some custom headers are available. It is expected that two of the custom headers defined in the FHIR standard are used for this purpose: 

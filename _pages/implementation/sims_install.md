@@ -148,7 +148,7 @@ To run a single test suite, use the Initial value when invoking the Consumer Sim
 |B|Book appointment|
 |C|Cancel appointment|
 
-# Provider
+## Provider
 The TKW Provider Simulator is capable of testing a Consumer solution. As with any Provider system solution, it is passive and waits to accept requests. 
 
 Once the container is up and running, reporting ‘*ITK Testbench ready*’, requests can be sent to it. The supplier's Consumer solution can be directed to the Provider Simulator, based on the address it was configured to listen via the Docker compose file - **docker-compose_provider_simulator.yml**.
