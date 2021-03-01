@@ -1,6 +1,6 @@
 ---
-title: Deployment Toolkit - Service Provider Resources
-sidebar: deployment_sidebar
+title: Deployment Toolkit - Provider Resources
+sidebar: overview_sidebar
 keywords: guidance
 permalink: dep_provoverview.html
 toc: false

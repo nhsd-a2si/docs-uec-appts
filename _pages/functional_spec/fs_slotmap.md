@@ -1,5 +1,5 @@
 ---
-title: Appointment Mapping
+title: Booking Mapping
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_slotmap.html
@@ -9,15 +9,15 @@ folder: functional_spec
 
 ## Introduction
 
-As already described the primary service discovery tool is envisaged to be the Urgent Care Directory of Services. One aspect of searching the DoS that has not been described is how outcomes from the prior clinical assessment map to DoS services and subsequent appointment booking workflows. 
+As already described some form of a service discovery tool is envisaged to be used as part of the booking workflow. One aspect of using a servicediscovery tool (such as the UEC DoS) that has not been described is how outcomes from the prior clinical assessment map to services and subsequent booking workflows. 
 
-## With Care Connect booking
+## With booking based on this standard
 
-It is the intention that with UEC booking using the Care Connect standard the clinical profiling of the DoS service will solely determine the requirement for booking. This is because of the effective 1:1 mapping between DoS service and apppointment diary. This means that for UEC appointment booking using the Care Connect standard, if a service is returned and has a booking endpoint, then a booking should be attempted with no further check on the outcome of the prior clinical assessment.
+It is the intention that with booking using this standard, the clinical profiling of the service will solely determine the requirement for booking. This is because of the effective 1:1 mapping between service and booking diary. This means that for example with UEC appointment booking using this standard, if a service is returned and has a booking endpoint, then a booking should be attempted with no further check on the outcome of the prior clinical assessment.
 
 ## With GP Connect Booking
 
-However, since this level of granularity for linking DoS services to appointment diaries is not available when booking UEC appointments using the GP Connect standard some services may be returned that are profiled for broader clinical needs for which there is no intention to support a booking. It is therefore a requirement to perform a local mapping within the consumer system against the triage outcome and appointment booking.
+However, since this level of granularity for linking services to booking diaries is not available when booking using the GP Connect standard some services may be returned that are profiled for broader clinical needs for which there is no intention to support a booking. It is therefore a requirement to perform a local mapping within the consumer system against the triage outcome and booking.
 
 When the clinical assessment  is performed using the NHS Pathways assessment tool a standard set of Pathways dispositions has been developed to support this mapping. When booking into Primary Care services it is expected that all Pathways assessments that reach one of the following list of dispositions should result in a referral to a service with an appointment being offered:
 
@@ -51,7 +51,6 @@ However, locally some areas may differ from the above list, therefore your syste
 
 ## Support for "booking only" type services
 
-Some services that are profiled on the Urgent Care Directory of Services are comissioned as "booking only" services. That is to say that they only accept referrals with an appointment. If no appointment is available then a referral should not be made.
-Currently the DoS referral workflows do not support witholding refferal options if no booking is made. 
+Some services that are profiled on the Urgent Care Directory of Services are comissioned as "booking only" services. That is to say that they only accept referrals with an booking. If no booking is available then a referral should not be made.
 
-This will be supported in an upcoming release of the DoS. A new "service attribute" will be configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the service all consumer systems should withold referrals. More information can be found <a href="dos_bookingonly.html" target="_blank">here</a>
+A "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the service all consumer systems should withold referrals. More information can be found <a href="dos_bookingonly.html" target="_blank">here</a>

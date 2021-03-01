@@ -1,6 +1,6 @@
 ---
 title: GP Connect - Comparison with proprietary booking
-sidebar: gpc_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: gpc_propcon.html
 toc: false

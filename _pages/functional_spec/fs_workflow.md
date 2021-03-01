@@ -47,27 +47,27 @@ The Patient Demographic Service is a Spine service that enables matching capture
 The national DoS can be used to discover the most appropriate service for the patient. If that service offers appointments the necessary information required to query SDS for the endpoint will be provided. 
 
 #### Spine Directory Service (SDS)
-The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS following <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>.
+The SDS performs the role of the booking endpoint directory. Endpoints for the booking API of target provider systems will be registered on the SDS following <A href="assurance_supplier.html" target="_blank">assurance</a>.
 
 #### Spine Secure Proxy (SSP)
-The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="https://nhsd-a2si.github.io/docs-uec-appts/assurance_supplier.html" target="_blank">assurance</a>
+The SSP brokers and routes connections to endpoints. In order to facilitate urgent appointment booking it is important to support the ability to establish connections between systems on-the-fly without prior networking or security configuration between two specific systems. In order to do this all communications between systems are brokered via the SSP. That way systems involved in booking only ever need to establish and accept connections from/to the SSP which can be configured once, as part of <A href="assurance_supplier.html" target="_blank">assurance</a>
 
 ### Provider Systems
-The provider system is the system that is offering appointments to be booked into. This system will be configured to accept connections from the SSP and will offer the defined capabilities in this standard via its FHIR Interface. There are many different service types that could be a booking provider including UTC's, OOH GP's, Emergency Dental services etc.. 
+The provider system is the system that is offering bookings. This system will be configured to accept connections from the SSP and will offer the defined capabilities in this standard via its FHIR Interface. There are many different service types that could be a booking provider including ED's, UTC's, OOH GP's, Emergency Dental services etc.. 
 
 ## Service Discovery
 
-The first step of the booking process involves some form of service discovery. Typically this will use the <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Urgent Care Directory of Services (known as the "DoS")</a> to identify the most appropriate service to meet the patients needs. 
+The first step of the booking process involves some form of service discovery. Typically this will use a service discovery tool such as the <a href="https://digital.nhs.uk/services/directory-of-services-dos" target="_blank">Urgent Care Directory of Services (known as the "DoS")</a> to identify the most appropriate service to meet the patients needs. 
 
-In the situation the DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services (`CheckCapacitySummary`). 
+Where the UEC DoS is being used there will be the initial call to the DoS API to return the ordered list of appropriate services (`CheckCapacitySummary`). 
 
 <img src="_pages/functional_spec/img/ServiceDiscovery1.png">
 
-Once the chosen service has been selected the next call to the DoS API is made (`ServiceDetailsByID`) and this will return the specific details of the selected service including, where the service offers appointment booking, something called an Accredited System Identifier (ASID).
+Once the chosen service has been selected the next call to the DoS API is made (`ServiceDetailsByID`) and this will return the specific details of the selected service including, where the service offers booking, something called an Accredited System Identifier (ASID).
 
 <img src="_pages/functional_spec/img/ServiceDiscovery2.png">
 
-An ASID is used to obtain the endpoint for booking into the Provider system. The DoS service ID would be used to identify the appointment schedule in the Provider system.
+An ASID is used to obtain the endpoint for booking into the Provider system. The DoS service ID would be used to identify the booking schedule in the Provider system.
 
 ## Endpoint Discovery
 
@@ -115,7 +115,7 @@ Using the access token the provider system can:
 * Determine the identity of the consumer system.
 * Be reassured that the consumer system has gone through the appropriate assurance to request slots and/or book appointments.
 * Determine that the consumer system is involved in the provision of direct patient care (rather than for administrative purposes).
-* Determine the care setting (e.g. urgent care, routine care Etc) for which the consumer system is requesting slots or booking an appointment.
+* Determine the care setting (e.g. urgent care, routine care Etc) for which the consumer system is requesting slots or making a booking.
 
 More details on the authentication approach can be found <a href="fs_authentication.html" target="_blank">here</a>.
 
@@ -136,8 +136,7 @@ This will return a FHIR slot resource bundle for example:
 
 <details>
   <summary>Click to expand!</summary>
-   
-      ```json
+  {% highlight json %} 
       {
         "resourceType": "Bundle",
         "type": "searchset",
@@ -229,11 +228,10 @@ This will return a FHIR slot resource bundle for example:
           }
         ]
       }
-      ```
-
+      {% endhighlight %}
 </details>
 
-## Book Appointment
+## Make Booking
 
 The booking is made following a similar process as getting available slots. However this time a post is made to the SSP with a serialised {% include FHIRSpecificationLink.html text="FHIR appointment resource" %} as the payload.
 

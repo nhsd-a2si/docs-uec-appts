@@ -11,7 +11,7 @@ tags: [fhir,development]
 ---
 ## Purpose ##
 
-This site is intended for use by software developers looking to build a conformant Care Connect API interface using the FHIR&reg; standard with a focus on general API implementation guidance.
+This site is intended for use by software developers looking to build a conformant NHS Booking API interface using the FHIR&reg; standard with a focus on general API implementation guidance.
 
 ### Notational conventions ###
 
@@ -19,9 +19,9 @@ The keywords ‘**MUST**’, ‘**MUST NOT**’, ‘**REQUIRED**’, ‘**SHALL*
 
 ## General standards ##
 
-Information on the technical standards that SHALL be conformed to can be found in the sections below and throughout the Care Connect specification.
+Information on the technical standards that SHALL be conformed to can be found in the sections below and throughout this documentation.
 
-{% include important.html content="Any additional principles highlighted in the Care Connect specification MUST take precedence over those defined in these technical standards." %}
+{% include important.html content="Any additional principles highlighted in the specification MUST take precedence over those defined in these technical standards." %}
 
 ## Internet standards ##
 
@@ -74,7 +74,7 @@ Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs
   - `careconnect/slot` for the Slot capabilities
 
 
-  **Please note:** The Appointment Management and Foundations capabilities **SHALL** have the same `[PROVIDER_ROUTING_SEGMENT]` value.  Other capabilies **SHALL** have different values.
+  **Please note:** The Booking Management and Foundations capabilities **SHALL** have the same `[PROVIDER_ROUTING_SEGMENT]` value.  Other capabilies **SHALL** have different values.
 
 - The Service Root URL **SHALL NOT** contain a trailing `/`
 

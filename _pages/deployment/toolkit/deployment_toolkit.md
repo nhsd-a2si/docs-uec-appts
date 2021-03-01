@@ -1,6 +1,6 @@
 ---
 title: Deployment Toolkit
-sidebar: deployment_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: deployment_toolkit.html
 toc: false

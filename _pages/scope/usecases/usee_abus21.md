@@ -1,6 +1,6 @@
 ---
 title: ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usee_abus21.html
 ---
 

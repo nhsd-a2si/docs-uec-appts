@@ -1,6 +1,6 @@
 ---
 title: Interactions with the DoS
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_requirements.html
 toc: false

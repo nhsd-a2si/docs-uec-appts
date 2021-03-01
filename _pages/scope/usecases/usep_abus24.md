@@ -1,6 +1,6 @@
 ---
 title: ABUS.24 Stopping referrals for booking only services
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usep_abus24.html
 ---
 
