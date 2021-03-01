@@ -91,16 +91,16 @@ The process for being able to link the two together is complicated by the fact t
  * Complete the CDA generation as normal.
  * Add the ODS into the CDA as shown above.
 
+{% include important.html content="The URL **MUST** be taken from the ```linkHtml``` ```href``` tag and a whilst the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
+
+For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
+" %}
+
 It **must** be noted, CDA messages offer operations which the Booking Standard does not support. 111CDA allows for a message to be replaced, the new message superceding the original as the most clinically relevant, rendering the original out-of-date and not to be used for clinical decision making. 
 
 The process of replacing CDAs is usually acceptable, the documents are versioned and all must be stored by the receiver, providing a complete audit history. However, when a booking is made, it includes reference to a specific CDA document which, if the replace operation is performed, no longer exists as a clinically relevant document.
 
 {% include important.html content="Replace/Update operations **must** not be performed against CDA messages once transmitted and linked to a booking" %}
-
-{% include important.html content="The URL **MUST** be taken from the ```linkHtml``` ```href``` tag and a whilst the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
-
-For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
-" %}
 
 ### Provider Requirements
 
