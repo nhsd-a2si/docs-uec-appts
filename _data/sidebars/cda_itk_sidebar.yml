@@ -1,0 +1,16 @@
+entries:
+  -
+    folders:
+      -
+        folderitems:
+          -
+            output: "web, pdf"
+            title: "Transfer of Care Documentation"
+            url: /fs_xfercare.html
+          -
+            output: "web, pdf"
+            title: "Transfer of Care Documentation Guidance and Changes"
+            url: /fs_xfercare_guidance.html
+        output: web
+        title: "CDA and ITK Guidance"
+    title: "Urgent & Emergency Care Appointment Booking Standards - CDA and ITK Guidance"
