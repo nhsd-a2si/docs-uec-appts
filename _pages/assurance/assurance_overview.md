@@ -5,7 +5,7 @@ sidebar: overview_sidebar
 permalink: assurance_overview.html
 ---
 
-The assurance process that has been adopted for the UEC Appointment Booking standard is based on the following principles:
+The assurance process that has been adopted for the NHS Booking standard is based on the following principles:
 
 ## Assurance principles 
 High-level design principles related to the assurance processes 

@@ -9,9 +9,9 @@ summary: "Implementation guidance for developers - focusing on error handling"
 
 ## Introduction
 
-There are several points at which an error may occur to prevent the appointment booking operations completing successfully.
+There are several points at which an error may occur to prevent the booking operations completing successfully.
 
-The following guidance is for Care Connect Appointment booking.  GP Connect is very similar but has specific guidance <a href="https://nhsconnect.github.io/gpconnect/development_fhir_error_handling_guidance.html" target="_blank">here</a>.
+The following guidance is for "Care Connect" booking.  GP Connect is very similar but has specific guidance <a href="https://nhsconnect.github.io/gpconnect/development_fhir_error_handling_guidance.html" target="_blank">here</a>.
 
 ## Overview
 
@@ -88,7 +88,7 @@ Here are examples of errors returned by SSP as error codes:
 
 Providers MUST respond to errors processing requests from a Consumer system as per the guidance below.  The SSP will forward the responses unchanged.
 
-For Care Connect appointment workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource.
+For Care Connect booking workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource.
 
 The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>
 
@@ -219,7 +219,7 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="4">Book an appointment</td>
+                <td rowspan="4">Make a Booking</td>
                 <td>The request body was simply invalid</td>
                 <td>400 Bad Request</td>
                 <td>Add in details of what specifically is the issue in the request - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
@@ -244,7 +244,7 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="2">Get an appointment</td>
+                <td rowspan="2">Get a booking</td>
                 <td>The resource does not exist on the server e.g. invalid appointment resource reference</td>
                 <td>404 Not found</td>
                 <td>Add in details of what specifically is the issue.</td>
@@ -257,10 +257,10 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>Cancel an appointment</td>
-                <td>The consumer org is not permitted to cancel this appointment. Note the UEC appointment flows permit cancellation by organisations other than the organisation that booked the appointment - but this is managed locally in the Provider system with configuration to allow the provider to control who can cancel appointments.</td>
+                <td>Cancel a booking</td>
+                <td>The consumer org is not permitted to cancel this booking. Note the booking flows permit cancellation by organisations other than the organisation that made the booking - but this is managed locally in the Provider system with configuration to allow the provider to control who can cancel bookings.</td>
                 <td>403 Forbidden</td>
-                <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the appointment e.g. only the organisation that booked the appointment is permitted to cancel an appointment.</td>
+                <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the booking e.g. only the organisation that made the booking is permitted to cancel a booking.</td>
               </tr>         
         </tbody>
       </table>

@@ -6,7 +6,7 @@ permalink: non_functional_requirements.html
 summary: "Details of non-functional requirements (NFRs) that describe system attributes such as security, reliability, maintainability, scalability, and usability"
 ---
 
-The non-functional requirements for systems assured for UEC Appointment booking using the Care Connect specification are detailed here.
+The non-functional requirements for systems assured for booking using the NHS FHIR Scheduling specification are detailed here.
 For the equivalent requirements for booking using the GP Connect standard, please see here: <a href="https://nhsconnect.github.io/gpconnect/development_api_non_functional_requirements.html" target="_blank">GP Connect non-functional requirements</a>.
 
 ## Security 

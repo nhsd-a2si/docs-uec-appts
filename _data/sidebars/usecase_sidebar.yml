@@ -1,5 +1,5 @@
 entries:
-- title: Urgent & Emergency Care Appointment Booking Standards - User Stories
+- title: NHS Booking Standard - User Stories
   folders:
   - title: Overview
     url: /use_overview.html
@@ -13,16 +13,16 @@ entries:
     - title: Display available slots
       url: /usep_abus10.html
       output: web, pdf
-    - title: Book an appointment
+    - title: Make a Booking
       url: /usep_abus12.html
       output: web, pdf     
     - title: Booking outside assessment timeframe
       url: /usep_abus13.html
       output: web, pdf
-    - title: Cancel a booked appointment
+    - title: Cancel a Booking
       url: /usee_abus21.html
       output: web, pdf
-    - title: Rebook a booked appoimtment
+    - title: Rebook a Booking
       url: /usee_abus22.html 
       output: web, pdf
     - title: Stopping referrals for booking only services
@@ -31,6 +31,6 @@ entries:
   - title: Emerging Capabilites
     output: web
     folderitems: 
-    - title: Cancel any IUC appointment
+    - title: Cancel any IUC booking
       url: /usee_abus23.html
       output: web, pdf

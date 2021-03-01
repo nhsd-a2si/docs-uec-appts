@@ -6,11 +6,7 @@ entries:
           - 
             output: "web, pdf"
             title: Overview
-            url: /cr_overview.html
-          - 
-            output: "web, pdf"
-            title: Architecture
-            url: /cr_arch.html    
+            url: /cr_overview.html           
           - 
             output: "web, pdf"
             title: Workflow

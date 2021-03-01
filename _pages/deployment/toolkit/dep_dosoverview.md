@@ -1,5 +1,5 @@
 ---
-title: Deployment Toolkit - DoS Lead Resources
+title: Deployment Toolkit - UEC DoS Lead Resources
 sidebar: deployment_sidebar
 keywords: guidance
 permalink: dep_dosoverview.html
@@ -9,14 +9,35 @@ folder: deployment
 
 ## What do I need to know? 
 
+When a service engages a project to open their booking schedules, and allow other services to discover them and consume their resources, there will be a need to work closely with DoS leads. The way in which a service exposes their schedule resource (slots for booking into) will be entirely down to how the service discovery tool used, in the example to follow the DoS (Directory of Services), is configured.
 
-## Why do I need to be involved?
+System suppliers will build to the Booking Standard and support Service Providers to offer their schedule resource in a very granular way, splitting services using the DoS Service Id or combining them, as detailed under the <a href="fs_slotmanagement.html" target="_blank">functional specification</a>. The DoS Service Id is central to exposing the service schedules, marrying up the Service Provider’s schedules with entries on the DoS.
 
-
-## How can I get involved?
-
+If you have any questions please contact the Booking team at: bookingandreferrals@nhs.net
 
 ## Configuring the DoS for Appointment Booking
+
+### Scheduling Endpoint
+
+
+A scheduling endpoint must be configured against a service to enabling booking. If a Service Provider opts to divide their schedule resource, it is permissable to configure the same endpoint against multiple DoS Service Ids. The services making a request (the consumers) of the Service Providers resource will use the DoS Service Id to distinguish between different schedules the Service Provider offers. 
+
+#### Configuring DoS
+1. Find or create the service you wish to add the scheduling endpoint to 
+2. On the 'Endpoint Details' tab, click 'Add an Endpoint'
+<img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoints.png">
+3. Configure the endpoint options, as detailed in the screenshot below
+<img src="_pages/deployment/toolkit/img/DoS_FHIR_EndpointsConfig.png">
+4. The Address field is important, it must have the 'ASID:' prefix before the ASID value
+<img src="_pages/deployment/toolkit/img/DoS_FHIR_ASID_Prefix.png">
+5. Click 'Save' to commit the configuration, followed by 'OK'
+<img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoint_Save.png">
+6. The scheduling endpoint should now be visible under 'Endpoint Details'
+<img src="_pages/deployment/toolkit/img/DoS_FHIR_Endpoint_Complete.png">
+{% include important.html content="Services consuming the schedule resource to request bookings rely on the **ASID:** prefix and without it booking will not work" %}
+
+## Configuring the UEC DoS for Booking
+
 
 ### Service Attributes
 
@@ -27,7 +48,7 @@ The attribute used for apointment booking is entitled '**requirebooking**' and i
 
 If this attribute is assigned to a service it means a referral cannot be made unless an appointment has been booked. 
 
-### Configuring DoS
+#### Configuring DoS
 1. Find the service you wish to add the Attribute to
 2. On the 'Service Attributes' tab, click the pencil icon to edit 
 <img src="_pages/deployment/toolkit/img/DoS_attribute_Add.png#1">
