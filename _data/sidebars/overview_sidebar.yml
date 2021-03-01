@@ -1,236 +1,291 @@
----
 entries:
-  -
-    title: "NHS Booking Standard"
-    product: ""
-    version: "v0.2.0 BETA"
-    spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
-    speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/"
-    folders: 
-      - 
-        title: Introduction
-        folderitems:
-          -
-            title: Introduction
-            output: "web, pdf"
-            type: homepage
-            url: /index.html
-          - 
-            title: "Using this site"
-            output: "web, pdf"            
-            url: /using_this_site.html
-          -
-            title: "Getting Started"
-            output: "web, pdf"
-            url: /getting_started.html
-          -
-            title: "Release Notes"
-            output: "web, pdf"
-            url: /release_notes.html
-        output: web
-      -
-        title: Overview
-        folderitems:
-          -
-            title: "Definition of Direct Booking"
-            output: "web, pdf"
-            url: /definition.html
-          -
-            title: "UEC Landscape"
-            output: "web, pdf"
-            url: /uec_overview.html
-          -
-            title: "What we are doing"
-            output: "web, pdf"
-            url: /what_are_we_doing.html
-          -
-            title: "Care Settings"
-            output: "web, pdf"
-            url: /caresetting.html
-        output: web
-      -
-        title: "Scope and user stories"
-        folderitems:
-          -
-            title: "Scope Overview"
-            output: "web, pdf"
-            url: /scope_overview.html
-          -
-            title: "Functional Scope"
-            output: "web, pdf"
-            url: /scope_functional.html
-          -
-            title: "User Stories"
-            output: "web, pdf"
-            url: /use_overview.html
-        output: web
-      -
-        title: "Non-Functional Requirements"
-        folderitems:
-          -
-            title: "Non Functional Requirements"
-            output: "web, pdf"
-            url: /non_functional_requirements.html
-        output: web
-      -
-        title: "Functional Specification"
-        folderitems:
-          -
-            title: "Workflow and Interactions"
-            output: web, pdf"
-            url: /fs_workflow.html
-          -
-            title: "GP Connect"
-            output: "web, pdf"
-            url: /gpc_overview.html
-          -
-            title: "Interactions with the DoS"
-            output: "web, pdf"
-            url: /dos_overview.html
-          -
-            title: "Interactions with the SDS"
-            output: "web, pdf"
-            url: /fs_sds.html
-          -
-            title: "Interactions with the SSP"
-            output: "web, pdf"
-            url: /fs_ssp.html
-          -
-            title: "Capability Statement"
-            output: "web, pdf"
-            url: /uec_capability.html
-          -
-            title: "FHIR Profile Overrides"
-            output: "web, pdf"
-            url: /fs_fhir_overrides.html
-          -
-            title: "How bookings map to clinical need"
-            output: "web, pdf"
-            url: /fs_slotmap.html
-          -
-            title: "How bookings map to services"
-            output: "web, pdf"
-            url: /fs_slotmanagement.html
-          -
-            title: "Slot Display Requirements"
-            output: "web, pdf"
-            url: /fs_deliverychannel.html
-          -
-            title: "How to handle times"
-            output: "web, pdf"
-            url: /fs_times.html
-          -
-            title: "Authentication"
-            output: "web, pdf"
-            url: /fs_authentication.html
-          -
-            title: "Error Handling"
-            output: "web, pdf"
-            url: /er_overview.html
-          -
-            title: "Cancelling Bookings"
-            output: "web, pdf"
-            url: /cr_overview.html
-          -
-            title: "Transfer of Care"
-            output: "web, pdf"
-            url: /fs_xfercare.html
-          -
-            title: "SMS For Bookings"
-            output: "web, pdf"
-            url: /fs_sms.html
-          -
-            title: "How to store patient contacts"
-            output: "web, pdf"
-            url: /fs_patientcontact.html  
-          -
-            title: "Monitoring, Analytics and Reporting"
-            output: "web, pdf"
-            url: /fs_reporting.html
-        output: web
-      -
-        title: "Implementing the standard"
-        folderitems:
-          -
-            title: "Implementation Overview"
-            output: "web, pdf"
-            url: /implementation_overview.html
-          -
-            title: "API Guidance"
-            output: "web, pdf"
-            url: /implementation_API.html
-          -
-            title: "Implementing FHIR® Resources"
-            output: "web, pdf"
-            url: /implementation_FHIR.html
-          -
-            title: "Versioning"
-            output: "web, pdf"
-            url: /Versioning.html
-          - 
-            title: "TKW Simulators"
-            output: "web, pdf"            
-            url: /sims_install.html
-        output: web
-      -
-        title: "First of Type"
-        folderitems:
-          -
-            title: "First of Type"
-            output: "web, pdf"
-            url: /first_of_type.html
-        output: web
-      -
-        title: "Information Governance"
-        folderitems:
-          -
-            title: "Information Governance Overview"
-            output: "web, pdf"
-            url: /ig_overview.html
-          -
-            title: "Information Governance FAQ"
-            output: "web, pdf"
-            url: /ig_faq.html
-        output: web
-      -
-        title: "Assurance Process"
-        folderitems:
-          -
-            title: "Assurance Overview"
-            output: "web, pdf"
-            url: /assurance_overview.html
-          -
-            title: "Supplier Conformance Assessment List (SCAL)"
-            output: "web, pdf"
-            url: /assurance_scal.html
-          -
-            title: "Supplier Assurance Prerequisites and Requirements"
-            output: "web, pdf"
-            url: /assurance_supplier.html
-        output: web
-      -
-        title: "Deployment"
-        folderitems:
-         -
-            title: "Deployment Toolkit"
-            output: "web, pdf"
-            url: /deployment_toolkit.html
-         -
-            title: "Supplier Conformance Catalogue"
-            output: "web, pdf"
-            url: /catalogue.html
-        output: web
+- title: "NHS Booking Standard"
+  product: ""
+  version: "v0.2.0 BETA"
+  spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
+  speclink: "https://apibooking202.netlify.app/index.html"
+  levels: one
+  folders: 
+  
+  - title: "Introduction"
+    output: web
+    folderitems:
+    - title: "Introduction"
+      url: /index.html
+      output: "web, pdf"
+      type: homepage
+    - title: "Using this site"
+      url: /using_this_site.html
+      output: "web, pdf"
+    - title: "Getting Started"
+      url: /getting_started.html
+      output: "web, pdf"
+    - title: "Release Notes"
+      url: /release_notes.html
+      output: "web, pdf"      
+  
+  - title: "Overview"
+    output: web
+    folderitems:    
+    - title: "Definition of Direct Booking"
+      url: /definition.html
+      output: "web, pdf"      
+    - title: "UEC Landscape"
+      url: /uec_overview.html
+      output: "web, pdf"        
+    - title: "What we are doing"
+      url: /what_are_we_doing.html
+      output: "web, pdf"
+    - title: "Care Settings"
+      url: /caresetting.html
+      output: "web, pdf"            
 
-      -
-        title: "Help and Support"
-        folderitems:
-          -
-            title: "Contact Details"
-            output: "web, pdf"
-            url: /contact.html
-          -
-            title: Glossary
-            output: "web, pdf"
-            url: /glossary.html
-        output: web
-    levels: one
+  - title: "Scope and user stories"
+    output: web
+    folderitems:
+    - title: "Scope Overview"
+      url: /scope_overview.html
+      output: "web, pdf"     
+    - title: "Functional Scope"      
+      url: /scope_functional.html
+      output: "web, pdf"
+      subfolders:    
+      - title: "User Stories"
+        output: "web, pdf"
+        subfolderitems:
+        - title: "Overview"
+          url: /use_overview.html
+          output: web, pdf         
+        - title: "- Display provider services"
+          url: /usep_abus01.html
+          output: web, pdf
+        - title: "- Display available slots"
+          url: /usep_abus10.html
+          output: web, pdf
+        - title: "- Make a Booking"
+          url: /usep_abus12.html
+          output: web, pdf     
+        - title: "- Booking outside assessment timeframe"
+          url: /usep_abus13.html
+          output: web, pdf
+        - title: "- Cancel a Booking"
+          url: /usee_abus21.html
+          output: web, pdf
+        - title: "- Rebook a Booking"
+          url: /usee_abus22.html 
+          output: web, pdf
+        - title: "- Stopping referrals for booking only services"
+          url: /usep_abus24.html
+          output: web, pdf
+        
+  - title: "Non-Functional Requirements"
+    output: web
+    folderitems:
+    - title: "Non Functional Requirements"
+      url: /non_functional_requirements.html      
+      output: "web, pdf"
+  
+  - title: "Functional Specification"
+    output: web
+    folderitems:
+    - title: "Workflow and Interactions"
+      url: /fs_workflow.html
+      output: web, pdf"
+      subfolders:
+      - title: "GP Connect"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /gpc_overview.html
+          output: "web, pdf"
+        - title: "Key requirements"
+          url: /gpc_requirement.html
+          output: "web, pdf"            
+        - title: "Comparison with proprietary booking"
+          url: /gpc_propcon.html
+          output: "web, pdf"
+        - title: "Differences between GP Connect and CareConnect"
+          url: /fs_gpcdiff.html
+          output: "web, pdf"      
+      - title: "Interactions with the DoS"      
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /dos_overview.html
+          output: "web, pdf"            
+        - title: "Key requirements"
+          url: /dos_requirements.html
+          output: "web, pdf"
+        - title: "Care Connect Workflow Overview"
+          url: /dos_wfoverview.html
+          output: "web, pdf"
+        - title: "Care Connect Workflow example"
+          url: /dos_wfexample.html
+          output: "web, pdf"
+        - title: "GP Connect Workflow Overview"
+          url: /gpc_wfoverview.html
+          output: "web, pdf"
+        - title: "GP Connect Workflow example"
+          url: /gpc_wfexample.html
+          output: "web, pdf"
+        - title: "Support for booking only services"
+          url: /dos_bookingonly.html   
+          output: "web, pdf" 
+        - title: "Previous Approach"
+          url: /dos_endpoints_existing.html
+          output: "web, pdf"           
+        - title: "New Approach"
+          url: /dos_endpoints_new.html
+          output: "web, pdf"            
+        - title: "Changes for Booking"
+          url: /dos_endpoints_booking.html  
+          output: "web, pdf"                
+    - title: "Interactions with the SDS"
+      url: /fs_sds.html
+      output: "web, pdf"
+    - title: "Interactions with the SSP"
+      url: /fs_ssp.html
+      output: "web, pdf"
+    - title: "Capability Statement"
+      url: /uec_capability.html
+      output: "web, pdf"
+    - title: "How bookings map to clinical need"
+      url: /fs_slotmap.html
+      output: "web, pdf"
+    - title: "How bookings map to services"
+      url: /fs_slotmanagement.html      
+      output: "web, pdf"
+    - title: "Slot Display Requirements"
+      url: /fs_deliverychannel.html
+      output: "web, pdf"
+    - title: "How to handle times"
+      url: /fs_times.html
+      output: "web, pdf"
+    - title: "Authentication"
+      url: /fs_authentication.html      
+      output: "web, pdf"
+      subfolders:
+      - title: "Error Handling"
+        output: "web, pdf"
+        subfolderitems:  
+        - title: "Error Handling Overview"
+          url: /er_overview.html
+          output: "web, pdf"
+        - title: "Response Handling" 
+          url: /er_errorhandling.html
+          output: "web, pdf" 
+      - title: "Cancelling Bookings"        
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /cr_overview.html
+          output: "web, pdf"                       
+        - title: Workflow
+          url: /cr_workflow.html 
+          output: "web, pdf"            
+    - title: "Transfer of Care"
+      url: /fs_xfercare.html
+      output: "web, pdf"
+    - title: "SMS For Bookings"
+      url: /fs_sms.html
+      output: "web, pdf"
+    - title: "How to store patient contacts"
+      url: /fs_patientcontact.html   
+      output: "web, pdf"
+    - title: "Transactional Integrity"
+      url: /fs_xti.html   
+      output: "web, pdf"
+    - title: "Monitoring, Analytics and Reporting"
+      url: /fs_reporting.html      
+      output: "web, pdf"
+      
+  - title: "Implementing the standard"
+    output: web
+    folderitems:
+    - title: "Implementation Overview"
+      url: /implementation_overview.html
+      output: "web, pdf"
+    - title: "API Guidance"
+      url: /implementation_API.html
+      output: "web, pdf"
+    - title: "Implementing FHIR® Resources"
+      url: /implementation_FHIR.html
+      output: "web, pdf"
+    - title: "Versioning"
+      output: "web, pdf"
+      url: /Versioning.html
+    - title: "TKW Simulators"
+      url: /sims_install.html      
+      output: "web, pdf"            
+  
+  - title: "First of Type"
+    output: web
+    folderitems:
+    - title: "First of Type"
+      url: /first_of_type.html     
+      output: "web, pdf"
+  
+  - title: "Information Governance"
+    output: web
+    folderitems:
+    - title: "Information Governance Overview"
+      url: /ig_overview.html
+      output: "web, pdf"
+    - title: "Information Governance FAQ"
+      url: /ig_faq.html
+      output: "web, pdf"
+  
+  - title: "Assurance Process"
+    output: web
+    folderitems:
+    - title: "Assurance Overview"
+      url: /assurance_overview.html
+      output: "web, pdf"            
+    - title: "Supplier Conformance Assessment List (SCAL)"
+      url: /assurance_scal.html
+      output: "web, pdf"
+    - title: "Supplier Assurance Prerequisites and Requirements"
+      url: /assurance_supplier.html
+      output: "web, pdf"
+            
+  - title: "Deployment"
+    output: web
+    folderitems:
+    - title: "Supplier Conformance Catalogue"
+      url: /catalogue.html
+      output: "web, pdf"
+      subfolders:
+      - title: "Deployment Toolkit"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /deployment_toolkit.html 
+          output: "web, pdf"              
+        - title: "Suppliers - Path to Live"
+          url: /dep_devptl.html
+          output: "web, pdf"            
+        - title: "Suppliers - System topologies"
+          url: /dep_devtopo.html  
+          output: "web, pdf"
+        - title: "Providers - Overview"
+          url: /dep_provoverview.html   
+          output: "web, pdf"
+        - title: "DoS Lead Guidance"
+          url: /dep_dosoverview.html 
+          output: "web, pdf"
+        - title: "Testing Maturity"
+          url: /dep_testtesting.html
+          output: "web, pdf"
+        - title: "Test Plan"
+          url: /dep_testplan.html  
+          output: "web, pdf"    
+  
+  - title: "Help and Support"    
+    output: web
+    folderitems:
+    - title: "Contact Details"
+      url: /contact.html      
+      output: "web, pdf"
+    - title: "Glossary"
+      url: /glossary.html
+      output: "web, pdf"
