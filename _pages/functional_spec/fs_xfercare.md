@@ -96,6 +96,11 @@ The process for being able to link the two together is complicated by the fact t
 For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
 " %}
 
+It **must** be noted, CDA messages offer operations which the Booking Standard does not support. 111CDA allows for a message to be replaced, the new message superceding the original as the most clinically relevant, rendering the original out-of-date and not to be used for clinical decision making. 
+
+The process of replacing CDAs is usually acceptable, the documents are versioned and all must be stored by the receiver, providing a complete audit history. However, when a booking is made, it includes reference to a specific CDA document which, if the replace operation is performed, no longer exists as a clinically relevant document.
+
+{% include important.html content="Replace/Update operations **must** not be performed against CDA messages once transmitted and linked to a booking" %}
 
 ### Provider Requirements
 
