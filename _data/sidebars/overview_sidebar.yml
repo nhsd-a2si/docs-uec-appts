@@ -211,6 +211,9 @@ entries:
     - title: "Implementing FHIR® Resources"
       url: /implementation_FHIR.html
       output: "web, pdf"
+    - title: "Versioning"
+      output: "web, pdf"
+      url: /Versioning.html
     - title: "TKW Simulators"
       url: /sims_install.html      
       output: "web, pdf"            
