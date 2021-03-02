@@ -1,6 +1,6 @@
 ---
 title: ABUS.10 Display Available Slots From a Specific Service
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usep_abus10.html
 ---
 

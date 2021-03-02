@@ -25,13 +25,14 @@ This is why all updates (such as when performing a cancel operation) **must** be
 * The consumer writes the result back as an update interaction, and is able to handle a 409 (conflict) or 412 (precondition failed) response (usually by trying again)
 If consumers follow this pattern, then information from other systems that they do not understand will be maintained through the update.
 
-Both consumer and provider systems **should** clearly document how transaction integrity is handled by specifying in the documentation inside the [CapabilityStatement](uec_capability.html){:target="_blank"}.
+Both consumer and provider systems **should** clearly document how transaction integrity is handled by specifying in the documentation inside the {%include FHIRSpecificationLink.html page="uec_capability.html" text="CapabilityStatement" %}
+
 
 ## Handling a special case - duplicates arising from retrys
 
 In order to further assist in maintaining the integrity of transactions some custom headers are available. It is expected that two of the custom headers defined in the FHIR standard are used for this purpose: 
 
-* ```X-Request-ID``` is a unique id to for the request/response assigned by either client or server. Request: assigned by the client. Response: assigned by the server
+* ```X-Request-ID``` is a unique id for the request/response assigned by either client or server. Request: assigned by the client. Response: assigned by the server
 * ```X-Correlation-ID``` a client assigned request id echoed back in the response
 
 Additionally there is a specific scenario that might arise that needs to be mitigated, this is when a provider accepts a booking via a POST and the ```200``` OK response is not received by the Consumer. In this scenario the consumer system is entitled to re-try the POST request until the OK response is recieved or the attempt is abandoned. Under these circumstances, this *might* lead to duplicate appointments being made on the Provider system. Therefore the ```X-Request-ID``` and ```X-Correlation-ID``` can be used to prevent this.

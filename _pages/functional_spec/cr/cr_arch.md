@@ -1,6 +1,6 @@
 ---
 title: Appointment Management - Registry Architecture
-sidebar: cr_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: cr_arch.html
 toc: false

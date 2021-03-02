@@ -1,6 +1,6 @@
 ---
 title: Endpoint Structure - new approach
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_endpoints_new.html
 toc: false

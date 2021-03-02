@@ -1,5 +1,5 @@
 ---
-title: Authentication with Care Connect
+title: Authentication with NHS Booking
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_authentication.html
@@ -44,20 +44,20 @@ When a new consumer or provider system is assured for booking using the Care Con
         * the system being used
         * and the supplier of that system
     * urn:nhs:names:services:careconnect:fhir:rest:create:appointment
-     * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to book appointments:
+     * Membership of this group indicates that the following organisations represented by this app registration have all been assured to be allowed to make bookings:
         * the Service
         * the Organisation delivering the service
         * the system being used
         * and the supplier of that system
 
-  Separating these groups provides for an application viewing available slots but not have authority to book appointments, for example this might be a dashboard or monitoring application.
+  Separating these groups provides for an application viewing available slots but not have authority to book, for example this might be a dashboard or monitoring application.
 
   In due course further groups will be defined such as: urn:nhs:names:services:careconnect:fhir:rest:delete:appointment
   These new groups will be documented here.
 
 ## Use of bearer tokens
 
-An output of authorising access to an API is the provision of a JSON Web Token (see GP Connect documentation for some more guidance on this subject: [authorising access](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html#authorisation-of-access-to-endpoints){:target="_blank"} for UEC booking (Care Connect) the same guidance applies). This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
+An output of authorising access to an API is the provision of a JSON Web Token (see GP Connect documentation for some more guidance on this subject: [authorising access](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html#authorisation-of-access-to-endpoints){:target="_blank"} for NHS Booking (Care Connect) the same guidance applies). This MUST be passed in the API calls to ensure the systems being called are able to verify that the user has been authorised to see the resources requested. This JWT is also used for audit purposes, so the API implementation (and the SSP in the case of a call brokered through that service) can record the user context in it's audit trail.
 
 In order to achieve this, the Consumer MUST include Access token in the HTTP authorisation header as an oAuth Bearer Token (as outlined in [RFC 6749](https://tools.ietf.org/html/rfc6749){:target="_blank"}) in the form of a JSON Web Token (JWT) as defined in [RFC 7519](https://tools.ietf.org/html/rfc7519){:target="_blank"}.
 
@@ -159,7 +159,7 @@ This is the value returned from the SDS endpoint lookup service in the `nhsMhsEn
 
 **Example**: `"aud": "https://providersupplier.thirdparty.nhs.uk/STU3/1"`
 <br>
-(Please see GP Connect documentation for more guidance on this subject: [service root URL](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_general_api_guidance.html#service-root-url){:target="_blank"} for UEC booking (Care Connect) the same guidance applies).
+(Please see GP Connect documentation for more guidance on this subject: [service root URL](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_general_api_guidance.html#service-root-url){:target="_blank"} for NHS Booking (Care Connect) the same guidance applies).
 
 ---
 
@@ -193,7 +193,7 @@ The value **SHALL** be an integer representing seconds past 01 Jan 1970 00:00:00
 
 The purpose for which access is being requested.
 
-As UEC apointment booking only supports usage for direct care, this value **SHALL** be set to `directcare`.
+As NHS Booking only supports usage for direct care, this value **SHALL** be set to `directcare`.
 
 **Example**: `"reason_for_request": "directcare"`
 
@@ -203,7 +203,7 @@ As UEC apointment booking only supports usage for direct care, this value **SHAL
 
 The scope of the request.
 
-The first claim is for "operations on an appointment from the context of a patient" and the second for "operations on a slot (from the context of an organisation)". The first scope supports verbs up to and including ones that can change data (e.g. POST and PUT). The second scope does not (e.g. just GET).
+The first claim is for "operations on a booking from the context of a patient" and the second for "operations on a slot (from the context of an organisation)". The first scope supports verbs up to and including ones that can change data (e.g. POST and PUT). The second scope does not (e.g. just GET).
 
 Please the table below for which values to populate.
 
@@ -213,7 +213,7 @@ Please the table below for which values to populate.
 | `patient/appointment.read`	|	 Get appointment by ID	| Requesting an appointment|
 | `organization/slot.read` | Get Metadata / Slot Search |Searching for available slots |
 
-Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html){:target="_blank"} GP Connect documentation in relation to this claim, for UEC booking (Care Connect) the same guidance applies.
+Providers should also read the associated [Security guidance](https://developer.nhs.uk/apis/gpconnect-1-2-7/development_api_security_guidance.html){:target="_blank"} GP Connect documentation in relation to this claim, for NHS Booking (Care Connect) the same guidance applies.
 
 ---
 
@@ -417,7 +417,7 @@ Provider systems **SHALL** record the following provenance details of all API pe
 - originating organisation
 - API interaction
 
-Provider system **MAY** use the organisation id passed in this or the FHIR profiles to manage authorisatios locally.  For example, refuse requests from organisations that should not be permitted to book into you.  This is not mandatory as a DOS search already controls business rules determining what UEC services can be booked into.
+Provider system **MAY** use the organisation id passed in this or the FHIR profiles to manage authorisatios locally.  For example, refuse requests from organisations that should not be permitted to book into you.  This is not mandatory as a DOS search already controls business rules determining what services can be booked into.
 
 We say we are passing in user role for future use and audit, we do not require use of this for authorising requests.
 

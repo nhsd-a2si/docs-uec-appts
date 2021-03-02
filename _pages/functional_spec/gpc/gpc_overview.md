@@ -1,6 +1,6 @@
 ---
 title: GP Connect - Overview
-sidebar: gpc_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: gpc_overview.html
 toc: false

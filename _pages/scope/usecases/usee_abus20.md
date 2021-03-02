@@ -1,6 +1,6 @@
 ---
 title: ABUS.20 Display any Booked Appointments for a specific Patient/Service Provider 
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usee_abus20.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: GP Connect - Workflow Overview
-sidebar: gpc_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: gpc_wfoverview.html.backup
 toc: false
