@@ -2,7 +2,7 @@
 title: Error Handling - Overview
 keywords: fhir development
 tags: [fhir,development]
-sidebar: error_sidebar
+sidebar: overview_sidebar
 permalink: er_overview.html
 summary: "Implementation guidance for developers - focusing on error handling"
 ---
@@ -90,7 +90,7 @@ Providers MUST respond to errors processing requests from a Consumer system as p
 
 For Care Connect booking workflows, the process is very similar to GP Connect.  However, the Care Connect APIs have standardised on the approach to error handling to use the standard HL7 FHIR [OperationOutcome](https://www.hl7.org/fhir/STU3/operationoutcome.html) resource.
 
-The error code guidance is provided for each capability in the <a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/developing.html" target="_blank">NHS FHIR Scheduling API development section</a>
+The error code guidance is provided for each capability in the {%include FHIRSpecificationLink.html page="index.html" text="FHIR NHS Scheduling API Specification" %}
 
 **Provider System responsibilities**
 
@@ -213,9 +213,9 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>Time of search in the past</td>
+                <td>End of search in the past</td>
                 <td>400 Bad Request</td>
-                <td>Add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics.</td>
+                <td>If BOTH search times are in the past, add in details of what specifically is the issue by an appropriate error information about the Service ID issue in OperationOutcome.issue.diagnostics. NOTE - it is perfectly fine for the start of the search window to be in the past</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>

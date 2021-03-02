@@ -1,6 +1,6 @@
 ---
 title: Deployment Toolkit - Commissioner Resources
-sidebar: deployment_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: dep_commoverview.html
 toc: false

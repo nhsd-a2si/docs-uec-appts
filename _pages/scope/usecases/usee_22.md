@@ -1,6 +1,6 @@
 ---
 title: ABUS.22 Rebook an Appointment for a specific Patient/Service Provider 
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usee_abus22.html
 ---
 

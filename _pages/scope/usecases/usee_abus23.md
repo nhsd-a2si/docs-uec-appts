@@ -1,6 +1,6 @@
 ---
 title: ABUS.23 Cancel a Booked Appointment for a specific Patient/Service Provider by any IUC Provider
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usee_abus23.html
 ---
 

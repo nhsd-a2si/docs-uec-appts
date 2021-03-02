@@ -1,6 +1,6 @@
 ---
 title: User Stories
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: use_overview.html
 toc: false

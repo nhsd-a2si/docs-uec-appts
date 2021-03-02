@@ -96,7 +96,7 @@ Technical checks to live spine URL, checking live config of endpoints etc.. conf
 ### Business Prep
 
 Business processes and resources ready
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Go-Live
 

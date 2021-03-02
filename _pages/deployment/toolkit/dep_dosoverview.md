@@ -1,6 +1,6 @@
 ---
 title: Deployment Toolkit - UEC DoS Lead Resources
-sidebar: deployment_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: dep_dosoverview.html
 toc: false
@@ -41,12 +41,12 @@ A scheduling endpoint must be configured against a service to enabling booking. 
 
 ### Service Attributes
 
-The DoS supports configuration of [Attributes](https://developer.nhs.uk/apis/dos-api/ccs_fields_v1.5_service_attribute.html) against a service which, in the case of appointment booking, informs system behvaiour to ensure the service is appropriately engaged with.
+The DoS supports configuration of [Attributes](https://developer.nhs.uk/apis/dos-api/ccs_fields_v1.5_service_attribute.html) against a service which, in the case of booking, informs system behvaiour to ensure the service is appropriately engaged with.
 *NB: Not all system suppliers have implemented system behaviour based on attributes, therefore, the workflow (outlined below) cannot be guaranteed by adding this configuration to the DoS.*
 
 The attribute used for apointment booking is entitled '**requirebooking**' and is of a boolean data type (TRUE/FALSE).
 
-If this attribute is assigned to a service it means a referral cannot be made unless an appointment has been booked. 
+If this attribute is assigned to a service it means a referral cannot be made unless an booking has been made. 
 
 #### Configuring DoS
 1. Find the service you wish to add the Attribute to

@@ -1,6 +1,6 @@
 ---
 title: DoS Workflow Overview
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_wfoverview.html
 toc: false

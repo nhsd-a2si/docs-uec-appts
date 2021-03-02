@@ -1,6 +1,6 @@
 ---
 title: Deployment Toolkit - System Topologies
-sidebar: deployment_sidebar
+sidebar: overview_sidebar
 keywords: guidance
 permalink: dep_devtopo.html
 toc: false
