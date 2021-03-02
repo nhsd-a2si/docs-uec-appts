@@ -26,6 +26,7 @@ The 0.2.0 BETA release has the following highlights:
   * Additional guidance added regarding include and revinclude parameters when {%include FHIRSpecificationLink.html page="search_slots.html" text="searching for slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Additional support for all statuses added when {%include FHIRSpecificationLink.html page="search_slots.html" text="searching for slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Guidance added for outputting data in {%include FHIRSpecificationLink.html page="search_slots.html#_format" text="different formats" %} <mark style="background-color: LightGreen">non-breaking</mark>
+  * Addition of a new FHIR SearchParameter required for {%include FHIRSpecificationLink.html page="search_slots.html#search-parameters" text="searching slots" %}. <mark style="background-color: LightGreen">non-breaking</mark>
   * Element Id has been replaced with identifier for {%include FHIRSpecificationLink.html page="healthcare_service.html" text="HealthcareService resource" %}. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Updated the description for id for the {%include FHIRSpecificationLink.html page="schedule.html" text="Schedule resource" %}. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Practitioner and PractitionerRole pages have been removed. <mark style="background-color: LightGreen">non-breaking</mark> 
@@ -33,10 +34,9 @@ The 0.2.0 BETA release has the following highlights:
   * References to the registry function has been removed. <mark style="background-color: LightGreen">non-breaking</mark>
   * Additional guidance added to the {%include FHIRSpecificationLink.html page="appointment.html#key-fhir-elements-for-booking" text="Appointment.created" %} element, datatype has been changed from Instant to dateTime to reflect the profile. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Narrative added to the diagrams on the profile {%include FHIRSpecificationLink.html page="resources_overview.html" text="overview page" %}. <mark style="background-color: LightGreen">non-breaking</mark>
-  * New page added for the the {%include FHIRSpecificationLink.html page="bundle.html" text="Bundle resource" %}. <mark style="background-color: LightGreen">non-breaking</mark>
-  * Addition of a new FHIR SearchParameter required for {%include FHIRSpecificationLink.html page="search_free_slots.html#search-parameters" text="searching slots" %}. <mark style="background-color: LightGreen">non-breaking</mark>
+  * New page added for the the {%include FHIRSpecificationLink.html page="bundle.html" text="Bundle resource" %}. <mark style="background-color: LightGreen">non-breaking</mark>  
   * Additional guidance added for the {%include FHIRSpecificationLink.html page="patient.html#key-fhir-elements" text="patient.telecom element" %} <mark style="background-color: LightGreen">non-breaking</mark> 
-  * A new page describing the {%include FHIRSpecificationLink.html page="uec_capability.html" text="capability statement"%} has been created. <mark style="background-color: LightGreen">non-breaking</mark> <ADD-CORRECT-LINK-WHEN-READY>
+  * A new page describing the {%include FHIRSpecificationLink.html page="capabilitystatement.html" text="capability statement"%} has been created. <mark style="background-color: LightGreen">non-breaking</mark> <ADD-CORRECT-LINK-WHEN-READY>
 * Updated [Authentication Page](fs_authentication.html){:target="_blank"}
   * Some typos were fixed <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Guidance around the scope claims was updated to provide more clarity on the application of the different scopes <mark style="background-color: LightGreen">non-breaking</mark>
@@ -59,11 +59,11 @@ The 0.2.0 BETA release has the following highlights:
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * The [overview page on error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
 * The page on [error handling](er_errorhandling.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>
-* The [booking and referral messages](dos_itk.html.html){:target="_blank"} page was removed as it is duplicating the "transfer of care" page in the "functional spec" section <mark style="background-color: LightGreen">non-breaking</mark>
+* The booking and referral messages page was removed as it is duplicating the "transfer of care" page in the "functional spec" section <mark style="background-color: LightGreen">non-breaking</mark>
 * The [transfer of care](fs_xfercare.html){:target="_blank"}  page was updated to provide more clarity on how to store appointment references in the 111CDA document <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing the [FHIR Resource Profile Overrides](fs_fhir_overrides.html){:target="_blank"} has been created <mark style="background-color: LightGreen">non-breaking</mark>
 * [IG Pages](ig_overview.html){:target="_blank"} have been updated with new IG statement <mark style="background-color: LightGreen">non-breaking</mark>  
-* [IG FAQ](ig_overview.html){:target="_blank"} has been updated with new content <mark style="background-color: LightGreen">non-breaking</mark>  
+* [IG FAQ](ig_faq.html){:target="_blank"} has been updated with new content <mark style="background-color: LightGreen">non-breaking</mark>  
 * A new page: [using this site](using_this_site.html){:target="_blank"} has been added <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page: [getting started](getting_started.html){:target="_blank"} has been added with new content <mark style="background-color: LightGreen">non-breaking</mark>
 * Updated guidance on [delivery channel](fs_deliverychannel.html){:target="_blank"} to specifically prohibit setting a default<mark style="background-color: #ff8080">breaking</mark>
