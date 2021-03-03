@@ -3,7 +3,7 @@ entries:
   product: ""
   version: "v0.2.0 BETA"
   spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
-  speclink: "https://apibooking202.netlify.app/index.html"
+  speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/index.html"
   levels: one
   folders: 
   
