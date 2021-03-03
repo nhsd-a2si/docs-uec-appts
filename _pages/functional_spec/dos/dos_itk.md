@@ -1,6 +1,6 @@
 ---
 title: DoS Workflow - Transfer of care and ITK Messages
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_itk.html
 toc: false

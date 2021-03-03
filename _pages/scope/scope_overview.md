@@ -3,24 +3,24 @@ title: Scope of standards
 toc: false
 sidebar: overview_sidebar
 permalink: scope_overview.html
-summary: "This page provides an overview of the currently envisiged scope for the national standards"
+summary: "This page provides an overview of the currently envisiged scope for this standard"
 ---
 
 ## Introduction
 
-The intention of this standard is to support booking from any to any accross care settings. However, initially the scope will be limited to specific care setting combinations. These priority scenarios will be targeted for the initial first of type program.
+The intention of this standard is to support booking from any to any accross care settings. Initially however, the scope will be limited to specific care setting combinations. These priority scenarios will be targeted for the initial first of type program.
 
 ## Care Settings
 
 ### In Scope (Priority)
 
-#### Appointment Consumers (making a booking)
+#### Booking Consumers (making a booking)
 
 * 111 
 * CAS
 * 111 Online
 
-#### Appointment Providers (being booked into)
+#### Booking Providers (being booked into)
 
 * Emergency Departments
 * Urgent Treatment Centres

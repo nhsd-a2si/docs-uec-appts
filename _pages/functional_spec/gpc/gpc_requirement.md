@@ -1,6 +1,6 @@
 ---
 title: GP Connect - Key Requirements
-sidebar: gpc_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: gpc_requirement.html
 toc: false

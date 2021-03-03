@@ -1,5 +1,5 @@
 entries:
-- title: Urgent & Emergency Care Appointment Booking Standards - Provider and Consumer Demonstrator
+- title: NHS Booking Standard - Provider and Consumer Demonstrator
   folders:  
   - title: Demonstrator
     output: web
@@ -9,4 +9,7 @@ entries:
       output: web, pdf
     - title: Architecture
       url: /demo_arch.html
-      output: web, pdf  
+      output: web, pdf 
+    - title: NEW TKW Simulators
+      url: /sims_install.html
+      output: web, pdf 

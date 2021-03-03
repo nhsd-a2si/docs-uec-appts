@@ -1,6 +1,6 @@
 ---
 title: ABUS.25 - Booking only services
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usee_abus25.html
 ---
 

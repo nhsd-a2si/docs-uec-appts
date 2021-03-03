@@ -5,7 +5,7 @@ sidebar: overview_sidebar
 permalink: assurance_overview.html
 ---
 
-The assurance process that has been adopted for the UEC Appointment Booking standard is based on the following principles:
+The assurance process that has been adopted for the NHS Booking standard is based on the following principles:
 
 ## Assurance principles 
 High-level design principles related to the assurance processes 
@@ -96,7 +96,7 @@ Technical checks to live spine URL, checking live config of endpoints etc.. conf
 ### Business Prep
 
 Business processes and resources ready
-<a href="https://develop.uec-appts.docs.opennhs.io/assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
+<a href="assurance_overview.html#nhs-digital-onboarding-and-assurance-process">*return*</a>
 
 ### Go-Live
 

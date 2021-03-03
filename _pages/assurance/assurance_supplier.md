@@ -15,7 +15,7 @@ Consuming supplier systems **MUST** have been tested and accredited to establish
 Supplier systems SHALL be tested for technical conformance of the following before they can be listed on the conformance catalog:
 * Spine Directory Service (SDS)
 * Spine Security Proxy (SSP) integration
-* CareConnect FHIR Appointment API standards
+* NHS FHIR Scheduling API specification
 
 ## Solution assurance 
 Solution assurance ensures that the correct level of safety, governance, and security has been accepted, understood and signed off by the organisation providing the APIs. 

@@ -1,6 +1,6 @@
 ---
 title: ABUS.01 Display Possible Provider Services
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usep_abus01.html
 ---
 
