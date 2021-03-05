@@ -76,11 +76,10 @@ entries:
           output: web, pdf
         - title: "- Stopping referrals for booking only services"
           url: /usep_abus24.html
-          output: web, pdf
-      subfolders:    
-      - title: "User cases"
+          output: web, pdf 
+      - title: "Use Cases"      
         output: "web, pdf"
-        subfolderitems:
+        subfolderitems:          
         - title: "Booking"
           url: /ucs_booking.html
           output: web, pdf 
