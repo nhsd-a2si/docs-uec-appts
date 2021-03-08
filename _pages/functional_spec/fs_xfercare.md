@@ -64,7 +64,7 @@ In this illustration we have a referral from 111 using a 111CDA document contain
 </entry>
 ```
 
-Key to the linking is the ```COMP``` component, specifically the ```linkHtml``` element where the appointment URL is specified.
+Key to the linking is the ```COMP``` component, specifically the ```linkHtml``` element where the appointment URL is specified. The appointment URL must always be set in the ```href``` attribute and must always be obtained from the ```href``` attribute only and not from the "*text-between-the-tags*".
 
 ```XML
 <component typeCode="COMP" contextConductionInd="true">
@@ -88,10 +88,10 @@ The process for being able to link the two together is complicated by the fact t
  * POST the Appointment, response has a Location header that gives the URL of the saved Appointment.
  * Ensure the URL is a fully qualified, (so starting with https:// etc not just /Appointment/xxx-yyy-1234- etc).
  * Complete the CDA generation as normal.
- * Add the ODS into the CDA as shown above.
+ * Add the URL into the CDA as shown above.
 
-{% include important.html content="The URL **MUST** be taken from the ```linkHtml``` ```href``` tag and a whilst the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
-
+{% include important.html content="The URL **MUST** be taken from the ```linkHtml``` ```href``` tag and whilst the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
+<p>
 For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
 " %}
 
