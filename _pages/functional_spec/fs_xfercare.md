@@ -91,8 +91,9 @@ The process for being able to link the two together is complicated by the fact t
  * Add the URL into the CDA as shown above.
 
 {% include important.html content="The URL **MUST** be taken from the ```linkHtml``` ```href``` tag and whilst the URL must be fully qualified it **MUST NOT** include the specific version of the appointment.  
-<p>
-For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
+
+For example the following is a correctly formed appointment URL https://servername.orgname.nhs.uk/FHIR/Appointment/1234567 
+whereas https://servername.orgname.nhs.uk/FHIR/Appointment/1234567/_history/1 is invalid.
 " %}
 
 It **must** be noted, CDA messages offer operations which the Booking Standard does not support. 111CDA allows for a message to be replaced, the new message superceding the original as the most clinically relevant, rendering the original out-of-date and not to be used for clinical decision making. 
