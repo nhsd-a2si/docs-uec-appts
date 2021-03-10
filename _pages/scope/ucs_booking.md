@@ -11,7 +11,6 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 
 ## Service Discovery
 
-Requirements - 
 * Suitable service **must** be displayed in a list
 * The list **must** include all possible providers that can support a patient with the current clinical need, regardless of the location/organisation of the call handler making the request.
 * The list **must** be sorted so that the most appropriate provider is sorted to the top of the list. Appropriateness of the provider is defined by the distance from the patient’s current location.
@@ -25,7 +24,6 @@ Requirements -
 
 ## Slot display
 
-Requirements - 
 * The list **must** contain the actual geographic location of the booking, rather than generic details of the location of the overall service provider.
 * The list **must** contain details of the start/end times of the available slots.
 * The available slots **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user’s organisation has with that provider (does not apply to GP Connect booking).
@@ -39,7 +37,6 @@ Requirements -
 
 ## Booking - Request & Confirmation 
 
-Requirements - 
 * The provider system **must** accept the booking request even if the patient is not “registered” with this provider
 * Where the booking was <ins>not</ins> successful, the provider **must** send an appropriate response to indicate this.
 * Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this.
@@ -47,7 +44,6 @@ Requirements -
 
 ## Booking outside disposition timeframe 
 
-Requirements - 
 * The system **must** allow clinical users to book outside the assessment outcome timeframe
 * The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe for outcomes up to 6 hours
 * The system **must** present to the user a notification for outcomes between 6 and 12 hours
@@ -56,7 +52,6 @@ Requirements -
 
 ## Referral requires booking (booking only services)
 
-Requirements - 
 * The system **must** stop the users from making a referral if no appointment has been made when the “requirebooking” service attribute is present against the DoS service
 * The system **must** present an appropriate warning message to the user, indicating the specific service requirements
 * The system **must** allow the user to select a different service on the DoS
