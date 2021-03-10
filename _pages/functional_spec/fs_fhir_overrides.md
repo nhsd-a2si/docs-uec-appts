@@ -47,7 +47,6 @@ The main reason for the overriding the profiles is because there is a reilance o
 |identifier (nhsNumber).system|0..\*|1..1|
 |identifier (nhsNumber).value|0..\*|1..1|
 |name|0..\*|1..1|
-|telecom|0..\*|1..1|
 |gender|0..1|1..1|
 |birthdate|0..1|1..1|
 |address|0..\*|1..1|
