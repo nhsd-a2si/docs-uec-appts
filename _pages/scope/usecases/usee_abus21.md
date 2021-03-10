@@ -7,7 +7,7 @@ permalink: usee_abus21.html
 ## ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider 
 **_In order_** that the patient or their carer can cancel an already-booked appointment that they had initially booked at any reasonable time after the appointment has been booked 
 
-**_As a** Integrated Urgent Care Sservice Provider
+**_As a** Integrated Urgent Care Service Provider
 
 **_I want_** to cancel appts booked for a patient 
 
