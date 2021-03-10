@@ -7,7 +7,7 @@ permalink: usep_abus10.html
 ## ABUS.10 Display Available Slots From a Specific Service
 **_In order_** to book a patient into the selected provider service 
 
-**_As a_** Integrated Urgent Care Sservice Provider 
+**_As a_** Integrated Urgent Care Service Provider 
 
 **_I want_** to view the available slots for a provider service for a specified timeframe.
 
