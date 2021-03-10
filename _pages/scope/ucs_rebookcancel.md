@@ -10,7 +10,15 @@ summary: "Defines the envisiged use case scope for rebooking and cancel within t
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 ## Cancel booking 
-ABUS.21 Cancel a Booked Appointment for a specific Patient/Service Provider
+
+*	The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation (does not apply to GP Connect booking).
+*	The consumer system **must** provide visible confirmation to the user of the status returned by the provider system, i.e. whether the original booking was successfully cancelled.
+*	The provider system **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the consumer organisation.
+
 
 ## Rebook 
-ABUS.22 Rebook an Appointment for a specific Patient/Service Provider
+
+*	The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation (does not apply to GP Connect booking).
+*	The consumer system **must** provide visible confirmation to the user of the status returned by the provider system, i.e.. whether the original booking was successfully cancelled and the new booking has been made successfully. 
+*	The provider system **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the consumer organisation.
+
