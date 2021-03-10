@@ -10,22 +10,57 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 ## Service Discovery
-ABUS.01 Display Possible Provider Services
+
+Requirements - 
+* Suitable service **must** be displayed in a list
+* The list **must** include all possible providers that can support a patient with the current clinical need, regardless of the location/organisation of the call handler making the request.
+* The list **must** be sorted so that the most appropriate provider is sorted to the top of the list. Appropriateness of the provider is defined by the distance from the patient’s current location.
+* The list **must** provide the location details of the provider (so that the patient can help to assess which provider really has the most convenient location)
+* Data items to display **should** include:
+  * Name of provider
+  * Address of provider where the care will be offered (not the business address of the provider organisation)
+  * Distance from patient
 
 
-## Slot display 
-ABUS.10 Display Available Slots From a Specific Service
 
-## Booking 
-ABUS.12 Confirm/Book an Appointment Slot
+## Slot display
+
+Requirements - 
+* The list **must** contain the actual geographic location of the booking, rather than generic details of the location of the overall service provider.
+* The list **must** contain details of the start/end times of the available slots.
+* The available slots **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user’s organisation has with that provider (does not apply to GP Connect booking).
+* The method of retrieval **must <ins>not</ins>** depend on any pre-installed data linkage processes between the requesting user’s organisation and the provider organisation. (does not apply to GP Connect booking).
+* Where there are no available slots, the provider **must** send an appropriate response to indicate this.
+* Where there are no available slots, the consumer **must** present an appropriate message to the user to indicate this.
+* The provider system **must** return available slots without requiring the potential patient to be “registered” with the provider.
+* Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider **must** return all of those slots as part of the initial response.
+
+
+
+## Booking - Request & Confirmation 
+
+Requirements - 
+* The provider system **must** accept the booking request even if the patient is not “registered” with this provider
+* Where the booking was <ins>not</ins> successful, the provider **must** send an appropriate response to indicate this.
+* Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this.
+
 
 ## Booking outside disposition timeframe 
-ABUS.13 Booking outside an assessment outcome timeframe
 
-## Booking confirmation
-ABUS.12 Confirm/Book an Appointment Slot
+Requirements - 
+* The system **must** allow clinical users to book outside the assessment outcome timeframe
+* The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe for outcomes up to 6 hours
+* The system **must** present to the user a notification for outcomes between 6 and 12 hours
+* The system **must** store sufficient data to show where a patient has been booked outside their assessment outcome timeframe
+
 
 ## Referral requires booking (booking only services)
-ABUS.24 Stopping referrals for booking only services
+
+Requirements - 
+* The system **must** stop the users from making a referral if no appointment has been made when the “requirebooking” service attribute is present against the DoS service
+* The system **must** present an appropriate warning message to the user, indicating the specific service requirements
+* The system **must** allow the user to select a different service on the DoS
+* The system **must** allow a referral to be sent when a booking is made
+
 
 
