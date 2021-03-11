@@ -16,7 +16,7 @@ This site, which can be thought of as an [**implementation guide**](https://deve
 Initially, it can be used to guide analysis and define the scope of a solution. **Developers** will need to use it in conjunction with the *Specification* (outlined below) to understand workflow, error handling and non-functional requirements a solution needs to fulfil. There are also resources for **Project Managers** and stakeholders who are involved in moving the solution to live environments, the <a href="deployment_toolkit.html" target="_blank">Deployment Toolkit</a>.
 
 ## Specification 
-A [**technical document**](https://developer.nhs.uk/apis/nhsbooking-2.0.1-beta/) which explicitly defines the NHS FHIR(STU3) Booking API resources and structures, along with the method operations (GET, PUT & POST) used. 
+A {%include FHIRSpecificationLink.html page="index.html" text="technical document" %} which explicitly defines the NHS FHIR(STU3) Booking API resources and structures, along with the method operations (GET, PUT & POST) used. 
 
 ***
 ## Planning a project 
