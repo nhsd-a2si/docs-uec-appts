@@ -1,6 +1,6 @@
 ---
 title: Endpoint Structure - Existing approach
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_endpoints_existing.html
 toc: false

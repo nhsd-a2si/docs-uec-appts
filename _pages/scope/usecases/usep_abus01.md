@@ -1,6 +1,6 @@
 ---
 title: ABUS.01 Display Possible Provider Services
-sidebar: usecase_sidebar
+sidebar: overview_sidebar
 permalink: usep_abus01.html
 ---
 
@@ -9,7 +9,7 @@ permalink: usep_abus01.html
 
 **_As a_** 111 Call Handler or urgent care service provider
 
-**_I want_** to view the all the provider services that could currently assist the patient with a certain clinical need.
+**_I want_** to view all the provider services that could currently assist the patient with a certain clinical need.
 
 ### Commentary
 Whilst not strictly concerning the new messaging/API for appt booking, searching DoS (directory of services) for a provider is a key precursor to appt booking.

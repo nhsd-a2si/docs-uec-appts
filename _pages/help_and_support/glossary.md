@@ -4,7 +4,7 @@ keywords: abbreviations, definitions, glossaries, terms
 tags: [getting_started]
 sidebar: overview_sidebar
 permalink: glossary.html
-summary: "Glossary of terms used in the UEC Appointment booking standards"
+summary: "Glossary of terms used in the NHS Booking Standards"
 toc: true
 ---
 

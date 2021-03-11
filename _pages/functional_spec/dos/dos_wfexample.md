@@ -1,6 +1,6 @@
 ---
 title: DoS Workflow Example
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_wfexample.html
 toc: false

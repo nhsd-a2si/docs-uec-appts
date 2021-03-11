@@ -1,6 +1,6 @@
 ---
 title: Support for booking only services
-sidebar: dos_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: dos_bookingonly.html
 toc: false
@@ -14,7 +14,7 @@ This means that these services will only accept a referral if a booking has also
 
 If no appointment is available then a referral should not be made. 
 
-To achieve this, a "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the servicem all consumer systems should withold referrals.
+To achieve this, a "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the servicem all consumer systems should withold referrals. The DoS API documentation for this can be found <a href="https://developer.nhs.uk/apis/dos-api/ccs_fields_v1.5_service_attribute.html" target="_blank">here</a>.
 
 ### Workflow
 

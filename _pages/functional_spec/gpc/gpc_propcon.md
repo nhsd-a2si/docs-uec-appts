@@ -1,6 +1,6 @@
 ---
 title: GP Connect - Comparison with proprietary booking
-sidebar: gpc_sidebar
+sidebar: overview_sidebar
 keywords: specification
 permalink: gpc_propcon.html
 toc: false
@@ -38,6 +38,6 @@ folder: functional_spec
   * From Adastra, 
     * you will receive a list of locations that you can book into.  NOTE: the list of locations will only appear if you have v3.28 of Adastra
     *	the user will then need to book the patient into the correct / appropriate surgery 
-    *	From Cleric
+   *	From Cleric
     *	you will receive a list of locations that you can book into
     *	the user will then need to book the patient into the correct / appropriate surgery
