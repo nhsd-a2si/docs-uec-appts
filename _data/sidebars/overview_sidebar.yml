@@ -227,13 +227,6 @@ entries:
       url: /sims_install.html      
       output: "web, pdf"            
   
-  - title: "First of Type"
-    output: web
-    folderitems:
-    - title: "First of Type"
-      url: /first_of_type.html     
-      output: "web, pdf"
-  
   - title: "Information Governance"
     output: web
     folderitems:
