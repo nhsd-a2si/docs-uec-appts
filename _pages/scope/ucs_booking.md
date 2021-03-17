@@ -21,10 +21,10 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * The slot **must** contain details of the start/end times of the available slots
 * The available slot(s) **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user’s organisation has with that provider (does not apply to GP Connect booking)
 * The method of retrieval **must <ins>not</ins>** depend on any pre-installed data linkage processes between the requesting user’s organisation and the provider organisation. (does not apply to GP Connect booking)
-* Where there are no available slots, the provider **must** send an appropriate response to indicate this
-* Where there are no available slots, the consumer **must** present an appropriate message to the user to indicate this
-* The provider system **must** return available slots without requiring the potential patient to be known to the provider
-* Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider **must** return all of those slots as part of the initial response
+* Where there are no available slots, the Provider **must** send an appropriate response to indicate this
+* Where there are no available slots, the Consumer **must** present an appropriate message to the user to indicate this
+* The booking Provider **must** return available slots without requiring the potential patient to be known to the provider
+* Where the booking Provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the Provider **must** return all of those slots as part of the initial response
 * If provided, the booking Consumer **must** display Delivery Channel, Healthcare Service and Practitioner Role, Name and Gender
 * Booking Providers **must <ins>not</ins>** default the Delivery Channel value
 
