@@ -54,3 +54,18 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * The booking Consumer **must** allow the referral to be sent when a booking is made, the service requirements having been met
 * The user **must** be allowed to select an alternative service 
 
+
+## Authentication 
+
+* Authentication tokens **must** align as  <a href="fs_authentication.html" target="_blank">documented</a> 
+* Booking Consumer **must** generate tokens to adhere to the above
+* Booking Providers **must** validate Consumer tokens in line with the documentation 
+
+
+## Error Handling 
+
+* Consumers and Providers **must** adhere the <a href="er_overview.html" target="_blank">error handling guidance</a>  
+
+* Err
+
+
