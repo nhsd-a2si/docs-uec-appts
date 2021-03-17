@@ -27,7 +27,7 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * Where the booking Provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the Provider **must** return all of those slots as part of the initial response
 * If provided, the booking Consumer **must** display Delivery Channel, Healthcare Service and Practitioner Role, Name and Gender
 * Booking Providers **must <ins>not</ins>** default the Delivery Channel value
-* A booking Consumer **must <ins>not</ins>** assume a Provider will return requested \_includes
+* A booking Consumer **must <ins>not</ins>** assume a Provider will return requested \_includes e.g. Location
   * Booking Consumers **must** handle a Slot response without non mandatory FHIR resources 
   * Booking Consumers **must** handle a Slot response with FHIR resources not requested
 
