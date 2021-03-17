@@ -69,6 +69,5 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 
 * Consumers and Providers **must** adhere the <a href="er_overview.html" target="_blank">error handling guidance</a>  
 
-* Err
 
 
