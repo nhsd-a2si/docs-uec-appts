@@ -11,31 +11,28 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 
 ## Service Discovery
 
-* Suitable service **must** be displayed in a list
-* The list **must** include all possible providers that can support a patient with the current clinical need, regardless of the location/organisation of the call handler making the request.
-* The list **must** be sorted so that the most appropriate provider is sorted to the top of the list. Appropriateness of the provider is defined by the distance from the patient’s current location.
-* The list **must** provide the location details of the provider (so that the patient can help to assess which provider really has the most convenient location)
-* Data items to display **should** include:
-  * Name of provider
-  * Address of provider where the care will be offered (not the business address of the provider organisation)
-  * Distance from patient
+* The service **must** support a unique identifier which booking Consumer extract to request slot availability and booking Providers map available slots against
+* An ASID (Accredited System Identifier) **must** be capable of being stored against the service. This is used by booking Consumers to query SDS and find the related endpoint to direct requests
 
 
 ## Slot display
 
-* The list **must** contain the actual geographic location of the booking, rather than generic details of the location of the overall service provider.
-* The list **must** contain details of the start/end times of the available slots.
-* The available slot(s) **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user’s organisation has with that provider (does not apply to GP Connect booking).
-* The method of retrieval **must <ins>not</ins>** depend on any pre-installed data linkage processes between the requesting user’s organisation and the provider organisation. (does not apply to GP Connect booking).
-* Where there are no available slots, the provider **must** send an appropriate response to indicate this.
-* Where there are no available slots, the consumer **must** present an appropriate message to the user to indicate this.
-* The provider system **must** return available slots without requiring the potential patient to be “registered” with the provider.
-* Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider **must** return all of those slots as part of the initial response.
+* The schedule and related slot(s) **must** contain the actual geographic location (e.g address) of the booking, rather than generic details of the location of the overall service provider.
+* The slot **must** contain details of the start/end times of the available slots
+* The available slot(s) **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user’s organisation has with that provider (does not apply to GP Connect booking)
+* The method of retrieval **must <ins>not</ins>** depend on any pre-installed data linkage processes between the requesting user’s organisation and the provider organisation. (does not apply to GP Connect booking)
+* Where there are no available slots, the provider **must** send an appropriate response to indicate this
+* Where there are no available slots, the consumer **must** present an appropriate message to the user to indicate this
+* The provider system **must** return available slots without requiring the potential patient to be known to the provider
+* Where the provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the provider **must** return all of those slots as part of the initial response
+* If provided, the booking Consumer **must** display Delivery Channel, Healthcare Service and Practitioner Role, Name and Gender
+* Booking Providers **must <ins>not</ins>** default the Delivery Channel value
 
 
 ## Booking - Request & Confirmation 
 
-* The provider system **must** accept the booking request even if the patient is not “registered” with this provider
+* The provider system **must** accept the booking request even if the patient is not known to the provider
+* The provider system **must** accept potential patients who do <ins>not</ins> have a national validated number e.g. NHS No. assigned
 * Where the booking was <ins>not</ins> successful, the provider **must** send an appropriate response to indicate this.
 * Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this.
 
