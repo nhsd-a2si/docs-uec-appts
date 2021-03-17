@@ -40,17 +40,17 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
   * The booking Provider **must** link the booking and CDA message  
 
 
-## Booking outside disposition timeframe 
+## Booking outside assessment outcome timeframe 
 
 * The system **must** allow clinical users to book outside the assessment outcome timeframe
-* The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe for outcomes up to 6 hours
-* The system **must** present to the user a notification for outcomes between 6 and 12 hours
+* The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe
 * The system **must** store sufficient data to show where a patient has been booked outside their assessment outcome timeframe
 
 
 ## Referral requires booking (booking only services)
 
-* The system **must** stop the users from making a referral if no booking has been made when the “requirebooking” service attribute is present against the DoS service
-* The system **must** present an appropriate warning message to the user, indicating the specific service requirements
-* The system **must** allow the user to select a different service on the DoS
-* The system **must** allow a referral to be sent when a booking is made
+* The booking Consumer **must** stop the users from making a referral if no booking has been made when the “requirebooking” service attribute is present against the DoS service
+* The booking Consumer **must** present an appropriate warning message to the user, indicating the specific service requirements
+* The booking Consumer **must** allow the referral to be sent when a booking is made, the service requirements having been met
+* The user **must** be allowed to select an alternative service 
+
