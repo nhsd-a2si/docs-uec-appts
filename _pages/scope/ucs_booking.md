@@ -31,10 +31,13 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 
 ## Booking - Request & Confirmation 
 
-* The provider system **must** accept the booking request even if the patient is not known to the provider
-* The provider system **must** accept potential patients who do <ins>not</ins> have a national validated number e.g. NHS No. assigned
-* Where the booking was <ins>not</ins> successful, the provider **must** send an appropriate response to indicate this.
-* Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this.
+* The booking Provider **must** accept the booking request even if the patient is not known to the service provider
+* The booking Provider **must** accept potential patients who do <ins>not</ins> have a national validated identifier e.g. NHS No.
+* Where the booking was <ins>not</ins> successful, the provider **must** send an appropriate response to indicate this
+* Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this
+* The booking Consumer **must** send accompanying clinical information in a CDA Message
+  * The booking request **must** be referenced in the CDA message and vice versa 
+  * The booking Provider **must** link the booking and CDA message  
 
 
 ## Booking outside disposition timeframe 
