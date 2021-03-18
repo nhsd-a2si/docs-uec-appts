@@ -30,6 +30,7 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * A booking Consumer **must <ins>not</ins>** assume a Provider will return requested \_includes e.g. Location
   * Booking Consumers **must** handle a Slot response without non mandatory FHIR resources 
   * Booking Consumers **must** handle a Slot response with FHIR resources not requested
+*	Sufficient information around the slot requests **must** be persisted to support the reporting requirements
 
 
 ## Booking - Request & Confirmation 
@@ -41,14 +42,14 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * The booking Consumer **must** send accompanying clinical information in a CDA Message
   * The booking request **must** be referenced in the CDA message and vice versa 
   * The booking Provider **must** link the booking and CDA message  
-
+*	Sufficient information around the booking process **must** be persisted to support the reporting requirements
 
 ## Booking outside assessment outcome timeframe 
 
 * The system **must** allow clinical users to book outside the assessment outcome timeframe
 * The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe
 * The system **must** store sufficient data to show where a patient has been booked outside their assessment outcome timeframe
-
+*	Sufficient information around the booking outside assessment outcome timeframe **must** be persisted to support the reporting requirements
 
 ## Referral requires booking (booking only services)
 
@@ -56,7 +57,7 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * The booking Consumer **must** present an appropriate warning message to the user, indicating the specific service requirements
 * The booking Consumer **must** allow the referral to be sent when a booking is made, the service requirements having been met
 * The user **must** be allowed to select an alternative service 
-
+*	Sufficient information around the booking with booking only services **should** be persisted to support the reporting requirements
 
 ## Authentication 
 
@@ -64,10 +65,9 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * Booking Consumer **must** generate tokens to adhere to the above
 * Booking Providers **must** validate Consumer tokens in line with the documentation 
 
-
 ## Error Handling 
 
 * Consumers and Providers **must** adhere the <a href="er_overview.html" target="_blank">error handling guidance</a>  
-
+*	Sufficient information around errors encountered **must** be persisted to support the reporting requirements
 
 
