@@ -11,14 +11,21 @@ summary: "Defines the envisiged use case scope for rebooking and cancel within t
 
 ## Cancel booking 
 
-*	The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation (does not apply to GP Connect booking).
-*	The consumer system **must** provide visible confirmation to the user of the status returned by the provider system, i.e. whether the original booking was successfully cancelled.
-*	The provider system **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the consumer organisation.
+*	The booking Consumer **must** be capable of cancelling any booking made by them, within the current consultation or after the consultation event
+*	The booking Consumer **must** retrieve the booking to be cancel from the Provider prior to cancellation
+*	The booking Consumer **must** provide visible confirmation to the user of the status returned by the Provider, i.e. whether the original booking was successfully cancelled
+*	If the update fails the booking Provider **must** respond with the most appropriately aligned error as defined in the <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/cancel_an_appointment.html" target="_blank">Specification</a> 
+*	The booking Provider **must** store all previous versions of the booking
+*	The booking Provider **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the consumer organisation
+*	Any referral document, sent as part of a booking, **should** be decoupled from the booking when cancelled and not to be assumed a referral in its own right i.e. to ensure  'booking only' services are appropritely updated
+*	Sufficient information around the cancelling process should be persisted to support the reporting requirements
 
 
 ## Rebook 
 
-*	The consumer system **must** be capable of cancelling slots for any provider system, regardless of what relationship the provider organisation has with the consumer organisation (does not apply to GP Connect booking).
+*	The booking Consumer **must** be capable of rebooking any booking made by them, within the current consultation or after the consultation event
+*	Prior to attempting rebooking after the consultation has been completed, a 
 *	The consumer system **must** provide visible confirmation to the user of the status returned by the provider system, i.e.. whether the original booking was successfully cancelled and the new booking has been made successfully. 
 *	The provider system **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the consumer organisation.
+*	Sufficient information around the cancelling process should be persisted to support the reporting requirements
 
