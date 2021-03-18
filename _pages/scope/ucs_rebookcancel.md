@@ -24,8 +24,9 @@ summary: "Defines the envisiged use case scope for rebooking and cancel within t
 ## Rebook 
 
 *	The booking Consumer **must** be capable of rebooking any booking made by them, within the current consultation or after the consultation event
-*	Prior to attempting rebooking after the consultation has been completed, a 
-*	The consumer system **must** provide visible confirmation to the user of the status returned by the provider system, i.e.. whether the original booking was successfully cancelled and the new booking has been made successfully. 
-*	The provider system **must <ins>not</ins>** be required to inform the patient of the cancellation of the booking.  Business/clinical responsibility for informing the patient must remain with the consumer organisation.
+*	Prior to attempting rebooking, after the consultation has been completed, a reassessment **should** be performed 
+*	The booking Consumer **should** make the new booking prior to cancelling any original booking, whether within the current consultation or after the consultation event
+*	The booking Consumer **must** provide visible confirmation to the user of the status returned by the Provider, i.e.. whether the original booking was successfully cancelled and the new booking has been made successfully. 
+*	The provider system **must <ins>not</ins>** be required to inform the patient of the cancellation incurred as part of the rebooking process.  Business/clinical responsibility for informing the patient must remain with the consumer organisation.
 *	Sufficient information around the cancelling process should be persisted to support the reporting requirements
 
