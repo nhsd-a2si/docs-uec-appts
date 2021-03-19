@@ -76,7 +76,16 @@ entries:
           output: web, pdf
         - title: "- Stopping referrals for booking only services"
           url: /usep_abus24.html
-          output: web, pdf
+          output: web, pdf 
+      - title: "Use Cases"      
+        output: "web, pdf"
+        subfolderitems:          
+        - title: "Booking"
+          url: /ucs_booking.html
+          output: web, pdf 
+        - title: "Rebook or Cancel"
+          url: /ucs_rebookcancel.html
+          output: web, pdf           
         
   - title: "Non-Functional Requirements"
     output: web
@@ -220,13 +229,6 @@ entries:
     - title: "TKW Simulators"
       url: /sims_install.html      
       output: "web, pdf"            
-  
-  - title: "First of Type"
-    output: web
-    folderitems:
-    - title: "First of Type"
-      url: /first_of_type.html     
-      output: "web, pdf"
   
   - title: "Information Governance"
     output: web
