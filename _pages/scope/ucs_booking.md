@@ -19,18 +19,18 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 
 * The schedule and related slot(s) **must** contain the actual geographic location (e.g address) of the booking, rather than generic details of the location of the overall service provider.
 * The slot **must** contain details of the start/end times of the available slots
-* The available slot(s) **must** be capable of being retrieved from any provider, regardless of the relationship that the consuming user’s organisation has with that provider (does not apply to GP Connect booking)
+* The available slot(s) **must** be capable of being retrieved from any booking Provider, regardless of the relationship that the consuming user’s organisation has with that service provider (does not apply to GP Connect booking)
 * The method of retrieval **must <ins>not</ins>** depend on any pre-installed data linkage processes between the requesting user’s organisation and the provider organisation. (does not apply to GP Connect booking)
-* Where there are no available slots, the Provider **must** send an appropriate response to indicate this
-* Where there are no available slots, the Consumer **must** present an appropriate message to the user to indicate this
+* Where there are no available slots, the booking Provider **must** send an appropriate response to indicate this
+* Where there are no available slots, the booking Consumer **must** present an appropriate message to the user to indicate this
 * The booking Provider **must** return available slots without requiring the potential patient to be known to the provider
-* Where the booking Provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) the Provider **must** return all of those slots as part of the initial response
+* Where the booking Provider has a number of diaries available to fulfil a request (say, when 2 or more clinicians are delivering surgeries at the same site) they **must** return all of those slots as part of the initial response
 * If provided, the booking Consumer **must** display Delivery Channel, Healthcare Service and Practitioner Role, Name and Gender
 * Booking Providers **must <ins>not</ins>** default the Delivery Channel value
-* A booking Consumer **must <ins>not</ins>** assume a Provider will return requested \_includes e.g. Location
+* A booking Consumer **must <ins>not</ins>** assume a booking Provider will return requested \_includes e.g. Location
   * Booking Consumers **must** handle a Slot response without non mandatory FHIR resources 
   * Booking Consumers **must** handle a Slot response with FHIR resources not requested
-*	Sufficient information around the slot requests **must** be persisted to support the reporting requirements
+*	Sufficient information around the slot requests **must** be persisted to support the reporting and audit requirements
 
 
 ## Booking - Request & Confirmation 
@@ -40,16 +40,16 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * Where the booking was <ins>not</ins> successful, the provider **must** send an appropriate response to indicate this
 * Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this
 * The booking Consumer **must** send accompanying clinical information in a CDA Message
-  * The booking request **must** be referenced in the CDA message and vice versa 
+  * The booking Consumer request **must** be referenced in the CDA message and vice versa 
   * The booking Provider **must** link the booking and CDA message  
-*	Sufficient information around the booking process **must** be persisted to support the reporting requirements
+*	Sufficient information around the booking process **must** be persisted to support the reporting and audit requirements
 
 ## Booking outside assessment outcome timeframe 
 
-* The system **must** allow clinical users to book outside the assessment outcome timeframe
-* The system **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe
-* The system **must** store sufficient data to show where a patient has been booked outside their assessment outcome timeframe
-*	Sufficient information around the booking outside assessment outcome timeframe **must** be persisted to support the reporting requirements
+* The booking Consumer **must** allow clinical users to book outside the assessment outcome timeframe
+* The booking Consumer **must** present to the user a notification and prompt to seek clinical approval to book outside the assessment outcome timeframe
+* The booking Consumer **must** store sufficient data to show where a patient has been booked outside their assessment outcome timeframe
+*	Sufficient information around the booking outside assessment outcome timeframe **must** be persisted to support the reporting and audit requirements
 
 ## Referral requires booking (booking only services)
 
@@ -57,7 +57,7 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * The booking Consumer **must** present an appropriate warning message to the user, indicating the specific service requirements
 * The booking Consumer **must** allow the referral to be sent when a booking is made, the service requirements having been met
 * The user **must** be allowed to select an alternative service 
-*	Sufficient information around the booking with booking only services **should** be persisted to support the reporting requirements
+*	Sufficient information around the booking with booking only services **must** be persisted to support the reporting and audit requirements
 
 ## Authentication 
 
@@ -67,7 +67,7 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 
 ## Error Handling 
 
-* Consumers and Providers **must** adhere the <a href="er_overview.html" target="_blank">error handling guidance</a>  
-*	Sufficient information around errors encountered **must** be persisted to support the reporting requirements
+* Booking Consumers and Providers **must** adhere the <a href="er_overview.html" target="_blank">error handling guidance</a>  
+*	Sufficient information around errors encountered **must** be persisted to support the reporting and audit requirements
 
 
