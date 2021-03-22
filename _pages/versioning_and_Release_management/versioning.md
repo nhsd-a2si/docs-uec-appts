@@ -95,9 +95,7 @@ http://hl7.org/fhir/STU3/index.html), however, from release 2.0.0 the standard w
 - Providers MUST support a superseded NHS Booking Standard version for a minimum of 6 months, this MUST when appropriate include support for multiple [Major Version](#major_version_heading) iterations.
 
 
-- Providers MUST specify their version support in their [Capability Statement](TBC)
-
->TODO - Need Capability URL from IOPS once it has been published
+- Providers MUST specify their version support in their [Capability Statement](https://developer.nhs.uk/apis/nhsbooking-2.0.0-beta/capabilitystatement.html)
 
 
 ### Consumer Requirements
