@@ -154,10 +154,7 @@ entries:
       output: "web, pdf"
     - title: "Interactions with the SSP"
       url: /fs_ssp.html
-      output: "web, pdf"
-    - title: "Capability Statement"
-      url: /uec_capability.html
-      output: "web, pdf"
+      output: "web, pdf"    
     - title: "How bookings map to clinical need"
       url: /fs_slotmap.html
       output: "web, pdf"
