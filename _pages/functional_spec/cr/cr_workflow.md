@@ -15,6 +15,8 @@ The other Rebook functionality the Standard expected systems to support is the a
 
 There are a number of workflows where the cancel/rebook capability can be demonstrated.
 
+(Capability 1 example)
+
 Below is a typical scenario that would require what could be described operationally as "re-booking" (Capability 2):
 
 * On a Friday afternoon, Mr. Patient feels ill so calls a 111 service. 
