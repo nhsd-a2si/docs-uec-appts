@@ -17,7 +17,7 @@ If a booking is cancelled outside of the current consultation context, any refer
 
 There are a number of workflows where the cancel/rebook capability can be demonstrated.
 
-The following is an example of cancel/rebook within a current consultation (Capability 1):
+The following is an example of cancel/rebook within a current consultation (**Capability 1**):
 
 * On Tuesday evening, Ms. Patient feels ill so calls a 111 service.
 * It is determined during this assessment that they require a face to face consultation and a booking is made at their local Urgent Treatment Centre for 09:30 the following day.
@@ -29,7 +29,7 @@ The following is an example of cancel/rebook within a current consultation (Capa
 * The user confirms with Ms. Patient the original booking, made previously, and that this booking will be cancelled because the new later booking has been confirmed.
 * In the background the 111 system cancels the original booking (confirmed above).
 
-Below is a typical scenario that would require what could be described operationally as "re-booking" (Capability 2):
+Below is a typical scenario that would require what could be described operationally as "re-booking" (**Capability 2**):
 
 * On a Friday afternoon, Mr. Patient feels ill so calls a 111 service. 
 * It is determined during this assessment that they require a face to face consultation and a booking is made at an appropriate service, near their home, in 6 hours time. 
