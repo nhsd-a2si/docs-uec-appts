@@ -29,6 +29,8 @@ The following is an example of cancel/rebook within a current consultation (**Ca
 * The user confirms with Ms. Patient the original booking, made previously, and that this booking will be cancelled because the new later booking has been confirmed.
 * In the background the 111 system cancels the original booking (confirmed above).
 
+
+
 Below is a typical scenario that would require what could be described operationally as "re-booking" (**Capability 2**):
 
 * On a Friday afternoon, Mr. Patient feels ill so calls a 111 service. 
@@ -41,6 +43,8 @@ Below is a typical scenario that would require what could be described operation
 * The user confirms with Mr. Patient the original booking, made previously, and that this booking will be cancelled because the new more urgent booking has been confirmed.
 * In the background the 111 system cancels the original booking (confirmed above).
 
+
+
 Now consider a slightly different, less common but still likely scenario where the orignal booking is never cancelled:
 
 * On a Friday afternoon, whilst at work, Mrs. Patient feels ill so calls a 111 service. 
@@ -52,6 +56,8 @@ Now consider a slightly different, less common but still likely scenario where t
 * Mrs. Patient is reassessed and a new assessment outcome is reached. An urgent booking is required at the same Urgent Treatment Centre, but within 2 hours so the booking process is entered. 
 * The booking process is completed at the UTC service and the provider system sends a booking confirmation for the new booking to the provider service.
 * The original booking still exists on the system as the 111 service making the more urgent booking has no knowledge of the prior booking and would have to be dealt with locally when then patient arrives for the new more urgent booking.
+
+
 
 ### Consuming system:
 
