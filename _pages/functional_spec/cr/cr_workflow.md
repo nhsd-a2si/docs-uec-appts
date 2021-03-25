@@ -11,6 +11,8 @@ With the NHS Booking Standard there is no specific Rebook functionality. The rea
 
 The other Rebook functionality the Standard expected systems to support is the ability to perform this action within the context of the current consultation. In line with the capabilities documented, this would align with Capability 1. Consumer systems, having made a booking during the current consultation with the patient, might attempt to rebook for an alternative time after negotiation with the patient but the workflow principles will follow the same as above i.e. having made an original booking, the new booking **should** be made prior to cancelling the first, original, one. The rationale for this is to ensure the patient is not left without a booking and intended to mitigate clinical hazards. 
 
+If a booking is cancelled outside of the current consultation context, any referral document, sent as part of a booking, should be decoupled from the booking when cancelled and not to be assumed a referral in its own right i.e. to ensure ‘booking only’ services are appropritely updated.
+
 ### Workflows
 
 There are a number of workflows where the cancel/rebook capability can be demonstrated.
