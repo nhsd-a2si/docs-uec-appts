@@ -57,7 +57,7 @@ Provider systems SHALL release a new major version of their Booking and Referral
 
 Provider systems SHOULD release a new minor or patch version, replacing the previous the previous minor or patch version.
 
-The Booking and Referral (ITK) API Endpoints SHOULD be independently deployable against different FQDNs. This ensure support limitations around sending and receiving CDA messages over ITK in Path-to-Live and Production environments. 
+The Booking and Referral (ITK) API Endpoints SHOULD be independently deployable against different FQDNs. This ensure support for limitations around sending and receiving CDA messages over ITK in Path-to-Live and Production environments. 
 
 To increase availability, during upgrades and maintenance, the Booking and Referral APIs SHOULD be load balanced across multiple servers.
 
