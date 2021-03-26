@@ -70,4 +70,8 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * Booking Consumers and Providers **must** adhere the <a href="er_overview.html" target="_blank">error handling guidance</a>  
 *	Sufficient information around errors encountered **must** be persisted to support the reporting and audit requirements
 
+## Non Functional 
+
+* Booking Consumers and Providers **must** adhere to the <a href="non_functional_requirements.html" target="_blank">non functional requirements</a> of the Standard
+
 
