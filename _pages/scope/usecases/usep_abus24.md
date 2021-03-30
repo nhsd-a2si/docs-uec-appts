@@ -7,7 +7,7 @@ permalink: usep_abus24.html
 ## ABUS.24 Stopping referrals for booking only services
 **_In order_** that referrals a not made to services that operate a booking only model when an appointment has not been booked
 
-**_As a_** Integrated Urgent Care Sservice Provider
+**_As a_** Integrated Urgent Care Service Provider
 
 **_I want_** to be notified when selecting a service that only accepts referrals when a booking has been made
 

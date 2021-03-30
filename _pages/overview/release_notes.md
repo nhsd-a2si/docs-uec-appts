@@ -24,10 +24,10 @@ The 0.2.0 BETA release has the following highlights:
   * {%include FHIRSpecificationLink.html page="resources_overview.html" text="Resources Overview" %} page has been updated to reflect a generic use case. <mark style="background-color: LightGreen">non-breaking</mark>
   * Guidance around {%include FHIRSpecificationLink.html page="location.html" text="Location resource" %} has been updated.<mark style="background-color: LightGreen">non-breaking</mark>
   * Various guidance on Searching for Slots page added/updated:
-   * Additional guidance added regarding include and revinclude parameters when {%include FHIRSpecificationLink.html page="search_slots.html" text="searching for slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-   * Additional support for all statuses added when {%include FHIRSpecificationLink.html page="search_slots.html" text="searching for slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-   * Guidance added for outputting data in {%include FHIRSpecificationLink.html page="search_slots.html#_format" text="different formats" %} <mark style="background-color: LightGreen">non-breaking</mark>
-   * Addition of a new FHIR SearchParameter required for {%include FHIRSpecificationLink.html page="search_slots.html#search-parameters" text="searching slots" %}. <mark style="background-color: LightGreen">non-breaking</mark>
+    * Additional guidance added regarding include and revinclude parameters when {%include FHIRSpecificationLink.html page="search_slots.html" text="searching for slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+    * Additional support for all statuses added when {%include FHIRSpecificationLink.html page="search_slots.html" text="searching for slots" %} <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
+    * Guidance added for outputting data in {%include FHIRSpecificationLink.html page="search_slots.html#_format" text="different formats" %} <mark style="background-color: LightGreen">non-breaking</mark>
+    * Addition of a new FHIR SearchParameter required for {%include FHIRSpecificationLink.html page="search_slots.html#search-parameters" text="searching slots" %}. <mark style="background-color: LightGreen">non-breaking</mark>
   * Element Id has been replaced with identifier for {%include FHIRSpecificationLink.html page="healthcare_service.html" text="HealthcareService resource" %}. <mark style="background-color: #ff8080">breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Updated the description for id for the {%include FHIRSpecificationLink.html page="schedule.html" text="Schedule resource" %}. <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
   * Practitioner and PractitionerRole pages have been removed. <mark style="background-color: LightGreen">non-breaking</mark> 
@@ -55,7 +55,7 @@ The 0.2.0 BETA release has the following highlights:
 * Removed references to the demonstrator 
 * Added new pages to support the new [Provider and Consumer simulator tools](sims_install.html){:target="_blank"} <mark style="background-color: LightGreen">non-breaking</mark>
 * Fixed some broken links that referenced external resources <mark style="background-color: LightGreen">non-breaking</mark> <mark style="background-color: Yellow">correction</mark>
-* Added a new page providing some [API guidance](implementation_api.html){:target="_blank"}, removing ambiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
+* Added a new page providing some [API guidance](implementation_API.html){:target="_blank"}, removing ambiguity over a number of subjects <mark style="background-color: #ff8080">breaking</mark>
 * A new page describing [interactions with SDS](fs_sds.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * A new page describing [interactions with SSP](fs_ssp.html){:target="_blank"} was created <mark style="background-color: LightGreen">non-breaking</mark>
 * The [overview page on error handling](er_overview.html){:target="_blank"} was updated to improve clarity and remove ambiguity <mark style="background-color: LightGreen">non-breaking</mark>

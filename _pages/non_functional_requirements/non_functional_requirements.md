@@ -41,7 +41,7 @@ Provider systems SHALL be designed to optimise the ability of maintenance person
 Provider systems SHALL be designed so that technical support personnel are able to monitor and manage it in operation. In particular error messages presented to the end user MUST be clear, understandable and helpful.
 
 ## Clinical Risk Management
-Provider and consumer systems SHALL comply with NHS Digital <a href="https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-risk-management-standards" target="_blank">Clinical Risk Management Standards</a>, in particular DCB0160.
+Provider and consumer systems MUST comply with NHS Digital <a href="https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-risk-management-standards" target="_blank">Clinical Risk Management Standards</a>, in particular 0129 (IT Supplier) and 0160 (Trust/Provider).
 
 ## Data retention 
 Provider systems SHALL retain data in line with existing relevant Informational Governance and data protection regulation. 

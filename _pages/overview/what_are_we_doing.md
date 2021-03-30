@@ -7,9 +7,9 @@ toc: false
 ---
 
 ## Key Objectives
-* Improve patient experience when when making a booking through IUC/CAS
+* Improve patient experience when when making a booking
 * Single contact patient journey
-* Reduce Emergency Department Attendances
+* Reduce unnecessary Emergency Department attendance
 * Meet key recommendations made within the FYFV that the booking standard program is committed to delivering including:
   * Ensuring there is capability across all STPs for bookings at GP practices – initially delivered through existing capability in the market but ultimately through open, standardised methods from December 2018
   * Enabling Urgent Treatment Centres to offer appointments bookable through 111 as well as GP referral, will be treating patients from Spring 2019
