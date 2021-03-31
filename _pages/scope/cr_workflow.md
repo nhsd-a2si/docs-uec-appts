@@ -4,7 +4,7 @@ sidebar: overview_sidebar
 keywords: specification
 permalink: cr_workflow.html
 toc: false
-folder: functional_spec
+folder: scope
 ---
 
 With the NHS Booking Standard there is no specific Rebook functionality. The reason for this is that any need for a change to a booking, outside of the current consultation context, should require a re-assessment and be considered as a new encounter. Only once this re-assessment has been completed (including any new bookings associated with that encounter) would the consumer system then cancel any other existing bookings they are aware of that would no longer be appropriate. It is worth noting that depending on the capabilities of the system being used to make the reassessment the original booking may not be cancelled, for example, where re-assessment is performed by a different service provider with no access to the original booking.
