@@ -40,7 +40,7 @@ entries:
       url: /caresetting.html
       output: "web, pdf"            
 
-  - title: "Scope and user stories"
+  - title: "Scope and Requirements"
     output: web
     folderitems:
     - title: "Scope Overview"
@@ -77,7 +77,7 @@ entries:
         - title: "- Stopping referrals for booking only services"
           url: /usep_abus24.html
           output: web, pdf 
-      - title: "Use Cases"      
+      - title: "Requirements"      
         output: "web, pdf"
         subfolderitems:          
         - title: "Booking"
@@ -85,7 +85,10 @@ entries:
           output: web, pdf 
         - title: "Rebook or Cancel"
           url: /ucs_rebookcancel.html
-          output: web, pdf           
+          output: web, pdf
+      - title: Cancel & Rebook
+        url: /cr_workflow.html 
+        output: "web, pdf"   
         
   - title: "Non-Functional Requirements"
     output: web
