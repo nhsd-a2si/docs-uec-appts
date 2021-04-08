@@ -64,7 +64,7 @@ entries:
         output: "web, pdf"
         subfolderitems:          
         - title: "Rebooking or Cancelling"
-          url: /sr_scenario_cr.html
+          url: /sr_scenarios_cr.html
           output: web, pdf 
 
   - title: "Non-Functional Requirements"
