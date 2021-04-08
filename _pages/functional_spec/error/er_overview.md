@@ -219,7 +219,7 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="4">Make a Booking</td>
+                <td rowspan="3">Make a Booking</td>
                 <td>The request body was simply invalid</td>
                 <td>400 Bad Request</td>
                 <td>Add in details of what specifically is the issue in the request - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
@@ -238,7 +238,7 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>Get a booking</td>
+                <td rowspan="2">Get a booking</td>
                 <td>The resource does not exist on the server e.g. invalid appointment resource reference</td>
                 <td>404 Not found</td>
                 <td>Add in details of what specifically is the issue.</td>
