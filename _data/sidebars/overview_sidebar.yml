@@ -58,7 +58,7 @@ entries:
         - title: "Rebook or Cancel"
           url: /sr_rebookcancel.html
           output: web, pdf
-      - title: Scenarios
+      - title: "Scenarios"
         url: /sr_scenarios.html 
         output: "web, pdf"   
         
