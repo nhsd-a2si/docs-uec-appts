@@ -1,8 +1,8 @@
 ---
-title: Booking Management - workflow
+title: Scope & Requirement Scenarios 
 sidebar: overview_sidebar
-keywords: specification
-permalink: cr_workflow.html
+keywords: workflow requirements
+permalink: sr_scenarios.html
 toc: false
 folder: scope
 ---
