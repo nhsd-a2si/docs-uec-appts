@@ -41,7 +41,8 @@ summary: "Defines the envisiged use case scope for booking within the Standard"
 * Where the booking was <ins>not</ins> successful, the consumer **must** present an appropriate message to the user to indicate this
 * The booking Consumer **must** send accompanying clinical information in a CDA Message
   * The booking Consumer request **must** be referenced in the CDA message and vice versa 
-  * The booking Provider **must** link the booking and CDA message  
+  * The booking Provider **must** link the booking and CDA message 
+* The booking Consumer **must** ensure contact information for the patient and any related third parties is captured and sent in accordance with the Standard <a href="fs_patientcontact.html" target="_blank">guidance</a>
 *	Sufficient information around the booking process **must** be persisted to support the reporting and audit requirements
 
 ## Booking outside assessment outcome timeframe 
