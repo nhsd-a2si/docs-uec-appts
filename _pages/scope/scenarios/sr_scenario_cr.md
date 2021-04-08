@@ -13,9 +13,11 @@ The other Rebook functionality the Standard expected systems to support is the a
 
 {% include important.html content="If a booking is cancelled, any referral document, sent as part of that booking, should be decoupled when cancelled and not be assumed a referral in its own right." %}
 
-### Scenarios
+## Scenarios
 
 There are a number of scenarios where the cancel/rebook functionality can be demonstrated.
+
+### Rebook within consultation
 
 The following is an example of cancel/rebook within a current consultation:
 
@@ -29,7 +31,7 @@ The following is an example of cancel/rebook within a current consultation:
 * The user confirms with Ms. Patient the original booking, made previously, and that this booking will be cancelled because the new later booking has been confirmed.
 * In the background the 111 system cancels the original booking (confirmed above).
 
-
+### Rebook outside of consultation
 
 Below is a typical scenario that would require what could be described operationally as "re-booking":
 
@@ -43,7 +45,7 @@ Below is a typical scenario that would require what could be described operation
 * The user confirms with Mr. Patient the original booking, made previously, and that this booking will be cancelled because the new more urgent booking has been confirmed.
 * In the background the 111 system cancels the original booking (confirmed above).
 
-
+### Rebook without cancelling orginal booking
 
 Now consider a slightly different, less common but still likely scenario where the orignal booking is never cancelled:
 
@@ -59,6 +61,6 @@ Now consider a slightly different, less common but still likely scenario where t
 
 
 
-### Consuming system:
+## Consuming system:
 
 * At the end of any re-assessment, the option to cancel the original booking needs to be offered
