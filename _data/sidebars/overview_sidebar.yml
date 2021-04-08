@@ -45,7 +45,19 @@ entries:
     folderitems:
     - title: "Scope Overview"
       url: /scope_overview.html
-      output: "web, pdf"     
+      output: "web, pdf"  
+    - title: "Functional Scope"      
+      url: /scope_functional.html
+      output: "web, pdf"
+      - title: "Requirements1"      
+        output: "web, pdf"
+        subfolderitems:          
+        - title: "Booking"
+          url: /sr_booking.html
+          output: web, pdf 
+        - title: "Rebook or Cancel"
+          url: /sr_rebookcancel.html
+          output: web, pdf
 
   - title: "Non-Functional Requirements"
     output: web
