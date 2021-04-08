@@ -49,7 +49,7 @@ entries:
     - title: "Functional Scope"      
       url: /scope_functional.html
       output: "web, pdf"
-      - title: "Requirements"      
+      - title: "Requirements1"      
         output: "web, pdf"
         subfolderitems:          
         - title: "Booking"
