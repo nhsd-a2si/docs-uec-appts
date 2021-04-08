@@ -49,45 +49,17 @@ entries:
     - title: "Functional Scope"      
       url: /scope_functional.html
       output: "web, pdf"
-      subfolders:    
-      - title: "User Stories"
-        output: "web, pdf"
-        subfolderitems:
-        - title: "Overview"
-          url: /use_overview.html
-          output: web, pdf         
-        - title: "- Display provider services"
-          url: /usep_abus01.html
-          output: web, pdf
-        - title: "- Display available slots"
-          url: /usep_abus10.html
-          output: web, pdf
-        - title: "- Make a Booking"
-          url: /usep_abus12.html
-          output: web, pdf     
-        - title: "- Booking outside assessment timeframe"
-          url: /usep_abus13.html
-          output: web, pdf
-        - title: "- Cancel a Booking"
-          url: /usee_abus21.html
-          output: web, pdf
-        - title: "- Rebook a Booking"
-          url: /usee_abus22.html 
-          output: web, pdf
-        - title: "- Stopping referrals for booking only services"
-          url: /usep_abus24.html
-          output: web, pdf 
       - title: "Requirements"      
         output: "web, pdf"
         subfolderitems:          
         - title: "Booking"
-          url: /ucs_booking.html
+          url: /sr_booking.html
           output: web, pdf 
         - title: "Rebook or Cancel"
-          url: /ucs_rebookcancel.html
+          url: /sr_rebookcancel.html
           output: web, pdf
-      - title: Cancel & Rebook
-        url: /cr_workflow.html 
+      - title: Scenarios
+        url: /sr_scenarios.html 
         output: "web, pdf"   
         
   - title: "Non-Functional Requirements"
