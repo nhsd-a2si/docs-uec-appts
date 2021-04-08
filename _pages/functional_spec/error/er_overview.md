@@ -238,7 +238,7 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="2">Get a booking</td>
+                <td>Get a booking</td>
                 <td>The resource does not exist on the server e.g. invalid appointment resource reference</td>
                 <td>404 Not found</td>
                 <td>Add in details of what specifically is the issue.</td>
