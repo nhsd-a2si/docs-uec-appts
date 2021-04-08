@@ -63,7 +63,7 @@ entries:
         url: /sr_scenarios.html 
         output: "web, pdf"
         subfolderitems:          
-        - title: "Canellation & Rebook"
+        - title: "Rebooking or Cancelling"
           url: /sr_scenario_cr.html
           output: web, pdf 
 
@@ -159,16 +159,7 @@ entries:
           output: "web, pdf"
         - title: "Response Handling" 
           url: /er_errorhandling.html
-          output: "web, pdf" 
-      - title: "Cancelling Bookings"        
-        output: "web, pdf"
-        subfolderitems:
-        - title: Overview
-          url: /cr_overview.html
-          output: "web, pdf"                       
-        - title: Workflow
-          url: /cr_workflow.html 
-          output: "web, pdf"            
+          output: "web, pdf"         
     - title: "Transfer of Care"
       url: /fs_xfercare.html
       output: "web, pdf"
