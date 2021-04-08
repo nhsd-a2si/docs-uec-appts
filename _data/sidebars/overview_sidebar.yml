@@ -60,7 +60,6 @@ entries:
           url: /sr_rebookcancel.html
           output: web, pdf
       - title: "Scenarios"
-        url: /sr_scenarios.html 
         output: "web, pdf"
         subfolderitems:          
         - title: "Rebooking or Cancelling"
