@@ -59,9 +59,13 @@ entries:
         - title: "Rebook or Cancel"
           url: /sr_rebookcancel.html
           output: web, pdf
-    - title: "Scenarios"
-      url: /sr_scenarios.html 
-      output: "web, pdf"  
+      - title: "Scenarios"
+        url: /sr_scenarios.html 
+        output: "web, pdf"
+        subfolderitems:          
+        - title: "Canellation & Rebook"
+          url: /sr_scenario_cr.html
+          output: web, pdf 
 
   - title: "Non-Functional Requirements"
     output: web
