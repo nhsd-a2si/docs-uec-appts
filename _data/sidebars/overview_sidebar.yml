@@ -40,53 +40,32 @@ entries:
       url: /caresetting.html
       output: "web, pdf"            
 
-  - title: "Scope and user stories"
+  - title: "Scope and Requirements"
     output: web
     folderitems:
     - title: "Scope Overview"
       url: /scope_overview.html
-      output: "web, pdf"     
+      output: "web, pdf"  
     - title: "Functional Scope"      
       url: /scope_functional.html
       output: "web, pdf"
-      subfolders:    
-      - title: "User Stories"
-        output: "web, pdf"
-        subfolderitems:
-        - title: "Overview"
-          url: /use_overview.html
-          output: web, pdf         
-        - title: "- Display provider services"
-          url: /usep_abus01.html
-          output: web, pdf
-        - title: "- Display available slots"
-          url: /usep_abus10.html
-          output: web, pdf
-        - title: "- Make a Booking"
-          url: /usep_abus12.html
-          output: web, pdf     
-        - title: "- Booking outside assessment timeframe"
-          url: /usep_abus13.html
-          output: web, pdf
-        - title: "- Cancel a Booking"
-          url: /usee_abus21.html
-          output: web, pdf
-        - title: "- Rebook a Booking"
-          url: /usee_abus22.html 
-          output: web, pdf
-        - title: "- Stopping referrals for booking only services"
-          url: /usep_abus24.html
-          output: web, pdf 
-      - title: "Use Cases"      
+      subfolders:
+      - title: "Requirements"      
         output: "web, pdf"
         subfolderitems:          
         - title: "Booking"
-          url: /ucs_booking.html
+          url: /sr_booking.html
           output: web, pdf 
         - title: "Rebook or Cancel"
-          url: /ucs_rebookcancel.html
-          output: web, pdf           
-        
+          url: /sr_rebookcancel.html
+          output: web, pdf
+      - title: "Scenarios"
+        output: "web, pdf"
+        subfolderitems:          
+        - title: "Rebooking or Cancelling"
+          url: /sr_scenarios_cr.html
+          output: web, pdf 
+
   - title: "Non-Functional Requirements"
     output: web
     folderitems:
@@ -179,16 +158,7 @@ entries:
           output: "web, pdf"
         - title: "Response Handling" 
           url: /er_errorhandling.html
-          output: "web, pdf" 
-      - title: "Cancelling Bookings"        
-        output: "web, pdf"
-        subfolderitems:
-        - title: Overview
-          url: /cr_overview.html
-          output: "web, pdf"                       
-        - title: Workflow
-          url: /cr_workflow.html 
-          output: "web, pdf"            
+          output: "web, pdf"         
     - title: "Transfer of Care"
       url: /fs_xfercare.html
       output: "web, pdf"

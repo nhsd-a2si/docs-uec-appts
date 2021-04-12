@@ -2,7 +2,7 @@
 title: Use case scope for rebook and cancel
 toc: false
 sidebar: overview_sidebar
-permalink: ucs_rebookcancel.html
+permalink: sr_rebookcancel.html
 summary: "Defines the envisiged use case scope for rebooking and cancel within the Standard"
 ---
 
@@ -11,7 +11,7 @@ summary: "Defines the envisiged use case scope for rebooking and cancel within t
 
 ## Cancel booking 
 
-*	The booking Consumer **must** be capable of cancelling any booking made by them, within the current consultation or after the consultation event
+*	The booking Consumer **must** be capable of cancelling any booking made by them, within the current consultation or after the consultation event, as in the outlined <a href="sr_scenarios_cr.html#scenarios" target="_blank">scenarios</a>
 *	The booking Consumer **must** retrieve the booking to be cancel from the booking Provider prior to cancellation to ensure they are working with the most upto date booking
 *	The booking Consumer **must** provide visible confirmation to the user of the status returned by the booking Provider, i.e. whether the original booking was successfully cancelled
 *	If the update fails the booking Provider **must** respond with the most appropriately aligned error as defined in the <a href="https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/cancel_an_appointment.html" target="_blank">Specification</a> 
@@ -23,7 +23,7 @@ summary: "Defines the envisiged use case scope for rebooking and cancel within t
 
 ## Rebook 
 
-*	The booking Consumer **must** be capable of rebooking any booking made by them, within the current consultation or after the consultation event
+*	The booking Consumer **must** be capable of rebooking any booking made by them, within the current consultation or after the consultation event, as in the outlined <a href="sr_scenarios_cr.html#scenarios" target="_blank">scenarios</a>
 *	If a callback occurs, after the consultation has been completed, prior to attempting a rebook the patient **should** be reassessed 
 *	The booking Consumer **should** make the new booking prior to cancelling any original booking, whether within the current consultation or after the consultation event
 *	The booking Consumer **must** provide visible confirmation to the user of the status returned by the Provider, i.e.. whether the original booking was successfully cancelled and the new booking has been made successfully. 
