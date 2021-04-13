@@ -7,6 +7,14 @@ toc: false
 folder: functional_spec
 ---
 
+## Introduction
+
+As already described some form of a service discovery tool is envisaged to be used as part of the booking workflow. One aspect of using a service discovery tool (such as the UEC DoS) that has not been described is how outcomes from the prior clinical assessment map to services and subsequent booking workflows. 
+
+## With booking based on this standard
+
+It is the intention that with booking using this standard, the clinical profiling of the service will solely determine the requirement for booking. This is because of the effective 1:1 mapping between service and booking diary. This means that for example with UEC appointment booking using this standard, if a service is returned and has a booking endpoint, then a booking should be attempted with no further check on the outcome of the prior clinical assessment.
+
 ## Background
 It is common for system suppliers to present a single API endpoint that is shared between multiple healthcare services - this is particularly common where a system is centrally-hosted and multi-tenanted, or where an organisation has a single IT system that is used to provide multiple healthcare services.
 
