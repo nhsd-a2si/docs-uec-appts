@@ -55,17 +55,16 @@ entries:
         subfolderitems:          
         - title: "Booking"
           url: /sr_booking.html
-          output: web, pdf 
+          output: "web, pdf"
         - title: "Rebook or Cancel"
           url: /sr_rebookcancel.html
-          output: web, pdf
+          output: "web, pdf"
       - title: "Scenarios"
         output: "web, pdf"
         subfolderitems:          
         - title: "Rebooking or Cancelling"
           url: /sr_scenarios_cr.html
           output: web, pdf 
-      subfolders:
       - title: "Functional Requirements"      
         output: "web, pdf"
         subfolderitems:
@@ -77,11 +76,10 @@ entries:
             output: "web, pdf"
           - title: "Monitoring, Analytics and Reporting"
             url: /fs_reporting.html      
-            output: "web, pdf"  
-       - title: "Non Functional Requirements"
-         url: /non_functional_requirements.html      
-         output: "web, pdf"
-  
+            output: "web, pdf"
+      - title: "Non Functional Requirements"
+        url: /non_functional_requirements.html  
+        output: "web, pdf"
   - title: "How does it work?"
     output: web
     folderitems:
