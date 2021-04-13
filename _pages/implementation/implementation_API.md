@@ -58,11 +58,9 @@ Service Root URLs SHALL be aligned with the Care Connect specification they were
 
 Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs in the [Spine Directory Service](fs_sds.html) in the following format:
 
-{% include callout.html content="`https://[FQDN of FHIR Server]/[ODS_CODE]/[FHIR_VERSION_NAME]/[CC_MAJOR_VERSION]/[PROVIDER_ROUTING_SEGMENT]`" %}
+{% include callout.html content="`https://[FQDN of FHIR Server]/[FHIR_VERSION_NAME]/[CC_MAJOR_VERSION]/[PROVIDER_ROUTING_SEGMENT]`" %}
 
 - `[FQDN_OF_FHIR_SERVER]` is the fully qualified domain name where traffic will be routed to the logical FHIR server for the organisation in question
-
-- `[ODS_CODE]` is the [Organisation Data Service](https://digital.nhs.uk/organisation-data-service) code which uniquely identifies the organisation
 
 - `[FHIR_VERSION_NAME]` refers to the textual name identifying the major FHIR version, examples being `DSTU2` and `STU3`. The FHIR Version name SHALL be specified in UPPERCASE characters.
 
@@ -82,13 +80,13 @@ Provider systems SHALL publish Service Root URLs for major versions of FHIR APIs
 
 The provider SHALL publish the Service Root URL for each capability to [Spine Directory Services](fs_sds.html), for example:
 
-`https://provider.nhs.uk/CC0001/STU3/1/careconnect/structured`
+`https://provider.nhs.uk/STU3/1/careconnect/structured`
 
 Consumer systems are required to construct a [Service Root URL containing the SSP URL followed by the FHIR Server Root URL of the providers FHIR server](https://developer.nhs.uk/apis/spine-core-1-0/ssp_implementation_guide.html#system-architecture) that is suitable for interacting with the SSP service. API provider systems will be unaware of the SSP URL prefix as this will be removed prior to calling the provider API endpoint.
 
 The consumer system would therefore issue a request to the new version of the provider FHIR API to the following URL:
 
-`https://[ssp_fqdn]/https://provider.nhs.uk/CC0001/STU3/1/careconnect/appointment/[FHIR request]`
+`https://[ssp_fqdn]/https://provider.nhs.uk/STU3/1/careconnect/appointment/[FHIR request]`
 
 
 ### Resource URL ###

@@ -209,7 +209,7 @@ The following examples show abridged Patient resources with *only* the pertinent
           "telecom": [
             {
               "system": "phone",
-              "value": "01234 056 789"
+              "value": "01234 056 789",
               "rank": 2
             }
           ],
@@ -280,7 +280,7 @@ The following examples show abridged Patient resources with *only* the pertinent
           "telecom": [
             {
               "system": "phone",
-              "value": "01234 056 789"
+              "value": "01234 056 789",
               "rank": 2
             }
           ],
@@ -317,7 +317,7 @@ The following examples show abridged Patient resources with *only* the pertinent
           "telecom": [
             {
               "system": "phone",
-              "value": "01234 905 678"
+              "value": "01234 905 678",
               "rank": 2
             }
           ],
