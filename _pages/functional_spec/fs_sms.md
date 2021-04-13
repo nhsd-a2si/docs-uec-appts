@@ -1,5 +1,5 @@
 ---
-title: SMS For Appointments
+title: SMS For Bookings
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_sms.html
