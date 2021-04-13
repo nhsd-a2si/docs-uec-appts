@@ -77,9 +77,10 @@ entries:
           - title: "Monitoring, Analytics and Reporting"
             url: /fs_reporting.html      
             output: "web, pdf"
-     - title: "Non Functional Requirements"
-       url: /non_functional_requirements.html  
-       output: "web, pdf"
+    - title: "Non Functional Requirements"
+      url: /non_functional_requirements.html  
+      output: "web, pdf"
+      
   - title: "How does it work?"
     output: web
     folderitems:
