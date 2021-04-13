@@ -7,19 +7,9 @@ toc: false
 folder: functional_spec
 ---
 
-## Introduction
+When booking using the GP Connect standard there is not the same level of granularity for linking services to booking diaries as you would find in bookings based on the NHS Booking Standard. Some services may be returned that are profiled for broader clinical needs for which there is no intention to support a booking. It is therefore a requirement to perform a local mapping within the consumer system against the triage outcome and booking.
 
-As already described some form of a service discovery tool is envisaged to be used as part of the booking workflow. One aspect of using a servicediscovery tool (such as the UEC DoS) that has not been described is how outcomes from the prior clinical assessment map to services and subsequent booking workflows. 
-
-## With booking based on this standard
-
-It is the intention that with booking using this standard, the clinical profiling of the service will solely determine the requirement for booking. This is because of the effective 1:1 mapping between service and booking diary. This means that for example with UEC appointment booking using this standard, if a service is returned and has a booking endpoint, then a booking should be attempted with no further check on the outcome of the prior clinical assessment.
-
-## With GP Connect Booking
-
-However, since this level of granularity for linking services to booking diaries is not available when booking using the GP Connect standard some services may be returned that are profiled for broader clinical needs for which there is no intention to support a booking. It is therefore a requirement to perform a local mapping within the consumer system against the triage outcome and booking.
-
-When the clinical assessment  is performed using the NHS Pathways assessment tool a standard set of Pathways dispositions has been developed to support this mapping. When booking into Primary Care services it is expected that all Pathways assessments that reach one of the following list of dispositions should result in a referral to a service with an appointment being offered:
+When the clinical assessment is specifically being performed using the NHS Pathways assessment tool a standard set of Pathways dispositions has been developed to support this mapping. When booking into Primary Care services it is expected that all Pathways assessments that reach one of the following list of dispositions should result in a referral to a service with an appointment being offered:
 
 > * Dx05 To contact a Primary Care Service within 2 Hours
 > * Dx06 To contact a Primary Care Service within 6 Hours
@@ -48,9 +38,3 @@ When the clinical assessment  is performed using the NHS Pathways assessment too
 > * Dx117 Speak to a Primary Care Service within 1 hour for Palliative Care
 
 However, locally some areas may differ from the above list, therefore your system should be flexible enough to meet local need in terms of which dispositions can support booking.
-
-## Support for "booking only" type services
-
-Some services that are profiled on the Urgent Care Directory of Services are comissioned as "booking only" services. That is to say that they only accept referrals with an booking. If no booking is available then a referral should not be made.
-
-A "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the service all consumer systems should withold referrals. More information can be found <a href="dos_bookingonly.html" target="_blank">here</a>
