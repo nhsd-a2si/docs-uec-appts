@@ -65,7 +65,20 @@ entries:
         - title: "Rebooking or Cancelling"
           url: /sr_scenarios_cr.html
           output: web, pdf 
-
+      subfolders:
+      - title: "Functional Requirements"      
+        output: "web, pdf"
+        subfolderitems:
+          - title: "Slot Display Requirements"
+            url: /fs_deliverychannel.html
+            output: "web, pdf"
+          - title: "SMS For Bookings"
+            url: /fs_sms.html
+            output: "web, pdf"
+          - title: "Monitoring, Analytics and Reporting"
+            url: /fs_reporting.html      
+            output: "web, pdf"  
+            
   - title: "Non-Functional Requirements"
     output: web
     folderitems:
@@ -73,28 +86,13 @@ entries:
       url: /non_functional_requirements.html      
       output: "web, pdf"
   
-  - title: "Functional Specification"
+  - title: "How does it work?"
     output: web
     folderitems:
     - title: "Workflow and Interactions"
       url: /fs_workflow.html
       output: web, pdf"
       subfolders:
-      - title: "GP Connect"
-        output: "web, pdf"
-        subfolderitems:
-        - title: Overview
-          url: /gpc_overview.html
-          output: "web, pdf"
-        - title: "Key requirements"
-          url: /gpc_requirement.html
-          output: "web, pdf"            
-        - title: "Comparison with proprietary booking"
-          url: /gpc_propcon.html
-          output: "web, pdf"
-        - title: "Differences between GP Connect and CareConnect"
-          url: /fs_gpcdiff.html
-          output: "web, pdf"      
       - title: "Interactions with the DoS"      
         output: "web, pdf"
         subfolderitems:
@@ -127,22 +125,10 @@ entries:
           output: "web, pdf"            
         - title: "Changes for Booking"
           url: /dos_endpoints_booking.html  
-          output: "web, pdf"                
-    - title: "Interactions with the SDS"
-      url: /fs_sds.html
-      output: "web, pdf"
-    - title: "Interactions with the SSP"
-      url: /fs_ssp.html
-      output: "web, pdf"    
-    - title: "How bookings map to clinical need"
-      url: /fs_slotmap.html
-      output: "web, pdf"
+          output: "web, pdf" 
     - title: "How bookings map to services"
       url: /fs_slotmanagement.html      
-      output: "web, pdf"
-    - title: "Slot Display Requirements"
-      url: /fs_deliverychannel.html
-      output: "web, pdf"
+      output: "web, pdf"    
     - title: "How to handle times"
       url: /fs_times.html
       output: "web, pdf"
@@ -193,6 +179,31 @@ entries:
     - title: "Versioning"
       output: "web, pdf"
       url: /Versioning.html
+    - title: "Interactions with the SDS"
+      url: /fs_sds.html
+      output: "web, pdf"
+    - title: "Interactions with the SSP"
+      url: /fs_ssp.html
+      output: "web, pdf"    
+      subfolders:
+      - title: "GP Connect"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /gpc_overview.html
+          output: "web, pdf"
+        - title: "Key requirements"
+          url: /gpc_requirement.html
+          output: "web, pdf"            
+        - title: "Comparison with proprietary booking"
+          url: /gpc_propcon.html
+          output: "web, pdf"
+        - title: "Differences between GP Connect and CareConnect"
+          url: /fs_gpcdiff.html
+          output: "web, pdf"  
+        - title: "How bookings map to clinical need"
+          url: /fs_slotmap.html
+          output: "web, pdf"
     - title: "TKW Simulators"
       url: /sims_install.html      
       output: "web, pdf"            
