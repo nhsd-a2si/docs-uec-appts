@@ -1,7 +1,7 @@
 entries:
 - title: "NHS Booking Standard"
   product: ""
-  version: "v0.2.0 BETA"
+  version: "v1.0.0 RC1"
   spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
   speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/index.html"
   levels: one
@@ -32,8 +32,8 @@ entries:
       - title: "Pre-Releases"
         output: "web, pdf"
         subfolderitems:
-        - title: "0.2.2 BETA"
-          url: /rn_022b.html
+        - title: "0.2.0 BETA"
+          url: /rn_020b.html
           output: "web, pdf"
      
   
