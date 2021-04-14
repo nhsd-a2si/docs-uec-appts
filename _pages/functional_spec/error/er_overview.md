@@ -219,7 +219,7 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td rowspan="3">Make a Booking</td>
+                <td rowspan="4">Make a Booking</td>
                 <td>The request body was simply invalid</td>
                 <td>400 Bad Request</td>
                 <td>Add in details of what specifically is the issue in the request - including OperationOutcome.issue.location or OperationOutcome.issue.expression  as appropriate.</td>
@@ -229,6 +229,12 @@ The next table details the appropriate error code return values to be sent by Pr
                 <td>The requested Slot is no longer free</td>
                 <td>409 Conflict</td>
                 <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics</td>
+              </tr>
+          <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>The X-request-Id has been used previously</td>
+                <td>409 Conflict</td>
+                <td>Add in details indicating the X-Request-Id header value has been used previously in OperationOutcome.issue.diagnostics</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
@@ -251,11 +257,17 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>Cancel a booking</td>
+                <td rowspan="2">Cancel a booking</td>
                 <td>The consumer org is not permitted to cancel this booking. Note the booking flows permit cancellation by organisations other than the organisation that made the booking - but this is managed locally in the Provider system with configuration to allow the provider to control who can cancel bookings.</td>
                 <td>403 Forbidden</td>
                 <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the booking e.g. only the organisation that made the booking is permitted to cancel a booking.</td>
-              </tr>         
+              </tr> 
+         <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>The X-request-Id has been used previously</td>
+                <td>409 Conflict</td>
+                <td>Add in details indicating the X-Request-Id header value has been used previously in OperationOutcome.issue.diagnostics</td>
+              </tr>
         </tbody>
       </table>
       <!--/p>
