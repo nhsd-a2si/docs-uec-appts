@@ -35,8 +35,57 @@ entries:
         - title: "0.2.0 BETA"
           url: /rn_020b.html
           output: "web, pdf"
-     
-  
+        - title: "0.1.17 ALPHA"
+          url: /rn_0117a.html
+          output: "web, pdf"
+        - title: "0.1.16 ALPHA"
+          url: /rn_0116a.html
+          output: "web, pdf"
+        - title: "0.1.15 ALPHA"
+          url: /rn_0115a.html
+          output: "web, pdf"
+        - title: "0.1.14 PREVIEW"
+          url: /rn_0114p.html
+          output: "web, pdf"
+        - title: "0.1.13 PREVIEW"
+          url: /rn_0113p.html
+          output: "web, pdf"
+        - title: "0.1.12 PREVIEW"
+          url: /rn_0112p.html
+          output: "web, pdf"
+        - title: "0.1.11 PREVIEW"
+          url: /rn_0111p.html
+          output: "web, pdf"
+        - title: "0.1.10 PREVIEW"
+          url: /rn_0110p.html
+          output: "web, pdf"
+        - title: "0.1.9 PREVIEW"
+          url: /rn_0109p.html
+          output: "web, pdf"
+        - title: "0.1.8 PREVIEW"
+          url: /rn_0108p.html
+          output: "web, pdf"
+        - title: "0.1.7 PREVIEW"
+          url: /rn_0107p.html
+          output: "web, pdf"
+        - title: "0.1.6 PREVIEW"
+          url: /rn_0106p.html
+          output: "web, pdf"
+        - title: "0.1.5 PREVIEW"
+          url: /rn_0105p.html
+          output: "web, pdf"
+        - title: "0.1.4 PREVIEW"
+          url: /rn_0104p.html
+          output: "web, pdf"
+        - title: "0.1.3 PREVIEW"
+          url: /rn_0103p.html
+          output: "web, pdf"
+        - title: "0.1.2 PREVIEW"
+          url: /rn_0102p.html
+          output: "web, pdf"
+        - title: "0.1.1 PREVIEW"
+          url: /rn_0101p.html
+          output: "web, pdf"
   - title: "Overview"
     output: web
     folderitems:    
