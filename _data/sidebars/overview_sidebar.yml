@@ -316,8 +316,11 @@ entries:
           output: "web, pdf"
         - title: "Test Plan"
           url: /dep_testplan.html  
-          output: "web, pdf"    
-  
+          output: "web, pdf"
+    - title: "Incident Management"
+      url: /incident_management.html
+      output: "web, pdf"
+      
   - title: "Help and Support"    
     output: web
     folderitems:
