@@ -25,7 +25,7 @@ entries:
     output: web
     folderitems:
     - title: "Current"
-      url: /rn_current.html
+      url: /rn_100rc1.html
       output: "web, pdf"
       type: homepage
       subfolders:
