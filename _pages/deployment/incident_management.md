@@ -12,4 +12,4 @@ It is expected that all suppliers will have an incident management process in pl
 
 Please see the latest version of the NHS Digital Incident Management process below:
 
-<a href="files/SDO_Incident_and_Service_Request_Management_Process" download>SDO Incident and Service Request Management Process (pdf file)</a>
+<a href="files/SDO_Incident_and_Service_Request_Management_Process.pdf" download>SDO Incident and Service Request Management Process (pdf file)</a>
