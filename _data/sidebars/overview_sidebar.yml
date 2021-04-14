@@ -19,10 +19,23 @@ entries:
       output: "web, pdf"
     - title: "Getting Started"
       url: /getting_started.html
+      output: "web, pdf"    
+  
+  - title: "Releases"
+    output: web
+    folderitems:
+    - title: "Current"
+      url: /rn_current.html
       output: "web, pdf"
-    - title: "Release Notes"
-      url: /release_notes.html
-      output: "web, pdf"      
+      type: homepage
+      subfolders:
+      - title: "Pre-Releases"
+        output: "web, pdf"
+        subfolderitems:
+        - title: "0.2.2 BETA"
+          url: /rn_022b.html
+          output: "web, pdf"
+     
   
   - title: "Overview"
     output: web
