@@ -59,7 +59,7 @@ The list includes only suppliers we are actively engaged with and are currently 
         <!------------------------------ROW----------------------------------->        
         <tr>
             <td style="background-color: LightBlue;">Ready</td>
-            <td>The supplier has passed assurance an received a conformance certificate</td> 
+            <td>The supplier has passed assurance and received a conformance certificate</td> 
         </tr>
     </tbody>
 </table>
