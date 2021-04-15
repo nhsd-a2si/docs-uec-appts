@@ -17,10 +17,25 @@ A "Consumer" is a system that is seaching for slots and looking to make a bookin
     
 The list includes only suppliers we are actively engaged with and are currently working on implementing against the standard.
 
+{% include keyTable.html %}
 {% include table-collapsible.html %} 
 
 <p>
-     
+
+<div class="keyTable">
+    
+    | Status      |                                                                                                          |
+    | ------------| -------------------------------------------------------------------------------------------------------- |
+    | Not Engaged | The supplier has not engaged with the delivery team 
+    | Not Started | The supplier may have had some discussion but no commitment has been given regarding development
+    | Engagement  | The supplier is in discussion with the delivery team and plan to start development in the next quarter 
+    | Development | The supplier is currently developing (coding) against the standard 
+    | Assurance   | The supplier has completed development and is working through the relevant assurance steps 
+    | Ready       | The supplier has passed assurance an received a conformance certificate     
+
+</div>
+
+<p>
 <div class="wrap-collabsible">
   <input id="collapsible1" class="toggle" type="checkbox">
   <label for="collapsible1" class="lbl-toggle">IT supplier Booking Capabilities - Care Connect - Consumer</label>
