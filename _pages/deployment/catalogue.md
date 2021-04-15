@@ -260,8 +260,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                     <td style="font-size:small">Yorkshire and Humber</td>
                     <td style="font-size:small">SPA</td>
                     <td style="font-size:small">TBC</td>
-                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
-                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                    <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                     <td style="background-color: #ffe4b3;">Engagement</td>
                     <td style="background-color: LightGrey;"></td>
               </tr>
