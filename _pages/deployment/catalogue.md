@@ -21,7 +21,7 @@ The list includes only suppliers we are actively engaged with and are currently 
 
 <p>
 
-### Key
+**Key**
 
 <table> 
     <thead>
@@ -33,7 +33,7 @@ The list includes only suppliers we are actively engaged with and are currently 
     <tbody>        
         <!------------------------------ROW----------------------------------->        
         <tr>
-            <td style="background-color: LightRed;">Not Engaged</td>
+            <td style="background-color: #ff3300;">Not Engaged</td>
             <td>The supplier has not engaged with the delivery team</td> 
         </tr>
         <!------------------------------ROW----------------------------------->        
@@ -43,7 +43,7 @@ The list includes only suppliers we are actively engaged with and are currently 
         </tr>
         <!------------------------------ROW----------------------------------->        
         <tr>
-            <td style="background-color: LightOrange;">Engagement</td>
+            <td style="background-color: #ffe4b3;">Engagement</td>
             <td>The supplier is in discussion with the delivery team and plan to start development in the next quarter</td> 
         </tr>
         <!------------------------------ROW----------------------------------->        
