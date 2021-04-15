@@ -360,8 +360,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">Meditech</td>
                 <td style="font-size:small">Meditech</td>
                 <td style="font-size:small">TBC</td>
-                <td>NA</td>
-                <td>NA</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td style="background-color: Orange;">Not Started</td>
                 <td style="background-color: LightGrey;"></td>
               </tr>   
@@ -450,8 +450,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">Harris</td>
                 <td style="font-size:small">HARRIS Flex</td>
                 <td style="font-size:small">TBC</td>
-                <td>NA</td>
-                <td>NA</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td style="background-color: #ff3300;">Not Engaged</td>
                 <td style="background-color: LightGrey;"></td>
               </tr> 
