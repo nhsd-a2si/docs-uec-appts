@@ -154,7 +154,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                     <td style="font-size:small">TBC</td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
-                    <td style="background-color: DarkGreen;">Ready</td>
+                    <td style="background-color: LightBlue;">Ready</td>
                     <td style="background-color: LightGrey;"></td>
               </tr>  
          </tbody>
