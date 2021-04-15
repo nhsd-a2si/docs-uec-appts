@@ -33,17 +33,17 @@ The list includes only suppliers we are actively engaged with and are currently 
     <tbody>        
         <!------------------------------ROW----------------------------------->        
         <tr>
-            <td style="background-color: Red;">Not Engaged</td>
+            <td style="background-color: LightRed;">Not Engaged</td>
             <td>The supplier has not engaged with the delivery team</td> 
         </tr>
         <!------------------------------ROW----------------------------------->        
         <tr>
-            <td style="background-color: Organge;">Not Started</td>
+            <td style="background-color: Orange;">Not Started</td>
             <td>The supplier may have had some discussion but no commitment has been given regarding development</td> 
         </tr>
         <!------------------------------ROW----------------------------------->        
         <tr>
-            <td style="background-color: LightOrgange;">Engagement</td>
+            <td style="background-color: LightOrange;">Engagement</td>
             <td>The supplier is in discussion with the delivery team and plan to start development in the next quarter</td> 
         </tr>
         <!------------------------------ROW----------------------------------->        
@@ -58,7 +58,7 @@ The list includes only suppliers we are actively engaged with and are currently 
         </tr>
         <!------------------------------ROW----------------------------------->        
         <tr>
-            <td style="background-color: Blue;">Ready</td>
+            <td style="background-color: LightBlue;">Ready</td>
             <td>The supplier has passed assurance an received a conformance certificate</td> 
         </tr>
     </tbody>
