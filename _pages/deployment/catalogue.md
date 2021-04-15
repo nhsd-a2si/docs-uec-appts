@@ -21,7 +21,7 @@ The list includes only suppliers we are actively engaged with and are currently 
 
 <p>
 
-**Key**
+<h2>Key</h2>
 
 <table> 
     <thead>
