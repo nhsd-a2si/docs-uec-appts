@@ -106,25 +106,12 @@ The process of replacing CDAs is usually acceptable, the documents are versioned
 
 On receipt, the Provider must then do the following:
 
-##### When a CDA arrives:
+1. First receive booking 
+2. Lookup / Create the Patient
+3. Create case
+4. Create booking- with the reference to the CDA document within it 
+5. (Return the URL to the booking in the Location header)
+6. Receive the CDA message over ITK (or email)
+7. Find matched cases based on ID of the CDA->Appointment.DocumentReference.identifier
+8. Merge CDA into case - save against the record so that the CDA information is easily accessible by a clinician against the case when the patient attends the booking.
 
-1. First receive CDA.
-2. Find matched cases based on ID of the CDA->Appointment.DocumentReference.identifier.
-3. If no case found:
-     a. Lookup / Create the Patient.
-     b. Create case.
-     c. Save the CDA to the record against this case.
-4. If case is found (as appointment was created first), merge CDA into case - save against the record so that the CDA information is easily accessible by a clinician against the case when the patient attends the appointment.
-
-##### When an appointment arrives:
-
-1. First receive Appointment.
-2. Find existing matched cases based on Appointment.DocumentReference.identifier->ID of the CDA document.
-3. If no case found:
-     a. Lookup / Create the Patient.
-     b. Create case
-     c. Create appointment- with the reference to the CDA document within it.
-4. If case is found (as CDA was received first), link appointment to the case - save against the record so that the appointment is linked to the clinical case that has been transferred using the CDA. This ensures that when the patient attends the appointment it is linked to the transfer of care information.
-
-
-This isolates the process from any sensitivity about whether both messages arrive, and will work regardless of what sequence they arrive.
