@@ -25,11 +25,15 @@ A "service attribute" is configurable against services. This will allow the serv
 ## Background
 It is common for system suppliers to present a single API endpoint that is shared between multiple healthcare services - this is particularly common where a system is centrally-hosted and multi-tenanted, or where an organisation has a single IT system that is used to provide multiple healthcare services.
 
-Some service discovery tools (such as the UEC Directory of Services (DoS)) lists services at the granular healthcare service level i.e. for each of the above example healthcare services, the DoS will have 1 or more service records defined. It is these individual service records that are presented to users when searching the DoS.
+> *Example: An NHS provider organisation, 'Trumpton Urgent Care Services', which provides several healthcare services including an NHS 111 call centre, an Out of Hours (OOH) > GP service, and an Urgent Treatment Centre (UTC). The OOH GP service may offer two sub-services on DoS: OOH GP Telephone Consultations, and OOH GP Face to face Consultations.* 
 
-*Example: An NHS provider organisation, 'Trumpton Urgent Care Services', which provides several healthcare services including an NHS 111 call centre, an Out of Hours (OOH) GP service, and an Urgent Treatment Centre (UTC). The OOH GP service may offer two sub-services on DoS: OOH GP Telephone Consultations, and OOH GP Face to face Consultations.* Each of these would be represented in the DoS as discreet services.
+Each of the above would be represented in the DoS as discreet services.
+
+Some service discovery tools (such as the UEC Directory of Services (DoS)) list services at the granular healthcare service level i.e. for each of the above example healthcare services, the DoS will have 1 or more service records defined. It is these individual service records that are presented to users when searching the DoS.
 
 When a booking consumer (e.g. NHS 111) requests available slots from a healthcare service, it needs to identify exactly which healthcare service it is targeting. This will allow provider systems to correctly route requests and filter the responses to be relevant to the specific request.
+
+> A Key concept here is that it is the Provider of appointments that controls what is returned. The Consumer does NO filtering and is "dumb", just showing all the slots that are returned.
 
 ## Use Healthcare Service ID to filter slot requests to specific healthcare services
 A search parameter of the HealthcareService (an intrinsic part of FHIR RESTful search) will be sent.
