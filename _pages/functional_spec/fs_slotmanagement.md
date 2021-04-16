@@ -11,20 +11,15 @@ folder: functional_spec
 
 As already described some form of a service discovery tool is envisaged to be used as part of the booking workflow. One aspect of using a service discovery tool (such as the UEC DoS) that has not been described is how outcomes from the prior clinical assessment map to services and subsequent booking workflows. 
 
-## With booking based on this standard
+### With booking based on this standard
 
 It is the intention that with booking using this standard, the clinical profiling of the service will solely determine the requirement for booking. This is because of the effective 1:1 mapping between service and booking diary. This means that for example with UEC appointment booking using this standard, if a service is returned and has a booking endpoint, then a booking should be attempted with no further check on the outcome of the prior clinical assessment.
 
-## Support for "booking only" type services
+### Support for "booking only" type services
 
 Some services that are profiled on the Urgent Care Directory of Services are comissioned as "booking only" services. That is to say that they only accept referrals with an booking. If no booking is available then a referral should not be made.
 
 A "service attribute" is configurable against services. This will allow the service to be flagged as "booking only". Therefore if this attribute is present on the service all consumer systems should withold referrals. More information can be found <a href="dos_bookingonly.html" target="_blank">here</a>
-
-
-
-
-
 
 
 ## Background
