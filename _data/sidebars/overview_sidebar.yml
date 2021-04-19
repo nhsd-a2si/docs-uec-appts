@@ -155,10 +155,7 @@ entries:
       
   - title: "Implementing the standard"
     output: web
-    folderitems:
-    - title: "Implementation Overview"
-      url: /implementation_overview.html
-      output: "web, pdf"
+    folderitems:    
     - title: "API Guidance"
       url: /implementation_API.html
       output: "web, pdf"
