@@ -2,7 +2,7 @@ entries:
 - title: "NHS Booking Standard"
   product: ""
   version: "v1.0.0 RC1"
-  spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
+  spec: "STU3 | FHIR NHS Scheduling | 2.0.3"
   speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.3/index.html"
   levels: two
   folders: 
