@@ -27,7 +27,7 @@ It is common for system suppliers to present a single API endpoint that is share
 
 > *Example: An NHS provider organisation, 'Trumpton Urgent Care Services', which provides several healthcare services including an NHS 111 call centre, an Out of Hours (OOH) > GP service, and an Urgent Treatment Centre (UTC). The OOH GP service may offer two sub-services on DoS: OOH GP Telephone Consultations, and OOH GP Face to face Consultations.* 
 
-Each of the above would be represented in the DoS as discreet services.
+Each of the above would be represented in the DoS as discrete services.
 
 Some service discovery tools (such as the UEC Directory of Services (DoS)) list services at the granular healthcare service level i.e. for each of the above example healthcare services, the DoS will have 1 or more service records defined. It is these individual service records that are presented to users when searching the DoS.
 
