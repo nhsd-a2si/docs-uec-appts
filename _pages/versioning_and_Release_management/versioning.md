@@ -75,10 +75,6 @@ The extensions ALPHA and BETA will be used to indicate the maturity of a pre-rel
 
 #### Associated technical artefacts
 The following artefacts will be released as part standard, taking the same version number as the specification.
-
->TODO - Need correct URLS for these
-
-- [Interactive Swagger API documentation](https://app.swaggerhub.com/apis/Sphinx/CareConnect-Alpha/2.0.0)
 - [Automated test toolkit](sims_install.html)
 
 
