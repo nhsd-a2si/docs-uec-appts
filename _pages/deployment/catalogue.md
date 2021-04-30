@@ -242,7 +242,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: LightGreen;">Development</td>
+                <td style="background-color: Green;">Assurance</td>
                   <td style="background-color: LightGrey;"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">/www.oneadvanced.com/solutions/adastra</a></td>
               </tr>  
        <!------------------------------ROW----------------------------------->  
@@ -252,7 +252,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: LightGreen;">Development</td>
+                <td style="background-color: Green;">Assurance</td>
                  <td style="background-color: LightGrey;"><a href="https://www.tpp-uk.com/" target="_blank"www.tpp-uk.com</a></td>
               </tr> 
       <!------------------------------ROW----------------------------------->      
