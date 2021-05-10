@@ -3,7 +3,7 @@ title: Authentication with NHS Booking
 sidebar: overview_sidebar
 keywords: specification
 permalink: fs_authentication.html
-toc: false
+toc: true
 folder: functional_spec
 ---
 

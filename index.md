@@ -6,11 +6,6 @@ toc: False
 permalink: index.html
 ---
 
-{% include warning.html content="This site is provided for information only and is intended for those engaged with NHS Digital in First of Type activities. If you wish to develop against this standard, please contact the team" %}
-
-
-
-
 ## Introduction
 
 There is a demand for direct appointment booking capabilities across multiple NHS services in England. This need stems from a strategic requirement to improve patient journeys and system efficiency. Therfore there is a need for a national standard that sets out what appointment booking solutions should and should not be able to do.
