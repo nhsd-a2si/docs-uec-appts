@@ -204,7 +204,7 @@ entries:
       output: "web, pdf"
     - title: "Interactions with the SSP"
       url: /fs_ssp.html
-      output: "web, pdf"    
+      output: "web, pdf"
       subfolders:
       - title: "GP Connect"
         output: "web, pdf"
