@@ -50,6 +50,8 @@ The main reason for the overriding the profiles is because there is a reilance o
 |gender|0..1|1..1|
 |birthdate|0..1|1..1|
 |address|0..\*|1..1|
+|telecom.rank (if telecom is populated)|0..1|1..1|
+|contact.telecom.rank (if telecom is populated)|0..1|1..1|
 
 
 ### <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Schedule-1" target="_blank">Schedule</a>

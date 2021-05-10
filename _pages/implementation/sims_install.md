@@ -175,7 +175,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
         volumes:
             - 'C:/Users/xxx/AppData/Local/Temp/assurance/scratch/data:/home/service/data'
             - 'C:/Users/xxx/AppData/Local/Temp/assurance/scratch:/home/service/fhir'
-        image: 'nhsdigitalmait/tkw_uec_provider_simulator:0.1'
+        image: 'nhsdigitalmait/tkw_uec_provider_simulator:0.5'
 
 **Appendix2 – Docker Compose file for Consumer Simulator (Windows)**
 ---
@@ -186,7 +186,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
     version: "3"
     services:
     tkw_uec_consumer_simulator:
-    image: nhsdigitalmait/tkw_uec_consumer_simulator:0.1
+    image: nhsdigitalmait/tkw_uec_consumer_simulator:0.5
 
     environment:
       - TZ=Europe/London
@@ -196,11 +196,11 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
     volumes:
         # <host path to mount> : <mount point within docker>
         # auto_tests folder
-        - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/auto_tests:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/auto_tests'
+        - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/auto_tests:/home/service/TKW/config/FHIR_111_UEC/autotest_config/auto_tests'
         # endpoint_configs folder
-        - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/endpoint_configs:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs'
+        - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/endpoint_configs:/home/service/TKW/config/FHIR_111_UEC/autotest_config/endpoint_configs'
         # autotest logs folder
-        - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/autotest_logs:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/autotest_logs'
+        - 'C:/Users/xxx/AppData/Local/Temp/config/FHIR_111_UEC/autotest_config/autotest_logs:/home/service/TKW/config/FHIR_111_UEC/autotest_config/autotest_logs'
 
 
 
@@ -222,7 +222,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
         volumes:
 		- '/Users/xxx/Work/NHS-D/UEC/Testing/Data:/home/service/data'
 		- '/Users/xxx/Work/NHS-D/UEC/Testing/Data:/home/service/fhir'
-        image: 'nhsdigitalmait/tkw_uec_provider_simulator:0.1'
+        image: 'nhsdigitalmait/tkw_uec_provider_simulator:0.5'
 
 
 **Appendix5 – Docker Compose file for Consumer Simulator (Mac)**
@@ -234,7 +234,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
     version: "3"
     services:
       tkw_uec_consumer_simulator:
-      image: nhsdigitalmait/tkw_uec_consumer_simulator:0.1
+      image: nhsdigitalmait/tkw_uec_consumer_simulator:0.5
 
     environment:
       - TZ=Europe/London
@@ -244,11 +244,11 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
     volumes:
     # <host path to mount> : <mount point within docker>
     # auto_tests folder
-    - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/auto_tests:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/auto_tests
+    - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/auto_tests:/home/service/TKW/config/FHIR_111_UEC/autotest_config/auto_tests
     # endpoint_configs folder
-    - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/endpoint_configs:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs
+    - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/endpoint_configs:/home/service/TKW/config/FHIR_111_UEC/autotest_config/endpoint_configs
     # autotest logs folder
-    - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/autotest_logs:/TKW_ROOT/config/FHIR_111_UEC/autotest_config/autotest_logs
+    - /Users/xxx/Work/NHS-D/UEC/Testing/Config/FHIR_111_UEC/autotest_config/autotest_logs:/home/service/TKW/config/FHIR_111_UEC/autotest_config/autotest_logs
 
 **Appendix6 - Endpoint configuration file example (default)**
 ---

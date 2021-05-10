@@ -1,10 +1,10 @@
 entries:
 - title: "NHS Booking Standard"
   product: ""
-  version: "v0.2.0 BETA"
-  spec: "STU3 | FHIR NHS Scheduling | 2.0.2-beta"
-  speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/index.html"
-  levels: one
+  version: "v1.0.0 RC1"
+  spec: "STU3 | FHIR NHS Scheduling | 2.0.3"
+  speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.3/index.html"
+  levels: two
   folders: 
   
   - title: "Introduction"
@@ -19,11 +19,73 @@ entries:
       output: "web, pdf"
     - title: "Getting Started"
       url: /getting_started.html
-      output: "web, pdf"
-    - title: "Release Notes"
-      url: /release_notes.html
-      output: "web, pdf"      
+      output: "web, pdf"    
   
+  - title: "Releases"
+    output: web
+    folderitems:
+    - title: "Current"
+      url: /current.html
+      output: "web, pdf"
+      type: homepage
+      subfolders:
+      - title: "Pre-Releases"
+        output: "web, pdf"
+        subfolderitems:
+        - title: "0.2.0 BETA"
+          url: /rn_020b.html
+          output: "web, pdf"
+        - title: "0.1.17 ALPHA"
+          url: /rn_0117a.html
+          output: "web, pdf"
+        - title: "0.1.16 ALPHA"
+          url: /rn_0116a.html
+          output: "web, pdf"
+        - title: "0.1.15 ALPHA"
+          url: /rn_0115a.html
+          output: "web, pdf"
+        - title: "0.1.14 PREVIEW"
+          url: /rn_0114p.html
+          output: "web, pdf"
+        - title: "0.1.13 PREVIEW"
+          url: /rn_0113p.html
+          output: "web, pdf"
+        - title: "0.1.12 PREVIEW"
+          url: /rn_0112p.html
+          output: "web, pdf"
+        - title: "0.1.11 PREVIEW"
+          url: /rn_0111p.html
+          output: "web, pdf"
+        - title: "0.1.10 PREVIEW"
+          url: /rn_0110p.html
+          output: "web, pdf"
+        - title: "0.1.9 PREVIEW"
+          url: /rn_0109p.html
+          output: "web, pdf"
+        - title: "0.1.8 PREVIEW"
+          url: /rn_0108p.html
+          output: "web, pdf"
+        - title: "0.1.7 PREVIEW"
+          url: /rn_0107p.html
+          output: "web, pdf"
+        - title: "0.1.6 PREVIEW"
+          url: /rn_0106p.html
+          output: "web, pdf"
+        - title: "0.1.5 PREVIEW"
+          url: /rn_0105p.html
+          output: "web, pdf"
+        - title: "0.1.4 PREVIEW"
+          url: /rn_0104p.html
+          output: "web, pdf"
+        - title: "0.1.3 PREVIEW"
+          url: /rn_0103p.html
+          output: "web, pdf"
+        - title: "0.1.2 PREVIEW"
+          url: /rn_0102p.html
+          output: "web, pdf"
+        - title: "0.1.1 PREVIEW"
+          url: /rn_0101p.html
+          output: "web, pdf"
   - title: "Overview"
     output: web
     folderitems:    
@@ -40,73 +102,70 @@ entries:
       url: /caresetting.html
       output: "web, pdf"            
 
-  - title: "Scope and user stories"
+  - title: "Scope and Requirements"
     output: web
     folderitems:
     - title: "Scope Overview"
       url: /scope_overview.html
-      output: "web, pdf"     
+      output: "web, pdf"  
     - title: "Functional Scope"      
       url: /scope_functional.html
       output: "web, pdf"
-      subfolders:    
-      - title: "User Stories"
+      subfolders:
+      - title: "Requirements"      
+        output: "web, pdf"
+        subfolderitems:          
+        - title: "Booking"
+          url: /sr_booking.html
+          output: "web, pdf"
+        - title: "Rebook or Cancel"
+          url: /sr_rebookcancel.html
+          output: "web, pdf"
+      - title: "Scenarios"
+        output: "web, pdf"
+        subfolderitems:          
+        - title: "Rebooking or Cancelling"
+          url: /sr_scenarios_cr.html
+          output: web, pdf 
+      - title: "Functional Requirements"      
         output: "web, pdf"
         subfolderitems:
-        - title: "Overview"
-          url: /use_overview.html
-          output: web, pdf         
-        - title: "- Display provider services"
-          url: /usep_abus01.html
-          output: web, pdf
-        - title: "- Display available slots"
-          url: /usep_abus10.html
-          output: web, pdf
-        - title: "- Make a Booking"
-          url: /usep_abus12.html
-          output: web, pdf     
-        - title: "- Booking outside assessment timeframe"
-          url: /usep_abus13.html
-          output: web, pdf
-        - title: "- Cancel a Booking"
-          url: /usee_abus21.html
-          output: web, pdf
-        - title: "- Rebook a Booking"
-          url: /usee_abus22.html 
-          output: web, pdf
-        - title: "- Stopping referrals for booking only services"
-          url: /usep_abus24.html
-          output: web, pdf
-        
-  - title: "Non-Functional Requirements"
-    output: web
-    folderitems:
+          - title: "Slot Display Requirements"
+            url: /fs_deliverychannel.html
+            output: "web, pdf"
+          - title: "SMS For Bookings"
+            url: /fs_sms.html
+            output: "web, pdf"
+          - title: "Monitoring, Analytics and Reporting"
+            url: /fs_reporting.html      
+            output: "web, pdf"
     - title: "Non Functional Requirements"
-      url: /non_functional_requirements.html      
+      url: /non_functional_requirements.html  
       output: "web, pdf"
-  
-  - title: "Functional Specification"
+      
+  - title: "How does it work?"
     output: web
     folderitems:
     - title: "Workflow and Interactions"
       url: /fs_workflow.html
-      output: web, pdf"
+      output: web, pdf"      
+    - title: "How bookings map to services"
+      url: /fs_slotmanagement.html      
+      output: "web, pdf"  
+      
+  - title: "Implementing the standard"
+    output: web
+    folderitems:    
+    - title: "Versioning"
+      output: "web, pdf"
+      url: /Versioning.html  
+    - title: "API Guidance"
+      url: /implementation_API.html
+      output: "web, pdf"
+    - title: "Implementing FHIR® Resources"
+      url: /implementation_FHIR.html
+      output: "web, pdf"      
       subfolders:
-      - title: "GP Connect"
-        output: "web, pdf"
-        subfolderitems:
-        - title: Overview
-          url: /gpc_overview.html
-          output: "web, pdf"
-        - title: "Key requirements"
-          url: /gpc_requirement.html
-          output: "web, pdf"            
-        - title: "Comparison with proprietary booking"
-          url: /gpc_propcon.html
-          output: "web, pdf"
-        - title: "Differences between GP Connect and CareConnect"
-          url: /fs_gpcdiff.html
-          output: "web, pdf"      
       - title: "Interactions with the DoS"      
         output: "web, pdf"
         subfolderitems:
@@ -139,28 +198,38 @@ entries:
           output: "web, pdf"            
         - title: "Changes for Booking"
           url: /dos_endpoints_booking.html  
-          output: "web, pdf"                
+          output: "web, pdf" 
     - title: "Interactions with the SDS"
       url: /fs_sds.html
       output: "web, pdf"
     - title: "Interactions with the SSP"
       url: /fs_ssp.html
-      output: "web, pdf"    
-    - title: "How bookings map to clinical need"
-      url: /fs_slotmap.html
       output: "web, pdf"
-    - title: "How bookings map to services"
-      url: /fs_slotmanagement.html      
-      output: "web, pdf"
-    - title: "Slot Display Requirements"
-      url: /fs_deliverychannel.html
-      output: "web, pdf"
-    - title: "How to handle times"
-      url: /fs_times.html
-      output: "web, pdf"
+      subfolders:
+      - title: "GP Connect"
+        output: "web, pdf"
+        subfolderitems:
+        - title: Overview
+          url: /gpc_overview.html
+          output: "web, pdf"
+        - title: "Key requirements"
+          url: /gpc_requirement.html
+          output: "web, pdf"            
+        - title: "Comparison with proprietary booking"
+          url: /gpc_propcon.html
+          output: "web, pdf"
+        - title: "Differences between GP Connect and CareConnect"
+          url: /fs_gpcdiff.html
+          output: "web, pdf"  
+        - title: "How bookings map to clinical need"
+          url: /fs_slotmap.html
+          output: "web, pdf"
     - title: "Authentication"
       url: /fs_authentication.html      
-      output: "web, pdf"
+      output: "web, pdf"    
+    - title: "How to handle times"
+      url: /fs_times.html
+      output: "web, pdf"    
       subfolders:
       - title: "Error Handling"
         output: "web, pdf"
@@ -170,22 +239,10 @@ entries:
           output: "web, pdf"
         - title: "Response Handling" 
           url: /er_errorhandling.html
-          output: "web, pdf" 
-      - title: "Cancelling Bookings"        
-        output: "web, pdf"
-        subfolderitems:
-        - title: Overview
-          url: /cr_overview.html
-          output: "web, pdf"                       
-        - title: Workflow
-          url: /cr_workflow.html 
-          output: "web, pdf"            
+          output: "web, pdf"         
     - title: "Transfer of Care"
       url: /fs_xfercare.html
-      output: "web, pdf"
-    - title: "SMS For Bookings"
-      url: /fs_sms.html
-      output: "web, pdf"
+      output: "web, pdf"  
     - title: "How to store patient contacts"
       url: /fs_patientcontact.html   
       output: "web, pdf"
@@ -194,36 +251,10 @@ entries:
       output: "web, pdf"
     - title: "FHIR Resource Profile Overrides"
       url: /fs_fhir_overrides.html   
-      output: "web, pdf"
-    - title: "Monitoring, Analytics and Reporting"
-      url: /fs_reporting.html      
-      output: "web, pdf"
-      
-  - title: "Implementing the standard"
-    output: web
-    folderitems:
-    - title: "Implementation Overview"
-      url: /implementation_overview.html
-      output: "web, pdf"
-    - title: "API Guidance"
-      url: /implementation_API.html
-      output: "web, pdf"
-    - title: "Implementing FHIR® Resources"
-      url: /implementation_FHIR.html
-      output: "web, pdf"
-    - title: "Versioning"
-      output: "web, pdf"
-      url: /Versioning.html
+      output: "web, pdf"      
     - title: "TKW Simulators"
       url: /sims_install.html      
       output: "web, pdf"            
-  
-  - title: "First of Type"
-    output: web
-    folderitems:
-    - title: "First of Type"
-      url: /first_of_type.html     
-      output: "web, pdf"
   
   - title: "Information Governance"
     output: web
@@ -281,8 +312,11 @@ entries:
           output: "web, pdf"
         - title: "Test Plan"
           url: /dep_testplan.html  
-          output: "web, pdf"    
-  
+          output: "web, pdf"
+    - title: "Incident Management"
+      url: /incident_management.html
+      output: "web, pdf"
+      
   - title: "Help and Support"    
     output: web
     folderitems:

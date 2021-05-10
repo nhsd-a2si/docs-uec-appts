@@ -75,10 +75,6 @@ The extensions ALPHA and BETA will be used to indicate the maturity of a pre-rel
 
 #### Associated technical artefacts
 The following artefacts will be released as part standard, taking the same version number as the specification.
-
->TODO - Need correct URLS for these
-
-- [Interactive Swagger API documentation](https://app.swaggerhub.com/apis/Sphinx/CareConnect-Alpha/2.0.0)
 - [Automated test toolkit](sims_install.html)
 
 
@@ -92,10 +88,11 @@ http://hl7.org/fhir/STU3/index.html), however, from release 2.0.0 the standard w
 
 - Providers MUST support a minimum of 2 NHS Booking Standard versions, this support MUST when appropriate include support for multiple [Major Version](#major_version_heading) iterations.
 
-- Providers MUST specify their version support in their [Capability Statement](TBC)
+- Providers MUST support a superseded NHS Booking Standard version for a minimum of 6 months, this MUST when appropriate include support for multiple [Major Version](#major_version_heading) iterations.
 
->TODO - Need Capability URL from IOPS once it has been published
+
+- Providers MUST specify their version support in their [Capability Statement](https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/capabilitystatement.html)
 
 
 ### Consumer Requirements
-- Consumers MUST use the Provider's [Capability Statement](TBC) to establish the version/s of the NHS Booking Standard supported by the Provider.
+- Consumers MUST use the Provider's [Capability Statement](https://developer.nhs.uk/apis/nhsbooking-2.0.2-beta/capabilitystatement.html) to establish the version/s of the NHS Booking Standard supported by the Provider.

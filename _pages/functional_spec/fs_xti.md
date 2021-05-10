@@ -25,7 +25,7 @@ This is why all updates (such as when performing a cancel operation) **must** be
 * The consumer writes the result back as an update interaction, and is able to handle a 409 (conflict) or 412 (precondition failed) response (usually by trying again)
 If consumers follow this pattern, then information from other systems that they do not understand will be maintained through the update.
 
-Both consumer and provider systems **should** clearly document how transaction integrity is handled by specifying in the documentation inside the {%include FHIRSpecificationLink.html page="uec_capability.html" text="CapabilityStatement" %}
+Both consumer and provider systems **should** clearly document how transaction integrity is handled by specifying in the documentation inside the {%include FHIRSpecificationLink.html page="capabilitystatement.html" text="CapabilityStatement" %}
 
 
 ## Handling a special case - duplicates arising from retrys

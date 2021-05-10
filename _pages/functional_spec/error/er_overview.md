@@ -174,14 +174,14 @@ The next table details the appropriate error code return values to be sent by Pr
               <tr>
                 <td>Server can't return the requested format e.g. server only does XML but JSON was requested
 </td>
-                <td>400 Bad Request</td>
+                <td>501 Not implemented</td>
                 <td>Add in details of what specifically is the issue by an appropriate error information in OperationOutcome.issue.diagnostics.</td>
               </tr>  
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td rowspan="2">Security</td>
                 <td>JWT badly constructed</td>
-                <td>403 Forbidden</td>
+                <td>400 Bad Request</td>
                 <td>Add in details of what went wrong including location details of the error.</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
@@ -227,14 +227,14 @@ The next table details the appropriate error code return values to be sent by Pr
           <!------------------------------ROW----------------------------------->   
               <tr>
                 <td>The requested Slot is no longer free</td>
-                <td>422 Unprocessable Entity</td>
+                <td>409 Conflict</td>
                 <td>Add in details of why the slot is now not free in OperationOutcome.issue.diagnostics</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>The request body failed validation</td>
-                <td>422 Unprocessable Entity</td>
-                <td>Add in details of what went wrong including location details of the error in  OperationOutcome.issue.diagnostics.</td>
+                <td>The X-request-Id has been used previously</td>
+                <td>409 Conflict</td>
+                <td>Add in details indicating the X-Request-Id header value has been used previously in OperationOutcome.issue.diagnostics</td>
               </tr>
           <!------------------------------ROW----------------------------------->   
               <tr>
@@ -257,11 +257,17 @@ The next table details the appropriate error code return values to be sent by Pr
               </tr>         
          <!------------------------------ROW----------------------------------->   
               <tr>
-                <td>Cancel a booking</td>
+                <td rowspan="2">Cancel a booking</td>
                 <td>The consumer org is not permitted to cancel this booking. Note the booking flows permit cancellation by organisations other than the organisation that made the booking - but this is managed locally in the Provider system with configuration to allow the provider to control who can cancel bookings.</td>
                 <td>403 Forbidden</td>
                 <td>Add in details of why no slots returned in OperationOutcome.issue.diagnostics- the Consumer can record this for further business investigation around why they could not cancel the booking e.g. only the organisation that made the booking is permitted to cancel a booking.</td>
-              </tr>         
+              </tr> 
+         <!------------------------------ROW----------------------------------->   
+              <tr>
+                <td>The X-request-Id has been used previously</td>
+                <td>409 Conflict</td>
+                <td>Add in details indicating the X-Request-Id header value has been used previously in OperationOutcome.issue.diagnostics</td>
+              </tr>
         </tbody>
       </table>
       <!--/p>

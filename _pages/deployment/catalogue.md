@@ -87,13 +87,13 @@ The list includes only suppliers we are actively engaged with and are currently 
             <tbody>        
       <!------------------------------ROW----------------------------------->        
               <tr>
-                <td style="font-size:small">Advanced</td>
+                <td style="font-size:small"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">Advanced</a></td>
                 <td style="font-size:small">Adastra</td>
                 <td style="font-size:small">3.33</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
-                <td style="background-color: LightGrey;"></td>  
+                <td style="background-color: LightGrey;"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank"></a>www.oneadvanced.com/solutions/adastra</td>  
               </tr>  
                  
       <!------------------------------ROW----------------------------------->             
@@ -119,13 +119,13 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>                  
        <!------------------------------ROW----------------------------------->      
               <tr>
-                    <td style="font-size:small">MIS</td>
+                    <td style="font-size:small"><a href="https://www.mis-es.com/" target="_blank">MIS</a></td>
                     <td style="font-size:small">C<sup>3</sup> Tripath</td>
                     <td style="font-size:small">TBC</td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
                     <td style="background-color: LightBlue;">Ready</td>
-                    <td style="background-color: LightGrey;"></td>
+                    <td style="background-color: LightGrey;"><a href="https://www.mis-es.com/" target="_blank">www.mis-es.com</a></td>
                </tr>
       <!------------------------------ROW----------------------------------->      
               <tr>
@@ -139,13 +139,13 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>        
       <!------------------------------ROW----------------------------------->      
               <tr>
-                    <td style="font-size:small">TPP</td>
+                    <td style="font-size:small"><a href="https://www.tpp-uk.com/" target="_blank">TPP</a></td>
                     <td style="font-size:small">SystmOne</td>
                     <td style="font-size:small">TBC</td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.17 ALPHA</mark></td>
                     <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.1 BETA</mark></td>
                     <td style="background-color: LightBlue;">Ready</td>
-                    <td style="background-color: LightGrey;"></td>
+                    <td style="background-color: LightGrey;"><a href="https://www.tpp-uk.com/" target="_blank">www.tpp-uk.com</a></td>
                </tr>
       <!------------------------------ROW----------------------------------->      
               <tr>
@@ -237,23 +237,23 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>  
       <!------------------------------ROW-----------------------------------> 
               <tr>
-                <td style="font-size:small">Advanced</td>
+                  <td style="font-size:small"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">Advanced</a></td>
                 <td style="font-size:small">Adastra</td>
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: LightGreen;">Development</td>
-                <td style="background-color: LightGrey;"></td>
+                <td style="background-color: Green;">Assurance</td>
+                  <td style="background-color: LightGrey;"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">/www.oneadvanced.com/solutions/adastra</a></td>
               </tr>  
        <!------------------------------ROW----------------------------------->  
              <tr>
-                <td style="font-size:small">TPP</td>
+                <td style="font-size:small"><a href="https://www.tpp-uk.com/" target="_blank">TPP</a></td>
                 <td style="font-size:small">SystmOne</td>
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: LightGreen;">Development</td>
-                <td style="background-color: LightGrey;"></td>
+                <td style="background-color: Green;">Assurance</td>
+                <td style="background-color: LightGrey;"><a href="https://www.tpp-uk.com/" target="_blank">www.tpp-uk.com</a></td>
               </tr> 
       <!------------------------------ROW----------------------------------->      
               <tr>

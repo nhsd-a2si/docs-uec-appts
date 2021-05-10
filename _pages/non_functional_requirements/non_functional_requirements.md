@@ -51,3 +51,15 @@ Provider and consumer systems SHOULD follow the <a href="https://www.iso.org/sta
 
 ## Accessibility 
 Provider and consumer systems MUST maintain a compliance of minimum Double “A” of the WCAG 1.0 (or equivalent in WCAG 2.0) or, as stipulated by UK Government guidelines, for all user interfaces. Please see the ,<a href="https://www.w3.org/WAI/" target="_blank">Web Accessibility Initiative</a> for more details. 
+
+## Deployment 
+Provider systems SHALL release a new major version of their Booking and Referral APIs alongside a previous major version, until such time as consumers have migrated to the new major version. Alternatively, there must be support for backward compatibility of requests to support consumers.
+
+Provider systems SHOULD release a new minor or patch version, replacing the previous minor or patch version.
+
+The Booking and Referral (ITK) API Endpoints SHOULD be independently deployable against different FQDNs. This ensure support for limitations around sending and receiving CDA messages over ITK in Path-to-Live and Production environments. 
+
+To increase availability, during upgrades and maintenance, the Booking and Referral APIs SHOULD be load balanced across multiple servers.
+
+In multi tenanted deployments, the activity of individial tenants MUST be readily retrievable. 
+
