@@ -3,7 +3,7 @@ title: General API guidance
 summary: Implementation guidance for developers - focusing on general API implementation guidance
 sidebar: overview_sidebar
 keywords: guidance
-permalink: implementation_API.html
+permalink: implementation_api.html
 toc: true
 folder: implementation
 tags: [fhir,development]

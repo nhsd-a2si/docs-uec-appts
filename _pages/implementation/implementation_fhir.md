@@ -2,7 +2,7 @@
 title: Implementing FHIR Resources
 sidebar: overview_sidebar
 keywords: guidance
-permalink: implementation_FHIR.html
+permalink: implementation_fhir.html
 toc: false
 folder: implementation
 ---
