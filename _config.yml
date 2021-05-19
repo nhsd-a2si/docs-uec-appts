@@ -92,8 +92,6 @@ defaults:
 
 sidebars:
 - overview_sidebar
-- poc_sidebar
-- dos_sidebar
 
 description: "NHS Booking Standard"
 # the description is used in the feed.xml file
