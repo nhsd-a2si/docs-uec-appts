@@ -22,57 +22,29 @@ The intention is that any standards that govern referral messaging and documenta
 
 Below is an example of how one type of transfer of care process can be linked with appointment booking.
 
-In this illustration we have a referral from 111 using a 111CDA document containing a coded entry which holds the appointment reference / identifier and a coded section heading which holds a text representation of appointment details.  
+In this illustration we have a referral from 111 using a 111CDA document containing a coded entry which holds the appointment reference / identifier and the second example shows a coded section heading which holds a text representation of appointment details.  
 
 ```XML
 <entry typeCode="COMP" contextConductionInd="true">
-  <npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146093GB01#AppointmentReference"/>
-  <encounter classCode="ENC" moodCode="APT">
-    <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#AppointmentReference"/>
-    <id root="2.16.840.1.113883.2.1.3.2.4.17.541" extension="eb4f7f21-3962-4416-9a29-a46dd6ee5f17"/>
-    <code code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.542" displayName="Patient booking"/>
-    <effectiveTime value="201706011400+00"/>
-    <participant typeCode="LOC" contextControlCode="OP">
-      <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#location"/>
-      <participantRole classCode="ASSIGNED">
-        <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#assignedEntity"/>
-        <id root="2.16.840.1.113883.2.1.3.2.4.19.1" extension="Q36"/>
-        <addr use="WP">
-          <streetAddressLine>Great George Street</streetAddressLine>
-          <city>Leeds</city>
-          <postalCode>LE13EX</postalCode>
-        </addr>
-        <playingEntity classCode="ORG" determinerCode="INSTANCE">
-          <templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#assignedOrganization"/>
-          <name>CENTRAL LONDON COMMUNITY HEALTHCARE NHS TRUST</name>
-          <desc>Psychiatric Community Care Services</desc>
-        </playingEntity>
-      </participantRole>
-    </participant>
-    <component typeCode="COMP" contextConductionInd="true">
-        <npfitlc:contentId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
-        <section classCode="DOCSECT" moodCode="EVN">
-            <templateId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
-            <id root="90611FD4-6616-11EB-B9BD-00155D70280A"/>
-            <title>Booked Appointment Information</title>
-            <text>
-                <linkHtml href="https://<generic-address-here>/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348/">https://NHSD.Test.INT.nhs.uk/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348</linkHtml>
-            </text>
-        </section>
-    </component>
-  </encounter>
+	<npfitlc:contentId root="2.16.840.1.113883.2.1.3.2.4.18.16" extension="COCD_TP146093GB01#AppointmentReference"/>
+	<encounter classCode="ENC" moodCode="APT">
+		<templateId root="2.16.840.1.113883.2.1.3.2.4.18.2" extension="COCD_TP146093GB01#AppointmentReference"/>
+		<id root="2.16.840.1.113883.2.1.3.2.4.17.541" extension="https://<generic-address-here>/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348/"/>
+		<code code="01" codeSystem="2.16.840.1.113883.2.1.3.2.4.17.542" displayName="Patient convenience appointment"/>
+		<effectiveTime value="201706011400+00"/>
+	</encounter>
 </entry>
 ```
 
-Key to the linking is the ```COMP``` component, specifically the ```linkHtml``` element where the appointment URL is specified. The appointment URL must always be set in the ```href``` attribute and must always be obtained from the ```href``` attribute only and not from the "*text-between-the-tags*".
+Key to the linking is the ```encounter``` component, specifically the ```extension``` element of id, where the appointment URL is specified. The appointment URL may be set in the ```href``` attribute and can be obtained from the ```href``` attribute but must not be taken from the "*text-between-the-tags*".
 
 ```XML
 <component typeCode="COMP" contextConductionInd="true">
     <npfitlc:contentId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.16"/>
     <section classCode="DOCSECT" moodCode="EVN">
         <templateId extension="COCD_TP146246GB01#Section1" root="2.16.840.1.113883.2.1.3.2.4.18.2"/>
-        <id root="90611FD4-6616-11EB-B9BD-00155D70280A"/>
-        <title>Booked Appointment Information</title>
+       <id root="90611FD4-6616-11EB-B9BD-00155D70280A"/>
+        <title>Booked appointment with 'service name' on 'date' at 'time'</title>
         <text>
             <linkHtml href="https://<generic-address-here>/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348/">https://NHSD.Test.INT.nhs.uk/fhir/Appointment/28BCD0FC-F01F-4DB2-B6F1-92A36A37B348</linkHtml>
         </text>
