@@ -321,8 +321,29 @@ Login with the following credentials -
 	Password = uecbooking 
 <img src="_pages/implementation/img/Register Login.png">	
 
-Fill out the registration form 
-<img src="_pages/implementation/img/Register.png">	
+Fill out the registration form and click 'Register' 
+<img src="_pages/implementation/img/Register.png">
+NB: You will need to have registered your endpoint on INT and been provided with an ASID - See <a href="dep_devptl.html " target="_blank">Path-to-Live</a>
+
+Login with your newly created credentials - 
+<img src="_pages/implementation/img/Login.png">
+
+You will be presented with the following options 
+<img src="_pages/implementation/img/menu.png">
+	
+If you are building a Provider/Receiver solution, this tool will allow you to send tests directly to your API
+
+Click 'Consumer Simulator' and you will be presented with a list of tests for different areas of functionality i.e. Search for Slots, Booking, etc. Ensure that the 'Provider ASID', indictaed at the top of the screen, is the one configured to direct traffic to your endpoint.
+<img src="_pages/implementation/img/ConSim.png">
+	
+Tick the box next to the tests you wish to perform or the 'Select All..' for all test for an area of functionality or all tests available (top option 'Select All Tests')
+<img src="_pages/implementation/img/SelectedTests.png">
+	
+
+
+	
+
+
 
 	
 </div>
