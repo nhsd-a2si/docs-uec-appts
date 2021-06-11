@@ -320,6 +320,10 @@ Login with the following credentials -
 	Username = admin
 	Password = uecbooking 
 <img src="_pages/implementation/img/Register Login.png">	
-A
+
+Fill out the registration form 
+<img src="_pages/implementation/img/Register.png">	
+
+	
 </div>
 </details>
