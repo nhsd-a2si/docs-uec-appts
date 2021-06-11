@@ -312,5 +312,14 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |CancelAppointment_BadGateway|Cancel Appointment|Cancel appointment bad gateway response|
 |CancelAppointment_GatewayTimeout|Cancel Appointment|Cancel appointment gateway timeout response|
 
+**Appendix8 - Using TKW on the INT environment**
+---
+Navigate to - http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx
+
+Login with the following credentials - 
+	Username = admin
+	Password = uecbooking 
+	
+A
 </div>
 </details>
