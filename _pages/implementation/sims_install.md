@@ -319,7 +319,7 @@ Navigate to - http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx
 Login with the following credentials - 
 	Username = admin
 	Password = uecbooking 
-	
+<img src="_pages/implementation/img/Register Login.png">	
 A
 </div>
 </details>
