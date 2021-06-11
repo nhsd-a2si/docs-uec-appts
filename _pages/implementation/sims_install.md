@@ -372,6 +372,7 @@ Provider Reports (for reports run against the TKW Provider/Receiver Test Tool fr
 The Portal will also email reports directly to the email address used when registering. Tick the box to subscribe to this feature. 
 
 <img src="_pages/implementation/img/EmailReps.png">
-	
+
+
 </div>
 </details>
