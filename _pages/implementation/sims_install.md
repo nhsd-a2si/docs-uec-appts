@@ -312,8 +312,10 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |CancelAppointment_BadGateway|Cancel Appointment|Cancel appointment bad gateway response|
 |CancelAppointment_GatewayTimeout|Cancel Appointment|Cancel appointment gateway timeout response|
 
-**Appendix8 - Using TKW on the INT environment**
+**Appendix8 - Using TKW Portal on the INT environment**
 ---
+**Registering**
+	
 Navigate to - http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx
 
 Login with the following credentials - 
@@ -323,28 +325,53 @@ Login with the following credentials -
 
 Fill out the registration form and click 'Register' 
 <img src="_pages/implementation/img/Register.png">
+	
 NB: You will need to have registered your endpoint on INT and been provided with an ASID - See <a href="dep_devptl.html " target="_blank">Path-to-Live</a>
 
+**Testing your Provider/Receiver**
+	
 Login with your newly created credentials - 
 <img src="_pages/implementation/img/Login.png">
 
 You will be presented with the following options 
+	
 <img src="_pages/implementation/img/menu.png">
 	
 If you are building a Provider/Receiver solution, this tool will allow you to send tests directly to your API
 
 Click 'Consumer Simulator' and you will be presented with a list of tests for different areas of functionality i.e. Search for Slots, Booking, etc. Ensure that the 'Provider ASID', indictaed at the top of the screen, is the one configured to direct traffic to your endpoint.
+	
 <img src="_pages/implementation/img/ConSim.png">
 	
 Tick the box next to the tests you wish to perform or the 'Select All..' for all test for an area of functionality or all tests available (top option 'Select All Tests')
+	
 <img src="_pages/implementation/img/SelectedTests.png">
 	
+Click 'Run Consumer Simulator' at the bottom of the page 
 
-
+<img src="_pages/implementation/img/Run.png">
 	
+When complete, the following dialog will display 
+	
+<img src="_pages/implementation/img/Finished.png">
+	
+The Test and Validation Report can be viewed and downloaded under the 'Download Reports' menu option
 
+**Viewing Reports** 
 
+Consumer Reports (for reports run against a Provider/Receiver solution from the TKW Test Tool)
 
+<img src="_pages/implementation/img/ConsumerReps.png">
+
+Provider Reports (for reports run against the TKW Provider/Receiver Test Tool from a Consumer)
+
+<img src="_pages/implementation/img/ProviderReps.png">
+	
+**Subscribing for Reports**
+
+The Portal will also email reports directly to the email address used when registering. Tick the box to subscribe to this feature. 
+
+<img src="_pages/implementation/img/EmailReps.png">
 	
 </div>
 </details>
