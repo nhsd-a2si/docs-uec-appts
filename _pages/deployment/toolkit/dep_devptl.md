@@ -145,3 +145,13 @@ At this point, assuming the Provider Testing has been successful, the solution i
 On the agreed date of go-live, the system will be 'switched on', an end-to-end test run to verify functionality and the service declared live. The solution moves from a project into BAU (Business as Usual), supported by all usual processes e.g. Technical Support. 
 
 Depending on the supplier's adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
+ 
+
+# Appendices 
+<details>
+<summary>Click to expand appendices</summary>
+<div class="expanded-class" markdown="1">
+
+
+</div>
+</deatails>
