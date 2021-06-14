@@ -344,9 +344,9 @@ You will be presented with the following options
 	
 <img src="_pages/implementation/img/menu.png">
 	
-If you are building a Provider/Receiver solution, this tool will allow you to send tests directly to your API
+This Portal will allow you to send tests directly to your API
 
-Click 'Consumer Simulator' and you will be presented with a list of tests for different areas of functionality i.e. Search for Slots, Booking, etc. Ensure that the 'Provider ASID', indictaed at the top of the screen, is the one configured to direct traffic to your endpoint.
+Click 'Consumer Simulator' and you will be presented with a list of tests for different areas of functionality i.e. Search for Slots, Booking, etc. Ensure that the 'Provider ASID' (indicated at the top of the screen) is the one configured to direct traffic to your endpoint.
 	
 <img src="_pages/implementation/img/ConSim.png">
 	
