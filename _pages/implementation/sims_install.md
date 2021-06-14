@@ -319,7 +319,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 ---
 **Registering**
 	
-Navigate to - http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx
+Navigate to - http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx (HSCN access required)
 
 Login with the following credentials - 
 	Username = admin
@@ -332,7 +332,7 @@ Fill out the registration form and click 'Register'
 NB: You will need to have registered your endpoint on INT and been provided with an ASID - See <a href="dep_devptl.html " target="_blank">Path-to-Live</a>
 
 **Testing your Consumer/Sender**
-Contact the Booking and Referrals Team (bookingandreferrals@nhs.net) for the configured DoS endpoint.
+<a href="contact.html" target="_blank">Contact the Booking and Referrals Team</a> for the configured DoS endpoint.
 	
 **Testing your Provider/Receiver**
 	
