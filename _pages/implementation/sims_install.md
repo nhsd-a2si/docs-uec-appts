@@ -124,7 +124,7 @@ The TKW Provider and Consumer Simulators will interact with each. It is advisabl
 
 The TKW Simulators can be run locally or within the dedicated NHS Digital Path-to-Live environments (OpenTest, INT). You will need to register via the appropriate portal to utilise their functionality on these environments (See Appendix8). An additional benefit of utilising the TKW tools in this way is the ability to prove end-to-end functionality with the core infrastructure components (DoS, SDS and SSP).
 	
-This section will explain how they’re intended to be used and their functionality.
+This section will further explain how they are intended to be used and their functionality.
 
 ## Consumer 
 The TKW Consumer Simulator will test a Provider endpoint and is capable of running in three modes – 
