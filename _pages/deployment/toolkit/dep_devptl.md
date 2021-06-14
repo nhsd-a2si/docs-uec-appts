@@ -147,7 +147,7 @@ On the agreed date of go-live, the system will be 'switched on', an end-to-end t
 Depending on the supplier's adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
  
 
-# Appendices 
+## Appendices 
 <details>
 <summary>Click to expand appendices</summary>
 <div class="expanded-class" markdown="1">
@@ -170,4 +170,4 @@ Provider
 * CareConnect Booking Provider v1  
 
 </div>
-</deatails>
+</details>
