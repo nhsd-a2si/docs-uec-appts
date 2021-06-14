@@ -250,8 +250,8 @@ The list includes only suppliers we are actively engaged with and are currently 
                  <td style="font-size:small"><a href="https://www.tpp-uk.com/" target="_blank">TPP</a></td>
                 <td style="font-size:small">SystmOne</td>
                 <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.3</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">1.0.0</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
                  <td style="background-color: LightGrey;"><a href="https://www.tpp-uk.com/" target="_blank">www.tpp-uk.com</a></td>
               </tr> 
