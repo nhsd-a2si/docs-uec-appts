@@ -9,7 +9,7 @@ folder: implementation
 ---
 
 The TKW (ToolKit Workbench) Simulators are tools to assist with developing and assuring a solution to meet the Booking Standard. 
-There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or in the dedicated environments – OpenTest, DEV or INT. 
+There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or in the dedicated environments – OpenTest or INT. 
 When utlised within the dedicated environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible.
 
 ## What are they?
@@ -121,6 +121,9 @@ When starting to build a solution the TKW Simulators can be deployed locally, to
 
 # Using TKW Simulators
 The TKW Provider and Consumer Simulators will interact with each. It is advisable to set them up like that initially to ensure they’re working before proceeding to use them to test any other implementation. 
+
+The TKW Simulators can be run locally or within the dedicated NHS Digital Path-to-Live environments (OpenTest, INT). You will need to register via the appropriate portal to utilise their functionality on these environments (See Appendix8). An additional benefit of utilising the TKW tools in this way is the ability to prove end-to-end functionality with the core infrastructure components (DoS, SDS and SSP).
+	
 This section will explain how they’re intended to be used and their functionality.
 
 ## Consumer 
@@ -328,6 +331,9 @@ Fill out the registration form and click 'Register'
 	
 NB: You will need to have registered your endpoint on INT and been provided with an ASID - See <a href="dep_devptl.html " target="_blank">Path-to-Live</a>
 
+**Testing your Consumer/Sender**
+Contact the Booking and Referrals Team (bookingandreferrals@nhs.net) for the configured DoS endpoint.
+	
 **Testing your Provider/Receiver**
 	
 Login with your newly created credentials - 
