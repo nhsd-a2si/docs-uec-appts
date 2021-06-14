@@ -162,7 +162,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 
 # Appendices 
 <details>
-<summary>Click to see step-by-step guide</summary>
+<summary>Click to expand appendices</summary>
 <div class="expanded-class" markdown="1">
 
 **Appendix1 – Docker Compose file for Provider Simulator (Windows)**
