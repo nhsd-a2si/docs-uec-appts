@@ -35,7 +35,7 @@ Below are the prerequisites that need to be established before it is possible to
  * You must have started the on-boarding (SCAL) process with the NHS Digital Solutions Assurance team
 
 ### Getting connected
-Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment" target="_blank">get connected to the INT environment</a>. This requires a series of steps:
+Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment" target="_blank">get connected to the INT environment</a>. This requires a series of steps (see - Appendix 1):
 
 1. Register or modify your FQDN with the NHS' DNS service 
  * You will find the <a href="https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments" target="_blank">DNS request form here</a>.
@@ -152,6 +152,22 @@ Depending on the supplier's adopted methodolgy, the solution may be monitored an
 <summary>Click to expand appendices</summary>
 <div class="expanded-class" markdown="1">
 
+ **Appendix1 – Message Sets to request**
+---
+Consumer 
+* CareConnect Consumer Slot v1  
+* CareConnect Consumer Booking v1  
+* CareConnect Consumer Appointment Search v1  
+* CareConnect Consumer Appointment Update v1  
+* CareConnect Registry v1  
+* CareConnect Booking Consumer v1
+
+Provider
+* CareConnect Provider Slot v1  
+* CareConnect Provider Booking v1  
+* CareConnect Provider Appointment v1  
+* CareConnect Registry v1  
+* CareConnect Booking Provider v1  
 
 </div>
 </deatails>
