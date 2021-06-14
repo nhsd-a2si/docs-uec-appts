@@ -59,6 +59,8 @@ Prerequisite
 3. C:\Users\johnsmith\Desktop>openssl req -out <FQDN>.csr -new -newkey rsa:2048 -nodes -keyout <FQDN>.key 
 
 </div>
+</details>
+<details>
 <summary>Click to see step-by-step guide to installing certificates</summary>
 <div class="expanded-class" markdown="1">
  
