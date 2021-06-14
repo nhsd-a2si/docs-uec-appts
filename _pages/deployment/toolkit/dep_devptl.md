@@ -42,7 +42,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  * You need to know what your URL is  
 2. Register or modify your messaging product with Spine 
  * Use the <a href="https://digital.nhs.uk/forms/manufacturer-product-version-registration-request" target="_blank£">MPV registration request form</a> for this
-3 Request new certificates and/or create or modify endpoints 
+3. Request new certificates and/or create or modify endpoints 
  * Use the <a href="https://digital.nhs.uk/forms/combined-endpoint-and-service-registration-request" target="_blank">Combined endpoint and service registration request form</a> for this
  
 ### Configure your environment to connect to SSP: 
@@ -74,9 +74,9 @@ Once you have the above pre-requisites you will need to <a href="https://digital
         * This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule. (we recommend once per week)
         * For your clients you will obviously need this to be a batch process to download and install. 
      Note – you need to find the correct CRL file for the right SSP integration or live environment 
-    * If you are using IIS:
+    * If you are using IIS:- 
         * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
-        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; <a href="https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN" target="_blank">MSDN Article</a>). 
+        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; <a href="https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN" target="_blank">MSDN Article</a>).
   
 </div>
 </details>
