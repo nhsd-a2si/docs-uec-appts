@@ -47,7 +47,7 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  
 ### Configure your environment to connect to SSP: 
 <details>
-<summary><b>Click to see step-by-step guide to requesting certificates</b></summary>
+<summary><b>Click to see step-by-step guide to generating certificate request</b></summary>
 <div class="expanded-class" markdown="1">
 The process for generating a CSR and Private Key
 
@@ -62,7 +62,7 @@ The process for generating a CSR and Private Key
 </div>
 </details>
 <details>
-<summary><b>Click to see step-by-step guide to installing certificates</b></summary>
+<summary><b>Click to see step-by-step guide to installing certificate</b></summary>
 <div class="expanded-class" markdown="1">
 
 ### Steps
