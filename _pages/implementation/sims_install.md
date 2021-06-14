@@ -332,6 +332,7 @@ Fill out the registration form and click 'Register'
 NB: You will need to have registered your endpoint on INT and been provided with an ASID - See <a href="dep_devptl.html " target="_blank">Path-to-Live</a>
 
 **Testing your Consumer/Sender**
+
 <a href="contact.html" target="_blank">Contact the Booking and Referrals Team</a> for the configured DoS endpoint.
 	
 **Testing your Provider/Receiver**
