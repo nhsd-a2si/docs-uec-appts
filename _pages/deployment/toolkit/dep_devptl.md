@@ -47,7 +47,19 @@ Once you have the above pre-requisites you will need to <a href="https://digital
  
 ### Configure your environment to connect to SSP: 
 <details>
-<summary>Click to see step-by-step guide</summary>
+<summary>Click to see step-by-step guide to requesting certificates</summary>
+<div class="expanded-class" markdown="1">
+The process for generating a CSR and Private Key
+
+Prerequisite 
+* OpenSSL installed
+
+1. Open a command prompt (CMD)
+2. Navigate to the folder you want the CSR to go into (e.g. C:\Users\johnsmith\Desktop)
+3. C:\Users\johnsmith\Desktop>openssl req -out <FQDN>.csr -new -newkey rsa:2048 -nodes -keyout <FQDN>.key 
+
+</div>
+<summary>Click to see step-by-step guide to installing certificates</summary>
 <div class="expanded-class" markdown="1">
  
 1. Install the cert you have been given to local cert store and bind you your site e.g. – *xxx.thirdparty.nhs.uk* etc 
