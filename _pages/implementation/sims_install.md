@@ -122,9 +122,9 @@ When starting to build a solution the TKW Simulators can be deployed locally, to
 # Using TKW Simulators
 The TKW Provider and Consumer Simulators will interact with each. It is advisable to set them up like that initially to ensure they’re working before proceeding to use them to test any other implementation. 
 
-The TKW Simulators can be run locally or within the dedicated NHS Digital Path-to-Live environments (OpenTest, INT). You will need to register via the appropriate portal to utilise their functionality on these environments (See Appendix8). An additional benefit of utilising the TKW tools in this way is the ability to prove end-to-end functionality with the core infrastructure components (DoS, SDS and SSP).
+The TKW Simulators can be run locally or within the dedicated Path-to-Live environments (OpenTest, INT). You will need to register via a Portal (See Appendix8) to utilise their functionality in these environments. An additional benefit of utilising the TKW tools in this way is the ability to prove end-to-end functionality with the core infrastructure components (SDS and SSP).
 	
-This section will further explain how they are intended to be used and their functionality.
+This section will further explain how the tools are intended to be used and their functionality.
 
 ## Consumer 
 The TKW Consumer Simulator will test a Provider endpoint and is capable of running in three modes – 
@@ -273,7 +273,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
     #truststore=/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs/certs/opentest.jks
     #keystore=/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs/certs/vpn-client-1003.opentest.hscic.gov.uk.jks
 
-**Appendix7 - Endpoint configuration file example (default)**
+**Appendix7 - Single Consumer Tests**
 ---
 
 |Test Name|Test Group|Short Description|
@@ -284,6 +284,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |Capability_json_parameter|Capability|Request capability statement with a json \_format parameter|
 |Capability_xml_parameter_json_accept|Capability|Request capability statement with  xml \_format parameter and a fhir+json accept http header|
 |Capability_json_parameter_xml_accept|Capability|Request capability statement with  json \_format parameter and a fhir+xml accept http header|
+|Capability_xml_accept_gzip|Capability|Request capability statement requiring a gzipped response|
 |SFFSWithValidParameters_parameter_json|Search For Free Slots|Search for free slots with a json \_format parameter|
 |SFFSWithValidParameters_header_json|Search For Free Slots|Search for free slots with a fhir+json http accept header|
 |SFFSWithValidParameters_parameter_xml|Search For Free Slots|Search for free slots with a xml \_format parameter|
@@ -291,11 +292,16 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |SFFSWithValidParameters_JWT_NoPractitioner|Search For Free Slots|Search for free slots with a JWT that does not contain a practitioner claim element|
 |SFFSWithValidParameters_3_days	|Search For Free Slots|Search for free slots with a three day window from tomorrow to tomorrow+2|
 |SFFSWithValidParameters_includes|Search For Free Slots|Search for free slots with added \_include parameters|
+|SFFSWithValidParameters_includes_slots_only|Search For Free Slots|Search for free slots with added \_include parameters response returning slots only|
 |SFFSNoSlots_HappyPath|Search For Free Slots|Search for free slots returning no slots|
 |SFFSInvalid|Search For Free Slots|Search for free slots using an invalid request|
 |SFFSForbidden|Search For Free Slots|Search for free slots forbidden repsonse|
 |SFFSWrongMethod|Search For Free Slots|Search for free slots wrong method response|
 |SFFSWithBusySlots|Search For Free Slots|Search for busy slots|
+|SFFSWithNoIncludes|Search For Free Slots|Search for slots with no \_include parameters|
+|SFFSWithNoIncludesSlotsOnly|Search For Free Slots|Search for slots with no \_include parameters response returning slots only|
+|SFFSWithFreeSlotsWithRevIncludes|Search For Free Slots|Search for free slots with a full set of \_include and \_revInclude|
+|SFFSWithFreeSlotsWithGzipEncoding|Search For Free Slots|Search for free slots requiring a gzipped response|
 |BookAppointment_HappyPath|Book Appointment|Happy Path Appointment booking|
 |BookAppointment_NoNHSNumber|Book Appointment|Happy Path Appointment booking where no patient nhs number is supplied|
 |BookAppointment_SlotAlreadyBooked|Book Appointment|Attempt to book an already booked appointment|
@@ -305,6 +311,12 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |BookAppointment_ServerError|Book Appointment|Book appointment server error response|
 |BookAppointment_UnsupportedMediaType|Book Appointment|Book appointment requesting an unsupported media type|
 |BookAppointment_BadGateway|Book Appointment|Book appointment bad gateway response|
+|BookAppointment_TelecomAndContact|Book Appointment|Book appointment with a rank 1 telecom of type phone in patient and rank2 in contact|
+|BookAppointment_Contact|Book Appointment|Book appointment with a rank 1 telecom of type phone in contact|
+|BookAppointment_TwoRank1|Book Appointment|Book appointment with a rank 1 telecom of type phone in patient and rank1 in contact|
+|BookAppointment_TwoRank2|Book Appointment|Book appointment with a rank 2 telecom of type phone in patient and rank 2 in contact|
+|BookAppointment_HappyPathWithGzip|Book Appointment|Book appointment with both request and response gzipped|
+|BookAppointment_HappyPathWithResentRequestID|Book Appointment|Book appointment then rebook with the same request id|
 |ReadNonExistentAppointment|Cancel Appointment|Read an appointment that does not exist|
 |CancelAppointment_HappyPath|Cancel Appointment|Successfully cancel an appointment|
 |CancelAppointment_DifferencesDetected|Cancel Appointment|Attempt to cancel an appointment supplying different appointment details|
@@ -319,7 +331,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 ---
 **Registering**
 	
-Navigate to - http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx (HSCN access required)
+Navigate to Portal - <a href="http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx" target="_blank">http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx</a>(HSCN access required)
 
 Login with the following credentials - 
 	Username = admin
