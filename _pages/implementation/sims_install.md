@@ -160,6 +160,9 @@ The Provider Simulator can also be tested using an API Test Tool such as [Postma
 
 A validation report of activity sent to the Provider Simulator resides under '..\all_evidence\\<ASID\>' and logs of activity is recorded in ‘..\logs’.
 
+## Support 
+For any issues or assistance with the TKW Simulators you can <a href="mailto:functional.assurance@nhs.net">contact the Team</a>
+	
 # Assuring with TKW
 Another key feature of the TKW Simulator Tools is to assist with the self assurance process and provide the required evidence for the SCAL submission. Once the solution is complete, depending on whether it is fulfilling Provider or Consumer functionality, it can be configured to make or receive requests from the corresponding Simulator Tool. The Tool will record and collate the necessary evidence to be attached as part of the assurance process, as detailed in *Using TKW Simulators* section above. 
 
