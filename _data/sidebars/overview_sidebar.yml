@@ -1,9 +1,9 @@
 entries:
 - title: "NHS Booking Standard"
   product: ""
-  version: "v1.0.0 RC1"
-  spec: "STU3 | FHIR NHS Scheduling | 2.0.3"
-  speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.3/index.html"
+  version: "v1.0.0"
+  spec: "STU3 | FHIR NHS Scheduling | 2.0.4"
+  speclink: "https://developer.nhs.uk/apis/nhsbooking-2.0.4/index.html"
   levels: two
   folders: 
   
@@ -26,6 +26,9 @@ entries:
     folderitems:
     - title: "Current"
       url: /current.html
+      output: "web, pdf"
+    - title: "1.0.0 RC1"
+      url: /rn_100rc1.html
       output: "web, pdf"
       type: homepage
       subfolders:
@@ -158,12 +161,12 @@ entries:
     folderitems:    
     - title: "Versioning"
       output: "web, pdf"
-      url: /Versioning.html  
+      url: /versioning.html  
     - title: "API Guidance"
-      url: /implementation_API.html
+      url: /implementation_api.html
       output: "web, pdf"
     - title: "Implementing FHIR® Resources"
-      url: /implementation_FHIR.html
+      url: /implementation_fhir.html
       output: "web, pdf"      
       subfolders:
       - title: "Interactions with the DoS"      
