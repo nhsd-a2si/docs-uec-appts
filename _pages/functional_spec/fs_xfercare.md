@@ -36,7 +36,7 @@ In this illustration we have a referral from 111 using a 111CDA document contain
 </entry>
 ```
 
-Key to the linking is the ```encounter``` component, specifically the ```extension``` element of id, where the appointment URL is specified. The appointment URL may be set in the ```href``` attribute and can be obtained from the ```href``` attribute but must not be taken from the "*text-between-the-tags*".
+Key to the linking is the ```encounter``` component, specifically the ```extension``` element of id, where the appointment URL is specified. This is where the appointment reference should be taken from. The appointment URL (including reference) may be set in the ```href``` attribute and the reference can be obtained from the ```href``` attribute but must not be taken from the "*text-between-the-tags*".
 
 ```XML
 <component typeCode="COMP" contextConductionInd="true">
