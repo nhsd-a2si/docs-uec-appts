@@ -152,7 +152,7 @@ Depending on the supplier's adopted methodolgy, the solution may be monitored an
 <summary>Click to expand appendices</summary>
 <div class="expanded-class" markdown="1">
 
- **Appendix1 – Message Sets/Bindings to request against you endpoint URL**
+ **Appendix1 – Message Sets/Bindings to request against your endpoint**
 ---
 Consumer 
 * CareConnect Consumer Slot v1  
