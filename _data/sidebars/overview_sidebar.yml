@@ -161,12 +161,12 @@ entries:
     folderitems:    
     - title: "Versioning"
       output: "web, pdf"
-      url: /Versioning.html  
+      url: /versioning.html  
     - title: "API Guidance"
-      url: /implementation_API.html
+      url: /implementation_api.html
       output: "web, pdf"
     - title: "Implementing FHIR® Resources"
-      url: /implementation_FHIR.html
+      url: /implementation_fhir.html
       output: "web, pdf"      
       subfolders:
       - title: "Interactions with the DoS"      
