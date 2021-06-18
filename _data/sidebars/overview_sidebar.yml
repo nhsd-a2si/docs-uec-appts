@@ -32,6 +32,8 @@ entries:
       - title: "Pre-Releases"
         output: "web, pdf"
         subfolderitems:
+        - title: "1.0.0 RC1"
+          url: /rn_100rc1.html
         - title: "0.2.0 BETA"
           url: /rn_020b.html
           output: "web, pdf"
