@@ -27,14 +27,14 @@ entries:
     - title: "Current"
       url: /current.html
       output: "web, pdf"
+    - title: "1.0.0 RC1"
+      url: /rn_100rc1.html
+      output: "web, pdf"
       type: homepage
       subfolders:
       - title: "Pre-Releases"
         output: "web, pdf"
         subfolderitems:
-        - title: "1.0.0 RC1"
-          url: /rn_100rc1.html
-          output: "web, pdf"
         - title: "0.2.0 BETA"
           url: /rn_020b.html
           output: "web, pdf"
