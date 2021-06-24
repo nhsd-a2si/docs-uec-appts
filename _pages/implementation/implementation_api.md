@@ -176,6 +176,8 @@ To improve system performances clients/servers SHALL support GZIP compression.
 
 Compression is requested by setting the `Accept-Encoding` header to `gzip`.
 
+Consumers **should** cater for the eventuality of receiving a decompressed response despite requesting a compressed one. 
+
 {% include tip.html content="Applying content compression is key to reducing bandwidth needs and improving battery life for mobile devices." %}
 
 ### [Inter-version compatibility](https://www.hl7.org/fhir/STU3/compatibility.html) ###
