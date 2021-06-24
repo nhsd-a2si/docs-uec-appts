@@ -203,7 +203,7 @@ As NHS Booking only supports usage for direct care, this value **SHALL** be set 
 
 The scope of the request.
 
-The first claim is for "operations on a booking from the context of a patient" and the second for "operations on a slot (from the context of an organisation)". The first scope supports verbs up to and including ones that can change data (e.g. POST and PUT). The second scope does not (e.g. just GET).
+The appointment.write claim is for "write operations on a booking from the context of a patient" and the slot.read is for "operations on a slot (from the context of an organisation)". The appointment.write scope supports verbs up to and including ones that can change data (e.g. POST and PUT). Whereas appointment.read and slot.read scopes only retrieve data (e.g. just GET).
 
 Please the table below for which values to populate.
 

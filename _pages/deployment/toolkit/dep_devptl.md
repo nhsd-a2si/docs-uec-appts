@@ -35,21 +35,37 @@ Below are the prerequisites that need to be established before it is possible to
  * You must have started the on-boarding (SCAL) process with the NHS Digital Solutions Assurance team
 
 ### Getting connected
-Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment" target="_blank">get connected to the INT environment</a>. This requires a series of steps:
+Once you have the above pre-requisites you will need to <a href="https://digital.nhs.uk/services/path-to-live-environments/connect-to-a-path-to-live-environment" target="_blank">get connected to the INT environment</a>. This requires a series of steps (see Appendix1 for associated URL bindings):
 
 1. Register or modify your FQDN with the NHS' DNS service 
  * You will find the <a href="https://digital.nhs.uk/forms/dns-request-form-for-path-to-live-environments" target="_blank">DNS request form here</a>.
  * You need to know what your URL is  
 2. Register or modify your messaging product with Spine 
  * Use the <a href="https://digital.nhs.uk/forms/manufacturer-product-version-registration-request" target="_blank£">MPV registration request form</a> for this
-3 Request new certificates and/or create or modify endpoints 
+3. Request new certificates and/or create or modify endpoints 
  * Use the <a href="https://digital.nhs.uk/forms/combined-endpoint-and-service-registration-request" target="_blank">Combined endpoint and service registration request form</a> for this
  
 ### Configure your environment to connect to SSP: 
 <details>
-<summary>Click to see step-by-step guide</summary>
+<summary><b>Click to see step-by-step guide to generating certificate request</b></summary>
 <div class="expanded-class" markdown="1">
- 
+The process for generating a CSR and Private Key
+
+### Prerequisite 
+* OpenSSL installed
+
+### Steps 
+1. Open a command prompt (CMD)
+2. Navigate to the folder you want the CSR to go into (e.g. C:\Users\johnsmith\Desktop)
+3. C:\Users\johnsmith\Desktop>openssl req -out <FQDN>.csr -new -newkey rsa:2048 -nodes -keyout <FQDN>.key 
+
+</div>
+</details>
+<details>
+<summary><b>Click to see step-by-step guide to installing certificate</b></summary>
+<div class="expanded-class" markdown="1">
+
+### Steps
 1. Install the cert you have been given to local cert store and bind you your site e.g. – *xxx.thirdparty.nhs.uk* etc 
 2. Configure your firewall to make outbound connections to: *https://proxy.int.spine2.ncrs.nhs.uk/[provider service root url]/[fhir request]* 
    * See <a href="https://digital.nhs.uk/services/path-to-live-environments/integration-environment#messaging-urls" target="_blank">here</a> for more information 
@@ -74,9 +90,9 @@ Once you have the above pre-requisites you will need to <a href="https://digital
         * This file is updated every day.  However it is large, and so it is acceptable to have a batch process which updates it on a longer schedule. (we recommend once per week)
         * For your clients you will obviously need this to be a batch process to download and install. 
      Note – you need to find the correct CRL file for the right SSP integration or live environment 
-    * If you are using IIS:
+    * If you are using IIS:- 
         * There is a way of setting IIS CRL to default to the cached file and use that even if the downloaded CRL expiry date is in the past.
-        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; <a href="https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN" target="_blank">MSDN Article</a>). 
+        * If CertCheckMode is set to 2, certificate revocation verification will be done based on the cached CRL on the IIS server. IIS will not try to connect to the remote server to download the CRL even if it has expired and in which case CRL verification will fail (see; <a href="https://docs.microsoft.com/en-gb/windows/win32/api/http/ns-http-http_service_config_ssl_param?redirectedfrom=MSDN" target="_blank">MSDN Article</a>).
   
 </div>
 </details>
@@ -129,3 +145,29 @@ At this point, assuming the Provider Testing has been successful, the solution i
 On the agreed date of go-live, the system will be 'switched on', an end-to-end test run to verify functionality and the service declared live. The solution moves from a project into BAU (Business as Usual), supported by all usual processes e.g. Technical Support. 
 
 Depending on the supplier's adopted methodolgy, the solution may be monitored and enhanced to support more complex workflows or functional additions. This is a typcial process within the SDLC (Software Development LifeCycle).
+ 
+
+## Appendices 
+<details>
+<summary>Click to expand appendices</summary>
+<div class="expanded-class" markdown="1">
+
+ **Appendix1 – Message Sets/Bindings to request against your endpoint**
+---
+Consumer 
+* CareConnect Consumer Slot v1  
+* CareConnect Consumer Booking v1  
+* CareConnect Consumer Appointment Search v1  
+* CareConnect Consumer Appointment Update v1  
+* CareConnect Registry v1  
+* CareConnect Booking Consumer v1
+
+Provider
+* CareConnect Provider Slot v1  
+* CareConnect Provider Booking v1  
+* CareConnect Provider Appointment v1  
+* CareConnect Registry v1  
+* CareConnect Booking Provider v1  
+
+</div>
+</details>

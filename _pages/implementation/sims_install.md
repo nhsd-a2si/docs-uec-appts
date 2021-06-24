@@ -9,7 +9,7 @@ folder: implementation
 ---
 
 The TKW (ToolKit Workbench) Simulators are tools to assist with developing and assuring a solution to meet the Booking Standard. 
-There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or in the dedicated environments – OpenTest, DEV or INT. 
+There are two tools in the suite, to support the Provider and Consumer functionality, and they can utilised locally or in the dedicated environments – OpenTest or INT. 
 When utlised within the dedicated environments they are supported by the other services – DoS, SDS and SSP – to replicate as near to like-live scenarios as possible.
 
 ## What are they?
@@ -121,7 +121,10 @@ When starting to build a solution the TKW Simulators can be deployed locally, to
 
 # Using TKW Simulators
 The TKW Provider and Consumer Simulators will interact with each. It is advisable to set them up like that initially to ensure they’re working before proceeding to use them to test any other implementation. 
-This section will explain how they’re intended to be used and their functionality.
+
+The TKW Simulators can be run locally or within the dedicated Path-to-Live environments (OpenTest, INT). You will need to register via a Portal (See Appendix8) to utilise their functionality in these environments. An additional benefit of utilising the TKW tools in this way is the ability to prove end-to-end functionality with the core infrastructure components (SDS and SSP).
+	
+This section will further explain how the tools are intended to be used and their functionality.
 
 ## Consumer 
 The TKW Consumer Simulator will test a Provider endpoint and is capable of running in three modes – 
@@ -157,12 +160,15 @@ The Provider Simulator can also be tested using an API Test Tool such as [Postma
 
 A validation report of activity sent to the Provider Simulator resides under '..\all_evidence\\<ASID\>' and logs of activity is recorded in ‘..\logs’.
 
+## Support 
+For any issues or assistance with the TKW Simulators you can <a href="mailto:functional.assurance@nhs.net">contact the Team</a>
+	
 # Assuring with TKW
 Another key feature of the TKW Simulator Tools is to assist with the self assurance process and provide the required evidence for the SCAL submission. Once the solution is complete, depending on whether it is fulfilling Provider or Consumer functionality, it can be configured to make or receive requests from the corresponding Simulator Tool. The Tool will record and collate the necessary evidence to be attached as part of the assurance process, as detailed in *Using TKW Simulators* section above. 
 
 # Appendices 
 <details>
-<summary>Click to see step-by-step guide</summary>
+<summary>Click to expand appendices</summary>
 <div class="expanded-class" markdown="1">
 
 **Appendix1 – Docker Compose file for Provider Simulator (Windows)**
@@ -270,7 +276,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
     #truststore=/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs/certs/opentest.jks
     #keystore=/TKW_ROOT/config/FHIR_111_UEC/autotest_config/endpoint_configs/certs/vpn-client-1003.opentest.hscic.gov.uk.jks
 
-**Appendix7 - Endpoint configuration file example (default)**
+**Appendix7 - Single Consumer Tests**
 ---
 
 |Test Name|Test Group|Short Description|
@@ -281,6 +287,7 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |Capability_json_parameter|Capability|Request capability statement with a json \_format parameter|
 |Capability_xml_parameter_json_accept|Capability|Request capability statement with  xml \_format parameter and a fhir+json accept http header|
 |Capability_json_parameter_xml_accept|Capability|Request capability statement with  json \_format parameter and a fhir+xml accept http header|
+|Capability_xml_accept_gzip|Capability|Request capability statement requiring a gzipped response|
 |SFFSWithValidParameters_parameter_json|Search For Free Slots|Search for free slots with a json \_format parameter|
 |SFFSWithValidParameters_header_json|Search For Free Slots|Search for free slots with a fhir+json http accept header|
 |SFFSWithValidParameters_parameter_xml|Search For Free Slots|Search for free slots with a xml \_format parameter|
@@ -288,11 +295,16 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |SFFSWithValidParameters_JWT_NoPractitioner|Search For Free Slots|Search for free slots with a JWT that does not contain a practitioner claim element|
 |SFFSWithValidParameters_3_days	|Search For Free Slots|Search for free slots with a three day window from tomorrow to tomorrow+2|
 |SFFSWithValidParameters_includes|Search For Free Slots|Search for free slots with added \_include parameters|
+|SFFSWithValidParameters_includes_slots_only|Search For Free Slots|Search for free slots with added \_include parameters response returning slots only|
 |SFFSNoSlots_HappyPath|Search For Free Slots|Search for free slots returning no slots|
 |SFFSInvalid|Search For Free Slots|Search for free slots using an invalid request|
 |SFFSForbidden|Search For Free Slots|Search for free slots forbidden repsonse|
 |SFFSWrongMethod|Search For Free Slots|Search for free slots wrong method response|
 |SFFSWithBusySlots|Search For Free Slots|Search for busy slots|
+|SFFSWithNoIncludes|Search For Free Slots|Search for slots with no \_include parameters|
+|SFFSWithNoIncludesSlotsOnly|Search For Free Slots|Search for slots with no \_include parameters response returning slots only|
+|SFFSWithFreeSlotsWithRevIncludes|Search For Free Slots|Search for free slots with a full set of \_include and \_revInclude|
+|SFFSWithFreeSlotsWithGzipEncoding|Search For Free Slots|Search for free slots requiring a gzipped response|
 |BookAppointment_HappyPath|Book Appointment|Happy Path Appointment booking|
 |BookAppointment_NoNHSNumber|Book Appointment|Happy Path Appointment booking where no patient nhs number is supplied|
 |BookAppointment_SlotAlreadyBooked|Book Appointment|Attempt to book an already booked appointment|
@@ -302,6 +314,12 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |BookAppointment_ServerError|Book Appointment|Book appointment server error response|
 |BookAppointment_UnsupportedMediaType|Book Appointment|Book appointment requesting an unsupported media type|
 |BookAppointment_BadGateway|Book Appointment|Book appointment bad gateway response|
+|BookAppointment_TelecomAndContact|Book Appointment|Book appointment with a rank 1 telecom of type phone in patient and rank2 in contact|
+|BookAppointment_Contact|Book Appointment|Book appointment with a rank 1 telecom of type phone in contact|
+|BookAppointment_TwoRank1|Book Appointment|Book appointment with a rank 1 telecom of type phone in patient and rank1 in contact|
+|BookAppointment_TwoRank2|Book Appointment|Book appointment with a rank 2 telecom of type phone in patient and rank 2 in contact|
+|BookAppointment_HappyPathWithGzip|Book Appointment|Book appointment with both request and response gzipped|
+|BookAppointment_HappyPathWithResentRequestID|Book Appointment|Book appointment then rebook with the same request id|
 |ReadNonExistentAppointment|Cancel Appointment|Read an appointment that does not exist|
 |CancelAppointment_HappyPath|Cancel Appointment|Successfully cancel an appointment|
 |CancelAppointment_DifferencesDetected|Cancel Appointment|Attempt to cancel an appointment supplying different appointment details|
@@ -311,6 +329,72 @@ Another key feature of the TKW Simulator Tools is to assist with the self assura
 |CancelAppointment_Forbidden|Cancel Appointment|Cancel appointment forbidden response|
 |CancelAppointment_BadGateway|Cancel Appointment|Cancel appointment bad gateway response|
 |CancelAppointment_GatewayTimeout|Cancel Appointment|Cancel appointment gateway timeout response|
+
+**Appendix8 - Using TKW Portal on the INT environment**
+---
+**Registering**
+	
+Navigate to Portal - <a href="http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx" target="_blank">http://itw-work.itblab.nic.cfh.nhs.uk/Account/Register.aspx</a>(HSCN access required)
+
+Login with the following credentials - 
+	Username = admin
+	Password = uecbooking 
+<img src="_pages/implementation/img/Register Login.png">	
+
+Fill out the registration form and click 'Register' 
+<img src="_pages/implementation/img/Register.png">
+	
+NB: You will need to have registered your endpoint on INT and been provided with an ASID - See <a href="dep_devptl.html " target="_blank">Path-to-Live</a>
+
+**Testing your Consumer/Sender**
+
+<a href="contact.html" target="_blank">Contact the Booking and Referrals Team</a> for the configured DoS endpoint.
+	
+**Testing your Provider/Receiver**
+	
+Login with your newly created credentials - 
+<img src="_pages/implementation/img/Login.png">
+
+You will be presented with the following options 
+	
+<img src="_pages/implementation/img/menu.png">
+	
+This Portal will allow you to send tests directly to your API
+
+Click 'Consumer Simulator' and you will be presented with a list of tests for different areas of functionality i.e. Search for Slots, Booking, etc. Ensure that the 'Provider ASID' (indicated at the top of the screen) is the one configured to direct traffic to your endpoint.
+	
+<img src="_pages/implementation/img/ConSim.png">
+	
+Tick the box next to the tests you wish to perform or the 'Select All..' for all test for an area of functionality or all tests available (top option 'Select All Tests')
+	
+<img src="_pages/implementation/img/SelectedTests.png">
+	
+Click 'Run Consumer Simulator' at the bottom of the page 
+
+<img src="_pages/implementation/img/Run.png">
+	
+When complete, the following dialog will display 
+	
+<img src="_pages/implementation/img/Finished.png">
+	
+The Test and Validation Report can be viewed and downloaded under the 'Download Reports' menu option
+
+**Viewing Reports** 
+
+Consumer Reports (for reports run against a Provider/Receiver solution from the TKW Test Tool)
+
+<img src="_pages/implementation/img/ConsumerReps.png">
+
+Provider Reports (for reports run against the TKW Provider/Receiver Test Tool from a Consumer)
+
+<img src="_pages/implementation/img/ProviderReps.png">
+	
+**Subscribing for Reports**
+
+The Portal will also email reports directly to the email address used when registering. Tick the box to subscribe to this feature. 
+
+<img src="_pages/implementation/img/EmailReps.png">
+
 
 </div>
 </details>
