@@ -185,7 +185,17 @@ The list includes only suppliers we are actively engaged with and are currently 
               </tr>
             </thead>
             <tbody>              
-      <!------------------------------ROW----------------------------------->  
+       <!------------------------------ROW-----------------------------------> 
+              <tr>
+                <td style="font-size:small"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">Advanced</a></td>
+                <td style="font-size:small">Adastra</td>
+                <td style="font-size:small">TBC</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
+                <td style="background-color: LightBlue;">Ready</td>
+                  <td style="background-color: LightGrey;"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">/www.oneadvanced.com/solutions/adastra</a>                 </td>
+              </tr>  
+       <!------------------------------ROW----------------------------------->  
              <tr>
                 <td style="font-size:small"><a href="https://www.cleosystems.com/" target="_blank">Cleo Systems</a></td>
                 <td style="font-size:small">Cleo</td>
@@ -234,20 +244,10 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
                 <td><a href="http://www.waspsoftware.co.uk/nhs111-first/" target="_blank">www.waspsoftware.co.uk/nhs111-first</a></td>
-              </tr>  
-      <!------------------------------ROW-----------------------------------> 
-              <tr>
-                  <td style="font-size:small"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">Advanced</a></td>
-                <td style="font-size:small">Adastra</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: Green;">Assurance</td>
-                  <td style="background-color: LightGrey;"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">/www.oneadvanced.com/solutions/adastra</a></td>
-              </tr>  
+              </tr>       
        <!------------------------------ROW----------------------------------->  
              <tr>
-                 <td style="font-size:small"><a href="https://www.tpp-uk.com/" target="_blank">TPP</a></td>
+                <td style="font-size:small"><a href="https://www.tpp-uk.com/" target="_blank">TPP</a></td>
                 <td style="font-size:small">SystmOne</td>
                 <td style="font-size:small">TBC</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.3</mark></td>
