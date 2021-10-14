@@ -209,9 +209,9 @@ The list includes only suppliers we are actively engaged with and are currently 
               <tr>
                 <td style="font-size:small"><a href="https://www.emishealth.com" target="_blank">EMIS Health</a></td>
                 <td style="font-size:small"><a href="https://www.emishealth.com/products/symphony/" target="_blank">Symphony</a></td>
-                <td style="font-size:small">2.39</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.1.15 ALPHA</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v1.0.6 ALPHA</mark></td>
+                <td style="font-size:small">2.39+</td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v0.2.0 BETA</mark></td>
+                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">v2.0.3</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
                 <td><a href="https://www.emishealth.com/products/symphony/" target="_blank">www.emishealth.com/products/symphony</a></td>
               </tr> 
