@@ -189,7 +189,7 @@ The list includes only suppliers we are actively engaged with and are currently 
               <tr>
                 <td style="font-size:small"><a href="https://www.oneadvanced.com/solutions/adastra/" target="_blank">Advanced</a></td>
                 <td style="font-size:small">Adastra</td>
-                <td style="font-size:small">TBC</td>
+                <td style="font-size:small"3.36</td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td style="background-color: LightBlue;">Ready</td>
@@ -374,17 +374,7 @@ The list includes only suppliers we are actively engaged with and are currently 
                 <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
                 <td style="background-color: Orange;">Not Started</td>
                 <td style="background-color: LightGrey;"></td>
-              </tr>  
-      <!------------------------------ROW----------------------------------->  
-              <tr>
-                <td style="font-size:small">Silverlink</td>
-                <td style="font-size:small">ICS</td>
-                <td style="font-size:small">TBC</td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td><mark style="background-color: White;font-family: Courier New, Courier, monospace; font-size:small">TBC</mark></td>
-                <td style="background-color: Orange;">Not Started</td>
-                <td style="background-color: LightGrey;"></td>
-              </tr>       
+              </tr>         
       <!------------------------------ROW----------------------------------->
               <tr>
                 <td style="font-size:small">System C</td>
