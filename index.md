@@ -6,7 +6,7 @@ toc: False
 permalink: index.html
 ---
 
-{% include important.html content="Please note that this standard is being replaced by the "<a href="https://digital.nhs.uk/services/booking-and-referral-standard" target="_blank">Booking and Referral Standard</a>. We reccomend that you If you wish to develop a solution for this standard please speak to the team at: bookingandreferralstandard@nhs.net %}
+{% include important.html content="Please note that this standard is being replaced by the "<a href=""https://digital.nhs.uk/services/booking-and-referral-standard"" target=""_blank"">Booking and Referral Standard</a>. We reccommend that you If you wish to develop a solution for this standard please speak to the team at: bookingandreferralstandard@nhs.net" %}
 
 ## Introduction
 
