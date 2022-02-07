@@ -5,6 +5,7 @@ sidebar: overview_sidebar
 toc: False
 permalink: index.html
 ---
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Please note that this standard is being replaced by the "<a href="https://digital.nhs.uk/services/booking-and-referral-standard" target="_blank">Booking and Referral Standard</a>. We reccommend that if you wish to develop a solution for this standard please speak to the team at: <a href="mailto:bookingandreferralstandard@nhs.net">bookingandreferralstandard@nhs.net</a></div>
 
 ## Introduction
 
