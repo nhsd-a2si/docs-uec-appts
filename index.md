@@ -6,9 +6,10 @@ toc: False
 permalink: index.html
 ---
 
-<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This Standard will be retired in 12 to 18 months from March 2022. The <a href="https://digital.nhs.uk/services/booking-and-referral-standard" target="_blank">Booking and Referral Standard (BaRS)</a> will replace it. 
-  
-  The current standard is still available for existing development, but not for new integrations. For more details, contact the <a href="mailto:bookingandreferralstandard@nhs.net">bookingandreferralstandard@nhs.net</a></div>
+<div markdown="span" class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> This Standard will be retired in 12 to 18 months from March 2022. 
+The <a href="https://digital.nhs.uk/services/booking-and-referral-standard" target="_blank">Booking and Referral Standard (BaRS)</a> will replace it. 
+<br>  
+The current standard is still available for existing development, but not for new integrations. For more details, contact the <a href="mailto:bookingandreferralstandard@nhs.net">bookingandreferralstandard@nhs.net</a></div>
 
 ## Introduction
 
